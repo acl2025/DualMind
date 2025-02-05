@@ -1,0 +1,367 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200702_S_R001S01C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 64
+Initializing talker model in talker_process_func...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/accelerate/utils/modeling.py:1390: UserWarning: Current model requires 1145554048 bytes of buffer for offloaded layers, which seems does not fit any GPU's remaining memory. If you are experiencing a OOM later, please consider using offload_buffers=True.
+  warnings.warn(
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+Process SpawnPoolWorker-5:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/whisper_STT/whisper_STT.py", line 10, in init_stt_worker
+    global_whisper_model = whisper.load_model("large")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py", line 150, in load_model
+    checkpoint = torch.load(fp, map_location=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1097, in load
+    return _load(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1525, in _load
+    result = unpickler.load()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1492, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1466, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1389, in restore_location
+    return default_restore_location(storage, map_location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 414, in default_restore_location
+    result = fn(storage, location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 392, in _deserialize
+    return obj.to(device=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/storage.py", line 187, in to
+    return _to(self, device, non_blocking)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_utils.py", line 89, in _to
+    untyped_storage = torch.UntypedStorage(self.size(), device=device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 7.56 MiB is free. Process 649564 has 4.30 GiB memory in use. Process 649565 has 7.78 GiB memory in use. Process 649780 has 9.49 GiB memory in use. Including non-PyTorch memory, this process has 1.44 GiB memory in use. Process 653201 has 256.00 MiB memory in use. Process 653202 has 256.00 MiB memory in use. Of the allocated memory 1.09 GiB is allocated by PyTorch, and 104.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+Process SpawnPoolWorker-6:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/whisper_STT/whisper_STT.py", line 10, in init_stt_worker
+    global_whisper_model = whisper.load_model("large")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py", line 150, in load_model
+    checkpoint = torch.load(fp, map_location=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1097, in load
+    return _load(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1525, in _load
+    result = unpickler.load()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1492, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1466, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1389, in restore_location
+    return default_restore_location(storage, map_location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 414, in default_restore_location
+    result = fn(storage, location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 392, in _deserialize
+    return obj.to(device=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/storage.py", line 187, in to
+    return _to(self, device, non_blocking)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_utils.py", line 89, in _to
+    untyped_storage = torch.UntypedStorage(self.size(), device=device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 11.56 MiB is free. Process 649564 has 4.30 GiB memory in use. Process 649565 has 7.78 GiB memory in use. Process 649780 has 9.49 GiB memory in use. Process 653201 has 254.00 MiB memory in use. Process 653202 has 254.00 MiB memory in use. Including non-PyTorch memory, this process has 1.44 GiB memory in use. Of the allocated memory 1.09 GiB is allocated by PyTorch, and 104.63 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Loading checkpoint shards:   0%|          | 0/5 [00:10<?, ?it/s]
+Process SpawnProcess-3:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/agent/agent/classifier_reasoner_talker.py", line 76, in talker_process_func
+    model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", device_map="auto",torch_dtype="auto", )
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 4225, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 4728, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 993, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/accelerate/utils/modeling.py", line 329, in set_module_tensor_to_device
+    new_value = value.to(device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 86.00 MiB. GPU 1 has a total capacity of 23.59 GiB of which 35.50 MiB is free. Process 649564 has 7.09 GiB memory in use. Process 649565 has 9.42 GiB memory in use. Process 653201 has 3.72 GiB memory in use. Including non-PyTorch memory, this process has 3.29 GiB memory in use. Of the allocated memory 2.92 GiB is allocated by PyTorch, and 118.32 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Loading checkpoint shards:   0%|          | 0/3 [00:11<?, ?it/s]
+Process SpawnProcess-2:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/agent/agent/classifier_reasoner_talker.py", line 247, in planner_process_func
+    planner_llm = LocalQwenLLM(
+  File "/home/leon/agent/agent/agent_utils.py", line 69, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 4225, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 4728, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 993, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/accelerate/utils/modeling.py", line 329, in set_module_tensor_to_device
+    new_value = value.to(device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 34.00 MiB. GPU 1 has a total capacity of 23.59 GiB of which 19.50 MiB is free. Process 649564 has 7.09 GiB memory in use. Process 649565 has 9.42 GiB memory in use. Including non-PyTorch memory, this process has 3.73 GiB memory in use. Process 653202 has 3.29 GiB memory in use. Of the allocated memory 3.48 GiB is allocated by PyTorch, and 6.77 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+Process SpawnPoolWorker-7:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/whisper_STT/whisper_STT.py", line 10, in init_stt_worker
+    global_whisper_model = whisper.load_model("large")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py", line 150, in load_model
+    checkpoint = torch.load(fp, map_location=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1097, in load
+    return _load(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1525, in _load
+    result = unpickler.load()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1492, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1466, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1389, in restore_location
+    return default_restore_location(storage, map_location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 414, in default_restore_location
+    result = fn(storage, location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 392, in _deserialize
+    return obj.to(device=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/storage.py", line 187, in to
+    return _to(self, device, non_blocking)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_utils.py", line 89, in _to
+    untyped_storage = torch.UntypedStorage(self.size(), device=device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 16.19 MiB is free. Process 649564 has 4.30 GiB memory in use. Process 649565 has 7.78 GiB memory in use. Process 649780 has 9.49 GiB memory in use. Including non-PyTorch memory, this process has 1.94 GiB memory in use. Of the allocated memory 1.55 GiB is allocated by PyTorch, and 143.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+Process SpawnPoolWorker-8:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/whisper_STT/whisper_STT.py", line 10, in init_stt_worker
+    global_whisper_model = whisper.load_model("large")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py", line 150, in load_model
+    checkpoint = torch.load(fp, map_location=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1097, in load
+    return _load(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1525, in _load
+    result = unpickler.load()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1492, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1466, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1389, in restore_location
+    return default_restore_location(storage, map_location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 414, in default_restore_location
+    result = fn(storage, location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 392, in _deserialize
+    return obj.to(device=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/storage.py", line 187, in to
+    return _to(self, device, non_blocking)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_utils.py", line 89, in _to
+    untyped_storage = torch.UntypedStorage(self.size(), device=device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 16.19 MiB is free. Process 649564 has 4.30 GiB memory in use. Process 649565 has 7.78 GiB memory in use. Process 649780 has 9.49 GiB memory in use. Including non-PyTorch memory, this process has 1.94 GiB memory in use. Of the allocated memory 1.55 GiB is allocated by PyTorch, and 143.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+Process SpawnPoolWorker-9:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/whisper_STT/whisper_STT.py", line 10, in init_stt_worker
+    global_whisper_model = whisper.load_model("large")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py", line 150, in load_model
+    checkpoint = torch.load(fp, map_location=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1097, in load
+    return _load(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1525, in _load
+    result = unpickler.load()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1492, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1466, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1389, in restore_location
+    return default_restore_location(storage, map_location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 414, in default_restore_location
+    result = fn(storage, location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 392, in _deserialize
+    return obj.to(device=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/storage.py", line 187, in to
+    return _to(self, device, non_blocking)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_utils.py", line 89, in _to
+    untyped_storage = torch.UntypedStorage(self.size(), device=device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 16.19 MiB is free. Process 649564 has 4.30 GiB memory in use. Process 649565 has 7.78 GiB memory in use. Process 649780 has 9.49 GiB memory in use. Including non-PyTorch memory, this process has 1.94 GiB memory in use. Of the allocated memory 1.55 GiB is allocated by PyTorch, and 143.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+Process SpawnPoolWorker-10:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/whisper_STT/whisper_STT.py", line 10, in init_stt_worker
+    global_whisper_model = whisper.load_model("large")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py", line 150, in load_model
+    checkpoint = torch.load(fp, map_location=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1097, in load
+    return _load(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1525, in _load
+    result = unpickler.load()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1492, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1466, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1389, in restore_location
+    return default_restore_location(storage, map_location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 414, in default_restore_location
+    result = fn(storage, location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 392, in _deserialize
+    return obj.to(device=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/storage.py", line 187, in to
+    return _to(self, device, non_blocking)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_utils.py", line 89, in _to
+    untyped_storage = torch.UntypedStorage(self.size(), device=device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 16.19 MiB is free. Process 649564 has 4.30 GiB memory in use. Process 649565 has 7.78 GiB memory in use. Process 649780 has 9.49 GiB memory in use. Including non-PyTorch memory, this process has 1.94 GiB memory in use. Of the allocated memory 1.55 GiB is allocated by PyTorch, and 143.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+Process SpawnPoolWorker-11:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/whisper_STT/whisper_STT.py", line 10, in init_stt_worker
+    global_whisper_model = whisper.load_model("large")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py", line 150, in load_model
+    checkpoint = torch.load(fp, map_location=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1097, in load
+    return _load(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1525, in _load
+    result = unpickler.load()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1492, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1466, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1389, in restore_location
+    return default_restore_location(storage, map_location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 414, in default_restore_location
+    result = fn(storage, location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 392, in _deserialize
+    return obj.to(device=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/storage.py", line 187, in to
+    return _to(self, device, non_blocking)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_utils.py", line 89, in _to
+    untyped_storage = torch.UntypedStorage(self.size(), device=device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 16.19 MiB is free. Process 649564 has 4.30 GiB memory in use. Process 649565 has 7.78 GiB memory in use. Process 649780 has 9.49 GiB memory in use. Including non-PyTorch memory, this process has 1.94 GiB memory in use. Of the allocated memory 1.55 GiB is allocated by PyTorch, and 143.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+Process SpawnPoolWorker-12:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/whisper_STT/whisper_STT.py", line 10, in init_stt_worker
+    global_whisper_model = whisper.load_model("large")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py", line 150, in load_model
+    checkpoint = torch.load(fp, map_location=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1097, in load
+    return _load(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1525, in _load
+    result = unpickler.load()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1492, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1466, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 1389, in restore_location
+    return default_restore_location(storage, map_location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 414, in default_restore_location
+    result = fn(storage, location)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/serialization.py", line 392, in _deserialize
+    return obj.to(device=device)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/storage.py", line 187, in to
+    return _to(self, device, non_blocking)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_utils.py", line 89, in _to
+    untyped_storage = torch.UntypedStorage(self.size(), device=device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 16.19 MiB is free. Process 649564 has 4.30 GiB memory in use. Process 649565 has 7.78 GiB memory in use. Process 649780 has 9.49 GiB memory in use. Including non-PyTorch memory, this process has 1.94 GiB memory in use. Of the allocated memory 1.55 GiB is allocated by PyTorch, and 143.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+我是阿豪2002年我是生产部007销售行,好的,今天把各部门叫过来开一个这个联合会,这个例会是这样的,咱们上个月,咱们这个各部门先汇报一下咱们上个月各部门的一些相关的情况销售的市场比较成熟行嗯嗯说一下上个季度吧咱们厂面食和面面啊还有灌面还有粉这一块都是成上稳步上升的趋势的嗯因为现在和面面市场的品牌在前面还是那几个老品牌然后方便面中呢,它那个销售量最高的还是这个红烧的红烧牛肉面虽然它这个从很早就有这个口味,到现在一直持续不变现在市场对这个桶装的有什么看法桶装的,其实有一方面人都说他那个怕加热以后,他那个桶内部的内层薄膜有致癌的这个但是呢,因为现在网上也有一些专家都出来已经辟谣了,就是说它这个,咱们那个桶的内部的这一款,这个PE那个薄膜,它是不会,加热以后不会致癌的。我们市场上个月什么效能比较好?产妆的效能总体来说,袋装的销售量比较好因为袋装的其实价格来说还是比较便宜然后居家呀,出去,它都是可以用的那桶装的话,一般这个销售量但是它也是上升的,不过相比于袋装的还是低的嗯然后现在我们这个市场这一块还有这个拌面干拌面也在原先市场上这一款面不多现在我们也推出这一款干拌面它有这种也可以有红烧的还有一种就是咱们这个炸酱的这个口味还是挺好的然后现在这个上了以后这个销售量也是不错的是錯的它的这个量也不小然后味道也更那个酱料嘛更香一点这个销售的也挺好的然后咱们销售这一块呢其实咱咱们从全球来看的话咱们这个方便面销售量非常的大就咱们中国就销售掉了1 3分之1这样的大量也老高度 开发新的市场市场这块也是在逐步发展吧因为你看这些这些各个省市的代理们都有的其实现在然后咱们现在主要是做的一个工作就是稳定这个老客户然后把这些代理的工作跟他们沟通好然后就是让他们追加销量吧因为咱这个品牌是稳定的然后市场也是相对来说还是比较稳定主要是咱们把这个销量得做上去让他们这个给这些各个各个地区的代理区域代理们要就是也会经常激励出一些方案然后把这个销量再提升一点然后也可以根据这个南北方的差异呀这个口味也会有我们也会去做调查,然后绑配给咱们生产这一块然后看看还能不能研发出新一款的方便面口味比如说咱们南方人还是比较喜欢吃辣一点的韩国那块有一个出名的火鸡面但是在国内做的味道还是不行我想的是但是咱们这个味道不行跟咱生产有什么相处呢?火鸡面?火鸡面目前咱们这边在做火鸡面咱们在做,但是总体来说做的不算多因为咱们这个地区呢,不是那种川鸡那种特别爱吃的刚才他说那个火鸡面味道咱们这边做不开那种味道吧但肯定跟人家韩国那边那个品牌相比来说差距还是大的是 一方面是机器设备的原因咱们机器设备其实已经用了很多年了在做料的精细程度上没有人家那种先进的设备没法比另一方面就是咱们这儿的员工接触这个调料配方就是没有人家那么严密毕竟它也是一个外来的食物吧然后人家那个外国的食物的配方肯定就是说也是法人家也有自己的专利肯定把控制还是比较严的吧让我们就是也不是很好能研制出就是跟人家那个味道像皮米的这个配料佐料吧嗯那怎么那你们两个是怎么想的市场这一块有需求市场这一块是有需求的需求量还不少因为现在的人们都是会通过网络也会看到这一款面就是说它很辣很好吃很过瘾市场还是有的因为传统的光面面还现在市场稳定,款式也稳定了,但是你的款式也得往上走,也得有所创新,这样你的销量才会拓宽渠道吧。生产这边有什么新的款式吗?生产这边一方面我们要保证老品牌的产交然后另一方面可以添一个新的生产鞋这方面有研究吗?对,说到新的生产线,咱们车间有10条线,有5个板,但是现在开的线只有6条,也就是说咱们员工的数量没有达到。需要多少人?对,在保证老品牌的创造的程度上,研究新品种的人比较少。有什么研究新品的吗?我们目前想要研究就是刚才那个火鸡面我们也想要就是以再投入投入过程中呢就是人力物力就是显示的这边有什么难度吗?有在配料的精度上我们很多人就是尝试了各种各种比例的比例的掺杂但是味道还是差点人意嗯要怎么去解决呢?有办法吗?有什么方法吗?问了一些技术人员,他们说,咱们现在的社会是智能的社会,可以用智能的机器代替人类的操作。如果一个人一天24个小时,他不可能全天无息地研究这个配料。而如果用机器来自动
+[Audio Detection] 在 592.81 秒检测到关键词 '好交交'。
+detection_time: 592.81, current_time: 589.00
+从这个品牌就咱们的品牌集中度这个区间来看咱们那个方便面市场集中还是集中度非常高的就是说咱们在这个市场上占比还是比较大的嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯好 起来吧建一些比较重要的回报一下就行好的基于上个月的生产量达到了我们的生产目标但是相比之前确实有所下降如果按长期来说的话是一个不乐观的情势基于原因呢一方面就是因为人力冷军另一方面就是咱们设备的问题设备要换了对经常需要维修维修人员充足吗?维修人员目前基本上够上机器坏的速度但是基本上还是可以的经常坏是设备老化了还是有问题?还是怎么操作问题?都有的,一方面就是设备老化因为我们的车间在这上面,所以油比较多然后对机器的运转维护就是比较困难那现在目前一些像咱们这些厂家国外国内的一些这种厂家他们在这方面都有什么应对他们机器也是经常换有什么应对就我了解呢其实在咱们这一块其实差不太多因为他们也是跟在情况差不多对 毕竟咱们的工厂也不算是也算是一种中保证水平这方面有想过办法去解决吗有就是研制新产品大力投入机器生产但是呢它的成本近期来说肯定会有所涨但是但是从长期来说长期的长期来说然后就是机器可以代替人力嗯从一个长远的方向来看呢它机器肯定是要比现在的生产模式要好得很多生产速度也快然后头期虽然那个投入大的话然后后面的话那个产量它是高的相比于就是人工在生产线上来说它这个生产效率是高的因为人工它是也要咱付费的是吧也需要付薪水的但是相比来说肯定是机器要好一点安环这边上个月的一些工作的情况安环这边安全这边上个月中旬咱们厂子是进行了一次防火和防灾的演变上个月咱们出现这个安全事故咱们厂子安全事故是出过一次的出过一次之后咱们再往后之后的这个是因为什么出的虽然过程的操作不到操作不到像这个漏电的事故所以咱们从那一次事故之后往后咱们每个月会定期的做一些防火防灾防电的一些演练然后咱们也会组织这些员工对这些紧急事故处理的一些能力对他们这些能力进行一个提升目前咱们厂子的一些摄像头这方面这样咱们场合是有一些监控死角对这个需要这个咱们厂子有记者怎么厂子的摄像头老早之前那些对咱们这个下去吧打算跟台湾申请去把这些摄像头换成新式的跟上这个新的电子产品换上这个换上一批新的摄像头好 咱们目前咱们目前安防部门的保安有什么工作情况?保安的话,我们现在采取的是24小时三班倒,保证每个时刻都会有人遇到突发情况。目前咱们保安有多少个目前咱们保安是一个班一个班有240名保安然后分成十个队一个对24个月,然后不定期的在房产自己赚目前咱们现在国家对环保抓得比较紧环保这一块,咱们这儿主要是因为咱们是方圆院嘛是主产的方圆院,所以油烟比较大对然后对于这个咱们那儿因为下个上个月咱们那儿环保是
+[Text Detection] 在 1012.88 秒检测到关键词 '焦焦',current_time: 992.00, 问题文本: 是合格的然后下个月环保局说要在咱们这儿进行一次读查例行检查然后咱们这儿要进行一次改造就把这个烟道还有这个油烟改造新风系统对你好焦焦基于之前我们讨论的内容关于设备老化和维修问题你提到了设备经常
+合格的然后下个月环保局说要在咱们这儿进行一次读查例行检查然后咱们这儿要进行一次改造就把这个烟道还有这个油烟改造新风系统对你好焦焦基于之前我们讨论的内容关于设备老化和维修问题你提到了设备经常这一块咱们要改造,让现在的油烟变得更小,因为现在整个国家的环境质量都在上升,所以咱们要搁上时代。目前环保设备情况是什么样的情况咱们这这个新风系统是两三年之前了,咱们现在要及时的更换,换成新的。再一个就是咱们这个空气清华器也要换成新的。因为它每一个时段,它的绿,中间的绿网啊,还有这个绿芯啊,都要及时的更换。还有车间的抽风也感觉到不安车间的排风系统还有空调都需要及时更换 保证大家都有舒适的工作环境 这样工人的效率也能更高还有就是进咱们厂里的那些公司的门禁这方面我记得有一次咱们这个保安疏忽了好像没让人家分析有些事情是那次出现失误之后我们把这个保安就让他开除他然后对上下队队这些保安我宁愿开的大会高抬他们应该怎么办每个人都有自己的公牌进场的话就有些公牌进场必须凭不管他,如果他没带就算认识也不让他进对对对,咱们就是决不逃不认识对还有咱们这个目前还有一些刚才也说了这个监控司这样定期的还有就是咱们这个线路线路老化的话咱们会继续的更换继续的找一些维修工人还有检查工人定期的检查维修可能出现一些意外啊什么的可能会有一个线路独立生产这边的一个线路还有咱们库房的那些原材料因为那些还都算属于义务加强这方面的措施尤其是生产这间比较有油的成分各种各样的油管对,所以生产这边生产安全很重要生产这边生产车间定期进行这方面安全知识的培训和我们合作进行这方面的安全推进还有咱们目前咱们的生产车间现在不是夏天了吗这方面咱们生产车间温度多少热吗相对之前肯定会热的但是咱们车间就是有几个大排的风扇在保证温度也是比较适宜的保障了员工的出入度嗯行那就是咱们这个刚才说的这个打开风扇一定要这个开启呢运转起来因为夏天嘛那这个啊会比较炎热有可能出现中暑这个情况所以厂子要生产车厅要准备一些这个绿豆汤啊可以这样有没有去做行吧行吧我之前有被那种医药品放在那边我们市场这一块的话就是说一下油渣和废油渣的方面其实有一段时间前头几年生成了一家这个废油炸的这个方面面把一个品牌给拉起来了它那就是主打废油炸的但是呢按照着这个当时市场的这个趋势呢我们有有想过要就是生产一款就是这种也是废油炸的但是就是看这个市场这个销售比来说其实这个大众的消费啊还是比较虽然说是肺油炸的比油炸的要健康但是这个销售来说还是这个油炸的销售比率还是高一点因为咱们怎么说呢这个油炸的说是经常吃油炸光面面的健康但是都是经过辟谣也不是那样的如果说要是吃非油炸的那为什么直接买挂面吃肯定还是因为油炸的方便面板既好吃它比非油炸的要好吃并且传统的消费习惯来说大家还是喜欢了这种口味的它这个口味来说非油炸的倒是没有油炸的口味要好口感要好是这样的现在方便面市场的产品市场很饱和了如果再有新的方便面品牌插进来很难进入了我们现在市场要做的就是去走访观察吧然后把这个产品做得更高端因为这个市场保格了,只能靠打价格战,降低价格来增加销售量的话,这个不是长远的一个方式,可以采用这种方式,但是还是想要把产品往上走。再把这个搜索渠道扩宽一点还有这个销售渠道的这个层次打得更宽一点是这样的,避免就是说咱们竞争力下降咱们可以有高端的,就是在城区高端的这种产品也可以就是说农村这种稍微低端一点的产品就是平价的产品都有有些白褸
+[Audio Detection] 在 1553.57 秒检测到关键词 '好交交'。
+detection_time: 1553.57, current_time: 1550.00
+半烧面,它在保证了你会现在那个技术生态这个成熟吗?还有待成熟已经可以投放了吗?我想说的是,这个面呢我希望就是销售部通过走房调查然后看一下这个面的销售情况看看是不是合现在生产行可以配合这一块去做个调研如果可以的话我们将会加大这方面的力度也会在两个月之内就会有产品投放我们要加大这方面的研究还有就是近期一些歌舞伴的一些这个好情问题目前咱们部门有迟到的吗?有旷工的吗?从安安到哪里?那可能部门这边主要是保安这边因为咱们保安是比较多嘛所以咱们实际上是人脸加指纹识别签到打卡,签到和签退会有一小部分人会迟到我们也会具体问一问什么情况如果是真的有事的话,我会调解如果是无故迟到或者旷工我们也会进行一定的处罚再一个就是说咱们这儿安全维修和检查人员他们这儿是我们要求他们是不能迟到或者旷工一定不能迟到或者旷工因为安全无小事嘛对咱们这儿就是要保证他们随时在搞这就是这个案发现场的情况我们销售这一块,我们销售一般都不做班,咱们去跑业务,我们这跟做班的地方不一样。咱们打电话这方面,目前咱们都是跑吗?打电话多远?打电话的也有,但是他们把任务都分配到各个人头上了,他们有固定的我们这边就会每个时间都会分发给他们固定本人他们让他们在这个时间内必须把这些回访客户的电话都得打到就是按这种不过就是说让他们就是抽一让他们这一天都在这儿打电话是不是这样是让他们自己调配自己的时间去把这个电话都打完了然后必须得在每天下班的时候我们都要就是说你要去拜访客户我今天打了个电话你把日志写的要清楚一些,有什么问题要汇报就是你的进度做到哪了都要汇报我们是采用这种方式但是如果我们现在没有这种按班按做些时间,就是很正常的做班这个打卡时间但是我们就是看他这个,如果去拜访也必须得拍照打卡是这样的如果出现它写日志不合规格我们也会这个三月的炒发嗯我们生产部就是迟到早退的现象还是比较少的只是偶尔会有几个人迟到,然后就是导致生产线开的比较晚但是我们也会有记录最后月底考虑嗯嗯特别还要想要回报的市场那边怎么样?生产过程还是就是咱们设备的问题我想就是公司应该加大力度增加资金来研究机器生产其他的没有什么安华这边主要就是如果增加这个新机器的生产新机器如果来的话咱们这儿也需要一部分这个新机器的维修和检查人员還需要新機器的一些超多人然后别的还放那边那咱今天这个会就先开到这了下去以后各部门把各部门这个工作再安排一下具体的安排一下行吧好散会请不吝点赞 订阅 转发 打赏支持明镜与点点栏目您
+[Text Detection] 在 1925.18 秒检测到关键词 '焦焦',current_time: 1922.00, 问题文本: 您好,焦焦。基于之前我们讨论的内容关于生产部门提到的新机器维修和检查人员的需求
+好,焦焦。基于之前我们讨论的内容关于生产部门提到的新机器维修和检查人员的需求会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200702_S_R001S01C01_agent_added/out_001-F_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 800000, dtype: float32, min: -0.1719970703125, max: 0.168182373046875
+问题音频时间长度: 50.0
+
+
+[Agent] 接收到问题: 您好,焦焦。基于之前我们讨论的内容关于生产部门提到的新机器维修和检查人员的需求你认为公司应该如何安排这些人员以确保新机器的顺利运行和维护同时考虑到销售部门的非作班制度我们应该如何优化
+, 1735920534.9334185
+
+
+[Agent] 最终接收到问题: 你好,焦焦,针对火鸡面口味问题,如何改进以满足市场需求?
+, 1735920535.4227464

@@ -1,0 +1,207 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200623_S_R001S05C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+Starting processing from 0s, total chunks: 82
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.16s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+Initializing KWS models...
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.27it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.37s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.26s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.09s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.11s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.74s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.92s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.74s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.68s/it]
+我001 知心总店019 我是游戏市长015 我是游戏运营我是游戏策划今天大家交换一会儿是开一个咱们这一步的沟通交流会看看这个我们这边的发展然后我们的一些方向同时咱们有什么互相之间有什么疑惑就要解答一下就这样提问一下解答一下有什么无法解答的疑惑的话我给大家说一下解释一下开始吧这次会议您是策划中心不是现在我们想策划一款游戏这个游戏呢需要就是人民币玩家也能玩不充钱的不充人民币的玩家他们也能玩人民币玩家也可以玩这样呢就是互相都能够玩出成果来的一款游戏但是呢又要有托让人民币玩家不断地给充钱因为我们是以盈利为目的的游戏这个能理解吗对我们这个游戏呢就像于比方说我们的托给充一万然后人民币玩家他充了5000,他就打不過我們然後人魚玩家著急了,他砰砰充了20000然後就把我們這個充10000的托兒就給打敗了然後我們充10000的托兒呢我們繼續充,充30000然後,把他就打敗了然後他呢很著急一下就充50000,把我們這個托兒就給打敗了一个心理博弈这属于游戏上面尤其是对于竞技的游戏上面是一个很常见的一个心理博弈这么一个行为主要的心理就是能在游戏里面花很多钱的人他其实不在乎钱他就在乎赢只要他能够赢 他开心他不在乎花多少钱对这就是我我们呢,用以这种方式的游戏来赢利,这是我们的目的。除此之外呢,就是说你让他赢的话,你可以让他赢,但是你让他赢的比例不能超过50%,因为你要是总让他赢,他就没意义了。对,有输有赢。对。当他在输了之余,然后突然赢个两把,那他会很开心。对,就类似于……让他赢的机率大,输的机率小而且他在我们游戏当中有排名而且花钱的人民兵玩家的排名比较靠前这样的话他就会在我们这个虚拟世界当中有成就感他可以登顶,就是在排行榜人民兵玩家可以在真实人民兵玩家可以在排行榜是很靠前前五前三这种的但是它绝对不能长时间发展前移如果它发展前移的话我们要有一个托儿在它后面紧跟着比如说它的这个榜一是一百万那我们的托儿就要九十九万八它也在榜二以一种随时可以超过它的情况甚至某些时候我们可以直接让它超过我们这种情况下制造一个紧迫感紧追着他但是又不超过他马上要超过迫使他呢我又要拉他远点所以说然后人民币玩家呢也不断地在通知人民币这样会造成他的地位是不是会不保呀所以说他也一辈子在升级在花钱同时为了防止毕竟人民币玩家他只是不想动脑子不代表他是傻子所以这种情况下我们不能单纯的只找一个托儿来征队我们可以找好几个托儿比如说我们去反正我们托儿是有多少要多少无非就是几个号码虚拟的我们可以找三个托儿三个托儿之间互相竞争在这种情况下把真实人民币玩家牵扯之内就是我们三个托儿同时竞争挡一挡而挡三结果把真正的人民币玩家踢到了挡四对,然后他就很痛苦,所以他就要当保姨,然后他就会给我们带来很大的收入。对,所以这就是一种心理博弈测试。听到我们听你讲的吗?这个就是按这个来说话的一条游戏。嗯然后就是游戏的市场问题对市场主要是针对哪些人你考虑一下面临我们面临的是什么样的市场还可以做一款老少通吃的游戏对啊但是这应该非常的困难毕竟年轻人的心理状态跟老年人的心理状态是不同的然后而且非常少的大龄玩家都是都是经常接触的而且又很难以对我们这个游戏就是你不充钱他也能玩对但是你充钱以后就不一样了玩更爽充钱以后你就会能说老赢吧但是冲前以后你的感觉明显是不一样的比方说你冲前以后你的游戏场景都变了明显的差距对你的服装就会更加的亮丽你的效果会更加的光彩然后让别人就蒙一家都记住你了这个玩家他的很漂亮对吧实际上你打听我在里面花了一千多块钱不多是吧但是你一个人花这么多很多来源花这么多那我们这个游戏不就成功了吗嗯那这样的话我们要就是说这边一个主要点首先我们如果按照市场的想法你要一个老少通吃的一个游戏的话我们首先要知道对于少这个层面什么样的游戏你才会让人上对这种一般是经济性比较强的游戏这个话运营这边应该有很多这种的例子吧经济性很强的游戏基本上都是一些这个非成年人或者说青年这种人在玩中年是不太喜欢这种进步性太强的游戏对他们是什么点那么老年人或者中年人那种年龄稍大点的人他们比较喜欢玩的是哪种游戏呃他们应该喜欢玩的是那种大型的那种单机游戏除了单机游戏也是玩风景玩什么的还有就是应该应该就是呃魔兽世界一
+[Text Detection] 在 502.52 秒检测到关键词 '娇娇',current_time: 486.00, 问题文本: 一般来说那是属于情怀这个是对情怀这层如果抛开情怀这层技术大人他们喜欢玩棋牌类对对你会发现他玩小小乐你好娇娇如何平衡人民币玩家和非人民币玩家的游戏体验对都地主都地主啊一项棋
+问题音频片段长度: 137611, dtype: float32, min: -0.240325927734375, max: 0.262847900390625
+问题音频时间长度: 8.6006875
+
+
+[Agent] 接收到问题: 如何平衡人民币玩家和非人民币玩家的游戏体验对都得读都得读
+, 1735636846.3765864
+
+
+[Agent] 最终接收到问题: 如何平衡人民币玩家和非人民币玩家的游戏体验对都得读都得读
+, 1735636846.376687
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+游戏开发商可以通过提供多种语言支持、本地化游戏内容、设置不同的难度和货币系统等方式来平衡人民币玩家和非人民币玩家的游戏体验。同时，也可以通过开设不同等级的会员制度、推出特别活动等方式吸引非人民币玩家。最重要的是，游戏开发商应该始终坚持公平、公正的原则，避免任何形式的歧视行为。
+talker 输出结束
+般来说那是属于情怀这个是对情怀这层如果抛开情怀这层技术大人他们喜欢玩棋牌类对对你会发现他玩小小乐你好娇娇如何平衡人民币玩家和非人民币玩家的游戏体验对都地主都地主啊一项棋那性别肯定要男女都要这种情况下除了在打斗上这个经济打斗上特效动画一些建模还有音效等等这些做到不说做到极致吧可能是做到上等之外对于整个这个游戏的场景你要尽量做到美轮美奂这样的话你可以从两方面吸引它的场景可以吸引这个女性玩家它的这个打斗的特效的等等这些比较帅气的技能来吸引男性玩家各种小模式啊然后休闲类的模式对啊进入游戏你可以选择选择有冒险模式啊有棋牌类模式或者说直接就有一张大地图然后不同的小玩法就镶嵌在里面可以做成类似寻宝那种的你走着走着旷人望着你像休闲类玩家一般是不喜欢打斗的那这样的话你做这个游戏的话你必须要有一个机制就是说我们拒绝任何人打斗就说属于不是我他不受攻击,但也有攻击防御,只能游览游览的时候,我们可以封禁好游览会有很多小惊喜,类似于寻宝隐藏一些有意思的道具没有这个人类秘密吧玩家直接冲钱买个道具好啊但是绝对比那个要有趣我们不要求它实用性当然我们要求它有趣味有趣味这样的话我们在玩家在游览当中发现这些道具的话他需要参加各种小游戏就是休闲的游戏来进行解决或者说进行这个打牌打麻将连户多少次就能获得这么一个小道具同时还给你一个成就这个道具特别稀有的话你来个全部广播这样人气也有了然后玩家的心情也有了然后玩多了还可以上读对 玩多了还可以上演哪怕他不上演他每天在游戏板逛着体现在我们的运营数据上这就是一个很可观的在线人数啊我们日国人数就很多只要有人玩,然后我们的游戏只要有人来,我们就不缺新人号有人玩,那这个名就能传出去名传出去,就不缺新人号,行进来看新人进来,他们挡吧,百分之五其实其实的流失率只要新人够多剩下的30%也足够了有人玩我们的游戏我们的游戏就会更加有成本没有人玩那就没有意思只要能能选择我们的游戏他进来了以外哎挺好什么只要他他愿意有他开心的东西就一叫你说的有虚荣心人他进来以后能够导导乐趣而且他有成就感这样他就会不断地去玩这个游戏了也不见得非得要要他充钱就不充钱的玩家玩这个游戏他能玩也能带动这些人民币玩家对他也就不充钱他们不代表别人就不充钱但是别人充了钱了就比他玩得更加的开心要知道对于人民币玩家来说其实普通玩家才是基础你知道一圈人民币玩家充的钱让谁看呢对吧咱们公司里面谁看内网是吧对咱们谁看随便改点数据都不是要多少多少是他是让普通玩家看的不然他充多少钱谁看呢对普通玩家就是绿叶然后我们的人民币的大客户就是红花我们绿叶才能称出红花来红花永远都是在榜上的对然后来说到这个游戏皮肤的这件事我觉得游戏皮肤啊一定要做得好这样才能更加的吸引一些人吧对我们要定期的投放一些而且这个皮肤这件事一定要各式各样的都有吧搞怪的有正经的有比较炫酷的比较仙的那种我们可以搞一个定期的搞个名乐搞一个活动搞个比赛然后获得胜利的不充钱的玩家呢他也能够得到一些简单的皮肤但是充钱的玩家呢他就能买到更好的皮肤场景更好的这些就是会鼓励一些NBA玩家会更加的多充钱对吧他们不在乎那么一点小钱嗯他们只在乎的就是游戏当中的虚荣心他们愿意在游戏当中充王充霸是吧然后呢他们我们也可以让他在游戏当中拿到最稀有的装备这样的话他会更高兴了因为难道比方说的通刀吧就一把哎,出NB玩家只有登頂的玩家才能夠擁有如果他被別人擠下來了對不起,從而自動消失已經被別人拿走了就是這樣類似於吧像這個這個皮膚裝飾類的目前的趨勢已經不再是這個官方发行的东西然后玩家买的东西已经逐渐脱离这么一个趋势了目前趋势比较大的就是手动动手我们可以提供这么一个制作这么一个插件或者这么一个模块我们提供基本上我们设计师能够想到的所有的这个部件我们需要零碎的布架提供所有但是有一部分是需要人民币包法解锁的这样的情况下,他们就可以自行搭配那你说的就是说,我们这些布架能够组合成一件装备,或者组合成一件皮肤主要是组合一件皮肤组合一件皮肤,是吧对,比如说,完全就是类似于让他们设计但是你要知道很多基本上绝大多数人的这个美术功底是没有的但是他们的审美东西你要知道是绝对有的就是类似于眼高手低他们绝对眼高这种情况我们叫弥补弥补他们这个手低这么一个缺点 那我们就把这个设计好的草图类类的或者说这个布件类类的让他们进行傻瓜式修改不
+[Text Detection] 在 1012.50 秒检测到关键词 '娇娇',current_time: 999.00, 问题文本: 不管他怎么改至少他看起来是个衣服的样子否则的话你让他们自己设计的话绝对能给你设计出来啥不是你好 娇娇基于之前我们讨论的内容关于游戏设计中提到的休闲类游戏元素和竞技性结合的问题你认为我们应该如何平衡
+问题音频片段长度: 617686, dtype: float32, min: -0.305389404296875, max: 0.294891357421875
+问题音频时间长度: 38.605375
+
+
+[Agent] 接收到问题: 我们讨论的内容关于游戏设计中提到的休闲类游戏元素和竞技性结合的问题你认为我们应该如何平衡这两方面以吸引不同性别和年龄段的玩家同时对于游戏内的皮肤设计我们应该如何提供多样化的选择以满足不同玩家的审美和个性化需求呢
+, 1735636881.6143486
+
+
+[Agent] 最终接收到问题: 我们讨论的内容关于游戏设计中提到的休闲类游戏元素和竞技性结合的问题你认为我们应该如何平衡这两方面以吸引不同性别和年龄段的玩家同时对于游戏内的皮肤设计我们应该如何提供多样化的选择以满足不同玩家的审美和个性化需求呢
+, 1735636881.614606
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 61, Total time: 2.4902 seconds, One token time: 0.0408 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在设计游戏时，我们应该注重平衡休闲性和竞技性，以吸引不同性别和年龄段的玩家。一方面，可以通过提供多样化的角色、场景和任务，使游戏更具有趣味性和挑战性，从而吸引玩家；另一方面，也可以通过设置不同的比赛规则和奖励机制，使竞技性的元素得以体现，同时保证游戏的可玩性和公平性。
+
+对于游戏内的皮肤设计，应该提供多样化的选择，以满足不同玩家的需求和喜好。可以考虑推出一些主题性的皮肤，比如节日限定、角色扮演等，这样既可以增加游戏的趣味性，又可以让玩家感到自己的独特性。此外，还可以根据用户的反馈和评价，不断更新和推出新的皮肤，保持游戏的新鲜感和吸引力。
+talker 输出结束
+管他怎么改至少他看起来是个衣服的样子否则的话你让他们自己设计的话绝对能给你设计出来啥不是你好 娇娇基于之前我们讨论的内容关于游戏设计中提到的休闲类游戏元素和竞技性结合的问题你认为我们应该如何平衡在一些可修改框架之内修改但是修改完哪怕他修改成最差的东西那也能看出来这一件衣服还还还可以那他在这个找配件当中是否嗯需要花费人力费还是我们可以对80%的基础配件免费或者说这个70%的基础配件免费10%的配件是可以通过游戏时长累积游戏时长来过去剩余20%的配件里面有15%的配件可以通过NBA购买最后的5%的配件是可以通过新鲜的游戏获得然后在玩游戏当中获得的比方说皮肤碎片对吧对而且这一类的是可交易的而且这些碎片都是可以可以交易的对 都可以交易的人民币购买的碎片也可以交易吗人民币购买的碎片不会交易的对吧 这个是但是这个不能交易游戏时长这个碎片也是不能交易的然后那个什么碎片是可以交易的对 这样的话就是你只有你玩的时间长以后你才能够获得这个碎片对所以这个碎片是不利的除了就是你这个解谜或者说你运气够好获得的碎片是可以表现的没办法有的人就是运气好这个运气是我们控制的运气也可以是我们控制的也可以不由我们控制这个无所谓我们按时发放这个无所谓但是关键是要让人民币玩家有钱花钱你说他往里面反正他只是单向充值它可以把人民币兑换为游戏内货币但是不可能把游戏内货币兑换为人民币这是我们官方渠道没有不管私下是没办法,官方是可能没办法所以至于人民币玩家花多少钱去买别人手里的稀有的机品服装废片,那不存在,爱好都能花的可能最后钱都在我们手里这个时候就行还有呢我想问一下就是如果是类似于王者荣耀这样的游戏还有多少年高峰时期高峰时期多少年这个是也说不准也许王者荣耀能够一直运行下去直播他的它可能会改变运营模式它不取决于你认为它这个游戏它可以生存多长时间不取决于它游戏本身而取决于下一个能替代它的游戏成功出来如果下一个能替代它的游戏明天就能出来网友人家比过过来如果下一个能替代它的游戏永远出不来想要模仿他的或者说想要抄给他但是却根本就是乱七八糟的地方王者荣耀在这一堆垃圾里面衬托的他就唯一一个能玩的游戏没有什么所以什么时候替代他能出现呢那就他没什么而且现在好玩游戏也是蛮多的全熊帝你一管可以出像英雄猿 王尔荣耀 和平精英 还有吃鸡和平精英就是吃鸡吃鸡和平精英前几万有吃鸡然后你发现了吗这很多东西你说的是五款还有那个 桃李塔罗布桃李塔罗布六款游戏其中一款桃李塔罗布50%的人然后剩下五款游戏里面有四款是同性戀剩下最后一款吃鸡这个游戏自从出来寿命精之后吃鸡已经很少了这就是我们的包括比方式和这个端口以及这个人群选择上面就是运营负责任的话运营的话你要知道的就是对于这个游戏来说你要知道能有专门的时间大把大把玩游戏的人很少如果就靠那个吃饭你吃到别饿一百个人里面可能都没有一个人能靠我们来控制 让所有人参加这个游戏所以我们就那就成职业玩家对职业游戏玩家才能一直有时间玩游戏才能一直活跃起来 搞激情对 所以这个游戏呢我们家大多数人都有有时间能玩哪怕就是它一天每日可以暂停不不不 不只是这个如果 如果 如果这个中午下班了然后吃完饭了还有半个小时时间然后这边有电脑和手机那你是选择来一把英雄王者王者荣耀呢还是来一把英雄荣耀呢当然是王者荣耀了为什么因为它时间短了对吧而且没有电脑不就算有电脑的情况下你选什么王者荣耀对吧所以就说时间很长像英雄联盟你时间长了一个小时都有可能吧王者荣要一个小时举我是每天我只见了四个还算特别特别基本上二分钟左右结束了正好卡在你半个小时休息时间之内二分钟玩完游戏洗把脸吃点东西收拾收拾就没上班英雄联盟你不可能玩玩你到上半时间了,你选择不玩了还是接着玩都是两难的选择我都觉得王者荣耀有时不二十分钟,三十分钟都要长我觉得我们要是真的做一款游戏的话就是一局有长有短,哪怕短的话就五分钟就可以了我们可以让他选择长的话也不超15分钟不能超过半个小时半个小时就会散潮了所以是这个什么属性就是说这属于端口属性就像手机你拿手机玩了一小时超过半个小时你就喊到了那你就很累了但是你如果拿电脑玩了一小时你两个小时都不会有问题所以这就是端口的问题我们要在我们要在什么平台上手机玩游戏,手机用电量,你得考虑电脑的话,没必要找有电就行手机大概需要几个Z,最好两三个Z就可以不要太大而且玩家玩的流畅不要太多的卡顿这样的话也会难度有湿度有玩的有简单的那这样的话我们就可以决定这个游戏发布的什么情况下手
+[Text Detection] 在 1543.35 秒检测到关键词 '好教教',current_time: 1539.00, 问题文本: 手机端安卓跟苹果你好教教如何平衡游戏内人民币购买和游戏使长获取的配件交易机制这都属于手机端我就说那你说是电脑跟手机端能连接吗
+问题音频片段长度: 164011, dtype: float32, min: -0.239654541015625, max: 0.28790283203125
+问题音频时间长度: 10.2506875
+
+
+[Agent] 接收到问题: 你好教教如何平衡游戏内人民币购买和
+, 1735636917.5045629
+
+
+[Agent] 最终接收到问题: 你好教教如何平衡游戏内人民币购买和
+, 1735636917.5048249
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 131, Total time: 4.7248 seconds, One token time: 0.0361 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在游戏内购买物品时，通常有两种货币可供选择：人民币和游戏内的虚拟货币。玩家可以通过充值人民币获得游戏内的虚拟货币，也可以通过完成游戏内的任务、活动等方式获得虚拟货币。玩家可以根据自己的需求和实际情况来选择使用哪种货币进行购买。
+talker 输出结束
+机端安卓跟苹果你好教教如何平衡游戏内人民币购买和游戏使长获取的配件交易机制这都属于手机端我就说那你说是电脑跟手机端能连接吗如果它有手机端和电脑端同时连的话,基本上就是电脑端持续的,特别多持续。这不是一个很难上的问题。一个需要手抓键盘的能不能勉强操作的东西,和另一个只要点屏幕就行,还特别方便,难不成不成。这差距差不多,我可能可以考虑一下是否能够串联。要是真能串的话,而且不受影响。但是你需要一个模拟器如果是模拟器的话只匹配模拟器那就是说电脑玩只能跟电脑玩那就是说也是电脑跟电脑的玩家手机跟手机的玩家这样的话也就等于是不能穿但是都可以是这样其实也可以有另一个问题就是说并不对于操作上面并不凸显美国更好或者其实里边操作的无所谓你像FPS的游戏你肯定是鼠标操作的FPS对对一人称射击游戏你肯定是鼠标操作鼠标操作更有优势对反正像这种MOBA的游戏你肯定是手机上触摸屏外操作的对但其实对于RPG游戏来说的话用什么模式操作球,无非就是鼠标点点,或者说拿手指头点点,或者鼠标点点,其实两者的效率是畅通的。这种情况下,它就可以完全做到两者共同。所以双方都在一个情况下。那样的游戏它是可以互相连通的?对,它是可以互相连通的,但是主要区别在手机的平衡。再小的电脑屏幕,它会比手机屏幕要大。不管再小的电脑屏幕,它画质怎么刺怎么扎,它要比手机屏要大,看的东西要多大。这个是不可否认的。手机不能够比你大。但是手机这个东西……太大了就不方便了对它就是这么要求的就是这个尺寸再大一点装起来也不方便打电话也不方便对嗯这就属于你你在电脑屏幕上你能看到一个人在那拍但是你手动用就看不出来对像是太小了你看不到对所以这种情况下我们要如果想要玩家都不通的话,首先我们要把视野这一方面给它打开就是说对于人,对于这个人物,我们可以,这个,原则方式意思是一视同仁,所有的角色,所有的同性角色周围都有一圈非常明显的歧视就可以透过地图或者透过地图中的草的树的那种东西就可以看到这个东西另一种就是当自动识别电脑端和电脑端进行游戏的时候它可以不显示一切正常但是电脑端和手机端进行每一块游戏的时候电脑端对手机端是单向透明的手机端可以看到电脑玩家的一切对,这样的话有优势也有劣势也不至于别的玩家比如说你是电脑玩家我们这儿手机玩家就吃亏了这样的话你有你的优势但是你也有你的劣势从目前的游戏环境来看的话我比较倾向于所有人一致同仁否则你就会出现那种败卦你像这个电脑端和电脑端是双方正常的电脑端对手机端来说手机端看电脑端是完全单向透明的这种情况下既然我们能够实现这种技术说明这个技术在我们这个游戏安装包里是有这个模块的主要有这个模块它就有外挂开发商开发者能够把这个给返回来然后把它应用到别的端口上这样的话就属于我们自己开发的一个外挂然后让外挂开发商拿去用对于我们来说是很不利的所以我尽量也把这种仪式统认有外挂对门的人来讲就是一个工序别人直接就用游戏软件外挂来玩这个游戏而且而且还要有效的防止外挂只要有游戏肯定是有外挂的谈到这个外挂的突然就想起了对于这种使用web程序来破坏游戏平衡的你们有什么好的方法我建议加强防火墙罐还有一种方式就是蓝洞一样的不断的更新来防止外光就是更新的次数比较频繁更新次数明满的话会让玩家很不满对尤其是你要手机端的话两天一更新你觉得更新的确是一个防范外挂的措施但是不是一个根本里面根本的原因底找只要外挂有我们能够发现他就得给他怎么说呢封他号叫他知道痛苦不敢再用来挂才行你對於白掛隊的建議是什麼?我建議封號除了封號?除了封號就是加強我們遊戲的防火牆還有那叫什麼5D了加强我们的游戏比较可能目前的话可以通过这个一个目前可以实现的一个技术核算来进行因为败卦嘛无非就是在本地进行修改然后把数据影射到LG上可以把本地的文件都保护起来吗不,不光是保护起来我们就没有本地的文件哦,直接从我们直接就是云端游戏你可以以个人计算机身份联系到云端我们可以全线这种情况下它这个突破整个整
+[Text Detection] 在 2063.71 秒检测到关键词 '焦焦',current_time: 2052.00, 问题文本: 整个游戏这个服务器方向的可能性和比较破本地游戏反编一盒要拿很多而且你好焦焦基于之前我们讨论的内容关于手机端和电脑端在游戏公平性的问题你怎么看待实现电脑端和手机端的互通
+问题音频片段长度: 637995, dtype: float32, min: -0.319580078125, max: 0.356231689453125
+问题音频时间长度: 39.8746875
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于手机端和电脑端在游戏公平性的问题你怎么看待实现电脑端和手机端的互通以及如何平衡两者之间的视觉差异和操作便利性同时针对外挂问题除了封号和加强防火墙外还有哪些有效的技术手段可以防止外挂以为护游戏的公平性
+, 1735636949.732657
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于手机端和电脑端在游戏公平性的问题你怎么看待实现电脑端和手机端的互通以及如何平衡两者之间的视觉差异和操作便利性同时针对外挂问题除了封号和加强防火墙外还有哪些有效的技术手段可以防止外挂以为护游戏的公平性
+, 1735636949.7328496
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：游戏公平性 互通 视觉差异 操作便利性 外挂问题 防止外挂 技术手段
+
+
+提取的关键词: ['游戏公平性', '互通', '视觉差异', '操作便利性', '外挂问题', '防止外挂', '技术手段']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:261: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+
+Token count: 126, Total time: 49.4380 seconds, One token time: 0.3924 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：游戏', '公平', '性', ' ', '互通', ' ', '视', '觉', '差异', ' ', '操作', '便利', '性', ' ', '外', '挂', '问题', ' ', '防', '止', '外', '挂', ' ', '技', '术', '手段', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 但是手机这个东西……太大了就不方便了对它就是这么要求的就是这个尺寸再大一点装起来也不方便打电话也不方便对嗯这就属于你你在电脑屏幕上你能看到一个人在那拍但是你手动用就看不出来对像是太小了你看不到对所以这种情况下我们要如果想要玩家都不通的话,首先我们要把视野这一方面给它打开就是说对于人,对于这个人物,我们可以,这个,原则方式意思是一视同仁,所有的角色,所有的同性角色周围都有一圈非常明显的歧视就可以透过地图或者透过地图中的草的树的那种东西就可以看到这个东西另一种就是当自动识别电脑端和电脑端进行游戏的时候它可以不显示一切正常但是电脑端和手机端进行每一块游戏的时候电脑端对手机端是单向透明的手机端可以看到电脑玩家的一切对,这样的话有优势也有劣势也不至于别的玩家比如说你是电脑玩家我们这儿手机玩家就吃亏了这样的话你有你的优势但是你也有你的劣势从目前的游戏环境来看的话我比较倾向于所有人一致同仁否则你就会出现那种败卦你像这个电脑端和电脑端是双方正常的电脑端对手机端来说手机端看电脑端是完全单向透明的这种情况下既然我们能够实现这种技术说明这个技术在我们这个游戏安装包里是有这个模块的主要有这个模块它就有外挂开发商开发者能够把这个给返回来然后把它应用到别的端口上这样的话就属于我们自己开发的一个外挂然后让外挂开发商拿去用对于我们来说是很不利的所以我尽量也把这种仪式统认有外挂对门的人来讲就是一个工序别人直接就用游戏软件外挂来玩这个游戏而且而且还要有效的防止外挂只要有游戏肯定是有外挂的谈到这个外挂的突然就想起了对于这种使用web程序来破坏游戏平衡的你们有什么好的方法我建议加强防火墙罐还有一种方式就是蓝洞一样的不断的更新来防止外光就是更新的次数比较频繁更新次数明满的话会让玩家很不满对尤其是你要手机端的话两天一更新你觉得更新的确是一个防范外挂的措施但是不是一个根本里面根本的原因底找只要外挂有我们能够发现他就得给他怎么说呢封他号叫他知道痛苦不敢再用来挂才行你對於白掛隊的建議是什麼?我建議封號除了封號?除了封號就是加強我們遊戲的防火牆還有那叫什麼5D了加强我们的游戏比较可能目前的话可以通过这个一个目前可以实现的一个技术核算来进行因为败卦嘛无非就是在本地进行修改然后把数据影射到LG上可以把本地的文件都保护起来吗不,不光是保护起来我们就没有本地的文件哦,直接从我们直接就是云端游戏你可以以个人计算机身份联系到云端我们可以全线这种情况下它这个突破整个整基于之前我们讨论的内容关于手机端和电脑端在【游】戏公平性的问题你怎么看待实现电脑端和手机端的互通以及如何平衡两者之间的视觉差异和操作便利性同时针对外挂问题除了封号和加强防火墙外还有哪些有效的技术手段可以防止外挂以为护游戏的公\n ###agent根据会议片段的输出开始：###\n在这次会议中，主要讨论了手机和电脑端之间在游戏中的互动与平衡问题。为了确保两者的公平性，建议将电脑端和手机端的操作进行单向透明处理，使得手机用户能看到电脑玩家的行为而不会暴露自己。此外，为了解决外挂问题，除了常见的封号和加强防火墙的方法，还可以考虑增加游戏更新频率，但需注意过于频繁的更新可能会引起玩家反感。更长远的技术手段包括通过云端计算保护本地文件，并限制本地数据的篡改。这样可以在一定程度上防止外挂并维护游戏的公平性。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 但是手机这个东西……太大了就不方便了对它就是这么要求的就是这个尺寸再大一点装起来也不方便打电话也不方便对嗯这就属于你你在电脑屏幕上你能看到一个人在那拍但是你手动用就看不出来对像是太小了你看不到对所以这种情况下我们要如果想要玩家都不通的话,首先我们要把视野这一方面给它打开就是说对于人,对于这个人物,我们可以,这个,原则方式意思是一视同仁,所有的角色,所有的同性角色周围都有一圈非常明显的歧视就可以透过地图或者透过地图中的草的树的那种东西就可以看到这个东西另一种就是当自动识别电脑端和电脑端进行游戏的时候它可以不显示一切正常但是电脑端和手机端进行每一块游戏的时候电脑端对手机端是单向透明的手机端可以看到电脑玩家的一切对,这样的话有优势也有劣势也不至于别的玩家比如说你是电脑玩家我们这儿手机玩家就吃亏了这样的话你有你的优势但是你也有你的劣势从目前的游戏环境来看的话我比较倾向于所有人一致同仁否则你就会出现那种败卦你像这个电脑端和电脑端是双方正常的电脑端对手机端来说手机端看电脑端是完全单向透明的这种情况下既然我们能够实现这种技术说明这个技术在我们这个游戏安装包里是有这个模块的主要有这个模块它就有外挂开发商开发者能够把这个给返回来然后把它应用到别的端口上这样的话就属于我们自己开发的一个外挂然后让外挂开发商拿去用对于我们来说是很不利的所以我尽量也把这种仪式统认有外挂对门的人来讲就是一个工序别人直接就用游戏软件外挂来玩这个游戏而且而且还要有效的防止外挂只要有游戏肯定是有外挂的谈到这个外挂的突然就想起了对于这种使用web程序来破坏游戏平衡的你们有什么好的方法我建议加强防火墙罐还有一种方式就是蓝洞一样的不断的更新来防止外光就是更新的次数比较频繁更新次数明满的话会让玩家很不满对尤其是你要手机端的话两天一更新你觉得更新的确是一个防范外挂的措施但是不是一个根本里面根本的原因底找只要外挂有我们能够发现他就得给他怎么说呢封他号叫他知道痛苦不敢再用来挂才行你對於白掛隊的建議是什麼?我建議封號除了封號?除了封號就是加強我們遊戲的防火牆還有那叫什麼5D了加强我们的游戏比较可能目前的话可以通过这个一个目前可以实现的一个技术核算来进行因为败卦嘛无非就是在本地进行修改然后把数据影射到LG上可以把本地的文件都保护起来吗不,不光是保护起来我们就没有本地的文件哦,直接从我们直接就是云端游戏你可以以个人计算机身份联系到云端我们可以全线这种情况下它这个突破整个整基于之前我们讨论的内容关于手机端和电脑端在【游】戏公平性的问题你怎么看待实现电脑端和手机端的互通以及如何平衡两者之间的视觉差异和操作便利性同时针对外挂问题除了封号和加强防火墙外还有哪些有效的技术手段可以防止外挂以为护游戏的公
+ ###agent根据会议片段的输出开始：###
+在这次会议中，主要讨论了手机和电脑端之间在游戏中的互动与平衡问题。为了确保两者的公平性，建议将电脑端和手机端的操作进行单向透明处理，使得手机用户能看到电脑玩家的行为而不会暴露自己。此外，为了解决外挂问题，除了常见的封号和加强防火墙的方法，还可以考虑增加游戏更新频率，但需注意过于频繁的更新可能会引起玩家反感。更长远的技术手段包括通过云端计算保护本地文件，并限制本地数据的篡改。这样可以在一定程度上防止外挂并维护游戏的公平性。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+个游戏这个服务器方向的可能性和比较破本地游戏反编一盒要拿很多而且你好焦焦基于之前我们讨论的内容关于手机端和电脑端在游戏公平性的问题你怎么看待实现电脑端和手机端的互通如果它真的突破了服务器保险那我们完全可以非法入侵计算机设施信息安全罪进行起诉这个风险 这个成本可比随随便便破解一个小电脑成本要高多这种情况下基本上可以从源头上对,保持这个外挂这类的技术的话,目前我们大钢有了然后我们的大方向也有了技术层面最头痛的外挂方向也算是有点有风险目前的话,云端游戏的话我们是比较少有同行进行开发我们可以尝试一下,看我们开发难度怎么样然后文件画你们再跟开发和测试那边提一下需求然后开一个讨论会然后看他们那边有什么难度然后有什么解决不了的问题的话可以再来找我解决一下好的今天这个新报道你
+[Text Detection] 在 2189.25 秒检测到关键词 '好教教',current_time: 2187.00, 问题文本: 你好教教如何评估突破游戏服务器防火墙的难度和风险
+问题音频片段长度: 133291, dtype: float32, min: -0.22235107421875, max: 0.235870361328125
+问题音频时间长度: 8.3306875
+
+
+[Agent] 接收到问题: 你好教教如何评估突破游戏服务器
+, 1735637023.804902
+
+
+[Agent] 最终接收到问题: 你好教教如何评估突破游戏服务器
+, 1735637023.8050115
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 52, Total time: 1.7618 seconds, One token time: 0.0339 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+评估突破游戏服务器的方法包括：分析服务器的配置和性能，检查网络连接状况，使用专门的渗透测试工具尝试攻击，或者在合法的情况下进行社会工程学攻击。如果发现服务器存在漏洞，应及时采取措施进行修补，防止黑客入侵和其他安全事件的发生。
+talker 输出结束
+好教教如何评估突破游戏服务器防火墙的难度和风险
+会议数据处理完成。

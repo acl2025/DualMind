@@ -1,0 +1,147 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200708_L_R002S05C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 69
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading reasoner_llm...
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.01s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.74s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.91s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.06s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.87s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.88s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.96s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.12s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.38s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.07s/it]002我是董事长026我是售后025我是财务部019我是售后03我是财务部024我是经理014研发部行咱们今天陆思诚的主管叫过来开一个咱们这个公司的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.84s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.85s/it]
+上半年的总结会,首先一下咱们上半年的一个工作,然后咱从咱们这个,这场会议由咱们这个经理这边主持。行,我首先想说一下咱们上半年,由于这个现在这个咱们化妆品这个目前行业状况来看,化妆的人属于多数,谁出门都会用到这些护肤品啊。化妆产品面膜这些不分男女也不分老少了现在小的到年纪大一点的都会用到这个产品那咱们现在这个前台这边有说到反映到这个情况说我们这个上半年顾客反映的我们这个柜台柜姐这边有的对一些看起来不是不是太想买产品的这个顾客不是太态度不是太太好想问问咱们那边怎么处理的呀售后选我们这个售后处理的就是如果态度还是迟疑这种对顾客如果不买的话还不积极的这种性格就不会推荐就不会让他继续在这个岗位待着呢我们会从人事部重新招一批这种推销员一定要抓住人的心理因为现在女性了不止女性都很暧昧,对这种化妆品啊,质量之类的。对,目前咱们售后部门现在有什么问题吗?售后部门的问题。给咱们进行说咱们的产品,对,质量不行啊,效果不行啊,这一块有吗?这方面倒没有什么反馈,因为咱们产品的质量一直保持在特别的优秀,而且咱们属于有专属厂家供应并且和很多大牌私人合作目前咱这个发行不可以,咱这个产品质量这一块没有,对,但是就是有顾客反映就是质量比较好,但是就是价格有点高,这个咱们这个上半年咱这个销售这边是个什么样的情况呢?上半年的销售情况还是不错的,虽然比去年下半年销售业绩有那么下滑,但只是因為疫情的影響都不能开门或者说人们都不能出门了但是即使是在疫情期间依然保持这样业绩还是相当不错的销售这边我们不单单是针对了女性因为我们的化妆品也针对男士嘛所以我们的销售对象就是男士女士包括小孩子的一些就是非常有保健作用的这种公平包括老人的这些都有所以我们也根据不同的需求不同的人员的不同的需求我们制定了不同的销售策略针对男士女士还有老年人小孩子的我们有不同的柜台然后人们在指定的柜台可以买到自己所需要的这样的话可以节约时间也可以对我们销售人员一个减压它就是针对小孩子的我们就可以这样去做对小孩子的对宝妈对这些或者说家里有小孩子爷爷奶奶他们都会为了孩子的健康去买我们肯定的其实价格并不是最主要问题大家现在也很明白所谓价格物美的东西根本已经不存在了我们卖的都是便宜的我们卖的是健康的而且是最适合的那刚才说到针对的孕妇在产品研发这一块有什么新的产品因为咱们这个根据销售部那边的销量来说其实咱们各方面的那个都挺好的但是你像这种有针对性的研发我们涉及到一个简单的一个医疗问题就是对它不能就是因为这个人群比较特殊嘛就是它肯定是不能有一点那个不米的反应里面有一些不良的那些药物在里面所以我们研发部这边针对这样的一个产品的话,我们最起码走的是一个全部的一个无公害的一个东西,所以里面的所有的添加剂全都是无公害的,没有特别明显的坏添加剂,因为所有的不管是护肤品还是保养品,它再怎么说都是那种自然类型的,它里面也会有一定的添加剂,但是我们如果想要它有效用,又不要后期有特别严重的过敏反应,我们会把这个剂量适当的调整,还有这个研发成本是不是比较高呢这个研发成本是高的因为为什么国内外所有做这一方面的厂家比较少是因为它研发成本在这放着运行的时间比较长就比如说我们最近买的这个专利就是上面也是人家国外一家公司的一个成果我们直接把这个专利买回来我们再进行研发这个也是花费了我们很大一个资金但是就目前而言它的回馈成本来说是比较慢的因为你针对性的人群它毕竟属于少数所以说回本比较慢然后要是你进一步研发的话这一块看能不能咱们市场这一块可以针对一些高端人群这一块人家虽然已经花了一万但是对化妆这一块还是比较在意的针对一些高端的因为其实这个所谓所有这些有钱人很讲究的吧就是追求品质的人他并不是太注重价格所以如果你很便宜的东西,他反而不敢买,对吧?但是我们既然投入了大的精力,多的金钱去研发一个新款的产品的话,在价格方面自然是要高一些的。这个我们日在推销的时候会有说明。因为咱这个成本就很大。对对对,我们就是高端的,针对高端人士的做高端的产品,当然价格也不同,价格低的他们也不敢信。这个市场目前你有过了解吗有一些了解比如说一些白领或者一些做生意的这些商人对 他们都可以包括就是单位的一个高管这些他们都可以的我们也就是针对了这些人群也做一个市场调研然后感觉他们对保障品的需求还有就是特殊人群他们这个经济我们修量还是有的,只要我们质量,我们最主要的不是说是价格,是质量,只要我们的质量有保证就可以。行,好的,刚才咱们这个销售这边说了这些问题,目前咱们在售后处理上面的,刚才你也说了有些问题,目前咱们售后这边处理的及时处理这些问题。
+[Audio Detection] 在 510.72 秒检测到关键词 '好交交'。
+detection_time: 510.72, current_time: 510.00
+问题音频片段长度: 150699, dtype: float32, min: -0.07879638671875, max: 0.099609375
+问题音频时间长度: 9.4186875
+
+
+[Agent] 接收到问题: 针对顾客反映价格高的问题公司打算如何凭成本和价格
+, 1735101757.4054298
+
+
+[Agent] 最终接收到问题: 针对顾客反映价格高的问题公司打算如何凭成本和价格
+, 1735101757.4055586
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+0
+Token count: 3, Total time: 0.9215 seconds, One token time: 0.3072 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：成本 价格 公司策略
+Token count: 29, Total time: 5.9521 seconds, One token time: 0.2052 seconds
+
+提取的关键词: ['成本', '价格', '公司策略']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，公司计划通过强调产品的高质量来应对顾客反映的价格高的问题。尽管成本较高，公司决定坚持高端定位，专注于为高端客户（如白领、商人及单位高管）提供服务，并进行市场调研以更好地满足他们的需求。公司认为只要产品质量得到保证，高价格是可以接受的。
+Token count: 68, Total time: 13.0764 seconds, One token time: 0.1923 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：成本 价格 公司策略
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 这个我们日在推销的时候会有说明。因为咱这个成本就很大。对对对,我们就是高端的,针对高端人士的做高端的产品,当然价格也不同,价格低的他们也不敢信。这个市场目前你有过了解吗有一些了解比如说一些白领或者一些做生意的这些商人对 他们都可以包括就是单位的一个高管这些他们都可以的我们也就是针对了这些人群也做一个市场调研然后感觉他们对保障品的需求还有就是特殊人群他们这个经济我们修量还是有的,只要我们质量,我们最主要的不是说是价格,是质量,只要我们的质量有保证就可以。行,好的,刚才咱们这个销售这边说了这些问题,目前咱们在售后处理上面的,刚才你也说了有些问题,目前咱们售后这边处理的及时处理这些问题。针对顾客反映价格高的问题公司打算如何凭【成】本和价格
+根据会议内容，公司计划通过强调产品的高质量来应对顾客反映的价格高的问题。尽管成本较高，公司决定坚持高端定位，专注于为高端客户（如白领、商人及单位高管）提供服务，并进行市场调研以更好地满足他们的需求。公司认为只要产品质量得到保证，高价格是可以接受的。
+reasoner 输出结束
+就是他打着咱们就是咱们的公司的名字叫完美达他他们公司的名字叫大完美达完美就是也是反倒咱们公司的产品销量就是价格低这个跟咱们抢市场然后这个这个由于他们也有他们的公司然后只能说是现在正在跟他跟法院追查这个事情他这有点这个怎么说来着就是欺负咱们的这个商标权相当于就是咱是李逵他是李鬼的用这一块咱们法务部门一定要加大这一方面的这个投入对他进行一些起诉还有就是咱最后一场那个跟一个公司合作,这一块公司把我们的钱财上的问题怎么处理呢?咱们公司钱财上的问题?对,一个公司说咱们违约了,具体我也不太了解这一块总经理怎么回事。就是咱们美约的事情就是他们向咱们定制了一批商品由于咱们生产可能出现了一些问题或者延续我们推迟了几天送货,他们抓住小北巴不放,认为咱们违约了。这个问题我们确实有责任,现在就在跟他们公司协商赔偿款的问题。这一块进度怎么样?目前还没有协商出来结果,因为他们都想要多要一些赔偿款。但是我們覺得沒有所以我觉得没有必要给太多,现在正在处于一个协商状态。行,还有咱们下个过来。财务部门,就是在哪里?上半年一个财务状况。对,在上半年,你为什么一起影响?其实出来去实体店和专柜购买化妆品的风格比较少,但是线下像我们的官网和各种可以提供商品的这些平台,超焦量还是不错的然后在这期间咱们比去年同期其实销售额还在增长然后下降然后就是下半年咱们做的一个进化表也是比去年同期也是要有增长的这个期望然后为了促进咱们这个发放品市场竞争力更好的发展这边其实有一个更好的想法,下半年咱们因为化妆品这个行业利润其实是比较高的,为了增强咱们公司的市场竞争力,首先一是提高咱们的服务。你说一下上半年咱们这个财务状况这一块是个什么样的情况?上半年财务情况就是,主流业务收入大概在80万元然后净利润是在70万元,反正比去年都有同期的增长。总经理说一下咱们下半年的一个战略计划这一块。对,我们刚刚汇报了上半年的这个情况嘛,因为现在我们这个比较流行的一个宣传方式,一个手法就是网络宣传有一些产生了一些非常有竞争力的这些产品,就一些不知名的一些产品,突然之间就通过各种网络手段,在网上就是有一定的影响力,对我们的一些类似产品产生了一些压力,这个对我们下半年制定计划是有一定影响的,想问一下各部门对这方面有什么建议可以有什么策划方案改善一下我们这个类似产品然后怎么提升一下这个销售量我觉得咱们公司也可以其实实际上网络主播带货因为咱们现在主要就是线上就是专柜然后还有咱们的官网我觉得可以通过网络带货然后我们也像他们那样就是做一下那种网红产品感谢观看就是你的意思是也是通过一些网贷,然后网红直播,网络带货,然后通过这样的方式,然后学习人家这样的方式,也是在网上产生一点影响力。别的有什么别的意见吗?这个需要让客户要了解因为现在大多数人都知道,女生可能相对了解了,比方说,对,你的意思是比方说,除了这些不化妆的人之外,不化妆的那些我们是不是也得考虑进去,对,比方说,有的女生,大部分女生吧,都能分得清口红色号,这方面可能男生他分不清,可能你需要做进一步的推广像在高尔上列举一些PPT和课程讲解让他们真正的了解这种化妆品还有就是敷面膜敷多长时间过多会对皮肤造成酸性的损伤或者碱性的损伤这些也要明确的告诉他们因为有些人用化妆品使用过大以后他会面临着起痘之类过敏的危害他们就觉得是化妆品本身的质量问题咱们可以在这方面着手就像比方说要在比
+[Text Detection] 在 1016.79 秒检测到关键词 '焦焦',current_time: 990.00, 问题文本: 比较就是用化妆品那些过敏的那种顾客像这几年用面膜之类的脸上会发红发痒起痘痘之类的还有脱皮的现象咱们可以告诉他们就是使用这些化妆品前使用哪三个技巧对使用哪三个技巧可以避免这些东西而且起到美肤的效果你好焦焦基于之前我们讨论的内容
+问题音频片段长度: 547478, dtype: float32, min: -0.08782958984375, max: 0.102569580078125
+问题音频时间长度: 34.217375
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容,关于售后处理及时性的问题,能否具体说明一下目前售后部门在处理客户问题时是否存在延迟,以及法务部门上半年处理的三起侵权案件的具体结果如何?同时针对合作公司提出的违约问题目前的协商进度和解决方案是什么用之前先在耳朵后面图
+, 1735101804.0250645
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容,关于售后处理及时性的问题,能否具体说明一下目前售后部门在处理客户问题时是否存在延迟,以及法务部门上半年处理的三起侵权案件的具体结果如何?同时针对合作公司提出的违约问题目前的协商进度和解决方案是什么用之前先在耳朵后面图
+, 1735101804.0253353
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4931 seconds, One token time: 0.1644 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：售后处理及时性 延迟 法务部门 上半年 侵权案件 协商进度 违约问题
+Token count: 47, Total time: 9.0466 seconds, One token time: 0.1925 seconds
+
+提取的关键词: ['售后处理及时性', '延迟', '法务部门', '上半年', '侵权案件', '协商进度', '违约问题']
+
+找到的上下文片段数量: 3
+根据会议内容，目前售后部门在处理客户问题时存在延迟现象。公司计划通过重新招聘更加积极主动的销售人员来改善服务态度，并且法务部门将加强对侵权行为的法律诉讼，以保护公司的商标权。财务部门正在处理与另一公司的赔偿问题，但尚未达成一致。
+Token count: 66, Total time: 12.9464 seconds, One token time: 0.1962 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：售后处理及时性 延迟 法务部门 上半年 侵权案件 协商进度 违约问题
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 化妆产品面膜这些不分男女也不分老少了现在小的到年纪大一点的都会用到这个产品那咱们现在这个前台这边有说到反映到这个情况说我们这个上半年顾客反映的我们这个柜台柜姐这边有的对一些看起来不是不是太想买产品的这个顾客不是太态度不是太太好想问问咱们那边怎么处理的呀售后选我们这个售后处理的就是如果态度还是迟疑这种对顾客如果不买的话还不积极的这种性格就不会推荐就不会让他继续在这个岗位待着呢我们会从人事部重新招一批这种推销员一定啊。化妆产品面膜这些不分男女也不分老少了现在小的到年纪大一点的都会用到这个产品那咱们现在这个前台这边有说到反映到这个情况说我们这个上半年顾客反映的我们这个柜台柜姐这边有的对一些看起来不是不是太想买产品的这个顾客不是太态度不是太太好想问问咱们那边怎么处理的呀售后选我们这个售后处理的就是如果态度还是迟疑这种对顾客如果不买的话还不积极的这种性格就不会推荐就不会让他继续在这个岗位待着呢我们会从人事部重新招一批这种推销员一定要抓住人的心理因为现在女性了不止女性都很暧昧,对这种化妆品啊,质量之类
+---
+这个市场目前你有过了解吗有一些了解比如说一些白领或者一些做生意的这些商人对 他们都可以包括就是单位的一个高管这些他们都可以的我们也就是针对了这些人群也做一个市场调研然后感觉他们对保障品的需求还有就是特殊人群他们这个经济我们修量还是有的,只要我们质量,我们最主要的不是说是价格,是质量,只要我们的质量有保证就可以。行,好的,刚才咱们这个销售这边说了这些问题,目前咱们在售后处理上面的,刚才你也说了有些问题,目前咱们售后这边处理的及时处理这些问题。针对顾客反映价格高的问题公司打算如何凭成本和价格就是他打着咱们就是咱们的公司的名字叫完美达他他们公司的名字叫大完美达完美就是也是反倒咱们公司的产品销量就是价格低这个跟咱们抢市场然后这个这个由于他们也有他们的公司然后只能说是现在正在跟他跟法院追查这个事情他这有点这个怎么说来着就是欺负咱们的这个商标权相当于就是咱是李逵他是李鬼的用这一块咱们【法】务部门一定要加大这一方面的这个投入对他进行一些起诉还有就是咱最后一场那个跟一个公司合作,这一块公司把我们的钱财上的问题怎么处理呢?咱们公司钱财上的问题?对,一个公司说咱们违约了,具体我也不太了解这一块总经理怎么回事。就是咱们美约的事情就是他们向咱们定制了一批商品由于咱们生产可能出现了一些问题或者延续我们推迟了几天送货,他们抓住小北巴不放,认为咱们违约了。这个问题我们确实有责任,现在就在跟他们公司协商赔偿款的问题。这一块进度怎么样?目前还没有协商出来结果,因为他们都想要多要一些赔偿款。但是我們覺得沒有所以我觉得没有必要给太多,现在正在处于一个协商状态。行,还有咱们下个过来。财务部门,就是在哪里?上半年一个财务状况。
+---
+别的有什么别的意见吗?这个需要让客户要了解因为现在大多数人都知道,女生可能相对了解了,比方说,对,你的意思是比方说,除了这些不化妆的人之外,不化妆的那些我们是不是也得考虑进去,对,比方说,有的女生,大部分女生吧,都能分得清口红色号,这方面可能男生他分不清,可能你需要做进一步的推广像在高尔上列举一些PPT和课程讲解让他们真正的了解这种化妆品还有就是敷面膜敷多长时间过多会对皮肤造成酸性的损伤或者碱性的损伤这些也要明确的告诉他们因为有些人用化妆品使用过大以后他会面临着起痘之类过敏的危害他们就觉得是化妆品本身的质量问题咱们可以在这方面着手就像比方说要在比基于之前我们讨论的内容,关于售后处理及时性的问题,能否具体说明一下目前售后部门在处理客户问题时是否存在延迟,以及【法】务部门上半年别的有什么别的意见吗?这个需要让客户要了解因为现在大多数人都知道,女生可能相对了解了,比方说,对,你的意思是比
+根据会议内容，目前售后部门在处理客户问题时存在延迟现象。公司计划通过重新招聘更加积极主动的销售人员来改善服务态度，并且法务部门将加强对侵权行为的法律诉讼，以保护公司的商标权。财务部门正在处理与另一公司的赔偿问题，但尚未达成一致。
+reasoner 输出结束
+较就是用化妆品那些过敏的那种顾客像这几年用面膜之类的脸上会发红发痒起痘痘之类的还有脱皮的现象咱们可以告诉他们就是使用这些化妆品前使用哪三个技巧对使用哪三个技巧可以避免这些东西而且起到美肤的效果你好焦焦基于之前我们讨论的内容问题我想了一下是不是可以考虑因为女生其实会化妆懂这些的多一点但是男性相对来说就懂的比较少对他们可能了解不了女朋友的想法是不是可以根据这个男性的这个心理想法然后制定研发一些男性的化妆品针对男性的化妆品比方说就是素颜霜呀任何的打理就是一抹就可以充足很方便就是你要是想要让他们在什么地方做口红啊抹眼影啊打妆啊男生应该都首先是他们可能不会这么做其次他们也不会男生可能会比较负负负这方面化妆品这方面咱们可以相对来说比重低一点但是护肤这方面可以男生护肤可以相对提高一点比如说洁面乳的研发呀专注于做一些男士的面膜男士的这个几面男销售对于这个怎么看呢刚刚既然说到了通过网络的话我就在想我们已有的客户是不是有人在做直播或者说调查一下我们现在正在用我们的互动力帮忙给予这些客户如果这些客这些人中间有人反映就不好他就可以请不吝点赞 订阅 转发 打赏支持明镜与点点栏目而且他做了之后呢因为他本身对这个就比较了解了就不用我们去再给他一些评论啊或者一些宣传啊然后他做了之后呢我们他因为他要买的可能就买那一次以后再买的话就根据他网络的那个直播的效果我们可以给他一定的指控的优惠对这样的话一些宣传力度因为这个广告的流量正在用它一直在用因为它这样的话它自己说话也很有力气也可以影响到它首先影响到周边的人因为它身边的闺蜜它不是在做广告它确实就在用这个而且效果也蛮好的它可以对比它自己的照片来看然后让它身边的人都就可以让别人更相信对对对更有力度这是一个很好的提议也为我们找特意去找一些网红省一下一些精于算成本也低一点我觉得其实也可以让咱们专会的那些因为他们都是经过训练的他们也有一定的化妆技术可以就是说比如说一个月吧抽取一两名那种幸运的就比如在咱们店里购买商品的这些顾客在店里给他们进行直播化化妝給顧客化妝让他感受到咱们化妆品的彩妆或者咱们这些护肤品的优点这个可以列入考虑范围内在咱们专柜的话可以让顾客免费体验这个化妆的妆效护肤品这个有什么疗效这个都可以让顾客在我们的化妆台前面都可以试用这是一个好的提议但是有考虑对于一些这样的情况吗就是如果就有一些顾客就是属于那种不是很有不是很有礼貌的他在我们这个前面乱用乱图造成一些我们的损失这个是怎么考虑的造成损失一方面咱们就是专会的这些服务人员要先把态度摆好好然后就是先新品去跟他说这件事情然后最后的时候咱们可以就比如说赠送那些口红啊粉底液那种小样就是随机赠品然后让他们就是看到我们就是很专业的服务态度还有一种方法就是可以就是比方说如果有那种故意找事的顾客是吧会影响咱们的正常营业咱们就可以这时候就需要一个好的销售一个心理他首先需要就是闹动情绪的人顾客的那个心理然后并且因为他闹动情绪的时候别人肯定也会被他带动思绪这时候就需要消水员进行讲解就比方说有人说每天早上用清水洗脸你就会皮肤变得特别好看什么之类的美白不需要这些护肤品所以就说无知者无罪所以就需要跟他讲解这些东西就是不要说什么是一堆化学物品弄得不好就只能说这个肯定不可能每个人用的这些海报电视上那种明星一样的这种效果一定要给他们讲解清楚而且也要说客观地看待服务员这件事情就是他的作用他的能力在哪咱们给他讲解清楚以后因为这个瓦不敌众他如果在了解咱们这个产品以后大多人听到那些没有找事的这些顾客他们听了咱们的讲解他就会觉得说得非常有道理所以那个顾客的情绪也可能是跟着咱们他们大部分人的情绪跟着平缓下来这样的话就行对前面的专员的柜台柜台的专员进行一下专业的培训对 而且要给他们说你不是抹了我们的化妆品就相当于你就好看因为他这个化妆品它不可能改变人的基因问题所以这个化妆品只是一种护肤要了解也要告诉他们一些危害对刚刚我们讨论的这个问题这些建议都会考虑进去我们刚刚说的是这个可以采用网络的方式进行一下我们产品的宣传那我们首先要考虑一下为什么我们这个化妆品现在竞争这么激烈我们要从这根本的上面发现这个问题才可以去解决大家有什么看法然后有一点就是化妆品主要是紧要的就是功效然后更多其实是一些相对的谢谢大家然后就是包装的进度比如说现在网上已经有很多很多的认识他们产品可能也不错吧但是他们的包装是非常具有的包装上就吸引了你对 包装因为我对于这一部分他们有的时候就是买的包装他们产品如果说暂时无法给你的话那我可以给你点包装研发这边有没有对包装有什么想法我们应该想的时候如果我们200我们的包装上面就是画了一个山脉的形状,加上了几个盘红小织布,它是一个比较贴切的,当我们研发东西也是面临很大的,就是当我们把我们这个产品研发出来,当它有自己特色的时候,我们没有特别好的向这些消费者展现出来,比如说我们里面添加什么精华,比如说成有温度精华,但是我们在包装方面其实很难做一个这样的事情,所以我在讲那个在包上的空间有一种精神我把这个设计用类似的用那种白色我用那种卡通形状画上去比较直观也比较点评然后在做后期广告宣传的时候也可以把我们这些点出来因为我们研发部产品一直在更新换代但是大家对我们的认知还是比较有限的所以说你比较想销量好比较想把我们这些特点都体现出来我们就要很直白地让我们表现它可能没有很长时间去听你讲一大段的讲座比如说里面有什么产品这个什么那个他们可能没时间所以我们要在他们对我们的定义上我們都可以提直觀一點對 比賽的直觀一點研发这个核心这个特点直观的表现它在这个外在报告上面这样的话可能对我们研发部也是一个很大的激励对 这个这个报告就是我们的基础基础进行的提醒像我们的非常简明的理念在报告中显示出来我们这个团成的特色市场这边有没有什么调查这个什么样的年龄段的人群中文字幕志愿者 杨茜茜首先是内部的东西我们再去看每个内容去注意到上轮文字这个上面做出来调查之后我们后期会对我们化妆品的包装上进行一些改进也可以和一些动漫包括老鼠或者熊大熊二这些动漫人物进行一些联合应该会对我们的产品促销有一些帮助现在我们就要这边化妆品的太多了化妆品这些品牌太多了我们是不是可以考虑一下现在这个竞争对手他们都有一些什么优势相对于我们公司来说这一块咱们公司的优势大家可以想象一下这一块优势多还是这一块这块优势我们这边工作的非常好我们这边售后做得非常的完美因为我们这边售后是受过专业培训的就是专门过到过培训机构专门的了解这方面化妆品真正的了解它产品包含什么元素成分化学物质进行深入了解可能别的机构只会了解女生喜欢什么样的色号什么样的口红买的较多的产品售后有一个可以提升的优势就是像类似别的品牌的话你买过之后如果后面一发对就是如果发生的话这个眼影被拆了咱们就可以进行二次放过或者这类的东西因为这种情况不要发生因为质量问题嘛来发生如果质量进行问题的话以后会不会减少就是客户量是没有看是客的还是品牌的问题如果说我们这个眼影卖了有两三年了只出现了一期两期那可能跟客人的保存有问题但是如果我们这个销量只卖了一年之内已经有四五期或者十几期的话我们就可以反思就是自己的质量这个还是一个问题谢谢大家其实有一次的优势还在于我们的市场一些营销计划比如说咱们之前就是会订机的那些这些MAP客户或者是想要加入的那些客户会订机的关于这种服务的知识而这个咱们也会采用一些会员制比如说第一次消费之后就会成为会员然后一会儿购买商品之后就会享受优惠不是折扣三就是咱们这个消费的限制咱们每次消费之后我们把咱们这个请不吝点赞 订阅 转发 打赏支持明镜与点点栏目然后会给顾客保证他们照单然后累计消费资助然后也会给予大家一定的限金然后这样就为大家消费这是很重要的然后最后一个也就是说咱们也会在预计的节日然后一些就让为这些咱们客户提供一些面对的平衡保养对于一些特殊的节日行咱们这个法律部门这边法务这边咱们的公司有什么用事咱们那些普通产品获得的那些专利一些成本的那些专利咱们这边是不是有一些咱们的一些这个产品还有的什么的商场模式就是它不有特别的就是别的厂家发布好未来咱们的这些是咱们的市场那边谢谢大家市场在这儿咱们的发展链有什么样类似的优势其实我们这边是很好的优势我们的优势是很坚持的然后我们的消费人员经过了很多的经济而且他们的优势就真的成了一个非常好的优势他们可以去利用这个优势这样而咱们的优势这样就成了一个优势我们这边属于人流是我们最大的优势这个回头客老公客我们也就是本校为客户是成为我们的学校因为我们的产业非常好对对对因此收到市场的回馈之后会再做了解是那咱们各个团队发表了自己的一些看法见详咱们今天这场会先开了会下去以后我们各个团队都会做点工作做好下半年我们就去上台謝謝请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目护肤产品比重
+会议数据处理完成。

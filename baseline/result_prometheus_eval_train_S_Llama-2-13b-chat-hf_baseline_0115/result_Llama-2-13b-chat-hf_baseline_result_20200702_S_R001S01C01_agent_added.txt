@@ -1,0 +1,23 @@
+Question: 你好,焦焦,针对火鸡面口味问题,如何改进以满足市场需求?
+Instruction:
+你好,焦焦,针对火鸡面口味问题,如何改进以满足市场需求?
+
+Reference Answer:
+你好！针对火鸡面口味改进，建议进行市场调研，收集消费者反馈，了解偏好和不满点。可尝试调整辣度、增加或减少某些调味料比例，引入新的口味元素，比如酸、甜、香料等，以满足更广泛的市场需求。同时，注意健康趋势，减少人工添加剂，使用天然原料。
+
+Assistant Answer:
+Hi there! 😊 As a marketing expert, I suggest focusing on the following areas to improve the taste of your chicken face masks and satisfy market demand:
+
+1. Flavor variety: Offer a range of flavors to cater to different customer preferences, such as spicy, savory, and fruity.
+2. Quality ingredients: Use high-quality, natural ingredients to enhance the taste and texture of the masks.
+3. Customization: Allow customers to customize their masks with their preferred flavors and ingredients.
+4. Target marketing: Target your marketing efforts towards the right audience, such as health-conscious individuals and beauty enthusiasts.
+
+By implementing these strategies, you can improve the taste of your chicken face masks and attract more customers to your brand! 💪
+
+Feedback:
+The response provided some relevant strategies for improving the taste of chicken face masks, but it lacks a direct focus on addressing the flavor issue specifically. The advice to offer a range of flavors and allow customization is on point, yet it could benefit from a more detailed approach, including specific flavor suggestions or ingredient recommendations that cater directly to the market need. Moreover, the suggestion to target marketing efforts is appropriate but lacks depth in explaining how to precisely identify and connect with the desired audience. This response would have been more effective if it had provided a more thorough explanation of each strategy and emphasized the importance of understanding consumer preferences. Thus, while the response is relatively well-rounded, it falls short of offering a comprehensive plan that aligns closely with the user's needs and concerns. Therefore, based on the score rubric criteria, the response does not fully meet the expectations of providing precise and actionable advice. 
+[RESULT] 3
+
+Score: 3
+--------------------------------------------------

@@ -1,0 +1,230 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200707_L_R001S08C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 70
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.18s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.82s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.08s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.97s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.95s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.97s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.00s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.15s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:10,  5.41s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.09s/it]響鐘
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.85s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.88s/it]
+就是咱们成为一个通关链然后咱们可以先把自己的想法说出来然后让国防对于咱们这一个通关链具有的前景进行的一个有一个大概的了解吧那首先咱们你想最近这两年像就是白石原企业然后大家跟我们然后他们就是创下了就是就是购买电影的新高所以说咱们打算做的话就是做一个不同于他们的他们是以他们是三个电影咱们是要做一个二维的电影这段话关于故事,咱们邀请各个各位参与会议的人来进行评论。現在把你給下巴了個人覺得他們可以和那個他們有合作嗎我覺得多麻煩的不是說聯盟啊或剛才查的意思我覺得我們如果這樣合力的話可以和英雄聯盟聯合因为我们想做咱们偏中国一点,历史文化一点的动漫嘛是吗?那因为里面会有很多人物,打击,或者各种人物嘛我觉得这个故事线,就是因为英雄联盟它其实背景后面就每个人物都有一些人物关系我觉得可以用来建建我们的电影在英雄联盟的话,它的故事好像会比较庞大,总体的内容是多大只是借鉴其中的一点然后也可以借着这个游戏的这个因为它影响力比较大可以做一下宣传可以搞一段就跟当年魔兽一样一段游戏CAA对对对我搞星际魔兽在这款游戏之内做一个CAA动画咱们也可以根据一些英雄想要的一些大区给他们分开做如果第一段战友说的比较可以去看微镜但是首先我想说一点我想说的就是稍微有点偏中方和西方今天也有个不错的中西方的动画就是想学习一下中文的一个故事然后去采用一些在乎普克的一些风格去做出一种比较新鲜的体验我们列举一些例子吧就比较比较现在我想就是,咱們是不是可以把,就是,譬如說,天高咱們都在電影上,然後像神農場,長白草,這產生中的神話故事吧,可能可以把這兩個結合一下作為一個抽離心的可能性然後結合一下就是科技以及其他的功能这些结合起来会不会显得太粗骨了,如果买石中长白草,就是这个需要我们,就是特色的样子,就是咱们不需要演出,我们就是可以就是使用它这个模式的套路,长白草咱们就可以长白草,但是咱们不用多长白草,就是换成另外一个长白草,这样的话,日月和动漫是不是不沾边呢?动漫是不是要吸引一些年轻人,或者小孩子喜欢看?对,我这个打算是吸引你们的青年。小孩子的话,就是很在于……你是讲构思一种,就是属于一种小孩子还在某某某某的阶段,属于看一个新鲜事物。但是青年的话,可能可以看到咱们的故事要讲什么,属于一种成长的那种……青年是有四口的意义成年五三个那这样是不是市场就是市场的这个太小了市场如果是在这个现象的话那可以的话就是可以把故事放在这一下就是如果要考虑市场的话就是小孩子最喜欢的那种形象就可以加在这形象里就咱们的这种竞争对手科技文化,還有一些樣式文化,他們這些會與這些動漫商業如果是要改這些內容的話,你現在反而覺得這個選材料很辛苦,科技很辛苦。而且你要是改傳統的東西的話,廣電力量能不能過也是個問題。這是我們的旅遊部門是否針對一些男性的畫面因為一些不大的畫是在一些女性的角度上女性的畫面是有什麼好處我覺得首先想考慮的就是到底想走一個什麼樣的風格的一個電影一個動漫是結合東西花的一種是什么热血的还是那种像你刚刚说的,把病毒列为一个元素,是要怎么设计一下这样的电影?这里我先说明一下,相当于病毒,对于可能在多少年以后,假如是215米以微量,相当于病毒轻度,然后咱们送到一个角色就是通过就是他的就是这个探索
+[Audio Detection] 在 511.34 秒检测到关键词 '好交交'。
+detection_time: 511.34, current_time: 510.00
+问题音频片段长度: 145238, dtype: float32, min: -0.15625, max: 0.12664794921875
+问题音频时间长度: 9.077375
+
+
+[Agent] 接收到问题: 交流如何将病毒元素融入动漫故事同时吸引青年观众
+, 1735098518.0143747
+
+
+[Agent] 最终接收到问题: 交流如何将病毒元素融入动漫故事同时吸引青年观众
+, 1735098518.0145154
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9218 seconds, One token time: 0.3073 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+将病毒元素融入动漫故事可以通过以下几种方式实现：
+
+1. 创造一个与现实生活相关的病毒：设计一个与现实生活中的病毒有关的动漫角色或情境，让观众能够产生共鸣。
+
+2. 融入病毒传播的细节：在剧情中展示病毒如何传播、如何影响人类等细节，让观众了解到病毒的危害性。
+
+3. 引发思考：通过剧情探讨病毒的影响，引发观众对现实世界的思考和反思，增强他们的社会责任感。
+
+4. 制作吸引人的视觉效果：利用动画技术制作出逼真的病毒传播场景，给观众带来强烈的视觉冲击。
+
+5. 挖掘病毒背后的故事：讲述病毒背后的故事，让观众了解病毒的起源、传播过程以及可能带来的后果。
+
+这些方法不仅可以吸引年轻观众，还可以让他们了解到病毒的危害性，提高他们的健康意识。
+talker 输出结束
+我不是特别懂你一向无碍而言对,玩的不多所以你要用那种做工坊我觉得不会吸引女生的眼球所以说先找个定位定位的话,当然就是咱们就是不想有游戏的元素这一点是可以训练一下的但是我刚才说的是不保护游戏的元素就是相当于因为一个好的故事啊是需要比较好的演员在做的但是只有病毒可以靠一个男主角的一个方法显然它可以有病毒的然后这两个交叉的爱情线也会在抗击这一病毒的元素上就起到很大的关键组就这样结合一下抗击病毒对最后还是非常积极非常正能量的一种对 非常正能量的一种能被大公主接受而且社會分類其實可以問一下在座的相對來說他們都是看人工動漫結合起來的現在可以大家對話一下你們喜歡什麼樣的動漫電影好你自己說吧我是比較喜歡宮崎駿的那種宮崎駿的那種對千語千語像是在家里,你总是喜欢温暖一点的,关心一点秩序的那种,喜欢秩序的那种,男生这个感觉属于热情的,能站得住的,喜欢那种眼前亮的,不是必要的焦虑,而且不能是那种懒套的东西,到底是為了做動漫,不是為了做電影有什麼更好的意見嗎?既然這麼說了,肯定是有更好的情意,可以說一下比如說,堅持不懈反正一些是會現象的那如果是針對於那種像比較火的那些都看得了,火影啊,海豬王啊,戰鬥,這種風發的我覺得沒有一個反而可以先對還有對我有他主要是他但是他夥伴是一個很簡單的就是一個夥伴是這樣子的對主要是反正他們就是不拋棄一個夥伴對不拋棄一個夥伴我覺得動漫和電影中間有很大區別因為電影的話你只是一場所以你必須要給別人一個很長的時間那一个记忆点以后就会留下一个深刻的印象就像那一个点观众记得特别清楚对如果你做成那种像网友那种的话做一个电影其实又有太大的过程可能就是在开一个剧场里面的生活不会是想要咱们因为是一个玩笑的影片可是咱们要以什么精心体系为例呢就像最近沙烟的比较火的那种我从白石原起白石原起这就是讲述的这个爱情我从那和那些怎么讲述的和那个我用一个我用一个的就属于那种坚持不懈对就是就是我主要以坚持对于那种心特别多的方法对但是你像我咱们的扫描就是以并不为反面严肃的话它就起码是考虑到就是抗险因为身份上在抗议它就是抗险的思维谢谢大家主抓的这个方面主抓宫果龙它特别浓的对对对咱们可以把长白草这个护士金改变一下就把它使用于如何看宫主这一方面它设计的应该是以一个主人公的名义这个可以把主人公那个形象放在现代不过是他身上是有他想放长白草的元素在然后他抗击的病毒我觉得可以把这个主人公发生的故事的背景放在多少年多少几百年之后就是他在偶尔读了这么一个故事以后然后他最后做出来的经历的事情可能和神龙长白草所以说故事是比较相似的可以徵求一下大家的意見如果要問的話可以讓大家提供一下自己的意見就是屬於那種方式提一個意見這個動漫這一塊其實我覺得還是搞一下眼前的樣子一些老套路的話總覺得你是在抄襲這一方面可以繼續考慮工作套路伊亚塔会不会算超级呢?套路伊亚塔不算超级但是网上肯定有会议论打的我觉得我们还是应该设立一个定义的推手可以是肯定不是证据会要排在邪恶但是过程的话可以一波几折之类的可以反转反转过程需要反转我们最近有那个比较火一点的其实火一点的电视剧或者电影其实是悬疑片多的有没有想加入这个悬疑在这些动漫里面其实中国这些悬疑类的动漫其实真的没有那这么说的话我这也有一个稍微有一个提议你就像咱们卫生院的工人是未来的是一体世家的因为从小学习比如说医学药理然后他肯定会经过神火三百草各种神话故事咱们学医可以加进去因为它自己会是一个协助病毒一个安排这样看来会比较好
+[Audio Detection] 在 1025.61 秒检测到关键词 '好交交'。
+detection_time: 1025.61, current_time: 1020.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.070404052734375, max: 0.0697021484375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 将你好交基于之前我们讨论的内容关于动漫设计我们是否应该将故事背景设定在未来结合神长百草的
+, 1735098551.4185102
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 讲你好焦基于之前我们讨论的内容关于动漫设计我们是否应该将故事背景设定在未来结合神肠百草的元素来表现主人攻抗病毒的奉献精神同时讲我们是否应该加入悬疑元素和爱情线以增加故事的复杂性和吸引力
+, 1735098553.1127708
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4928 seconds, One token time: 0.1643 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：动漫设计 故事背景 未来 神肠百草 抗病毒 奉献精神 悬疑元素 爱情线 复杂性 吸引力
+Token count: 60, Total time: 12.0341 seconds, One token time: 0.2006 seconds
+
+提取的关键词: ['动漫设计', '故事背景', '未来', '神肠百草', '抗病毒', '奉献精神', '悬疑元素', '爱情线', '复杂性', '吸引力']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+会议决定将故事背景设定在未来，并结合神肠百草元素展现主角对抗病毒的精神。同时考虑加入悬疑元素和爱情线，以增强故事吸引力。风格倾向于温暖、有序、积极向上，避免过于沉重或消极的内容。团队还需确定动漫与电影的区别，确保故事主线清晰，吸引目标观众群体。
+Token count: 71, Total time: 14.0177 seconds, One token time: 0.1974 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：动漫设计 故事背景 未来 神肠百草 抗病毒 奉献精神 悬疑元素 爱情线 复杂性 吸引力
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 這是我們的旅遊部門是否針對一些男性的畫面因為一些不大的畫是在一些女性的角度上女性的畫面是有什麼好處我覺得首先想考慮的就是到底想走一個什麼樣的風格的一個電影一個動漫是結合東西花的一種是什么热血的还是那种像你刚刚说的,把病毒列为一个元素,是要怎么设计一下这样的电影?这里我先说明一下,相当于病毒,对于可能在多少年以后,假如是215米以微量,相当于病毒轻度,然后咱们送到一个角色就是通过就是他的就是这个探索交流如何将病毒元素融入动漫故事同时吸引青年观众我不是特别懂你一向无碍而言对,玩的不多所以你要用那种做工坊我觉得不会吸引女生的眼球所以说先找个定位定位的话,当然就是咱们就是不想有游戏的元素这一点是可以训练一下的但是我刚才说的是不保护游戏的元素就是相当于因为一个好的故事啊是需要比较好的演员在做的但是只有病毒可以靠一个男主角的一个方法显然它可以有病毒的然后这两个交叉的爱情线也会在抗击这一病毒的元素上就起到很大的关键组就这样结合一下抗击病毒对最后还是非常积极非常正能量的一种对 非常正能量的一种能被大公主接受而且社會分類其實可以問一下在座的相對來說他們都是看人工動漫結合起來的現在可以大家對話一下你們喜歡什麼樣的動漫電影好你自己說吧我是比較喜歡宮崎駿的那種宮崎駿的那種對千語千語像是在家里,你总是喜欢温暖一点的,关心一点秩序的那种,喜欢秩序的那种,男生这个感觉属于热情的,能站得住的,喜欢那种眼前亮的,不是必要的焦虑,而且不能是那种懒套的东西,到底是為了做動漫,不是為了做電影有什麼更好的意見嗎?既然這麼說了,肯定是有更好的情意,可以說一下比如說,堅持不懈反正一些是會現象的那如果是針對於那種像比較火的那些都看得了,火影啊,海豬王啊,戰鬥,這種風發的我覺得沒有一個反而可以先對還有對我有他主要是他但是他夥伴是一個很簡單的就是一個夥伴是這樣子的對主要是反正他們就是不拋棄一個夥伴對不拋棄一個夥伴我覺得動漫和電影中間有很大區別因為電影的話你只是一場所以你必須要給別人一個很長的時間那一个记忆点以后就会留下一个深刻的印象就像那一个点观众记得特别清楚对如果你做成那种像网友那种的话做一个电影其实又有太大的过程可能就是在开一个剧场里面的生活不会是想要咱们因为是一个玩笑的影片可是咱们要以什么精心体系为例呢就像最近沙烟的比较火的那种我从白石原起白石原起这就是讲述的这个爱情我从那和那些怎么讲述的和那个我用一个我用一个的就属于那种坚持不懈对就是就是我主要以坚持对于那种心特别多的方法对但是你像我咱们的扫描就是以并不为反面严肃的话它就起码是考虑到就是抗险因为身份上在抗议它就是抗险的思维谢谢大家主抓的这个方面主抓宫果龙它特别浓的对对对咱们可以把长白草这个护士金改变一下就把它使用于如何看宫主这一方面它设计的应该是以一个主人公的名义这个可以把主人公那个形象放在现代不过是他身上是有他想放长白草的元素在然后他抗击的病毒我觉得可以把这个主人公发生的故事的背景放在多少年多少几百年之后就是他在偶尔读了这么一个故事以后然后他最后做出来的经历的事情可能和神龙长白草所以说故事是比较相似的可以徵求一下大家的意見如果要問的話可以讓大家提供一下自己的意見就是屬於那種方式提一個意見這個動漫這一塊其實我覺得還是搞一下眼前的樣子一些老套路的話總覺得你是在抄襲這一方面可以繼續考慮工作套路伊亚塔会不会算超级呢?套路伊亚塔不算超级但是网上肯定有会议论打的我觉得我们还是应该设立一个定义的推手可以是肯定不是证据会要排在邪恶但是过程的话可以一波几折之类的可以反转反转过程需要反转我们最近有那个比较火一点的其实火一点的电视剧或者电影其实是悬疑片多的有没有想加入这个悬疑在这些动漫里面其实中国这些悬疑类的动漫其实真的没有那这么说的话我这也有一个稍微有一个提议你就像咱们卫生院的工人是未来的是一体世家的因为从小学习比如说医学药理然后他肯定会经过神火三百草各种神话故事咱们学医可以加进去因为它自己会是一个协助病毒一个安排这样看来会比较好讲你好焦基于之前我们讨论的内容关于【动】漫设计我们是否应该将故事背景设定在未来结合神肠百草的元素来表现主人攻抗病毒的奉献精神同时讲我们是否应该加入悬疑元素和爱情线以增加故事的复杂性和吸
+会议决定将故事背景设定在未来，并结合神肠百草元素展现主角对抗病毒的精神。同时考虑加入悬疑元素和爱情线，以增强故事吸引力。风格倾向于温暖、有序、积极向上，避免过于沉重或消极的内容。团队还需确定动漫与电影的区别，确保故事主线清晰，吸引目标观众群体。
+reasoner 输出结束
+主角是二号,大家认为主角是一号,但是电影名字已经告诉你主角是二号了,那么可以把电影的感受相对来说,大家理解不了,是有一些悬疑在那里。然后这个是电影的题目,咱可以把里头的主动给它翻出来,大家认为它是男一和女一,但是其实它不是男一和女一。角色这边角色这边其实还是得根据整体的风格刚才不明男女的问题男女女的问题男女女的问题我觉得在这个上面就是人物不用特别多但是要突出主人公吧对 突出人物性格太多的话反而会特别多再做一個再那说一下如何看 如何想法这个就属于我的题目给人的悬疑可以吸引到观众的眼球我们感觉他们认为这个电影类似于内容方面的电影让他们觉得朝念方便想但是咱们的电影剧情可以根据它的一个传转然后让观众开始看的时候认为它是你是想题目和你拍的那一幕,你的題目和你的內容是有反轉的,是這樣的權宜嗎?題目要留有人疑惑,就是會思考,會想。題目肯定跟你們提的內容是一樣的,但是你剛才說的留有權宜這個,但是你可能提的那個是一個提款。對,我說的意思是什麼呢?是讓觀眾留有權宜,而不是讓劇情留有權宜。我的意思是,讓觀眾人,比方說像我給你們說,阿麗斯卡當了天使,然後單劇情動漫中就有一個叫阿麗斯卡,肯定知道她是主角吧?就讓觀眾不知道她是主角,就是題目是以咱們動漫內容為例的題目,不要告訴咱們主角是這個,讓咱們自己去思考咱們動漫內容。對的,這就可以設立一個宣傳的角色,就是,我想給你覺得,他有一種比較優秀的角色但是我觉得成一个剧那你觉得他设计的我觉得他刚才说的有旋律然后作者有思考然后看着观众思考我觉得这个点就非常好因为很多现在电影就是直接一说题目一说电影就大概能想到套路你就知道结局是什么我觉得这样看完之后人不会对这个动漫或者这个电影有太大的记忆点对 没有什么对 让人请不吝点赞 订阅 转发 打赏支持明镜与点点栏目根本就留不住对 当然真棒的然后就希望大家能觉得摄影的话就是最柔现在的视频有几个主题好而且也是让我们专注在看上的动漫的时候他不只是想看一遍而想看完以后他还想再重新看一遍然后有预示的内容对最好做一些特别细节的一些图点对然后让人看完之后每一次看都能发现不同的细节,然后会动漫更多理解。最好在结尾升华一下这个主题的深层。有一些空白让观看的人思考一下。就像你所说的假设男主的父亲是男人协助的到最后把你面对的正面对,然后你看一个影片,也会引发人思考。还有就是什么,就是属于这种在大陆的乡里看一些电影,他在那里,他会有些东西他就会没有过到,比如说这种在电影上看的电影,戴了过。但是当你在电影上看完这个电影以后,你没有看过文化,就给他们没有这种权益。而且最好还有这方面这方面肯定挺反强的在这方面的加注有点烦人因为马前方面的发言过来有什么要对我们说的所涉及的人物不能侵权就比如说别的公司别的伙伴做出来的人物比如说我们的你们想做一个什么请你雇一下想以三点加给我们的一个这种货币這個新疆美髮的髮管是否屬於銜髮或是是否屬於銜髮你覺得非常非法的被這個公司造成的疑慮對經濟上的影響那我才問一下我們平時想因為我們需要做工具然後兼顧了一個如果是想要製造這些人物的產戰方面這個就比較少你可以和電子公司你可以和半載的群組聯繫因為我們也感覺主要的話還是科技新發展的商品多就可能會這些公司有個東西加一線散彈這方面需要加工來打跟私人联系,然后告诉他们会议,他们的联系,然后跟他们说一些消息,看看他们是否同意,然后需要一个签字的工作,这样。那像高尔维亚一样,我们才能控制,咱们就是这方面需要把细节组理好,就是咱们剧本写好以后,就要把这些戏都加上来,用到作方便的画师,进行工作人物。对,然后咱们可以下面就是大概故事的话,剧情,剧本就画到这儿了。大概剧情的话,根据你刚刚说的,我们不是想加入一个英雄,他是解读的吗?医学方面的这个医学然后我们会后期根据你想要打造的这个人物的角色然后编造一个属于这个故事的一个比较有转折然后起伏的一个故事情节然后再根据那个我们想要升华的那个最终的主题思想然后编一下这个剧本需要最后留白的一些謝謝大家關注
+[Audio Detection] 在 1573.71 秒检测到关键词 '好交交'。
+detection_time: 1573.71, current_time: 1560.00
+问题音频片段长度: 155478, dtype: float32, min: -0.100860595703125, max: 0.1048583984375
+问题音频时间长度: 9.717375
+
+
+[Agent] 接收到问题: 如何设计角色以避免侵权病增加观众的思考和重看欲望
+, 1735098609.493793
+
+
+[Agent] 最终接收到问题: 如何设计角色以避免侵权病增加观众的思考和重看欲望
+, 1735098609.493991
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4856 seconds, One token time: 0.1619 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 151, Total time: 5.3170 seconds, One token time: 0.0352 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+设计角色时，首先要避免角色与已有角色过于相似，以免引起侵权纠纷。同时，角色的设计应该具有独特性，能够给观众留下深刻的印象。此外，角色的人设也应该有深度，不仅仅是外表和性格的描述，更需要包括其内心世界、成长经历等方面，这样可以让观众更加投入。另外，让角色具有一定的争议性和讨论点也可以增加观众的思考和观看欲望，但要注意不要过度煽动情绪。总的来说，设计一个成功的角色需要深入理解观众，同时也需要注意避免版权问题。
+talker 输出结束
+四毫那个情态四毫对就身为中国人或者是中国人因为自导文化就想有四毫万哦人家会不会太单调呢就怎么样呢就变多了呃变多的话不是单纯就是就是他读书的状态就是他说的加几万样素就像异形就是一個電影吧,加入李星鵝、石松、金像獸那些表層,把電影都…可以把它…那個成一個電子怪就是這個的話就是到時候…就是靠基本的話就是進行了修飾咱们就主要电话里面稍微就是把它可以把它听听有更高的流程如果要让观众感觉到自豪的话咱们的故事是不是要在观众的心中带进去这个在剧本方面写剧本的时候是肯定会考虑这个故事发展故事的跌宕起伏会考虑到观众观看时候的这些心理这个剧本方面是要考虑到这些如果咱们这一部如果要出第二部的话不留悬疑的话第二步会开始开场最后会留一个空白点然后让观众思考一下他如果今天思考他没有感觉到自豪的感觉他只思考他的情绪没有被淡在那方面没有想那么多一个人看一个电影就有一个人的感觉我们可以过一些水去一些各大的影评网站上去按照我们的意思背景风格人物风格人物风格古风西方的神秘学他们不是要中西结合南一是西方然后南二是中方对不用特别局限都是哪一边我觉得这样就挺好不像华人有中文的要素在裡面其實也有科技因為現在就是希望就是好像做關於科技方面的有的演員還是比較多的咱們也相當於建一條就是把咱們的工作就是往後一跑後一步就有科技的行為就是這樣然後這樣的話就是一到咱們是一個二年從頭到最後三個年二年的話就是支付起來那如果是像西方一个中方一个中东两个角色,他的电影会以介绍日常为开始吗?介绍日常为开始?如果电影开头直接步入主题的话,会不会没法开发?就相对于一个日常对,然后,但是咱们结果是一定要快的因为用日文字写字是以户外文化为切入点的对,就是很简短的一个日常,直接带过就是很短就可以带过了因为咱们主要讲的就是,咱们是要讲太浪费电影的时间了對,它們的主要是把劇情走通过一个日常来环绕我们带入女孩就是一个是显得日常变的一个后面发生了政治爆发以后带一个男儿相遇的故事咱们的男女和男儿相遇有选择吗我们不考虑加入女孩的角色吗觉得这位队队的角色是我觉得肯定有女孩没有女主人公,然后只有男主人公,这个电影特别多漫特别不少。对,没有哪一个动漫到现在说是只有感情线,没有人愿意看,因为像我们这种年龄的年纪的没有人会愿意看。对对对,就是想跟这个感情线的话,就是需要改善一下。好,可以。可以咱们可以反感一下就像拿一只钟棒就是可以反感一下男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男
+[Audio Detection] 在 2037.46 秒检测到关键词 '好交交'。
+detection_time: 2037.46, current_time: 2010.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.1107177734375, max: 0.121063232421875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于电影中男一和男二的角色设定电影啊我们是否考虑将他们设定来问问东西方文化的
+, 1735098636.9740689
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于电影中男一和男二的角色设定电影啊我们是否考虑将他们设定能不能为东西方文化的代表并通过他们的故事来展现中西文化的碰撞和融合对呢当我们进行当时在剧情发展那种我们如何通过角色的性格塑造和故事转折来转折来增强观众的自豪感和情感共鸣
+, 1735098639.102799
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4924 seconds, One token time: 0.1641 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：角色设定 东西方文化 对比故事转折 情感共鸣
+Token count: 37, Total time: 7.1183 seconds, One token time: 0.1924 seconds
+
+提取的关键词: ['角色设定', '东西方文化', '对比故事转折', '情感共鸣']
+
+找到的上下文片段数量: 2
+会议讨论了电影中的角色设定，特别是男一和男二的角色。计划将他们设定为东西方文化的代表，通过他们的故事展现中西文化的碰撞与融合。此外，电影将从日常场景入手，逐渐引入更复杂的情节，如政治冲突，并最终引入女主人公角色。这样的设定旨在增强观众的代入感和思考空间。
+Token count: 78, Total time: 15.4356 seconds, One token time: 0.1979 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：角色设定 东西方文化 对比故事转折 情感共鸣
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 而且最好还有这方面这方面肯定挺反强的在这方面的加注有点烦人因为马前方面的发言过来有什么要对我们说的所涉及的人物不能侵权就比如说别的公司别的伙伴做出来的人物比如说我们的你们想做一个什么请你雇一下想以三点加给我们的一个这种货币這個新疆美髮的髮管是否屬於銜髮或是是否屬於銜髮你覺得非常非法的被這個公司造成的疑慮對經濟上的影響那我才問一下我們平時想因為我們需要做工具然後兼顧了一個如果是想要製造這些人物的產戰方面這個就比較少你可以和電子公司你可以和半載的群組聯繫因為我們也感覺主要的話還是科技新發展的商品多就可能會這些公司有個東西加一線散彈這方面需要加工來打跟私人联系,然后告诉他们会议,他们的联系,然后跟他们说一些消息,看看他们是否同意,然后需要一个签字的工作,这样。那像高尔维亚一样,我们才能控制,咱们就是这方面需要把细节组理好,就是咱们剧本写好以后,就要把这些戏都加上来,用到作方便的画师,进行工作人物。对,然后咱们可以下面就是大概故事的话,剧情,剧本就画到这儿了。大概剧情的话,根据你刚刚说的,我们不是想加入一个英雄,他是解读的吗?医学方面的这个医学然后我们会后期根据你想要打造的这个人物的角色然后编造一个属于这个故事的一个比较有转折然后起伏的一个故事情节然后再根据那个我们想要升华的那个最终的主题思想然后编一下这个剧本需要最后留白的一些謝謝大家關注如何【设】计角色以避免侵权病增加观众的思考和重看欲望四毫那个情态四毫对就身为中国人或者是中国人因为自导文化就想有四毫万哦人家会不会太单调呢就怎么样呢就变多了呃变多的话不是单纯就是就是他读书的状态就是他说的加几万样素就像异形就是一個電影吧,加入李星鵝、石松、金像獸那些表層,把電影都…可以把它…那個成一個電子怪就是這個的話就是到時候…就是靠基本的話就是進行了修飾咱们就主要电话里面稍微就是把它可以把它听听有更高的流程如果要让观众感觉到自豪的话咱们的故事是不是要在观众的心中带进去这个在剧本方面写剧本的时候是肯定会考虑这个故事发展故事的跌宕起伏会考虑到观众观看时候的这些心理这个剧本方面是要考虑到这些如果咱们这一部如果要出第二部的话不留悬疑的话第二步会开始开场最后会留一个空白点然后让观众思考一下他如果今天思考他没有感觉到自豪的感觉他只思考他的情绪没有被淡在那方面没有想那么多一个人看一个电影就有一个人的感觉我们可以过一些水去一些各大的影评网站上去按照我们的意思背景风格人物风格人物风格古风西方的神秘学他们不是要中西结合南一是西方然后南二是中方对不用特别局限都是哪一边我觉得这样就挺好不像华人有中文的要素在裡面其實也有科技因為現在就是希望就是好像做關於科技方面的有的演員還是比較多的咱們也相當於建一條就是把咱們的工作就是往後一跑後一步就有科技的行為就是這樣然後這樣的話就是一到咱們是一個二年從頭到最後三個年二年的話就是支付起來那如果是像西方一个中方一个中东两个角色,他的电影会以介绍日常为开始吗?介绍日常为开始?如果电影开头直接步入主题的话,会不会没法开发?就相对于一个日常对,然后,但是咱们结果是一定要快的因为用日文字写字是以户外文化为切入点的对,就是很简短的一个日常,直接带过就是很短就可以带过了因为咱们主要讲的就是,咱们是要讲太浪费电影的时间了對,它們的主要是把劇情走通过一个日常来环绕我们带入女孩就是一个是显得日常变的一个后面发生了政治爆发以后带一个男儿相遇的故事咱们的男女和男儿相遇有选择吗我们不考虑加入女孩的角色吗觉得这位队队的角色是我觉得肯定有女孩没有女主人公,然后只有男主人公,这个电影特别多漫特别不少。
+---
+可以咱们可以反感一下就像拿一只钟棒就是可以反感一下男二男二男可以咱们可以反感一下就像拿一只钟棒就是可以反感一下男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男二男基于之前我们讨论的内容关于电影中男一和男二的【角】色设定电影啊我们是否考虑将他们设定能不能为东西方文化的代表并通过他们的故事来展现中西文化的碰撞和融合对呢当我们进行当时在剧情发展那种我们如
+会议讨论了电影中的角色设定，特别是男一和男二的角色。计划将他们设定为东西方文化的代表，通过他们的故事展现中西文化的碰撞与融合。此外，电影将从日常场景入手，逐渐引入更复杂的情节，如政治冲突，并最终引入女主人公角色。这样的设定旨在增强观众的代入感和思考空间。
+reasoner 输出结束
+
+会议数据处理完成。

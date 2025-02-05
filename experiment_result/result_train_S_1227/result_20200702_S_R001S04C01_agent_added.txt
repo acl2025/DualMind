@@ -1,0 +1,248 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200702_S_R001S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Starting processing from 0s, total chunks: 75
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.38it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.72s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.82s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.86s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.24s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.33s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.32s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.40s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.50s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.15s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.88s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.88s/it]
+002我是总经理035是设计0202我是建筑师007我是市场部行吧咱们今天来开咱们这个会每周的议会嗯我们先回报一下各部门的情况吧各部门的一些上周的一些部门的情况一些问题一些的一些问题先回报一下吧然后从咱们两个部门下来设计设计吧设计这一块我们上周是接了一个中间艺术的承包接了一个什么中建一局啊中间啊然后他们给承包给咱们一个一片园林然后咱们这个装饰公司主要是负责借看园林的这个设计嗯然后还有这个他不仅是不仅让我设计还有他底部一些管道排水排水嗯然后这些之类的这张图是做出来的对,这张也发给他们的歌手去检查看合不合格合格的话这时候会对接然后我们会和施工队对接,让他们去施工咱们这边主要是初步设计已经设计好了然后就需要后期的一些配合然后咱们这儿现在因为疫情嘛,然后车子现在工作量不太重,对,所以现在咱们这个园园,我觉得可以说进行一段裁员。进行一段裁员。对。对,裁员方面有什么看法?才能通过这一块因为咱们这高清今天的几个人才,主要就是那几个,像一些设计师助理,就有,咱们有五道任命设计师助理吧,我觉得可以裁个一到两名,就可以了。让一个设计师用一到两个人应该是可以的。这方面你觉得,咱们目前这个人选出来了吗?需要裁的人。人权还没出来接下来会对他们进行一些考核根据考核的成果吧,决定谁走谁溜现在你对这五个助理是吧?六个这六个对他们有什么样的印象呢?六个小伙都是男的吧?对,都是男的,都是挺踏实的但是他们的学艺能力不太一样有的水比较强有的那种是随意东西不想但是他要他是愿意学就能熬也能学会嗯这个就看到时候是临城就面对看谁更强一些吧嗯目前对这个呃这六个这个带考核的这些你给他们说了吗啊还没有要他们做一个这方面心理的准备嗯好就下周我跟他们说刚才说到这六个小伙要根据他们一个肯定是工作踏实的咱们先留下还有就是业务稍比较强一点能力比较强的先留下就这两个要求我这边就这两个要求还有什么上周设计之外没有什么上周没什么谢谢没什么问题啦对了一下行然后在这个市场这个上周我们主要做的工作就是跟进一下咱们原有的订单还有就是说有咨询的客户跟进了一下然后再一个就是我们跟进那个结果情况怎么样有几个有意向的然后有意向的话我们就是跟然后咱们设计一块然后一块再跟客户进行对接根据他们的情况出几套一套咱要出几套然后让他们去选自己喜欢的对 然后就是约他们来咱们公司然后面谈一下这样咱不仅跟我们市场跟设计师一块团这样的话他們那個要求设计师了解的更明确一点对对对然后更好达到他们的要求更好的要求对对对并且我们主要是我们市场吧也没办法就是全就是很很全面的跟那个客户说这个设计方面专业的问题还得由设计师来出面谈这个问题也不用到时候不用说的太专业比如说出图比什么都好吧对对就是更直观一点对更直观一点哇因为太专业了,我觉得客户他们对这个也不太了解,他们只是想要一种,他们的思想,他们的风格,但是他们的思想也不是太成熟。他们需要我们设计这方面,去给他们精英,去给他们巩固一下这个,引导他们。对对对嗯然后就是我们我们这一块还带领我们这个团队嘛就去进行了扫楼,新的楼盘已经交工了,扫一下楼,看有没有毛屁股,还没有装修的,在门上塞个广告,去扫一下楼。然后这样的话就是可以就是留一下我们的留联系方式吗到后续上上看这边如果有这个小区你想要装修的还没有找到这个转租公司的或者现在队伍里装修公司的这些都可以到咱们这儿来看看对对对主要是我们就是做了一个这个还有一个就是说去对外进行了一次宣传就是对外发放人工一
+[Text Detection] 在 507.03 秒检测到关键词 '娇娇',current_time: 480.00, 问题文本: 一方面就是提高咱们公司的知名度嘛另一方面就是拓展一些也意向的客户不一定就是有时候不一定就是光打电话来因为打电话嘛接触不到真实的人他们以为就会是炸片电话什么的你好 娇娇针对设计部门裁员
+问题音频片段长度: 154966, dtype: float32, min: -0.18304443359375, max: 0.173828125
+问题音频时间长度: 9.685375
+
+
+[Agent] 接收到问题: 针对设计部门裁员你建议如何根据员工表现和能力进行合理筛选
+, 1735126476.673116
+
+
+[Agent] 最终接收到问题: 针对设计部门裁员你建议如何根据员工表现和能力进行合理筛选
+, 1735126476.673242
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9323 seconds, One token time: 0.3108 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在设计部门裁员时，应根据员工的表现和能力进行合理筛选。首先，需要制定明确的评价标准和流程，确保公正、公平、透明。其次，要全面考虑员工的工作绩效、专业技能、团队协作、创新能力等多个方面，避免单一指标导致误判。最后，要充分沟通与解释，尊重员工的意见和想法，为他们提供改进的机会和空间，尽量减少人员流动和负面影响。
+talker 输出结束
+方面就是提高咱们公司的知名度嘛另一方面就是拓展一些也意向的客户不一定就是有时候不一定就是光打电话来因为打电话嘛接触不到真实的人他们以为就会是炸片电话什么的你好 娇娇针对设计部门裁员完成他们的装修做一下我们那个我们就做一下这个协调工作吧嗯这就是一些这个针对一些这个嗯房屋装修的对还有一些这个针对一些公司装修的目前在这有这个业务吗嗯 有 但是相对来说少一点但是如果说公公司装修的话,利润还是比较大的因为公司装修,总的来说吧现在小型公司的装修风格还是比较简单的这些要求也没有那么高空间大,风格上也都比较稍微比较统一一点,这种小型公司所以说咱们这个,不像这种加妆要求多一点然后施工难度更大一点所以我们这个下一步我们市场这边可以更进一步扩大人这个公司的这个业务公司的这种业务的装修还有一些我们可以参与的就是参加一些招标就比如说一些还有一些国家刚才这个设计有个中间印象中间印象原来那个对我们市场这边也会时刻关注一下各大银行的官网如果有这种招待信息的发布的话我们会及时投标就是报名吧然后后期准备然后竞标然后准备竞标因為這個是國家的那個我们的资金保障还是很到位的只要我们的资格到位价格比较到位咱们还是有希望拿到这些标的如果我们工程做得多的话后期对我们整个公司的资质我们这些工程做得越多我们以后再接工程实力在这儿就更好对,就更有说服力了对地产开发商建筑商们搞一个这个方面的合作对,目前的话还是有的就是我们也是会去对咱们整个市的这个楼盘分析咱们这个楼盘分布然后不断了解这个咱们这个动态还有这个入住情况装修情况都会去了解如果知道有新楼盘想要什么的装修公司也得实时了解这个情况然后我们就会去找开放商进去洽谈最好还是能接一些这些业务尤其是想要打这种这种有的大的开放商就经常就会主打这些精装修然后我们就会跟他们合作嗯是这样的就是因为如果是精光修的话他那个设计的模板还还是每个户型都是一样的用的东西都一样这还是对我们来说比较省心然后也成本来说也很也也低了一部分因为这些楼都有这些户型都是用的同样的图各种都是一样的然后设计就能就不用费很多事對然后我们进的都是同样的材料这样相比来说就是量大了然后我们材料方面用的也更省心然后成本就会降低利用率也高一点其实我们其实可以跟他们后期如果接这个项目的话可以跟他们好好洽谈一下然后至于这个如何定价嘛这个后期是可以主要是还得找到这个意向客户我们这个我们市场这边会一直注意的这也是我们也要进行的意向工作就是咱们刚才说到这个大型的一些咱们公司有营业务还是这个家的装修等一些这个但是未来的发展可能也会更多的公司这些大型的装修对,跟这些开发商进行合作对,换点一个方向吧从这个工程我们收工队之前已经接过了设计师手中的图纸在经理的代理人已经开始这个设计师手中的图纸有時候在這個現場有一定的出入对有这个是我接下来要说的就是在施工的过程中过程中呢就是发现地下的弹线走线还有就是国家电缆一些比较比较重要的设置就是不太清楚我希望就是设计师可以提供更清楚的走线走线方向然后方便施工对施工这个方面我也会论这个电脑国家电脑去找他们要一些这个室内的就找一些这个相应图或者找一些图纸然后设计的话就尽量避开这些线好了然后就是这段时间呢咱们其实就是工人的到岗率其实还是比较低的因为因素原因然后所以总的来说进展不是很大然后又基于咱们这个大项目这个中间的大项目然后所以其他的其他项目的进程就比较缓慢我建议的就是实行就是分享承包日就是承包出去咱们可以就是承包出去之后可以单独的合作嘛然后咱们可以从中然后获取利益承包对对对承包对咱们的到时候这个质量上来怎么办呢质量上来呢承包出去之后咱们要就是最后检测的时候咱们要用自己人自己公司的人然後如果发现坏了不够关的项目,命销货币也要把它开除,这部分损失的费用就承包给我个人承担。如果用量大,就可以把效果承包出去但
+[Text Detection] 在 1009.24 秒检测到关键词 '娇娇',current_time: 990.00, 问题文本: 但是如果就是说我们现在业务好尖了现在来说的话还是相比于往年这个时间段的话这个业务还是有所下降的不太容易接到了对你好 娇娇基于之前我们讨论的内容关于公司装修业务的拓展你怎么看待我们与地球
+问题音频片段长度: 455840, dtype: float32, min: -0.188690185546875, max: 0.19158935546875
+问题音频时间长度: 28.49
+
+
+[Agent] 接收到问题: 对,你好,娇娇,基于之前我们讨论的内容,关于公司装修业务的拓展,你怎么看待我们与地产开发商合作进行精装修项目的可行性?你认为在合作过程中,我们应该如何确保设计图纸与现场实际情况的一致性,以避免施工过程中出现问题?
+, 1735126509.4567897
+
+
+[Agent] 最终接收到问题: 对,你好,娇娇,基于之前我们讨论的内容,关于公司装修业务的拓展,你怎么看待我们与地产开发商合作进行精装修项目的可行性?你认为在合作过程中,我们应该如何确保设计图纸与现场实际情况的一致性,以避免施工过程中出现问题?
+, 1735126509.4569037
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4915 seconds, One token time: 0.1638 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：公司装修 地产开发商 合作 可行性 精装修 设计图纸 现场实际 一致性
+Token count: 49, Total time: 9.8645 seconds, One token time: 0.2013 seconds
+
+提取的关键词: ['公司装修', '地产开发商', '合作', '可行性', '精装修', '设计图纸', '现场实际', '一致性']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+针对设计部门裁员，建议根据员工的表现和能力进行合理筛选，优先保留具有丰富经验和良好业绩的员工，以提高公司整体实力。同时，通过对外宣传和拓展潜在客户，增加公司的知名度和客户基础。例如，可以通过提供联系方式，让有需要的业主或公司直接前来咨询，而非仅依赖电话联系。这样可以更好地服务客户，并提高公司的市场竞争力。
+Token count: 84, Total time: 16.4528 seconds, One token time: 0.1959 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：公司装修 地产开发商 合作 可行性 精装修 设计图纸 现场实际 一致性
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 然后这样的话就是可以就是留一下我们的留联系方式吗到后续上上看这边如果有这个小区你想要装修的还没有找到这个转租公司的或者现在队伍里装修公司的这些都可以到咱们这儿来看看对对对主要是我们就是做了一个这个还有一个就是说去对外进行了一次宣传就是对外发放人工一针对设计部门裁员你建议如何根据员工表现和能力进行合理筛选方面就是提高咱们公司的知名度嘛另一方面就是拓展一些也意向的客户不一定就是有时候不一定就是光打电话来因为打电话嘛接触不到真实的人他们以为就会是炸片电话什么的你好 娇娇针对设计部门裁员完成他们的装修做一下我们那个我们就做一下这个协调工作吧嗯这就是一些这个针对一些这个嗯房屋装修的对还有一些这个针对一些公司装修的目前在这有这个业务吗嗯 有 但是相对来说少一点但是如果说公公司装修的话,利润还是比较大的因为公司装修,总的来说吧现在小型公司的装修风格还是比较简单的这些要求也没有那么高空间大,风格上也都比较稍微比较统一一点,这种小型公司所以说咱们这个,不像这种加妆要求多一点然后施工难度更大一点所以我们这个下一步我们市场这边可以更进一步扩大人这个公司的这个业务公司的这种业务的装修还有一些我们可以参与的就是参加一些招标就比如说一些还有一些国家刚才这个设计有个中间印象中间印象原来那个对我们市场这边也会时刻关注一下各大银行的官网如果有这种招待信息的发布的话我们会及时投标就是报名吧然后后期准备然后竞标然后准备竞标因為這個是國家的那個我们的资金保障还是很到位的只要我们的资格到位价格比较到位咱们还是有希望拿到这些标的如果我们工程做得多的话后期对我们整个公司的资质我们这些工程做得越多我们以后再接工程实力在这儿就更好对,就更有说服力了对地产开发商建筑商们搞一个这个方面的合作对,目前的话还是有的就是我们也是会去对咱们整个市的这个楼盘分析咱们这个楼盘分布然后不断了解这个咱们这个动态还有然后这样的话就是可以就是留一下我们的留联系方式吗到后续上上看这边如果有这个小区你想要装修的还没有找到这个转租公司的或者现在队伍里【装】修公司的这些都可以到咱们这儿来看看对对对主要是我们就是做了一个这个还有一个就是说去对外进行了一次宣传就是对外发放人工一针对设计部门裁员你建议如何根据员工表现和能力进行合理筛选方面就是提高咱们公司的知名度嘛另一方面就是拓展一些也意向的客户不一定就是有时候不一定就是光打电话来因为打电话嘛接触不到真实的人他们以为就会是炸片电话什么的你好 娇娇针对设计部门裁员完成他们的装修做一下我们那个我们就做一下这个协调工作吧嗯这就是一些这个针对一些这个嗯房屋装修的对还有一些这个针对一些公司装修的目前在这有这个业务吗嗯 有 但是相对来说少一点但是如果说公公司装修的话,利润还是比较大的因为公司装修,总的来说吧现在小型公司的装修风格还是比较简单的这些要求也没有那么高空间大,风格上也都比较稍微比较统一一点,这种小型公司所以说咱们这个,不像这种加妆要求多一点然后施工难度更大一点所以我们这个下一步我们市场这边可以更进一步扩大人这个公司的这个业务公司的这种业务的装修还有一些我们可以参与的就是参加一些招标就比如说一些还有一些国家刚才这个设计有个中间印象中间印象原来那个对我们市场这边也会时刻关注一下各大银行的官网如果有这种招待信息的发布的话我们会及时投标就是报名吧然后后期准备然后竞标然后准备竞标因為這個是國家的那個我们的资金保障还是很到位的只要我们的资格到位价格比较到位咱们还是有希望拿到这些标的如果我们工程做得多的话后期对我们整个公司的资质我们这些工程做得越多我们以后再接工程实力在这儿就更好对,就更有说服力了对地产开发商建筑商们搞一个这个方面的合作对,目前的话还是有的就是我们也是会去对咱们整个市的这个楼盘分析咱们这个楼盘分布然后不断了解这个咱们这个动态还有这个入住情况装修情况都会去了解如果知道有新楼盘想要什么的装修公司也得实时了解这个情况然后我们就会去找开放商进去洽谈最好还是能接一些这些业务尤其是想要打这种这种有的大的开放商就经常就会主打这些精装修然后我们就会跟他们合作嗯是这样的就是因为如
+针对设计部门裁员，建议根据员工的表现和能力进行合理筛选，优先保留具有丰富经验和良好业绩的员工，以提高公司整体实力。同时，通过对外宣传和拓展潜在客户，增加公司的知名度和客户基础。例如，可以通过提供联系方式，让有需要的业主或公司直接前来咨询，而非仅依赖电话联系。这样可以更好地服务客户，并提高公司的市场竞争力。
+reasoner 输出结束
+是如果就是说我们现在业务好尖了现在来说的话还是相比于往年这个时间段的话这个业务还是有所下降的不太容易接到了对你好 娇娇基于之前我们讨论的内容关于公司装修业务的拓展你怎么看待我们与地球营销方法吧把这个单子接接这咋说呀就是接更多的单子吧但是就是承包的话这个也是可以的但是得考虑咱们的那个承包方咱们的利益方面要考虑承包方它是否具有这个资质它的资质是要需要跟它进行考核之后施工光光把施工承包给他们这个也是可以的对因为设计是让图展还是咱们自己做的对还有咱们还要需要的东西然后最后的就是这点检测也就咱们自己的对承包他也咱们也可以就是纯呃承包出息就是他们让他们施工还有一个也就是包工包料两个都让他们去弄啊这两种但是也有核算这个利益吧我们过去按这个例文吧市场这一块有没有跟客户打电话现在我们业务员这些话术方面一直要培训是有因为有时候我们也会隔一段时间也要更新一下这个话术还有针对咱们这个套餐也要更新这个话术的但是就是说在打打电话过程中,我们对这个套餐肯定不会很...因为打电话的时间还是短的很简单的描述一下,最好的就是邀请客户到现场来并且我们每次如果打电话有活动的话,主要还是介绍这个活动所以我们打电话的过程中,话术简练,然后也突出重点现在很多人对这个打电话都是很反感的我们尽量就是在短时间内,把我们是谁,要干嘛的给人家说清楚如果对方不反感的话,我们再继续往下聊最终的目的是让他们来到我们公司看一看我们设计这玩意做了一些效果图对,然后就是现场聊,这样是我们的目的嗯打电话这一块然后我们也会定期就是根据这个因为我们每天嘛就是业务员对打电话的客服都会把他下午快下班的时候把他一天打个电话那问题反馈都会写认知呈报给我们看然后并且让他们如果有问题并且要写出这个解决问题的方案然后我们在我们在后边再讨论是这样的他们自己有那种解决方案的能力吗就是让他们写上意见建议然后我们再讨论然后再一起讨论对主要还得是不能光发现还得有解决问题的能力因为大家集思广益吧市场做到线上线线同时进行,针对线上,现在线上在装修这个平台,排名是有什么样的情况?排名的话,在咱们本市的话,排名还是算是比较靠前的,因为像这种大型的装修装饰公司还是不多的一般都是小型的个人的那种像咱们这个大型的还是不多就超前三吧的嘛然后但是就是我们也是经常也是会呃观察就是同行之间的这个情况然后互相互相了解然后嗯提高了那个竞争力吧也是呃观察对方然后了解这个市场的发展发展方向吧近期,我们设计出了几个优秀的效果图,在网上传到公共号,现在公共号运营是怎么样?公共号运营还是挺好的,預備现在大家对这个线上用用手机去线上浏览浏览这些网页呀那个呃公众号啊呃各种东西都很多对现在人们都会对我们施工队就是我们没事的时候也会有点点网页对就是了解一些信息很多现在都是都不一定就是从呃路边看的那个广告很多都是从手机上看到的所以我们这个市场这边对这个公众号呢也是一周就是发自天发自天相关的内容有我们也是根据这个咱们公司的这个做的活动还有这个节假日我们都会出相应的公众号内容还有就是咱们也会有时候也会展示一下我们公司的这个整体风貌在公众号上都会都会体现还有会宣传一些装修的比较好的一些夹装风格然后现场的那些视频我们都会通过公众号发出来市场增值季吧嗯下半年市场可能会市场这个市场这个占比会变得越来越大因为下半年装修的人比较会比较多上半年呢因为这个大趋势的影响不可抗拒所以装修的人比较少下半年肯定会越来越多对因为这个装修们就是一些这个结婚的一些年轻人年轻人很喜欢这种更具体的生活上的品味还有这个现代化风格清奢的这种嗯这方面的准备好找几个对现场比较了解的一些设计师对因为原先的时候人们都想装修最简单的那种就是刷个白墙整个大灯就很简单的那种现在人们都对装修的要求也高了随着这个时代发展那个然后网络也发达了然后这些各
+[Text Detection] 在 1549.41 秒检测到关键词 '娇娇',current_time: 1530.00, 问题文本: 各种风格都可以出现对这种颜色上他们也就是接受能力也强了不一定就是光这个白色因为很多人现在就喜欢那种或者灰色调的很多都能接受了你好 娇娇如何提升业务员电话沟通技巧和话术培训效果就是一些极简主义然后吃话主义嗯
+问题音频片段长度: 115030, dtype: float32, min: -0.18896484375, max: 0.18267822265625
+问题音频时间长度: 7.189375
+
+
+[Agent] 接收到问题: 如何提升业务员电话沟通技巧和话术培训效果
+, 1735126564.9486299
+
+
+[Agent] 最终接收到问题: 如何提升业务员电话沟通技巧和话术培训效果
+, 1735126564.948747
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4902 seconds, One token time: 0.1634 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 73, Total time: 3.0918 seconds, One token time: 0.0424 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+1. 培训内容应包括有效沟通技巧、产品知识、客户需求分析、谈判策略等。
+2. 使用案例和角色扮演的方式，让学员在实践中提高技能。
+3. 提供反馈和评估机制，帮助学员了解自己的优势和不足。
+4. 设立明确的学习目标，并定期进行复习和巩固。
+5. 培训方式要灵活多样，包括讲座、小组讨论、实战演练等。
+talker 输出结束
+种风格都可以出现对这种颜色上他们也就是接受能力也强了不一定就是光这个白色因为很多人现在就喜欢那种或者灰色调的很多都能接受了你好 娇娇如何提升业务员电话沟通技巧和话术培训效果就是一些极简主义然后吃话主义嗯目前施工这边还有什么问题吗?施工这有一个最重要的问题,就是前两天有一个公司,当然是一个比较小点的公司,然后施工的时候也有一个施工人员从高处不慎跃落产生了一种工伤然后咱们目前还就是安全处置比较好但是防患力未然,所以我感觉还是需要在安全上投入更大的帮助。然后希望技术部门这边,泰族专门的技术人员和我们的施工队进行交接,然后平常没事的时候可以多交流,这样方便我们施工队的过程进行。其他没有什么问题。那是咱们选材还是客户选材呢?就看咱们套餐这方面这方面咱们套餐里边都有有分着的因为有些客户呢他就是想着咱们帮人家设计然后施工但是人家那个装饰材料就想自己去我们时空的时候,一些顾客喜欢自己买材料,让我们自己施工对,这个对我们来说,不用我们选了,倒是也省钱,但是我们也少了一部分收入吧也会不换整体的方案,还需要更改对因为怎么说呢他们选择的东西跟咱们设计那一块还是有出入的对,不是说完全,一方面我们需要怎么去引导客户用引导他们就是一方面是要介绍咱们选的东西的这个东西的好的地方是在哪然后就是用我们所选的品牌,我们给到的力度要比他们自己选就是去购买这个东西的话便宜的力度要大一点大一点因为我们是这种零售和批发的价格肯定是不一样的所以说我们同样的东西让我们去买就不是一样的价格我们可以把这个价格表他们其实可以去问打听的我们把这个价格表给他们对比一下他们就知道我们这样我们包工包料这样的话其实是省钱的等於他們來我们也会跟他们介绍,如果我们去选择这个东西,我们会跟他们提前商量,颜色,风格,都会商量的。在他们认可的情况下,我们要根据我们的设计,达到最好的效果吧。这是我们平时跟他们推介绍的话,会给他们引导。咱们在这我们在能力上尽可能的为顾客展现,给顾客提供更舒适的环境。如果实在不行的话,顾客比较有个性化,那咱们就再另做。只要尽力为顾客提供更好的环境就可以。对,是这样的。因为有些顾客他们其实,因为现在装修个房子买个房子是挺大的事儿的。他们提前肯定也都会自己也去逛过,也会问很多装饰公司我们就是很真诚的跟他们做合作让他们感受到我们真诚其实对我们盘城业务也是有很大帮助的咱们公司的量产就是以顾客为主服务到位,价格也到位嗯因为我们的物料比我们设计的方案要科学化它选择一些对施工时会差强人意的方案这个还有就是我们教授教的报价 联系表这方面可以这方面更加精细一点,原来这个包价比较粗糙,到时候要单本价位,更加精细一点,客户也感觉到价格比较优惠实惠。嗯像墙面啊,地面的涂护啊,包括木石的一些东西,台风啊,金靶啊,精细的画架。然后阳光费上面有一个人多少钱,二人多少钱,精细的画架。效果图片上面要设计的增加贴合实际更人性吧让别人一看就能看清不是那个很虚幻的那种现在人们现在抛物也都上原来都是飘的很虚无的不是很实用实用跟这个图纸差的有点太大对 应该用过电解的设备能力嗯还有这个各种各样的配合业务比较好专门做业务尽量多进一届大型的装修行,谢谢你我们也会不断关注吧大小的装修装修用的还是挺好的因为从地狱上还是在这儿待着的今天要考虑的社会事儿不难然后就是刚才提到的这个裁员的问题我觉得就是裁员的问题这个其实很很很微妙尤其是这个这个这个时间如果就是说我们能承受不了的还
+[Text Detection] 在 2048.94 秒检测到关键词 '焦焦',current_time: 2040.00, 问题文本: 还是保留这个咱们这些人员但是如果说他确实是业务能力跟不上你好焦焦基于之前我们讨论的内容关于施工安全问题你怎么看待我们公司目前的安全措施是否需要进一步增强安全培训和防护措施以防止类似施工人员从高处坠落的工伤事故
+问题音频片段长度: 363350, dtype: float32, min: -0.16583251953125, max: 0.174285888671875
+问题音频时间长度: 22.709375
+
+
+[Agent] 接收到问题: 交交基于之前我们讨论的内容关于施工安全问题你怎么看待我们公司目前的安全措施是否需要进一步增强安全培训和防护措施以防止类似施工人员从高处坠落的工伤事故
+, 1735126593.5647688
+
+
+[Agent] 最终接收到问题: 交交基于之前我们讨论的内容关于施工安全问题你怎么看待我们公司目前的安全措施是否需要进一步增强安全培训和防护措施以防止类似施工人员从高处坠落的工伤事故
+, 1735126593.56488
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4844 seconds, One token time: 0.1615 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：施工安全 增强安全培训
+Token count: 30, Total time: 5.7177 seconds, One token time: 0.1906 seconds
+
+提取的关键词: ['施工安全', '增强安全培训']
+
+找到的上下文片段数量: 1
+会议中提到了阳光费的具体收费标准（一个人多少钱，二人多少钱），以及强调了设计效果图应更加贴近实际、直观易懂。同时，会议还讨论了施工安全问题，并提到公司在现有条件下应考虑社会因素。此外，会议提及了可能的裁员问题，并认为这需要谨慎处理。整体而言，会议重点在于改进设计和施工安全措施。
+Token count: 80, Total time: 15.4692 seconds, One token time: 0.1934 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：施工安全 增强安全培训
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 然后阳光费上面有一个人多少钱,二人多少钱,精细的画架。效果图片上面要设计的然后阳光费上面有一个人多少钱,二人多少钱,精细的画架。效果图片上面要设计的增加贴合实际更人性吧让别人一看就能看清不是那个很虚幻的那种现在人们现在抛物也都上原来都是飘的很虚无的不是很实用实用跟这个图纸差的有点太大对 应该用过电解的设备能力嗯还有这个各种各样的配合业务比较好专门做业务尽量多进一届大型的装修行,谢谢你我们也会不断关注吧大小的装修装修用的还是挺好的因为从地狱上还是在这儿待着的今天要考虑的社会事儿不难然后就是刚才提到的这个裁员的问题我觉得就是裁员的问题这个其实很很很微妙尤其是这个这个这个时间如果就是说我们能承受不了的还交交基于之前我们讨论的内容关于【施】工安全问题你怎么看待我们公司目前的安全
+会议中提到了阳光费的具体收费标准（一个人多少钱，二人多少钱），以及强调了设计效果图应更加贴近实际、直观易懂。同时，会议还讨论了施工安全问题，并提到公司在现有条件下应考虑社会因素。此外，会议提及了可能的裁员问题，并认为这需要谨慎处理。整体而言，会议重点在于改进设计和施工安全措施。
+reasoner 输出结束
+是保留这个咱们这些人员但是如果说他确实是业务能力跟不上你好焦焦基于之前我们讨论的内容关于施工安全问题你怎么看待我们公司目前的安全措施是否需要进一步增强安全培训和防护措施以防止类似施工人员从高处坠落的工伤事故其实数学学生一方面就是比较聪明一点都不透的然后工作态度就好另一方面就是不太联合但是他只要有对公司奉献的心我也可以考虑得了这个方面设计过自己的情况来判断然后我这边还有什么问题可以说一下下个月有几个项目下个月有15个项目要跟咱们设计这一块对接一下我们现在正在施工的这些也有快结束的然后我们这一块也接了新的顾客过来想跟咱们设计这一块好好再谈一谈确定一下这个方案然后进一步开始施工吧就是这样的我们收工段之后就是会和设计部然后就是将将联系嘛然后看一看就是找到更合适的更合适的方法嗯对那我们今天就先到这吧散会
+[Audio Detection] 在 2240.74 秒检测到关键词 '好交交'。
+detection_time: 2240.74, current_time: 2220.00
+问题音频片段长度: 127840, dtype: float32, min: -0.135650634765625, max: 0.151519775390625
+问题音频时间长度: 7.99
+
+
+[Agent] 接收到问题: 针对助理实习期问题你有哪些建议来优化人员管理和项目对接
+, 1735126621.5627224
+
+
+[Agent] 最终接收到问题: 针对助理实习期问题你有哪些建议来优化人员管理和项目对接
+, 1735126621.562946
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4668 seconds, One token time: 0.1556 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 72, Total time: 2.5759 seconds, One token time: 0.0358 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+优化助理实习期建议如下：
+1. 明确目标与职责，确保实习生了解其角色和期望；
+2. 提供充分的培训，包括公司文化、业务流程和项目管理等方面；
+3. 设定明确的时间表和里程碑，以帮助实习生跟上进度并评估其表现；
+4. 提供反馈和指导，及时纠正错误和不足，并对实习生的优点给予认可和鼓励；
+5. 建立良好的沟通机制，保持与实习生的紧密联系并解决他们可能遇到的问题。
+talker 输出结束
+
+会议数据处理完成。

@@ -1,0 +1,221 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200707_L_R001S02C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 65
+Loading classifier_llm...
+Initializing talker model in talker_process_func...
+Loading reasoner_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.17s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.99s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.86s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.76s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.87s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.88s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.89s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.03s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.23s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:04,  4.97s/it]響鐘
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.78s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.80s/it]
+122,我是冷静女122,我是策划121,我是运营部123,我是客服部123,我是市场公关部124,我是主播125,我是服务行,咱们先请咱们的策划局来说一下在這裏,我們可以看到,在這裏,我們可以看到,我們可以看到,我們可以看到,我們可以看到,我一定想明白市场工作的内容具体工作的内容就是去挖掘那些有潜力的主播比如说搞笑类或者是才艺类或者是拍一些比较让人反思的段子然后去挖掘他们让他们来加入咱们公司就这样他们还有一项工作就是和外部的那些产品或者比如说化妆品,主播公司,然后联合都是他们负责推荐的。我现在,我们色化部有个建议就是请我们的主播的服务多拍一些视频。上个月咱们目前运营这个是直播哪家,直播哪些产品呢?这个直播的口味比较多上个月你先主打哪些产品?主打的主要是现在年轻人的产品因为你看像一些具体一点,比方说像女生的化妆品化妆品,化妆品衣服这个男生的主要就是那些首饰什么衣服嘛因为这个过节的时候,男生要送给女朋友的东西,所以这些东西不大能够吃。还有一些食物,还有一些水果这方面也会有些大问题。像我们的主播,就是主播,就是……对,刚才这个花生品策划有什么方案,因为上个月才有花生,有策划有什么方案。而且我們的主播還有一些带货的视频呀,还有就是开直播的新闻开直播的效果目前还是比较不错的因为现在大家都比较喜欢网上的公众还有就是我们的主播亲自就说会策划普通版张耀业就觉得他才说的话让我们策划普通版张耀业没有普通版的但是有程度就是我们策划上個月的活動就是請我們的主播看視頻,先吸引粉絲,然後在直播收貨的方式推銷。主播們親自嘗試,親自實驗產品的狀況。主要是这方面销售我们还会采取一些什么买一些口红啊这个界面或者对吗这些活动对然后还有打折活动比方说在主播做直播的时候他们抢购抢购的时候肯定会要比网上买的便宜一些让主播做销售会以一万件一万件这个刚才运行也说了对你们这个主播有什么影响吗主播可以问一下主播这个方面主播这方面的话因为要满足正在直播的那些看的观众们他们的那些心理需求嘛所以有这个买男前活动或者买男后红做什么产品的活动对他们消费心理都对 这个主要是咱们这个我的动作比较好,像是口红,比较好,以及凉皮质等,公司是经营不错的。然后面膜的话,就是跟一些什么歪牙,什么的,全国进行不错的访问,就是相应买多吃口红,然后敷网面膜,然后这个,这个对你们的结果影响?对对对,因为像这些台厂都是老牌子,也是比较好牌子的,咱们如果,然后咱们就跑开然后再放在这里所以说销量的话是比较好的销量,那这个,刚才这些产品你们试了试了什么情况嗯,这样问题的话是对的好因为它比较,它这个,这种材质都是比较好眼睛的所以说价格的话比较高,所以说它用的原料比较好这个上面的效果的话,就老师问一下可能怎么做咱们运营这块,品控都是谁把握的?品控品控这方面主要是向上级生产业发挥上面的人员进行一个绑法吗?肯定要进行绑法,主播因为看我们这边是要进行主播普及的嘛肯定要让主播熟悉一下这个产品的上游啊,中游啊,下游各种各样的产品他们都需要了解什麼茶葉臉色的東西還有包裝品牌這方面的一些了解而且還需要進行推廣也需要主播一方面的口才能力而且還需要他們的這種比方說這種使用能力就是讓他們主播推薦使用這方面的化妝品他們確實用過了然後效果不錯像一些什麼美白這些東西什麼的還有護膚 補水這些東西主播這方面都會有超小型的对价格美丽嗯行那刚才他说这个嗯嗯刚才说这个嗯咱们九国间这块下个下个月咱们主抓一些什么产品主抓现在嘛现在这个医生现在主抓一些防护肋肋比较多比较多对对对对口罩也没交通因为这些商量是长期收贷的这个不用去交通这个不是独打的这个就不用再做这方面的事情了主要就是当地的水果当地的水果与一些山村的伙同们合作然后再通过我们的主播一起去去补养实地勘测还有实地主播然后让那个让我们相信我们水果的质量还有新鲜水果像夏天就是水泡的季节因为水泡的话对 咱们进行了那个合作以后他们就去他们的果断就这个拍摄的效果就很好嗯而且会举行一些让主播去像一些西方版大臣的地方去玩一些活动把他们推荐一下当做果干人让他们也非常不错这样也能给咱们带来一些意义我觉得我们夏季的话其实因为毕竟如果是网上购物的话水果再新鲜也是会有那个肯定是和刚采摘的那种是不太一样的所以而且还和物流有很大关系我觉得我们可以通过网上直播在这个季节可以注重一下防晒这些的产品我觉得也是一个好的理想现在下个地方防晒庄会卖的最多然后下一步的话我们就是把他再招两个人进行实验因为实验的效果是最好的哪个防晒庄我们在搜发库准备几种活动就是从我们的主桌在商场附近就是那种大的地方随机跳来几个路上
+[Audio Detection] 在 581.37 秒检测到关键词 '好交交'。
+detection_time: 581.37, current_time: 570.00
+问题音频片段长度: 147456, dtype: float32, min: -0.1212158203125, max: 0.115936279296875
+问题音频时间长度: 9.216
+
+
+[Agent] 接收到问题: 交针对直播销售化妆品和衣服你有哪些策划活动建议
+, 1735097843.7895465
+
+
+[Agent] 最终接收到问题: 交针对直播销售化妆品和衣服你有哪些策划活动建议
+, 1735097843.789684
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9305 seconds, One token time: 0.3102 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+针对直播销售化妆品和衣服，我有以下几点策划活动建议：
+
+1. 首先，可以邀请一些知名时尚博主或美妆达人进行产品试用和评价，通过他们的影响力来吸引潜在消费者。
+
+2. 其次，可以举办一些互动活动，比如问答环节、抽奖等，让消费者能够更深入地了解产品和品牌。
+
+3. 此外，可以推出一些限定款或者限量版的产品，增加消费者的购买欲望和收藏价值。
+
+4. 最后，可以与其他品牌合作，进行联名款的推出，扩大产品的受众群体。
+talker 输出结束
+有在去跟專供這些水果的廠商去談,說讓我們主播可以去現場,然後就是直播這些水果,摘水果,採摘,也可以叫一些群眾去那裡,然後就是一起進行這個活動,然後讓大家在直播中看到這個水果是好的。目前就是说根据先根据网上直播贷户的订单量,然后根据果农这边先提前备好货,然后再慢慢的供应。对,还有就是今天有挑一些这个,有优质水果。想我们这个店的话,就是发布链接,到全世界的客户的话,就是向我们果农合作,进行一个最后给我们的主播带过的药进行一个结算而且咱们的主播也可以有个多大平台的别的像一些流汁店的主播什么的可以协作一下所以就是往下探的然后顺便带动一下咱们的力量我觉得主播可以通过一些新奇的方式现在说的是水果这个你们有什么好的办法吗现在果农的水果已经聚消了可以继续用果干咱已经跟他合作了所以咱要尽快的把这些产品都卖出去因为水果嘛不能待在水源上水果串化这个准备方案水果串化这里就是就是运输方面运输方面是最主要的这些水果是可以相对多好之期实验尝一下我们可以走向来说慢一些的快递如果说是需要现采现吃的我们可以采用公立上市虽然说快递费比较高但是其间度比较高而且这一部分这个费用也有一半是由工作那个另一边因为这块觉得可以如果直销的水果的话可以讓當地的國民接觸工廠的那種可以加個果乾然後不只賣給顧客也可以推銷給像一些零食布置的那種零食店讓他們去手賣這個咱就可以給國民的建議像我們這個國家的話就是就已經在推銷關於蔬果罐頭的這個商品這個系列對 你像放跑龍的就是好像是這個所以說一般說蔬果罐頭对对对请问客服这个关于这个怎么看呢咱们这个有线上那肯定有线下不能说因为水果如果真的是滞销的话这对于线上再说线下线上的话也可以这个怎么把這些指甲畫上面那可以便宜一些的,打一些價格戰之類的昨晚有一個建議是,再讓主播們進行一些培訓,或是請公關部在舉高難以培訓的主播,很才藝的主播這個就是策劃出一場活動的意思,就是可以具體說一下,策划能效果主要的排就是现场直播 现场采摘让顾客们相信这是新鲜的水果对 这个是肯定的咱要协助国东进行这方面的直播他就不能让他自己直播他自己直播肯定一 效果一 效果不好二 就影响咱们这个对 主播相信他因为用咱们这个直播间主播辅助这一块,我们要协助我们去进行这个面试你策划刚才说了方案,你可以具体说一下,有哪些方案,怎么去策划这个方案你不要说得太笼统,你说得正好,你现在跟主播辅助这一块商量一下策划出哪些方案,看主播辅助这一块有什么难度,愿意这一块去协助一下可以再一起上你知道可以有时间去学一下我们的主播有什么好建议的吗?对,你先主播一下。我觉得我们可以通过各种有趣的,就吃播嘛,采用一些新奇的吃法,比如说制造成果干,然后把果干制作成别的甜点,或者水果可以榨汁然后做成什么样自制的饮料这样在直播间播出的时候就更有吸引力然后可以让顾客就选择多购买一些然后可以在现时抢购买多少箱然后可以赠产品然后还可以买的人多的话可以一块拼一下我觉得这是直播间里面可以促销的方法主播刚才说可以做果汁他们在找基
+[Text Detection] 在 1018.33 秒检测到关键词 '基于之前',current_time: 1020.00, 问题文本: 基于之前我们讨论的内容关于果农制消水果的问题策划问题提出了哪些具体的销售方案和促销活动咱们上个如何通过线上直播和线下活动箱结合的方式快速销售这些制销的水果同时保证水果的新鲜度和品质
+问题音频片段长度: 493728, dtype: float32, min: -0.17431640625, max: 0.19622802734375
+问题音频时间长度: 30.858
+
+
+[Agent] 接收到问题: 咱们上个如何通过线上直播和线下活动相结合的方式快速销售这些滞销的水果同时保证水果的新鲜度和品质
+, 1735097872.175425
+
+
+[Agent] 最终接收到问题: 咱们上个如何通过线上直播和线下活动相结合的方式快速销售这些滞销的水果同时保证水果的新鲜度和品质
+, 1735097872.1759508
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4821 seconds, One token time: 0.1607 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：线上直播 线下活动 滞销水果 新鲜度 品质
+Token count: 41, Total time: 8.2924 seconds, One token time: 0.2023 seconds
+
+提取的关键词: ['线上直播', '线下活动', '滞销水果', '新鲜度', '品质']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，可以通过线上直播和线下活动相结合的方式来快速销售滞销水果。线上直播可采用新颖方式如吃播、制作果干甜点、榨成果汁制成饮料等增加吸引力；线下活动则可组织现场采摘体验，让顾客感受水果新鲜。同时，可以举办限时抢购、拼团等活动促进销售。主播辅助团队需进行培训，提高直播效果。
+Token count: 85, Total time: 16.6222 seconds, One token time: 0.1956 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：线上直播 线下活动 滞销水果 新鲜度 品质
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 想我们这个店的话,就是发布链接,到全世界的客户的话,就是向我们果农合作,进行一个最后给我们的主播带过的药进行一个结算而且咱们的主播也可以有个多大平台的别的像一些流汁店的主播什么的可以协作一下所以就是往下探的然后顺便带动一下咱们的力量我觉得主播可以通过一些新奇的方式现在说的是水果这个你们有什么好的办法吗现在果农的水果已经聚消了可以继续用果干咱已经跟他合作了所以咱要尽快的把这些产品都卖出去因为水果嘛不能待在水源上水果串化这个准备方案水果串化这里就是就是运输方面运输方面是最主要的这些水果是可以相对多好之期实验尝一下我们可以走向来说慢一些的快递如果说是需要现采现吃的我们可以采用公立上市虽然说快递费比较高但是其间度比较高而且这一部分这个费用也有一半是由工作那个另一边因为这块觉得可以如果直销的水果的话可以讓當地的國民接觸工廠的那種可以加個果乾然後不只賣給顧客也可以推銷給像一些零食布置的那種零食店讓他們去手賣這個咱就可以給國民的建議像我們這個國家的話就是就已經在推銷關於蔬果罐頭的這個商品這個系列對 你像放跑龍的就是好像是這個所以說一般說蔬果罐頭对对对请问客服这个关于这个怎么看呢咱们这个有线上那肯定有线下不能说因为水果如果真的是滞销的话这对于线上再说线下线上的话也可以这个怎么把這些指甲畫上面那可以便宜一些的,打一些價格戰之類的昨晚有一個建議是,再讓主播們進行一些培訓,或是請公關部在舉高難以培訓的主播,很才藝的主播這個就是策劃出一場活動的意思,就是可以具體說一下,策划能效果主要的排就是现场直播 现场采摘让顾客们相信这是新鲜的水果对 这个是肯定的咱要协助国东进行这方面的直播他就不能让他自己直播他自己直播肯定一 效果一 效果不好二 就影响咱们这个对 主播相信他因为用咱们这个直播间主播辅助这一块,我们要协助我们去进行这个面试你策划刚才说了方案,你可以具体说一下,有哪些方案,怎么去策划这个方案你不要说得太笼统,你说得正好,你现在跟主播辅助这一块商量一下策划出哪些方案,看主播辅助这一块有什么难度,愿意这一块去协助一下可以再一起上你知道可以有时间去学一下我们的主播有什么好建议的吗?对,你先主播一下。我觉得我们可以通过各种有趣的,就吃播嘛,采用一些新奇的吃法,比如说制造成果干,然后把果干制作成别的甜点,或者水果可以榨汁然后做成什么样自制的饮料这样在直播间播出的时候就更有吸引力然后可以让顾客就选择多购买一些然后可以在现时抢购买多少箱然后可以赠产品然后还可以买的人多的话可以一块拼一下我觉得这是直播间里面可以促销的方法主播刚才说可以做果汁他们在找基咱们上个如何通过线【上】直播和线下活动相结合的方式快速销售这些滞销的水果同时保证水果的新鲜度和品质
+根据会议内容，可以通过线上直播和线下活动相结合的方式来快速销售滞销水果。线上直播可采用新颖方式如吃播、制作果干甜点、榨成果汁制成饮料等增加吸引力；线下活动则可组织现场采摘体验，让顾客感受水果新鲜。同时，可以举办限时抢购、拼团等活动促进销售。主播辅助团队需进行培训，提高直播效果。
+reasoner 输出结束
+于之前我们讨论的内容关于果农制消水果的问题策划问题提出了哪些具体的销售方案和促销活动咱们上个如何通过线上直播和线下活动箱结合的方式快速销售这些制销的水果同时保证水果的新鲜度和品质就是比较大让他们了解当地的地方如果他们觉得这地方特别的好看特别的漂亮然后让他们觉得舒适他们也会一起来当地采摘可以和当时当地的果农进行协商也可以进行就是相对于吸引粉丝量来说增大人气对一下像这位刚才在说的啊可能主播有认识的呃比较关系比较好的服务员就是比较比较多的可以和那些粉丝流量大的主播一起联合这样的话互相可以吸一箱粉然后还可以增加一下客流量市场这边市场这边有什么看法就是如果主播就是有觉得发展趋势比较好合作可能更加好能达到我们这个水果销量比较好的这个主播然后我这边可以再去谈一些主播过来拍不同的段子然后去果园里进行不同的方式采摘什么的现场直播然后让大家看到水果的新鲜度水果是有多好然后让大家了解一下然后这边还建议就是主播们不要就是一味的只是推销这个产品然后那个市场策划这边策划这边也就是说既然现在水果已经有点滞销我觉得可以把价格相对的放低一点然后买水果咱们可以简单的送一点点然后让这些群众同时买水果的人觉得我们有成力,我们的水果也很好,同时还会选择再次相信我们,再次投资我们。我现在想搞一个活动,就是现实上的大活动。就是一定时间段内,我们一个例子,甚至是规矩的做法,让顾客认为真的是物超物有品质。还有就是每过一段时间就向顾客发一些小提示也是 也是一個 這種推特買賣贈送一些東西就是我們CNC現在已經直播量前十幾歲了我們家主播影相對他的粉絲已經有了對 每次直播都會限時抓一兩個粉絲送我們的超額大禮包所以這個主播是方面都有那個策劃還有就是剛才那個市長說在段子上面你有什么想法段子方面就是还是穷的主播拍一些视频拍一些视频可以专辑好笑的好笑的或者是剧情的对 但是一定要涉及到水果没有那水果就相当于一个黄焦色系黄焦色系的说出咱们的水果的号组特别新鲜度吧对对,这方面可以多做一些,他们可以给我们介绍一下。就像是电影《耳转直2》这一类的,咱们可以多拍一些视频。对,这个你应该很高兴发生了,这个视频也很高兴发生了。这是以视频的方式,就像广告是广告视频那样,广告直入,以广告直入的方式。直入咱们这个水果。當代 當代 中國电商吗是直播方式还有这种多时间的方式是最好的我觉得如果是这样的话可以拍那种就是瘦身瘦身减肥的那些主播可以就是说一下自己的平时的食谱然后就顺便把咱们那个产品给带入进去我觉得是一个好的办法还有就是,咱们拍一些平常啊,像什么出去户外做游戏之类的联合一个主播,然后在当地一些进行使用,然后推荐这方面的,这些可以吗?其实不单纯的是水果吧,因为一天咱们以后,还有那个水果这方面咱们以后肯定是也会就是换一换,因为咱们不能只吃水果吧。這個感覺還可以接近一點还是前几个月的结果,因为这些货已经滞销了,现在要考虑别的产品,你们是有没有出销的方法?出销的方法,这个月,先把人家的产品商量好,对,先策划市场,跟人家联系好,做好这方面协议,一定要把这方面做好,一定要不要把这个,可能把性质大半杀,系統不好對,也是當地的一些政府咱們也,咱們也國農當地政府咱們三方進行這個這方面的工作所以咱們一定要把這個事情做好所以今天會上咱主動討論就這個剛才說這個國農這一番因為這個是,因為疫情影響了因为各式各样的原因,它会变成烂、烂、坏这是当前最大的问题当前最大的问题,一定要把这个问题解决好还有就是咱们客户这一块,一定要联系一些大的水管经销商这些水管商贩,让他们来咱们这一块咱们一定出个低价卖给他们这块的话就是一个是跟这个当地的一些超市啊还有一些商贩还有水果市场合作这个这些目前咱们就嗯肯定也会因为在直播间吧肯定也会有人来许愿者打电话许愿者这块咱这个产品信息这方面了解吗产品信息的话对咱水果这方面了解了咱们这块有一个有试吃,还有就是这个专门拍摄的那个,拍摄产品的,然后这个产品的图片也会实质的更新。然后加上这个运输和售后吧,运输和售后处理都比较好玩。也會有一些人收到一些結果會爛掉因為这
+[Text Detection] 在 1555.64 秒检测到关键词 '娇娇',current_time: 1530.00, 问题文本: 这个难免的事情对对对咱们也会跟他们及时的联系一个是会进行相适当的补偿还有一个就是如果客户真的不满意的话咱们也可以选择退换货之类的但这个的话损失是比较大的尽量还是去这个赔偿一些吧上个你好笑娇娇如何通过直播和视频提升水果销量
+问题音频片段长度: 142336, dtype: float32, min: -0.160797119140625, max: 0.16876220703125
+问题音频时间长度: 8.896
+
+
+[Agent] 接收到问题: 通过直播和视频提升水果销量并解决滞销问题
+, 1735097926.5025277
+
+
+[Agent] 最终接收到问题: 通过直播和视频提升水果销量并解决滞销问题
+, 1735097926.502837
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4851 seconds, One token time: 0.1617 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 101, Total time: 3.8547 seconds, One token time: 0.0382 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+通过直播和视频可以有效地提升水果销量并解决滞销问题。首先，直播可以让消费者更直观地了解产品的外观、口感和品质，从而提高购买意愿。其次，视频可以展示水果的种植环境、采摘过程等，让消费者放心购买。此外，直播和视频还可以增加与消费者的互动，听取他们的意见和建议，以便更好地满足他们的需求。最后，可以通过促销活动吸引更多的消费者购买滞销的水果。
+talker 输出结束
+个难免的事情对对对咱们也会跟他们及时的联系一个是会进行相适当的补偿还有一个就是如果客户真的不满意的话咱们也可以选择退换货之类的但这个的话损失是比较大的尽量还是去这个赔偿一些吧上个你好笑娇娇如何通过直播和视频提升水果销量现在就不是特别大的如果卖不出去的话就亏损比较大可以在省能卖一些和别的产品联合联合一下比如说要买一些家用产品然后可以负赠一些买得多的话负赠一些水果这样让果农从中间抽取利润我觉得这样的损失比较小还有就是咱们这个面料做法这方面的今天是不是会是最佳产品,今天要不要去下注册。接下来应该就是这个夏日,夏日可能就是我们点一些水果,打折机可以进行一个连接和连接的连接化所以策划对白有很丰富的一个打折队伍现在打折队伍有一个台湾小华水果可能会有些运输问题这方面各位有什么建议目前来编辑快乐的快乐公司有什么建议这些快乐公司有很多咱们的咱们的也挺有钱的比较多比较多像中文 韩文这些比较多咱们就有很多咱们可以相对于哪边放的水果,像在运输包装上,给他们提供一些可以长时间运输的东西,像冰袋,看风,如果是运输的特别慢的水果,如果是地方较远,比较急用的水果,像一些水果都放着,放了时间长了就坏了,所以才取一下送送快遞或者才取把关卡封印这方面的运输而且我们还考虑了当地的果农如果地方较为偏远的话道路交通不是很发达的还要采取提前运输就是从果农到果农里头提前采摘然后像那种可以有一种情况采摘一部分,像这两三天可以采摘一大批水果放在冰库之类的东西,这样绿树的时候也不用从火边掀斩,这样大个时间就能够了。行,那咱们今天还有别的事情吗?走到这边?还有什么问题吗?没有那跟风好这个跟风好对,如果策划和主播这边有什么新的方案或者有新的人选可以跟日本说然后就得去联系嗯主播跟风好这一块嗯行,那咱们两个会就到此为止再见響鐘
+[Audio Detection] 在 1908.08 秒检测到关键词 '好交交'。
+detection_time: 1908.08, current_time: 1890.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.116546630859375, max: 0.116241455078125
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于滞销水果的运输和销售问题你有什么建议我们是否可以采取一些创新的营销策略
+, 1735097944.5749547
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于滞销水果的运输和销售问题你有什么建议我们是否可以采取一些创新的营销策略比如将滞销水果与其他产品捆绑销售或者通过主播的影响力来增加销量我们应该如何优化物流合作上个以减少运输过程中的损耗和提高客户满意度
+, 1735097946.6165476
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4819 seconds, One token time: 0.1606 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：滞销水果 销售策略 捆绑销售 主播影响力 物流合作 损耗 客户满意度
+Token count: 49, Total time: 9.4525 seconds, One token time: 0.1929 seconds
+
+提取的关键词: ['滞销水果', '销售策略', '捆绑销售', '主播影响力', '物流合作', '损耗', '客户满意度']
+
+找到的上下文片段数量: 2
+为了应对滞销水果的问题，可以采取以下策略：一是将滞销水果与热销产品（如口红、面膜）捆绑销售；二是利用主播影响力，通过直播展示水果采摘过程，增强信任感；三是优化物流合作，采用冷藏箱、冰袋等手段减少运输损耗。通过这些创新策略，可以有效提升滞销水果的销量和客户满意度。
+Token count: 82, Total time: 16.2432 seconds, One token time: 0.1981 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：滞销水果 销售策略 捆绑销售 主播影响力 物流合作 损耗 客户满意度
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 像我们的主播,就是主播,就是……对,刚才这个花生品策划有什么方案,因为上个月才有花生,有策划有什么方案。而且我們的主播還有一些带货的视频呀,还有就是开直播的新闻开直播的效果目前还是比较不错的因为现在大家都比较喜欢网上的公众还有就是我们的主播亲自就说会策划普通版张耀业就觉得他才说的话让我们策划普通版张耀业没有普通版的但是有程度就是我们策划上個月的活動就是請我們的主播看視頻,先吸引粉絲,然後在直播收貨的方式推銷。主播們親自嘗試,親自實驗產品的狀況。主要是这方面销售我们还会采取一些什么买一些口红啊这个界面或者对吗这些活动对然后还有打折活动比方说在主播做直播的时候他们抢购抢购的时候肯定会要比网上买的便宜一些让主播做销售会以一万件一万件这个刚才运行也说了对你们这个主播有什么【影】响吗主播可以问一下主播这个方面主播这方面的话因为要满足正在直播的那些看的观众们他们的那些心理需求嘛所以有这个买男前活动或者买男后红做什么产品的活动对他们消费心理都对 这个主要是咱们这个我的动作比较好,像是口红,比较好,以及凉皮质等,公司是经营不错的。然后面膜的话,就是跟一些什么歪牙,什么的,全国进行不错的访问,就是相应买多吃口红,然后敷网面膜,然后这个,这个对你们的结果影响?对对对,因为像这些台厂都是老牌子,也是比较好牌子的,咱们如果,然后咱们就跑开然后再放在这里所以说销量的话是比较好的销量,那这个,刚才这些产品你们试了试了什么情况嗯,这样问题的话是对的好因为它比较,它这个,这种材质都是比较好眼睛的所以说价格的话比较高,所以说它用的原料比较好这个上面的效果的话,就老师问一下可能怎么做咱们运营这块,品控都是谁把握的?品控品控这方面主要是向上级生产业发挥上面的人员进行一个绑法吗?肯定要进行绑法,主播因为看我们这边是要进行主播普及的嘛肯定要让主播熟悉一下这个产品的上游啊,中游啊,下游各种各样的产品他们都需要了解什麼茶葉臉色的東西還有包裝品牌這方面的一些了解而且還需要進行推廣也需要主播一方面的口才能力而且還需要他們的這種比方說這種使用能力就是讓他們主播推薦使用這方面的化妝品他們確實用過了然後效果不錯像一些什麼美白這些東西什麼的還有護膚 補水這些東西主播這方面都會有超小型的对价格美丽嗯行那刚才他说这个嗯嗯刚才说这个嗯咱们九国间这块下个下个月咱们主抓一些什么产品主抓现在嘛现在这个医生现在主抓一些防护肋肋比较多比较多对对对对口罩也没交通因为这些商量是长期收贷的这个不用去交通这个不是独打的这个就不用再做这方面的事情了主要就是当地的水果当地的水果与一些山村的伙同们合作然后再通过我们的主播一起去去补养实地勘测还有实地主播然后让那个让我们相信我们水果的质量还有新鲜水果像夏天就是水泡的季节因为水泡的话对 咱们进行了那个合作以后他们就去他们的果断就这个拍摄的效果就很好嗯而且会举行一些让主播去像一些西方版大臣的地方去玩一些活动把他们推荐一下当做果干人让他们也非常不错这样也能给咱们带来一些意义我觉得我们夏季的话其实因为毕竟如果是网上购物的话水果再新鲜也是会有那个肯定是和刚采摘的那种是不太一样的所以而且还和物流有很大关系我觉得我们可以通过网上直播在这个季节可以注重一下防晒这些的产品我觉得也是一个好的理想现在下个地方防晒庄会卖的最多然后下一步的话我们就是把他再招两个人进行实验因为实验的效果是最好的哪个防晒庄我们在搜发库准备几种活动就是从我们的主桌在商场附近就是那种大的地方随机跳来几个路上交针对直播销售化妆品和衣服你有哪些策划活动建议有在去跟專供這些水果的廠商去談,說讓我們主播可以去現場,然後就是直播這些水果,摘水果,採摘,也可以叫一些群眾去那裡,然後就是一起進行這個活動,然後讓大家在直播中看到這個水果是好的。
+---
+接下来应该就是这个夏日,夏日可能就是我们点一些水果,打折机可以进行一个连接和连接的连接化所以策划对白有很丰富的一个打折队伍现在打折队伍有一个台湾小华水果可能会有些运输问题这方面各位有什么建议目前来编辑快乐的快乐公司有什么建议这些快乐公司有很多咱们的咱们的也挺有钱的比较多比较多像中文 韩文这些比较多咱们就有很多咱们可以相对于哪边放的水果,像在运输包装上,给他们提供一些可以长时间运输的东西,像冰袋,看风,如果是运输的特别慢的水果,如果是地方较远,比较急用的水果,像一些水果都放着,放了时间长了就坏了,所以才取一下送送快遞或者才取把关卡封印这方面的运输而且我们还考虑了当地的果农如果地方较为偏远的话道路交通不是很发达的还要采取提前运输就是从果农到果农里头提前采摘然后像那种可以有一种情况采摘一部分,像这两三天可以采摘一大批水果放在冰库之类的东西,这样绿树的时候也不用从火边掀斩,这样大个时间就能够了。行,那咱们今天还有别的事情吗?走到这边?还有什么问题吗?没有那跟风好这个跟风好对,如果策划和主播这边有什么新的方案或者有新的人选可以跟日本说然后就得去联系嗯主播跟风好这一块嗯行,那咱们两个会就到此为止再见響鐘基于之前我们讨论的内容关于【滞】销水果的运输和销售问题你有什么建议我们是否可以采取一些创新的营销策略比如将滞销水果与其他产品捆绑销售或者通过主播的影响力来增加销量我们应该如何优化物流合作上个以减少运输过程中的损耗和提高客户满
+为了应对滞销水果的问题，可以采取以下策略：一是将滞销水果与热销产品（如口红、面膜）捆绑销售；二是利用主播影响力，通过直播展示水果采摘过程，增强信任感；三是优化物流合作，采用冷藏箱、冰袋等手段减少运输损耗。通过这些创新策略，可以有效提升滞销水果的销量和客户满意度。
+reasoner 输出结束
+
+会议数据处理完成。

@@ -1,0 +1,190 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200707_L_R001S05C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 329
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.12s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.81s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.91s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.74s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.88s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.89s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.97s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.09s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.22s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:04,  4.97s/it]divine grace
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.77s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.79s/it]
+感谢观看感谢观看感谢观看感谢观看 感谢观看请好了 今天就回来公式的一个那个好 接下来我主要说几方面嘛 一方面是咱们这个公司基本情况 上半年的基本一个基本月月情况还有一方面 第二方面就是咱们这个团队的管理然后第三方方面就是这个市场的对这个行业和市场的分析然后第四方方面就是这个销售推广 然后再一个方面就是咱们这个风险评估这一块首先咱们说这个公司的资本情况 咱们那是一个这个娱乐 健身 比赛 餐饮为一起的这个大的这个娱乐主题 以篮球为主题的娱乐公司 然后咱们这个是属于一个运动 运动系列的一个公司对对对 然后咱们的这个服务相对来说是比较多的他们从这个这个技术研发案来说一下我们这个上半年都有什么项目呢?就像咱们主打的是展 Dude吧?对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对 deciξ así es la gran dame,所以說,他們,然後,然後,所以說,在那個籃球什麼,用完以後, 可能會有出很多汗。 對。我們在運勢方面會下很大的一個工作。 對。咱們,就是,我們在運勢方面會下很大的一個工作。然後,開展的就是,有一些藥物,還有一些藥物,還有一些…現在天象不好,這些都是幾乎一樣的。因為就是,就是咱們就採用一些藥物,然後,就是在… 他們可以進行…那這個,市場營銷這邊,咱們上半年的這個…營銷情況是什麼樣的?就是,打開… 因為咱們是搞運動項目嘛, 只要打開了這方面, 只要做相當的安心架構。像籃球,或者一些別的, 像三分六十,像這個羽毛球拍啊。這方面的市場還在進一步發展。學校還有場所啊,很多安裝的空間就會有新的。現在公司重立初期。我們有跟別的地盤合作嗎? 有沒有對他們進行風險投資?我們有跟別的地盤合作嗎? 有沒有對他們進行風險投資?我們有跟別的地盤合作嗎? 有沒有對他們進行風險投資?你也想認出他人嗎? 對,就像剛才說的,但他就是非常有資歷。風投這一塊就沒有這個項目,風險投資。比如說一些比較創新的項目。這就是打籃球以後,因為肌肉太不會緊繃,然後可以照看人家的內容。按摩師使用了NRO,經過槍對他進行按摩,這是對消毒疲勞的一個反應。按摩師使用了NRO,經過槍對他進行按摩,這是對消毒疲勞的一個反應。按摩師使用了NRO,經過槍對他進行按摩,這是對消毒疲勞的一個反應。按摩師使用了NRO,經過槍對他進行按摩,這是對消毒疲勞的一個反應。按摩師使用了NRO,經過槍對他進行按摩,這是對消毒疲勞的一個反應。按摩師使用了NRO,經過槍對他進行按摩,這是對消毒疲勞的一個反應。按摩器沒有那麼全面,只是一小部分。這對你的肌肉和肩骨進行按摩會更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。
+[Audio Detection] 在 515.31 秒检测到关键词 '你好焦'。
+detection_time: 515.31, current_time: 511.00
+问题音频片段长度: 166743, dtype: float32, min: -0.071533203125, max: 0.070220947265625
+问题音频时间长度: 10.4214375
+
+
+[Agent] 接收到问题: 按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。
+, 1735008221.3536322
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9098 seconds, One token time: 0.3033 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+要提升公司篮球相关产品的市场竞争力，可以从以下几个方面入手：一是提高产品质量和性能，二是降低生产成本，三是加强品牌建设和营销推广，四是开发更多元化的产品以满足不同消费者需求，五是注重客户服务，提升客户满意度和口碑。
+talker 输出结束
+按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。按摩後,你會感覺到自己的肌肉和肌肉的溫度更好。我們的建議是希望可以多舉行一下籃球的活動。希望可以通過直播的方式,然後在網上見面。希望可以通過直播的方式,然後在網上見面。人力資源上個月是一直在制定一些規模的活動。上個月規劃有哪些呢?可以具體說一下嗎?在這個項目裡面包含了各種內容,比如說他這個主流是籃球。他對籃球的形式和活動,就是想要做一個…規劃一些更好的活動,讓大家參與起來。準備舉辦籃球賽。然後進行是先舉辦籃球賽,然後往…然後再有… 比如說…比如說就是…搞一個這種… 就是… 籃球對決。因為你有來不及來,肯定要有…我們可以搞這種… 回氣的那種…然後這個拉隊也可以讓他們比賽…不僅有球隊的比賽,這個拉隊也可以比賽。一些人就是… 同一拉隊嘛,然後這個也會進來,同時也可以帶動,就是…對,就是選一些有經驗,比較有活力的人,然後來… 就是來完成這項活動。然後還有一個就是,因為現在就是這個項目就是比較大,然後需要一些特別負責的人,特別有…有經驗的人,然後現在人力資源這邊也是在招呼、在培訓這些員工,就是…這些員工就是更加有責任心,然後能把工作搞得完成得非常好。平常的話也會編制員工手冊,讓他們在工作中建立這些最起碼的管理規範。這次的工作是在工作室內, 讓他們在工作室內做工作。這次的工作是在工作室內, 讓他們在工作室內做工作。這次的工作是在工作室內, 讓他們在工作室內做工作。這次的工作是在工作室內, 讓他們在工作室內做工作。這次的工作是在工作室內, 讓他們在工作室內做工作。這次的工作是在工作室內, 讓他們在工作室內做工作。這次的工作是在工作室內, 讓他們在工作室內做工作。這次的工作是在工作室內, 讓他們在工作室內做工作。現在我們就會去 creation 進行這個描述。從現在的話,大家的態度就不太正常了。我們主打的這個籃球嘛。你打完球之後,你還可以去在籃球界享受各種各樣的優質服務。對外來的戰略的話,咱們這兒是可以設立一個服務區。我們可以在這裡設立一些免費店,賣衣服的地方。那這個NBA進了一些T恤啊,還有鞋啊之類的。咱們這個就是中央俱樂部嘛。這個剛才把這個,這項任務送給他。那主要就是,分給這個市場研發,他們去看一下接下來咱們要...往哪個方向發展,這個市場研發就跟這個營銷這邊去...合作一下看沒關...需要布置的話,就是相當於就是要成為一個... 他們... 肩膀面前的安撫...然後有波子緣,咱們就是相應,每次來...好,來,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊,請坐在這邊我們說擦汗反而是一個比較好的方式在這個程度下因為那個市場燃燒這邊,咱們現在主要的這個咱們不是打室內籃球 室內籃球的一些器械 他們直接進來打EPC的方面,不會從別的公司來進設備我們公司的器械方面沒有什麼進攻壓力 而且現在最近的市場我們最近市場一直在開發軟件 我們是在打通平方球的渠道因為在炎熱的夏天 而且到疫情 打籃球的人相對來說是小小的所以通過研發 世界平方球 進行家喻館 政策 掛球 開這個活動 在打開另一個市場 然後用這個負擔評估你要打這個平方球給我們看嗎?嗯,這邊覺得...這邊覺得是他
+[Audio Detection] 在 1103.90 秒检测到关键词 '好焦焦'。
+detection_time: 1103.90, current_time: 1099.00
+问题音频片段长度: 552939, dtype: float32, min: -0.087493896484375, max: 0.075897216796875
+问题音频时间长度: 34.5586875
+
+
+[Agent] 接收到问题: 吸引更多人參與平方球都發電
+, 1735008262.2156336
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4731 seconds, One token time: 0.1577 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 49, Total time: 2.2059 seconds, One token time: 0.0450 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+我们计划与NBA品牌合作，利用他们的影响力来提升我们项目的知名度和吸引力。同时，通过增加篮球赛和拉拉队比赛来活跃气氛。
+talker 输出结束
+如何通過增加籃球賽和拉拉對比賽來活躍氣氛吸引更多人參與其實天光球的市場還挺好的因為中國人有很多的學生啊 或者平時業餘愛護的人們都會抽有空的時間去打乒乓球嘛因為咱們不是一個場所嘛 是一個活動場所提供一些好的條件 設備 環境現在尤其是夏天 在外面玩 肯定是不如在室內玩比較舒服的如果在室內製作一個乒乓球場的話 因為是兩個人一塊其實不用像籃球那樣 還要注意人員聚集所以這個其實是可以進行一下的有一個建議 下面就是 咱們可以找一些藍隊伍把這個 把這個然後讓他們重包藍隊的場所 這是一個我們這個上半年的這個 雲窺情況是什麼樣的這個 這是一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個可以 聚集嘛可以 咱們 出大陣的籃球咱們 又是 室內的籃球那 下半年 用的方法方法就是 通過 跟我們 專傳 跟我們研發那 也要 開始 進行 合作 一定要 打個對手 再來球 然後 進行 休息現在 打球 都會有一雙 比較 新的 球鞋吧現在 國產的 品質 也是 在 普通 中 啊我覺得 還可以 瘦 瘦 一些我們 場所 不 只是 可以 打 籃球 還 可以 進行 一些 進行 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球 球教學可以找一些籃球的教練或者一些知名的球星謝謝大家對我們的關注現在這些小孩們都喜歡打籃球 但是又沒有很多技術含量 所以就會選擇我們這些籃球課現在這個員工這個上半年 我們不是在虧損的狀態要不要考慮裁員這個問題說一下我覺得可以先適當的裁一部分然後先把這個人裁了之後我們可以把這個財務重心放在宣傳上等這個效果起來了然後我們可以慢慢增加人數但是我們這方面是自打 屬於他們家用的平板手段然後我們可以打開另一個市場 而且可以像有些人在小區打個五毛錢因為打球畢竟是一個無人物的項目 所以它需要十個人但是如果這樣的話就是因為我們打的是籃球 所以如果在進行別的項目的話 還要有更多的物理成分如果只是單獨開放籃球 也就是一個別的狀態的話我們自己主打籃球 然後副業做一個這個泵波堵ILLYNNNG 色 김� butterflies flies by對因為要是一直是不打籃球的話三個的投資只能會一直虧損需要打開別的市場因為很多器材現在都是公司用自己的錢在往裡面電對 下午開發那邊收益 對 但是按照市場來說疫情的確是很恐怖 對 所以這個屬於一個很有風險的一個東西如果一直主打籃球的話 它這個疫情如果
+[Audio Detection] 在 1552.28 秒检测到关键词 '你好焦'。
+detection_time: 1552.28, current_time: 1547.00
+问题音频片段长度: 150016, dtype: float32, min: -0.0672607421875, max: 0.062835693359375
+问题音频时间长度: 9.376
+
+
+[Agent] 接收到问题: 要教如何通過乒乓球市場開發來彌補籃球業務的虧損
+, 1735008294.5314486
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4803 seconds, One token time: 0.1601 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 30, Total time: 1.5274 seconds, One token time: 0.0509 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+乒乓球市场开发可以弥补篮球业务的亏损。可以通过以下方式实现：
+
+1. 利用乒乓球的普及性和影响力，推广和宣传篮球产品，吸引更多消费者。
+
+2. 结合乒乓球和篮球的特点，推出创新性的产品和服务，满足不同消费者的需求。
+
+3. 利用乒乓球赛事的契机，增加品牌曝光度和知名度，提升产品的销售量和价格。
+
+4. 加强与乒乓球运动员和相关机构的合作，利用他们的影响力推广产品，扩大市场份额。
+
+5. 提升篮球产品质量和品牌形象，通过口碑营销吸引更多的消费者。
+talker 输出结束
+因為咱們主打的開篆籃球 剛才也說了就是 應該會出現一些案例如果疫情過去了 打球的人自然而然就不缺人力而且可以請求星 如果服務到位的話 籃球市場很快就可以打開我們很快就能正常運轉星人街上的教練而已然後咱們這兒看 咱們這兒現在有這個打球啊 咱們有這個體育啊 咱們是不是還少點這個他們也是 池日本人對 他們打籃球的話 可能比較累 洗得更早然後需要補充一些蛋白質啊 或者碎米吃的東西他們很清楚 主要認識一下他們的公司是籃球和健身所以說在注重健康方面 我們是需要下比較大的決定如果是開小直接的話 其實對他們的健康對 我的意思是 上面咱們就可以搞一把這些健康餐然後我們會希望他們可以進行健康餐最後還會有和一些能力組合做 因為有的人在打那球 如果他不能在那邊進行健康的話 他們就提供水和一些蛋白質咱們就跟音樂一樣 出打加勒勒財務這邊對加勒勒就不看了 對顏料這一方面這個土地子啊 加點顏料 加加勒勒能量 能量 能量對 這是一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個他們 大家會 這樣 保護 這樣子 他們會 這樣 保護 這樣子 他們會 這樣 保護 這樣子他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們 他們如果是個可口可道的做法的話就提供680左右現在是較小可以兩方讓他們合作一下協商簽兩方合同咱們到時候會掌握這個冰箱融引位自動翻來一次就可以對 這個可以自動翻來一次就到時候就有這個 花費這個財務就到時候公司算是比較大還有別的公司給他們投資現在比較大數這個財務這邊有沒有什麼好辦法去解決這個問題這個我可以給財務官提個意見這個挺好的現在員工這個待遇吧 像咱們這些高手待遇都是比較好的 但是這些像底床啊 這些服務人呢工資待遇都不是很高 大家覺得有沒有必要給他們提升一部分工資呢我覺得可以 這樣的話可以希望他們能夠提升那些沒有找工資的疫情原因 把一些籃球場的管理人員給提升現在不是 現在有相對單位教授就可以給他們下一個 就是過節時間的這個 研發的這個方面我們主要是增加一些人手吧現在對這個市場這塊 要進行調查我覺得剛剛說飲料和可口可樂 或者能量飲料合作一下 這個是這個相對來說的話 風險大的就是打開新的市場就是羽毛球或者黑毛球 拿出來打開這個別的市場風險來說比較大所以年輕人愛玩的時候 應該做一下市場調查因為我們之前做起來的籃球的設備關於籃球的剛剛說的那些 籃球賽啊 或者找一些球星 或者收一些籃球課 都是我覺得可以促進一下我們現在這個當前這些情況如果你想持續在這裡的話 怎麼辦加德勒乙妙的錢 在風險有多大同時針對公司有錢的資產狀況況和員工待遇 我們應該如何平衡投資新項目與維持現有與籃球市場之間的關係我們應該如何平衡投資 新項目與維持現有與籃球市場之間的關係這方面可以讓來我們這兒註冊的會員放輕因為資料庫嘛 然後肯定是 肯定是要進行一些要求這個我覺得目前剛才都不是問題 下半年我覺得肯定會去管理 還有就是剛才說的這個 什麼檢測之類的 咱們這個會員 只有他當地的一些人 不涉及到什麼他只要有這個健康嘛 就可以平均嘛這個他的普通腹肌 還有去一些還有就是咱們玩要對 下半年上半年的一些情況 所有東西都會遇到下半年 各位 各位 各位 各位 各位在華盛頓目前這個公司的一些任務正常運行的情況下 在演化 在做一些現業在這個公司的一些現業 正常運行的情況下 在演化 在做一些現業
+[Audio Detection] 在 2288.78 秒检测到关键词 '好焦焦'。
+detection_time: 2288.78, current_time: 2282.00
+问题音频片段长度: 130251, dtype: float32, min: -0.065185546875, max: 0.068145751953125
+问题音频时间长度: 8.1406875
+
+
+[Agent] 接收到问题: 如何確保俱樂部會員在疫情期間安全參與活動
+, 1735008338.185892
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4834 seconds, One token time: 0.1611 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 97, Total time: 3.2974 seconds, One token time: 0.0340 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+为了确保俱乐部会员在疫情期间安全参与活动，可以采取以下措施：一是加强疫情防控知识宣传教育，提高会员的卫生防护意识；二是控制人员密度，尽量避免聚集性活动；三是加强通风、清洁和消毒工作；四是要求会员佩戴口罩，并定期测量体温；五是建立疫情报告制度，及时发现并处理潜在风险。
+talker 输出结束
+
+会议数据处理完成。

@@ -1,0 +1,193 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200707_L_R001S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 283
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.08s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.85s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.52s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.75s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.14s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.19s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.10s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.20s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:10,  5.47s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.12s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.87s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.90s/it]
+款为请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目他是从去年的上半期开始教的第一学年请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目在这方面是很大的一个经费感谢观看请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜需要您的支持 欢迎订阅明镜请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 欢迎订阅明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目大概就是隔三个座位坐一个人吧希望会不会空的太大 隔三个座位 咱们体育场能坐多少人 体育场大概能坐两千人左右吧两千人左右 他们来多少人 几百个人吗对 来几百个人学生都会反映他们单挑地下的问题 什么夏季放假的时候不会有来不长被站的情况吗学生们都在下我们要做好 不让外校学生进入团教就行了对 这要好好分析啊我们要做好 这要好好分析啊开学的话是每个人要去做那个验试者这个安保部门 还有这个过行过的数据板啊 还有这个通常的这个教学科们 会被测试对于对于上去这个这几年毕业毕业就是只要是进学校学生 我们都要去对他们进行这个监视 测试然后和理论一段时间 然后我们教主任就是对学生进行调查其实关于在一层现在还是比较严格的秘书 因为我们要去调查能够反 zwar 的这个那你们那边 教务处管的有没有登记表格是这个 哪个班我看的或者是被隔离的或者是现在的没听的然后等到这个闪门钥匙你好 交交疫情期间学学学费和住宿费退款 政策具体是怎样呢这些还要进行打卡 需要打卡 打卡方式就是通过咱们需要自己的基因有多少钱打的资格 打的资格是多少钱每天都要打卡吗对 每天都要打卡现在的情况结束了 结束了那些人的那些地方就结束了这个问题当时都给下面导演 而且同学们的颁奖他们都确定了然后你应该上报 然后你看哪些需要处理的 处理的然后还有上来因为这个疫情 我们学校不是这个食堂这些教职工租的这些地方就空闲下来了 因为没有人在学校 但是这个卫生啊 需要隔一段时间去去打扫一下 因为消毒去的话 有人去的话肯定是需要消毒的 就是对是有学校学校里有时候要安排人去检查一下嘛 所以就需要去咱们那个食堂里面 食堂里面需要的人不太多 但是 但是可以多少时间就需要去打扫一下 因为咱们疫情期间 学生都不在学校学校食堂开设的比较那个窗口比较少对 但是有老师需要去就餐 但是开设的窗口比较少 所以咱们学校上半年这个食堂的收入就变得更为可观 有财源对有 就开设了三个窗口 咱们这个食堂是以什么形式的外面承包了住在学校有专门的宿舍吗 还是他们住在学校外面每天都要进出学校因为疫情期间不是每天都需要老师们过来学校的一些事情安排的时候就需要来一趟 所以咱们老师是不在学校住的有没有那种就是在本地的但是也没有自己的房子也不在外面住 就是一直在那里教他这个咱们开始都跟老师协商过 可以有自愿他住在教职工宿舍的也有 也有咱们学校的老师 他这个教职工宿舍的费用跟学生组合的费用太大了上半年咱学校已经年收了几天 都费了一份 都付了一份刚才财务部那边已经退掉一半了 退掉一半了 资助费 资助费他们客室就没有少 资助费退一半了 退一半了一开始的时候他们最开始的时候是他们要求的要求到财 要求到资助费 最后我们就要求费我们就要求财 要求财 要求财我们就要求财 要求财 要求财我们的财产 要求财 要求财 要求财 要求财想在很多的经费 咱们可以在 嗯 用这些经费来加那个增加一些 嗯 这边是什么 就是这边是 哦 或者是就是环境上的一些改变 改变 但是像现在咱们的老师他们的任务可以两个 一个是授课 还有一个是做自己的项目 这个方面的话就是项目方面就是我们能够尽量进行帮助 然后在心思方面的话就是往上教课 老师可能会更加辛苦一些 因为传入电脑还有公布内容 可以通过社团或轰交工作的 其实就是在出现一些 Sundance Time Lauter的感觉因为自己在画一些好 오랜만的辅助 更加肯定他也非常 longtime точ 而且便自信发 跟他太喜欢你了 最后就是你这个人还是感情深刻 然后这个传FELIPE 应该是传输的方式对 它是很接触的 我没有跟鼠迪那种过节之类的给老师发言的感情这个是我们学到的传统的传统的传统 对 因为咱们学到的词是lock 所以说这个这个话也没用这个 因为这个后勤部一般都会送一些很容易啊就是像过节的话 就会送一些硬结的一些产品 就比如月饼啊或者说一些粽子啊 然后过年的话会送一些油啊还有饮料啊 叫职工们都拿回家嘛同时的话 教师在需要就餐的 餐点的话也是必须的没有停学校就餐是属于充卡里的还是直接用微信通过或者现金现金的话不太好 现在现金其实不太能够收大规则准对 咱学校是属于两个方法 一个就是一卡布然后这个这个这个学校都是独立为人吧 咱们宿舍这方面的话 其实 其实是环境是比较好的 配备着都是独立卫生间 然后安装这段时间是完善了一下 因为设备是半年都宿舍空闲下来嘛 嗯 如果下半年要要如果下半年要开学的的话 我建议咱们这边是检查一下那些设备是否有损坏或者放的那些损坏了电路啊什么嗯 需要去检查一下那你今天到时候给财务报一下吧说到这个下半年 因为上半年一直没有开学然后下半年咱们就要一个来期的那个招生啊 因为今天现在也高考了嘛 等到九月份会有一定新的同学然后来我们学校 然后我现在就觉得是我们应该去采货那里抽一部分钱 然后把大部分放在招生宣传和招生咨询上面 宣传一下我们学校这个到时候你的方案你给他报一下 或者有什么想法你可以说一下首先咱们这个宣传海报上一定要咱们学校的 首先是咱们的硬件硬件是不是 因为现在很多其实很多学校并不是说都会有空调 咱们学校既然有硬件的话就可以先说出来 然后咱们学校教育 然后各种各种细节安全 然后绿化 然后石头 然后
+[Audio Detection] 在 1019.09 秒检测到关键词 '你好焦'。
+detection_time: 1019.09, current_time: 1015.00
+问题音频片段长度: 164864, dtype: float32, min: -0.063690185546875, max: 0.06695556640625
+问题音频时间长度: 10.304
+
+
+[Agent] 接收到问题: 教育 基于之前我们讨论的内容 关于学校住宿费 退费
+, 1735009716.6224747
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9134 seconds, One token time: 0.3045 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+学校住宿费的退费规定通常根据学校的政策和合同条款来确定。一般来说，如果学生在学期中途退出住宿，可能需要支付一定的违约金，并且剩余的住宿费用可能会根据已经提供的服务和天数进行结算。具体的退款政策应当在学生签订住宿合同的时候就明确约定，并且在入住前仔细阅读和理解。如果有任何疑问，建议直接联系学校的相关部门进行咨询。
+talker 输出结束
+全退 我们认为合情合理就退换了 我想请问一下对于学生住宿费退费问题 我们是否还有其他需要考虑的因素 比如住宿费退费后学生宿舍的维护和消毒工作如何安排另外 对于教职工宿舍 我们是否需要检查设备是否有损坏 以确保下半年开学时能够正常使用 学生反映的作业以及各种条件都是比较好的有的男生还比较关心宿舍后柜停电问题 或者是能否使用下午电饭这个其实为了安全还是不建议的 这个受指令的大规模的电器不建议使用 为了避免发生一些火灾啥的事这个楼层上面都会放热水器每栋楼层都会放置三个灭火吸气点走到新的一批学生开学之后安保会进行消防演练这个也让教导主任到时候去做推广学校社团活动 拉学生的兴趣 学生部门 组织一下这个的话就是就需要感恩就是这条宣传啊 因为每年都会在开学就是照顾完新生以后 他们就会在区域外严重举办一些活动来进入到我们的社团以及学生组织 然后咱们会有很多选择吧 可以进行什么志愿者活动还有事情就是科学活动 相当于专业的专业 需要对于这方面的就是宣传这些可以把它放在咱们学校的官网上面 学校想报告的学生他们就点开网站就能直接特别全面的了解直观的了解咱们学校学校里面有什么经济需要吗有经济预算的 需要各部门计划主要是招生办这个他这个做出来的计划就是会上台湾这边深圳路上的他可以报报在对然后我们这边收费的话也不像你记得吗你说后勤这边的话就是宿舍需要需要重新检查一下吗 这个校场是家里的厕所的宿舍热水这个是宿舍水压的问题这个需要24加1这个这个是肯定会出现的问题 这个不是咱们硬件设施的问题因为在顶楼的学者给他们安点太阳能之类的东西 如果顶楼供水它不足的话这个问题其实发生的时间少 如果太多就是太多太多人出现了 高峰期的时候出现了高峰期的时候可以在楼顶安装一个 为了让学生们使用更加方便这个宣传主要还有校园环境我们要用航拍仪航拍一下安保部门和后勤部门怎么处理这就是校园环境 立法环境一个是会定期的对校园内的一些设施检查防拍这点的话就是咱们有个专门无人机 想让无人机去拍这个环境请不吝点赞 订阅 转发 打赏支持明镜与点点栏目感谢观看 欢迎订阅 转发 打赏支持明镜与点点栏目感谢观看感谢观看感谢观看感谢观看感谢观看感谢观看感谢观看 感谢观看 感谢观看感谢观看 感谢观看 感谢观看感谢观看 感谢观看 感谢观看 感谢观看感谢观看 感谢观看 感谢观看 感谢观看感谢观看好 因为对于学生来说 咱们一个招呼的是情日月亮的学生对于第二十一号呢 咱们也是需要管理的 这就需要咱们的政策对于一些条件 咱们就要有一个规定但是从学校 经校也不高呢 还是从咱们学校 咱们学校都能过现在基本上没有过关了 交关只能是在城市里的那边的那边吧 就是以下消防队的队员也会作为主也可以招一些这个当届的队友对 这五标的话 他们有的也非常有耐用那如果特务标会不会如果年龄比较大的话 比方说下30多岁 换一下的主要招 可能还是前面的要关系因为他需要一个需要的一个接受 他青年教官会不会没有经验主要招的是这种当 当届的退伍用啊比如说他是时官或者什么的 当届的退伍的那些事情都符合要求 又就是 退伍又没有那样大 也能比较有经验的一些我们现在需要一个交通办案 确定了这个 这个方式还有提前想他们查询他们的 水高几度 穿衣服的质量然后我需要提前在当地推荐 向这个服务方顺便考虑这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个海军啊 空军啊 一般这陆军训练的比较多对也可以找点吸引的找一些海军空军 因为海军空军的遗坠的话是咱们的五万海长的地方因为他们的财务可能就是适合于咱们这些学生我建议咱们可以为了提升他们的军训质量的兴趣吧坚持一天下来挺累的晚上的时候 一两个小时吧让他们教官和学生一块儿玩一下一个小游戏啊或者教他们唱歌啊 就可以这样让他们这样打击他的积极性 然后促进他们想要好好的表演他们有一个奖项还有就是学生 咱们学校有热门专业 学生报
+[Audio Detection] 在 1619.36 秒检测到关键词 '你好焦'。
+detection_time: 1619.36, current_time: 1617.00
+问题音频片段长度: 975157, dtype: float32, min: -0.10595703125, max: 0.125030517578125
+问题音频时间长度: 60.9473125
+
+
+[Agent] 接收到问题: 教军训服装预算 大概需要多少钱 你有什么建议他会不会如果计算机人报的太多的话 他以后马上不好那是他所以现在简直他问题大形式就是这样 因为有这个计算机对对对,因为在高科技方面,他们国家下令也是比较大的。所以说这方面,咱们这儿考证是要考的。考证?属于是毕业以后让他们自己考的,还是谁来安排的?咱们在学校自己的话,也是会有要求的。学校都会提供机会,然后学生自愿去考试。但是咱们也会,就是像他们毕业以后,咱们也会有这些要求。像咱们学校的话,或许这边有安排很多
+, 1735009770.6645167
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.5164 seconds, One token time: 0.1721 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：军训服装 预算
+Token count: 28, Total time: 5.7968 seconds, One token time: 0.2070 seconds
+
+提取的关键词: ['军训服装', '预算']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+会议讨论了学生和教职工宿舍的维护、消毒及设备检查等问题。建议下半年开学前检查宿舍设备是否完好，并确保有足够的床位供学生使用。此外，还讨论了招生宣传、学生社团活动组织及军训安排等事项。
+Token count: 53, Total time: 11.3788 seconds, One token time: 0.2147 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：军训服装 预算
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 为请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目他是从去年的上半期开始教的第一学年请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目在这方面是很大的一个经费感谢观看请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜需要您的支持 欢迎订阅明镜请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 欢迎订阅明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目大概就是隔三个座位坐一个人吧希望会不会空的太大 隔三个座位 咱们体育场能坐多少人 体育场大概能坐两千人左右吧两千人左右 他们来多少人 几百个人吗对 来几百个人学生都会反映他们单挑地下的问题 什么夏季放假的时候不会有来不长被站的情况吗学生们都在下我们要做好 不让外校学生进入团教就行了对 这要好好分析啊我们要做好 这要好好分析啊开学的话是每个人要去做那个验试者这个安保部门 还有这个过行过的数据板啊 还有这个通常的这个教学科们 会被测试对于对于上去这个这几年毕业毕业就是只要是进学校学生 我们都要去对他们进行这个监视 测试然后和理论一段时间 然后我们教主任就是对学生进行调查其实关于在一层现在还是比较严格的秘书 因为我们要去调查能够反 zwar 的这个那你们那边 教务处管的有没有登记表格是这个 哪个班我看的或者是被隔离的或者是现在的没听的然后等到这个闪门钥匙你好 交交疫情期间学学学费和住宿费退款 政策具体是怎样呢这些还要进行打卡 需要打卡 打卡方式就是通过咱们需要自己的基因有多少钱打的资格 打的资格是多少钱每天都要打卡吗对 每天都要打卡现在的情况结束了 结束了那些人的那些地方就结束了这个问题当时都给下面导演 而且同学们的颁奖他们都确定了然后你应该上报 然后你看哪些需要处理的 处理的然后还有上来因为这个疫情 我们学校不是这个食堂这些教职工租的这些地方就空闲下来了 因为没有人在学校 但是这个卫生啊 需要隔一段时间去去打扫一下 因为消毒去的话 有人去的话肯定是需要消毒的 就是对是有学校学校里有时候要安排人去检查一下嘛 所以就需要去咱们那个食堂里面 食堂里面需要的人不太多 但是 但是可以多少时间就需要去打扫一下 因为咱们疫情期间 学生都不在学校学校食堂开设的比较那个窗口比较少对 但是有老师需要去就餐 但是开设的窗口比较少 所以咱们学校上半年这个食堂的收入就变得更为可观 有财源对有 就开设了三个窗口 咱们这个食堂是以什么形式的外面承包了住在学校有专门的宿舍吗 还是他们住在学校外面每天都要进出学校因为疫情期间不是每天都需要老师们过来学校的一些事情安排的时候就需要来一趟 所以咱们老师是不在学校住的有没有那种就是在本地的但是也没有自己的房子也不在外面住 就是一直在那里教他这个咱们开始都跟老师协商过 可以有自愿他住在教职工宿舍的也有 也有咱们学校的老师 他这个教职工宿舍的费用跟学生组合的费用太大了上半年咱学校已经年收了几天 都费了一份 都付了一份刚才财务部那边已经退掉一半了 退掉一半了 资助费 资助费他们客室就没有少 资助费退一半了 退一半了一开始的时候他们最开始的时候是他们要求的要求到财 要求到资助费 最后我们就要求费我们就要求财 要求财 要求财我们就要求财 要求财 要求财我们的财产 要求财 要求财 要求财 要求财想在很多的经费 咱们可以在 嗯 用这些经费来加那个增加一些 嗯 这边是什么 就是这边是 哦 或者是就是环境上的一些改变 改变 但是像现在咱们的老师他们的任务可以两个 一个是授课 还有一个是做自己的项目 这个方面的话就是项目方面就是我们能够尽量进行帮助 然后在心思方面的话就是往上教课 老师可能会更加辛苦一些 因为传入电脑还有公布内容 可以通过社团或轰交工作的 其实就是在出现一些 Sundance Time Lauter的感觉因为自己在画一些好 오랜만的辅助 更加肯定他也非常 longtime точ 而且便自信发 跟他太喜欢你了 最后就是你这个人还是感情深刻 然后这个传FELIPE 应该是传输的方式对 它是很接触的 我没有跟鼠迪那种过节之类的给老师发言的感情这个是我们学到的传统的传统的传统 对 因为咱们学到的词是lock 所以说这个这个话也没用这个 因为这个后勤部一般都会送一些很容易啊就是像过节的话 就会送一些硬结的一些产品 就比如月饼啊或者说一些粽子啊 然后过年的话会送一些油啊还有饮料啊 叫职工们都拿回家嘛同时的话 教师在需要就餐的 餐点的话也是必须的没有停学校就餐是属于充卡里的还是直接用微信通过或者现金现金的话不太好 现在现金其实不太能够收大规则准对 咱学校是属于两个方法 一个就是一卡布然后这个这个这个学校都是独立为人吧 咱们宿舍这方面的话 其实 其实是环境是比较好的 配备着都是独立卫生间 然后安装这段时间是完善了一下 因为设备是半年都宿舍空闲下来嘛 嗯 如果下半年要要如果下半年要开学的的话 我建议咱们这边是检查一下那些设备是否有损坏或者放的那些损坏了电路啊什么嗯 需要去检查一下那你今天到时候给财务报一下吧说到这个下半年 因为上半年一直没有开学然后下半年咱们就要一个来期的那个招生啊 因为今天现在也高考了嘛 等到九月份会有一定新的同学然后来我们学校 然后我现在就觉得是我们应该去采货那里抽一部分钱 然后把大部分放在招生宣传和招生咨询上面 宣传一下我们学校这个到时候你的方案你给他报一下 或者有什么想法你可以说一下首先咱们这个宣传海报上一定要咱们学校的 首先是咱们的硬件硬件是不是 因为现在很多其实很多学校并不是说都会有空调 咱们学校既然有硬件的话就可以先说出来 然后咱们学校教育 然后各种各种细节安全 然后绿化 然后石头 然后教育 基于之前我们讨论的内容 关于学校住宿费 退费全退 我们认为合情合理就退换了 我想请问一下对于学生住宿费退费问题 我们是否还有其他需要考虑的因素 比如住宿费退费后学生宿舍的维护和消毒工作如何安排另外 对于教职工宿舍 我们是否需要检查设备是否有损坏 以确保下半年开学时能够正常使用 学生反映的作业以及各种条件都是比较好的有的男生还比较关心宿舍后柜停电问题 或者是能否使用下午电饭这个其实为了安全还是不建议的 这个受指令的大规模的电器不建议使用 为了避免发生一些火灾啥的事这个楼层上面都会放热水器每栋楼层都会放置三个灭火吸气点走到新的一批学生开学之后安保会进行消防演练这个也让教导主任到时候去做推广学校社团活动 拉学生的兴趣 学生部门 组织一下这个的话就是就需要感恩就是这条宣传啊 因为每年都会在开学就是照顾完新生以后 他们就会在区域外严重举办一些活动来进入到我们的社团以及学生组织 然后咱们会有很多选择吧 可以进行什么志愿者活动还有事情就是科学活动 相当于专业的专业 需要对于这方面的就是宣传这些可以把它放在咱们学校的官网上面 学校想报告的学生他们就点开网站就能直接特别全面的了解直观的了解咱们学校学校里面有什么经济需要吗有经济预算的 需要各部门计划主要是招生办这个他这个做出来的计划就是会上台湾这边深圳路上的他可以报报在对然后我们这边收费的话也不像你记得吗你说后勤这边的话就是宿舍需要需要重新检查一下吗 这个校场是家里的厕所的宿舍热水这个是宿舍水压的问题这个需要24加1这个这个是肯定会出现的问题 这个不是咱们硬件设施的问题因为在顶楼的学者给他们安点太阳能之类的东西 如果顶楼供水它不足的话这个问题其实发生的时间少 如果太多就是太多太多人出现了 高峰期的时候出现了高峰期的时候可以在楼顶安装一个 为了让学生们使用更加方便这个宣传主要还有校园环境我们要用航拍仪航拍一下安保部门和后勤部门怎么处理这就是校园环境 立法环境一个是会定期的对校园内的一些设施检查防拍这点的话就是咱们有个专门无人机 想让无人机去拍这个环境请不吝点赞 订阅 转发 打赏支持明镜与点点栏目感谢观看 欢迎订阅 转发 打赏支持明镜与点点栏目感谢观看感谢观看感谢观看感谢观看感谢观看感谢观看感谢观看 感谢观看 感谢观看感谢观看 感谢观看 感谢观看感谢观看 感谢观看 感谢观看 感谢观看感谢观看 感谢观看 感谢观看 感谢观看感谢观看好 因为对于学生来说 咱们一个招呼的是情日月亮的学生对于第二十一号呢 咱们也是需要管理的 这就需要咱们的政策对于一些条件 咱们就要有一个规定但是从学校 经校也不高呢 还是从咱们学校 咱们学校都能过现在基本上没有过关了 交关只能是在城市里的那边的那边吧 就是以下消防队的队员也会作为主也可以招一些这个当届的队友对 这五标的话 他们有的也非常有耐用那如果特务标会不会如果年龄比较大的话 比方说下30多岁 换一下的主要招 可能还是前面的要关系因为他需要一个需要的一个接受 他青年教官会不会没有经验主要招的是这种当 当届的退伍用啊比如说他是时官或者什么的 当届的退伍的那些事情都符合要求 又就是 退伍又没有那样大 也能比较有经验的一些我们现在需要一个交通办案 确定了这个 这个方式还有提前想他们查询他们的 水高几度 穿衣服的质量然后我需要提前在当地推荐 向这个服务方顺便考虑这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个海军啊 空军啊 一般这陆军训练的比较多对也可以找点吸引的找一些海军空军 因为海军空军的遗坠的话是咱们的五万海长的地方因为他们的财务可能就是适合于咱们这些学生我建议咱们可以为了提升他们的军训质量的兴趣吧坚持一天下来挺累的晚上的时候 一两个小时吧让他们教官和学生一块儿玩一下一个小游戏啊或者教他们唱歌啊 就可以这样让他们这样打击他的积极性 然后促进他们想要好好的表演他们有一个奖项还有就是学生 咱们学校有热门专业 学生报教【军】训服装预算 大概需要多少钱 你有什么建议他会不会如果计算机人报的太多的话 他以后马上不好那是他所以现在简直他问题大形式就是这样 因为有这个计算机对对对,因为在高科技方面,他们国家下令也是比较大
+会议讨论了学生和教职工宿舍的维护、消毒及设备检查等问题。建议下半年开学前检查宿舍设备是否完好，并确保有足够的床位供学生使用。此外，还讨论了招生宣传、学生社团活动组织及军训安排等事项。
+reasoner 输出结束
+如
+[Text Detection] 在 1643.44 秒检测到关键词 '好交',current_time: 1638.00
+问题音频片段长度: 153088, dtype: float32, min: -0.060222625732421875, max: 0.050380706787109375
+问题音频时间长度: 9.568
+
+
+[Agent] 接收到问题: 他们的大形势就是这样 因为在高科技方面他们国家下令比较大的
+, 1735009789.331722
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4637 seconds, One token time: 0.1546 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 80, Total time: 2.9594 seconds, One token time: 0.0370 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在高科技方面，中国国家的战略布局是比较大的。
+talker 输出结束
+果计算机里人报的太多的话 他以后反而不好交易的特别多因为他们自己考的还是其他人的 学校都会提供机会学生自愿去考试学校的话 或许这边有安排很多我们的学校有许多计算机设备教室 这方面是学校的优势报答学校专业的就比较多这个电脑的话是很多时候没有听过咱们都在实验室里面配备着教室用的专用的设备因为做项目需要的条件会特别多上一季度财务也报表了说没有什么下一季度可以改接手下的开销用途在学校上现在 frustration 的前年行政 领队成功好 brushed 的据说学校的学生们 都在学校上 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学�学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习�对的,而且这个是长短的一直都可以被用那咱们的学校如果评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论 评论评论评论评论评论评论评论评论 评论评论评论评论 评论评论 评论评论评论评论 评论评论 评论评论 评论誄论评论 评论评论 评论评论ública новых今回的聚会在谈 modification Rabia阿卜和这 就是鼓咒拍照赞提供会 赞为 ek为motivate这 одна我不特意为 Our格 Пос好 慢慢好 行吧 谢谢 谢谢谢谢
+[Audio Detection] 在 1945.16 秒检测到关键词 '好焦焦'。
+detection_time: 1945.16, current_time: 1939.00
+问题音频片段长度: 523824, dtype: float32, min: -0.06414794921875, max: 0.05572509765625
+问题音频时间长度: 32.739
+
+
+[Agent] 接收到问题: 我们的教育方向基于之前我们讨论的内容关于学级小级专业就业形式是较好好的如果报名人数过多 是否会对就业市场造成拥挤的问题我们应该如何平衡热门专业报名人数和就业市场需求以确保学生毕业后的就业质量
+, 1735009875.9136698
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4905 seconds, One token time: 0.1635 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：就业市场 热门专业 平衡
+Token count: 32, Total time: 6.0991 seconds, One token time: 0.1906 seconds
+
+提取的关键词: ['就业市场', '热门专业', '平衡']
+
+找到的上下文片段数量: 1
+会议讨论了学校热门专业报名人数过多可能对毕业生就业市场造成的影响。建议通过合理安排考试机会、利用学校的计算机设备优势吸引更多学生报考相关专业，并根据市场需求调整招生规模，以平衡热门专业与就业市场的供需关系，确保学生毕业后能有更好的就业质量。
+Token count: 61, Total time: 11.8325 seconds, One token time: 0.1940 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：就业市场 热门专业 平衡
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 像咱们学校的话,或许这边有安排很多如他们的大形势就是这样 因为在高科技方面他们国家下令比较大的果计算机里人报的太多的话 他以后反而不好交易的特别多因为他们自己考的还是其他人的 学校都会提供机会学生自愿去考试学校的话 或许这边有安排很多我们的学校有许多计算机设备教室 这方面是学校的优势报答学校专业的就比较多这个电脑的话是很多时候没有听过咱们都在实验室里面配备着教室用的专用的设备因为做项目需要的条件会特别多上一季度财务也报表了说没有什么下一季度可以改接手下的开销用途在学校上现在 frustration 的前年行政 领队成功好 brushed 的据说学校的学生们 都在学校上 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学�学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习 学习�对的,而且这个是长短的一直都可以被用那咱们的学校如果评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论 评论评论评论评论评论评论评论评论 评论评论评论评论 评论评论 评论评论评论评论 评论评论 评论评论 评论誄论评论 评论评论 评论评论ública новых今回的聚会在谈 modification Rabia阿卜和这 就是鼓咒拍照赞提供会 赞为 ek为motivate这 одна我不特意为 Our格 Пос好 慢慢好 行吧 谢谢 谢谢谢谢我们的教育方向基于之前我们讨论的内容关于学级小级专业就业形式是较好好的如果报名人数过多 是否会对就业市场造成拥挤的问题我们应该如何平衡热门专业报名人数和就【业】市场需求以确保学生毕业后的就业质量
+会议讨论了学校热门专业报名人数过多可能对毕业生就业市场造成的影响。建议通过合理安排考试机会、利用学校的计算机设备优势吸引更多学生报考相关专业，并根据市场需求调整招生规模，以平衡热门专业与就业市场的供需关系，确保学生毕业后能有更好的就业质量。
+reasoner 输出结束
+谢谢热门专业 报名人数和就业市场需求确保学生毕业后的就业质量
+会议数据处理完成。

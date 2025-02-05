@@ -1,0 +1,168 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200707_L_R001S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 283
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.51s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.71s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  3.99s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  4.07s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  3.78s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  4.07s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:15<01:00, 15.21s/it]滑 Playing在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在这边,我会在though我们上班的会议,接下来由咱们这个副院长来主持一下这个会议现在会议开始了啊,这个上半年因为这个疫情的原因,都闹了
+Loading checkpoint shards:  40%|████      | 2/5 [00:33<00:50, 16.73s/it]My这个效果是什么,这个效果是什么建议或者什么方案咱们由于上半年啊,不是在家上的那个跑客然后老师好多实验的,就进行了下去了那肯定是不能说在家上的人一样可能比较,马上就要开学然后比较新造中 现在的话,可能老师这块是不缺的然后老师的水平比较高所以说,咱们在这儿和张博商量一下我们现在的步骤要装新生,我们的政策是怎样的?比较低层,咱们这儿,好多人是好事的话,这也非常这个问题,这个想说老师上课的问题考试安排的怎么样?下半年谈一下在考试,是以往后考试为标准上,咱们这儿对于一些,就是,一些比较特别重要的科目,就是比如说, 下专业科目。那,就专门像一些高数,一些,一些,就是,比较,特别重要的一些科目,反而是需要那个, 反教育后的研究考试,因为你想再加一趴,就有点问题,就是闹疫情,咱们闹疫情,这财务这儿是怎么弄的呢?是学生的费用,目前,咱们学校所收的租资费,是10倍。目前,只有这个住宿费,还了一半,因为我们交的一年住宿。他是从去年的上半期开始交的一学年。我们只是把这一年住宿费换了。因为在疫情期间,没有用到水和电。在这方面是有很大的资金费用的。我们的学校的开销主要是老师们的薪资,还有设备的维修。比如说,通常,这个通信换代。还有我们在体育馆内的一些设备的东西。
+Loading checkpoint shards:  60%|██████    | 3/5 [00:51<00:35, 17.56s/it]我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备上半年以前也没开学,安保部门,才开了,才原了安保部这边其实是裁员,裁了一万年裁员,我们裁掉了这些人他们在往后干什么我们是不清楚的,就是还在职的这些人,我们是要求他们免下来去找这个医生,但是几万公尺我们要做好这个消毒杀菌的工作消毒防疫,在这个疫情期间是没有这个是马上明天夏天了,夏天的话这个疫情也出现了在咱们主要的这个滥油厂的话也会有大大小小大概二十多个人在一个比赛的同时我们除了参赛队员和教练我们是不是有观众入场的 因为这个还是防久的大量应该进行观众入场一定要做好消毒还有防护只允许小部分人进场分机进场大概隔三个座位做一个人房一般会不会空的太大 隔三个座位 咱们体育场能做多少人体育场大概能做两千人左右吧两千人左右 他们来多少人 几百个人吗对 来几百个人学生都会反映他们单挑地下这个问题什么的下季放假的时候不会有来不长被站的情况吗学生们都在下我们到时候做好不让外校学生进入团教就行了对 这个要好好分析开学的话是每个人要去做那个验试者这个安保部门 还有这个过行过的数据板啊 还有这个我长大的对于对于上去这个这几年一页一页就是只要是进学校学生我们都要去对他们进行这个监视 测试然后合理的一段时间 然后我们教主任就是对学生进行调查其实关于在一层现在还是比较严格的领袖 因为我们都要去调查我就想让我们能够看看给那 Zemun 的感觉对学生一定要很顾 然后我感受到他们就是要通过游戏的方式 把别人的思绪那你们那边教务处管的有没有登记表格是这个 哪个班是我看的 或者是被隔离的 或者是现在的 因为咱们学到在一起的世界 每天都需要自己的答案 然后等到咱们要是想改交的话 需要提前一路的进口位 你好 教教疫情期间学学学费和住宿费退款 政策具体是怎样呢
+Loading checkpoint shards:  80%|████████  | 4/5 [01:08<00:17, 17.20s/it]有多少钱 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次每天都要打吧地方接触了 接触了那些人 那些地方这个问题当时都给下面导演 而且同学们的班长 他们都确定了然后你应该上报 然后你看哪些需要处理的 处理的 然后还有上来因为这个疫情 我们学校不是这个食堂这些教职工租的这些地方就空闲下来了 因为没有人在学校 但是这个卫生啊 需要隔一段时间去
+Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 13.11s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 14.81s/it]
+去打扫一下 因为消毒去的话 有人去的话肯定是需要消毒的 就是对是有学校学校里有时候要安排人去检查一下嘛 所以就需要去咱们那个食堂里面 食堂里面需要的人不太多 但是 但是可以多少时间就需要去打扫一下 因为咱们疫情期间 学生都不在学校学校食堂开设的比较那个窗口比较少对 但是有老师需要去就餐 但是开设的窗口比较少 所以咱们学校上半年这个食堂的收入就变得更为可观 有财源对有 就开设了三个窗口 咱们这个食堂是以什么形式的外面承包了住在学校有专门的宿舍吗 还是他们住在学校外面每天都要进出学校因为疫情期间不是每天都需要老师们过来学校的一些事情安排的时候就需要来一趟 所以咱们老师是不在学校住的有没有那种就是在本地的但是也没有自己的房子也不在外面住 就是一直在那里教他这个咱们开始都跟老师协商过 可以有自愿他住在教职工宿舍的也有 也有咱们学校的老师 他这个教职工宿舍的费用跟学生组合的费用太大了上半年咱学校已经年收了几天 都费了一份 都付了一份刚才财务部那边已经退掉一半了 退掉一半了 资助费 资助费他们客室就没有少 资助费退一半了 退一半了一开始的时候他们最开始的时候是他们要求的要求到财 要求到资助费 最后我们就要求费我们就要求财 要求财 要求财我们就要求财 要求财 要求财我们的财产 要求财 要求财 要求财 要求财我们的条件要处理 hör表 分享 学习何样加一些 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源是环境上的一些改变 改变是环境上的一些改变 改变是我们能够尽量进行防护 然后在心思方面的话就是往上 往上教课 老师可能会更加辛苦一些 因为传入电脑也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生有没有那种过节之类的给老师发言的感想?这个是我们学校的参考 因为我们学校是绿色的这个已经在后勤部一般都给送一些很多东西了像过节的话就会送一些应节的一些产品 比如月饼啊或者送一些粽子 然后过年的话会送一些油啊还有饮料啊 叫职工们都拿回家嘛同时的话 教师在学校就参了 参加的话也是必须的表现在学校就参是属于充卡里面还是直接用微信通过或者现金之类的现金的话不太好 现金其实不太为生大规则准对 咱学校是属于两个方法 一个就是一卡通 教职工和学生都有的 然后这个这个这个学校都是独立为人吧 咱们宿舍这方面的话 其实 其实是环境是比较好的 配备着都是独立卫生间 然后安装这段时间是完善了一下 因为设备是半年都宿舍空闲下来嘛 嗯 如果下半年要要如果下半年要开学的的话 我建议咱们这边是检查一下那些设备是否有损坏或者放的那些损坏了电路啊什么嗯 需要去检查一下那你今天到时候给财务报一下吧说到这个下半年 因为上半年一直没有开学然后下半年咱们就要一个来期的那个招生啊 因为今天现在也高考了嘛 等到九月份会有一定新的同学然后来我们学校 然后我现在就觉得是我们应该去采货那里抽一部分钱 然后把大部分放在招生宣传和招生咨询上面 宣传一下我们学校这个到时候你的方案你给他报一下 或者有什么想法你可以说一下首先咱们这个宣传海报上一定要咱们学校的 首先是咱们的硬件硬件是不是 因为现在很多其实很多学校并不是说都会有空调 咱们学校既然有硬件的话就可以先说出来 然后咱们学校教育 然后各种各种细节安全 然后绿化 然后石头 然后
+[Audio Detection] 在 1019.34 秒检测到关键词 '好交交'。
+detection_time: 1019.34, current_time: 1015.00
+问题音频片段长度: 164864, dtype: float32, min: -0.063690185546875, max: 0.06695556640625
+问题音频时间长度: 10.304
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容 关于学校住宿费 退费问题
+, 1735025844.7550082
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容 关于学校住宿费 退费问题财务部已经退掉了一半的住宿费到学生要求全退 我们认为合情合理就退换了我想请问一下 对于学生住宿费退费问题我们是否还有其他需要考虑的因素比如住宿费退费后学生宿舍的维护
+, 1735025846.5422032
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+0
+Token count: 3, Total time: 1.0068 seconds, One token time: 0.3356 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：住宿费 退费 考虑因素
+Token count: 32, Total time: 6.5754 seconds, One token time: 0.2055 seconds
+
+提取的关键词: ['住宿费', '退费', '考虑因素']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+会议中提到，在疫情期间，学校将采取限制观众数量和实行座位间隔措施来安排体育赛事的观众入场。具体来说，体育场可容纳约2000人，但疫情期间仅允许几百人以隔三坐一的方式入场。同时，学校将加强对学生的健康监测，并考虑采取远程教学方式以减轻教师负担。
+Token count: 73, Total time: 14.6972 seconds, One token time: 0.2013 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：住宿费 退费 考虑因素
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备上半年以前也没开学,安保部门,才开了,才原了安保部这边其实是裁员,裁了一万年裁员,我们裁掉了这些人他们在往后干什么我们是不清楚的,就是还在职的这些人,我们是要求他们免下来去找这个医生,但是几万公尺我们要做好这个消毒杀菌的工作消毒防疫,在这个疫情期间是没有这个是马上明天夏天了,夏天的话这个疫情也出现了在咱们主要的这个滥油厂的话也会有大大小小大概二十多个人在一个比赛的同时我们除了参赛队员和教练我们是不是有观众入场的 因为这个还是防久的大量应该进行观众入场一定要做好消毒还有防护只允许小部分人进场分机进场大概隔三个座位做一个人房一般会不会空的太大 隔三个座位 咱们体育场能做多少人体育场大概能做两千人左右吧两千人左右 他们来多少人 几百个人吗对 来几百个人学生都会反映他们单挑地下这个问题什么的下季放假的时候不会有来不长被站的情况吗学生们都在下我们到时候做好不让外校学生进入团教就行了对 这个要好好分析开学的话是每个人要去做那个验试者这个安保部门 还有这个过行过的数据板啊 还有这个我长大的对于对于上去这个这几年一页一页就是只要是进学校学生我们都要去对他们进行这个监视 测试然后合理的一段时间 然后我们教主任就是对学生进行调查其实关于在一层现在还是比较严格的领袖 因为我们都要去调查我就想让我们能够看看给那 Zemun 的感觉对学生一定要很顾 然后我感受到他们就是要通过游戏的方式 把别人的思绪那你们那边教务处管的有没有登记表格是这个 哪个班是我看的 或者是西。我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备,我们的设备上半年以前也没开学,安保部门,才开了,才原了安保部这边其实是裁员,裁了一万年裁员,我们裁掉了这些人他们在往后干什么我们是不清楚的,就是还在职的这些人,我们是要求他们免下来去找这个医生,但是几万公尺我们要做好这个消毒杀菌的工作消毒防疫,在这个疫情期间是没有这个是马上明天夏天了,夏天的话这个疫情也出现了在咱们主要的这个滥油厂的话也会有大大小小大概二十多个人在一个比赛的同时我们除了参赛队员和教练我们是不是有观众入场的 因为这个还是防久的大量应该进行观众入场一定要做好消毒还有防护只允许小部分人进场分机进场大概隔三个座位做一个人房一般会不会空的太大 隔三个座位 咱们体育场能做多少人体育场大概能做两千人左右吧两千人左右 他们来多少人 几百个人吗对 来几百个人学生都会反映他们单挑地下这个问题什么的下季放假的时候不会有来不长被站的情况吗学生们都在下我们到时候做好不让外校学生进入团教就行了对 这个要好好分析开学的话是每个人要去做那个验试者这个安保部门 还有这个过行过的数据板啊 还有这个我长大的对于对于上去这个这几年一页一页就是只要是进学校学生我们都要去对他们进行这个监视 测试然后合理的一段时间 然后我们教主任就是对学生进行调查其实关于在一层现在还是比较严格的领袖 因为我们都要去调查我就想让我们能够看看给那 Zemun 的感觉对学生一定要很顾 然后我感受到他们就是要通过游戏的方式 把别人的思绪那你们那边教务处管的有没有登记表格是这个 哪个班是我看的 或者是被隔离的 或者是现在的 因为咱们学到在一起的世界 每天都需要自己的答案 然后等到咱们要是想改交的话 需要提前一路的进口位 你好 教教疫情期间学学学费和住宿费退款 政策具体是怎样呢有多少钱 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次 打一次每天都要打吧地方接触了 接触了那些人 那些地方这个问题当时都给下面导演 而且同学们的班长 他们都确定了然后你应该上报 然后你看哪些需要处理的 处理的 然后还有上来因为这个疫情 我们学校不是这个食堂这些教职工租的这些地方就空闲下来了 因为没有人在学校 但是这个卫生啊 需要隔一段时间去去打扫一下 因为消毒去的话 有人去的话肯定是需要消毒的 就是对是有学校学校里有时候要安排人去检查一下嘛 所以就需要去咱们那个食堂里面 食堂里面需要的人不太多 但是 但是可以多少时间就需要去打扫一下 因为咱们疫情期间 学生都不在学校学校食堂开设的比较那个窗口比较少对 但是有老师需要去就餐 但是开设的窗口比较少 所以咱们学校上半年这个食堂的收入就变得更为可观 有财源对有 就开设了三个窗口 咱们这个食堂是以什么形式的外面承包了住在学校有专门的宿舍吗 还是他们住在学校外面每天都要进出学校因为疫情期间不是每天都需要老师们过来学校的一些事情安排的时候就需要来一趟 所以咱们老师是不在学校住的有没有那种就是在本地的但是也没有自己的房子也不在外面住 就是一直在那里教他这个咱们开始都跟老师协商过 可以有自愿他住在教职工宿舍的也有 也有咱们学校的老师 他这个教职工宿舍的费用跟学生组合的费用太大了上半年咱学校已经年收了几天 都费了一份 都付了一份刚才财务部那边已经退掉一半了 退掉一半了 资助费 资助费他们客室就没有少 资助费退一半了 退一半了一开始的时候他们最开始的时候是他们要求的要求到财 要求到资助费 最后我们就要求费我们就要求财 要求财 要求财我们就要求财 要求财 要求财我们的财产 要求财 要求财 要求财 要求财我们的条件要处理 hör表 分享 学习何样加一些 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源 资源是环境上的一些改变 改变是环境上的一些改变 改变是我们能够尽量进行防护 然后在心思方面的话就是往上 往上教课 老师可能会更加辛苦一些 因为传入电脑也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因为我们的学生 也会更加有效的 因
+会议中提到，在疫情期间，学校将采取限制观众数量和实行座位间隔措施来安排体育赛事的观众入场。具体来说，体育场可容纳约2000人，但疫情期间仅允许几百人以隔三坐一的方式入场。同时，学校将加强对学生的健康监测，并考虑采取远程教学方式以减轻教师负担。
+reasoner 输出结束
+全退 我们认为合情合理就退换了 我想请问一下对于学生住宿费退费问题 我们是否还有其他需要考虑的因素 比如住宿费退费后学生宿舍的维护和消毒工作如何安排另外 对于教职工宿舍 我们是否需要检查设备是否有损坏 以确保下半年开学时能够正常使用 学生反映的作业以及各种条件都是比较好的有的男生还比较关心宿舍后柜停电问题 或者是能否使用下午电饭这个其实为了安全还是不建议的 这个受指令的大规模的电器不建议使用 为了避免发生一些火灾啥的事这个楼层上面都会放热水器每栋楼层都会放置三个灭火吸气点走到新的一批学生开学之后安保会进行消防演练这个也让教导主任到时候去做推广学校社团活动 拉学生的兴趣 学生部门 组织一下这个的话就是就需要感恩就是这条宣传啊 因为每年都会在开学就是照顾完新生以后 他们就会在区域外严重举办一些活动来进入到我们的社团以及学生组织 然后咱们会有很多选择吧 可以进行什么志愿者活动还有事情就是科学活动 相当于专业的专业 需要对于这方面的就是宣传这些可以把它放在咱们学校的官网上面 学校想报告的学生他们就点开网站就能直接特别全面的了解直观的了解咱们学校学校里面有什么经济需要吗有经济预算的 需要各部门计划主要是招生办这个他这个做出来的计划就是会上台湾这边深圳路上的他可以报报在对然后我们这边收费的话也不像你记得吗你说后勤这边的话就是宿舍需要需要重新检查一下吗 这个校场是家里的厕所的宿舍热水这个是宿舍水压的问题这个需要24加1这个这个是肯定会出现的问题 这个不是咱们硬件设施的问题因为在顶楼的学者给他们安点太阳能之类的东西 如果顶楼供水它不足的话这个问题其实发生的时间少 如果太多就是太多太多人出现了 高峰期的时候出现了高峰期的时候可以在楼顶安装一个 为了让学生们使用更加方便这个宣传主要还有校园环境我们要用航拍仪航拍一下安保部门和后勤部门怎么处理这就是校园环境 立法环境一个是会定期的对校园内的一些设施检查防拍这点的话就是咱们有个专门无人机 想让无人机去拍这个环境请不吝点赞 订阅 转发 打赏支持明镜与点点栏目感谢观看 欢迎订阅 转发 打赏支持明镜与点点栏目感谢观看感谢观看感谢观看感谢观看感谢观看感谢观看感谢观看 感谢观看 感谢观看感谢观看 感谢观看 感谢观看感谢观看 感谢观看 感谢观看 感谢观看感谢观看 感谢观看 感谢观看 感谢观看感谢观看 感谢观看 Thanks again好 因为对于学生来说 咱们一个招呼的是 请你去预览学生对于一些第二次大学 咱们也是需要管理的 也就是需要咱们的政策 啊就是对于一些条件 咱们要有一个规定 那你这个叫我是不是高校官但是从学校 经校也不高呢 还是从咱们学校 咱们学校都高过现在基本上没有过关了 交关只能是学城市里的那边吧 就是以下消防队的队员也会作为主也可以招一些这个当届的队友对 这五标的话 他们有的也非常有耐用那如果特务标会不会如果年龄比较大的话 比方说下30多岁 换一下的主要招 可能还是前面的要关系因为他需要一个需要的一个接受 他青年教官会不会没有经验主要招的是这种当 当届的退伍用啊比如说他是时官或者什么的 当届的退伍的那些事情都符合要求 又就是 退伍又没有那样大 也能比较有经验的一些我们现在需要一个交通办案 确定了这个 这个方式还有提前想他们查询他们的 水高几度 穿衣服的质量然后我需要提前在当地推荐 向这个服务方顺便考虑这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个海军啊 空军啊 一般这陆军训练的比较多对也可以找点吸引的找一些海军空军 因为海军空军的遗坠的话是咱们的五万海长的地方因为他们的财务可能就是适合于咱们这些学生我建议咱们可以为了提升他们的军训质量的兴趣吧坚持一天下来挺累的晚上的时候 一两个小时吧让他们教官和学生一块儿玩一下一个小游戏啊或者教他们唱歌啊 就可以这样让他们这样打击他的积极性 然后促进他们想要好好的表演他们有一个奖项还有就是学生 咱们学校有热门专业 学生报你好 教教军训服装预算 大概需要多少钱 你有什么建议所以成本比较好 机载机这也成本比较好 还有软件 工程如
+[Text Detection] 在 1644.36 秒检测到关键词 '好交',current_time: 1638.00, 问题文本: 如果机载机里人报的太多的话 以后马上不好交易
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.054401397705078125, max: 0.0599365234375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 大型式 因为在高科技方面 国家下定义比较大的 咱们这考证是要考的
+, 1735025911.7481263
+
+
+[Agent] 最终接收到问题: 大型式 因为在高科技方面 国家下定义比较大的 咱们这考证是要考的
+, 1735025911.748325
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4833 seconds, One token time: 0.1611 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+国家在高科技方面的竞争力是较大的，因此该领域需要加强研究和创新。
+talker 输出结束
+果机载机里人报的太多的话 以后马上不好交易学校会提供机会学生自愿去考试所以技术 试试实现说经常会被开除 False norms学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面 学生在学校里面这个电脑的话是等到时候没有人要听的咱们都在实验室里面配备着教师用的专用的设备那上一季度 这个财务也爆表了说没有什么下一个季度 咱们可以改接手下的开销用的学生那咱们学校用那会有戏服之类的吗其实我觉得戏服上学校其实有准备就行 到明天咯八点钟就行 不用说在每个人定一套 没有必要 准备一场对 一切备用 这个是常来 一直都可以备用出发运动会的话是在本校进行的还是 然后有些商业运动会 咱们本校可能是因为学生长队长的 会议会版本是很不错的比较好 比较安全但是保证这个 因为难免会出现一些学生中暑这个也会及时向这个财务部门申报 去够一些这个清洋解暑物品 再一个就是准备一些药品 防止这些学生呢 就是那种拉伤啊 或者是碰撞之类的 就是产生这一系列不必要的受伤那这方面让教育主任去给下面的导演说一下吧 让他们采购一些然后最后再找几个男同学去带着去现在教育部有一个问题就是咱们的软件需要更新啊 软件需要更新啊然后他现在其实我们的那个东西放上了 然后这个就去让像财务好的 我们今天要拨款 因为可能一个实验室很大一个商品可以 那你你你有表格 然后价格 我不知道电脑什么 因为价格的话就不是他们需要的就是你可以直接下购 公司进行购买是什么行那其他人还有什么意见了周生办这边没有 就筹备一下新决定的后勤这边工作就没有了行 交出不认了行 那今天这场会议就先开到这儿吧好 慢慢好 行吧 谢谢 谢谢谢谢谢谢谢谢
+[Audio Detection] 在 1945.16 秒检测到关键词 '好交交'。
+detection_time: 1945.16, current_time: 1939.00
+问题音频片段长度: 153088, dtype: float32, min: -0.036224365234375, max: 0.040130615234375
+问题音频时间长度: 9.568
+
+
+[Agent] 接收到问题: 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢
+, 1735025951.3773856
+
+
+[Agent] 最终接收到问题: 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢 谢谢
+, 1735025951.377558
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.5796 seconds, One token time: 0.1932 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+无需多谢，有什么我可以帮助您解答的问题吗？请直接提出您的问题或需求。
+Token count: 22, Total time: 4.2714 seconds, One token time: 0.1942 seconds
+
+reasoner输出：
+无需多谢，有什么我可以帮助您解答的问题吗？请直接提出您的问题或需求。无需多谢，有什么我可以帮助您解答的问题吗？请直接提出您的问题或需求。
+reasoner 输出结束
+谢谢热门专业 报名业 报名人数和就业市场需求确保学生毕业后的就业质量
+会议数据处理完成。

@@ -1,0 +1,213 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200701_S_R001S05C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Starting processing from 0s, total chunks: 70
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.39it/s]Loading Whisper model...
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:04,  1.66s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.98s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.22s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.36s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.45s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.39s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.51s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.71s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:18<00:05,  5.27s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.96s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.96s/it]
+我002我是总经理014店长A014店长B019店长C行那今天吧过店的店长就过来开个这个月末的年会各店的工作情况然后从咱们这个电脑C就要开出了电脑C说明一下这个月的工作情况这个月业绩比上个月有明显的回收总业绩比上个月提高了15%我们根据这几个月的疫情的具体情况我们制定了一些具体的应对措施包括我们以前发电的员工在花店里面静候客户就是守住待扑但是随着市场的发展我们如果继续这样被动的营销的话势必被市场所淘汰所以我们现在采取一些主动的方式比如说对一些老客户的回访回馈包括对周边的邻居们这些同为商业的这些人对他们的一些采访或者说在我们去做一些很精美的一間香廳或者一朵两朵的送过去跟他们有一个简单的聊天问一下人们对于鲜花的需求因为过去人们可能只是处在温饱状态的时候有柴米油盐浆土茶就足够了甚至只有柴米油盐就解决了但是现在我发现人们的生活的需求生活对于生活品质的提升人们就越来越会享受这个生活也愿意用一种新的模式去过自己的生活目前在那个C店目前咱们这个店里面什么品种消费最好呢目前就是在母亲节的时候是康美心消费最好到七七的时候我就问这个月这个月的消费最好这个月的话建南消费很好因为建栏从产地运过来的话它的花期比较长颜色也比较多像粉色 绿色 黄色 玫瑰色品种比较多而且花期比较长开出来也比较鲜艳十块钱如果我们推出一个活动就是一个接龙把你身边的我们认识的这些老的顾客拉到群里面然后他们再把他们认识的人拉到群里面谢谢大家所有进群的人我们定期的做一些活动就是接龙我们推出了比如说这个品种的剑兰我们这一段时间进的采购价比较低我们就推出了9块9的活动9块9你就能买到一束鲜花而且根据情况我们还会送送一个花瓶这样的话会吸引很多的人因为人们刚开始的时候会对鲜花觉得好贵好奢侈几天之后就尿了就卸了就扔了就不愿意花这个钱但是我们现在我们就说我们生活不但要有柴米油盐还要有鲜花我们生活不但要为了肚子饱我们也要让我们的眼睛去欣赏一些东西不能只为了我们的嘴活着我们也让我们的眼睛提升一下然后当我们这个活动开始以后吸引了很多人周边的那么后来我们就开始去然后就是在桥东桥西设了好多的取花点这样的人们就都不用来我们花店来取花了因为毕竟桥东桥西人都有大家工作也很忙我们就采取了这种快餐配送的这种方式我们也配送鲜花在群里面可以定期的我们组织活动这样的话线上的一种销售的方式然后这样呢对我们提高我们花店的知名度和业绩有很大的帮助目前咱们C店有什么哪些活动能请教这一边就是鲜花的接龙活动就是9块9买一束鲜花这样的话基本上谁都不会觉得贵而且谁都觉得很好家里有鲜花和没有是完全不一样的对行然后咱们这个B店一点稍微这个月的情况我们这个月销量还是比较好的因为相对于鲜花来说它的季节性比较强然后对于外销方面也是中大节日的时候销量比较多然后就上个月而言没有特别集中节日像母亲节啊节日节这样有一个集中的销售点但它那个总体来说还是不错的然后我们上个月刚刚和一家空气公司合作然后承办了他们那个公司所有婚礼上需要的鲜花然后这个是一个很大的订单量然后那个光这个月就是这个批发的他上个月就是增长了5%而且他这个鲜花我们还跟下边对界有一个鲜花的二次律用就是婚庆他是一次性的用完之后你回收又不能再二次售卖我们就会对一些小公益品店有一个联合想把这些花瓣做成一些像相照这一类的小物件都是可以的这是一个下线的然后我们还在和花艺工作室这边谈合作如果我们达成长期合作的话他们也会有很大的需求比如说学员学习的一些插花课程什么的都会从我们这里直销费用相对来说比较低然后长期合作的话我们这边也是一个比较稳定的支出这个正在洽谈当中目前能问本地这个月有什么活动吗我们这个月最近是跟一家那个房地产商他们合作因为他们最近是推出一个活动然后就是也是那个采取那个就是类似于地推的那种形式的然后就是每人一只鲜花这个形式从这里买了不少然后就是最普通的那种那种其实是月经吧一只两只的他们打包成数的团嘛所以这场大活动我们是销售出去的一大批谢谢大家这个月哪些种类的花销售比较可观呢?这个月是非中菊和满天星比较多,满天星它是一个长期的,因为满天星主要以高花为主,然后它装饰性比较强,然后颜色种类也比较多,尤其是家里做一些简单的装饰,这个是永远不会出错的。一般人来询问的话我们主要推荐的也是百天星然后说这个销量是比较高的然后非洲菊的话因为它不管是作为什么就是插花形式来说它作为主花是比较多的然后也是花开的比较艳颜色比较多然后价格相对来说也比较便宜所以这个买非洲菊的人也是很多然后因为它那个花期不是特别长也不是特别短所以说人们选择它选择会比较多而且如果二次经济购买的话也会主选这个非洲菊嗯目前有什么活动呢?我们花店下个月打算,因为我们在网上看过一个美国的鲜花快闪,他们会把那些不用的鲜花在街道上面做一个装饰,这些东西是用来装饰垃圾桶、装饰广告牌这样的它是依赖增添城市的风景线二来也是一个品宣的作用所以我们打算用一个类似于这样的形式放下一块场地然后请一些专业的发业师过来然后对周围的这些建筑物进行一个简单的装饰然后当天开放这个区域供游客参观然后还有专业的在场人员对他们讲解一下花的品种花的种类 花的鱼这一类的做一个较大的品宣活动还有咱们目前花店近期有新进的品种吗?新进的呀?因为花的季节性比较强,所以鲜花比较大,快销的这一类都是固定的。国外进口的有一些,但是销量比较慢,一般都是接受高端定制的,这一类我们是没有往花店里上新的。然后剩下的我们买的是钢花和假花这一类的这个我们买的是比较稳的像春季刚开春的时候就像日本的樱花太特别漂亮我们会定制一系列这样的也是假花,樱花这样的樱花枝,大点的小一点的组合类的这个是我们今年新上的一个然后销量还是很不错的好了,那咱们这个A店因为咱们店和一些邻近的一些酒店的会展业务啊,然后和一些婚庆公司都已经达成了一个长期的活动,而这方面收益是比较可观的。然后另外一方面就是咱们的地推,现在也是比较古装地推嘛,前段时间就做了一个地推活动,是邀请咱们顾客嘛,是他们自己进店,然后会选一些干花呀像一些小厨像那个满天星呀还有一些小厨局像日葵这类的就他们自己动手搭配然后比较小的一个花束吧又比较便宜也比较吸引人这方面的话这方面收益的话也是有点挺可观的因为大家自己动手插花这样的话是比较吸引一些女性顾客的近期咱们这个A点你觉得什么卖的比较好呢?就是因为是夏季到了嘛,花朵枯萎的时间也稍微快了一点。除了一些婚庆公司做的花束,像用到玫瑰花呀,像一些其他卖的就是干花,像满天星,像这回非洲菊,那些小厨菊,今年也比较新小厨菊嘛,卖的都比较快。小雛鸡的那个假花也卖的比较快今天各位教主来主要有一个重要的事情,就是因为咱们公司要加大各店的资金的投入。一是用各店的品种,刮个品种的购买,二是用各店的装修。
+[Audio Detection] 在 740.00 秒检测到关键词 '好交交'。
+detection_time: 740.00, current_time: 720.00
+问题音频片段长度: 105814, dtype: float32, min: -0.0926513671875, max: 0.07672119140625
+问题音频时间长度: 6.613375
+
+
+[Agent] 接收到问题: 如何通过活动和合作提升花店销售业绩
+, 1735129045.1207523
+
+
+[Agent] 最终接收到问题: 如何通过活动和合作提升花店销售业绩
+, 1735129045.1208587
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9159 seconds, One token time: 0.3053 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+举办主题活动，如插花课程、花艺比赛等，吸引顾客参与和关注；加强与当地企事业单位的合作，例如设立花店装饰服务，提供鲜花礼仪培训等，扩大销售途径和客户群体；利用社交媒体进行宣传和推广，增加品牌知名度和影响力。
+talker 输出结束
+现在的花店是奢侈品气质,我们可以这么说,那么我们就要提高我们下的装修的档次,然后注意一下我们的装修的风格,让人们进去之后觉得我选的是一件奢侈品,他就不会在乎哎呀好几块钱买的一只花啊,他就不会在乎这个。还有咱们现在各店的一个装修工具比较老旧了,现在通常是实在的,然后各位有什么好的看法是吗?你店想要的模样想要那种浪漫的因为鲜花本身就是浪漫的要那种浪漫的风格浪具体的其实可以选一个主题吗像浪漫的小清新的或者是森林系的都可以呀浪漫的就是花朵百朵一点然后小清新的就是各种小花呀小草呀因为是这样的咱们就对你们三个店怎么要各店要有各店的不同的风格嗯主打哪哪种风格对,哪种风格,主打哪款品种这方面CJ这位我觉得既然是浪漫的话,就是以爱情为主题比如说情人节、七夕节,特别是这些节日即使不是这些节日,每一对情人他们的那些他们哪天认识的他们哪天就是去爱国女儿或者说结婚纪念日所有都可以给他们提供花儿店的意思就是每天都是这个情人节而不是非得等到七七咱们花儿店才去我们的每天都是情人节因为可能今天是某一对夫妻的结婚纪念日明天是另一个家庭他们夫妻某一方的生日都可以所以每一天我们都是一个爱的节日请不吝点赞 订阅 转发 打赏支持明镜与点点栏目所以我们这边的主题就是浪漫的爱的主题永恒的因为本身爱就是一个永恒的主题所以虽然鲜花是有花期的但是爱却是没有期限的爱你是无限期的那咱们这个地点地点有什么想法我们这边装修的话我们想把这个主要是门帘这个面换一下因为我发现就是因为我们是花店了你要把这个花如果只是在牌子上写某某的花店的话,跟周边的店对比来说并没有特别突出的特色和模式。对,不能给人眼前一亮。对,然后我们借鉴就比如说北京的那些小图筒,他们门口的那种石头,他们会在旁边摘一棵月季花,这一类的。然後還有法國的有一條風情街它有很多的花種是把整個門簾裝飾起來的我想把我们门脸做一个半包围形状的种的是蔷薇花因为蔷薇花它相对来说它的花期是比较长的是4月到9月有半月之久然后颜色的选择也比较多所以说而且我提倡的是种蒸花然后这个一两年就培育出来之后它每年都可以开花然后就让人走近一是鲜明到花香二是走近之后会发现这个是蒸花跟我们花店是比较契合的然后当然还有一个问题就是因为这个发型半年就是剩下的那半年如果它是一个光铺的枝干可能就是从视觉上来讲是会大大折扣的所以我们在剩余的时间里面我们会以每月的那个主符花为主就是往那个上面插一些这些花枝这个可能就是费用比较高因为要定期更换但是这个给人的视觉效果是比较好的然后每次有人从这里走过会说哎呀这次是长梅过来那一块呀换花成玫瑰了就给人心里有一个印象所以我想先把这个能力然后另外旁边我们想做这个玻璃橱窗前面做一排花的一个展示然后我们会每期一个主题比如说我们常见的西西主题玫瑰然后那个不清天主题康乃馨我们会做一个简单的花艺的一个展示做不同的那种插花的一种样式然后顺带着把我们这些复产比如说这个那个花瓶这类的都推出去向大家展示出来是我们从外观看的然后里面的话对里面的话我想分成我们设计地下楼就是一些比较长的我们建栏花这一类的花比较多放到下面这是我们主推的然后中间层次的我想放一些比较小的比如小出去这一类的比较清新的花放在中间就是收工量比较广的然后像那种高处的就是我可以放一些水料式的话比如说那个绿萝作为装饰它是一个比较快销的然后这些部分放在高处就分层来设计然后别人想买的话比如说放在地下的你可以在一进门的一个位置大发平然后这些桌子上放在那个餐桌上高处的可以放在那个空调啊或者洗衣机上面这样有一个指环在展现和碰到家里这么一个效果你这个如果只有装修的话我想按照这方面进行一个设计和那个格局的制定嗯 挺好的 说得不错很难吗 咱们A点这边啊 我这边的话就是比较想做一个小清新系的因为不管是夏节还是春节就是你看了这个外观看着很清新很亮丽绿植比较多他们比较喜欢进入然后去挑选他们的花树就是打算的话就是门口的话也是可以做个厨房因为每个季节每个节日然后我们可以和咱们合作的花艺师然后商量一下每个季节或者是每个节日定期的展览出一些花树呀然後可供参考吧然后我是比较喜欢也是比较喜欢种一些绿植可以在咱们进口处做一些小小的一些种植的一些东西种一些绿植呀或者是种一些小的一些花朵比较好养活的然后大家来了之后看这个花也挺好看的直接他可以拿走就可以买走了带着花盆回家也比较好养然后我觉得可以调一些花朵调一些那些干花做一些设计这样的话看着也比较吸引人吧然后分层的话我也比较喜欢分层就是可以把小型的花朵就是像满天仙 小树榆 杉日葵 小夏日葵嘛就一些杂花 小花然后比较好看的就比较好搭配花束的放到一起 放到地比如说他放的钱比如他说放到这个钓椅的左边吧这些都是小花像那些康乃馨像那些牡丹或者像那些百合呀玫瑰呀可以放在咱们的右边然后进门之后他们就会有一个选择是想要一些那些比较小青青的小花树啊还是说想要是送给爸爸妈妈送给情人的那些花朵呢玫瑰花树呢这样的花全都会比较好选择
+[Audio Detection] 在 1234.18 秒检测到关键词 '好交交'。
+detection_time: 1234.18, current_time: 1230.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.109771728515625, max: 0.104461669921875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于花店装修风格的更新i店上个月收益较好部分原因是与酒店和婚庆公司的合作
+, 1735129084.2651489
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容,关于花店,装修风格的更新,A店上个月收益较好,部分原因是与酒店和婚庆公司的合作。那么A店在装修风格上有什么具体的计划吗?长是否考虑将合作业务的元素融入到店铺装修中,以吸引更多顾客?我还有一个想法就是我每一个店可能会有一个主推的花朵我们这一期特别是这一期就这一段时间就是我们进的进价比较低的这些我们就
+, 1735129086.8268592
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4960 seconds, One token time: 0.1653 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：装修风格 合作业务
+Token count: 28, Total time: 5.7709 seconds, One token time: 0.2061 seconds
+
+提取的关键词: ['装修风格', '合作业务']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+A店计划采用小清新风格装修，注重绿植和小型花朵的搭配，旨在吸引顾客并便于顾客自行选择花束。同时，A店考虑将合作业务（如与酒店和婚庆公司的合作）的元素融入店铺装修，以增加特色并吸引更多顾客。例如，门帘将使用蔷薇花装饰，玻璃橱窗将展示不同主题的花艺作品。
+Token count: 85, Total time: 16.8760 seconds, One token time: 0.1985 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：装修风格 合作业务
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 然后另外一方面就是咱们的地推,现在也是比较古装地推嘛,前段时间就做了一个地推活动,是邀请咱们顾客嘛,是他们自己进店,然后会选一些干花呀像一些小厨像那个满天星呀还有一些小厨局像日葵这类的就他们自己动手搭配然后比较小的一个花束吧又比较便宜也比较吸引人这方面的话这方面收益的话也是有点挺可观的因为大家自己动手插花这样的话是比较吸引一些女性顾客的近期咱们这个A点你觉得什么卖的比较好呢?就是因为是夏季到了嘛,花朵枯萎的时间也稍微快了一点。除了一些婚庆公司做的花束,像用到玫瑰花呀,像一些其他卖的就是干花,像满天星,像这回非洲菊,那些小厨菊,今年也比较新小厨菊嘛,卖的都比较快。小雛鸡的那个假花也卖的比较快今天各位教主来主要有一个重要的事情,就是因为咱们公司要加大各店的资金的投入。一是用各店的品种,刮个品种的购买,二是用各店的装修。如何通过活动和合作提升花店销售业绩现在的花店是奢侈品气质,我们可以这么说,那么我们就要提高我们下的装修的档次,然后注意一下我们的【装】修的风格,让人们进去之后觉得我选的是一件奢侈品,他就不会在乎哎呀好几块钱买的一只花啊,他就不会在乎这个。还有咱们现在各店的一个装修工具比较老旧了,现在通常是实在的,然后各位有什么好的看法是吗?你店想要的模样想要那种浪漫的因为鲜花本身就是浪漫的要那种浪漫的风格浪具体的其实可以选一个主题吗像浪漫的小清新的或者是森林系的都可以呀浪漫的就是花朵百朵一点然后小清新的就是各种小花呀小草呀因为是这样的咱们就对你们三个店怎么要各店要有各店的不同的风格嗯主打哪哪种风格对,哪种风格,主打哪款品种这方面CJ这位我觉得既然是浪漫的话,就是以爱情为主题比如说情人节、七夕节,特别是这些节日即使不是这些节日,每一对情人他们的那些他们哪天认识的他们哪天就是去爱国女儿或者说结婚纪念日所有都可以给他们提供花儿店的意思就是每天都是这个情人节而不是非得等到七七咱们花儿店才去我们的每天都是情人节因为可能今天是某一对夫妻的结婚纪念日明天是另一个家庭他们夫妻某一方的生日都可以所以每一天我们都是一个爱的节日请不吝点赞 订阅 转发 打赏支持明镜与点点栏目所以我们这边的主题就是浪漫的爱的主题永恒的因为本身爱就是一个永恒的主题所以虽然鲜花是有花期的但是爱却是没有期限的爱你是无限期的那咱们这个地点地点有什么想法我们这边装修的话我们想把这个主要是门帘这个面换一下因为我发现就是因为我们是花店了你要把这个花如果只是在牌子上写某某的花店的话,跟周边的店对比来说并没有特别突出的特色和模
+---
+然後還有法國的有一條風情街它有很多的花種是把整個門簾裝飾起來的我想把我们门脸做一个半包围形状的种的是蔷薇花因为蔷薇花它相对来说它的花期是比较长的是4月到9月有半月之久然后颜色的选择也比较多所以说而且我提倡的是种蒸花然后这个一两年就培育出来之后它每年都可以开花然后就让人走近一是鲜明到花香二是走近之后会发现这个是蒸花跟我们花店是比较契合的然后当然还有一个问题就是因为这个发型半年就是剩下的那半年如果它是一个光铺的枝干可能就是从视觉上来讲是会大大折扣的所以我们在剩余的时间里面我们会以每月的那个主符花为主就是往那个上面插一些这些花枝这个可能就是费用比较高因为要定期更换但是这个给人的视觉效果是比较好的然后每次有人从这里走过会说哎呀这次是长梅过来那一块呀换花成玫瑰了就给人心里有一个印象所以我想先把这个能力然后另外旁边我们想做这个玻璃橱窗前面做一排花的一个展示然后我们会每期一个主题比如说我们常见的西西主题玫瑰然后那个不清天主题康乃馨我们会做一个简单的花艺的一个展示做不同的那种插花的一种样式然后顺带着把我们这些复产比如说这个那个花瓶这类的都推出去向大家展示出来是我们从外观看的然后里面的话对里面的话我想分成我们设计地下楼就是一些比较长的我们建栏花这一类的花比较多放到下面这是我们主推的然后中间层次的我想放一些比较小的比如小出去这一类的比较清新的花放在中间就是收工量比较广的然后像那种高处的就是我可以放一些水料式的话比如说那个绿萝作为装饰它是一个比较快销的然后这些部分放在高处就分层来设计然后别人想买的话比如说放在地下的你可以在一进门的一个位置大发平然后这些桌子上放在那个餐桌上高处的可以放在那个空调啊或者洗衣机上面这样有一个指环在展现和碰到家里这么一个效果你这个如果只有装修的话我想按照这方面进行一个设计和那个格局的制定嗯 挺好的 说得不错很难吗 咱们A点这边啊 我这边的话就是比较想做一个小清新系的因为不管是夏节还是春节就是你看了这个外观看着很清新很亮丽绿植比较多他们比较喜欢进入然后去挑选他们的花树就是打算的话就是门口的话也是可以做个厨房因为每个季节每个节日然后我们可以和咱们合作的花艺师然后商量一下每个季节或者是每个节日定期的展览出一些花树呀然後可供参考吧然后我是比较喜欢也是比较喜欢种一些绿植可以在咱们进口处做一些小小的一些种植的一些东西种一些绿植呀或者是种一些小的一些花朵比较好养活的然后大家来了之后看这个花也挺好看的直接他可以拿走就可以买走了带着花盆回家也比较好养然后我觉得可以调一些花朵调一些那些干花做一些设计这样的话看着也比较吸引人吧然后分层的话我也比较喜欢分层就是可以把小型的花朵就是像满天仙 小树榆 杉日葵 小夏日葵嘛就一些杂花 小花然后比较好看的就比较好搭配花束的放到一起 放到地比如说他放的钱比如他说放到这个钓椅的左边吧这些都是小花像那些康乃馨像那些牡丹或者像那些百合呀玫瑰呀可以放在咱们的右边然后进门之后他们就会有一个选择是想要一些那些比较小青青的小花树啊还是说想要是送给爸爸妈妈送给情人的那些花朵呢玫瑰花树呢这样的花全都会比较好选择基于之前我们讨论的内容,关于花店,【装】修风格的更新,A店上个月收益较好,部分原因是与酒店和婚庆公司的合作。那么A店在装修风格上有什么具体的计划吗?长是否考虑将合作业务的元素融入到店铺装修中,以吸引更多顾客?我还有一个想法就是我每一个店可能会有一个主推的花朵我们这一期特别是这一期就这一段时间就是我们进的进价比较低的这些我
+A店计划采用小清新风格装修，注重绿植和小型花朵的搭配，旨在吸引顾客并便于顾客自行选择花束。同时，A店考虑将合作业务（如与酒店和婚庆公司的合作）的元素融入店铺装修，以增加特色并吸引更多顾客。例如，门帘将使用蔷薇花装饰，玻璃橱窗将展示不同主题的花艺作品。
+reasoner 输出结束
+花多少钱啊很便宜的可以把他们吸引进来进店之后可能他也会不单是买这一种就像超市搞活动一样不一直买那一种可能还会买到别的因为通过我们的我们店员的介绍呀可能还会买别的花今天是不是比如你看的生日啊买点买在顺便的可能那个只是一个吸引就是一个广告这广告吸引进来之后我們可以給他推銷一些高大我们就可以多挣一些钱,用那个做一个吸引。还有就是咱们的个店,都归报了一下这个月的一些销售情况。未来下个月怎么搁店有些下个月咱们各间的活动,这个月咱们C店有的这个什么?我们看这个月呢这个月你是什么活动啊这个月我们刚才你说是什么活动啊一个9块9的街道接種活動,只有這個是嗎?不,我們還有另外一個,因為這個基本上是種得很少很少的,基本上有的是成本的銷售,給我們做一個宣傳,我們掙錢的,我們還得去掙錢,畢竟我們開發店就是要掙錢的,我們掙錢的一個下文是什麼呢?我们跟开发商做一个对接任何一个开发商他们在楼上开盘的时候都会有一个大型的活动那么这些活动它需要一些对他们这个楼盘的就是对他们这个对他们就是现场的现场一些装饰我们就跟他们有一个建议用鲜花来装饰比如说观山月我们就运去了很多的玫瑰花还有其他的花就装饰那个每一个经纪人或者说客户进去之后都觉得耳目里心很高大的一个很高大明亮的一个展厅然后不单单是在找房子围绕的沙滩的整个都是玫瑰花都是鲜花而且每一个角落里我们给他们不同的角落插了不同的鲜花每一个桌子上都摆着鲜花所以还有门口的大的花花兰那次活动真的是挣了一笔然后呢这几月保利云上又要开盘了所以我们正在跟他们对接到時候建議他們的收入物也用鲜花来装饰因为正是夏季鲜花盛开的季节如果收入物只有冰冷的房子和收入物有房子也有鲜花那个是不一样的人们经济之后做的呢因为有鲜花可能会跟收入员多聊一会儿因为有鲜花因为有这一种方向他可能会多坐一会儿那他成交的几率会更大一些我們就来跟他们对接,差不多了,可以,他们也同意用这种方式去装饰他们的售楼部,如果是这样的话,他们不会太在意这个价格。我们就一方面是在九华九的基隆呢是在做宣传宣传我们的门店我们的口碑而我们要赚钱的就是表达这些收入也好或者是一些单位的一些大型的会议我们去一些会
+[Text Detection] 在 1555.05 秒检测到关键词 '好教教',current_time: 1530.00, 问题文本: 会议的装饰都可以我们做了这些对刚才我就想问刚才的这个活动只有一个我想问这个事情我们在那个下个月咱们各店要加大这个活动的力度为咱这个七夕造势七夕还有两个月店长C你好教教如何通过橱窗设计和季节性祝福
+问题音频片段长度: 138240, dtype: float32, min: -0.19964599609375, max: 0.21917724609375
+问题音频时间长度: 8.64
+
+
+[Agent] 接收到问题: 你好娇娇如何通过橱窗设计和季节性主题提升花店吸引力和销售
+, 1735129126.8459938
+
+
+[Agent] 最终接收到问题: 你好娇娇如何通过橱窗设计和季节性主题提升花店吸引力和销售
+, 1735129126.8461046
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4721 seconds, One token time: 0.1574 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 51, Total time: 2.2105 seconds, One token time: 0.0433 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+你好，娇娇！在花店中，橱窗设计和季节性主题的运用能够有效地提升店铺的吸引力和销售。首先，在橱窗设计上，可以利用色彩、形状和布局来营造特定的氛围和情感，吸引顾客进店参观和消费。其次，利用季节性主题，如春季的樱花、夏季的荷花、秋季的枫叶和冬季的雪花等，可以给顾客带来不同的视觉享受，同时也能提醒他们当前的季节，增加购买的动机。最后，定期更换橱窗展示的内容，可以使顾客每次进店都有新鲜感，提高他们的回头率。希望这些方法能对你有所帮助！
+talker 输出结束
+议的装饰都可以我们做了这些对刚才我就想问刚才的这个活动只有一个我想问这个事情我们在那个下个月咱们各店要加大这个活动的力度为咱这个七夕造势七夕还有两个月店长C你好教教如何通过橱窗设计和季节性祝福我们现在就为他们提供目的是什么呢一方面是让他们家里有的鲜花我们说的是用鲜花减量心情装饰你的人生我们家里不单有柴油盐还有鲜花让我们每个人的家都过得家都是丰富多彩的多姿多彩的所以他们也会给我们介绍一些新的客户你不知道哪一个只是花了几块钱买鲜花的人他的可能一个朋友或亲戚就是某公司的一个负责人嗯 太普通了布置会议场所的时候那他就有这个话语权买谁家的买鲜花还是买什么一定也会有鲜花的我们在电视上都看到了那他买谁家的不是买呢如果我们的服务好我们的鲜花质量好我们的工艺好的话他并不选择我们的而且我们也会给这个客户给我们推荐客户的给他们一些比如说送他一束鲜花或者说给他一个花瓶那么虽然但是小恩小惠,但是是我們那份心意,那麼就會有更多的人給我們推薦他身邊的人這種資源,這比我們自己出去開發去,我覺得是立辦而功倍。對,我覺得就是,咱們這個,剛才C點說了自己的看法,A點有什麼?我们下个月就紧张的话开始因为也是说了咱们不能光是被动式了,咱们应该将被动式转为主动式,然后我们现在已经和一些大商场做了合作了,然后我们就会搬一些咱们的像夏季比较好营销的一些小轻轻的一些样式人类品种,然后过去,然后让他们让顾客们进行搭配。然后进行花术的包装我们都有咱们工作人员包装或者是说直接拿花瓶回家装花瓶里咱们我也会建一批好看的花瓶然后进行搭配的这样的卖目前的话是已经和四家商场已经谈了合同了然后就是下这个七月份吧每周六周日都会去人家商场进行这些活动是否不顾一些现在人员情况比如现在需要人吗需要招人吗我们现在需要再招两三个人因为有配送的活动而且许花店在无断的增加配送活动在和一些外卖活动吗目前还没有跟他们合作目前就是我們因為这个花是很娇嫩的他们不能像饭盒一样卡卡忙着一扔下去一定要懂花爱花的人来做这个工作不是某一个愣愣小伙就可以来做这个工作的真的你一定要有爱惜花的心情你才可以把它安全送到客户的手中你把花头都弄没了送到人家整杆子了这个不单客户要投诉你我们自己就真的就毁了自己了三個五個对,那闭店,因为我们下个月我们那个新店要开张了,其实我们不是上个月申请下来的一个,就是我们在我们原本的,在我们原本门店旁边开了一个新的门店,两个是连通的,我们之前说过要做一个符合型的花店,然后符合型花店不是,就是跟猫咖的形式差不多,就是在嘴铃上面加一些副液我们也会有一些咖啡的生产鲜花品制作这一类的作为一个外销然后所以我们这一类的技术人员我们一直在联系比如说咖啡师还有糕点师然后我们都需要招募然后所以因为我们对外招呼的话他们可能对我们本店的这些产品介绍什么都不是特别了解比如说有人去一张厨房喝咖啡就是比如说他看到咖啡厨房就是放的鲜花他问的话可能就是这个他非常不太懂所以我们想在每一个专业的制作师下面配一个我们自己的店员他们主要是介绍鲜花的但是他还是要对我们飞鲁罗咖啡制作有一定简单的了解所以说我们是预计这个月要招三到五名的员工让他们先对我们的鲜花有一定熟悉之后分配到我们新店里和我们现在现有的店员混合着先把这个店铺做起来是我们这家的话需要招三到四名花艺师因为就是咱们我们这边下个月主题的就是离推式的话也是让顾客自己挑选花术到时候的话有花艺师就是能协助我们店员一起帮顾客很好的搭配一下而且我们下个月也会开展那些跟婚庆公司合作开展一些手捧花的定制这样也是让一些新娘们快要举办婚礼的新娘们对花术进行挑选然后进行手捧花的定制然后希望和花艺师一起交流这样的话是比较专业的需要三到四年的花艺师吧另外的话我覺得可以再招一個賣相可以和各大就是和开发商合作,和商场合作,和酒店合作,和分层公司合作,因为咱们的外销业务就是需要不断地扩大的,因为咱们连锁店里挺多的嘛。本次会先开了,各部门下去以后,各部门的工作安排好还有就是咱们各店还有什么想要找我帮助的我都可以在线下,就是在会后咱们可以再去探讨,行吧?好的行,那咱们本次这个会议就先开到这儿刚
+[Text Detection] 在 2024.80 秒检测到关键词 '基于之前',current_time: 2010.00, 问题文本: 刚才谁说的那个肥肉局肥肉局的话题极短对记一张记好离交交基于之前我们讨论的内容关于下个月七夕活动的造势
+问题音频片段长度: 717471, dtype: float32, min: -0.178924560546875, max: 0.17840576171875
+问题音频时间长度: 44.8419375
+
+
+[Agent] 接收到问题: 我们飞龙局飞龙局的话题极短对记一张记好离交交基于之前我们讨论的内容关于下个月七夕活动的造势我们计划下大活动力度吸引更多顾客我想请问一下针对七夕活动我们具体有哪些营销策略和活动方案另外我们计划招聘聘三到五名花是和外销人员以及新店需要的咖啡师和糕点师这些人员的招聘和招聘和培训工作进展如何我们如何
+, 1735129160.6376936
+
+
+[Agent] 最终接收到问题: 我们飞龙局飞龙局的话题极短对记一张记好离交交基于之前我们讨论的内容关于下个月七夕活动的造势我们计划下大活动力度吸引更多顾客我想请问一下针对七夕活动我们具体有哪些营销策略和活动方案另外我们计划招聘聘三到五名花是和外销人员以及新店需要的咖啡师和糕点师这些人员的招聘和招聘和培训工作进展如何我们如何
+, 1735129160.6378112
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4941 seconds, One token time: 0.1647 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：七夕活动 营销策略 招聘进展
+Token count: 35, Total time: 6.7219 seconds, One token time: 0.1921 seconds
+
+提取的关键词: ['七夕活动', '营销策略', '招聘进展']
+
+找到的上下文片段数量: 1
+针对七夕活动，计划加大活动力度吸引顾客。招聘方面，计划招聘3-5名花艺师、外销人员、咖啡师和糕点师，目前进展顺利，预计本月完成招聘并进行培训。
+Token count: 50, Total time: 9.7738 seconds, One token time: 0.1955 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：七夕活动 营销策略 招聘进展
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 然后进行花术的包装我们都有咱们工作人员包装或者是说直接拿花瓶回家装花瓶里咱们我也会建一批好看的花瓶然后进行搭配的这样的卖目前的话是已经和四家商场已经谈了合同了然后就是下这个七月份吧每周六周日都会去人家商场进行这些活动是否不顾一些现在人员情况比如现在需要人吗需要招人吗我们现在需要再招两三个人因为有配送的活动而且许花店在无断的增加配送活动在和一些外卖活动吗目前还没有跟他们合作目前就是我們因為这个花是很娇嫩的他们不能像饭盒一样卡卡忙着一扔下去一定要懂花爱花的人来做这个工作不是某一个愣愣小伙就可以来做这个工作的真的你一定要有爱惜花的心情你才可以把它安全送到客户的手中你把花头都弄没了送到人家整杆子了这个不单客户要投诉你我们自己就真的就毁了自己了三個五個对,那闭店,因为我们下个月我们那个新店要开张了,其实我们不是上个月申请下来的一个,就是我们在我们原本的,在我们原本门店旁边开了一个新的门店,两个是连通的,我们之前说过要做一个符合型的花店,然后符合型花店不是,就是跟猫咖的形式差不多,就是在嘴铃上面加一些副液我们也会有一些咖啡的生产鲜花品制作这一类的作为一个外销然后所以我们这一类的技术人员我们一直在联系比如说咖啡师还有糕点师然后我们都需要招募然后所以因为我们对外招呼的话他们可能对我们本店的这些产品介绍什么都不是特别了解比如说有人去一张厨房喝咖啡就是比如说他看到咖啡厨房就是放的鲜花他问的话可能就是这个他非常不太懂所以我们想在每一个专业的制作师下面配一个我们自己的店员他们主要是介绍鲜花的但是他还是要对我们飞鲁罗咖啡制作有一定简单的了解所以说我们是预计这个月要招三到五名的员工让他们先对我们的鲜花有一定熟悉之后分配到我们新店里和我们现在现有的店员混合着先把这个店铺做起来是我们这家的话需要招三到四名花艺师因为就是咱们我们这边下个月主题的就是离推式的话也是让顾客自己挑选花术到时候的话有花艺师就是能协助我们店员一起帮顾客很好的搭配一下而且我们下个月也会开展那些跟婚庆公司合作开展一些手捧花的定制这样也是让一些新娘们快要举办婚礼的新娘们对花术进行挑选然后进行手捧花的定制然后希望和花艺师一起交流这样的话是比较专业的需要三到四年的花艺师吧另外的话我覺得可以再招一個賣相可以和各大就是和开发商合作,和商场合作,和酒店合作,和分层公司合作,因为咱们的外销业务就是需要不断地扩大的,因为咱们连锁店里挺多的嘛。本次会先开了,各部门下去以后,各部门的工作安排好还有就是咱们各店还有什么想要找我帮助的我都可以在线下,就是在会后咱们可以再去探讨,行吧?好的行,那咱们本次这个会议就先开到这儿刚我们飞龙局飞龙局的话题极短对记一张记好离交交基于之前我们讨论的内容关于下个月【七】夕活动的造势我们计划下大活动力度吸引更多顾客我想请问一下针对七夕活动我们具体有哪些营销策略和活动方案另外我们计划招聘聘三到五名花是和外销人员以及新店需要的咖啡师和糕点师这些人员的招聘和招聘和培训工作进展如何我们
+针对七夕活动，计划加大活动力度吸引顾客。招聘方面，计划招聘3-5名花艺师、外销人员、咖啡师和糕点师，目前进展顺利，预计本月完成招聘并进行培训。
+reasoner 输出结束
+才谁说的那个肥肉局肥肉局的话题极短对记一张记好离交交基于之前我们讨论的内容关于下个月七夕活动的造势他们能够快速熟悉业务为七夕活动做好准备
+会议数据处理完成。

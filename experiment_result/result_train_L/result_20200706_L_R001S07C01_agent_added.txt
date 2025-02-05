@@ -1,0 +1,251 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200706_L_R001S07C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading reasoner_llm...
+Starting processing from 0s, total chunks: 76
+Loading classifier_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.18it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.79s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.45s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.95s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.15s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.20s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.12s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.24s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.53s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.15s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.89s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.90s/it]
+阿们響鐘1012 老师总经理1012 老师总经理1012 老师总经理1012 老师总经理1012 老师总经理1012 老师总经理1012 老师总经理10126 老师总经理10135 老师总经理10135 老师总经理1023 老师总经理1024 老师总经理1025 老师总经理1025 老师总经理下個月,在五毛比三,五毛大賽,這一塊跟我們見面。我觉得首先得从设计上来讲吧看大众现在都偏什么风格喜欢什么风格比如说男性各种风格其实有很多一种是传统风格就是用那些大量服装史上的造型款式色彩 然后那个图案和工艺法然后弄出来和那个混合那个现代风格有特别大的差异然后对比然后第二种就是田园风格就是比较简洁简单 偏休闲一点的那种然后再有就是阳刚一点的那种比较直率展现男性化的那种直率风格强悍等特征还有一种就是大众风格比如说大部分群众所喜欢的那种所能认可 所能接受最常见的那种就是大部分然后咱们现在这里有就是个男生,就是说可以说一下你们就是对这个设计,男性这种是比较喜欢哪一个,对,就是采取一下你们的意见,你们来说一下。现在我们销售部发现各个量级大型的还是西方风格西方风格然后像是那种西方风格新光,猫猫那是什么?还有的是女生,是在独风里面有的吗?武风,我现在...汉服,我现在其实很吵架了,在路上,在街上,很多人都穿汉服出门,男生女生都有,这个也可以考虑一下。我最后就想说的话,通过他们的风格,拉可量,人类要是以咱们的态度和服务来打赛,而且我比较纪念的衣服的样子呢,还是简约风格比较好,因为还是符合很多人吧,因为简约奉德的衣服比较好主要是说你要是买套别的衣服,别的单个的衣服,要不一个衬衫,也想搭一个新的裤子,你就需要衬衫的变化。如果简约红的的话,你就可以,如果你那些贵族装的那些简约红的衣服啊,搭配自己想穿的,搭配的变化就会多了。更加舒服一点的风格舒适一点对一个是它不可能它要跟现在的潮流变它不可能说我们现在这个风格它还处于在上一个潮流的内容也就是穿衣服嘛服装第一个肯定是舒适的内容然后其次在这样式设计然后再一个穿衣服就是为了舒适然后所以这个风格我是比较推崇的而且生产这段其实它布料就这种棉啊什么的其实亲疏了对对对对对都其实大家还是比较喜欢这种布料的嗯从女生的角度来看的话其实更喜欢男生穿一种比较个性一点穿潮牌的其实感觉那样的男生其实购物的话也会比较多一点我觉得那样的风格是我们可以主抓的也是现在网络上流行带货或者直播什么的也有网红就卖衣服做服装品牌他们都主义的都是这种风格我觉得我们店面上也可以做成那种其实还是大部分就是喜欢男生,女生对男生的审美来说,喜欢她们穿的还是简单一点,干净点,看起来就很阳光那种,可能这样她们穿起来也会比较舒服。我个人要说的话,我是比较喜欢普通一点的,因为普通是比较有特色的。像前面我说的关于这些比较潮牌,我感觉潮牌这个方面需要设计加大那个力度。因為,所以小五的話,我們不錯,可以順利做過一點研發實驗那散发公司具体相当严守什么样的风格,这个现在应该起到投入吗?可是作为一个市场教员,就是大家喜欢什么样的风格?对,通过他们意见反对,然后再来设计。而且女性风格,刚才只是说男性风格,然后女性化的衣服设计风格其实挺多,有那种高雅一点的,就是看起来很精致,端庄那种。它就是阴柔一点,比较妩媚柔弱那种,然后用那种特别柔和的曲线,的那种曲面,然后让那个服装看起来更加精致,更加极致。它有一种就是奢华,但这个其实在现实生活中,其实很少见。可能就是展示的时候,就参加晚会那种,才会有这个。它有一种就是现代风格,就比较休闲,动感休闲,然后比较中性一些。谢谢大家就真切的反映了现在服装的审美情绪然后就更加简约然后不知道就是在这儿这几个部门的主管就是比较喜欢看女生穿自己觉得舒服的那种衣服是哪种类型的售后这边这个售后吧比较售后的话女生穿的类型啊你感觉她这个女生买的衣服在语言的眼光吗?不,我就说你觉得审美好看吧你的审美来说你觉得应该往哪一个风格上发展对就提了一讲了,就是这一次往现感风格你说如果穿衣服的话,给人眼前一亮的话我感觉最好是那种校园性的风格吧或者是汉服吧還有這種比较正规的衣服就比方说你像空城的制服你觉得他穿那个衣服走在街上你看他就以你们女生的角度看他不以我男生的角度来说你看他和看别人的感觉但是我觉得你这个体育不好因为毕竟那个是制服是工装你穿出去的话一看就是你在上以我個人的意見來說一切都要看女生眼前一亮但是看女生如果要眼前一亮我觉得这个不日常全程看脸就可以了不需要看衣服穿搭其实很重要穿搭很重要我觉得上衣服比修剪头比较接触别的衣服太浮夸了像现在南疆大伯喜欢穿这个我比较喜欢他修剪一下稍微那个然后就正常一点我接受不了汉服的风格,还有什么一些风格,我觉得是比较日常一点的,生活的想法有点传统,不过也不适当,如果你要不以传统的眼光来看待这件事的话,主要是女生比較喜歡吃肥的女生有時候有把餐吃女生要吃那些衣服只有在上班的時候穿一穿平常的時候這種售後這方面我考慮的就是紙保外賣因為如果上班一個公司都要製作的話它的人的量也不少那樣的話你最多一個人兩套然後這也是一下就限定了做多元化那种风格的话女生其实消费量特别大她可能今天想买了之后她明天还会想买做售后的反正是知道一件事情女生的衣柜永远少一点意义所以这个需要设计过来设计她们女生心爱的款式因为 身为男性在售后部这方面还是比较欠缺的眼光可能不够足够对 就是学习就在征求一下意见是说一下可能我就是女性化
+[Audio Detection] 在 727.95 秒检测到关键词 '好交交'。
+detection_time: 727.95, current_time: 720.00
+问题音频片段长度: 119296, dtype: float32, min: -0.1986083984375, max: 0.2120361328125
+问题音频时间长度: 7.456
+
+
+[Agent] 接收到问题: 针对服装大赛各部门对风格有何建议和市场定位
+, 1735105360.4330444
+
+
+[Agent] 最终接收到问题: 针对服装大赛各部门对风格有何建议和市场定位
+, 1735105360.4334953
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9079 seconds, One token time: 0.3026 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+服装大赛的风格建议和市场定位需要根据比赛的主题和目标受众来决定。例如，如果是时尚设计比赛，可以考虑现代、简约或是复古的风格；如果是街头服饰比赛，可以偏向于休闲、潮流或者嘻哈的风格。在市场定位上，也需要考虑到目标受众的年龄、性别、职业等因素，以便更好地满足他们的需求和喜好。同时，还需要考虑到比赛的影响力和传播范围，以确定比赛的商业化价值和社会意义。
+talker 输出结束
+如果配一些別的樣子進去,就感覺這件衣服還真的沒有一樣的感覺。像現在的衣服可以讓人感覺比較穩。就是現在平常穿的衣服加上牌子的話,它會顯得整個風格會…比方說什麼大片?紅紅大片。你也記不下?就像你買了一個的話,你剛出現的消費是滿痛的。所以说,你为什么说好搭配呢?他不是以后还需要什么搭配呢?但是你想,如果他是一个比较好看的,带有快速的上衣的话,他和比较远的男后女也是比较配的。然后我当时会就是在做一些调查,然后会把物件,然后看一下大家普遍喜欢什么,然后再进行设计。大家都说了一些自己的看法这次比赛呢也就是刚才大家说的像别的服装展的那样就是根据因为现在这个服装展是根据当下每个人对服装的理解然后做了有男的女的有小的这一系列的服装然后参加这个比赛这一块还是设计的主要爱情咱们会上现在跟我们说发表了一些对这个嗯就刚才看过这块还是一种区域老大事老大顺利一些他们对这个有赠助还有下一个事情就是咱们嗯明天我们场上接了一个大单是一个贵族学校的一个校服的事请不吝点赞 订阅 转发 打赏支持明镜与点点栏目校服这方面的可能性贵族学校对,贵族学校的校服设计贵族学校的话,我觉得这个单子的话,可以跟他长期合作如果长期合作的话,他就收益率非常高的因为他每年一年两季都要设计还有就根据随着年纪变大然后就变成像你可能跟着从一线一穿到另一线的世界根据这个视频所做的看按照传统就是不变的说法单独的学校教授变智慧对 这个是童话我觉得虽然说智慧童话很刚动但是是学生對,我們在拍攝要翻動一點舒
+[Text Detection] 在 1008.12 秒检测到关键词 '你好交',current_time: 990.00, 问题文本: 舒适一点都要很大一点它就是它的校服要得到一个别的衣服好多学校的衣服都偏西方文化一点我觉得再改的话可以改成偏中式一点你好交基于之前我们讨论的内容关于贵族学校校服设计大家提出了很多不同的观点和建议
+问题音频片段长度: 472395, dtype: float32, min: -0.15618896484375, max: 0.139892578125
+问题音频时间长度: 29.5246875
+
+
+[Agent] 接收到问题: 你好交基于之前我们讨论的内容关于贵族学校校服设计大家提出了很多不同的观点和建议我想请问一下综合大家的意见你认为我们在设计校服时应该重点考虑哪些因素以满足不同学生和家长的需求总经理同时又能体现出学校的特色和
+, 1735105378.7249231
+
+
+[Agent] 最终接收到问题: 你好交基于之前我们讨论的内容关于贵族学校校服设计大家提出了很多不同的观点和建议我想请问一下综合大家的意见你认为我们在设计校服时应该重点考虑哪些因素以满足不同学生和家长的需求总经理同时又能体现出学校的特色和
+, 1735105378.7250316
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4692 seconds, One token time: 0.1564 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：校服设计 考虑因素
+Token count: 30, Total time: 6.1670 seconds, One token time: 0.2056 seconds
+
+提取的关键词: ['校服设计', '考虑因素']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，大家讨论了服装风格的设计方向。主要倾向于舒适、简约风格，适合日常穿着。对于男性，偏好休闲、轻松的风格，如校园风或汉服；女性则倾向于简约、舒适且有特色的服饰。此外，提到有来自贵族学校的校服订单机会，建议设计符合贵族学校特点的校服，并考虑长期合作。整体而言，应结合市场需求，注重舒适度和实用性。
+Token count: 92, Total time: 18.1622 seconds, One token time: 0.1974 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：校服设计 考虑因素
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 更加舒服一点的风格舒适一点对一个是它不可能它要跟现在的潮流变它不可能说我们现在这个风格它还处于在上一个潮流的内容也就是穿衣服嘛服装第一个肯定是舒适的内容然后其次在这样式设计然后再一个穿衣服就是为了舒适然后所以这个风格我是比较推崇的而且生产这段其实它布料就这种棉啊什么的其实亲疏了对对对对对都其实大家还是比较喜欢这种布料的嗯从女生的角度来看的话其实更喜欢男生穿一种比较个性一点穿潮牌的其实感觉那样的男生其实购物的话也会比较多一点我觉得那样的风格是我们可以主抓的也是现在网络上流行带货或者直播什么的也有网红就卖衣服做服装品牌他们都主义的都是这种风格我觉得我们店面上也可以做成那种其实还是大部分就是喜欢男生,女生对男生的审美来说,喜欢她们穿的还是简单一点,干净点,看起来就很阳光那种,可能这样她们穿起来也会比较舒服。我个人要说的话,我是比较喜欢普通一点的,因为普通是比较有特色的。像前面我说的关于这些比较潮牌,我感觉潮牌这个方面需要设计加大那个力度。因為,所以小五的話,我們不錯,可以順利做過一點研發實驗那散发公司具体相当严守什么样的风格,这个现在应该起到投入吗?可是作为一个市场教员,就是大家喜欢什么样的风格?对,通过他们意见反对,然后再来设计。而且女性风格,刚才只是说男性风格,然后女性化的【衣】服设计风格其实挺多,有那种高雅一点的,就是看起来很精致,端庄那种。它就是阴柔一点,比较妩媚柔弱那种,然后用那种特别柔和的曲线,的那种曲面,然后让那个服装看起来更加精致,更加极致。它有一种就是奢华,但这个其实在现实生活中,其实很少见。可能就是展示的时候,就参加晚会那种,才会有这个。它有一种就是现代风格,就比较休闲,动感休闲,然后比较中性一些。谢谢大家就真切的反映了现在服装的审美情绪然后就更加简约然后不知道就是在这儿这几个部门的主管就是比较喜欢看女生穿自己觉得舒服的那种衣服是哪种类型的售后这边这个售后吧比较售后的话女生穿的类型啊你感觉她这个女生买的衣服在语言的眼光吗?不,我就说你觉得审美好看吧你的审美来说你觉得应该往哪一个风格上发展对就提了一讲了,就是这一次往现感风格你说如果穿衣服的话,给人眼前一亮的话我感觉最好是那种校园性的风格吧或者是汉服吧還有這種比较正规的衣服就比方说你像空城的制服你觉得他穿那个衣服走在街上你看他就以你们女生的角度看他不以我男生的角度来说你看他和看别人的感觉但是我觉得你这个体育不好因为毕竟那个是制服是工装你穿出去的话一看就是你在上以我個人的意見來說一切都要看女生眼前一亮但是看女生如果要眼前一亮我觉得这个不日常全程看脸就可以了不需要看衣服穿搭其实很重要穿搭很重要我觉得上衣服比修剪头比较接触别的衣服太浮夸了像现在南疆大伯喜欢穿这个我比较喜欢他修剪一下稍微那个然后就正常一点我接受不了汉服的风格,还有什么一些风格,我觉得是比较日常一点的,生活的想法有点传统,不过也不适当,如果你要不以传统的眼光来看待这件事的话,主要是女生比較喜歡吃肥的女生有時候有把餐吃女生要吃那些衣服只有在上班的時候穿一穿平常的時候這種售後這方面我考慮的就是紙保外賣因為如果上班一個公司都要製作的話它的人的量也不少那樣的話你最多一個人兩套然後這也是一下就限定了做多元化那种风格的话女生其实消费量特别大她可能今天想买了之后她明天还会想买做售后的反正是知道一件事情女生的衣柜永远少一点意义所以这个需要设计过来设计她们女生心爱的款式因为 身为男性在售后部这方面还是比较欠缺的眼光可能不够足够对 就是学习就在征求一下意见是说一下可能我就是女性化针对服装大赛各部门对风格有何建议和市场定位如果配一些別的樣子進去,就感覺這件衣服還真的沒有一樣的感
+---
+大家都说了一些自己的看法这次比赛呢也就是刚才大家说的像别的服装展的那样就是根据因为现在这个服装展是根据当下每个人对服装的理解然后做了有男的女的有小的这一系列的服装然后参加这个比赛这一块还是设计的主要爱情咱们会上现在跟我们说发表了一大家都说了一些自己的看法这次比赛呢也就是刚才大家说的像别的服装展的那样就是根据因为现在这个服装展是根据当下每个人对服装的理解然后做了有男的女的有小的这一系列的服装然后参加这个比赛这一块还是设计的主要爱情咱们会上现在跟我们说发表了一些对这个嗯就刚才看过这块还是一种区域老大事老大顺利一些他们对这个有赠助还有下一个事情就是咱们嗯明天我们场上接了一个大单是一个贵族学校的一个校服的事请不吝点赞 订阅 转发 打赏支持明镜与点点栏目校服这方面的可能性贵族学校对,贵族学校的【校】服设计贵族学校的话,我觉得这个单子的话,可以跟他长期合作如果长期合作的话,他就收益率非常高的因为他每年一年两季都要设计还有就根据随着年纪变大然后就变成像你可能跟着从一线一穿到另一线的世界根据这个视频所做的看按照传统就是不变的说法单独的学校教授变智慧对 这个是童话我觉得虽然说智慧童话很刚动但是是
+根据会议内容，大家讨论了服装风格的设计方向。主要倾向于舒适、简约风格，适合日常穿着。对于男性，偏好休闲、轻松的风格，如校园风或汉服；女性则倾向于简约、舒适且有特色的服饰。此外，提到有来自贵族学校的校服订单机会，建议设计符合贵族学校特点的校服，并考虑长期合作。整体而言，应结合市场需求，注重舒适度和实用性。
+reasoner 输出结束
+适一点都要很大一点它就是它的校服要得到一个别的衣服好多学校的衣服都偏西方文化一点我觉得再改的话可以改成偏中式一点你好交基于之前我们讨论的内容关于贵族学校校服设计大家提出了很多不同的观点和建议如果你是学校的学生,你觉得你想穿什么?想穿的话,首先就是舒服,再一个就是能跟上一些潮流吧。现在流行什么样的衣服,校服设计成什么样子的。每年都要定的话,每个季度都去换基本上都是一個,剛才也說了每年,每年如果是來個季節,它的符號是不一樣的。但是大體風格要保持一致,每秋就夏天,春秋,春天就一套,夏天就一套。我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興,我自己也很高興我觉得贵族学校衣服的质量肯定要做上去,其次就是它的样式,因为它建的那些好看的衣服肯定多了。所以我觉得要做的青春活力一点就是颜色也可以稍微鲜艳一点女孩可以就是粉粉的小裙子男孩的话夏天就可以是短裤衩冬季的话就可以是长裤然后因为小学生就是可爱的时候我觉得作为我的女孩的心理就是更喜欢这种小裙子因为很多学生其实在学校都不喜欢穿校服就是因为觉得不好看所以我覺得做成小裙子的話會讓他們很喜歡有不同意見嗎我覺得女生穿裙子是一個好選擇因為像我們現在的同學女生最愛美的然後她們依然穿上褲子所以我們一定要設定一個裙子讓她們穿上所以如果他們喜歡穿裙子的話夏季是裙子,冬季的话应该也做成长裤子。所以你觉得他们喜欢什么样的裙子,然后可以做一个裙子。裙子就是普遍,如果学校校服的话就是摆折裙子。感觉好像现在好多一行楼的版本我觉得我们可以同一間這個設計的一種別的吧他是把一種因為他收後了一個他要去把他在一些類的啊JK收後覺得他把它設計的可能就是JKJK日系校園日系因為日本的學校都會那也是同一個外国的学校的教育都是差不多这样的但是我们中国的但是你一定要加入自己的元素对 我是说我觉得中国的校服就是比较传统有一些传统观念就是比如说就做的版型故意的特别肥 特别大然后所以学生都不爱穿因为觉得它不合身然后就是不好看因为所谓贵族学校的话对于这方面的感觉就不太好所以说你老师像或是衣服是比较有吸引力的要不然就是还整个汉服但是要注意衬托而绝对不消毒所以说这一组的效果是减肥一些我觉得这个就比较创新还那么可能你会觉得很新鲜但是像小人物 是不是老师太用了汉服它是一个它是一個,怎麼說呢,漢方式的我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的设计是这样的,我们的�对,可以有很多不同的方式。现在我们来看具体一点,你们说的都太冷口了。对,这里可以给示范一个意见,就是说,像户口学校,他们培养的法式需要多统一种的化学。这里为了看上去的新单,可以有一片街,就算是你的衣服里,就是可以有比如说像现在AJ的私人戏,像我们也可以说是个大人物的样子,然后他们自己进行创新。这样就是进而改修他们培养的性感和能力,同样也是会给我们这个服装行业进行的好处。每一盤都有出貨校舍呢,可能會有學校的規章這個一個概念像咱們前面有說的跑路控制我們就是說,就是如果就是學校他們可能會有分類可能是船或各種就是時候船就各種各樣的就是需要這個控制走吧,那咱们这个部门说一下自己的看法。来,我们来说说。反正我们教授部还是主持人。嗯。理解一下这个,看法。看法?嗯。什么样的看法?就是相对来说紧密一点。紧密一点。嗯。不会对上课方式太大影响。嗯。
+[Audio Detection] 在 1547.47 秒检测到关键词 '好交交'。
+detection_time: 1547.47, current_time: 1530.00
+问题音频片段长度: 123563, dtype: float32, min: -0.194976806640625, max: 0.2071533203125
+问题音频时间长度: 7.7226875
+
+
+[Agent] 接收到问题: 如何将汉服元素融入校服设计同时保持简约和舒适
+, 1735105430.2664013
+
+
+[Agent] 最终接收到问题: 如何将汉服元素融入校服设计同时保持简约和舒适
+, 1735105430.2665195
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4834 seconds, One token time: 0.1611 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 83, Total time: 3.2363 seconds, One token time: 0.0390 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+将汉服元素融入校服设计，可以通过以下方式实现：选择一些典型的汉服元素，如云纹、花纹等，并将其巧妙地融入校服的设计中，同时保持简约和舒适。此外，还可以借鉴传统的汉服款式，如长袍、马褂等，结合现代的裁剪和材质，创造出既具有传统特色又符合现代审美的校服设计。
+talker 输出结束
+正规一点但是他不需要培养的学生培养的学生多,但是他们家教比较好所以说他会让你去习他吗,家长他会让你去看他他家长可能比较少还是好一点,正规一点,正式一点,不用那么乱糟糟的,也是辅助一点。然后呢,下个问题。我觉得,还是我说的,两套吧,就是一个季节两套,就是一套平常穿的,还有一套运动装比如说像小孩们容易喜欢上课出去跑啊干嘛的就是你更注意就像这个小时候说的这个看活或者是小时候说的就是正常一点这种情况正常一点你也正常一点对面膜是哪一種运动休闲舒服对效果就是然后咱们其他我觉得我觉得汉服是有点不方便因为它射气太繁琐我觉得稍微稍微的正常一点结合刚刚销售说的休闲的,两个可以结合一下。对,有问题吗?没有问题。那这个人,看他。财务的话,销售部说的,是销售部出的。就是说才能好点这一点因为应当要好关于风格方面,我感觉风格要多一些,因为他们不可能单纯分为游戏餐和运动餐,应该还有别的,人人和场合要转。我们设计的话肯定是要消耗大量的人民和财力然后进行首先要精的调研然后关于风格这方面的话,其实出座有了那个稍微的个性,运步也不太好。所以说这里坚持一点就是逻辑的风格,然后当时就是学生可以选,然后也能够用到各种方式。嗯,行。那咱们这个设计部分总结一下。大家其实有的是从家长的方面考虑有的是从在学校学习方面考虑然后我觉得最重要的还是要采取学生本身的意见就是听取他们大部分人的意见然后再来做一个设计但我觉得也是舒适为主但是如果说想要时尚一点也是可以有的毕竟贵族学校观念不会像我们这种学校就是说比较传统的都接受不了所以我觉得还是说多征集一些意见,然后再来做设计。你更倾向于哪一种?我更倾向于……所以你现在他们都说了,我都得想法,你更倾向于哪一种?我个人更倾向于舒适中带着点那种汉服的元素。不用说就那么宽大的袖子,我就觉得校服里面带一点那种古光汉服的元素就可以。对这方面你有什么具体的想法吗具体的想法我觉得你跟刚才说的很多你跟青象肯定有色调啊色调得搭配啊五颜六色单单一种颜色色调应该不会特别繁琐但也不会说特别单一就一种颜色看起来就有颜色我觉得应该是现在你看,原来我们上学,你们都是什么样?我记得我原来是红色和白色。红色和白色?对,然后其他人呢?其他人是什么样?蓝色,灰色。蓝色,灰色。我们在学校就一般都是白色的吧?嗯,觉得就白色。你们上小学的时候都什么样的?深蓝色,一种颜色对,因为男生和女生要穿一种不能太过女性化,也不能只能中性就是蓝色就非常好深蓝色,这有个标志,对,指标的标志小辉对这边呢一般只有一种这边是小辉,什么颜色呢蓝色的你觉得这服装好看吗,怎么看怎么看不好看很安逸穿着也不舒服我觉得它的版式太老了穿着也不舒服也不合身整个塑料布吧而且还不透气这就是售后这个原来你都穿这个售后校会戴还有别的表演服然后给我两道黄两道黄那种三角形的黄你对这个服装有什么建议你对这个服装有什么看法对你小弟有什么建议
+[Audio Detection] 在 2047.26 秒检测到关键词 '好交交'。
+detection_time: 2047.26, current_time: 2040.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.219818115234375, max: 0.221588134765625
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于校服设计,你提到了汉服元素和舒适性的结合,那么具体来说,你认为在校服中融入哪些汉服元素,既能体现到汉服元素,又能够使用汉服元素?
+, 1735105457.3916738
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于校服设计你提到了汉服元素和舒适性的结合那么具体来说你认为在校服中融入哪些汉服元素既能体现传统文化又能满足学生日常穿着的舒适性需求呢看男女部分男女部分对都一样的对 都是一样的没有男女款下水女生是選擇男生
+, 1735105459.5043771
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4946 seconds, One token time: 0.1649 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：校服设计 汉服元素 舒适性
+Token count: 35, Total time: 6.7294 seconds, One token time: 0.1923 seconds
+
+提取的关键词: ['校服设计', '汉服元素', '舒适性']
+
+找到的上下文片段数量: 3
+根据会议内容，在设计校服时应重点考虑舒适性、适应不同年龄阶段、符合学校特色以及融入汉服元素。具体而言，可以在校服中加入汉服的领口、袖口等传统元素，并采用舒适的面料，如棉质材料，确保校服既体现传统文化又适合日常穿着。
+Token count: 70, Total time: 13.7872 seconds, One token time: 0.1970 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：校服设计 汉服元素 舒适性
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 大家都说了一些自己的看法这次比赛呢也就是刚才大家说的像别的服装展的那样就是根据因为现在这个服装展是根据当下每个人对服装的理解然后做了有男的女的有小的这一系列的服装然后参加这个比赛这一块还是设计的主要爱情咱们会上现在跟我们说发表了一大家都说了一些自己的看法这次比赛呢也就是刚才大家说的像别的服装展的那样就是根据因为现在这个服装展是根据当下每个人对服装的理解然后做了有男的女的有小的这一系列的服装然后参加这个比赛这一块还是设计的主要爱情咱们会上现在跟我们说发表了一些对这个嗯就刚才看过这块还是一种区域老大事老大顺利一些他们对这个有赠助还有下一个事情就是咱们嗯明天我们场上接了一个大单是一个贵族学校的一个校服的事请不吝点赞 订阅 转发 打赏支持明镜与点点栏目校服这方面的可能性贵族学校对,贵族学校的【校】服设计贵族学校的话,我觉得这个单子的话,可以跟他长期合作如果长期合作的话,他就收益率非常高的因为他每年一年两季都要设计还有就根据随着年纪变大然后就变成像你可能跟着从一线一穿到另一线的世界根据这个视频所做的看按照传统就是不变的说法单独的学校教授变智慧对 这个是童话我觉得虽然说智慧童话很刚动但是是学生對,我們在拍攝要翻動一點舒你好交基于之前我们讨论的内容关于贵族学校校服设计大家提出了很多不同的观点和建议我想请问一下综合大家的意见你认为我们在设计校服时应该重点考虑哪些因素以满足不同学生和家长的需求总经理同时又能体现出学校的特色和适一点都要很大一点它就是它的校服要得到一个别的衣服好多学校的衣服都偏西方文化一点我觉得再改的话可以改成偏中式一点你好交基于之前我们讨论的内容关于贵族学校校服设计大家提出了很多不同的观点和建议如果你是学校的学生,你觉得你想穿什么?想穿的话,首先就是舒服,再一个
+---
+这里为了看上去的新单,可以有一片街,就算是你的衣服里,就是可以有比如说像现在AJ的这里为了看上去的新单,可以有一片街,就算是你的衣服里,就是可以有比如说像现在AJ的私人戏,像我们也可以说是个大人物的样子,然后他们自己进行创新。这样就是进而改修他们培养的性感和能力,同样也是会给我们这个服装行业进行的好处。每一盤都有出貨校舍呢,可能會有學校的規章這個一個概念像咱們前面有說的跑路控制我們就是說,就是如果就是學校他們可能會有分類可能是船或各種就是時候船就各種各樣的就是需要這個控制走吧,那咱们这个部门说一下自己的看法。来,我们来说说。反正我们教授部还是主持人。嗯。理解一下这个,看法。看法?嗯。什么样的看法?就是相对来说紧密一点。紧密一点。嗯。不会对上课方式太大影响。嗯。如何将【汉】服元素融入校服设计同时保持简约和舒适正规一点但是他不需要培养的学生培养的学生多,但是他们家教比较好所以说他会让你去习他吗,家长他会让你去看他他家长可能比较少还是好一点,正规一点,正式一点,不用那么乱糟糟的,也是辅助一点。然后呢,下个问题。我觉得,还是我说的,两套吧,就是一个季节两套,就是一套平常穿的,还有一套运动装比如说像小孩们容易喜欢上课出去跑啊干嘛的就是你更注意就像这个小时候说的这个看活或者是小时候说的就是正常一点这种情况正常一点你也正常一点对面膜是哪一種运动休闲舒服对效果就是然后咱们其他我觉得我觉得汉服是有点不方便因为它射气太繁琐我觉
+---
+我们在学校就一般都是白色的吧?嗯,觉得就白色。你们上小学的时候都什么样我们在学校就一般都是白色的吧?嗯,觉得就白色。你们上小学的时候都什么样的?深蓝色,一种颜色对,因为男生和女生要穿一种不能太过女性化,也不能只能中性就是蓝色就非常好深蓝色,这有个标志,对,指标的标志小辉对这边呢一般只有一种这边是小辉,什么颜色呢蓝色的你觉得这服装好看吗,怎么看怎么看不好看很安逸穿着也不舒服我觉得它的版式太老了穿着也不舒服也不合身整个塑料布吧而且还不透气这就是售后这个原来你都穿这个售后校会戴还有别的表演服然后给我两道黄两道黄那种三角形的黄你对这个服装有什么建议你对这个服装有什么看法对你小弟有什么建议基于之前我们讨论的内容关于【校】服设计你提到了汉服元素和舒适性的结合那么具体来说你认为在校服中融入哪些汉服元素既能体现传统文化又能满足学生日常穿着的舒适性需
+根据会议内容，在设计校服时应重点考虑舒适性、适应不同年龄阶段、符合学校特色以及融入汉服元素。具体而言，可以在校服中加入汉服的领口、袖口等传统元素，并采用舒适的面料，如棉质材料，确保校服既体现传统文化又适合日常穿着。
+reasoner 输出结束
+她就是肥嘛对校服觉得也不好看因为也是男女不分觉得又肥又大觉得不好看我觉得应该分开男女那时候你有什么想法不然是什么样的脾气我觉得那个时候想法我想改一下护头护头缩一下护头对,觉得她太胖了然后料子也是有下期的那个补透气这就是你们说的这些点肯定咱们下次不要出现这些点了还有就是现在的小孩跟咱们的思想也是不一样的所以根据这个你们也要设计不完根据这个你们也要考虑进去那我们这边的工作也要完成,行吗?好那咱们本场会议就先开到这儿下去以后,在设计部里面预划一下好的销路里边跟学校联系一下,预划一下行,散会
+[Audio Detection] 在 2256.81 秒检测到关键词 '好交交'。
+detection_time: 2256.81, current_time: 2250.00
+问题音频片段长度: 101877, dtype: float32, min: -0.1502685546875, max: 0.15576171875
+问题音频时间长度: 6.3673125
+
+
+[Agent] 接收到问题: 关于校服设计,你建议如何区分男女款式,并改善透气性?
+, 1735105486.9063096
+
+
+[Agent] 最终接收到问题: 关于校服设计,你建议如何区分男女款式,并改善透气性?
+, 1735105486.9064202
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4657 seconds, One token time: 0.1552 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 72, Total time: 2.3943 seconds, One token time: 0.0333 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在设计校服时，可以通过颜色、版型和细节来区分男女款式。男性的校服可以采用深色或中性色的设计，版型多为传统的长袍式或者修身款，细节方面则以简约为主；女性的校服则可以选择亮色或花哨的设计，版型多为合体或宽松款，细节方面可以增加一些女性特有的元素，如蝴蝶结、褶皱等。此外，为了提高校服的透气性，建议使用轻薄、透气的面料，如棉麻、丝绸等，并且在设计上尽量减少紧身部位，增加通风的孔隙。
+talker 输出结束
+
+会议数据处理完成。

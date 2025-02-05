@@ -1,0 +1,236 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200709_L_R002S06C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 67
+Loading classifier_llm...
+Initializing talker model in talker_process_func...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Loading Whisper model...
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.18it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.01s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.68s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.83s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.27s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.23s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.57s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.76s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:09,  4.86s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.76s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.64s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.60s/it]
+026我是安保02我是董事长019我是人力014我是财务好今天咱们开就是就上一季度的销售情况咱们来开一场会议就是咱们这个泰坦酒吧的销售情况首先我先问一下咱们的人事部就是咱们最近请到的这些DJ有哪些他们是过经专业的培训吗对 我们过一段时间定期就会比如说每周六日会请一些百大DJ会提前两三个星期就会跟他们询问他们时间安排情况然后是否可以到店然后几点到店和他们进行一些协商那咱们播放的内容是每天都有变化吗,还是说每天都在重复一样的?我们这个是每天不是一样的,我们会有固定的几个曲子,每天都会换不一样的风格。这个也根据我们的成员的看法。然后顾客对这个看法是一个什么样的看法?我们顾客对这方面的看法一定是很满意的,因为如果你经常放一样的话每天都一样的话也是会对一些经常来的这些顾问有一些厌倦感是为了增加这个新鲜感所以就制作了一系列的这个曲子就是安排好了周一到周日周一到周日里面有五套然后每一天用哪一套都是制定好的制定好的对那这个咱们这个顾客的反馈啊就是咱们所请到的DJ是否能够抓住这个带动带动范围就是因为他们起的就很带动咱们这个这边的消费然后让我们给他安排一个位置其实我们有一个成分说周一到周日就是固定的如果有的人就是周末来他会不会每次来的天都一样就是这个我们周六日的话是其实是请一些嘉宾的请一些DJ到现场的这个DJ他们用的曲子是一定不是一样的就是每个人进行发挥的对我们这个都是提前协商好的而且我们制定了这个计划每周制定一次的不是说每天都这样每个月也是这样重复的还有就是上季度咱们酒吧里面有这种喝多以后酒后闹事的情况我想问一下咱们国安部是怎么处理的酒后闹事协商肯定是协商不了因为他都喝多了肯定是协商不了我们会就是有一块休息区你们有没有就是说射门镜啊就是有那种专门扫描的系统就是防止他们进来带一些管制道具有如果但是还是有带进来的还是有带进来为什么呀因为它不属于金属物品不属于金属物品像一些什么修饰过的木刀子和一些塑料刀子也是可以对人身造成伤害的那我觉得咱们可以对顾客进行搜身呀那你不就侵权了吗那你不就侵权人身就是咱们来一组我们这个酒吧应该制定一个相应的相应的规章制度就是进门在门口的时候不仅要检查一下有没有金属也应该顺势摸一下身我觉得不是说搜身就是摸一下摸一下口袋里面这个是别的酒吧里都有这种模式的都是为了咱们那个店对,为了大家所着想因为咱们毕竟,咱们这个营销的模式就是进出这种人与云混杂的场所应该有这个安全保障而且就是容易出事的那安保部门应该招几个女士对,也是,只需要女士现在咱们还没有女保安呢我觉得应该招一点,因为这个问题有点对这个刚才,咱们这块,这个搜身这一块那除了这个,还有别的办法吗?这一块因为我们我们这个最近发现有的女性嘛她会把一些像一些毒品啊或一些摇头蛮之类的藏在一些就是搜身发现不了的一些位置就是咱们的这个门禁那里都会扫描出来的呀这个东西没有热量它扫描不出来所以咱要加拿大的这个监管知道吗就是店内的巡逻对 店内的巡逻那一块立马咱就报警使用这种摇头玩呀还有就是使用这种笑气呀打气球这种行为咱们都要进行管控就是及时报警先要把这个涉嫌售卖毒品的这个人控制起来对先控制起来然后再报警我觉得还有一个方法就是刚刚考虑那个搜身的问题吗或者这个物品毒品啊或者什么会带到我们场所里面我觉得有一个方法是我们可以在进入这个大厅之前在外面设立一个小的放置物品的一个区域把你的所有物品只可以带着手机进去只带贵重物品就是那些储藏柜那它不放毒品怎么办就是你所以就是制定重重关卡吧首先就是先把东西尽量包裹就是背的包或者外套都不可以截在对对,反正这个不可以携带背包或者穿戴外套,这样不容易发现外套,外套就是如果说这个受温度影响这个咱们可以,就是主要是这个背包问题咱们要放到储藏柜里面,这是第一道关卡还有就是进店的时候那个仪器上的扫描还有就是保安的搜身,能说搜身吧搜身太难听了,就是这个摸身,对吧更难听主要就是这个对人身体检查嘛对吧这是第二道工序第三道这个工序就是咱们的保安需要加大巡逻店内的巡逻力度就是防止就是你们也要有一些眼力见就是看哪些顾客像是要喝多了就是有点那种闹事的闹事的那种情绪比如说已
+[Text Detection] 在 502.56 秒检测到关键词 '娇娇',current_time: 480.00, 问题文本: 已经骂起来了对吧这都要及时制止还有就是这个毒品管控的情况如果有发现在我们店内提示毒品的我们都要及时将人员控制起来并报警谢谢了 好吧好还有及时配合警察的工作对 还有及时配合警察的工作你好 娇娇如何有效管理顾客携带非金属物品进入酒吧的安全问题还有就是这个
+问题音频片段长度: 125270, dtype: float32, min: -0.0677490234375, max: 0.091583251953125
+问题音频时间长度: 7.829375
+
+
+[Agent] 接收到问题: 管理顾客携带飞金属物品进入酒吧的安全问题
+, 1735103622.5152133
+
+
+[Agent] 最终接收到问题: 管理顾客携带飞金属物品进入酒吧的安全问题
+, 1735103622.5153387
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9486 seconds, One token time: 0.3162 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+酒吧可以采取以下措施来管理顾客携带金属物品的安全问题：
+
+1. 设置明确的政策：在入口处向顾客说明禁止携带金属物品的规定，并解释为何这些规定是必要的。
+
+2. 使用金属探测器：对顾客进行金属探测，以确保他们没有携带非法物品进入酒吧。
+
+3. 培训员工：训练员工识别危险金属物品，并知道如何安全地处理发现的金属物品。
+
+4. 定期检查设备：定期检查金属探测器和其他设备，以确保它们能够正常工作并有效地检测金属物品。
+
+5. 负责人监管：指定专人负责监督金属物品的检查过程，以确保所有顾客都遵守这一政策。
+
+6. 合作与警方：与当地警察部门合作，以便在需要时协助调查金属物品的来源。
+
+7. 公示警告：在酒吧内部明显的位置公示禁止携带金属物品的规定和相应的后果。
+
+8. 建立举报机制：鼓励顾客举报违反规定的人员或行为，对于举报者给予适当的奖励。
+
+通过以上措施，酒吧可以有效管理顾客携带金属物品的安全问题，同时也可以维护酒吧的安全环境。
+talker 输出结束
+经骂起来了对吧这都要及时制止还有就是这个毒品管控的情况如果有发现在我们店内提示毒品的我们都要及时将人员控制起来并报警谢谢了 好吧好还有及时配合警察的工作对 还有及时配合警察的工作你好 娇娇如何有效管理顾客携带非金属物品进入酒吧的安全问题还有就是这个一些人就是来谈客户的他们会选择卡库他们点的酒他们点的套餐也是比较多的里面会谈香槟和各种各种的但是你说如果就是说像学生嘛大学生他们出来玩学生本身就没有很多的钱他们不可能花一千一两千开一个卡库他们也就是会开一个展台就花几百块钱几个人大家一起去分一下他们点的套餐就是比较少就是只有酒比如说没有火盘之类对没有火盘之类不同的消费人群然后不同的套餐那就是我们真的这种充当大哥的行为就比如说他点了一个很贵的套餐花了几万钱点了一个比如说是K-A这种套餐然后他不喝他不喝对他不喝他就是摆在面前就是一种炫耀的方式吧就是他花了一次的钱然后他炫耀无数次就这种情况下今天是不可以每次来都是需要低销的如果你是开一个需要低销的话对虽然说酒是他的但是他来还是需要付一定的充分费的对如果他酒买了之后一直在那放着这属于他没有消费那就是还有咱们的绑鞋购物咱们这个酒吧因为酒吧肯定会有喝多喝吐的咱们的卫生间有没有一种行酒池啊行酒桶啊什么的因为我们是夜店嘛跟一般的酒店呀还有一些餐厅呢是不一样的所以我们是设立了一定的数量特别是我也对我们保洁的几个大姐也经常跟他们谈心因为在这儿合同合处的融线是比较平反的对 比较平反所以我们面对这些保护物呢我們要及時的清理,保證中風風水的味道在我們酒店裡面,在我們店裡面蔓延,要及時的清理。說到及時清理,其實我們就是不停在夜店裡面轉。我們發現一些垃圾的話,我們繼續盡力照其實最主要的就是發現了這些99隊的人我們可能會給他們送一杯水啊,輸入口啊我们及时的清理掉这一点大家做的还是不错的没有人说恶心呀怎么样因为知道自己的工作性质就是这样我们就是家离得比较近的这几位大姐在这儿工作不兼职所以呢大家工作态度还是蛮好的那平常就是咱们保洁部门上班时间都是几点比如说咱们酒吧是九点需要所有部门的人员都到位的因为我们十点就开始了我们是八点之前选步到位保卫部是到的比较早对,我们必须是在大家上班之前要打扫干净的因为可能头一天有一些细节的部位我们没有检查到的我们要首先检查一下特别是像舞台舞台上的一些什么彩带啊人们在上面唱歌跳舞留下的一些东西首先把舞台清理出来然后把各个的卡座散台卫生清理一遍用一小时的时间所以我们要提前给大家提前一小时八点之前我们都得到费了在大家进入场地之前好像卫生一遍要跑对对对所以也要在干净的环境下保证大家的卫生然后每一个人进入我们的夜店都会耳目一新最起码是在卫生方面是可以保证的这一点没有问题保洁部这方面做得非常好的大家可以学习一下工作经验还有就是说到这个上班说到这个上班问题就是各部门有没有这种迟到的情况针对迟到的情况大家是怎么处理的就比如说每个月设置一下全新奖迟到的以后会扣除一些工资啊或者就是没有得不到全新奖这种情况各部门有没有什么在营销过程的情况是没有那么大没有人知道的因为营销会在提前一两天把这个客户安排好因为客户会在提前一两天要去的之前就向我们营销咨询然后向我们把这个地方定好不会说你到那边去的时候没有地方如果客户要是来了,但营销不在,这个业绩其实是不进入这个营销身上的,别的营销会替涨去。所以一般情况下,没有出入情况,营销就不会请假,就是会无缘无故把自己的那个业绩就让给别人。我们保洁这边呢,其实是不允许迟到的。偶尔一次说谁比如说车子坏了坏在路上了需要维修然后迟到的话那么他会提前打电话给当班的领班给打电话我来晚一点然后那么其他的人因为他的工作量别人的工作量就会相应的增加少了一个人那么就两个人的工作从一个人干三个人工作成两个人干了那么别人就要加快速度去还是在一个小时之内要把这个工作完成所以不允许迟到如果有个别情况迟到的话他也会我把车我们会锁在一个地方然后把车过来而且对于迟到的话我们会相应的进行考核对于一个月之内没有请假没有迟到的我们也会有一个奖励的制度虽然不多但是也是对于大家一个机会还有就是这个保洁部咱们不能说是整到所有的垃圾到了第二天咱们开业前来请客即使清理,不然的话经过一天的,特别是夏天,就可能没法待了。我们第二天其实进场的时候,其实是做一些常规性的清理工作,一些保健工作。但是所有的垃圾,特别是一些酒类的或者是其他的,这些剥皮啊,这类的,是在避电的时候都要把它清理出来我
+[Text Detection] 在 1013.39 秒检测到关键词 '娇娇',current_time: 990.00, 问题文本: 我们的规定就是垃圾日清所有的垃圾桶在闭店的时候全部清理清空我们这个安保部门是没有知道现象因为我们这边属于三班岛它就算是属于闭店状态我们也会安排在安保在店内进行休息你好 娇娇基于之前我们讨论的内容关于酒吧的保洁工作你们是
+问题音频片段长度: 406176, dtype: float32, min: -0.095916748046875, max: 0.110595703125
+问题音频时间长度: 25.386
+
+
+[Agent] 接收到问题: 您好 焦焦基于之前我们讨论的内容关于酒吧的保洁工作你们是如何确保在闭店后及时清理垃圾避免意味在店内蔓延特别是在夏天高温的情况下同时针对保洁部的迟到问题你们有哪些具体的考核和
+, 1735103661.5310855
+
+
+[Agent] 最终接收到问题: 您好 焦焦基于之前我们讨论的内容关于酒吧的保洁工作你们是如何确保在闭店后及时清理垃圾避免意味在店内蔓延特别是在夏天高温的情况下同时针对保洁部的迟到问题你们有哪些具体的考核和
+, 1735103661.531252
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4753 seconds, One token time: 0.1584 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：酒吧 保洁 活动 清理 垃圾 高温 迟到 考核
+Token count: 46, Total time: 9.2634 seconds, One token time: 0.2014 seconds
+
+提取的关键词: ['酒吧', '保洁', '活动', '清理', '垃圾', '高温', '迟到', '考核']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，酒吧在闭店后会进行常规性清理工作，尤其是夏季需及时处理酒类和其他废弃物，以防滋生细菌。针对保洁部的迟到问题，酒吧设有严格的考核制度：一个月内无请假无迟到者将获得奖励；对于偶尔迟到者，则会进行相应考核。
+Token count: 66, Total time: 13.1181 seconds, One token time: 0.1988 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：酒吧 保洁 活动 清理 垃圾 高温 迟到 考核
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 然后顾客对这个看法是一个什么样的看法?我们顾客对这方面的看法一定是很满意的,因为如果你经常放一样的话每天都一样的话也是会对一些经常来的这些顾问有一些厌倦感是为了增加这个新鲜感所以就制作了一系列的这个曲子就是安排好了周一到周日周一到周日里面有五套然后每一天用哪一套都是制定好的制定好的对那这个咱们这个顾客的反馈啊就是咱们所请到的DJ是否能够抓住这个带动带动范围就是因为他们起的就很带动咱们这个这边的消费然后让我们给他安排一个位置其实我们有一个成分说周一到周日就是固定的如果有的人就是周末来他会不会每次来的天都一样就是这个我们周六日法。然后顾客对这个看法是一个什么样的看法?我们顾客对这方面的看法一定是很满意的,因为如果你经常放一样的话每天都一样的话也是会对一些经常来的这些顾问有一些厌倦感是为了增加这个新鲜感所以就制作了一系列的这个曲子就是安排好了周一到周日周一到周日里面有五套然后每一天用哪一套都是制定好的制定好的对那这个咱们这个顾客的反馈啊就是咱们所请到的DJ是否能够抓住这个带动带动范围就是因为他们起的就很带动咱们这个这边的消费然后让我们给他安排一个位置其实我们有一个成分说周一到周日就是固定的如果有的人就是周末来他会不会每次来的天都一样就是这个我们周六日的话是其实是请一些嘉宾的请一些DJ到现场的这个DJ他们用的曲子是一定不是一样的就是每个人进行发挥的对我们这个都是提前协商好的而且我们制定了这个计划每周制定一次的不是说每天都这样每个月也是这样重复的还有就是上季度咱们酒吧里面有这种喝多以后酒后闹事的情况我想问一下咱们国安部是怎么处理的酒后闹事协商肯定是协商不了因为他都喝多了肯定是协商不了我们会就是有一块休息区你们有没有就是说射门镜啊就是有那种专门扫描的系统就是防止他们进来带一些管制道具有如果但是还是有带进来的还是有带进来为什么呀因为它不属于金属物品不属于金属物品像一些什么修饰过的木刀子和一些塑料刀子也是可以对人身造成伤害的那我觉得咱们可以对顾客进行搜身呀那你不就侵权了吗那你不就侵权人身就是咱们来一组我们这个酒吧应该制定一个相应的相应的规章制度就是进门在门口的时候不仅要检查一下有没有金属也应该顺势摸一下身我觉得不是说搜身就是摸一下摸一下口袋里面这个是别的酒吧里都有这种模式的都是为了咱们那个店对,为了大家所着想因为咱们毕竟,咱们这个营销的模式就是进出这种人与云混杂的场所应该有这个安全保障而且就是容易出事的那安保部门应该招几个女士对,也是,只需要女士现在咱们还没有女保安呢我觉得应该招一点,因为这个问题有点对这个刚才,咱们这块,这个搜身这一块那除了这个,还有别的办法吗?这一块因为我们我们这个最近发现有的女性嘛她会把一些像一些毒品啊或一些摇头蛮之类的藏在一些就是搜身发现不了的一些位置就是咱们的这个门禁那里都会扫描出来的呀这个东西没有热量它扫描不出来所以咱要加拿大的这个监管知道吗就是店内的巡逻对 店内的巡逻那一块立马咱就报警使用这种摇头玩呀还有就是使用这种笑气呀打气球这种行为咱们都要进行管控就是及时报警先要把这个涉嫌售卖毒品的这个人控制起来对先控制起来然后再报警我觉得还有一个方法就是刚刚考虑那个搜身的问题吗或者这个物品毒品啊或者什么会带到我们场所里面我觉得有一个方法是我们可以在进入这个大厅之前在外面设立一个小的放置物品的一个区域把你的所有物品只可以带着手机进去只带贵重物品就是那些储藏柜那它不放毒品怎么办就是你所以就是制定重重关卡吧首先就是先把东西尽量包裹就是背的包或者外套都不可以截在对对,反正这个不可以携带背包或者穿戴外套,这样不容易发现外套,外套就是如果说这个受温度影响这个咱们可以,就是主要是这个背包问题咱们要放到储藏柜里面,这是第一道关卡还有就是进店的时候那个仪器上的扫描还有就是保安的搜身,能说搜身吧搜身太难听了,就是这个摸身,对吧更难听主要就是这个对人身体检查嘛对吧这是第二道工序第三道这个工序就是咱们的保安需要加大巡逻店内的巡逻力度就是防止就是你们也要有一些眼力见就是看哪些顾客像是要喝多了就是有点那种闹事的闹事的那种情绪比如说已管理顾客携带飞金属物品进入酒吧的安全问题经骂起来了对吧这都要及时制止还有就是这个毒品管控的情况如果有发现在我们店内提示毒品的我们都要及时将人员控制起来并报警谢谢了 好吧好还有及时配合警察的工作对 还有及时配合警察的工作你好 娇娇如何有效管理顾客携带非金属物品进入酒吧的安全问题还有就是这个一些人就是来谈客户的他们会选择卡库他们点的酒他们点的套餐也是比较多的里面会谈香槟和各种各种的但是你说如果就是说像学生嘛大学生他们出来玩学生本身就没有很多的钱他们不可能花一千一两千开一个卡库他们也就是会开一个展台就花几百块钱几个人大家一起去分一下他们点的套餐就是比较少就是只有酒比如说没有火盘之类对没有火盘之类不同的消费人群然后不同的套餐那就是我们真的这种充当大哥的行为就比如说他点了一个很贵的套餐花了几万钱点了一个比如说是K-A这种套餐然后他不喝他不喝对他不喝他就是摆在面前就是一种炫耀的方式吧就是他花了一次的钱然后他炫耀无数次就这种情况下今天是不
+---
+偶尔一次说谁比如说车子坏了坏在路上了需要维修然后迟到的话那么他会提前打电话给当班的领班给打电话我来晚一点然后那么其他的人因为他的工作量别人的工作量就会相应的增加少了一个人那么就两个人的工作从一个人干三个人工作成两个人干了那么别人就要加快速度去还是在一个小时之内要把这个工作完成所以不允许迟到如果有个别情况迟到的话他也会我把车我们会锁在一个地方然后把车过来而且对于迟到的话我们会相应的进行考核对于一个月之内没有请假没有迟到的我们也会有一个奖励的制度虽然不多但是也是对于大家一个机会还有就是这个保洁部咱们不能说是整到所有的垃圾到了第二天咱们开业前来请客即使清理,不然的话经过一天的,特别是夏天,就可能没法待了。我们第二天其实进场的时候,其实是做一些常规性的清理工作,一些保健工作。但是所有的垃圾,特别是一些酒类的或者是其他的,这些剥皮啊,这类的,是在避电的时候都要把它清理出来我您好 焦焦基于之前我们讨论的内容关于【酒】吧的保洁工作你们是如何确保在闭店后及时清理垃圾避免意味在店内蔓延特别是在夏天高温的情况下同时针对保洁部的迟到问题你们有哪些具体的考核和
+根据会议内容，酒吧在闭店后会进行常规性清理工作，尤其是夏季需及时处理酒类和其他废弃物，以防滋生细菌。针对保洁部的迟到问题，酒吧设有严格的考核制度：一个月内无请假无迟到者将获得奖励；对于偶尔迟到者，则会进行相应考核。
+reasoner 输出结束
+们的规定就是垃圾日清所有的垃圾桶在闭店的时候全部清理清空我们这个安保部门是没有知道现象因为我们这边属于三班岛它就算是属于闭店状态我们也会安排在安保在店内进行休息你好 娇娇基于之前我们讨论的内容关于酒吧的保洁工作你们是也会在闭店的时候进行整改或者检查然后我们暂时处于三班倒的情况他们没有什么迟到的现象然后他们只会但是不排除路上的突发情况就像刚才保洁部门说的如果路上车子坏了的话突发情况我们这个安保人员会稍微出一点力或者进行提班工作那你们部门有没有说设置一下请不吝点赞 订阅 转发 打赏支持明镜与点点栏目知道的罚款啊或者说全勤的奖项啊我们是全勤的话是给给予一定的奖金而且会公司开会的时候会我们那个部门开会的时候就会给他们说出来扁平一下谁谁表现但是不会批评人因为如果批评的话就会打击他们的自信会对心理上产生一定的你设置这个成年奖金就是在调动他们的基因因为他们自身的原因去迟到的话你去赏罚严明才可以对啊你不是认识他们其实如果是鼓励的话也就相当于是批评为什么他们有钱去加你自己没有他自己也会去比较适合但是我觉得一些员工有一些心理是侥幸心理他觉得他自己很庆幸就是自己没有被你说他我觉得你还是要发现这个员工有一些问题什么迟到或者什么方面的问题一定要明确的去迟到要及时去那个明确的去迟到及时的去举证我觉得考核还是不需要的你销售这边呢营销者你们部门在这种迟到的情况对不对刚才对刚才那个有什么样的看法对啊就是比如说保安部门就是咱们的保安部部长就是觉得不愿意惩罚自己的员工他是鼓励行为的就是你们这儿如果说有一种迟到行为的话你们是怎么你是怎么处理的对你们手下的情况对我们主要这些营销或者罪状我觉得反正不能采取鼓励的措施因为你要是采取鼓励的措施他不会把这件事重视起来他会觉得有一次这样的错误我既然没有得到上面的批评下次我还会抱着脚印我觉得如果这样的话,整个公司内部就已经开始垮了这样,人员都不行,别说自己公司内部的人员都不行,别说再团结起来去找客户干嘛,我觉得还是要采取,比如说他迟到了,咱们要对他进行一定的批评,或者进行一定的发布,第一次咱们可以批评,第二次如果还有别的情况,我觉得我们可以去做一个考核细节,让大家比较好自己犯错,我知道我要得到怎样的惩罚第三次的话,如果还有,咱们就罚双倍他们来咱们这工作,大部分都是也是为了证钱我觉得如果这样的话,咱们下次就是为了犯罪主要还是以经济惩罚的方式因为谁工作不是为了赚那几块钱嘛对对吧那咱们这个人事部,就是人事部这边主要是这个气氛组给他们有没有按时到点因为咱们的气氛都这个要多都是年轻人吧对少的都大概是18岁23岁中间对这个年龄段的一些年轻人但是这些年轻人他们就是比较浮躁嘛可能不太听从你们的管理对因为我们酒吧就是需要这些浮躁的人来活跃气氛他们首先是有这个精力和这个活动量可以一直在上面一直奉一晚上三四个小时都没有问题然后担心他们会不服从我们安排这个事情是不用考虑的因为我们首先会有在来这里上班之前都会明确说出如果有违反我们的规章制度我们都会有严格的惩罚这个在一开始就会通知到我也說到发生了一些情况之后说提前已经告知了对 我们提前已经通知了你不要说你犯错之后我们训你 做了什么你的时候你现在说不知道就是没有这个情况我们完全是因为我们是每天需要人会人数是不定的所以我们完全可以在这一天把它解除其实18个以上都已经是成年人了对 这一部分我们找的人员都是一般是大学生或者想要来这儿兼职的对 我们完全可以这一天的工资就没有了是以这样的形式所以没有说不准因为迟到就是一晚上都没有了吗不是 你刚刚不是说太浮躁了然后就是不服从管理不服从管理对现在还有一个情况就是咱们是泰坦酒吧对吧同行业的还有像是M2酒吧呀还有这个奇娱乐酒吧呀就是大家都是在竞争市场的咱们凭什么就能胜出这个就是靠我们营销营销这一方面他的客户拉拢量这个是我觉得很关键的一点如果他认识的如果这个营销他做的比较好他认识的一些人一些有势力的人一些有钱的人多一点的话也可以通过介绍朋友啊什么经常来玩这我觉得是很大一方面的很流量还有我觉得其实也是硬件的设施比如说灯光主要酒吧的灯光和一些设施是比较酷去的时候就是根本就没有想要玩还有那些低阶段的歌曲然后就是让人想开都开不起来听着就想睡觉就是不会带动人的气氛从活跃我们酒吧上个月的主题派对效果挺好的看日流水来说是一个小后悔所以我希望就营销这边跟上个月那个模式一样咱们可以一年12个月每月办一个主题派对我觉得这个是一个我觉得可以可以在1月份的某一个某一个节日比如说圣诞节的时候咱们可以搞一个平安夜的派对很多这种节日七夕节前人节的时候像是我愛沖梭啊 沖涼啊這些這些可以在操餐上去用比如說用兩瓶酒就是這樣的油我覺得這樣應該給我出一點能出來消費或者說就是咱們的營銷模式嘛就是咱們有這個日消費最高每晚的消費最高消費最高這個有就是咱們前面有一個LED的屏幕
+[Audio Detection] 在 1541.27 秒检测到关键词 '好交交'。
+detection_time: 1541.27, current_time: 1530.00
+问题音频片段长度: 100182, dtype: float32, min: -0.10101318359375, max: 0.112030029296875
+问题音频时间长度: 6.261375
+
+
+[Agent] 接收到问题: 如何提升安保人员积极性并减少迟到现象
+, 1735103717.3387198
+
+
+[Agent] 最终接收到问题: 如何提升安保人员积极性并减少迟到现象
+, 1735103717.3388646
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4804 seconds, One token time: 0.1601 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 205, Total time: 6.8645 seconds, One token time: 0.0335 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+要提升安保人员的积极性并减少迟到现象，可以采取以下措施：
+1. 建立公平的考核制度，对表现优秀的员工给予奖励；
+2. 提供专业的培训和职业发展机会，让员工感到自己的价值被认可；
+3. 建立良好的企业文化氛围，增强员工的归属感和凝聚力；
+4. 设定明确的工作规范和时间管理规定，增强员工的时间观念；
+5. 加强与员工的沟通交流，了解他们的工作困难和需求，提供必要的支持和帮助。这些措施可以激励安保人员的工作热情，提高工作效率，减少迟到现象。
+talker 输出结束
+对吧其实最初五坚不上一坚不是五坚是上小下大这么写的这什么意思呢来源于粮赏粮赏就是粮赏这个坚是什么意思呢就是过去人们就是过去那个生斗对吧这个卖粮食呢就是一生或者一斗就是成了就算是够数了对吧但是他就为了回头客嘛他都是让他冒家这粮食都冒家无论是米面请不吝点赞 订阅 转发 打赏支持明镜与点点栏目一生一斗都让他们冒着尖所以说无间不上是为了抓我回头客做的这种买一增一的这种活动这叫无间不上那既然都觉得那大家有什么其他好的办法那就是我觉得针对这个方法就比如说只有一个老板在让他没有人促进他的消费我觉得这个可以通过我们营销对他对因为它跟自己的营销是肯定有十分熟的就比如说营销可以促进一下就说咱老板好几天来了咱们联络一下感情是吧然后和我有几个朋友我可以介绍你认识一下咱们一块喝个酒我觉得以这样的方式促进他喝饮酒这个是一个我们消费的主要手段还有一个就是既然他是老板他肯定会出手会比较大方的那我们就是舞台的这个就是表演这些人员比如说我们可以邀请一个他比较喜欢的类型的给他推荐对 让他推荐然后我们会说我们可以给这个女演员送花就是给歌手送花或者给舞者送花这样的方式来刺激小粉我觉得用这些方式比较合理一点他也是应该体验对谢谢大家还有就是咱们停车场的问题,咱们用不用跟那个代驾公司合作,或者说跟出租车公司合作,毕竟咱们有的顾客来着是开车来的,但是喝完酒以后就不可以在这。我觉得出租车一般酒吧门口都会晚上,因为在凌晨,都会聚集,所以咱们可以跟代驾公司搞一下合作,因為許多開車來的業主他們來的時候他們一些朋友都會所以你说如果他们在打收或者自己车留在这儿我觉得是很现实我觉得这个方法是可行的这个一方面是让这个顾客感受到我们喝完酒了还会照顾把客人代驾接走这个人机场景嘛让他们感受到我们这个热情这个服务的周到然后二还可以和代驾公司嘛进行一个联合我们从中抽起一些利润那还有别的建议吗咱们还是以能力为目的嘛比如说搞一些什么活动啊什么套餐啊什么的大家有什么建议吗套餐咱们酒店都有啊对啊 套餐然后每个月大的这个集团活动每个月的集团活动也可以进行每晚每星期就是指定比如说周二周天人比较火爆刚才说的可以指定在周天的时候或者周六的时候进行现场抽检像聚光灯随着一首音乐停止以后聚光灯停止在某一个人身上然后将它放在像这是酒吧搞的活动吗我怎么感觉听着像这个可以赠酒啊赠酒是吗对啊随机抽取幸运这个顾客来进行就是赠一些酒水那个果盘之类的零食你总不能聚光灯打到人家身上只是给人家显示到荧幕上不进行赠酒活动或者一些赠送东西的环节这是不是显示也太酷这个消费高的这个顾客中实现就是我觉得不应该是在全场的所有观众中因为他如果进门的话肯定要设立就是进门就是会掏一定的就是金钱了如果进酒吧如果进酒吧之前会有一些酒吧会有这样的规定男生进去以后多少钱女生就几点以后就可以免门票之类的东西如果都掏的话肯定可以进行免费抽奖还有就是我问一下咱们针对这些蹦铁地的情况咱们是得不出于的就是他们过来只是什么钱也不花什么也不消费只是单纯的来我们这个场地来感受我们这个气氛来娱乐那是非要赶出去的他进来的时候我们的票已经花钱了呀他们属于钱贷客户一来是可以给我们带来这个满足率可以稍高一点然后人气多一点二来是他们来过一次之后他们可能会推荐别人来和他每次来顶部花一门钱但只要他花了一次钱他就是我们一个固定客户其实这是一个我们这是每一个善而必经的一个阶段就是你需要人生一些对,需要人生一些光芒而且别人一看这酒吧人这么多他也可以增加人气啊嗯也就是说支持这种行为的对啊各部门都支持那我这边是没有什么问题的
+[Audio Detection] 在 1977.25 秒检测到关键词 '好交交'。
+detection_time: 1977.25, current_time: 1950.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.113800048828125, max: 0.100738525390625
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于酒吧营销策略我们提到了通过抽奖活动来吸引顾客那么具体来说我们应该如何设计这个抽奖活动
+, 1735103749.3548398
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于酒吧营销策略我们提到了通过抽奖活动来吸引顾客那么具体来说我们应该如何设计这个抽奖活动以确保既能吸引顾客又能提高消费同时避免给顾客造成被欺骗的感觉呢
+, 1735103750.8578274
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4823 seconds, One token time: 0.1608 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：抽奖活动 设计策略
+Token count: 27, Total time: 5.1479 seconds, One token time: 0.1907 seconds
+
+提取的关键词: ['抽奖活动', '设计策略']
+
+找到的上下文片段数量: 1
+根据会议内容，我们可以设计一个针对性的抽奖活动。具体方案如下：在特定时间段（如周末），设置专门的抽奖环节，被选中的顾客可获得免费酒水或果盘等小礼品。此活动旨在吸引顾客参与，并通过代驾服务提升顾客体验。同时，对于入场即消费的顾客，我们将增加额外抽奖机会，以此激励他们进行更高额的消费，从而实现双赢。
+Token count: 90, Total time: 17.5246 seconds, One token time: 0.1947 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：抽奖活动 设计策略
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 我觉得出租车一般酒吧门口都会晚上,因为在凌晨,都会聚集,所以咱们可以跟代驾公司搞一下合作,因為許多開車來的業主他們來的時候他們一些朋友都會所以你说如果他们在打收或者自己车留在这儿我觉得是很现实我觉得这个方法是可行的这个一方面是让这个顾客感受到我们喝完酒了还会照顾把客人代驾接走这个人机场景嘛让他们感受到我们这个热情这个服务的周到然后二还可以和代驾公司嘛进行一个联合我们从中抽起一些利润那还有别的建议吗咱们还是以能力为目的嘛比如说搞一些什么活动啊什么套餐啊什么的大家有什么建议吗套餐咱们酒店都有啊对啊 套餐然后每个月大的这个集团活动每个月的集团活动也可以进行每晚每星期就是指定比如说周二周天人比较火爆刚才说的可以指定在周天的时候或者周六的时候进行现场抽检像聚光灯随着一首音乐停止以后聚光灯停止在某一个人身上然后将它放在像这是酒吧搞的活动吗我怎么感觉听着像这个可以赠酒啊赠酒是吗对啊随机抽取幸运这个顾客来进行就是赠一些酒水那个果盘之类的零食你总不能聚光灯打到人家身上只是给人家显示到荧幕上不进行赠酒活动或者一些赠送东西的环节这是不是显示也太酷这个消费高的这个顾客中实现就是我觉得不应该是在全场的所有观众中因为他如果进门的话肯定要设立就是进门就是会掏一定的就是金钱了如果进酒吧如果进酒吧之前会有一些酒吧会有这样的规定男生进去以后多少钱女生就几点以后就可以免门票之类的东西如果都掏的话肯定可以进行免费抽奖还有就是我问一下咱们针对这些蹦铁地的情况咱们是得不出于的就是他们过来只是什么钱也不花什么也不消费只是单纯的来我们这个场地来感受我们这个气氛来娱乐那是非要赶出去的他进来的时候我们的票已经花钱了呀他们属于钱贷客户一来是可以给我们带来这个满足率可以稍高一点然后人气多一点二来是他们来过一次之后他们可能会推荐别人来和他每次来顶部花一门钱但只要他花了一次钱他就是我们一个固定客户其实这是一个我们这是每一个善而必经的一个阶段就是你需要人生一些对,需要人生一些光芒而且别人一看这酒吧人这么多他也可以增加人气啊嗯也就是说支持这种行为的对啊各部门都支持那我这边是没有什么问题的基于之前我们讨论的内容关于酒吧营销策略我们提到了通过【抽】奖活动来吸引顾客那么具体来说我们应该如何设计这个抽奖活动以确保既能吸引顾客又能提高消费同时避免给顾客造成被欺骗的感
+根据会议内容，我们可以设计一个针对性的抽奖活动。具体方案如下：在特定时间段（如周末），设置专门的抽奖环节，被选中的顾客可获得免费酒水或果盘等小礼品。此活动旨在吸引顾客参与，并通过代驾服务提升顾客体验。同时，对于入场即消费的顾客，我们将增加额外抽奖机会，以此激励他们进行更高额的消费，从而实现双赢。
+reasoner 输出结束
+
+会议数据处理完成。

@@ -1,0 +1,238 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200630_S_R001S05C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Starting processing from 0s, total chunks: 74
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.15s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.36it/s]Loading Whisper model...
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.38s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.27s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.10s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.12s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.75s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.94s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.75s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.69s/it]
+我002我是总经理005生产部007物流部018销售部行好的今天把大家叫过来开一个会各部门汇报一下本部门的一些日常事情各部门工作上有什么需要我这边给你们提供帮助的都可以在会上一起讨论一下还有就是咱们这个本次這個會,就要求一,我們要跟外國人一些日常事務,日常事情說一說二,我們要跟各部門的一些難處難地說一說从生产这边开始说吧生产目前生产的日子一些日常事情有一些需要我这边提供关注的生产这边先开始吧我们就是在两个基地嘛南方一个 北方一个然後就是嗯就是都有1000多亩山地然后就种了水果然后这个呃蔬菜呢就是大同基地水果呢我们现在有种了就是有四五多种蔬菜也是四五十种嗯我们就是上半年就是我们预计的今年就是呃水果销量是200多万上半年现在是呃100来万呃都完成任务了因为今年这呃我们这个水果上市最近就是上市的就是西瓜桃就是西下北方的一些水果都受到广大消费者的欢迎我们现在就是我们就主要现在就是走的一个生态的一个就是生产全就是说那个污染就是我们在人家当地或者投资咱们这个基地吧就是说也希望给当地的经济带来一定的收入吧我们现在就是说我们这个生态园就是四季长旅水长青我们就是说下一步就是说反正现在我们就是销售都挺好的下一步我们就是想看看能不能把我们这个打在打造成一个400条园我们这个生产园然后可以让那个大家来旅游一下采换一下采摘一下就是我们生产这个就是今年都这个任务完成都挺好了工人们现在有我们有那个500多个工人工人这个今年就是说这个任务基本上都完成了然后从从种植采摘像水果的每年我们现在已经都是成熟的树都是三五年以上的树都已经结果蔬菜的话我们现在就是说主要是打造了一个生态的生产生态的生产嗯反正我就是就是现在就是说需要就是就是做这个病虫派的这个房居管理我们种植过程中需要有机化肥,微生物化肥我们现在想走这条路,全部都是走优质的水果,蔬菜希望公司下一步能投资一些有机的肥料对,可能把生产的肥料给你可以用一些新的对咱们自己可以研发一下生产这个研发部门现在搞得很帅现在我们就是主要研发这些沙虫我们以前吧都用那个就是一些灵药啊什么的现在我们逐渐打造我们的生态园嘛就是采用这个正式的沙塘灯然后黄板蓝板果蝇用补气还有就是这些对人体和环境无害的物理就在研究吧有一些已经用上了种植的话主要就是想用有机肥料还有微生物肥肥现在有些都得开发有机材料我们现在已经用了一部分了只要痛就放了以前用的效果怎么样效果还是挺好的你看我们这个蔬菜就是吃了有的这个反应就是销售那边反应就是说都吃的还是挺好口感呢就跟以前咱们家老味儿重的那样就是咱们这个还有一些食物一些营养原来都是有一些这个还是挺好用的因为这个我们这是全中间就是说现在就是说打造这生态园嘛全部就是说用这些它是我们不是说直接用农家肥我们现在就是用比如说用用一些垃圾,比如水果,果核,烂了以后,然后提取这些有机肥,生产这些有机肥。就走这点,是吗?对,因为我们确实也有坏的水果,还有蔬菜也有一些坏的。我们公司现在就打造这个就是稍微长得不好的坏的我们都不用啊但不能说让啊浪费啊现在就走这个有机肥嘛嗯还有一个生产这边生产基地还要就是要扩大我们现在就是准备再买1000亩现在不是水果就准备在山地上种山地的水果长出来还甜我们准备再买几百亩你看现在我们都是用的这个像那个小飞机然后就是喷洒一些药然后有机肥现在就是说我们在底下工人们全部都是人工比较多嘛我们下期就是说看看这个肥料能不能用这个小飞机以后就用人就少了是
+[Text Detection] 在 498.14 秒检测到关键词 '娇娇',current_time: 493.00, 问题文本: 是节约一些成本还有就是咱们这个一些热带的一些你好娇娇如何提升生态源的病虫害防治管理减少农药使用在这个热带地区在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿
+问题音频片段长度: 141654, dtype: float32, min: -0.185760498046875, max: 0.2039794921875
+问题音频时间长度: 8.853375
+
+
+[Agent] 接收到问题: 你好焦焦如何提升生态源的病虫害防治管理
+, 1735622547.694364
+
+
+[Agent] 最终接收到问题: 你好焦焦如何提升生态源的病虫害防治管理
+, 1735622547.6944864
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+您好，针对您的问题，提升生态园的病虫害防治管理主要从以下方面入手：
+
+1. 制定科学合理的虫害防治计划：根据生态园内植物种类、病虫害发生规律等因素，制定针对性强、操作性强的虫害防治计划。
+
+2. 加强生物防治：利用天敌昆虫、病原菌等生物控制病虫害的发生，减少化学农药的使用。
+
+3. 提高农业技术水平：加强对生态园种植户的培训和技术支持，提高他们对病虫害防治的认识和技能。
+
+4. 建立健全监测预警体系：通过定期监测和调查，及时发现和预测病虫害的发生趋势，提前采取应对措施。
+
+5. 合理使用化学农药：在必要时可以合理使用化学农药，但要严格控制用药量和频率，防止对生态环境造成污染。
+
+6. 建设生态茶园：通过有机肥料、覆盖物等方式，改善土壤质量，增强植物抗病虫害的能力。
+
+以上几点仅供参考，希望能对您有所帮助。
+talker 输出结束
+节约一些成本还有就是咱们这个一些热带的一些你好娇娇如何提升生态源的病虫害防治管理减少农药使用在这个热带地区在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿在这儿看这个村我们能不能办他就是说正在谈合作跟这个村里头因为我们这个给他他们卖给我们给他走销路但是他们统一的我们管理他统一管理现在就是村里人还是挺高兴的目前有什么转度吗目前怎么说来着看我们销售吧反正就是说我们要是说签了这么大的合同好希望消耗出去因为我们农民为什么也跟我们签这个合同因为他们也是消耗不太好因为疫情之间他们运输都运不出去像咱们不是有物流公司都可以给他运出去还有咱们生产这边也要抓紧也要去开放出来因为近期进口厂家太多了国外的一些进口的产品影响也比较大市场比较大活动比较大因为人民现在生活水平提高了就是都是不喜欢这种污染的呀然后不打农药的这个蔬菜呀水果我们现在就是全新的生态园正在升级中就全部我们都打造了生态园对对一批一批的信心生态基地这个人才嗯人才我就看咱们能不能就是说从国外到底是留学回来的学的新的知识带给我们就是我们公司新的然后就是还有一些机器像以前都是人工比如说打包然后洗菜都是人工现在就是说好像出了这种就是新型的这种机器全部就是说过期都是干净的就不用请那么多人工也有一點成本吧我們這個走的就是精包裝吧像這個蔥啊蒜啊都得打包裝就這個機器遊戲吧就是我看他們公司能再引進一批新型的這個機器希望這個人工化就是少一點錢然後我們塞入物流這邊物流這一塊呢咱們這個是生鮮啊配送这一块主要的成本还是在这儿的在物流这一块然后就是说一个是要保证咱们的商品咱们的蔬菜水果它的鲜活度它的新鲜程度然后咱们这个物流过程中也有很高的要求的还有咱这个水果蔬菜它那个益生在采摘或装卸的过程中,肯定会有问题的。还有这个石像型,因为本地的基地运输到本地的商超,各大菜市场的商贩中,水果食材店的,还是好说的。如果往外送的话,我们就要保证讲这个我们的物流,这个快速保证实效性因为我们是有自己的物流团队的这方面保证咱们的实时观注意到物流团队会有什么问题也可以及时调整团队也会积极配合如果哪里需要可以很容易调动我们也跟外面的物流公司也有合作对于蔬菜水果需求量大的时候,我们自己团队跟不上的时候,我们可以用他们外面的物流公司。南方的水果,蔬菜,一般是南方的水果冬天的话还好一点水果就不会那么容易腐烂然后我们可以选择入院大部分可以选择入院大部分车房可以拉但是夏天现在呢咱们的水果它这个容易腐烂所以我们很多比较贵一点的水果或者是咱们基地生产的我们也会用一些有机的蔬菜和水果,我们都选择空运,用我们这个空运的航线,然后运到隔离,这个还快一点。然后时效性这个达到了然后就会降低咱们这个损坏的那个程度嗯然后呢就是我们对这个物流呢他就是尽量让它减少中间的环节因为环节越少咱们越能节省时间所以说我们在这个物流上面就是从南方这样运过来的环节上我们应该尽量的减少然后就是减少这个停留的时间吧然后让它们就是很快的达到到达咱们这个供应店需求点吧本地的树果基地主要是运到本地和周边城市的各大商城所以说这个主标还是陆运这个就很高潮装修工人要仔细降低损坏然后咱们对这个也有考核比如说上车的时候要记录一下中间的蔬菜水果的程度上甩率,我们的都很上甩率然后配送到那个点以后要
+[Text Detection] 在 1009.93 秒检测到关键词 '娇娇',current_time: 986.00, 问题文本: 要看看配送的效果是怎么样的然后我们也会通过给他们一个考核如果损坏力高了就会有一定的惩罚但是说它这个季节性的损坏就是说腐烂呀干什么肯定有的但是咱们考虑到这个范围内吧你好 娇娇基于之前我们讨论的内容关于南方基地
+问题音频片段长度: 448192, dtype: float32, min: -0.19293212890625, max: 0.205108642578125
+问题音频时间长度: 28.012
+
+
+[Agent] 接收到问题: 我们将会教教基于之前我们讨论的内容,关于南方基地的水果蔬菜运输问题,我们如何确保在夏季高温条件下,通过空运快速将易腐烂的有机蔬菜和水果水果运送到各地,同时降低损坏率,保持产品的新鲜度和鲜活度。
+, 1735622579.8056695
+
+
+[Agent] 最终接收到问题: 我们将会教教基于之前我们讨论的内容,关于南方基地的水果蔬菜运输问题,我们如何确保在夏季高温条件下,通过空运快速将易腐烂的有机蔬菜和水果水果运送到各地,同时降低损坏率,保持产品的新鲜度和鲜活度。
+, 1735622579.8061383
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：南方基地 运输问题 空运 易腐烂 有机蔬菜 损坏率 新鲜度 夏季高温条件
+
+
+提取的关键词: ['南方基地', '运输问题', '空运', '易腐烂', '有机蔬菜', '损坏率', '新鲜度', '夏季高温条件']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:261: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+
+Token count: 136, Total time: 53.0572 seconds, One token time: 0.3901 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：南方', '基地', ' ', '运', '输', '问题', ' ', '空', '运', ' ', '易', '腐', '烂', ' ', '有机', '蔬菜', ' ', '损', '坏', '率', ' 新', '鲜', '度', ' ', '夏', '季', '高温', '条件', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 然后时效性这个达到了然后就会降低咱们这个损坏的那个程度嗯然后呢就是我们对这个物流呢他就是尽量让它减少中间的环节因为环节越少咱们越能节省时间所以说我们在这个物流上面就是从南方这样运过来的环节上我们应该尽量的减少然后就是减少这个停留的时间吧然后让它们就是很快的达到到达咱们这个供应店需求点吧本地的树果基地主要是运到本地和周边城市的各大商城所以说这个主标还是陆运这个就很高潮装修工人要仔细降低损坏然后咱们对这个也有考核比如说上车的时候要记录一下中间的蔬菜水果的程度上甩率,我们的都很上甩率然后配送到那个点以后要我们将会教教基于之前我们讨论的内容,关于南方基地的水果蔬菜运输问题,我们如何确保在夏季高温条件下,通过空运快速将易腐烂的有机蔬菜和水果水果运送到各地,同时降低【损】坏率,保持产品的新鲜度和鲜活度。\n ###agent根据会议片段的输出开始：###\n为了确保在夏季高温条件下通过空运快速将易腐烂的有机蔬菜和水果运送到各地，并降低损坏率、保持产品新鲜度和鲜活度，我们需要采取以下措施：\n\n1. 减少中间环节：尽量缩短运输时间，避免不必要的停留；\n2. 提升包装质量：使用高质量的包装材料以防止物理损伤；\n3. 温控措施：采用冷链技术，维持适宜温度，防止因高温导致的腐烂；\n4. 质量监控：记录并监控装货时及到达目的地前的状态，严格控制损耗率。\n\n这些措施可以有效保证运输过程中的蔬菜水果品质。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 然后时效性这个达到了然后就会降低咱们这个损坏的那个程度嗯然后呢就是我们对这个物流呢他就是尽量让它减少中间的环节因为环节越少咱们越能节省时间所以说我们在这个物流上面就是从南方这样运过来的环节上我们应该尽量的减少然后就是减少这个停留的时间吧然后让它们就是很快的达到到达咱们这个供应店需求点吧本地的树果基地主要是运到本地和周边城市的各大商城所以说这个主标还是陆运这个就很高潮装修工人要仔细降低损坏然后咱们对这个也有考核比如说上车的时候要记录一下中间的蔬菜水果的程度上甩率,我们的都很上甩率然后配送到那个点以后要我们将会教教基于之前我们讨论的内容,关于南方基地的水果蔬菜运输问题,我们如何确保在夏季高温条件下,通过空运快速将易腐烂的有机蔬菜和水果水果运送到各地,同时降低【损】坏率,保持产品的新鲜度和鲜活度。
+ ###agent根据会议片段的输出开始：###
+为了确保在夏季高温条件下通过空运快速将易腐烂的有机蔬菜和水果运送到各地，并降低损坏率、保持产品新鲜度和鲜活度，我们需要采取以下措施：
+
+1. 减少中间环节：尽量缩短运输时间，避免不必要的停留；
+2. 提升包装质量：使用高质量的包装材料以防止物理损伤；
+3. 温控措施：采用冷链技术，维持适宜温度，防止因高温导致的腐烂；
+4. 质量监控：记录并监控装货时及到达目的地前的状态，严格控制损耗率。
+
+这些措施可以有效保证运输过程中的蔬菜水果品质。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+看看配送的效果是怎么样的然后我们也会通过给他们一个考核如果损坏力高了就会有一定的惩罚但是说它这个季节性的损坏就是说腐烂呀干什么肯定有的但是咱们考虑到这个范围内吧你好 娇娇基于之前我们讨论的内容关于南方基地放棄的時候不快了,不注重蔬菜水果的保護了,我們也會有一定的獎罰在那邊。我們都給一定的就是它這個傷害率的,是吧?對,然後就是說咱們夏天運這些水果的時候,尤其是比較銳利的水果,我們都會採用這個冷凍的運輸環節。就是用冷藏这个功能南方这边过来的水果在这个位置它空运上肯定是有这个保护措施的都是冷藏然后咱们要是就是从空运下来运到各个地方的时候咱们这个物流的车子呢也是有这个功能的主要是保护它这个损坏率所以说我们这个也是希望夏天的時候,公司能多給配備幾輛冷藏車吧保證水果的新鮮程度和消耗程度吧這樣也可以降低我們的成本因為這個車子其實它用的時間還是長的对吧你说眼睛睫毛心理都成了对有冷藏功能的这种货运车目前市场这种车的价格是贵的吗价格其实咱们是可以接受的在这个成本上面咱们可以接受的对,可以接受的因为咱们这个水果有高端的有咱们普通的有那个有机的我们也是需要这个车子也是为了保障水果的新鲜水果的水质辣度成分低点这样它是双引的吧然后咱们也要保证这个速度的话能降低了这个损坏力然后更能实现这个远程的开送对,咱们和其他一些合作的公司是什么情况?有这个合作的公司,主要还是远程的,本地的暂时还不需要,因为咱们这个团队也够大,主要还是远程的这种配送,从咱们南方基地送回来的,空运的这一块是跟别的公司合作的。如果要是将近拉一条航行这个航行机航线的话太麻烦了还是用别人的吧对但是过两年如果咱们这个发展生产这个多了可以自己弄一个空运的航行南方基地更大了或者是咱们这个服务咱们这个服务网点更大了涉及的城市更多了我们可以就是拉一条咱们自己的航行就是空运的这个或者承包一下承包一个项这样咱们的话服务网点多了有咱们的航线咱们这样运输也方便是可以去下面可以有个这方面的站队对对对未来咱们公司可能要发展我们现在不是跟男方那边有的村庄是吧我们到时候就谈合作然后就是咱们这个销售这个销售这个会是什么今年销售不错因为受疫情影响本来就是说去年吧咱这个还没达到这么大对峙今年的话因为大家基本上都不能怎么出门像那个送货到家都比较热门了嗯尤其是咱那个蔬果水果跟蔬菜嗯都是大家所必须的而且也比较好的所以咱那个订单非常多而且就是啊像那个以前好几以前咱都我们都跑了就是找好多次那个大商家合作他都不愿意嗯啊今年主动找咱们谈咱们合作反正今年销售确实不错非常好然后不仅和周围的大商场有了很好的合作另外跟周边的小区还有邻县 邻省都是另外还有我们尝试了线下销售模式就我们在比如说我们在淘宝苹果优货还有京东上都做了一些推广然后也把咱那些生产基地那些也都照上也都展示出然后也是正在起步中销量虽然没有其他门店看的好但是相对于咱自己来说这是新的开始总的来说也不错但是我觉得还可以做得更好比如说现在直播带购线上销售的话就是线上销售首先我想打算先成为一个直播部门看看直播效果怎么样看看流量是多少购买人群是怎么样的因为毕竟咱们很有优势的有两个生产基地南方也有北方也有相对来说物流也是非常方便的对他们来说就是又新鲜又方便我觉得这个是挺不错的关键就是因为毕竟刚起步嘛今年比较刚兴起而且有好多生产阶级他们也都尝试做这些了咱们相对来说也是稍微有点落后吧但是毕竟咱们势力雄厚我感觉肯定能超过他们的然后另外就如果播放的不太理想,就请一些大主播帮忙带货毕竟咱们的东西是好东西然后另外呢就是想邀请一些像那个明星做一些宣传我们也可以做一些公益活动不是今天给我们也注目了一些蔬菜水果对这些咱们也都可以做宣传也作为咱们的一个卖点还有就是咱们这个像在扩大规模之后吧咱们肯定还有就是像那些生产基地确实还需要再扩大我们现在不是谢谢大家就是跟南方那边有一个洽谈然后咱们如果直播带货的话人就是那种从基地直接发到对啊,那省去效率省去很多中间环节然后咱们的分配也减少了我觉得也可以把直播间改成咱们生产基地可以让他们看一下看咱们的产品是怎么生产出来的让他们是更放心我
+[Text Detection] 在 1542.42 秒检测到关键词 '焦焦',current_time: 1537.00, 问题文本: 我们现在正在达到这个生态园你好 焦焦新型冷藏车的价格和成本是否合公司当前的物流需求全都是绿色蔬菜绿色水果因为我们也是厂家也是销售家所以我们就直接销售直接如果是这种直播的话是这种零售的
+问题音频片段长度: 143723, dtype: float32, min: -0.156036376953125, max: 0.198974609375
+问题音频时间长度: 8.9826875
+
+
+[Agent] 接收到问题: 新型冷藏车的价格和成本是否合公司当前的物流需求
+, 1735622683.8527627
+
+
+[Agent] 最终接收到问题: 新型冷藏车的价格和成本是否合公司当前的物流需求
+, 1735622683.8529308
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 184, Total time: 6.3796 seconds, One token time: 0.0347 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+这个问题需要更具体的信息才能回答，因为新型冷藏车的价格和成本会受到多种因素的影响，如车型、尺寸、配置、制造材料、品牌、市场需求等。此外，公司的物流需求也会对其选择产生影响，例如需要考虑运输的距离、货物的重量和体积、对温度控制的要求、预算限制等。因此，建议您在购买或租赁冷藏车时，与多家供应商进行比较，并仔细考虑您的具体需求和预算，以确定最适合您的方案。
+talker 输出结束
+们现在正在达到这个生态园你好 焦焦新型冷藏车的价格和成本是否合公司当前的物流需求全都是绿色蔬菜绿色水果因为我们也是厂家也是销售家所以我们就直接销售直接如果是这种直播的话是这种零售的都可以洽谈然后另外呢就主要我感觉现在主要方向就是往线上销售这一方面发展是这个现在这个个个就是团购网哈都可以跟人家就洽谈给人家供货哦还有像那种比较廉价的像那个朋友圈啊或者微博啊之类的别看小能力用上咱俩人利用上起步咱们都要先全面开发是吧,舒服一点就发展得更好了。就是下面主要的销售方向就是线上销售。还有就是近期,咱们要有一个国家倡访的果蔬,果蔬莲花股东,额地的一些蔬菜,会到海南有一个古书交流会这边各部门都有想法派谁过去生产生产的话我们就是我觉得我们现在主要都是生产我们现在以那个有机然后生态园打造然后我看我们这边有个专家他带着这个水果参加特别是介绍我们这个有机生态园的水果食材因为我们现在就是说主要是打造生态园就是有机蔬菜就可以派他过去嗯咱们要这个要打出咱们那个口号要交流一些这个这方面的一些经验因为咱那个现在这个市场上有些这个咱们这个产量目前咱们这个产量啊下半年这个帮我们这个销售这边说哈我觉得产量还是有有待提高的啊嗯 我们这边这个北方的话就是准备多弄几个大棚再再承包他的嗯 上线米地啊然后我们主要是你看现在我们就是本地公园的话啊 我们主要是晚上这个作业因为这个早上就是运走嘛让让人们吃上新鲜的蔬菜啊这过人也是比较心我们这个生产的话就是说就是除了这个生产还有打包这一步一直都是我们这边做打包的话就是基本上晚上供人们打包为了就是我们打包完了半夜来我们这个物流就运走了为了让人们早上吃上新鲜的蔬菜要去更新,换蛋目前的新品种,国际上的新品种也已经进入了要去试验,这方面试验工作,试验田有什么想要说吗?嗯之前就有这个试验田吧不过就是比较大众的一些品种吧现在如果要是引进一些国外的一些新型的品种第一是技术第二就是我们也是自己研究人员就是说买了种子吧回来得研究怎么种植是吧怎么去产量得了很多因素影响保育就是他们这个环境我们那是最主要的嗯 而且这个反正我们之前都走的是大众的因为大众呢他有些人不喜欢吃就接受这些新品种嘛不过现在就是说现在这个人们生活水平提高了反正就会走一些这些精品的路线嗯我们这个救资园这个研究基地呢反正也正在比如说都在研究新品种有时候我们想就是说可能也会自己研究一些嫁接的呀什么的水果就是希望它口感更好甜度更高产量更多对主要产量真的是产量反正怎么说反正现在我们主要是走生态这些产量的话就是当然没有那些可能就是说用化工原料什么的我们因为都是纯天然的可能在街我们以后就你看我们公司最初成立的时候就是那种大众品牌现在我们就是说走精品路线都是纯天然无污染的水果蔬菜主要是走精品路线以后现在我们都四五十个品种就是像现在这个超市的基本上供应反正都有吧就是这些西红柿啊土豆啊红萝卜啊白菜茄子现在这个我们北方这边基地就是生产这个大众的这个蔬菜比较多就是还有我们这个水果水果就是今年我们就是这个西瓜小柳请不吝点赞 订阅 转发 打赏支持明镜与点点栏目因为我们今年就是通过研究西瓜的口感还有皮更薄然后甜度更高所以消费者还是特别喜欢我们这个西瓜其他部分还有什么想要说的吗还有需要我帮助你们的吗我们物流这边如果咱们就是发展直播的话,我们会把物流这一块,原先我们是大批量的往外送,这样的话我们直播单子比较小,我们再发展一下我们的物流团队,成为一种散单子,往外送的方式,我们物流方面是想配合商售这一块的。业
+[Text Detection] 在 2048.98 秒检测到关键词 '娇娇',current_time: 2030.00, 问题文本: 业务的这个要改变吧嗯那也有方式对嗯是别的嗯销售也有好销售比如说就是增加一些直播设备嗯比如说光镜什么的你好娇娇基于之前我们讨论的内容关于即将举办的海南国输交流会我们
+问题音频片段长度: 426486, dtype: float32, min: -0.213958740234375, max: 0.2315673828125
+问题音频时间长度: 26.655375
+
+
+[Agent] 接收到问题: 您好,焦焦,基于之前我们讨论的内容,关于即将举办的海南国书交流会,我们公司将如何展示我们的口号和交流经验,然后我们诚实针对善良提高和品种更新换代的问题,我们具体有哪些计划和措施?
+, 1735622712.9212918
+
+
+[Agent] 最终接收到问题: 您好,焦焦,基于之前我们讨论的内容,关于即将举办的海南国书交流会,我们公司将如何展示我们的口号和交流经验,然后我们诚实针对善良提高和品种更新换代的问题,我们具体有哪些计划和措施?
+, 1735622712.9215324
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：口号展示 交流经验 善良提高 品种更新换代 海南国书交流会
+
+
+提取的关键词: ['口号展示', '交流经验', '善良提高', '品种更新换代', '海南国书交流会']
+
+找到的上下文片段数量: 1
+
+Token count: 112, Total time: 44.1550 seconds, One token time: 0.3942 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：口号', '展示', ' ', '交流', '经验', ' ', '善', '良', '提高', ' ', '品', '种', '更新', '换', '代', ' ', '海', '南', '国', '书', '交流', '会', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 还有就是近期,咱们要有一个国家倡访的果蔬,果蔬莲花股东,额地的一些蔬菜,会到海南有一个古书交流会这边各部门都有想法派谁过去生产生产的话我们就是我觉得我们现在主要都是生产我们现在以那个有机然后生态园打造然后我看我们这边有个专家他带着这个水果参加特别是介绍我们这个有机生态园的水果食材因为我们现在就是说主要是打造生态园就是有机蔬菜就可以派他过去嗯咱们要这个要打出咱们那个口号要交流一些这个这方面的一些经验因为咱那个现在这个市场上有些这个咱们这个产量目前咱们这个产量啊下半年这个帮我们这个销售这边说哈我觉得产量还是有有待提高的啊嗯 我们这边这个北方的话就是准备多弄几个大棚再再承包他的嗯 上线米地啊然后我们主要是你看现在我们就是本地公园的话啊 我们主要是晚上这个作业因为这个早上就是运走嘛让让人们吃上新鲜的蔬菜啊这过人也是比较心我们这个生产的话就是说就是除了这个生产还有打包这一步一直都是我们这边做打包的话就是基本上晚上供人们打包为了就是我们打包完了半夜来我们这个物流就运走了为了让人们早上吃上新鲜的蔬菜要去更新,换蛋目前的新品种,国际上的新品种也已经进入了要去试验,这方面试验工作,试验田有什么想要说吗?嗯之前就有这个试验田吧不过就是比较大众的一些品种吧现在如果要是引进一些国外的一些新型的品种第一是技术第二就是我们也是自己研究人员就是说买了种子吧回来得研究怎么种植是吧怎么去产量得了很多因素影响保育就是他们这个环境我们那是最主要的嗯 而且这个反正我们之前都走的是大众的因为大众呢他有些人不喜欢吃就接受这些新品种嘛不过现在就是说现在这个人们生活水平提高了反正就会走一些这些精品的路线嗯我们这个救资园这个研究基地呢反正也正在比如说都在研究新品种有时候我们想就是说可能也会自己研究一些嫁接的呀什么的水果就是希望它口感更好甜度更高产量更多对主要产量真的是产量反正怎么说反正现在我们主要是走生态这些产量的话就是当然没有那些可能就是说用化工原料什么的我们因为都是纯天然的可能在街我们以后就你看我们公司最初成立的时候就是那种大众品牌现在我们就是说走精品路线都是纯天然无污染的水果蔬菜主要是走精品路线以后现在我们都四五十个品种就是像现在这个超市的基本上供应反正都有吧就是这些西红柿啊土豆啊红萝卜啊白菜茄子现在这个我们北方这边基地就是生产这个大众的这个蔬菜比较多就是还有我们这个水果水果就是今年我们就是这个西瓜小柳请不吝点赞 订阅 转发 打赏支持明镜与点点栏目因为我们今年就是通过研究西瓜的口感还有皮更薄然后甜度更高所以消费者还是特别喜欢我们这个西瓜其他部分还有什么想要说的吗还有需要我帮助你们的吗我们物流这边如果咱们就是发展直播的话,我们会把物流这一块,原先我们是大批量的往外送,这样的话我们直播单子比较小,我们再发展一下我们的物流团队,成为一种散单子,往外送的方式,我们物流方面是想配合商售这一块的。业您好,焦焦,基于之前我们讨论的内容,关于即将举办的海南国书交流会,我们公司将如何展示我们的口号和【交】流经验,然后我们诚实针对善良提高和品种更新换代的问题,我们具体有哪些计划和措\n ###agent根据会议片段的输出开始：###\n此次会议提到即将举办的海南国书交流会上，我们将展示公司的主打口号——“有机生态园”以及相关方面的交流经验。计划派一位熟悉有机生态园水果生产的专家参与此次活动，以突出我们公司在有机蔬菜和水果方面的优势。此外，针对提升产量及品种更新换代的问题，我们已决定引进国际上的新品种进行试验，并继续优化现有的种植技术，同时增加大棚数量以扩大生产能力。我们还计划开发更多高甜度、高产量的新品种水果，确保产品保持高品质标准。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 还有就是近期,咱们要有一个国家倡访的果蔬,果蔬莲花股东,额地的一些蔬菜,会到海南有一个古书交流会这边各部门都有想法派谁过去生产生产的话我们就是我觉得我们现在主要都是生产我们现在以那个有机然后生态园打造然后我看我们这边有个专家他带着这个水果参加特别是介绍我们这个有机生态园的水果食材因为我们现在就是说主要是打造生态园就是有机蔬菜就可以派他过去嗯咱们要这个要打出咱们那个口号要交流一些这个这方面的一些经验因为咱那个现在这个市场上有些这个咱们这个产量目前咱们这个产量啊下半年这个帮我们这个销售这边说哈我觉得产量还是有有待提高的啊嗯 我们这边这个北方的话就是准备多弄几个大棚再再承包他的嗯 上线米地啊然后我们主要是你看现在我们就是本地公园的话啊 我们主要是晚上这个作业因为这个早上就是运走嘛让让人们吃上新鲜的蔬菜啊这过人也是比较心我们这个生产的话就是说就是除了这个生产还有打包这一步一直都是我们这边做打包的话就是基本上晚上供人们打包为了就是我们打包完了半夜来我们这个物流就运走了为了让人们早上吃上新鲜的蔬菜要去更新,换蛋目前的新品种,国际上的新品种也已经进入了要去试验,这方面试验工作,试验田有什么想要说吗?嗯之前就有这个试验田吧不过就是比较大众的一些品种吧现在如果要是引进一些国外的一些新型的品种第一是技术第二就是我们也是自己研究人员就是说买了种子吧回来得研究怎么种植是吧怎么去产量得了很多因素影响保育就是他们这个环境我们那是最主要的嗯 而且这个反正我们之前都走的是大众的因为大众呢他有些人不喜欢吃就接受这些新品种嘛不过现在就是说现在这个人们生活水平提高了反正就会走一些这些精品的路线嗯我们这个救资园这个研究基地呢反正也正在比如说都在研究新品种有时候我们想就是说可能也会自己研究一些嫁接的呀什么的水果就是希望它口感更好甜度更高产量更多对主要产量真的是产量反正怎么说反正现在我们主要是走生态这些产量的话就是当然没有那些可能就是说用化工原料什么的我们因为都是纯天然的可能在街我们以后就你看我们公司最初成立的时候就是那种大众品牌现在我们就是说走精品路线都是纯天然无污染的水果蔬菜主要是走精品路线以后现在我们都四五十个品种就是像现在这个超市的基本上供应反正都有吧就是这些西红柿啊土豆啊红萝卜啊白菜茄子现在这个我们北方这边基地就是生产这个大众的这个蔬菜比较多就是还有我们这个水果水果就是今年我们就是这个西瓜小柳请不吝点赞 订阅 转发 打赏支持明镜与点点栏目因为我们今年就是通过研究西瓜的口感还有皮更薄然后甜度更高所以消费者还是特别喜欢我们这个西瓜其他部分还有什么想要说的吗还有需要我帮助你们的吗我们物流这边如果咱们就是发展直播的话,我们会把物流这一块,原先我们是大批量的往外送,这样的话我们直播单子比较小,我们再发展一下我们的物流团队,成为一种散单子,往外送的方式,我们物流方面是想配合商售这一块的。业您好,焦焦,基于之前我们讨论的内容,关于即将举办的海南国书交流会,我们公司将如何展示我们的口号和【交】流经验,然后我们诚实针对善良提高和品种更新换代的问题,我们具体有哪些计划和措
+ ###agent根据会议片段的输出开始：###
+此次会议提到即将举办的海南国书交流会上，我们将展示公司的主打口号——“有机生态园”以及相关方面的交流经验。计划派一位熟悉有机生态园水果生产的专家参与此次活动，以突出我们公司在有机蔬菜和水果方面的优势。此外，针对提升产量及品种更新换代的问题，我们已决定引进国际上的新品种进行试验，并继续优化现有的种植技术，同时增加大棚数量以扩大生产能力。我们还计划开发更多高甜度、高产量的新品种水果，确保产品保持高品质标准。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+务的这个要改变吧嗯那也有方式对嗯是别的嗯销售也有好销售比如说就是增加一些直播设备嗯比如说光镜什么的你好娇娇基于之前我们讨论的内容关于即将举办的海南国输交流会我们可以跟主播合作然后咱可以配样咱们这个人咱们可以宣传他嗯是吧嗯那咱这场会议就先开到这了嗯你
+[Text Detection] 在 2120.22 秒检测到关键词 '焦焦',current_time: 2117.00, 问题文本: 你好焦焦关于小范围是点和增加加直播设备你有什么具体建议
+问题音频片段长度: 146603, dtype: float32, min: -0.06914901733398438, max: 0.05699920654296875
+问题音频时间长度: 9.1626875
+
+
+[Agent] 接收到问题: 我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像
+, 1735622780.3156366
+
+
+[Agent] 最终接收到问题: 我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像
+, 1735622780.315811
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：摄像
+
+
+提取的关键词: ['摄像']
+
+找到的上下文片段数量: 1
+
+Token count: 51, Total time: 19.8148 seconds, One token time: 0.3885 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：摄像', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 业您好,焦焦,基于之前我们讨论的内容,关于即将举办的海南国书交流会,我们公司将如何展示我们的口号和交流经验,然后我们诚实针对善良提高和品种更新换代的问题,我们具体有哪些计划和措施?务的这个要改变吧嗯那也有方式对嗯是别的嗯销售也有好销售比如说就是增加一些直播设备嗯比如说光镜什么的你好娇娇基于之前我们讨论的内容关于即将举办的海南国输交流会我们可以跟主播合作然后咱可以配样咱们这个人咱们可以宣传他嗯是吧嗯那咱这场会议就先开到这了嗯你我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的【摄】像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像\n ###agent根据会议片段的输出开始：###\n关于即将举行的海南国书交流会，我们将通过与主播合作来展示公司的口号及分享交流经验。对于提高善性和品种更新换代的问题，计划增加直播设备如镜头等，并通过这些改进来提升销售表现。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 业您好,焦焦,基于之前我们讨论的内容,关于即将举办的海南国书交流会,我们公司将如何展示我们的口号和交流经验,然后我们诚实针对善良提高和品种更新换代的问题,我们具体有哪些计划和措施?务的这个要改变吧嗯那也有方式对嗯是别的嗯销售也有好销售比如说就是增加一些直播设备嗯比如说光镜什么的你好娇娇基于之前我们讨论的内容关于即将举办的海南国输交流会我们可以跟主播合作然后咱可以配样咱们这个人咱们可以宣传他嗯是吧嗯那咱这场会议就先开到这了嗯你我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的【摄】像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像我可以在这里做一个小小的摄像
+ ###agent根据会议片段的输出开始：###
+关于即将举行的海南国书交流会，我们将通过与主播合作来展示公司的口号及分享交流经验。对于提高善性和品种更新换代的问题，计划增加直播设备如镜头等，并通过这些改进来提升销售表现。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+好焦焦关于小范围是点和增加加直播设备你有什么具体建议
+会议数据处理完成。

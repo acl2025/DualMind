@@ -1,0 +1,16 @@
+Question: 你好 焦焦如何判斷甲乙丙三方在撩咬狗豬撞人案中的連帶責任
+Instruction:
+你好 焦焦如何判斷甲乙丙三方在撩咬狗豬撞人案中的連帶責任
+
+Reference Answer:
+判断甲乙丙三方在该案中的连带责任，需分析各方过错程度、责任大小和行为对结果的影响度。考察各自行为与结果之间的因果关系，根据法律规定和相关责任原则（如过错责任原则、举证责任倒置原则等），综合评估确定各自的责任份额。
+
+Assistant Answer:
+none
+
+Feedback:
+The score rubric indicates that a score of 1 is given for responses that completely fail to address the user's query. This is evident in the response provided, which fails to engage with the core question about determining the chain of liability in a specific case. The absence of any relevant information or analysis renders the response ineffective and unhelpful for the user seeking guidance on legal responsibility. It does not fulfill the user's need for information, thereby failing to meet the criteria for correctness, relevance, simplicity, clarity, and completeness. The response does not include any content, making it unsuitable for the user's inquiry and therefore falls short in all aspects outlined in the rubric. Hence, it is deemed a complete failure in meeting the user's needs. 
+[RESULT] 1
+
+Score: 1
+--------------------------------------------------

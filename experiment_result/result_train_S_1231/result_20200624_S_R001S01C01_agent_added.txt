@@ -1,0 +1,218 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200624_S_R001S01C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Starting processing from 0s, total chunks: 78
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.18s/it]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+Loading Whisper model...
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.11it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.43s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:08<00:04,  4.83s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.93s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.54s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:09,  4.87s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.78s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.65s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.59s/it]
+我002我是记者吧012我是有交通员工016我是我是表画师咱们今天请到了表画师还有设计师还有专业的员工还有我们的专业专家来参加我们的人物专访在人物专访之前为大家说一下今天我们主要的一些什么基本上一就是三位的工作上的一些事情还有就是我们生活上的一些事情大家都可以放松一下不用那么紧张咱们先从我们员工刚上员工这边开始嗯,袁弘你在這個鋼廠這個崗位上工作了多少年了?大概十幾年了,快二十年了吧?嗯,在鋼廠工作十幾年,二十年了。嗯,行。嗯,在這麼工作這麼長時間,你肯定有很多想要,很多心得,很多這個技巧,能不能給我們說一說嗎?技巧是有的,但也不是说很多因为他所从事的就是一个循环的劳动然后把自己的流水职业差不多吧,基本上我们这儿从事的可以说是也算流水职业,但是他那些都是机器我们只负责的就是检修机器,更换设备这样的话就成了一个循环的劳动力了然后技巧吧就是在工作当中然后总结的一些技巧也有规范的劳动流程所以说我们这个一般来说还应该算是一个循环的劳动吧嗯行目前我听到过你是你们这个今年的一个优秀员工是吧我多次被评为年度优秀员工您是如何成为这个优秀员工的您有什么经验要和这个故事有关这些新年工作的这个吧,我们无非就是对工作尽心尽诚然后你在工作中的细节就是发现问题及时处理然后发现每招及时的支持和自己的同事员工们打好关系然后工作当中互相提醒互相爱好互相帮助怎么说呢我们在工作中受到领导的赏识所以说很多次被评为年轻就是员工,这个大家伙也都有目共睹的,所以说也靠大家吧,也都是互相理解。还有就是您和公司一起的这些风风雨雨当中,有哪些难忘的经历?难忘的就是我们一起去掏大屋因为我们的炉子它是一个蓄热式的它要定期我们中秋的时候需要大伙员工来去掏这个炉子因为这个炉子呢如果它不定期掏的话他就会堵住了氧化铁就会盖住了然后它就没办法再进行生产了这个活儿呢是又脏又累因为我们当时考虑到说不行把这个活儿外包出去结果人家外包的人来这儿看了一眼我们说三千块钱行吧然后人家看了看人家说给我们再多的钱我们也不干这个就不是人干的活儿因为它弯出来的氧化铁皮它是有温度的我们没办法外包也外包不出去所以说只能客服我们自己工人们十几个人然后倒弯的进去来偷然后大伙都是又是大夏天的烤的一个个的是汗流浃沸特别的几乎人都快虚脱了但是我们还是努力的把这个炉子清干净让我是特别的难忘特别难忘这个活太难忘了那您对你的上司有什么看法您是如何去处理与他们的关系的上司对我们的主任班长我们的班长挺尽职的特别的尽职然后是从我们扎线的东头一直给你转入新的不停地在看每个岗位,在帮助每个岗位,发现哪里有问题就赶快到那里来。然后主任也是定时地去问问以前的工人哪里不足了,家庭是不是有什么不好了,然后即时地给予员工帮助。所以我们的领导还是很不错的。那你今天是如何兼顾这个失业瑜伽你的家庭支持你的工作吗家庭 我的家庭非常和谐我爱人非常支持我的工作从话说嘛 高高兴兴上班去平平安安回家来我在班上上班累了回家就管得少了一般都是媳妇管孩子家里的一些家务呢我爱人干的比较多我呢就一心扳心地上班然后挣钱就可以了家里的事管的就少一点我爱人在家里就付出比较多一点那您觉得作为一个这个普通的员工怎么具体应该为公司做些什么该怎么做呢嗯就静尽之尽责就可以了我们的一个因为我们的港妹都是一个萝卜一个坑对吧我们也不允许串港然后上班的时候及时到港然后别早退别迟到是吧然后办你自己的工作点点好不出事故然后能够顺利的让我们这个班生产完毕对吧然后达到高产就
+[Text Detection] 在 501.61 秒检测到关键词 '焦焦',current_time: 493.00, 问题文本: 就可以了那您对员工持股有什么感觉你好焦焦刚刚员工如何被评为年度优秀员工有哪些经验可以分享持股还是持住持股有什么看法我们前期的时候
+问题音频片段长度: 150358, dtype: float32, min: -0.261322021484375, max: 0.22259521484375
+问题音频时间长度: 9.397375
+
+
+[Agent] 接收到问题: 你好 焦焦刚刚员工如何被评为年度优秀员工
+, 1735621399.806627
+
+
+[Agent] 最终接收到问题: 你好 焦焦刚刚员工如何被评为年度优秀员工
+, 1735621399.8067355
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+评选为年度优秀员工通常会考虑员工在这一年的工作绩效、团队合作、创新能力以及对公司的贡献度等多个方面。被评为年度优秀员工是对员工努力工作的肯定，也是对其未来工作的一种激励。
+talker 输出结束
+可以了那您对员工持股有什么感觉你好焦焦刚刚员工如何被评为年度优秀员工有哪些经验可以分享持股还是持住持股有什么看法我们前期的时候要说吧比现在银行或者炒股翻翻的力度还是很大的但是因为企业的改制迫使必须要把员工的股份收回然后现在是公司自己吃股是这样的把打工人的股份都收回了因为我们现在改成一个国有制改为私有制您是当时您办这个优秀员工奖的时候,您在领奖台有什么感想吗?这个奖位不止属于我个人,也属于大陆。然后这个优秀员工奖嘛,说多不说也说少不少,给发了大概一千多块钱。我们也不是那小气的人,然后我们班的人,走,咱们一块去,下轨子,搓一顿。我花的比员工的奖励还要多他们都开玩笑的说我说下回我不当理由就了换人当不能老叫我当了那您觉得个人利益与公司利益直接有何联系呢我觉得个人利益跟公司利益发生矛盾的时候还是公司利益为主个人利益是比较小的但是如果工作安全出现冲动的时候,安全是第一位,所以公司的利益又就是第二位了。是这样的,这是我个人的吧。那你有什么话想对你们这个公司说的吗?我想对我们公司说的就是,现在防暴压力大,然后我希望我们的公司能够蒸蒸日上吧。那说一下生活上的一些问题,您在生活和工作当中最主要的目标是什么?目标吧,就是我觉得我们厂子现在面临困难,基本上两个多月没有开过公司了,希望它能够按时的发放工资,这样的话我们生活水平不错。可以提高一点没必要那么紧张那您除了上班在家里您喜欢干点什么在家里呢平时跟几个好友一块踢踢球踢球对然后,下班的时候我们也可以组织一下去爬山爬山嗯,爬爬山的时候,中午咱们都找一个饭店,好好地吃点喝点,然后下午就回来哦,爱好出去吧对嗯,行嗯,还有,咱们这个,嗯,那对于未来,这个,你想成为这个管理长辈吗?暂时没有这个想法因为我们这儿的管理层都是有文凭有学历的像我们都是基校毕业的没有学历的就是雇个温饱就可以了先不要然後咱們那一條那咱們就是先把这个视角转到设计师这边来你从事设计师多久了我从事的时间不长还有三四年吧三四年嗯你是在哪家设计公司工作的在新台业热之锋设计那你们平常都是设计公司都是针对您的哪些东西去设计的?就是室内设计,就是房子,小区,别墅,富士公寓就是家装,装修这方面那您是和装修公司合作吗?不是,就是在装修公司上班就是在装修公司里面的一个设计部门?对行那你平常在公司里面觉得你和同事的相处的关系怎么样?你是如何与他们相处的呢?我们相处的也都挺融洽的,因为大部分都是二三十的这些小姑娘或者小伙子所以相处都还是比较融洽,说起话来也没有太多的代高什么的那你们那儿没有年纪?从业时间很长的人吗?很少,有两三个吧,也就是三十多岁哦是不是他们在业务能力上比较强呢?对,他们业务能力比我们强一点还有就是你觉得你现在设计这个领域这个市场空间有多大?前面有多大?我感觉这个前景应该是很有前途的因为我感觉我们生活中哪都离不开设计吧小到一个椅子桌子然后再大就是这些家装然后工装感觉这些前途是很有前途的而且设计里边因为大多都连着比较紧请不吝点赞 订阅 转发 打赏支持明镜与点点栏目所以就是比如在加工这一块,我觉得发展挺好的,也可以对工庄有所研究什么的。原来从事设计这个专业,一毕业就来到了公司把孩子了。对,一毕业从实习开始,然后就一直在这儿。那你覺得你們公司目前这个运营模式是怎么样的运营情况还可以吧因为叶之锋也是有两家连锁的两家连锁对那你们这个工资是一个什么样的体系的像你们设计师的工资应该很高吧也是看个人能力吧看个人能力因为现在设计师其
+[Text Detection] 在 1011.13 秒检测到关键词 '娇娇',current_time: 986.00, 问题文本: 其实也和销售有点挂钩就是客户来了你要跟人家谈然后谈成了之后再设计然后最后出租是根据这些客人的一些要求对所以就是看客人能力吧你好 娇娇基于之前我们讨论的
+问题音频片段长度: 542198, dtype: float32, min: -0.314056396484375, max: 0.319244384765625
+问题音频时间长度: 33.887375
+
+
+[Agent] 接收到问题: 你好 焦焦基于之前我们讨论的内容关于员工持股的问题你提到了公司曾经搞过员工持股后来因为改制把个人的股份都退回了我想请问一下当时员工退股份时每个人大概退回了多少钱退回的金额与最初入股时的金额相比大概翻了多少倍
+, 1735621428.0177214
+
+
+[Agent] 最终接收到问题: 你好 焦焦基于之前我们讨论的内容关于员工持股的问题你提到了公司曾经搞过员工持股后来因为改制把个人的股份都退回了我想请问一下当时员工退股份时每个人大概退回了多少钱退回的金额与最初入股时的金额相比大概翻了多少倍
+, 1735621428.017827
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：员工持股 股份退回 金额比较 改制
+
+
+提取的关键词: ['员工持股', '股份退回', '金额比较', '改制']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:261: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+
+Token count: 58, Total time: 22.9806 seconds, One token time: 0.3962 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：员工', '持股', ' ', '股', '份', '退回', ' ', '金额', '比较', ' ', '改', '制', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 那你今天是如何兼顾这个失业瑜伽你的家庭支持你的工作吗家庭 我的家庭非常和谐我爱人非常支持我的工作从话说嘛 高高兴兴上班去平平安安回家来我在班上上班累了回家就管得少了一般都是媳妇管孩子家里的一些家务呢我爱人干的比较多我呢就一心扳心地上班然后挣钱就可以了家里的事管的就少一点我爱人在家里就付出比较多一点那您觉得作为一个这个普通的员工怎么具体应该为公司做些什么该怎么做呢嗯就静尽之尽责就可以了我们的一个因为我们的港妹都是一个萝卜一个坑对吧我们也不允许串港然后上班的时候及时到港然后别早退别迟到是吧然后办你自己的工作点点好不出事故然后能够顺利的让我们这个班生产完毕对吧然后达到高产就你好 焦焦刚刚员工如何被评为年度优秀员工可以了那您对【员】工持股有什么感觉你好焦焦刚刚员工如何被评为年度优秀员工有哪些经验可以分享持股还是持住持股有什么看法我们前期的时候要说吧比现在银行或者炒股翻翻的力度还是很大的但是因为企业的改制迫使必须要把员工的股份收回然后现在是公司自己吃股是这样的把打工人的股份都收回了因为我们现在改成一个国有制改为私有制您是当时您办这个优秀员工奖的时候,您在领奖台有什么感想吗?这个奖位不止属于我个人,也属于大陆。然后这个优秀员工奖嘛,说多不说也说少不少,给发了大概一千多块钱。我们也不是那小气的人,然后我们班的人,走,咱们一块去,下轨子,搓一顿。我花的比员工的奖励还要多他们都开玩笑的说我说下回我不当理由就了换人当不能老叫我当了那您觉得个人利益与公司利益直接有何联系呢我觉得个人利益跟公司利益发生矛盾的时候还是公司利益为主个人利益是比较小的但是如果工作安全出现冲动的时候,安全是第一位,所以公司的利益又就是第二位\n---\n可以提高一点没必要那么紧张那您除了上班在家里您喜欢干点什么在家里呢平时跟几个好友一块踢踢球踢球对然后,下班的时候我们也可以组织一下去爬山爬山嗯,爬爬山的时候,中午咱们都找一个饭店,好好地吃点喝点,然后下午就回来哦,爱好出去吧对嗯,行嗯,还有,咱们这个,嗯,那对于未来,这个,你想成为这个管理长辈吗?暂时没有这个想法因为我们这儿的管理层都是有文凭有学历的像我们都是基校毕业的没有学历的就是雇个温饱就可以了先不要然後咱們那一條那咱們就是先把这个视角转到设计师这边来你从事设计师多久了我从事的时间不长还有三四年吧三四年嗯你是在哪家设计公司工作的在新台业热之锋设计那你们平常都是设计公司都是针对您的哪些东西去设计的?就是室内设计,就是房子,小区,别墅,富士公寓就是家装,装修这方面那您是和装修公司合作吗?不是,就是在装修公司上班就是在装修公司里面的一个设计部门?对行那你平常在公司里面觉得你和同事的相处的关系怎么样?你是如何与他们相处的呢?我们相处的也都挺融洽的,因为大部分都是二三十的这些小姑娘或者小伙子所以相处都还是比较融洽,说起话来也没有太多的代高什么的那你们那儿没有年纪?从业时间很长的人吗?很少,有两三个吧,也就是三十多岁哦是不是他们在业务能力上比较强呢?对,他们业务能力比我们强一点还有就是你觉得你现在设计这个领域这个市场空间有多大?前面有多大?我感觉这个前景应该是很有前途的因为我感觉我们生活中哪都离不开设计吧小到一个椅子桌子然后再大就是这些家装然后工装感觉这些前途是很有前途的而且设计里边因为大多都连着比较紧请不吝点赞 订阅 转发 打赏支持明镜与点点栏目所以就是比如在加工这一块,我觉得发展挺好的,也可以对工庄有所研究什么的。原来从事设计这个专业,一毕业就来到了公司把孩子了。对,一毕业从实习开始,然后就一直在这儿。那你覺得你們公司目前这个运营模式是怎么样的运营情况还可以吧因为叶之锋也是有两家连锁的两家连锁对那你们这个工资是一个什么样的体系的像你们设计师的工资应该很高吧也是看个人能力吧看个人能力因为现在设计师其你好 焦焦基于之前我们讨论的内容关于【员】工持股的问题你提到了公司曾经搞过员工持股后来因为改制把个人的股份都退回了我想请问一下当时员工退股份时每个人大概退回了多少钱退回的金额与最初入股时的金额相比大概翻了多\n ###agent根据会议片段的输出开始：###\n根据会议内容，员工持股计划起初实施时，员工投入的资金后来因企业改制被回收。虽然没有明确提及具体的金额数字，但参与者表示回收金额相比初始投入有了显著增长。不过，确切的金额数值并未在会议记录中给出详细说明。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 那你今天是如何兼顾这个失业瑜伽你的家庭支持你的工作吗家庭 我的家庭非常和谐我爱人非常支持我的工作从话说嘛 高高兴兴上班去平平安安回家来我在班上上班累了回家就管得少了一般都是媳妇管孩子家里的一些家务呢我爱人干的比较多我呢就一心扳心地上班然后挣钱就可以了家里的事管的就少一点我爱人在家里就付出比较多一点那您觉得作为一个这个普通的员工怎么具体应该为公司做些什么该怎么做呢嗯就静尽之尽责就可以了我们的一个因为我们的港妹都是一个萝卜一个坑对吧我们也不允许串港然后上班的时候及时到港然后别早退别迟到是吧然后办你自己的工作点点好不出事故然后能够顺利的让我们这个班生产完毕对吧然后达到高产就你好 焦焦刚刚员工如何被评为年度优秀员工可以了那您对【员】工持股有什么感觉你好焦焦刚刚员工如何被评为年度优秀员工有哪些经验可以分享持股还是持住持股有什么看法我们前期的时候要说吧比现在银行或者炒股翻翻的力度还是很大的但是因为企业的改制迫使必须要把员工的股份收回然后现在是公司自己吃股是这样的把打工人的股份都收回了因为我们现在改成一个国有制改为私有制您是当时您办这个优秀员工奖的时候,您在领奖台有什么感想吗?这个奖位不止属于我个人,也属于大陆。然后这个优秀员工奖嘛,说多不说也说少不少,给发了大概一千多块钱。我们也不是那小气的人,然后我们班的人,走,咱们一块去,下轨子,搓一顿。我花的比员工的奖励还要多他们都开玩笑的说我说下回我不当理由就了换人当不能老叫我当了那您觉得个人利益与公司利益直接有何联系呢我觉得个人利益跟公司利益发生矛盾的时候还是公司利益为主个人利益是比较小的但是如果工作安全出现冲动的时候,安全是第一位,所以公司的利益又就是第二位
+---
+可以提高一点没必要那么紧张那您除了上班在家里您喜欢干点什么在家里呢平时跟几个好友一块踢踢球踢球对然后,下班的时候我们也可以组织一下去爬山爬山嗯,爬爬山的时候,中午咱们都找一个饭店,好好地吃点喝点,然后下午就回来哦,爱好出去吧对嗯,行嗯,还有,咱们这个,嗯,那对于未来,这个,你想成为这个管理长辈吗?暂时没有这个想法因为我们这儿的管理层都是有文凭有学历的像我们都是基校毕业的没有学历的就是雇个温饱就可以了先不要然後咱們那一條那咱們就是先把这个视角转到设计师这边来你从事设计师多久了我从事的时间不长还有三四年吧三四年嗯你是在哪家设计公司工作的在新台业热之锋设计那你们平常都是设计公司都是针对您的哪些东西去设计的?就是室内设计,就是房子,小区,别墅,富士公寓就是家装,装修这方面那您是和装修公司合作吗?不是,就是在装修公司上班就是在装修公司里面的一个设计部门?对行那你平常在公司里面觉得你和同事的相处的关系怎么样?你是如何与他们相处的呢?我们相处的也都挺融洽的,因为大部分都是二三十的这些小姑娘或者小伙子所以相处都还是比较融洽,说起话来也没有太多的代高什么的那你们那儿没有年纪?从业时间很长的人吗?很少,有两三个吧,也就是三十多岁哦是不是他们在业务能力上比较强呢?对,他们业务能力比我们强一点还有就是你觉得你现在设计这个领域这个市场空间有多大?前面有多大?我感觉这个前景应该是很有前途的因为我感觉我们生活中哪都离不开设计吧小到一个椅子桌子然后再大就是这些家装然后工装感觉这些前途是很有前途的而且设计里边因为大多都连着比较紧请不吝点赞 订阅 转发 打赏支持明镜与点点栏目所以就是比如在加工这一块,我觉得发展挺好的,也可以对工庄有所研究什么的。原来从事设计这个专业,一毕业就来到了公司把孩子了。对,一毕业从实习开始,然后就一直在这儿。那你覺得你們公司目前这个运营模式是怎么样的运营情况还可以吧因为叶之锋也是有两家连锁的两家连锁对那你们这个工资是一个什么样的体系的像你们设计师的工资应该很高吧也是看个人能力吧看个人能力因为现在设计师其你好 焦焦基于之前我们讨论的内容关于【员】工持股的问题你提到了公司曾经搞过员工持股后来因为改制把个人的股份都退回了我想请问一下当时员工退股份时每个人大概退回了多少钱退回的金额与最初入股时的金额相比大概翻了多
+ ###agent根据会议片段的输出开始：###
+根据会议内容，员工持股计划起初实施时，员工投入的资金后来因企业改制被回收。虽然没有明确提及具体的金额数字，但参与者表示回收金额相比初始投入有了显著增长。不过，确切的金额数值并未在会议记录中给出详细说明。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+实也和销售有点挂钩就是客户来了你要跟人家谈然后谈成了之后再设计然后最后出租是根据这些客人的一些要求对所以就是看客人能力吧你好 娇娇基于之前我们讨论的你平常遇到过的客人都有哪方面的要求首先肯定是你先跟人家设计一下然后人家就看你你设计出来出租之后人家再看满不满意比如说哪一块想改动一下或者什么的然后你就帮人家改动是初级款吗 还是怎么一般初一款就行初一款对 初一款让人家看然后不行的话你就跟人家改动就行还有就是你在这个公司设计的工作当中,你遇到过哪些困难,难题是又是怎么克服的?肯定有,就比如碰到有一些难缠的客人。难缠?这怎么说呢?怎么难缠呢?就是他比较苛刻,然后对要求挺多的,然后一点不过。不如他一样他就比如说说话上面不好听或者一个小小的细节然后人家就很就很难受还有就是想问这个你觉得你的个人性格是怎样的个人什么个人性格觉得对你这个工作有什么影响吗有影响因为我个人是比较属于,不能说内向吧,反正也不是很外向的,所以在销售,因为要和销售要谈客户嘛,在这个上面就稍微比别人稍微弱一点,但是我也一直在努力。就沟通那边,这方面。对,沟通那边比别人稍微弱一点。是因为你这个要接触客户,设计师要接触一些客户,要跟他们去沟通。对。那你觉得自己的一些独特的东西呢?是他们没有的,其他设计师没有的。我比较擅长做图。做图。对。做图做图。就是想法比较多目前你刚才也说了有问到市场这方面你觉得你未来会有什么样的规划因为我们这个公司也是有几家连锁的所以现在联锁的就是你会有很大上升空间就是你要是表现好的或者你能力比较在提高挺好的话会升你经理呀再往上就是店长而且因为和别的店因为是联锁的嘛就是你有能力的话你就完全可以就是直接可以就把你调到别的店去别的店当经理呀当店长我感觉还是前锋就是挺好的那你自己的目标我的目标就是当店长当店长当店长是直接管理吗?不用再去设计了?对,就是管理层。当然这都是靠努力吧。首先是管理层,然后手下比如说有些他们谈不成的单子,可以帮忙去谈。也需要自己去盈产。一般就是管理他们。一直帮他们协助对开会或者给他们开会帮他们想怎么去留个客户负责公司的一些日常事务对那平常除了工作之余你有什么样的业余案吗比较喜欢旅游看个业余时间的话就喜欢去旅游然后爬爬山呀平常都喜欢去哪些地方因为可能学设计的然后因为这些建筑一类的比较感兴趣对然后现在还没有多大能力可以出国所以就去一些大城市里边去南方那边香港呀上海呀那边的建筑跟咱们这边的建筑很区别南方和北方的一些建筑那边到底是大城市吧然后比如我们这边就是高楼大厦要很多然后那些建筑也挺不一样的然后有看起来就很时尚的那种感觉对就是你看着就是有一种哇果然是大城市的感觉那你觉得你原来一些你对古建筑感感兴趣吧,但是这个研究的比较少,没有往这边深到我。原来你从事设计专业,当时是室内设计专业,这个领域。室内设计一般都会说是现代装修,现代装修还有古代的一些。这些就涉及到之前上学的那些书本上的知识了就是从古代那些建筑学然后一直到现在这些建筑学就是区别或者一步一步发展因为古代和现在肯定有很大区别但是从这个行业之后大部分肯定都是周边这些小区或者就是别墅这就是阳房古代那些还没有碰到你觉得古代和现代这些具有最大的区别在哪里最大的区别设计这方面有没有不同呢我感觉古代的一些设计就是比较偏中式一点但是现在的话就很多比如说最常见的现代就是现代这个风格或者一些北欧的一些风格北欧一些像古代的话就是中式啊或者欧式那种比较舒服古代的一些建筑咱们讲究这个对称是吧嗯对称 对就是这边有个东西那边也需要一个东西现在还讲究这些吗现在设计这一方面挺广泛的然后像从古代一些中式啊或者比较欧式的那些到现在演变成新中式或者北欧这些风格所以还好北欧是那个这个风格是北欧就是比较简单的一些简约风简约风也不能说是简约就是继承了一些欧式的一些元素但是到北欧式的话是比欧式要简单像欧式的话讲究线条美,就是比如说你看到你的房顶的设计啊,或者你的沙发床的设计啊,就是线条会很,这欧式嘛,我们都知道,就是那些线条美。行,这方面具体多说我也不太懂,这些专业数据,先回到我们这个问题上。目前
+[Audio Detection] 在 1548.60 秒检测到关键词 '好交交'。
+detection_time: 1548.60, current_time: 1537.00
+问题音频片段长度: 140630, dtype: float32, min: -0.413421630859375, max: 0.32781982421875
+问题音频时间长度: 8.789375
+
+
+[Agent] 接收到问题: 设计师在与客户沟通时遇到哪些难题通常如何克服
+, 1735621494.1268246
+
+
+[Agent] 最终接收到问题: 设计师在与客户沟通时遇到哪些难题通常如何克服
+, 1735621494.1269915
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 40, Total time: 1.8504 seconds, One token time: 0.0463 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在与客户沟通时，设计师可能会遇到的问题包括理解客户需求不清晰、客户期望过高、缺乏沟通技巧、文化差异等。为克服这些问题，设计师可以采用主动倾听、明确表达、反复确认、提供解决方案等方式进行有效沟通，并且尊重客户的期望和需求，同时也要充分考虑项目的实际情况和可能的挑战。
+talker 输出结束
+保好自己就行了然后希望发展更好然后到现在到慢慢有能力现在是管好自己的事情然后到慢慢有能力的话就是为父母分担然后需要警察的哦行那你觉得在这个工作的当中你这里感到最自豪的一些事情最自豪的就是去年获得一个优秀设计师的奖对参加比赛吧参加比赛因为有好几家联手店然后就是一块然后给你一个就是一个图在它的莲黄面前一个图在它的就是先出击的一个图然后让你设计或者怎么着,然后获得影响嗯行那咱们把咱们这个视角先转到咱们这个嗯裱花师这边是吧嗯,裱花师哦,裱花师嗯是多久了?有四年有四年嗯对于这个行业有什么样的看法?这个行业因为现在开的就是蛋糕店挺多的蛋糕店挺多的对,比较多然后呢?累吗?嗯,还行吧不是很累因为这个就是手手就行所以就是这不是就这个也可以写一会儿这也得有表面自己这个也需要自己设计嗯平常都喜欢哪种工作平常就是应期工作什么应期工作就是一些网红款网红款平常订这种这种款式的对现在的比较流行那种那在这个平常一般一天工作多长时间工作七八个小时七八个小时还有就是咱们这个对这个表花师这个行业你觉得有什么样的对这个市场有多大前景你对这个工作的前景如何看待前景现在是挺难的这个行业因为开的人就比较多然后我们这个也是一个连锁店然后就是一些好的品房他们都是有那种促销啊什么搞这些活动前景还是就是会活动多一点你觉得表花师马上会做到什么?马上就是店经理有过这种想当大师傅现在因为干的时间比较长嘛,就是四年了其实也是带过一些学徒原来是在公司培训还是在学校培训?在公司培训,也是从小学读开始的。平常都会带过几个学生过来教你们什么?就是从最基础的初级点,先打发奶油,是念写字体字体嗯还有挤生肖还有挤花这个就是出级的字体这方面它有模板吗没有模板没有就是因为嗯就每个店都会有都会有模板就是嗯一些图图册图片你就照着这个上面就是必须要达到98%的相似度必须这个哦就这就得可以多练习的对,和国行大家摆的这个打相平常你们这个门店里面的一些这个蛋糕有分哪几种呢水果款水果款对,还有就是纯奶油款然后就是比较复杂的那种比较复杂的那种艺术型的艺术类的那种有些就有客户的要求接到过客户有的客户就是会拿着一些网上的图片然后让你就是做然后有些logo都是一些公司的那种logo会让你做会有难度因为是没有做过的以前没有做过的比如说一些logo必须你要想办法是用什么火糕或者是奶油去做就得选材对,在选材上面比较难那你接触过最难的一件最难的就是设计他们的logologo,他们的logo比较复杂对对对,比较复杂但这个刚才也说了,为他们顾客量身设计这款蛋糕,这个价格是不是比较实惠?就是比店里的一些样品要贵。嗯。因为你自己加东西在里面,就是自己按着他们那样做的话,你可能需要自己创新一些东西。嗯。嗯。还有就是自己创新一些东西平常去你们店里面的一些都是针对哪些人针对成年小孩老人都有小孩带的包是不是一般家庭都订的比较小的小彩金质小彩金质的一些小包包谢谢然
+[Text Detection] 在 2053.34 秒检测到关键词 '娇娇',current_time: 2030.00, 问题文本: 然后咱们也在关于生活上的一些问题在生活当中你觉得你是一个有什么样的事情会让你感到快乐吗事情就比如说放假呀想不想放假给你感到快乐你好娇娇基于之前我们讨论的内容你提到了
+问题音频片段长度: 545611, dtype: float32, min: -0.42913818359375, max: 0.351348876953125
+问题音频时间长度: 34.1006875
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容你提到了作为表花师在设计蛋糕时遇到的一些挑战特别是关于客户要求要求和logo设计的复杂性我想请问一下当你为顾客量深设计蛋糕时通常会如何平衡创新和满足客户需求之间的关系特别是在面对复杂牢沟设计时
+, 1735621521.5106497
+
+
+[Agent] 最终接收到问题: 你好焦焦基于之前我们讨论的内容你提到了作为表花师在设计蛋糕时遇到的一些挑战特别是关于客户要求要求和logo设计的复杂性我想请问一下当你为顾客量深设计蛋糕时通常会如何平衡创新和满足客户需求之间的关系特别是在面对复杂牢沟设计时
+, 1735621521.5107694
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：客户要求 logo设计 复杂性 平衡创新 满足客户需求
+
+
+提取的关键词: ['客户要求', 'logo设计', '复杂性', '平衡创新', '满足客户需求']
+
+找到的上下文片段数量: 1
+
+Token count: 92, Total time: 35.9206 seconds, One token time: 0.3904 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：客户', '要求', ' ', 'logo设计', ' ', '复', '杂', '性', ' ', '平', '衡', '创新', ' ', '满', '足', '客户需求', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 平常都会带过几个学生过来教你们什么?就是从最基础的初级点,先打发奶油,是念写字体字体嗯还有挤生肖还有挤花这个就是出级的字体这方面它有模板吗没有模板没有就是因为嗯就每个店都会有都会有模板就是嗯一些图图册图片你就照着这个上面就是必须要达到98%的相似度必须这个哦就这就得可以多练习的对,和国行大家摆的这个打相平常你们这个门店里面的一些这个蛋糕有分哪几种呢水果款水果款对,还有就是纯奶油款然后就是比较复杂的那种比较复杂的那种艺术型的艺术类的那种有些就有客户的要求接到过客户有的客户就是会拿着一些网上的图片然后让你就是做然后有些logo都是一些公司的那种logo会让你做会有难度因为是没有做过的以前没有做过的比如说一些logo必须你要想办法是用什么火糕或者是奶油去做就得选材对,在选材上面比较难那你接触过最难的一件最难的就是设计他们的logologo,他们的logo比较复杂对对对,比较复杂但这个刚才也说了,为他们顾客量身设计这款蛋糕,这个价格是不是比较实惠?就是比店里的一些样品要贵。嗯。因为你自己加东西在里面,就是自己按着他们那样做的话,你可能需要自己创新一些东西。嗯。嗯。还有就是自己创新一些东西平常去你们店里面的一些都是针对哪些人针对成年小孩老人都有小孩带的包是不是一般家庭都订的比较小的小彩金质小彩金质的一些小包包谢谢然你好焦焦基于之前我们讨论的内容你提到了作为表花师在设计蛋糕时遇到的一些挑战特别是关于【客】户要求要求和logo设计的复杂性我想请问一下当你为顾客量深设计蛋糕时通常会如何平衡创新和满足客户需求之间的关系特别是在面对复杂牢沟设\n ###agent根据会议片段的输出开始：###\n当表花师为顾客量身设计蛋糕时，通常会尝试在满足客户需求的同时加入创新元素。特别是对于复杂logo的设计，虽然难度较大，但通过选择合适的材料和技术手法，能够实现创新与客户需求的平衡。例如，在制作过程中，他们会依据顾客提供的图片或具体需求来构思蛋糕的整体风格，并在此基础上进行适当的创意调整，以确保最终作品既符合客户的期望又能体现一定的独特性和美感。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 平常都会带过几个学生过来教你们什么?就是从最基础的初级点,先打发奶油,是念写字体字体嗯还有挤生肖还有挤花这个就是出级的字体这方面它有模板吗没有模板没有就是因为嗯就每个店都会有都会有模板就是嗯一些图图册图片你就照着这个上面就是必须要达到98%的相似度必须这个哦就这就得可以多练习的对,和国行大家摆的这个打相平常你们这个门店里面的一些这个蛋糕有分哪几种呢水果款水果款对,还有就是纯奶油款然后就是比较复杂的那种比较复杂的那种艺术型的艺术类的那种有些就有客户的要求接到过客户有的客户就是会拿着一些网上的图片然后让你就是做然后有些logo都是一些公司的那种logo会让你做会有难度因为是没有做过的以前没有做过的比如说一些logo必须你要想办法是用什么火糕或者是奶油去做就得选材对,在选材上面比较难那你接触过最难的一件最难的就是设计他们的logologo,他们的logo比较复杂对对对,比较复杂但这个刚才也说了,为他们顾客量身设计这款蛋糕,这个价格是不是比较实惠?就是比店里的一些样品要贵。嗯。因为你自己加东西在里面,就是自己按着他们那样做的话,你可能需要自己创新一些东西。嗯。嗯。还有就是自己创新一些东西平常去你们店里面的一些都是针对哪些人针对成年小孩老人都有小孩带的包是不是一般家庭都订的比较小的小彩金质小彩金质的一些小包包谢谢然你好焦焦基于之前我们讨论的内容你提到了作为表花师在设计蛋糕时遇到的一些挑战特别是关于【客】户要求要求和logo设计的复杂性我想请问一下当你为顾客量深设计蛋糕时通常会如何平衡创新和满足客户需求之间的关系特别是在面对复杂牢沟设
+ ###agent根据会议片段的输出开始：###
+当表花师为顾客量身设计蛋糕时，通常会尝试在满足客户需求的同时加入创新元素。特别是对于复杂logo的设计，虽然难度较大，但通过选择合适的材料和技术手法，能够实现创新与客户需求的平衡。例如，在制作过程中，他们会依据顾客提供的图片或具体需求来构思蛋糕的整体风格，并在此基础上进行适当的创意调整，以确保最终作品既符合客户的期望又能体现一定的独特性和美感。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+后咱们也在关于生活上的一些问题在生活当中你觉得你是一个有什么样的事情会让你感到快乐吗事情就比如说放假呀想不想放假给你感到快乐你好娇娇基于之前我们讨论的内容你提到了那你觉得是什么样的性格性格比较内敛吧内敛内敛对这个表分这个没有影响没有影响因为这个就是在用后顾然后嫌隙的话你肯定是需要就是如果需要沟通的话你都适合嫌隙的就不用和顾客直接等所以没有什么东西那就是前厅的人对 前厅就是那就有更好传达顾客的要求对 就他们他中间有一个怎么说呢你跟顾客中间有一个人去传达平常会喜欢读书吗?很少读书那表花的会看一些?表花的会看一些一些大师设计的一些款式谢谢大家那你对于有没有影响到这些人?有,因为会给你更加多的一些创新性主要是灵感,是吧?对好的,那平常怎么做?平常喜欢旅游吗?喜欢旅游喜欢旅游,去哪里?就去过海边,然后最多的就是爬山爬山,对,行行,那今天咱们这个专访就到此结束,感谢三位的利用。
+[Audio Detection] 在 2237.22 秒检测到关键词 '好交交'。
+detection_time: 2237.22, current_time: 2233.00
+问题音频片段长度: 113947, dtype: float32, min: -0.281280517578125, max: 0.26263427734375
+问题音频时间长度: 7.1216875
+
+
+[Agent] 接收到问题: 如何通过沟通和设计书籍提升表花工作和旅游体验
+, 1735621580.162539
+
+
+[Agent] 最终接收到问题: 如何通过沟通和设计书籍提升表花工作和旅游体验
+, 1735621580.1626425
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 60, Total time: 2.0758 seconds, One token time: 0.0346 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+通过沟通和设计书籍可以帮助提升表花工作和旅游体验。首先，与团队成员进行有效的沟通，了解他们的需求和期望，并将这些需求和期望转化为可操作的设计方案。其次，在设计过程中，应注重用户体验，考虑到各种细节，如排版、色彩、字体等，以确保用户在阅读书籍时能够获得良好的视觉体验。最后，通过不断地测试和反馈，对设计进行调整和完善，最终打造出高质量的书籍产品。
+talker 输出结束
+
+会议数据处理完成。

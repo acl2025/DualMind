@@ -1,0 +1,213 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200702_S_R001S07C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Starting processing from 0s, total chunks: 66
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.43it/s]/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.67s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.82s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.28s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.30s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.38s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.35s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.49s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.68s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:18<00:05,  5.26s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.95s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.95s/it]
+我002我是总监003我是一区经理020我是二区经理00753区经理行咱们把最区的经理叫过来是跟平常一样的总结一周的总结会所以在上周各区的情况我们这个先各区经理先汇报下来上周各区的销售情况业绩这一块请不吝点赞 订阅 转发 打赏支持明镜与点点栏目现在在A区建筑在市场A区对于矿主要销售的华为手机是比较多的因为从华为手机主要的咱们上半年主要区间销售比较好上半年咱们这个区间价格在4000到6000之间对 卖的比较好的就是这个华为冰糖P40 Pro然后再一个就是30003000到4000这个期间就是华为的P30P30还有Mate系列然后3000往下的话主要卖的比较多的就是小米华为这个这个荣耀这个系列怎么样华为荣耀这个系列它是一个就是跟马力克提的是一个系列,但是对对像一个子品牌,但是他这个性价比也是比较高的,对,嗯,但是相对于这个他的主系列来说,才这个销量情况不太好,嗯,对,不能说不太好吧,相对于其他品牌来说,可能是,嗯,其他品牌好一些,但是他的主系列就,他的主系列会这个子系列卖的更好,嗯,嗯,然后这个,嗯,之前去去年的话是咱们这个苹果卖的比较好因为今年这个从去年毛一战开始然后这个花这个苹果的这个销量开始往下走就开始买苹果的商量对咱们上上周就说上周目前这个咱们两个销量有带这个要静它静得少一些上周主要就是vivo黑鲨系列和vivo original系列这两个系列现在买的人不是特别多因为现在游戏手机的话买的人还不是特别多游戏手机这个方向怎么算呢基本上就是一些这个一些游戏主播之类的对,主播这方面他们应该有自己的一个专门的,给他提供手机的一些对,有这个公司这方面对所以说像一些小孩付费一些小孩可能买一些再说,小孩买的话有可能他家长或者是给他买对所以说所以说我们会全方位进一部分也会进它如果这一系列的手机就要换好事了对然后A区这边打算接下来就是主攻华为和小米这一系列华为小米对现在咱们5G这一块手机销量情况怎么样5G的话因为现在出的华为P40和P40 Pro还有Mate系列都是出的5G版的手机但是5G的话在这个大城市一线城市和二线城市是已经开始试用了但是这个三四线城市还没有普及所以说在这个一线城市和二线城市5G手机卖的是比较好的三四线城市有买的也有可能是在这个储备当中嘛也就大家买的没有那么多但是也还会出一些料那就是咱们这个客户咱们手机这两个一个是华为一个是小米这两款主打上周是主打是吧对买的比较多这两款他们都反馈有什么样的反馈反馈的话华为这边反馈是非常不错的用续航时间和性能都是比较好的小米这一块主要就是性价比比较高但是小米可能会有一些问题比如说有的手机可能会发热这个也是我们这个售后也会及时人家处理还有什么需要回报的吗?A区这边暂时没有了嗯,行那这个二区这边主要就是卖的华为苹果,小米,魅族还有vivo和toko总来说呢一过期来说苹果华为,还有小米,小两个最好的就拿之前这三个目前之前来说之前是苹果最好然后最近这段时间华为已经有了好超的上周上周是已经返程了对然后就拿咱们的华为pp40和p40他在就是他虽然是安卓安卓机就是国内一些人在认为我现在认为安卓的流畅程度不如苹果的系统但是华为做出了一个保证,保证一年半的手机不会卡,因为他们基于一个方舟编译器,省去了过去的虚拟机。所以这款手机卖的比较畅销。而苹果也做出了一部分改进,比如苹果现在出的LS14系统。它就是在界面上和用户操作体验上非常的出众但是呢这个系统是在过去的苹果手机上它没有那么好的就是识分性就拿苹果X和苹果XR来说就是在以前的初厂满轨系统它就是识分比较完好但是冒上中心系统之后就会比如说用了一段时间它的硬件就会老化然后跟不上系统更新的速度就会就没那么适配所以就是有一部分人就认为苹果在就是主打的就是新新的机型但是因为太贵了嘛而有一部分人考虑到嗯考虑到就是成本和然后和体验嗯有选择到华为但是华为中有一部一部分机型它的销售还是不太好的就拿一个Mate X来说它是折叠屏但是折叠屏对普通人来说它都是比较鸡肋的因为一部分人拿手机就是为了方便 较小然后喜欢大整的他会买平板所以一部分机型销售不是太好请不吝点赞 订阅 转发 打赏支持明镜与点点栏目还有就是小米手机,小米手机它最近做的那些家居智能,代谢了它的手机的发展,然后还有畅销。就比如它最近出的女优12系统,它那个锁屏界面和进取任务的界面有一个星球的动画,受到了大部分人的好评。还有销量不是太高的有一个是美独手机但是美独手机呢我认为它美独手机其实挺好用的因为它的系统在国内是仅次于小米手机的系统但是呢它的知名度其实不是太高就是大致在大学里面的女生喜欢它的那个熊木设计谢谢大家总体来说它的销量不是太好我认为呢,虽然它的性能各方面比较优越但是如果下一步进货的时候这一部分手机可以稍微的减少然后之后,下一步研发会出华为Mate 40它是基于华为990麒麟处理器采用5nm信价然后采用的是联发科的天机1000系统这个系统超过了现在已有的系统还有一方面就是说这个手机会采用麒麟自产的1020系统你在也不能争论吧这个咱们这个手机刚才说了这么多我们这个手机的一些功能对功能和系统系统这方面比较现在也在跟国际上一些像苹果已经通过这些了已经有能力去超过它对能力去超过它了他这个
+[Audio Detection] 在 712.37 秒检测到关键词 '好交交'。
+detection_time: 712.37, current_time: 690.00
+问题音频片段长度: 132779, dtype: float32, min: -0.180877685546875, max: 0.17742919921875
+问题音频时间长度: 8.2986875
+
+
+[Agent] 接收到问题: 上周的区销售情况如何华为和苹果哪个品牌销量更好
+, 1735127938.9981241
+
+
+[Agent] 最终接收到问题: 上周的区销售情况如何华为和苹果哪个品牌销量更好
+, 1735127938.9982905
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9033 seconds, One token time: 0.3011 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+上周各区销售情况良好，华为和苹果的销量都有所增长，但具体情况需查询具体数据。
+talker 输出结束
+苹果的苹果11这一款就是128G的128G内存的这个苹果11这一款然后再者就是我们的我们国产的这个品牌华为的六月份销量最高的就是第二名就是华为P40 Pro一三秒第三名就是小米10你们那边小米10和华为P40怎么样?这两款其实在我们这儿排行就是排二三位然后在前十名里头还是华为的型号占了三个小米的也占了三个然后就是苹果的占了四个销量前十的是这样的但是我们这一块的市场销量最好的还是六月份来说还是苹果的型号比华为的稍微强了一点点主要还是苹果粉很多老苹果用户苹果粉比较重视用苹果手机有些人就是这样从很早很多年前就开始追苹果感觉就像是在收藏手机一样但是华为肯定现在也是有这种客户存在也就感觉它的每一个型号我就出上新的他就想买就像是一种收,把他手机当作收藏的感觉了因为现在人对这方面,怎么说呢喜欢一种品牌就一直去用这个品牌就把它当作一种艺术品的感觉有的他会把他还有一些暧昧买某一个品牌的鞋一样就是这样的但是现在呢去这个国际形势吧还有这个导向往后我觉得还是这个国产手机销量还是会超过这个苹果手机因为咱这个咱就华为手机呢它这个它这个在保值方面有明文吗?一开始为什么很多人选择苹果就是它这个流畅度就是这种卡机这种现象很少但是现在发展了咱们国产手机,华为,这些小米都做得很好了就自己用这个手机来说嘛就是用这个华为手机用一年多它就是不会感觉到卡然后它各方面的功能设计的还是比较好的然后现在很多就推拍照技术然后吸引人的一点也是自带的一开始它是光自带美颜功能现在其实华为它已经有这种拍照和美颜功能两个已经分开了你可以选择带美颜的也可以选择不带美颜的就是在
+[Text Detection] 在 1012.16 秒检测到关键词 '娇娇',current_time: 990.00, 问题文本: 在国内市场的吸引力还是挺大的然后就是小米小米其实在我们这一块销售的也挺好就是排前三小米10卖的也不错它外观设计它也是取评的你好 娇娇基于之前我们讨论的内容关于华为手机消费方式,
+问题音频片段长度: 412150, dtype: float32, min: -0.150665283203125, max: 0.173248291015625
+问题音频时间长度: 25.759375
+
+
+[Agent] 接收到问题: 他也是取评的吧你好娇娇基于之前我们讨论的内容关于华为手机销量不佳的问题特别是提到的华为mate x折叠拼手机你认为是什么原因导致这部分机型销量不佳以及我们应该如何调整销售策略来提升这部分
+, 1735127955.9716558
+
+
+[Agent] 最终接收到问题: 他也是取评的吧你好娇娇基于之前我们讨论的内容关于华为手机销量不佳的问题特别是提到的华为mate x折叠拼手机你认为是什么原因导致这部分机型销量不佳以及我们应该如何调整销售策略来提升这部分
+, 1735127955.9717655
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4660 seconds, One token time: 0.1553 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：华为手机销量 mate x 折叠拼手机
+Token count: 32, Total time: 6.5701 seconds, One token time: 0.2053 seconds
+
+提取的关键词: ['华为手机销量', 'mate', 'x', '折叠拼手机']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，华为Mate X折叠手机销量不佳的原因可能在于这类高端机型市场需求有限。建议调整策略，减少此类机型进货量，重点推广性价比更高的华为P40系列和Mate 40系列。同时，加强市场宣传，提升消费者对华为品牌的认知和好感度。
+Token count: 64, Total time: 12.7163 seconds, One token time: 0.1987 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：华为手机销量 mate x 折叠拼手机
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 我002我是总监003我是一区经理020我是二区经理00753区经理行咱们把最区的经理叫过来是跟平常一样的总结一周的总结会所以在上周各区的情况我们这个先各区经理先汇报下来上周各区的销售情况业绩这一块请不吝点赞 订阅 转发 打赏支持明镜与点点栏目现在在A区建筑在市场A区对于矿主要销售的华为手机是比较多的因为从华为手机主要的咱们上半年主要区间销售比较好上半年咱们这个区间价格在4000到6000之间对 卖的比较好的就是这个华为冰糖P40 Pro然后再一个就是30003000到4000这个期间就是华为的P30P30还有【M】ate系列然后3000往下的话主要卖的比较多的就是小米华为这个这个荣耀这个系列怎么样华为荣耀这个系列它是一个就是跟马力克提的是一个系列,但是对对像一个子品牌,但是他这个性价比也是比较高的,对,嗯,但是相对于这个他的主系列来说,才这个销量情况不太好,嗯,对,不能说不太好吧,相对于其他品牌来说,可能是,嗯,其他品牌好一些,但是他的主系列就,他的主系列会这个子系列卖的更好,嗯,嗯,然后这个,嗯,之前去去年的话是咱们这个苹果卖的比较好因为今年这个从去年毛一战开始然后这个花这个苹果的这个销量开始往下走就开始买苹果的商量对咱们上上周就说上周目前这个咱们两个销量有带这个要静它静得少一些上周主要就是vivo黑鲨系列和vivo original系列这两个系列现在买的人不是特别多因为现在游戏手机的话买的人还不是特别多游戏手机这个方向怎么算呢基本上就是一些这个一些游戏主播之类的对,主播这方面他们应该有自己的一个专门的,给他提供手机的一些对,有这个公司这方面对所以说像一些小孩付费一些小孩可能买一些再说,小孩买的话有可能他家长或者是给他买对所以说所以说我们会全方位进一部分也会进它如果这一系列的手机就要换好事了对然后A区这边打算接下来就是主攻华为和小米这一系列华为小米对现在咱们5G这一块手机销量情况怎么样5G的话因为现在出的华为P40和P40 Pro还有Mate系列都是出的5G版的手机但是5G的话在这个大城市一线城市和二线城市是已经开始试用了但是这个三四线城市还没有普及所以说在这个一线城市和二线城市5G手机卖的是比较好的三四线城市有买的也有可能是在这个储备当中嘛也就大家买的没有那么多但是也还会出一些料那就是咱们这个客户咱们手机这两个一个是华为一个是小米这两款主打上周是主打是吧对买的比较多这两款他们都反馈有什么样的反馈反馈的话华为这边反馈是非常不错的用续航时间和性能都是比较好的小米这一块主要就是性价比比较高但是小米可能会有一些问题比如说有的手机可能会发热这个也是我们这个售后也会及时人家处理还有什么需要回报的吗?A区这边暂时没有了嗯,行那这个二区这边主要就是卖的华为苹果,小米,魅族还有vivo和toko总来说呢一过期来说苹果华为,还有小米,小两个最好的就拿之前这三个目前之前来说之前是苹果最好然后最近这段时间华为已经有了好超的上周上周是已经返程了对然后就拿咱们的华为pp40和p40他在就是他虽然是安卓安卓机就是国内一些人在认为我现在认为安卓的流畅程度不如苹果的系统但是华为做出了一个保证,保证一年半的手机不会卡,因为他们基于一个方舟编译器,省去了过去的虚拟
+---
+还有销量不是太高的有一个是美独手机但是美独手机呢我认为它美独手机其实挺好用的因为它的系统在国内是仅次于小米手机的系统但是呢它的知名度其实不是太高就是大致在大学里面的女生喜欢它的那个熊木设计谢谢大家总体来说它的销量不是太好我认为呢,虽然它的性能各方面比较优越但是如果下一步进货的时候这一部分手机可以稍微的减少然后之后,下一步研发会出华为Mate 40它是基于华为990麒麟处理器采用5nm信价然后采用的是联发科的天机1000系统这个系统超过了现在已有的系统还有一方面就是说这个手机会采用麒麟自产的1020系统你在也不能争论吧这个咱们这个手机刚才说了这么多我们这个手机的一些功能对功能和系统系统这方面比较现在也在跟国际上一些像苹果已经通过这些了已经有能力去超过它对能力去超过它了他这个上周的区销售情况如何华为和苹果哪个品牌销量更好苹果的苹果11这一款就是128G的128G内存的这个苹果11这一款然后再者就是我们的我们国产的这个品牌华为的六月份销量最高的就是第二名就是华为P40 Pro一三秒第三名就是小米10你们那边小米10和华为P40怎么样?这两款其实在我们这儿排行就是排二三位然后在前十名里头还是华为的型号占了三个小米的也占了三个然后就是苹果的占了四个销量前十的是这样的但是我们这一块的市场销量最好的还是六月份来说还是苹果的型号比华为的稍微强了一点点主要还是苹果粉很多老苹果用户苹果粉比较重视用苹果手机有些人就是这样从很早很多年前就开始追苹果感觉就像是在收藏手机一样但是华为肯定现在也是有这种客户存在也就感觉它的每一个型号我就出上新的他就想买就像是一种收,把他手机当作收藏的感觉了因为现在人对这方面,怎么说呢喜欢一种品牌就一直去用这个品牌就把它当作一种艺术品的感觉有的他会把他还有一些暧昧买某一个品牌的鞋一样就是这样的但是现在呢去这个国际形势吧还有这个导向往后我觉得还是这个国产手机销量还是会超过这个苹果手机因为咱这个咱就华为手机呢它这个它这个在保值方面有明文吗?一开始为什么很多人选择苹果就是它这个流畅度就是这种卡机这种现象很少但是现在发展了咱们国产手机,华为,这些小米都做得很好了就自己用这个手机来说嘛就是用这个华为手机用一年多它就是不会感觉到卡然后它各方面的功能设计的还是比较好的然后现在很多就推拍照技术然后吸引人的一点也是自带的一开始它是光自带美颜功能现在其实华为它已经有这种拍照和美颜功能两个已经分开了你可以选择带美颜的也可以选择不带美颜的就是在他也是取评的吧你好娇娇基于之前我们讨论的内容关于【华】为手机销量不佳的问题特别是提到的华为mate x折叠拼手机你认为是什么原因导致这部分机型销量不佳以及我们应该如何调整销售策略来提升这
+根据会议内容，华为Mate X折叠手机销量不佳的原因可能在于这类高端机型市场需求有限。建议调整策略，减少此类机型进货量，重点推广性价比更高的华为P40系列和Mate 40系列。同时，加强市场宣传，提升消费者对华为品牌的认知和好感度。
+reasoner 输出结束
+国内市场的吸引力还是挺大的然后就是小米小米其实在我们这一块销售的也挺好就是排前三小米10卖的也不错它外观设计它也是取评的你好 娇娇基于之前我们讨论的内容关于华为手机消费方式,然后然后就是说我们就是想下一步呢下一步就是想再推一下这个OPPO跟vivo这两款手机在这个市场的这个销售量因为上个月它这个没有就前十销售量的没有它俩的我们想就是往前再推一推这两款两个品牌的手机但是这两方手机它是这这这两年其实发展的还行啊因为这个欧果吧主推的就是这个拍照手机吗对嗯很符合这个是现在年轻人追求的这个一个这个体验啊体验对啊然后他的设计外观来说也是这个颜色上啊呃也有很多很多很多很多样嗯很多年轻人现在很多年轻人像大学生也会选择OPPO的手机因为它的外观还有拍照的功能我们可以接下来推OPPO和vivo这两款手机我们这一款是这样的还有咱们各区ABC 三樓區我们下周下个月有什么计划有什么活动针对咱们这个手机为了增加咱手机这个销量各位各区都拿取什么样的措施方针这个A区这个A区措施我们在下周打算举行一个大型的活动就是现在华为的代言人来咱们这个线下和粉丝们见面一方面是推动他这种人生的人气度另一方面就是用他这个人气去代步咱们手机的销量然后这是一个方向还有另外一个就是咱们也会在这个活动呢周围咱们也会和运营商谈一些价格也就和其他的一些门店我们略备的可以谈一些价格战当然这个不是长久之计只是为了短暂的咱们的营销搞了一个小合作这是两个合作还有就是嗯就是华为,咱们那儿,因为现在这个疫情嘛,然后大家打算,我们打算搞一个这个旗行,就是让这个,他们这一批这个工作人员,就是骑着电动车,举一个旗来宣传咱们这个手机,对,我们宣传这个电脑,让更多的人知道这个,咱们这个电脑,咱们在里面买手机。这个也是一个提高咱们这个销量的办法嗯那没去一下暂时就这个谢谢我们这儿呢主要就是对于一些新机箱呢比如今年刚出的机箱比如说P4.2然后苹果12我们不打算线下打折的关系可以在線上通过网店的优惠券对于优惠一部分然后一些就是去年的机型就是现在已经现在原本就是不太关注的机型然后进行一些线下的打折然后在我们的公众号上面推送各种手机推送各种手机的功能和它的就是一些内部处理方案的讲解然后就是然后在我们在我们在我们就是线下的店里吧我们就是就像刚才说的可以请明星代言就是利用他们的人气量来增加我们的销量现在毕竟追星追星的人不在小说可以借用这一部分国内的一些厂商,比如苹果,比如华为,小米,他们就是可以联合,咱们就是销售,他们可以找一些店,然后联合搞活动,就是用一个机器带动另一个机器的销售。两个互相合作产生更高的利益可以就比如说在看这个的看这一款的同时又去看那一款对对然后就其实互相成就了对那咱们这个CG这个有什么合作我这想我们是想搞一个活动乐吧下一个就搞一个活动乐中文字幕志愿者 杨茜茜每一个城市都要选择两到三个活动场地就是大型商场的活动场地然后这个活动场地选定以后我们会把这个在每一个时间每一个场地里边举办的活动那个品牌我们主要的品牌展览会有这样的活动如果在展览期间,买我们手机的话,要给一定的优惠100到200之间的优惠力度每个城市都要搞,选两到三个商场然后一个商场搞上嗯两场活动是这样的嗯然后再者就是除了这个手机的销售以外我们就是也会销售一下他这个嗯他其他的商品比如说因为我们店里都除了百货手机还有这个像比如说咱们用花美的手表小美的手环还有小米的这个呃那个刮胡刀嗯这种小物价我们也是有销售的其实咱们华为这个手表它这个现在设计的也非常的好看有运动版吧价位也不高都在大几百到一千多日元很多人就是比如说现在形成的这种华为粉小米粉他们在买手机的同时也会关注到咱们这些新品手表我们也可以促成这个销售这
+[Text Detection] 在 1541.62 秒检测到关键词 '娇娇',current_time: 1530.00, 问题文本: 这是一个我们可以设计一款套餐活动就比如说你买我们新款的你好 娇娇A区计划的华为代言人活动具体有哪些促销措施手机就华为新款手机我们就给大家再买这个华为手环或者手吊
+问题音频片段长度: 116566, dtype: float32, min: -0.1533203125, max: 0.133056640625
+问题音频时间长度: 7.285375
+
+
+[Agent] 接收到问题: A区计划的华为代言人活动具体有哪些促销措施
+, 1735128002.0089333
+
+
+[Agent] 最终接收到问题: A区计划的华为代言人活动具体有哪些促销措施
+, 1735128002.00904
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4821 seconds, One token time: 0.1607 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 22, Total time: 1.2985 seconds, One token time: 0.0590 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+很抱歉，由于没有提供更多的上下文信息，我无法准确回答这个问题。如果您能提供更多的背景和上下文信息，我会尽力为您提供更准确的答案。
+talker 输出结束
+是一个我们可以设计一款套餐活动就比如说你买我们新款的你好 娇娇A区计划的华为代言人活动具体有哪些促销措施手机就华为新款手机我们就给大家再买这个华为手环或者手吊活动广告利用这个在里面宣传我们新上的新上的手机还有我们手机的介绍还有我们这个我们这个店的位置介绍一方面就帮我们这个营销点宣传之前也是宣传我们品牌我们店里面所有的不打款的手机嗯由于咱们现在这个公众号里还各大商场的公众号里还不带这种商场的网线上商城的这种功能,所以说只能是打新的宣传然后引导大家就是去这个店里边看然后促成下单然后我这边是这两个打算计划谢谢大家还有什么需要我这边对各部门进行帮助的,或者是原理上的一些财力上的,需要公司这边帮助的有吗?因为我们区呢就是它的销售只是手机而不是就是那种手表啊手环啊机型比较少所以我建议我建议在C区办活动的时候可以大力宣传一下华为的智能手脚因为这个手脚采用的是鸿蒙系统在国内的响应是非常高的这个附加产品对我们这一块想让加上我们调货的利率进场如果這個商场这个区,这款手机卖的好,或者说当时没有货了,各个店之间的配合度要加强一点。对,这方面有什么好的想法?对,刚才自己去说了,调货这方面。调货这方面,咱们可以用这个,这个顺风。顺风现在不是快吗?同城的吗?他们可以找一个自己的音乐部去招聘一些司机啊什么的就是搞一些自己的游戏渠道因为自己人嘛肯定会比那些自己的产品可能会自己的产品上线同样的咱们可以送货上门就比较快对也可以这样而如果就是比较远的话就可以有这个4G的二维码对对咱们可以用一些快递的方式自己的话咱们就可以送货上门对咱们有自己的功能服务服务态度对不是讲点个亮点不就是他愿意就是说我们当场拿货的话就能只能就同城快速的就是把从各个其他区调过来如果他们也想选择这种就是说在店里面看好这款手机了然后我们可以选择就是呃上门送货这样的不过手里现在没过就可以还可以选择这个上门送货这一项服务还有就是咱们刚才说的这个要货这个事情,所以各区要加强这方面的沟通性外,对这方面要有一个沟通,对,不是定义出来一个方案,具体的方案因为这个是影响我们去这个消费率对,对因为到时候这方面会说不清楚的所以为了避免发生一些矛盾要制定出来相应的规则比如说H掉到B曲,B曲掉到C曲这条过程怎么算,这些小说业绩怎么算这方面我们要进行具体的探讨谢谢后台管理系统就是各种货在哪个场比较能限制到的地方,后台可以记录。管理系统比较好看,这上面也有科学的很明确的。那咱就先这场会议就先到这儿。请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+[Audio Detection] 在 1922.23 秒检测到关键词 '好交交'。
+detection_time: 1922.23, current_time: 1920.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.175567626953125, max: 0.189544677734375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于各区调货的问题你能否详细说明一下我们应该如何制定具体的调货规则以确保销售业绩的
+, 1735128023.5418596
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于各区调货的问题你能否详细说明一下我们应该如何制定具体的调货规则以确保销售业绩的合理分配并避免各区之间发生矛盾同时对于提出的利用商场公众号进行广告宣传的计划你认为我们应该如何有效缔结和线上宣传和线下销售以提升我们的品牌影响力和销售业绩
+, 1735128026.0012455
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4933 seconds, One token time: 0.1644 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：调货规则 销售业绩 线上线下宣传
+Token count: 35, Total time: 6.7440 seconds, One token time: 0.1927 seconds
+
+提取的关键词: ['调货规则', '销售业绩', '线上线下宣传']
+
+找到的上下文片段数量: 1
+针对调货问题，应明确各区域间调货流程及责任分配。例如，A区调货给B区，需记录调货数量、时间及费用，B区接收后需确认并在系统中更新库存。调货过程中，双方均需签字确认，确保透明度。同时，设立业绩核算机制，确保调货后的销售业绩合理分配。关于线上线下结合，可在商场公众号发布新品促销信息，设置线上下单线下取货选项，提升品牌曝光度，促进销售转化。
+Token count: 111, Total time: 21.6058 seconds, One token time: 0.1946 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：调货规则 销售业绩 线上线下宣传
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 顺风现在不是快吗?同城的吗?他们可以找一个自己的音乐部去招聘一些司机啊什么的就是搞一些自己的游戏渠道因为自己人嘛肯定会比那些自己的产品可能会自己的产品上线同样的咱们可以送货上门就比较快对也可以这样而如果就是比较远的话就可以有这个4G的二维码对对咱们可以用一些快递的方式自己的话咱们就可以送货上门对咱们有自己的功能服务服务态度对不是讲点个亮点不就是他愿意就是说我们当场拿货的话就能只能就同城快速的就是把从各个其他区调过来如果他们也想选择这种就是说在店里面看好这款手机了然后我们可以选择就是呃上门送货这样的不过手里现在没过就可以还可以选择这个上门送货这一项服务还有就是咱们刚才说的这个要货这个事情,所以各区要加强这方面的沟通性外,对这方面要有一个沟通,对,不是定义出来一个方案,具体的方案因为这个是影响我们去这个消费率对,对因为到时候这方面会说不清楚的所以为了避免发生一些矛盾要制定出来相应的规则比如说H掉到B曲,B曲掉到C曲这条过程怎么算,这些小说业绩怎么算这方面我们要进行具体的探讨谢谢后台管理系统就是各种货在哪个场比较能限制到的地方,后台可以记录。管理系统比较好看,这上面也有科学的很明确的。那咱就先这场会议就先到这儿。请不吝点赞 订阅 转发 打赏支持明镜与点点栏目基于之前我们讨论的内容关于各区调货的问题你能否详细说明一下我们应该如何制定具体的【调】货规则以确保销售业绩的合理分配并避免各区之间发生矛盾同时对于提出的利用商场公众号进行广告宣传的计划你认为我们应该如何有效缔结和线上宣传和线下销售以提升我们的品牌影响力和销售
+针对调货问题，应明确各区域间调货流程及责任分配。例如，A区调货给B区，需记录调货数量、时间及费用，B区接收后需确认并在系统中更新库存。调货过程中，双方均需签字确认，确保透明度。同时，设立业绩核算机制，确保调货后的销售业绩合理分配。关于线上线下结合，可在商场公众号发布新品促销信息，设置线上下单线下取货选项，提升品牌曝光度，促进销售转化。
+reasoner 输出结束
+
+会议数据处理完成。

@@ -1,0 +1,263 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200707_L_R001S06C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Starting processing from 0s, total chunks: 74
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+Initializing KWS models...
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.20it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.72s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.77s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.96s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.25s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.33s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.27s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.38s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.56s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.18s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.90s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.91s/it]
+響鐘请不吝点赞 订阅 转发 打赏支持明镜与点点栏目123我是消费123我是总部队124我是风险提供125我是消费部队请问好了 今天虽然今天我们刚才特级过来是这个项目就想听一下你们对这个项目的一个整体的一个规划因为现在社会的发展许多人学生包括大人还是小孩现在对照片和摄影都有了一定的了解很多人都想通过拍照就是留下来现在非常珍贵的一幕把这些当成回忆以后来观看也是特别美好所以我就想开一个摄影公司然后今天呢就是希望我们来与各部门的主管一起探讨一下首先咱们先探讨一下摄影公司的选址咱们这个摄影不只是婚纱摄影还是儿童摄影它不是这么单一咱们要打造的是一个比如说婚纱摄影也可以拍情侣写真也可以拍个人写真包括儿童的百天纪念照全方面的一个摄影品牌现在我想听各部门说一下大家对选址有什么建议或者想法,开在哪里?推荐开在市区,到市,就是商业区。每个人都要长大,而且这种设像也算是一种中高端吧。是吧咱们收费价格也不算低所以从高端上环境也比较好我是个人建议在商业区商业区那是想开在我是想问一下是想开在商业区的几个地方对,因为商业区周围肯定不止我们一家就比如说咱们出建的鲁冰花这条街上面都是混杀店咱们要是开在那儿竞争会大咱们要是开在别的地方就是会比较突出,会比较单一所以想看看其他部门对这个是怎么想的说一下不同的看法实际上的话感觉就是开在稍微就是也不在拍面就是主要就是跟一些特别多的领导合照进行就是经常的TV虽然咱们可能服务就是会特别好也是竞争咱们是可以竞争过的但是就是一定要咱们的价值可能还是稍微偏超到一些然后这样的话客户选择的话就是会比较少咱们的话就是这样选择的就是以那种就是还是以个人行为主吧就是像花莎莎就是咱们可以找一个比较好的环境对它进行拍摄咱们主打还是进行行动行政就是进行宣传我们是常常可以跟宣传的所以我们比较好玩风险评估里边对这个选址有什么利益吗我觉得我觉得开在商业区的话其实因为商业区物流量人流量虽然大但是它毕竟是吃的玩的比较多像要想拍公纱照什么或者写真什么的其实我觉得应该开在刚刚上个部门说的稍微不要太偏商业不要太偏中心区一点的地段这样竞争的比较少一点谢谢大家这是我的意见销售部门呢?我觉得可以设在学校周围学校附近咱们这个学生嘛就是上大学以后上学校以后你难免要拍这个证件照写真或者遮罩之类的这个一方面就是咱们的一个算是资源吧再再就说这个然后周围肯定要有小小区也是咱们的潜在客户,小区里边有人想拍鞋针啊,或者刚结婚的拍一些婚纱照之类的,我觉得开在学校附近是比较好的一层,潜在客户的话比较多一些。現在咱們對咱們的你认为是中高档对吧?刚才说的那个点击人我更倾向于哪里?我更倾向于学校和小区因为学生们是消费的主体吧而且他们在大学的时候肯定会有情侣还包括闺蜜然后整个兄弟啊宿舍嘛都会想拍照毕业的时候还会拍毕业照所以我觉得如果选在学校和小区的话因为小区里的居民还多,居民的年龄和范围就比较广阔。比如说快要结婚的,已经结婚的,比如说要开全家屋什么的,这些都可以。我的个人倾向是开在学校。关于大学,它可能会存在那种关于多人婚礼,不知道,各位同学有没有听过这个东西。可能就是不可以跟大学生一样合作然后因为散文技术多用也可以承担一些实习项目那最开始宣传的时候有什么想法呢宣传的话主要是散文喜欢的定位嘛就是散文不是主要是关于图案照片包括各类写字的一些就是动画片所以说散文就是就是想帮他宣传选在大厨房附近这样的话咱们就是可以满足各种各种各样的需求因为像大厨房里他们有就是像红红的一个婚礼还有说就是有一些女学生就是比较喜欢就是拍一些比较好看的照片比如靠窍以及各种美照就是咱们是可以进行协议就是咱们也是可以进行合作然后这样的话也不需要再过多的宣传,也会有比较好的效果。我觉得摄影的话,其实写真还有证件照,平时这种照片的利润其实没有婚纱照大。如果开在学校旁边的话,因为学生结婚这件事情,您刚才说了是学校和小区想找一个,这两者都存在。对,我觉得小区旁边比较,比学校合适一点。
+[Audio Detection] 在 525.85 秒检测到关键词 '好交交'。
+detection_time: 525.85, current_time: 510.00
+问题音频片段长度: 129707, dtype: float32, min: -0.052764892578125, max: 0.044647216796875
+问题音频时间长度: 8.1066875
+
+
+[Agent] 接收到问题: 关于摄影项目选址大家更倾向于商业区还是学校附近
+, 1735096658.779295
+
+
+[Agent] 最终接收到问题: 关于摄影项目选址大家更倾向于商业区还是学校附近
+, 1735096658.7794304
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9182 seconds, One token time: 0.3061 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+关于摄影项目选址，大家更倾向于商业区还是学校附近，不同的地方都有其优势和劣势。商业区人流量大，可以提供丰富的拍摄素材；而学校附近则有宁静的校园氛围，适合拍摄一些文艺或清新主题的照片。具体选择还需考虑项目的性质和目标受众。
+talker 输出结束
+你又来他们有楼拍结婚照的,就是已经有好几家了吗?不是,说的我没听明白,刚才咱不是说到了玄子是吧?对,就在黄泽东市旁边那咱这个地方还没转成呢,那怎么办?这个前期的一个宪法,这方面怎么办?刚才你说,你说请问来咱这儿,有人来咱这儿了什么情况来这询问过情况询问过情况因为我们宣传的力度比较大然后有人看到那些广告就想来我们这问一下对对对那如果是人与选举的话我这个话题很不够困难就是想知道如果宣传的力度够的话其实就可以开点商业链了因为以上你们觉得这些条件都挺好的听了听有的有的既然小街的人力量比较大,既然宣传到了,为什么不开在商业街呢?因为商业街它地域,因为它租的店铺就比较,价格太贵了几批。像拍摄的照片的话,不像每天每个人都会每天想拍照的。在山野街或山野街上的街道,有很多人都喜歡在山野街上的街道,因為有很多人喜歡在山野街上的街道,所以在山野街上的街道,有很多人都喜歡在山野街上的街道,如果是小区旁边的话,他是不是注意的不太好所以说他们主要还是投入学校,因为毕竟学校也是成员,聚力力对,现在应该是年轻人的小组,但是如果是对,现在应该是年轻人的小组,但是如果是除非就是因为他们就是想鼓一个,但是这种人的成员比较少还要面临结合的一个那你为啥宣传有没有做了表解到就是党体的一些租赁的费用像像学校费用的话是比较优惠的因为经营竞争是不是比较少就是别人也想干正面照正面照咱们主要的话咱们是包括多方面的正面照的话只是一个小物质的分解咱们是一个稍微的大人对如果这方面全校学生会整体去拍的一方面的照片那么我们可以将你咱们用便宜拍的旅游行或者选择的一组做的和咱们也差不多咱们的会不会有竞争方面的压力像现在在学校我们的影视有什么效果所以说你说这些小的就是那些正面照像像我一夜照比如说你们的亲戚但是我叫他们要了解一下他们的学生如果他们大部分人都是来采取一种小的摄影方式来采取的话他们会不会选择省钱的方式如果身上是高档一个省钱照就要他们花几十的话一个班级就只要一两百的话他们会不会选择他们的省钱照而不选择他们的这方面的省钱照并不可能有那么高的价格因为咱们看着这个是一个突然业务老人家也不咋还是写着已经发照写着很复杂大小岁人来的像咱们这个网络网就像那些就是经理没有开张但一开张就会给个钱就是会收个退款那为什么呢 怎么保证呢因為現在一套寫真或者一个婚纱照的拍摄因为场地或者服装还有到妆容什么都需要很多费用所以想拍照的人肯定是有提前的预算的我们其实可以做证件照这些稍微比较简单的也是可以做到就是相对我们是一个证据手我们的技术是有的然后我们可以相对下在证件照上这个是给他们进行竞争咱们写真以及文化照片需要高质量然后就是稍微出发打入然后进行到这个程度因为必定现在年轻人在这个方面上也要支持为什么会比较重视呢难道是比较和手机还要竞争这方面咱们有这么压力吗我相信咱们是说摄影和手机拍照还是有很大区别的肯定有不一样专业的就只是寻常业余的而已您的手机已经开到我们这个微博选用一些美术软件基本的对 而且我们有很专业的团队很专业的团队预算你们大概有多少需要的设备和预算因为咱们这不是已经向财务这边保证了说是要如果开张就可以立马有利润到账这个话也没看错我一个宣传的问题应该是问一下就是大致在座的各位部门有没有什么就是利润之类的吗就是如果是要定在学校的话这个利润方面很快就会到账了这个得在一年到半年之内吧那一年到半年这就是个期限这个就讲了这个负责任者负责任者就要说一下听到这么多部门的意见我个人就是听从大多数部门的意见来说这个风沙店选举还是要选在学校和小区的估计然后可以把世界上来的钱更多的投入在咱们的装备上比如说咱们的摄影机,咱们的摄影师,还有咱们的服装等这些上面,而不是说把这个开在商业区,这个租金就会比较高。咱们应该是把购客租金放在品质上,这样才会走得更加长远。现在我想问一下,咱们大家对这个管理上面,咱们的摄影师这个上面是有什么疑问吗?有什么疑问吗咱们是要租一个不是租也就花钱雇佣一个摄影师还是
+[Audio Detection] 在 1013.78 秒检测到关键词 '好交交'。
+detection_time: 1013.78, current_time: 990.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.112457275390625, max: 0.13079833984375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于楼选址的问题我想问一下既然学校和小区都有各自的优缺点这就是也不算太偏
+, 1735096691.823701
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于影楼选址的问题我想问一下既然学校和小区都有各自的优缺点这就是也不算太偏综合在考虑人流量宣传效果以及竞争压力等所以我看它更倾向于将影楼开在学校旁边还是小区旁边为什么这就可能就是咱们在招议各社的情况下他们也可能带了自己的设备进行拍摄这也有可能是加了民族电影的设备所以如果他们在装这个电影的话会需要照顾官员
+, 1735096694.5273597
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4887 seconds, One token time: 0.1629 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：影楼选址 学校 小区 优缺点 人流量 宣传效果 竞争压力
+Token count: 46, Total time: 9.2750 seconds, One token time: 0.2016 seconds
+
+提取的关键词: ['影楼选址', '学校', '小区', '优缺点', '人流量', '宣传效果', '竞争压力']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，摄影工作室更倾向于在学校旁边开设。理由包括：学校有稳定的生源，尤其是学生群体；学校租金相对较低；能够满足各种需求如写真、证件照等；相比商业区，能更好地利用学校资源和学生群体进行宣传。同时，考虑到小区也有一定需求，但学生群体更为重要，因此最终决定在学校旁边开设。
+Token count: 80, Total time: 15.8126 seconds, One token time: 0.1977 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：影楼选址 学校 小区 优缺点 人流量 宣传效果 竞争压力
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 可能就是不可以跟大学生一样合作然后因为散文技术多用也可以承担一些实习项目那最开始宣传的时候有什么想法呢宣传的话主要是散文喜欢的定位嘛就是散文不是主要是关于图案照片包括各类写字的一些就是动画片所以说散文就是就是想帮他宣传选在大厨房附近这样的话咱们就是可以满足各种各种各样的需求因为像大厨房里他们有就是像红红的一个婚礼还有说就是有一些女学生就是比较喜欢就是拍一些比较好看的照片比如靠窍以及各种美照就是咱们是可以进行协议就是咱们也是可以进行合作然后这样的话也不需要再过多的宣传,也会有比较好的效果。我觉得摄影的话,其实写真还有证件照,平时这种照片的利润其实没有婚纱照大。如果开在学校旁边的话,因为学生结婚这件事情,您刚才说了是【学】校和小区想找一个,这两者都存在。对,我觉得小区旁边比较,比学校合适一点。关于摄影项目选址大家更倾向于商业区还是学校附近你又来他们有楼拍结婚照的,就是已经有好几家了吗?不是,说的我没听明白,刚才咱不是说到了玄子是吧?对,就在黄泽东市旁边那咱这个地方还没转成呢,那怎么办?这个前期的一个宪法,这方面怎么办?刚才你说,你说请问来咱这儿,有人来咱这儿了什么情况来这询问过情况询问过情况因为我们宣传的力度比较大然后有人看到那些广告就想来我们这问一下对对对那如果是人与选举的话我这个话题很不够困难就是想知道如果宣传的力度够的话其实就可以开点商业链了因为以上你们觉得这些条件都挺好的听了听有的有的既然小街的人力量比较大,既然宣传到了,为什么不开在商业街呢?因为商业街它地域,因为它租的店铺就比较,价格太贵了几批。
+---
+在山野街或山野街上的街道,有很多人都喜歡在山野街上的街道,因為有很多人喜歡在山野街上的街道,所以在山野街上的街道,有很多人都喜歡在山野街上的街道,如果是小区旁边的话,他是不是注意的不太好所以说他们主要还是投入学校,因为毕竟学校也是成员,聚力力对,现在应该是年轻人的小组,但是如果是对,现在应该是年轻人的小组,但是如果是除非就是因为他们就是想鼓一个,但是这种人的成员比较少还要面临结合的一个那你为啥宣传有没有做了表解到就是党体的一些租赁的费用像像学校费用的话是比较优惠的因为经营竞争是不是比较少就是别人也想干正面照正面照咱们主要的话咱们是包括多方面的正面照的话只是一个小物质的分解咱们是一个稍微的大人对如果这方面全校学生会整体去拍的一方面的照片那么我们可以将你咱们用便宜拍的旅游行或者选择的一组做的和咱们也差不多咱们的会不会有竞争方面的压力像现在在学校我们的影视有什么效果所以说你说这些小的就是那些正面照像像我一夜照比如说你们的亲戚但是我叫他们要了解一下他们的学生如果他们大部分人都是来采取一种小的摄影方式来采取的话他们会不会选择省钱的方式如果身上是高档一个省钱照就要他们花几十的话一个班级就只要一两百的话他们会不会选择他们的省钱照而不选择他们的这方面的省钱照并不可能有那么高的价格因为咱们看着这个是一个突然业务老人家也不咋还是写着已经发照写着很复杂大小岁人来的像咱们这个网络网就像那些就是经理没有开张但一开张就会给个钱就是会收个退款那为什么呢 怎么保证呢因為現在一套寫真或者一个婚纱照的拍摄因为场地或者服装还有到妆容什么都需要很多费用所以想拍照的人肯定是有提前的预算的我们其实可以做证件照这些稍微比较简单的也是可以做到就是相对我们是一个证据手我们的技术是有的然后我们可以相对下在证件照上这个是给他们进行竞争咱们写真以及文化照片需要高质量然后就是稍微出发打入然后进行到这个程度因为必定现在年轻人在这个方面上也要支持为什么会比较重视呢难道是比较和手机还要竞争这方面咱们有这么压力吗我相信咱们是说摄影和手机拍照还是有很大区别的肯定有不一样专业的就只是寻常业余的而已您的手机已经开到我们这个微博选用一些美术软件基本的对 而且我们有很专业的团队很专业的团队预算你们大概有多少需要的设备和预算因为咱们这不是已经向财务这边保证了说是要如果开张就可以立马有利润到账这个话也没看错我一个宣传的问题应该是问一下就是大致在座的各位部门有没有什么就是利润之类的吗就是如果是要定在学校的话这个利润方面很快就会到账了这个得在一年到半年之内吧那一年到半年这就是个期限这个就讲了这个负责任者负责任者就要说一下听到这么多部门的意见我个人就是听从大多数部门的意见来说这个风沙店选举还是要选在学校和小区的估计然后可以把世界上来的钱更多的投入在咱们的装备上比如说咱们的摄影机,咱们的摄影师,还有咱们的服装等这些上面,而不是说把这个开在商业区,这个租金就会比较高。咱们应该是把购客租金放在品质上,这样才会走得更加长远。现在我想问一下,咱们大家对这个管理上面,咱们的摄影师这个上面是有什么疑问吗?有什么疑问吗咱们是要租一个不是租也就花钱雇佣一个摄影师还是基于之前我们讨论的内容关于【影】楼选址的问题我想问一下既然学校和小区都有各自的优缺点这就是也不算太偏综合在考虑人流量宣传效果以及竞争压力等所以我看它更倾向于将影楼开在学校旁边还是小区旁边为什么这就可能就是咱们在招议各社的情况下他们也可能带了自己的设备进行拍摄这也有可能是加了民族电影的设备所以如果他们在装这个电影的话会需要照顾官员
+根据会议内容，摄影工作室更倾向于在学校旁边开设。理由包括：学校有稳定的生源，尤其是学生群体；学校租金相对较低；能够满足各种需求如写真、证件照等；相比商业区，能更好地利用学校资源和学生群体进行宣传。同时，考虑到小区也有一定需求，但学生群体更为重要，因此最终决定在学校旁边开设。
+reasoner 输出结束
+应该找一个长期的稳定一点的专业的摄影师那咱们对这个服装大家都觉得怎么想啊管理部门就要设计一下服装和设备服装需要多种多样的就是这种风格的服装都要有然后咱们还要嗯我单独先说服装吧这种类型的服装都要有大小的,现在都要提前提前,然后是用来租用,就是拍照的时候,临时穿,出售,就是服装好,像我们现在握手了解的情况来说,像旁边的一个,就是芋圆花的一个设计,它是可以把这些文化审判进去的。因為用咱們牛肉投資是需要买一个婚纱的因为咱们苏联婚纱在进行我也觉得可以把婚纱售卖因为婚纱都看主人都看客人他们所以衣服的审美这个变化会很大如果我们几年一直把那个衣服留在那儿的话也是我们一个成本上的推迟以致婚纱的保养其他不同意见吗?我觉得可以的,一个是看客户,客户如果想租赁的话,客户如果想买的话,我们可以卖给他。如果他不想买的话,他有可能就只是穿两次嘛,拍婚纱照穿一次,结婚穿一次,他往后的话,如果他进行别的,他应该...会穿不到这种婚纱这个就看客户怎么说他如果想租赁的话我们也不是用行租赁的方法然后卖的话也不是不行都可以这个主要就是看这个客户客户这边是什么意思我们就按这个客户来比较原型化灵活一点中文字幕志愿者 杨茜茜就是咱们刚才说服装这个还有摄影师这个就是进行一下简单的总结比如说你觉得风险怎么样还是说就比较可靠摄影首先摄影师的话应该就是当一个长期专业的这样的话每次别人来拍照拍出来的这个专业水平都是类似的一样的然后为了挽留一下在客户的然后这个婚纱服装上面我觉得可以采用刚刚说的尊重一下客人的需求他们如果喜欢那套服装想要买下来的话我们可以售卖然后如果只是拍照租用的话我们也可以租用这样风险来说相对最小因为刚开始我们这个工作是起步很多人都会觉得这个消费水平有点高咱们要采取什么活动让大家会觉得说来这里拍是会有损失就是说我们的质量和我们的服务让到位大家对这个有什么看法吗采取什么活动采取什么活动我们可以给提供化妆化妆男生来拍照男生呢?男生呢?其实这是我们免费提供的还有造型啊,发型啊,还有我们这个服装搭配我们可以免费提供如果他认为我们的服装很合适的话我们也应该收买财务部门怎么看?对这个提供免费的妆容,男士方面好不要说别的意见,就是如果假如说像那种积木装容或者店面形式和设备方面,他们会在半年一年之内保持规则吗?这个应该不会,因为我们如果采购一次化妆品或者买一批衣服,这个使用时间都是非常长的,所以我们这个不用担心它会有亏损。就是它可能是要用几年以上的过程不是单纯的可能就是使用一段时间就能划得过那宣传要怎么宣传咱们的保证是什么宣传的话就是感觉就是咱们首先是需要有一些经典体验合作的经典体验合作对 因为咱们像发纱照拍摄是需要外景的对 因为外景的话对 就比如说一个发纱照都会需要去旅拍近期有非常好的合适的地点的话你可以跟那些地点合作一下也算是被地点的景区为他们宣传也算是为咱们自己的品牌咱们的工作室宣传就是我们把那些拍摄照片然后就是进行宣传的就可以使用然后既可以宣传来点景点然后咱们也是可以宣传到那些市场销售方面就是对于咱们怎么样拉拢能不能让客户介绍一下这个有什么想法一方面就是宣传要做好宣传要做得够大够细就是几方面吧线上和线下线上的话都一些线上广告比如说我们宣传这种也是正在做的比较短的也会有开放用一方面可以学校或者一些分社就跟一些学校谈一些合作跟一些警局谈一些合作就是要承包他们一些业务就比如说类似于证件照承载照之类的我们要去传唤接手他们的一些东西我们不能说就是给我们散散的直接扫过我们可以去承包一部分项目去做然后,就像他说的,赠妆,赠妆是很好的一方面,但是我们自己也可以赠男士,女士嘛,她来的话,她肯定是要……女性的市场更大,大部分还是女性最旺的。他可能是想去泡但是我们也对它
+[Text Detection] 在 1539.00 秒检测到关键词 '好教教',current_time: 1530.00, 问题文本: 它在进行精装一下就是在它的这个基础上我们可以在进行一些就是添加卢总您还好教教如何通过合作和宣传提升婚纱租赁业务的客流量和品牌知名度对 上一段他可以像宣传的话我关心他就宣传一下就是关于像他们有的女生就想开号写写名照是可以就是在他写的客栈里提供
+问题音频片段长度: 142678, dtype: float32, min: -0.08892822265625, max: 0.093353271484375
+问题音频时间长度: 8.917375
+
+
+[Agent] 接收到问题: 大家好,教教如何通过合作和宣传提升婚纱租赁业务的客流量和品牌知名度。
+, 1735096749.8823843
+
+
+[Agent] 最终接收到问题: 大家好,教教如何通过合作和宣传提升婚纱租赁业务的客流量和品牌知名度。
+, 1735096749.8825078
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4817 seconds, One token time: 0.1606 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：合作 宣传 婚纱租赁
+Token count: 31, Total time: 5.9188 seconds, One token time: 0.1909 seconds
+
+提取的关键词: ['合作', '宣传', '婚纱租赁']
+
+找到的上下文片段数量: 2
+会议讨论了开设婚纱摄影工作室的最佳选址。倾向于选择学校附近而非商业区，因学生结婚需求稳定且成本较低。需注重经典合作案例展示与景点宣传。可通过合作学校、警局等机构承接业务，线上线下同步加大宣传力度，如广告投放、合作拍摄等。赠妆服务可吸引更多女性顾客。总体策略是利用现有资源，通过合作与宣传提升客流量和品牌知名度。
+Token count: 90, Total time: 17.6302 seconds, One token time: 0.1959 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：合作 宣传 婚纱租赁
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 比如说快要结婚的,已经结婚的,比如说要开全家屋什么的,这些都可以。我的个人倾向是开在学校。关于大学,它可能会存在那种关于多人婚礼,不知道,各位同学有没有听过这个东西。可能就是不可以跟大学生一样合作然后因为散文技术多用也可以承担一些实习项目那最开始宣传的时候有什么想法呢宣传的话主要是散文喜欢的定位嘛就是散文不是主要是关于图案照片包括各类写字的一些就是动画片所以说散文就是就是想帮他宣传选在大厨房附近这样的话咱们就是可以满足各种各种各样的需求因为像大厨房里他们有就是像红红的一个婚礼还有说就是有一些女学生就是比较喜欢就是拍一些比较好看的照片比如靠窍以及各种美照就是咱们是可以进行协议就是咱们也是可以进行【合】作然后这样的话也不需要再过多的宣传,也会有比较好的效果。我觉得摄影的话,其实写真还有证件照,平时这种照片的利润其实没有婚纱照大。如果开在学校旁边的话,因为学生结婚这件事情,您刚才说了是学校和小区想找一个,这两者都存在。对,我觉得小区旁边比较,比学校合适一点。关于摄影项目选址大家更倾向于商业区还是学校附近你又来他们有楼拍结婚照的,就是已经有好几家了吗?不是,说的我没听明白,刚才咱不是说到了玄子是吧?对,就在黄泽东市旁边那咱这个地方还没转成呢,那怎么办?这个前期的一个宪法,这方面怎么办?刚才你说,你说请问来咱这儿,有人来咱这儿了什么情况来这询问过情况询问过情况因为我们宣传的力度比较大然后有人看到那些广告就想来我们这问一下对对对那如果是人与选举的话我这个话题很不够困难就是想知道如果宣传的力度够的话其实就可以开点商业链了因为以上你们觉得这些条件都挺好的听了听有的有的既然小街的人力量比较大,既然宣传到了,为什么不开在商业街呢?因为商业街它地域,因为它租的店铺就比较,价格太贵了几批。
+---
+就是它可能是要用几年以上的过程不是单纯的可能就是使用一段时间就能划得过那宣传要怎么宣传咱们的保证是什么宣传的话就是感觉就是咱们首先是需要有一些经典体验合作的经典体验合作对 因为咱们像发纱照拍摄是需要外景的对 因为外景的话对 就比如说一个发纱照都会需要去旅拍近期有非常好的合适的地点的话你可以跟那些地点合作一下也算是被地点的景区为他们宣传也算是为咱们自己的品牌咱们的工作室宣传就是我们把那些拍摄照片然后就是进行宣传的就可以使用然后既可以宣传来点景点然后咱们也是可以宣传到那些市场销售方面就是对于咱们怎么样拉拢能不能让客户介绍一下这个有什么想法一方面就是宣传要做好宣传要做得够大够细就是几方面吧线上和线下线上的话都一些线上广告比如说我们宣传这种也是正在做的比较短的也会有开放用一方面可以学校或者一些分社就跟一些学校谈一些合作跟一些警局谈一些合作就是要承包他们一些业务就比如说类似于证件照承载照之类的我们要去传唤接手他们的一些东西我们不能说就是给我们散散的直接扫过我们可以去承包一部分项目去做然后,就像他说的,赠妆,赠妆是很好的一方面,但是我们自己也可以赠男士,女士嘛,她来的话,她肯定是要……女性的市场更大,大部分还是女性最旺的。他可能是想去泡但是我们也对它大家好,教教如何通过【合】作和宣传提升婚纱租赁业务的客流量和品牌知名度。
+会议讨论了开设婚纱摄影工作室的最佳选址。倾向于选择学校附近而非商业区，因学生结婚需求稳定且成本较低。需注重经典合作案例展示与景点宣传。可通过合作学校、警局等机构承接业务，线上线下同步加大宣传力度，如广告投放、合作拍摄等。赠妆服务可吸引更多女性顾客。总体策略是利用现有资源，通过合作与宣传提升客流量和品牌知名度。
+reasoner 输出结束
+在进行精装一下就是在它的这个基础上我们可以在进行一些就是添加卢总您还好教教如何通过合作和宣传提升婚纱租赁业务的客流量和品牌知名度对 上一段他可以像宣传的话我关心他就宣传一下就是关于像他们有的女生就想开号写写名照是可以就是在他写的客栈里提供他想拍照的时候多送他一套衣服或者几组照片直接给这个想要拍照的这个客户一些利润然后一些好处然后他拍完之后回去会和他身边的亲朋好友宣传这样我觉得是比刚刚那个要从资金上就省下来了很多虽然我对话是有点同意一点就是相当于开业的时候大致的吸引人首先如果说咱们可以选择先客户今天就是免费拍写这张影子或者婚纱照的话这话是特别可行的一定要咱们只会在开业的这一段时间进行这种活动不怪是比较合适但是要是每隔一两个月就是抽一回的话就很不可能感觉就不可能会这个奖项比较廉价我觉得不能免费送他们拍婚纱照如果你刚开业的那段时间有好几对人想要结婚的话我们的损失太大了但是我们可以相对对他们价格上拥挥一点我感觉可以在刚开业的前三天举行打五个活动不要想他亏钱的事因为他们的宣传力咱们肯定要往上加大五个在前幾個月的時候,咱們的工作內容可以成為屬於一個星期抽集有的有的,可以免費進行拍照但是拍照的內容不可以包括寫真或是假的東西,相對較便宜的這種不公平的照片,可以給它進行入座拍照然後這是其中一點,因為咱們前面肯定會累嘛,很累的樣子,而且還會工資進行虧損但是現在先不要想推這個問題如果咱们举行了两三个月这个活动以后,咱们可以慢慢地来这个地步减小,减小到从第四个月开始以后,从一个星期抽几名变成了两个星期抽几名,然后意思好办,后边可以再多添几个额外的项目。然后,咱们在这个问题里面也可以和公司创建一个群聊就是在打出去元气以后,咱们的公司开始盈利的时候进行那我现在可以和你们上次群聊的客户进行一个群聊对,然后抽取嘛,就从他们人工抽取嘛就可以进行免费的拍摄也可以就是发一个红包,对不对对,进行红包发取,然后再进行免费拍摄要发很多通告,让顾客们觉得这个比较好,这样的话就可以再明晰给大家。宣传我觉得这样应该就是差不多。最开始宣传的时候,咱们也可以把咱们摄影师拍过的一些作品先展示出来,让顾客们看到咱们摄影师的实力,拍出来的水平。现在还有一个问题就是说咱们对咱们管理者需要招聘的这些人,就是有是吗?就是想要招聘什么样的?需要一些就是和我一起去大学里或者是社区里进行宣传的人员吧,就是往上进行关联一下,就是可以做一些就是,这个的话,网页里的这个方面的谢谢大家还有聘请专业的摄像师,做单位化,谈谈对模,请约单位的对模,谈同样的化妆师。找他们的助理,找他们的时候一定要找那种有耐心,有耗血,有问题会及时改正。然后很必要的,后期PS的事。这在摄影师管理管理者那边管理部门会把这个都做好然后咱们这个销售部门销售这边看就是几方面吧一个是打电话一个是这个可以定期的对那些在咱们这个店里开会的人定期回访对然后就是说有什么活动的时候会及时想到那些应先参与的顾客让他们来参加对咱们不是有群吗然后在一个消费这边就是会定期的出一些这个销售活动就是之前班来说的就是拍照片送照片这些活动这样也是一种营销策略在在有营销这方面的话就是主要还是宣传做的好营销卖的多就是这方面的内容我们这边做的多好营销这方面就会使用很大的力气营销这边主要是几方面一方面就是出一些优惠活动再一方面就是拉客户再一方面就是用咱们的老客户去推新客户才可以用老人拉新人的方式就是在党科部,人员,大师,大师的毕竟现在人比较多,需求量比较大,所以销售还是比较好做的主要就是看面对的不同的人群,我们需要用不同的方式去面对他可以找一些同僚人不能说同样的,找一些比较年轻的人去跟他们聊,让他们来给他们拍照然后稍微上岁数一些的,我们就可以找一些跟他们年纪相仿的,比较能聊得来的人去跟他们说咱们这个婚纱有哪些影响策略避免导致因为一些什么话题都不同,流失客户这些的感谢观看推
+[Text Detection] 在 2066.89 秒检测到关键词 '好交交',current_time: 2040.00, 问题文本: 推薦的话会赠送东西吗这个可以可以多赠送百台就是百件这些也可以就比如像老客户把拉拉过十个或者二十个三十个之类的人我们可以给他一些前台奖励也不是不可以但是也不能特别多就是开在稍微也不算太偏差你好交交基于之前我们讨论的
+问题音频片段长度: 541174, dtype: float32, min: -0.131500244140625, max: 0.105560302734375
+问题音频时间长度: 33.823375
+
+
+[Agent] 接收到问题: 在《算菜》太篇上你好娇娇基于之前我们讨论的内容关于新开业摄影楼的宣传和营销策略你怎么看待我们提出的前三天打五折活动以及定期抽选幸运顾客免费拍摄的方案在《稍微算菜》这些活动是否能有效提升我们的知名度和吸引新客户同时我们应该如何平衡优惠活动和成本控制以确保公司的长期盈利
+, 1735096802.5043674
+
+
+[Agent] 最终接收到问题: 在《算菜》太篇上你好娇娇基于之前我们讨论的内容关于新开业摄影楼的宣传和营销策略你怎么看待我们提出的前三天打五折活动以及定期抽选幸运顾客免费拍摄的方案在《稍微算菜》这些活动是否能有效提升我们的知名度和吸引新客户同时我们应该如何平衡优惠活动和成本控制以确保公司的长期盈利
+, 1735096802.5044787
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4930 seconds, One token time: 0.1643 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：宣传营销 活动方案 成本控制
+Token count: 32, Total time: 6.1691 seconds, One token time: 0.1928 seconds
+
+提取的关键词: ['宣传营销', '活动方案', '成本控制']
+
+找到的上下文片段数量: 1
+提出的前三天打五折活动和定期抽选幸运顾客免费拍摄方案，能有效提升知名度并吸引新客户。需注意平衡优惠力度与成本控制，如通过提高非活动时段的收费标准或增加工作效率来覆盖折扣带来的损失，确保长期盈利。此外，利用老客户推荐新客户、定期回访及组织活动等方式也能增强客户粘性。
+Token count: 80, Total time: 15.5324 seconds, One token time: 0.1942 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：宣传营销 活动方案 成本控制
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 这在摄影师管理管理者那边管理部门会把这个都做好然后咱们这个销售部门销售这边看就是几方面吧一个是打电话一个是这个可以定期的对那些在咱们这个店里开会的人定期回访对然后就是说有什么活动的时候会及时想到那些应先参与的顾客让他们来参加对咱们不是有群吗然后在一个消费这边就是会定期的出一些这个销售活动就是之前班来说的就是拍照片送照片这些活动这样也是一种营销策略在在有营销这方面的话就是主要还是宣传做的好营销卖的多就是这方面的内容我们这边做的多好营销这方面就会使用很大的力气营销这边主要是几方面一方面就是出一些优惠活动再一方面就是拉客户再一方面就是用咱们的老客户去推新客户才可以用老人拉新人的方式就是在党科部,人员,大师,大师的毕竟现在人比较多,需求量比较大,所以销售还是比较好做的主要就是看面对的不同的人群,我们需要用不同的方式去面对他可以找一些同僚人不能说同样的,找一些比较年轻的人去跟他们聊,让他们来给他们拍照然后稍微上岁数一些的,我们就可以找一些跟他们年纪相仿的,比较能聊得来的人去跟他们说咱们这个婚纱有哪些影响策略避免导致因为一些什么话题都不同,流失客户这些的感谢观看推在《算菜》太篇上你好娇娇基于之前我们讨论的内容关于新开业摄影楼的宣传和营销策略你怎么看待我们提出的前三天打五折活动以及定期抽选幸运顾客免费拍摄的方案在《稍微算菜》这些活动是否能有效提升我们的知名度和吸引新客户同时我们应该如何平衡优惠活动和【成】本控制以确保公司的长期
+提出的前三天打五折活动和定期抽选幸运顾客免费拍摄方案，能有效提升知名度并吸引新客户。需注意平衡优惠力度与成本控制，如通过提高非活动时段的收费标准或增加工作效率来覆盖折扣带来的损失，确保长期盈利。此外，利用老客户推荐新客户、定期回访及组织活动等方式也能增强客户粘性。
+reasoner 输出结束
+薦的话会赠送东西吗这个可以可以多赠送百台就是百件这些也可以就比如像老客户把拉拉过十个或者二十个三十个之类的人我们可以给他一些前台奖励也不是不可以但是也不能特别多就是开在稍微也不算太偏差你好交交基于之前我们讨论的他们是在最开始就能接触到那些想要拍照的工作对 想要拍照的工作对 这些工作一定要然后可以成立一个小组吧就是专门联系一些售后比如说拍出来的照片顾客有不满意或者说有没有改进的地方一定要及时地更改及时地把这个问题给解决行那到时候这个责任可以和这个情况谈谈行吧好
+[Audio Detection] 在 2213.96 秒检测到关键词 '好交交'。
+detection_time: 2213.96, current_time: 2190.00
+问题音频片段长度: 88827, dtype: float32, min: -0.10089111328125, max: 0.102203369140625
+问题音频时间长度: 5.5516875
+
+
+[Agent] 接收到问题: 如何通过奖励机制提升老客户拉新效果并优化售后服务
+, 1735096829.1809962
+
+
+[Agent] 最终接收到问题: 如何通过奖励机制提升老客户拉新效果并优化售后服务
+, 1735096829.1815639
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4638 seconds, One token time: 0.1546 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 57, Total time: 2.3451 seconds, One token time: 0.0411 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+通过奖励机制提升老客户拉新效果并优化售后服务，可以采取以下措施：
+
+1. 设立推荐奖励：对于老客户提供推荐新客户的奖励，如优惠券、积分等。
+
+2. 增设会员等级：根据消费金额或次数，设立不同的会员等级，提供更优质的服务和更多的优惠。
+
+3. 定期活动：定期举办抽奖、促销等活动，吸引新客户，并通过老客户的口碑推广增加销售额。
+
+4. 提升服务质量：提供优质的售前咨询、售中服务和售后支持，提升客户满意度，增强其口碑传播力度。
+
+5. 数据分析：对客户行为数据进行分析，了解客户需求，不断优化产品和服务，提高客户价值。
+talker 输出结束
+
+会议数据处理完成。

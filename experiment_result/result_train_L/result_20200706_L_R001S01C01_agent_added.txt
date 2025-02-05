@@ -1,0 +1,222 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200706_L_R001S01C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 70
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.10s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.85s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.26s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.96s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.03s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.06s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.08s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.21s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:10,  5.46s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.12s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.87s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.90s/it]
+002我是指导老师022我是部长026我是副部长0135我是部长0235我是部长024我是部长025我是部长行 好了 今天这样我来听一下你你这个这个对谢谢现在由部长主持会议好的指导人好 同学们好今天咱们的会议主要就是讲讲元旦党会咱们的学校该怎么举行大家有什么想法都可以尽情发言首先由我们的杜部长发言一下 说说他的想法好 各位老师好这个学校举行的元旦党会议首先是前一段时间四个同学来写了一下策划这个策划呢是要安排这个联合会的这个活动活动晚上几点呢要租场地要租学校的运动场然后还要找学校老师借大骨和那个红地毯还有咱们学生部要凑钱买那个气球然后由咱们学生部的女同学去布置现场然后晚上会有24个节目有大学的策划,前段时间的策划也让大家说了。反正开场的节目肯定是由老师和学生组织的跳舞和唱歌,一个大节目。然后就请下面同学说一说自己的策划,就是有什么活动可以说一下。A这边活动的话,开场是一个老师和同学们大合唱,有跳舞的活动。这个一定要给老师们准备好服装给老师们说好时间然后你给老师对老师和学生一起对老师合唱学生伴国这一块你会请哪些老师这一块主要请一个是咱们班的班长还有就是请咱们这个专业的老师还有校长副校长之类的这一块如果需要关注我可以给你提供这个方案好的 到时候需要您的装备然后接下来就是一些节目节目的话需要下边再具体安排哪个节目在前哪个节目在后然后安排完了之后会跟每一个节目的负责人去联系然后看他们需要什么道具需要什么提前布置需要场地会干嘛的让他们及时的报备我们也会提前给他们准备然后再一个就是拉赞助这块拉赞助这块我们因为是养养会嘛我们肯定要去找一些吃的或者喝的比如像这个仪宝啊还有什么康师傅啊就这一系列的吃的或者喝的一些品牌让他们给咱们拉赞助我们去拉赞助让他们支持我们的一些设备啊还有器材什么的目前能在拉丹玫瑰环节上拉拉兔这方面主要现在拉的是仪宝,仪宝确定是给我们十万的赞助,然后我们买一些设备什么的,可能后期还需要再去拉一些别的赞助。然后A企业方面,钱没有什么。咱们的设备是自己购买的还是租用别的公司的租用别的公司的因为咱们这儿是开的话是一学年一次不可能说这个东西各隔一年租用这个同学说了一下场会的布置那个场地还有赞助的事还有一个节目他也说了还有这个场地租用的必须要是体育馆因为有篮球架还是可以推动的所以需要篮球的男生到时候你帮忙推一下然后女生由他们来布置会场什么粘气球啊什么之类的然后还有让女生印一下给他们学校的选择报还有条服对还有条服上面写着什么拉赞助之类的活动然后这个女生前一段策划也没有准备的所以由毕学员说一下关于这个元旦晚会首先刚才部长说了有24个节目我觉得最开始最开场节目应该是比较带动气氛的有唱歌和跳舞然后期间一共进行大概两个小时然后中间应该还有跳舞、唱歌、相声、小品,然后各种。然后等到最后的时候,可能会再给导演或者年级主任的什么专业的那些老师们一个惊喜吧。对,合影、惊喜,当作是留念。然后期间也可以进行一些互动然后让场上的气氛更加大家活跃吧,大家融洽,大家都比较开心。这个就需要有请本部老师帮助咱们,要找几个评委最好。这边会为大家提供一些帮助。然后这是同学说的,活动它肯定是具体内容的,毕竟24个活动,咱们肯定是有规划的。咱们想肯定是要出两个活动对,家门户可能也是要复活动的,然后咱们怎么向学生们通知这件事情对,刚才这个通知这件事情,刚才就是印海报,发海报,去学校校门口发海报,或者去食堂贴这样的海报传单也可以拈有奖品,可以拈有一个奖品那个节目表现得比较好今天咱们学校可以按第一名第二名第三名的奖品和比方说第一名是给家里学分啊然后给他点吃的呀什么的咱们可以从八个单子里边的钱去购买一些小礼品对而且礼品也要买六份虽然是三零分三零但是要买六份因为礼品的大礼物他都能两次能看见这个必须要给他的大礼物因为他谁购奖他才收不着对啊礼物要成为空子还就是现场布置大家有没有想法吗我觉得我们的晚会可以在学校操场进行比较复制的比较精细一点,然后灯光什么打的都比较到位一点,然后做的比较专业一点,用摄像机什么的做好我们学校宣传吧。因为我们的活动我觉得不只是一年一次的活动,这个意义比较大然
+[Text Detection] 在 504.33 秒检测到关键词 '好教教',current_time: 480.00, 问题文本: 然后我们也拉了很多赞助就是不仅宣传我们学校就是要促进一下师生关系还要向外宣传一下我们学校的校园文化所以我们要做好这个方面什么灯光啊怎么安排然后怎么布置现场可以摆一个在操场摆一个比较大一点的台子我觉得你好你好教教如何有效通知学生参加元旦晚会并提高活动参与度
+问题音频片段长度: 112470, dtype: float32, min: -0.16009521484375, max: 0.160675048828125
+问题音频时间长度: 7.029375
+
+
+[Agent] 接收到问题: 教教如何有效通知学生参加元旦晚会并提高活动参与度
+, 1735098731.4919918
+
+
+[Agent] 最终接收到问题: 教教如何有效通知学生参加元旦晚会并提高活动参与度
+, 1735098731.4921057
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9049 seconds, One token time: 0.3016 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+为有效通知学生参加元旦晚会，可以采取以下措施：
+
+1. 利用微信、QQ等社交平台发布活动信息，包括时间、地点、活动内容等，同时附上报名方式和截止日期。
+
+2. 在学校内张贴海报，让每个学生都能看到活动信息。
+
+3. 组织班级讨论会，由班长或班主任向全班同学介绍活动情况，并鼓励大家积极参与。
+
+4. 邀请知名嘉宾或艺术家来表演，以吸引更多学生的兴趣。
+
+5. 设置奖励机制，对于参与活动的优秀个人或团体给予奖励，以此提高活动的参与度。
+talker 输出结束
+后我们也拉了很多赞助就是不仅宣传我们学校就是要促进一下师生关系还要向外宣传一下我们学校的校园文化所以我们要做好这个方面什么灯光啊怎么安排然后怎么布置现场可以摆一个在操场摆一个比较大一点的台子我觉得你好你好教教如何有效通知学生参加元旦晚会并提高活动参与度刚才CA也说了,说的是,他不是要去操场了,就从体育馆搬到操场了,操场地方大了,所以咱们这个费用,最好再拉一个赞助,十万块钱可能不够,因为音箱,它要多,灯光也要大得多,最好都是租用,这样便宜,服装呢,找逃生的。你准备从这个体育馆搬到操场?对,因为……什么时候进行?什么时候才进行?这个冷都冷的对呀对,考虑这个,觉得还是室内比较好因为天气,元旦说天气比较冷这个是晚上开吗?晚上开晚上开,晚上六点开始入席这个人多的话,也不会感觉到元旦的时候看情况吧看这个天气情况要做两手准备如果天气好的话,那个就是如果说就是操场不规定的话,就是如果前期领馆太小,我们可以向外去租另一个体育馆,因为毕竟我们是要赚赚赚的,我们拿了那么多钱,然后我们肯定是要找校外人员进行合作的。所以说我们要在宣传我们这个网会方面的话,也是要下大礼的。因為要讓很多人我说体育馆不够床上,因为又用不到,所以说需要向外走,向外走的话,那么如何提前布置,那是一个很大的问题。还有一个刚才你说的,体外面的一个产品,就是这个成本的一个问题。我觉得咱们学校的体育馆面积就足够大了。学校里的礼堂或者体育馆我觉得应该可以节省更多的成本然后复制然后花更多的精力在在服装装饰然后宣传上面宣传上面毕竟已经是台东拉越来的咱们就已经在体育馆内吧就是早一点时间布置不要这样也不用做然后准备这样的话我们就清楚了好吧咱们就不花时间花在布置上还有策划这个执行上布置上面有什么计划呢布置上面毕竟移动场和环境还有个主题主题有没有考虑完但是大家要注意一下地界政治的工作肯定要准备好因为学校的领导人们从地盘最好从屋口出品然后让他们让咱们学生部的准备好主要是洞子这方面咱们学校体育馆都有在南州做的都有这个位置主要是人太多了在租两千的洞因为它那个座位只有四五个座位是重牌的它坐不下然后装饰上面为了回忆气氛然后可以买一些气球然后我们这种复原就是B跟C可以在下面把这些就是就是然后再带动别的同学一起帮忙做一下然后联合一下其他部位对对然后把那个装饰的稍微好看一点用彩带气球条服各种还有灯光灯光可以买这种原型的爆彩对爆彩咱们可以找这个专业的公司去请他们在意回来给咱们帮个带我看黑衣啊还有这个灯光哎呀我觉得可以找一个专门干这个的灯光公司,然后给他们搞一套专业的设备。然后看具体要用到哪个节目上,咱们就具体安排到哪个节目上。然后比如像一些什么聚光灯啊之类的,这样效果是好很多的。这24个联盟你觉得有没有好啊?現在還沒有開始製作我们只能说是部内进行策划一下策划24个节目大概是24个节目一个节目平均时长是六七分钟这个联放会大概是六七分钟那肯定会有时间长的咱这个晚会你计划多长时间计划是三个小时三个小时三个小时就是180人谢谢大家然后我们到讲讲话24个节目你们想要分哪几类的几大类主要有歌舞之一类歌舞一类相声小品之一类相声小品还有才艺表演之一类才艺表演三大类三大类我们可以加那个故事表演的一些求情剧对 求情剧历史剧然后可以让学生们在下面大合唱 师生大合唱我觉得也可以加好 咱们学院主要是是领导参加还有大部分的学生要参加所以说这次晚会咱们主题的话也可以更加稍微比较清晰一点然后同时和林老师们进行一下活动最后咱们可以用一种比较引用心理的节目比如什么Costia因为现在德国年轻人都比较喜欢这个到时候相对于马赛路什么的也会有很大的帮助还有这个节目准备好了就需要静元一下主持主持人这一方面几个人要4个支持人,最好男生在1.8左右,女生在1.7左右。两男两女,对,空乘机可以找4E。其实对那个那个比较好工程系还是那个播音专业播音专业也可以对,播音专业也可以工程系可以找思逸的咱们都是挑玩的比对
+[Text Detection] 在 1013.66 秒检测到关键词 '娇娇',current_time: 990.00, 问题文本: 对 主持人要提前毕竟活动挺大我觉得主持人这个也是应该在提前考核一下对 一两周就先竞选一下选出来四个比较合格的我觉得应该六个吧咱们还有至少有两个备用的对 也要有替补对 万一谁人是有事的话可以替上去学校举行的原联欢晚会呢你好 娇娇基于之前我们讨论内容关于晚会的举办地点你们有考虑过如果天气
+问题音频片段长度: 358230, dtype: float32, min: -0.149505615234375, max: 0.134857177734375
+问题音频时间长度: 22.389375
+
+
+[Agent] 接收到问题: 你好 焦焦基于之前我们讨论内容关于晚会的举办地点你们有考虑过如果天气寒冷是否需要从操场转体育馆内进行吗同时针对晚会的主题和宣传布置你们有什么具体的计划和想法吗那这个就有
+, 1735098766.0966752
+
+
+[Agent] 最终接收到问题: 你好 焦焦基于之前我们讨论内容关于晚会的举办地点你们有考虑过如果天气寒冷是否需要从操场转体育馆内进行吗同时针对晚会的主题和宣传布置你们有什么具体的计划和想法吗那这个就有
+, 1735098766.096782
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4750 seconds, One token time: 0.1583 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：晚会 场地 天气寒冷 体育馆 宣传布置
+Token count: 36, Total time: 7.3386 seconds, One token time: 0.2039 seconds
+
+提取的关键词: ['晚会', '场地', '天气寒冷', '体育馆', '宣传布置']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，建议通过制作海报并在校门口和食堂张贴、设置奖品激励等方式通知学生参加元旦晚会。晚会计划在操场上举行，预计持续三个小时。地点从体育馆改至操场以容纳更多观众，并考虑天气因素。晚会分为歌舞、相声小品、才艺表演三大类，共24个节目，每个节目约6-7分钟。晚会将邀请师生共同参与，计划安排4位主持人，其中建议从工程系或播音专业选拔身高适中的同学担任。
+Token count: 112, Total time: 21.9974 seconds, One token time: 0.1964 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：晚会 场地 天气寒冷 体育馆 宣传布置
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 咱们想肯定是要出两个活动对,家门户可能也是要复活动的,然后咱们怎么向学生们通知这件事情对,刚才这个通知这件事情,刚才就是印海报,发海报,去学校校门口发海报,或者去食堂贴这样的海报传单也可以拈有奖品,可以拈有一个奖品那个节目表现得比较好今天咱们学校可以按第一名第二名第三名的奖品和比方说第一名是给家里学分啊然后给他点吃的呀什么的咱们可以从八个单子里边的钱去购买一些小礼品对而且礼品也要买六份虽然是三零分三零但是要买六份因为礼品的大礼物他都能两次能看见这个必须要给他的大礼物因为他谁购奖他才收不着对啊礼物要成为空子还就是现场布置大家有没有想法吗我觉得我们的晚会可以在学校操场进行比较复制的比较精细一点,然后灯光什么打的都比较到位一点,然后做的比较专业一点,用摄像机什么的做好我们学校宣传吧。因为我们的活动我觉得不只是一年一次的活动,这个意义比较大然教教如何有效通知学生参加元旦晚会并提高活动参与度后我们也拉了很多赞助就是不仅宣传我们学校就是要促进一下师生关系还要向外宣传一下我们学校的校园文化所以我们要做好这个方面什么灯光啊怎么安排然后怎么布置现场可以摆一个在操场摆一个比较大一点的台子我觉得你好你好教教如何有效通知学生参加元旦【晚】会并提高活动参与度刚才CA也说了,说的是,他不是要去操场了,就从体育馆搬到操场了,操场地方大了,所以咱们这个费用,最好再拉一个赞助,十万块钱可能不够,因为音箱,它要多,灯光也要大得多,最好都是租用,这样便宜,服装呢,找逃生的。你准备从这个体育馆搬到操场?对,因为……什么时候进行?什么时候才进行?这个冷都冷的对呀对,考虑这个,觉得还是室内比较好因为天气,元旦说天气比较冷这个是晚上开吗?晚上开晚上开,晚上六点开始入席这个人多的话,也不会感觉到元旦的时候看情况吧看这个天气情况要做两手准备如果天气好的话,那个就是如果说就是操场不规定的话,就是如果前期领馆太小,我们可以向外去租另一个体育馆,因为毕竟我们是要赚赚赚的,我们拿了那么多钱,然后我们肯定是要找校外人员进行合作的。
+---
+这24个联盟你觉得有没有好啊?現在還沒有開始製作我们只能说是部内进行策划一下策划24个节目大概是24个节目一个节目平均时长是六七分钟这个联放会大概是六七分钟那肯定会有时间长的咱这个晚会你计划多长时间计划是三个小时三个小时三个小时就是180人谢谢大家然后我们到讲讲话24个节目你们想要分哪几类的几大类主要有歌舞之一类歌舞一类相声小品之一类相声小品还有才艺表演之一类才艺表演三大类三大类我们可以加那个故事表演的一些求情剧对 求情剧历史剧然后可以让学生们在下面大合唱 师生大合唱我觉得也可以加好 咱们学院主要是是领导参加还有大部分的学生要参加所以说这次晚会咱们主题的话也可以更加稍微比较清晰一点然后同时和林老师们进行一下活动最后咱们可以用一种比较引用心理的节目比如什么Costia因为现在德国年轻人都比较喜欢这个到时候相对于马赛路什么的也会有很大的帮助还有这个节目准备好了就需要静元一下主持主持人这一方面几个人要4个支持人,最好男生在1.8左右,女生在1.7左右。两男两女,对,空乘机可以找4E。其实对那个那个比较好工程系还是那个播音专业播音专业也可以对,播音专业也可以工程系可以找思逸的咱们都是挑玩的比对你好 焦焦基于之前我们讨论内容关于晚会的举办地点你们这24个联盟你觉得有没有好啊?現在還沒有開始製作我们只能说是部内进行策划一下策划24个节目大概是24个节目一个节目平
+根据会议内容，建议通过制作海报并在校门口和食堂张贴、设置奖品激励等方式通知学生参加元旦晚会。晚会计划在操场上举行，预计持续三个小时。地点从体育馆改至操场以容纳更多观众，并考虑天气因素。晚会分为歌舞、相声小品、才艺表演三大类，共24个节目，每个节目约6-7分钟。晚会将邀请师生共同参与，计划安排4位主持人，其中建议从工程系或播音专业选拔身高适中的同学担任。
+reasoner 输出结束
+ 主持人要提前毕竟活动挺大我觉得主持人这个也是应该在提前考核一下对 一两周就先竞选一下选出来四个比较合格的我觉得应该六个吧咱们还有至少有两个备用的对 也要有替补对 万一谁人是有事的话可以替上去学校举行的原联欢晚会呢你好 娇娇基于之前我们讨论内容关于晚会的举办地点你们有考虑过如果天气主持人和观众的一些互动也可以咱们不一定要不要按节目咱们可以给他们整一个小戏啥两个小戏让他们做上面的游戏游戏上面有什么最好是师生游戏师生互动游戏C-LOG有什么意见吗游戏 师生互动的游戏一束花吧然后就就那个根据我的意思是在互动因为我们的一个节目表演时间比较长嘛所以可以和下面的那些同学们现场中间互动一下然后可以根据那个音乐的时间节点然后就抽一部分那个同学上那个台子上面表演一下呢可以发挥一下自己的特长我们可以搞一个直播然后选取几名幸运观众上来表演节目这个也可以时不时的解个屏让出去几个幸运同学其实你想啊如果坐在第一排的话就是上台表演第一个景的时候就可以直接点然后跟着一起唱那我说也是像这个程度可以最好是能有一个游戏让学生直接上台动起来请不吝点赞 订阅 转发 打赏支持明镜与点点栏目这样一些活用器还有咱们拉了十万块钱赞助最好拿一箱给你分出来这样的话咱们拉一个大个的区最好分四个或者五个区然后给师兄拉到那个群里头分开给他们发一个大福包对三个月对咱们这个十万块钱那个钱这个预算还需要花多少钱这个负担谢谢大家咱们的自动设备,因为咱们的自动设备现在都便宜,主要是花在请专业人员的设备,加上人员大概需要,这个账里面有做清洗,要公示一下这个账单,我们这一共有20多个节目,我觉得要提前两个月,我们就要发布一些公告,因为他们排练时间,排练,然后歌舞排练,然后还有彩排,都需要一定时间,然后再调整顺序,所以咱们一定要提前通知,让他们有时间来准备,对吧?那由D同学做一个BBT吧他是信息在机的就让他做一个PPT还有Systems也有设计专辑的他可以做一个Excel来订一下文档预算什么的有库章给他提供我把那个预算所有的信单都发给你然后你做一个Excel做出一个信单对然后节目名单到后面也可以让他做的那个PPT一定要做的多样化然后可以多放一点然后曹福由AV两位同学来做还有就是现在咱们现阶段的任务就是我和吴部长去控制一个关系然后然后剩下的我觉得我们通过的是节目进行可以按照那个部门给每个学生部然后先发一下他们想要表演的节目这个时候如果说国外小伙伴呢,比如说去旁边的音乐学院,然后老人家来表演开音乐,可以请,但是你要给他们养猪费,这个价格这点,还是再拉一根再做?先由部长计算出来预算设置和人员的钱,然后再看看要不要搞外联主持人好,他就能带走气氛,主持人不好,气氛就死了,联合会开得就特别尴尬。还有一部长一定要发活动,就是报名的人员他肯定不能白报,一定要加成一份,让他们吃到饱。对,就比如说到时候调动他们的记忆性对这方面调动记忆性毕竟都有什么好的办法越有越好因为咱们是24个暂停24个项目肯定是种类越多越好比如来个魔术来个武术来个高武这些肯定还是物质奖的一个还有肯定也要带上学分啊学分加点物质可以结合啊物质加学分都可以你可以让他们选选物质或者选学分都可能后边可以再商量一点一定参与参与如果是报活动的话只有学会讲这个都会帮你行那咱们这个刚才说故事这个学会方三个奖项是还要有三个奖项咱们就确实三个奖项三个奖项会不会太少三个五个吧三个四个一等两个三个两个要参与然后这个礼物的价值也是提高了咱们一等两可以给他们送一些送的用品啊这是海洋的东西,还有东西想要?送个微博,喜欢?微博可以送参与奖参与奖,对,参与奖该说参与奖得种类多一点微博,手套微博,手套帽子水杯这都是参与奖有的提供一些导致比如说嗯大家想尝尝三头奖到后边可以看吧可以买一些男生女生比较时尚的什么手制啊男生那些方面可以买一些才艺的那些什么体育啊衣服让他们下水的或者可以买一些手段哦对买一些哪家手段那...PJ呢?A同学这边A同学这边我觉得可以给他们送一些体育器材或者咱们毕竟是从外头搭的赞助嘛比如像什么体育场地咱们可以去搞一些年卡月卡之类的可以送给他们那B同学三等奖我觉得我现在考虑可能大部分是女生因为冬天然后可以买一些暖手宝对那些那些就是也算一手电器了吧然后价钱也会相对提高那谁同学我觉得可以送一些耳蓝牙耳机啊什么对一些电子产品作为比较大一点的奖项然後做一些大一點的
+[Audio Detection] 在 1603.64 秒检测到关键词 '好交交'。
+detection_time: 1603.64, current_time: 1590.00
+问题音频片段长度: 120491, dtype: float32, min: -0.131622314453125, max: 0.121917724609375
+问题音频时间长度: 7.5306875
+
+
+[Agent] 接收到问题: 如何调动私生参与互动游戏的积极性你有什么好建议
+, 1735098826.7907128
+
+
+[Agent] 最终接收到问题: 如何调动私生参与互动游戏的积极性你有什么好建议
+, 1735098826.790852
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4872 seconds, One token time: 0.1624 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 106, Total time: 3.9896 seconds, One token time: 0.0376 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+为调动师生参与互动游戏的积极性，可以采取以下建议：
+1. 设计丰富多样的互动游戏，增加趣味性和挑战性；
+2. 尊重师生的个性差异，提供多样化的游戏选择；
+3. 对参与游戏的师生进行奖励，增强他们的成就感和归属感。
+talker 输出结束
+经费,钱方面我们也要节约,因为到时候要让咱们学生会这些人,对这个账,这些不能乱花,节约一下。要是一二三两的礼物太贵的话,咱们得预算最多,因为他怕有团体结伙,有五老七八个人,咱不能一人守两个人。相当于一个团队只能送他一辆对,打算自己再来洗我感觉二代辆还可以送那种台呀,营销稍微好点就是他们下音乐系舞蹈系都有可能用到然后音质好,他们也可以带到他们经纪线我觉得咱们那个节目都是根据某一个团体不是一块表演的吗就某一个部门或者某一个社团然后或者某一个班级我们可以如果他们获奖的话就给他们那个他们这个班级需要什么东西或者这个社团或者需要一个单反摄像机啊或者什么可以这样固定了送他们一个这个礼品我觉得这样是比较合适也是一个团体就一个奖项经费就会比较节省下来那B同学呢我觉得在参与奖这边就是就最简单的生活用品就行就手套这些别的电子产品我觉得不需要现在一二等奖一二等奖我觉得我的意思就是说把刚才参与这些奖项往上移一下这些奖品什么蓝牙什么都不应该出现在三等奖里我觉得应该二等奖然后一等奖然后才是折叠自行车对吧,我觉得人多的话毕竟不能一人一辆自行车,一人一个iPad这个成本太大了那么一能讲是什么?折叠电池,二能讲是什么?蓝牙音响三能讲是什么?蓝熊宝啊蓝熊宝啊,什么的,小电器,四能讲咱们就是电动电脑,微博对,这样可以,这样奖项就顺利差不多了好然后一共节目到时候肯定要选并不是所有人想表演节目就可以上去表演这样挑选对肯定要有个选择对但是没有选上的那些人咱们也要给人家一定的奖品对让人家就心里会舒服一些那就是参与奖了对对对对那就可以让部长深调的活动一个是联欢会的一个加课的项目还有一个就是报名这个对,在报名的时候那这样的话学分就太不行了呀谁学分也要报名报名方面也要有限制不是这个不是什么都可以报名对,这方面选协就跟着这个学分来这方面也要注意一下不然这个咱们只能说是选上了以后就能参加表演了参加了对的基本问题可以加加的时候我觉得建议就是过奖阵一档奖 二档奖 三档奖嗯过奖你越高可以多加一档比如说一档奖是两档二档奖是一档三档奖是三档然后参与奖就不要再加了参与奖尽量不要再加了因为参与奖很太多行还有什么想要说的吗如果说学生是要参加这个晚会的所以说我们不能光带动说宣传让一些人来参加这个节目而是也要提高大家参与到这个晚会的进行就像那件事其实它可以设一个长相就是这么一样在场的观众进行选择搞一个线上和线下行 那咱这边还有问题吗没有问题没有问题 这样就亮了那咱本次会议就到此结束散会散会好看響鐘连
+[Text Detection] 在 2044.14 秒检测到关键词 '娇娇',current_time: 2040.00, 问题文本: 连单联欢晚会呢早好你好娇娇基于之前我们讨论的内容关于二等的奖品选择大家提出了蓝牙音箱P4等电子产品以及电瓶车等交通工具你觉得我们应该如何平衡奖品的实用性和吸引力同时考虑到预算
+问题音频片段长度: 444576, dtype: float32, min: -0.32110595703125, max: 0.3798828125
+问题音频时间长度: 27.786
+
+
+[Agent] 接收到问题: 连单联欢晚会呢早好你好娇娇基于之前我们讨论的内容关于二等的奖品选择大家提出了蓝牙音箱P4等电子产品以及电瓶车等交通工具你觉得我们应该如何平衡奖品的实用性和吸引力同时考虑到预算限制
+, 1735098852.7756865
+
+
+[Agent] 最终接收到问题: 连单联欢晚会呢早好你好娇娇基于之前我们讨论的内容关于二等的奖品选择大家提出了蓝牙音箱P4等电子产品以及电瓶车等交通工具你觉得我们应该如何平衡奖品的实用性和吸引力同时考虑到预算限制
+, 1735098852.7759454
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4845 seconds, One token time: 0.1615 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：奖品选择 实用性 吸引力 预算限制
+Token count: 36, Total time: 6.9178 seconds, One token time: 0.1922 seconds
+
+提取的关键词: ['奖品选择', '实用性', '吸引力', '预算限制']
+
+找到的上下文片段数量: 1
+根据会议内容，平衡奖品实用性和吸引力及预算的方法是：一二三等奖分别设蓝牙音响、折叠电池、蓝熊宝（小电器）等。这样既考虑了实用性又保持了一定吸引力。对于预算，可以通过将参与奖设为生活用品如手套，减少电子产品的使用，从而节省成本。同时，通过设定不同档次的奖项，合理分配奖品预算，确保整体活动的顺利进行。
+Token count: 92, Total time: 17.9688 seconds, One token time: 0.1953 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：奖品选择 实用性 吸引力 预算限制
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 相当于一个团队只能送他一辆对,打算自己再来洗我感觉二代辆还可以送那种台呀,营销稍微好点就是他们下音乐系舞蹈系都有可能用到然后音质好,他们也可以带到他们经纪线我觉得咱们那个节目都是根据某一个团体不是一块表演的吗就某一个部门或者某一个社团然后或者某一个班级我们可以如果他们获奖的话就给他们那个他们这个班级需要什么东西或者这个社团或者需要一个单反摄像机啊或者什么可以这样固定了送他们一个这个礼品我觉得这样是比较合适也是一个团体就一个奖项经费就会比较节省下来那B同学呢我觉得在参与奖这边就是就最简单的生活用品就行就手套这些别的电子产品我觉得不需要现在一二等奖一二等奖我觉得我的意思就是说把刚才参与这些奖项往上移一下这些奖品什么蓝牙什么都不应该出现在三等奖里我觉得应该二等奖然后一等奖然后才是折叠自行车对吧,我觉得人多的话毕竟不能一人一辆自行车,一人一个iPad这个成本太大了那么一能讲是什么?折叠电池,二能讲是什么?蓝牙音响三能讲是什么?蓝熊宝啊蓝熊宝啊,什么的,小电器,四能讲咱们就是电动电脑,微博对,这样可以,这样奖项就顺利差不多了好然后一共节目到时候肯定要选并不是所有人想表演节目就可以上去表演这样挑选对肯定要有个选择对但是没有选上的那些人咱们也要给人家一定的奖品对让人家就心里会舒服一些那就是参与奖了对对对对那就可以让部长深调的活动一个是联欢会的一个加课的项目还有一个就是报名这个对,在报名的时候那这样的话学分就太不行了呀谁学分也要报名报名方面也要有限制不是这个不是什么都可以报名对,这方面选协就跟着这个学分来这方面也要注意一下不然这个咱们只能说是选上了以后就能参加表演了参加了对的基本问题可以加加的时候我觉得建议就是过奖阵一档奖 二档奖 三档奖嗯过奖你越高可以多加一档比如说一档奖是两档二档奖是一档三档奖是三档然后参与奖就不要再加了参与奖尽量不要再加了因为参与奖很太多行还有什么想要说的吗如果说学生是要参加这个晚会的所以说我们不能光带动说宣传让一些人来参加这个节目而是也要提高大家参与到这个晚会的进行就像那件事其实它可以设一个长相就是这么一样在场的观众进行选择搞一个线上和线下行 那咱这边还有问题吗没有问题没有问题 这样就亮了那咱本次会议就到此结束散会散会好看響鐘连连单联欢晚会呢早好你好娇娇基于之前我们讨论的内容关于二等的【奖】品选择大家提出了蓝牙音箱P4等电子产品以及电瓶车等交通工具你觉得我们应该如何平衡奖品的实用性和吸引力同时考虑到预算
+根据会议内容，平衡奖品实用性和吸引力及预算的方法是：一二三等奖分别设蓝牙音响、折叠电池、蓝熊宝（小电器）等。这样既考虑了实用性又保持了一定吸引力。对于预算，可以通过将参与奖设为生活用品如手套，减少电子产品的使用，从而节省成本。同时，通过设定不同档次的奖项，合理分配奖品预算，确保整体活动的顺利进行。
+reasoner 输出结束
+单联欢晚会呢早好你好娇娇基于之前我们讨论的内容关于二等的奖品选择大家提出了蓝牙音箱P4等电子产品以及电瓶车等交通工具你觉得我们应该如何平衡奖品的实用性和吸引力同时考虑到预算
+会议数据处理完成。

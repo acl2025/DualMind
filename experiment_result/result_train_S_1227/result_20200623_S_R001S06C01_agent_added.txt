@@ -1,0 +1,239 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200623_S_R001S06C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Starting processing from 0s, total chunks: 73
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.27it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.38s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.19s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  5.12s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.98s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.03s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.66s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.01s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.89s/it]/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:18<00:05,  5.38s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:20<00:00,  4.03s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:20<00:00,  4.02s/it]
+002我是总经理009我是策划005我是制作人002我是制作行好的今天叫各部门过来是开了一个咱们的一个月度总结会各部门总结一下上个月咱们这个工作情况未来下个月他们这个一个工作计划然后咱从这个市场这边开始说起市场上个月这个市场情况是一个什么样的状态可以说是还是很不错的从我们这儿有一婚的小情侣还有二婚的中年包括夕阳之恋也促成了好几对我们的市场环境还是很大的非常可观我们接手了这么多这方面的业务对啊我们发现我们还是很有很大的利益可图的目前接手这方面业务的情况这个刚才你也说了年轻的还有老的这方面年轻的和老的他们的思想有什么不同吗在这个婚礼方面就是简单的谁选的花钱对啊议论的他们是最因为投婚嘛然后他们是最舍得花钱的婚纱照啊摄影啊然后呢酒席啊这些都最舍得花钱的当然二婚呢他就会考虑到了一些没必要的开销了他们就要去节俭了然后夕阳之恋呢都是一时候大了都已经五六十了就为了找个伴儿这个呢就更简单了然后呢吃顿饭给他们拍个摄影拍个婚纱啦啦啦啦然后人家就去旅游了,旅游结个婚,这个就是说老年人呢,偏简单一点。然后一婚的小情侣呢,就是花钱比较短。那你说咱们的有些当板出的黄昏恋是吧,这种咱们给他策划就是旅游策。对,旅游结婚,出去玩一圈,当然是先。那这方面咱们这个盈利点在哪里?严厉一点就是我要让他们因为他们都咱们是和旅游公司合作嘛对 跟旅游公司合作然后也跟饭店合作因为他们也需要把他的儿女朋友请来一起吃个饭但是他就不会像规模就小了很多了他就不会像小年轻人一样同一婚的时候 哇 招的规模又大把饭店整个包下来了所以说我们呢黄红链的这个呢就是自己親戚家裡的朋友和儿女们在一起大概有个两三桌就够了然后呢诶祝贺一下二老诶满年幸福了对然后呢叫二老来一个云潭双飞六日游诶高高兴兴的吃完饭以后让他送二老上飞机诶旅游一圈诶其实我们搞的这个活动成果不小诶上个月有那么个十来顿的诶挺好的这个市场我觉得市场前景还是可以的未来就把人们对这个就相当于一个也是一种这个生活方式未来人们的生活方式会思想也会改变思想也会改变原来就是因为离个婚再婚对哎那就不举办个婚礼了现在现在呢你看这离婚率也增加了离婚率偏高哎然后这个中年呢让他们的结婚率也高了啊哎这样呢我们又有市场了我们的市场面临的中年人的结婚他们都结过婚了第二次结婚了你说女方也要求你说不办婚礼吗办这样无声中呢就得又得办酒席然后跟义工差的就差在哪呢就说哎呀照婚纱照我就没必要照那么花那么多钱照了吧有那么几张就可以了这个在这上面就省了钱了但是酒席上办酒席上他也要招朋友亲近来所以说这方面他们也不省钱也需要咱们给人设效给他留下美好的瞬间这方面的话所以说我们还是也有有利可图的给他制作成影集然后给他拍摄成视频所以说他们也要留神这方面市场的未来也是可观的对我们呢一般現在的他是因为他们刚结婚那会儿因为中年人说他们才结婚的时候有的就没有照过婚纱照没有拍摄过视频结果他们现在财力也有了物力也有了要求挺高我们好给他用上我们的高空的无人机空降然后拍摄他们结婚的照片哎呀让小伙伴高兴得很那就跟拍大片一样对三个月保温这种老年人手实际厂老年人实际厂,中年的大概也有个七八场还有那种年轻人年轻的也有个流气厂运混那种挺好,我认为上个月的市场不错这个收益也很可观接下来下个月我们继续开拓市场对,继续努力我们会在说下个月的工作规划我们现在进行策划里边说说上个月的一些策划的方案总结一下哪方面的不足和优点我们下个月争取下个月会让策划方案更加令顾客满意下個月有二三市场,策划二三市场那个婚礼吧其中呢有求婚的然后有办酒席的,然后结婚的场所整体效果还是比较好的咱们主要的一大特点呢就是浪漫因为结婚要的是浪漫比如说有那个筹划出来的那个空降,求婚啊然后整个求婚系列的一些求婚系列一般都有哪些方案有一般比较多的嘛比较实质比较多的有空降求婚还有跑车还有跑车组求婚还有游泳池潜水求婚就是一月三经求婚等等等等,许多整体效果最多的就是这几样在求婚方面,咱们公司目前是两种方案一个是咱们帮他策划,但是咱不负责具体的实施这方面咱们只赚他策划费還有就是
+[Audio Detection] 在 502.17 秒检测到关键词 '好交交'。
+detection_time: 502.17, current_time: 480.00
+问题音频片段长度: 174251, dtype: float32, min: -0.260589599609375, max: 0.26080322265625
+问题音频时间长度: 10.8906875
+
+
+[Agent] 接收到问题: 如何针对不同年龄段的婚礼需求调整策划方案以提高客户满意度
+, 1735130309.694748
+
+
+[Agent] 最终接收到问题: 如何针对不同年龄段的婚礼需求调整策划方案以提高客户满意度
+, 1735130309.6948867
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+0
+Token count: 3, Total time: 0.9297 seconds, One token time: 0.3099 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：婚礼需求 不同年龄段
+Token count: 27, Total time: 5.5872 seconds, One token time: 0.2069 seconds
+
+提取的关键词: ['婚礼需求', '不同年龄段']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+会议提到公司与旅游公司及饭店合作，针对中年人二次结婚市场，提供独特婚礼服务。如无人机空降拍摄、求婚策划等，既满足客户需求又带来盈利点。上个月市场表现良好，收益可观。下月计划拓展包括求婚、办酒席等市场，注重不同年龄段客户的需求，提供更多个性化服务。
+Token count: 74, Total time: 14.4666 seconds, One token time: 0.1955 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：婚礼需求 不同年龄段
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 那这方面咱们这个盈利点在哪里?严厉一点就是我要让他们因为他们都咱们是和旅游公司合作嘛对 跟旅游公司合作然后也跟饭店合作因为他们也需要把他的儿女朋友请来一起吃个饭但是他就不会像规模就小了很多了他就不会像小年轻人一样同一婚的时候 哇 招的规模又大把饭店整个包下来了所以说我们呢黄红链的这个呢就是自己親戚家裡的朋友和儿女们在一起大概有个两三桌就够了然后呢诶祝贺一下二老诶满年幸福了对然后呢叫二老来一个云潭双飞六日游诶高高兴兴的吃完饭以后让他送二老上飞机诶旅游一圈诶其实我们搞的这个活动成果不小诶上个月有那么个十来顿的诶挺好的这个市场我觉得市场前景还是可以的未来就把人们对这个就相当于一个也是一种这个生活方式未来人们的生活方式会思想也会改变思想也会改变原来就是因为离个婚再婚对哎那就不举办个婚礼了现在现在呢你看这离婚率也增加了离婚率偏高哎然后这个中年呢让他们的结婚率也高了啊哎这样呢我们又有市场了我们的市场面临的中年人的结婚他们都结过婚了第二次结婚了你说女方也要求你说不办婚礼吗办这样无声中呢就得又得办酒席然后跟义工差的就差在哪呢就说哎呀照婚纱照我就没必要照那么花那么多钱照了吧有那么几张就可以了这个在这上面就省了钱了但是酒席上办酒席上他也要招朋友亲近来所以说这方面他们也不省钱也需要咱们给人设效给他留下美好的瞬间这方面的话所以说我们还是也有有利可图的给他制作成影集然后给他拍摄成视频所以说他们也要留神这方面市场的未来也是可观的对我们呢一般現在的他是因为他们刚结婚那会儿因为中年人说他们才结婚的时候有的就没有照过婚纱照没有拍摄过视频结果他们现在财力也有了物力也有了要求挺高我们好给他用上我们的高空的无人机空降然后拍摄他们结婚的照片哎呀让小伙伴高兴得很那就跟拍大片一样对三个月保温这种老年人手实际厂老年人实际厂,中年的大概也有个七八场还有那种年轻人年轻的也有个流气厂运混那种挺好,我认为上个月的市场不错这个收益也很可观接下来下个月我们继续开拓市场对,继续努力我们会在说下个月的工作规划我们现在进行策划里边说说上个月的一些策划的方案总结一下哪方面的不足和优点我们下个月争取下个月会让策划方案更加令顾客满意下個月有二三市场,策划二三市场那个婚礼吧其中呢有求婚的然后有办酒席的,然后结婚的场所整体效果还是比较好的咱们主要的一大特点呢就是浪漫因为结婚要的是浪漫比如说有那个筹划出来的那个空降,求婚啊然后整个求婚系列的一些求婚系列一般都有哪些方案有一般比较多的嘛比较实质比较多的有空降求婚还有跑车还有跑车组求婚还有游泳池潜水求婚就是一月三经求婚等等等等,许多整体效果最多的就是这几样在求婚方面,咱们公司目前是两种方案一个是咱们帮他策划,但是咱不负责具体的实施这方面咱们只赚他策划费還有就是如何针对不同年龄段的【婚】礼需求调整策划方案以提高客户满
+会议提到公司与旅游公司及饭店合作，针对中年人二次结婚市场，提供独特婚礼服务。如无人机空降拍摄、求婚策划等，既满足客户需求又带来盈利点。上个月市场表现良好，收益可观。下月计划拓展包括求婚、办酒席等市场，注重不同年龄段客户的需求，提供更多个性化服务。
+reasoner 输出结束
+怎么说呢,应该是实施的难度,还是实施的成本这方面,怎么想要说的呢?在婚礼上实施的难度,现在还是没有。我们准备的道具啊什么的,都是比较充足的。有了鲜花我们婚礼是必不可少的物件礼炮还有气球我们这边都非常充足你说的是婚礼上刚才我说求婚这个业务上面后勤这一块你们想说的求婚这个业务上求婚上面是吧求婚上面业务量业务强度都比较低是吧都求婚上一般这个咱策划求婚咱这个刚才说求婚这个层面一般这个都比较好求婚呢当然是没有婚礼办的隆重当然求婚也是精巧吧但是不是就是浪漫,在有限的场所里表现出极具浪漫的特点。而且求婚的难度应该是不算太高,在我们的后续方面应该是完全可以解决的,没有什么难度。我们可以给他打造一下比方说我们用无人机给他雕了一个鲜花,然后高峰送给他。上个月有这个吧?有顾客邀请这个吗?有,但是它主要的难度就是操作无人机了。但是这方面人才还是很多的。还有咱们刚才也说到求婚这个业务,婚礼这个业务上面有什么享受的?婚礼上,这就办的比较隆重了。然后留在海滩上,布置就像沙滩派对一样。就是西方的文化还有一些比较中式的,穿起跑啊,结婚的还有一些穿古代风的新郎官啊还有咱们公司缺少一个东西那就是古代风需要骑马还有抬轿的骑马,抬轿的对,这方面骑马这方面肯定得新郎官非常熟悉對不然也有安全性的问题所以说在结婚的时候咱们公司在这方面还是比较短缺的吧应该给新郎官做一个培训然后还有一些抬轿子的人也是需要精心挑选的后勤这边要负到责任我们这边有我们的外面的司仪跟他主持婚礼然后会把他们双方都说的特别感动声泪俱下目前司仪有几个导致还是原来那几个我们的司仪有男有女看他们要什么程度他们要特别欢快的我们就给他找一个高高兴兴下来的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目就是不需要抹眼泪的就是也当然有的婚礼他需要有的女孩家长就觉得呀我们闺女好不容易嫁出去了我们就愿意让这个场景做得男生男婚那种感觉让他们永远的记住这个婚礼所以说有的人就找的那个随机讲的咱们公司这个私立方面男女比多少男的有两个女的有三个吧,五个,五个司机已经足够了。然后有的他饭店的话,他会有他们自己的司机,有的人家包一天桌,人家说是免费给赠送司机,所以说我们的司机就不出场了,就是这样。当然至于有的,有的客户人家要求用我们的司机,因为我们的司机还是比较专业的。结婚的时候服装要求,这也是咱们公司需要提升一下的问题。咱们跟服装公司合作,这方面价格可以往下打一打,毕竟服装这方面耗资还是比较巨大的。行 是这样的目前我这边因为一个老朋友这个 托关系托关系 一个老朋友的伙计朋友老朋友的朋友托到老朋友找到找到我 想让我想让咱们公司为他这个儿子策划一场这个婚礼在这个就要求嘛要求就是中国古典式的这种婚礼怎么说呢这个我也答应下来了然后我就想在这场会议当中咱们各部门讨论一下这个设计的一些方案具体实质的一些难度这方面各部门都有什么想法每个人都想尽力逃跑他也没有具体说明,只是说了一个中国式的,中国风吧。中国式的嘛,咱们古典的就是,从古到今就是女方蒙个头巾,对吧,然后和华轿。看她同意的话,我们给她来一个八胎大轿。前面汽车开道,后面也要八胎大轿。不是你刚才说汽车开道这方面,但是你现在……不能没有汽车呀那
+[Text Detection] 在 1015.76 秒检测到关键词 '娇娇',current_time: 990.00, 问题文本: 那汽车你就得想到怎么更符合古典这样的话我们在摄影的当中我们把汽车避开因为我们他的亲戚朋友不可能说都全部都古典所以说我们衬托古典有花轿有服装你好 娇娇基于之前我们讨论的内容
+问题音频片段长度: 492022, dtype: float32, min: -0.3380126953125, max: 0.334808349609375
+问题音频时间长度: 30.751375
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于策划中国古典式婚礼的具体实施难度和成本各部门有什么想法和建议吗特别是关于服装道具和私衣的选择我们应该如何优化资源配置以满足客户的需求同时控制成本然后有成就臭話題外話
+, 1735130358.117532
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于策划中国古典式婚礼的具体实施难度和成本各部门有什么想法和建议吗特别是关于服装道具和私衣的选择我们应该如何优化资源配置以满足客户的需求同时控制成本然后有成就臭話題外話
+, 1735130358.1177094
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4851 seconds, One token time: 0.1617 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：服装道具 私衣 优化资源配置 控制成本
+Token count: 33, Total time: 6.3345 seconds, One token time: 0.1920 seconds
+
+提取的关键词: ['服装道具', '私衣', '优化资源配置', '控制成本']
+
+找到的上下文片段数量: 1
+根据会议内容，各部门需要讨论中国古典式婚礼的具体实施方案。主要涉及服装、道具及私衣的选择，需优化资源配置，满足客户需求同时控制成本。具体建议包括：采用租赁服务减少一次性投入；定制部分特殊道具以降低成本；合理安排人力物力确保婚礼顺利进行。此外，还需考虑交通方式，既要体现传统元素，又不能完全依赖传统方式，可结合现代元素提升婚礼品质。
+Token count: 91, Total time: 17.6431 seconds, One token time: 0.1939 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：服装道具 私衣 优化资源配置 控制成本
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 行 是这样的目前我这边因为一个老朋友这个 托关系托关系 一个老朋友的伙计朋友老朋友的朋友托到老朋友找到找到我 想让我想让咱们公司为他这个儿子策划一场这个婚礼在这个就要求嘛要求就是中国古典式的这种婚礼怎么说呢这个我也答应下来了然后我就想在这场会议当中咱们各部门讨论一下这个设计的一些方案具体实质的一些难度这方面各部门都有什么想法每个人都想尽力逃跑他也没有具体说明,只是说了一个中国式的,中国风吧。中国式的嘛,咱们古典的就是,从古到今就是女方蒙个头巾,对吧,然后和华轿。看她同意的话,我们给她来一个八胎大轿。前面汽车开道,后面也要八胎大轿。不是你刚才说汽车开道这方面,但是你现在……不能没有汽车呀那基于之前我们讨论的内容关于策划中国古典式婚礼的具体实施难度和成本各部门有什么想法和建议吗特别是关于【服】装道具和私衣的选择我们应该如何优化资源配置以满足客户的需求同时控制成本然后有成就臭話題
+根据会议内容，各部门需要讨论中国古典式婚礼的具体实施方案。主要涉及服装、道具及私衣的选择，需优化资源配置，满足客户需求同时控制成本。具体建议包括：采用租赁服务减少一次性投入；定制部分特殊道具以降低成本；合理安排人力物力确保婚礼顺利进行。此外，还需考虑交通方式，既要体现传统元素，又不能完全依赖传统方式，可结合现代元素提升婚礼品质。
+reasoner 输出结束
+汽车你就得想到怎么更符合古典这样的话我们在摄影的当中我们把汽车避开因为我们他的亲戚朋友不可能说都全部都古典所以说我们衬托古典有花轿有服装你好 娇娇基于之前我们讨论的内容婚求了吗已经结婚了要结婚要调古典的古典风的结婚结婚咱就不用管了已经要结婚了要举办婚礼了已经领证了就是还没有举办婚礼了因为近期这个大环境影响准备婚礼在下半年11月份12月份具体应该是到我那天也听到他说了,具体应该是12月份,下半年12月份。咱们可以找一个具有古典风的拍戏的场所,就是拍戏具有古典风的场所,然后进行,进行,拍戏古典风的场所。对。找一些古镇啊,然后在一些古路下给他们拍红衫照也是可以的,而且还可以在那举起然后服装上面进行古风吧就是包括司仪啊李仪啊还有他们自己的服装啊都要衬托出来古典风包括场景布置还有就是就是汽车的问题咱们可以先用车汽车开完道以后我想到了这样子去一个我们西部山里的一个地方我们可以开车带他去哪里然后车停在一边就不显示了然后在村里面从这个村的那头到那头我们有八台大轿然后来他们在村里面找一个吃饭的地方可以说让他们享受一下这个古典的婚姻前面有锁固手吹喇叭的是吧还叫呢而且这叫呢也要让晃来晃去的那种哎叫让新娘子在叫里面编着他古典的不是就是一边叫吗然后他叮了他受不了一直哎能在天天的后勤这方面具体是不是需要后期这个这方面的配合对今天有什么想法感觉他说带农村到农村然后把车扛在然后新娘子坐上轿然后我感觉因为新郎应该骑上马然后正好来接新娘子然后一块到婚礼现场这方面咱们刚才也说台调了,台调肯定也是,刚才说是八台大调是吧?八台大调找不着的话,咱们最少也得四台。这方面好找吗?调子方面?调子方面现在还可以,好找。如果咱们专门定做一个,这方面成本你看得需要多少钱?在他婚礼之前肯定能做完他应该到12月份之后前几个月能出来能出来这个成本应该不会很高这个成本现在成本不算是太高的就是现在木匠都少了嘛就是有点慢对下面咱们也还得计划一下教室的形状是什么?是木材使用的吗?有些用柜的,不可能打造成这样的我们要考虑到我们这个也是打造一个古典风所以说我们这个教室要做个经典一点的后期呢,也许还有会使用的对吧,这正好是我们一次做广告的机会吧对嗯给后边他们结婚的人你可以选择我们前期的古典风也挺好的是吧我们八台大教允许新娘也让新娘终身难忘后期这边到时候来得着急吧情况你看台教的方面台教的也不是不是有劲就行的对他要还有技术对来回的走然后有技巧对对这这这方面后期可以對对,我们肯定在咱们婚礼之前肯定要把那个状态培训一下然后走一下让人感觉一下可以先选一下人手保证到婚礼现场那会儿让他们提前做一个训练提前训练的时候开空调的晃的声音对吧,结婚那天才能人了也许可以往里面放两袋沙子抖一抖,练一练还有就是,咱们这个到时候刚才也是有教子教子肯定要外面要要是雕刻要是一张雕刻龙啊,凤啊凤,凤子啊好教的应该是凤联然后上面是编译凤联的部门要打开允许新疆民族落教起教那这有刚那就肯定会涉及到这个这个怎么说呢刚才谈教肯定要有喊的起教谈教对对对这方面咱们也得要找的人有还有乐手吹草大的对这方面乐器方面乐器方面都是敲锣的都需要都需要联系乐队都是古典的乐队彰显我们这个古代的结婚风格对对这方面那就涉及到这个礼服方面了礼服方面后期节目有什么想法李福烹那种风李福烹那种狗肚李福烹应该是狗肚风古典要古典就是古典风嘛就是像李宜亚那种说新娘说新娘首先肯定是大红的然后要戴上金冠盖头也要有像是那种金丝一样织成的那种盖头但是不一定要是真的毕竟是花费太大了还有那种像那种大红的当然新娘可能不能穿起袍一定要是那种大红的裙子嗯就
+[Text Detection] 在 1555.59 秒检测到关键词 '娇娇',current_time: 1530.00, 问题文本: 就是给人一种仙气飘飘的感觉新郎呢就是那种戴两边的帽子然后还有还有鞋新娘也要穿大红的绣鞋头还有那种带高跟的那种你好 娇娇策划古典风格婚礼时
+问题音频片段长度: 184662, dtype: float32, min: -0.347320556640625, max: 0.310943603515625
+问题音频时间长度: 11.541375
+
+
+[Agent] 接收到问题: 策划古典风格婚礼时如何确保八台大教和乐队等元素符合古典风格
+, 1735130410.969178
+
+
+[Agent] 最终接收到问题: 策划古典风格婚礼时如何确保八台大教和乐队等元素符合古典风格
+, 1735130410.969313
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4913 seconds, One token time: 0.1638 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+策划古典风格婚礼时，应考虑使用传统的八抬大轿和雇佣经验丰富的乐队。此外，场地布置应尽量简洁、优雅，避免过于华丽的装饰。音乐选择上，可以考虑播放经典的古典音乐，比如贝多芬的《月光奏鸣曲》或莫扎特的《土耳其进行曲》等。在礼节方面，新人及guests 应遵守传统的婚礼礼仪，如穿正式的礼服，行跪拜礼等。
+talker 输出结束
+是给人一种仙气飘飘的感觉新郎呢就是那种戴两边的帽子然后还有还有鞋新娘也要穿大红的绣鞋头还有那种带高跟的那种你好 娇娇策划古典风格婚礼时后期在道具上面受到注意有问题吗没有问题准备机制台红毛烟就只是个红料但是要的就是红不火火必须得要红不火火还得准备一些枣花生这个就是红花生枣花生栗子这个这方面还需要请专业性,摆成什么样的造型,这方面要请人去办。重点是还要有一个补充的床。像那种补床是最好的。对,补床的话它是有,都有门帘,床帘。就是整个流程刚才说到床就是因为拜天地入洞房对这个模式多了拍完我们流程然后咱就拿完电影吃饭拿完电影吃饭对这个就把他这个流程拍完了哎然后亲一个哎卸妆吃饭去了对这就是我感觉嗯只要我们这个新娘新郎满意了我们发给他的视频哎这就可以5点时的结婚一样嗯也需要有服装也需要用这么多力那还有一方面就是婚纱照婚纱照也是古典照都要穿上他们的起跑对 人家要的这个就是刚才婚纱照这方面他没有怎么也不知道他来讲是拍不拍反正如果刚才我那个朋友那次不是说想要策划一些婚礼婚纱照这方面如果他要想拍的你要提前做好计划这方面各部门都有什么想法像我会上这儿的话最好是在也是以农村为主吧毕竟不一定要农村可以有抛绣球的然后在古镇上那种然后可以在古镇上房子上上面可以拍一个还有可以拍加上他俩看星星的那种体现出浪漫的感觉这个可以应应这新郎新娘的要求我们可以给你拍一组选一集拍对对给你拍一组摄影然后作为云链给你设计一个影集我们不见得非要找婚纱照只能说叫你这种五点结婚式婚礼的影集你如果需要我们就可以设计一套影集来云链不只是有视频还有影集给你云链嗯 對吧我们等你结完工以后,我们可以专门的让你穿上这些服装,在我们这个走街山巷子给你照一幅专门的就是古典的服装。对,上来一个优惠活动。对,我们可以优惠的给你设计,然后给你留一本影集,这样的话就是古典风的一个红茶包,可以这么说。只要有时间充足的话,然后完全可以做到。而且为了追求咱们的特色,咱们可以在婚礼现场制作一些精品的小礼物啊,给各位人员吧。目前咱们这个婚礼,在这个策划上,整个场地的布置,策划整个流程,都要具体的去计划一下。今天我说了一个八干好的还有最重要的一点就是这个仪式,中国古典风趣仪式,可能需要个礼堂这方面,礼堂可能要是古典风的,这方面各位都会什么想?这个因为它是古典的吧应该都是露天的露天的婚礼就是他的新郎我和姑娘的朋友们来这里都是露天式的吃饭,酒歇酒息这个就需要我们环境,然后天不下雨才能做到的当然如果那天下雨了或者下雪了当然按咱们这个时间来说是11月12月而已下雨的可能性也不大那一下雪的话,下小了没事,下大的也就不好所以说应对这个的话,我们就第二大方就会进入一个大的反变了。如果天公作美的话,我们就可以是虚外的,这样的话更会展现一下古典的风景。那咱们就要有两手准备。对,这个时候要有两手准备。但是新娘新郎的她的那个服装那个是绝对会保证是古典风的。就这个 吃饭了新娘新郎父母,爸爸妈妈也要对,也是互点要拍全家福全家福,要有给他拍的都是视频要有地茶了,改口这方面就涉及到礼仪了对,要请他这方面的礼仪师对和前期跟这个新娘沟通一下对,我们要让他们做改口了都做的一个细致一点还有咱们好像忽略了一个问题就是吸铁的问题这吸铁也是要精心设计的这个吸铁方面要跟人家这个男方女方上去沟通咱们设计几款这个先供他们在这个吸铁方面,各位有什么反思想要说的吗?吸铁嘛,一般都是红色的,都是红色的,而且挣脱古典风的。可以,但是吸铁这个东西,一定要做的设计得有别致。别致。对。还要精美别致,展现出独特的魅力和风采。从一个喜帖上就可以看出看出它的情况吧,状况吧,在细节上面。有的细节就是近显,富贵,富贵头,还有的就是比较精致。我觉得它上面独有的中国节,也可以中国的简纸,都可以招写一下。这个东西都是有迷途风情的我
+[Text Detection] 在 2045.56 秒检测到关键词 '娇娇',current_time: 2040.00, 问题文本: 我觉得很好对你好 娇娇基于之前我们讨论的内容关于古典风格婚礼的策划我们是否已经确定了礼堂的布置风格还对于新娘
+问题音频片段长度: 451403, dtype: float32, min: -0.21099853515625, max: 0.199737548828125
+问题音频时间长度: 28.2126875
+
+
+[Agent] 接收到问题: 对你好娇娇基于之前我们讨论的内容关于古典风格婚礼的策划我们是否已经确定了礼堂的布置风格还对于新娘新郎的服装以及喜帖的服装
+, 1735130442.8712907
+
+
+[Agent] 最终接收到问题: 对你好娇娇基于之前我们讨论的内容关于古典风格婚礼的策划我们是否已经确定了礼堂的布置风格还对于新娘新郎的服装以及喜帖的服装
+, 1735130442.871402
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4872 seconds, One token time: 0.1624 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 83, Total time: 3.3891 seconds, One token time: 0.0408 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+是的，我们已经讨论了关于古典风格婚礼的策划，包括礼堂的布置和新人的服装。
+talker 输出结束
+觉得很好对你好 娇娇基于之前我们讨论的内容关于古典风格婚礼的策划我们是否已经确定了礼堂的布置风格还对于新娘我可能能搞定行嗯接下来没什么接下来下去我会把这个去做一个具体的方案包括后期这边做一个这个呃是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是是别的没有了,那还有吗?没有,没有了具体的时方还要在14点的时候去制定行,我们到时候提前碰一下然后争取在红礼上没有差错行,那咱们本次会就先开到这儿好的,走你
+[Text Detection] 在 2163.46 秒检测到关键词 '焦焦',current_time: 2160.00, 问题文本: 你好焦焦针对喜铁定做后勤部门需要考虑哪些成本估算因素
+问题音频片段长度: 148651, dtype: float32, min: -0.2281494140625, max: 0.2630615234375
+问题音频时间长度: 9.2906875
+
+
+[Agent] 接收到问题: 您好,焦焦,针对洗铁定做
+, 1735130449.6867304
+
+
+[Agent] 最终接收到问题: 您好,焦焦,针对洗铁定做
+, 1735130449.6868463
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4632 seconds, One token time: 0.1544 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 23, Total time: 1.2440 seconds, One token time: 0.0541 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+这段音频的内容是:'你好娇娇针对喜帖定做'
+talker 输出结束
+好焦焦针对喜铁定做后勤部门需要考虑哪些成本估算因素
+会议数据处理完成。

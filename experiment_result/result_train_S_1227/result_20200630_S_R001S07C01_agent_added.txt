@@ -1,0 +1,262 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200630_S_R001S07C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Starting processing from 0s, total chunks: 72
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.40it/s]Loading Whisper model...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:04,  1.64s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.98s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.24s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.39s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.48s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.40s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.53s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.70s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:18<00:05,  5.27s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.96s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.96s/it]
+002 我是林玲005 开发部007 财务部您要工程部行好的目前咱们这个这次会议主要是开发部遇到了一些问题一些难题开发部想在会上给大家说一下大家互相讨论一下开发部目前遇到哪些难题呢我们就是跟这个拆清的任务吧这就比较难办了因为这个拆迁它就就是涉及到赔偿呀然后一平换多少平啊还有就是安置问题就是他们租房还给人租房费就是看看就这些问题吧我们这个还有到时候还有那个协议我们都得期限都得定好是吧嗯嗯,就这些了。嗯,那你先发表一下你对这些问题的看法吧。嗯,我们现在就是,一般就是说给的就是拆迁的就是说,一笔1.25吧,就是一平米,咱给人家1.25。还有就是这些就是它这个房屋就是这个里边的东西就门窗什么都是赔偿的地板还有柜子反正这个东西里边的大多数啊就是一般的一户都得一万多块钱这门槽都得送上这种事儿,这个情况嘛,还有什么协议办法,就跟咱们一块儿商量吧。目前咱们这个,刚才你也说了,在进行当中,是吧?进行当中有什么难题,遇到一些这个……现在签这个刚才说具体是一点爱嗯一些这个经过一些业主们同意吗?大多数还是同意的,因为他这个老房子都比较善为房,他喜欢这个新房子。现在面临的就是说,这个问题就是,后期比如说他这个房子小面积,想买个大的看是到时候也按照商业还是什么的购买啊还是还有就是或者咱们多少平均得给人家补助啊这方面刚才也说是1比多少啊1比1.251比1.25啊这方面这个工程这个因为肯定不是在他们这个拆的地方给他们补了肯定换别的地方了嗯拆的地方嗯跟咱们商品房可能也不一样可能不是商品房的一样目前咱们拆迁面积有多大一般就有40到50到70的都是老户型小房子总面积总面积就是多少亩大概就是100亩地吧一般工地多少平一般工地是吧目前工程这边未来咱会在这边整一个商业街对商业这一块嗯是吧是咱们商业这一条预计咱们还有就是一般工地也是商业圈还有我们设计到房屋建设设计到工程这一部分房屋建设当中商业目前咱们市本地的一些建筑建筑商就是都是六道基督是河北的六殿他们是给我们盖这个工程还有开发部还有什么问题开发部现在主要的就是首先我们就是先拆线吧拆线才能说往后的工作吧还有就是我们这边里边不是有一些这个精子库啊嗯还有涉及一些这个呃产权的问题有的房子就是找找不到这个原原组啊产权的问题啊这些都是我们都得去这个房屋就管理中心都得再查一下啊啊还有就是真是后吧他就是要求这个额外的赔偿太太太多了啊其实其实大多数人都不是说比较希望拆迁他都是关心的就是这个比如说我们拆迁以后就是说1.25比如说他50平他就画上1.25就是多少平然后还有就是他想要100平看这30平一般都是按商业买但是我们可能会给他一定的比率优惠多少平之内有优惠就是这个情况请不吝点赞 订阅 转发 打赏支持明镜与点点栏目前天有一个会遇到一些这个雇主费这边财务这边也有我们这边这边的话就是按照这个面子吧咱们这边工程咱们开发这边会给我一个数然后我会就是联系咱们这个给咱们领导我得算出一个大概的一个需要的资金吧但是我可以要比基础要多,因为肯定会遇到要求会多一点的困难户所以一定要把预留资金到位在资金的发放上面看这个注入的配合程度他肯定是配合自己肯
+[Text Detection] 在 506.21 秒检测到关键词 '焦焦',current_time: 480.00, 问题文本: 肯定是先发的然后还有个就是说咱们这个赔偿款这一块咱们我们这边都会给他开发票不能说到时候咱们只是给人家简单签了个协议或者只是开了个收据这样我就怕以后会产生一些额外的问题产生纠纷你好焦焦拆迁过程中遇到的主要难题
+问题音频片段长度: 109568, dtype: float32, min: -0.25531005859375, max: 0.238006591796875
+问题音频时间长度: 6.848
+
+
+[Agent] 接收到问题: 过程中遇到的主要难题有哪些
+, 1735131262.7387059
+
+
+[Agent] 最终接收到问题: 过程中遇到的主要难题有哪些
+, 1735131262.7388508
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.8999 seconds, One token time: 0.3000 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在开发过程中，可能会遇到的主要难题包括：需求不明确、功能实现难度大、时间紧迫、资源有限以及团队协作问题等。
+talker 输出结束
+定是先发的然后还有个就是说咱们这个赔偿款这一块咱们我们这边都会给他开发票不能说到时候咱们只是给人家简单签了个协议或者只是开了个收据这样我就怕以后会产生一些额外的问题产生纠纷你好焦焦拆迁过程中遇到的主要难题我们尽量从制度上规范一点能自己做规范吗让别人很难找出问题然后我们财务这一块也会跟咱们开发过程目前咱们采取按人分档还是工作费按面积分档面积的话一般有的一个户可能50平可能住10百口的人当时怎么算比如说户口本上他们是小区的特写对所以就按面积算面积的话你看就是一平就是500块钱一个月给他租房费OK然后这样的话,我们这个面积不能按他们,就是有的人,尤其老房子,时间越久的,他们有的都会自己搭建一些东西,搭建一些小屋。这个是在在参加过程中也是一个很大的问题。就是有一些不好认定啊,这个到底是法定的那个还是。主要是按房产证。但是它这个融合好像大部分房产证都有土地证然后就是按土地证但是就是有些人他就拿着这个点的就属于地图之类的一般的都会拿这个来说事对一般都稍微给点补比如他盖了小房你就给他一点这个施工费啥一类的稍微的补他不能按平方米算对这个就是给几千块钱嗯这个就是得必须得根据咱们那个规划规划上面具体准确的说然后给他们进行补助然后如果是遇到他们自己搭建的这种建筑物如果可以有个外在补偿但是不可能按面积补给他们只能给他们钱对然后一个就是说我们财务这一关只能是认准的就是我们这个工厂开发这边给我们的面积数,对应的去合算这个钱。所以说,把这个,或者说咱们配合吧,把这个数到时候准确一点。我们这边的就是拆迁的就是主要的是补助,还有一部分补助,因为我们给这个拆迁嘛,然后给我们一定的土地的补偿嘛,是吧。所以你看刚刚咱们这里说就是有一部分就是开商业界是吧有一部分是回签楼回签楼的话基本上咱们都是贴补的过程然后但是看就是这个商业街我们就是挣钱的啊商业街的话直接是转化费就是钱嗯嗯嗯可以先办公程部这边肯定要有这个详细的一些准备相对工程的一些准备还有那个招标嗯是招标的朋友还有监理这边也有些承包商的设计这些人关系这一块承包这一块招标这一块是怎么想做的招标的话我们现在正在招标必须他们得符合答案的标签因为这些有资质的那些都背过案的然後一些大的建筑商这样才能满足咱们的需求也能满足人们的需求嘛肯定咱有屋前楼这边商业街开发这边要怎么说呢要取风开的找两个公司一个公司干这一段这样工作还快一点对吧嗯 是的因为这个居民楼商業街開發肯定有些公司它适合这个对这个商业街这一块有些公司它适合这个居民楼这一块嗯对还有就是成本问题嗯像这个这样的话成本确实比较高一点嗯预算比较大一点因为像这个刚才都说了100多米整合成平方米的话都60006万66万多平方嗯然後比較大这一下一瓶你少说几十块钱吧,六万多瓶反正是商业的那种然后另外就是除了对咱还有商业间招商这一方面目前咱们刚才也说了对呀,这一块,像这个商业街这一块,你有什么设计构想吗?这个商业街,小吃,娱乐,休闲,我们的出户社团就是满足人们的基本需求,就是吃喝玩乐,都在这条街上,然后这样的话,就是因为我们现在正在招商着嘛,肯定是如果前期比较有优惠然后另外的话它就是像餐饮还有超市这方面是必须要引进的还有就是咱们刚才说的开发这一段咱们肯定要和别的一些省市区要有个区别建筑方面刚才也说了主要是准备一些咱们这里有发行的超市刚才说了一个超市开发阶的设计方面,有没有什么想法,设计成什么样式比较好?我看现在这有一种开发阶我觉得挺好看的,我们稍微可以改进一下。就是,它这个就是说,一层二层三层四层,中间都有桥。瞧的话有像跟盒一样其实是假的然后你看这个天空其实它都是假的就是现在我看这个就有这种商业界我们可以把它打成一个地标建筑之类的那种也就是网红那种打卡点类似于那种对它就是你感觉它就是生活在这一个环境里要不然是房子中间是河有桥那有天空其实它都是假的因为它上面还有房子呢都是楼但是它就是说中间这一层这
+[Text Detection] 在 1011.82 秒检测到关键词 '娇娇',current_time: 990.00, 问题文本: 这种特别高 这高 但是两边这个楼就是还盖着正常的楼 就是一层一层一层 但是就是中间这个地方可以稍高一点然后我觉得咱这个商业街的定位在我说的就不用说很高官你好 娇娇基于之前我们讨论的内容关于拆迁补偿和商业街开发的问题我想请
+问题音频片段长度: 535190, dtype: float32, min: -0.345977783203125, max: 0.37445068359375
+问题音频时间长度: 33.449375
+
+
+[Agent] 接收到问题: 我们讨论的内容关于拆迁补偿和商业街开发的问题我想请问一下对于拆迁户的补偿我们是如何根据土地证和房产证来确定补偿金额的另外在商业街的开发过程中我们有哪些具体的设计构想和招商计划可以定位到年轻人年轻话语
+, 1735131294.6987903
+
+
+[Agent] 最终接收到问题: 我们讨论的内容关于拆迁补偿和商业街开发的问题我想请问一下对于拆迁户的补偿我们是如何根据土地证和房产证来确定补偿金额的另外在商业街的开发过程中我们有哪些具体的设计构想和招商计划可以定位到年轻人年轻话语
+, 1735131294.6990044
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4901 seconds, One token time: 0.1634 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：拆迁补偿 土地证 房产证
+1. 行动：信息检索RAG
+2. 行动输入：关键词：商业街 开发 设计构想 招商计划 年轻人
+Token count: 70, Total time: 13.9595 seconds, One token time: 0.1994 seconds
+
+提取的关键词: ['拆迁补偿', '土地证', '房产证', '1.', '行动：信息检索RAG', '2.', '行动输入：']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+会议中提到，拆迁补偿依据土地证和房产证确定。商业街开发设计构想包括四层结构，中间有桥连接，营造网红打卡点氛围。招商计划侧重吸引年轻人，重点引进餐饮、超市等满足吃喝玩乐需求的商家。
+Token count: 59, Total time: 11.4972 seconds, One token time: 0.1949 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：拆迁补偿 土地证 房产证
+1. 行动：信息检索RAG
+2. 行动输入：关键词：商业街 开发 设计构想 招商计划 年轻人
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 所以你看刚刚咱们这里说就是有一部分就是开商业界是吧有一部分是回签楼回签楼的话基本上咱们都是贴补的过程然后但是看就是这个商业街我们就是挣钱的啊商业街的话直接是转化费就是钱嗯嗯嗯可以先办公程部这边肯定要有这个详细的一些准备相对工程的一些准备还有那个招标嗯是招标的朋友还有监理这边也有些承包商的设计这些人关系这一块承包这一块招标这一块是怎么想做的招标的话我们现在正在招标必须他们得符合答案的标签因为这些有资质的那些都背过案的然後一些大的建筑商这样才能满足咱们的需求也能满足人们的需求嘛肯定咱有屋前楼这边商业街开发这边要怎么说呢要取风开的找两个公司一个公司干这一段这样工作还快一点对吧嗯 是的因为这个居民楼商業街開發肯定有些公司它适合这个对这个商业街这一块有些公司它适合这个居民楼这一块嗯对还有就是成本问题嗯像这个这样的话成本确实比较高一点嗯预算比较大一点因为像这个刚才都说了100多米整合成平方米的话都60006万66万多平方嗯然後比較大这一下一瓶你少说几十块钱吧,六万多瓶反正是商业的那种然后另外就是除了对咱还有商业间招商这一方面目前咱们刚才也说了对呀,这一块,像这个商业街这一块,你有什么设计构想吗?这个商业街,小吃,娱乐,休闲,我们的出户社团就是满足人们的基本需求,就是吃喝玩乐,都在这条街上,然后这样的话,就是因为我们现在正在招商着嘛,肯定是如果前期比较有优惠然后另外的话它就是像餐饮还有超市这方面是必须要引进的还有就是咱们刚才说的开发这一段咱们肯定要和别的一些省市区要有个区别建筑方面刚才也说了主要是准备一些咱们这里有发行的超市刚才说了一个超市开发阶的设计方面,有没有什么想法,设计成什么样式比较好?我看现在这有一种开发阶我觉得挺好看的,我们稍微可以改进一下。就是,它这个就是说,一层二层三层四层,中间都有桥。瞧的话有像跟盒一样其实是假的然后你看这个天空其实它都是假的就是现在我看这个就有这种商业界我们可以把它打成一个地标建筑之类的那种也就是网红那种打卡点类似于那种对它就是你感觉它就是生活在这一个环境里要不然是房子中间是河有桥那有天空其实它都是假的因为它上面还有房子呢都是楼但是它就是说中间这一层这我们讨论的内容关于拆迁补偿和商业街开发的问题我想请问一下对于拆迁户的补偿我们是如何根据土地证和【房】产证来确定补偿金额的另外在商业街的开发过程中我们有哪些具体的设计构想和招商计划可以定位到年轻人年轻话语
+会议中提到，拆迁补偿依据土地证和房产证确定。商业街开发设计构想包括四层结构，中间有桥连接，营造网红打卡点氛围。招商计划侧重吸引年轻人，重点引进餐饮、超市等满足吃喝玩乐需求的商家。
+reasoner 输出结束
+种特别高 这高 但是两边这个楼就是还盖着正常的楼 就是一层一层一层 但是就是中间这个地方可以稍高一点然后我觉得咱这个商业街的定位在我说的就不用说很高官你好 娇娇基于之前我们讨论的内容关于拆迁补偿和商业街开发的问题我想请消费水平还是有限的没有一线城市的水平那么高定位不要那么高端这样的话就是说如果咱们的建筑风格有地标吸引力的话更能吸引人来消费也是这一点每一层都有每一层的特色比如说每次我们吃饭它就可以修仙逸乐它这个层的建筑都可以有点欧式什么的风格然后咱们的住宅吧跟商业街它虽然是挨着的但是也是可以不打扰吧因为如果说要是商业街太乱的话其实也影响居民的生活条件吧是吧所以風箏花都有一個綠花袋这样的话分离开这样的话就互相不打扰对咱们就是在这个项目规划上有一部分就是层住宅另一部分就是可以就是在商业间那一块可以盖成那种公寓式的公寓式的这样的话也可以出租就是到时候咱们的业主可以往外出租好因为这个商业街的话,它环境还是有点嘈杂的,相比住宅来说还是有点嘈杂,这样的话,更加有设计达成的温度。我们商业街跟住宅可以一起盖,商业街这边就直接招商,然后我们混融一下资金嘛,要不然我们这个住宅基本上就全贴了盖的嘛,因为坏了我们这个土地。所以基本上就是而且还有车位的问题因为它属于市中心车位要地下车户一定要弄好所以上面怎么要开展工程里面要塑造一个具体计划那么有这个构想以后咱们交给这个建筑商然后他去按照这个设计他去建设还有这个上一个街这一块要仔細一點详细一点计划要深思熟虑一点然后设计到这个还有这种东西就嵌了这一块这块咱们就另一个条件上去另一个这种建筑上这一块招标咱们要求不用这么高招标这个但是也要工厂这个这一块周标,我们就可以找一些小型的建构公司他们这一块不用太大,周标这个要求不用太高但是一定要注意这个质量,质量要好惯嗯还有它这个回切的这个项目目前在这个城市这边这个定位这个楼房该多多少钱我们这个就是商业的话还是这个住宅的话住宅的话就是这个都是32三层32三层30就30层吧30太高了如果太多的话,居民也会有反应对,没钱咱们要是盖成全市最高的省区这一块也有问题太多的话,他们会觉得很方便但是如果太多的话,怎么对咱们这个这个难说不够分 而这个房子的话可以小户型的大部分都对,都得有大量这个小部型,大部型嗯其实咱们这个城市呢,现在还是大家都是说还是两居,三居,四居的这样多一点对,目前咱们这个张才,我想说一下拆迁房目前咱们这个拆迁这个小区他们这个最大面积是多少楼房的话一般都是就是最大的就是七八十但是还有平房平房还有平房平房还有是平房他们是自自自自盖的吗嗯都有房产证但是这个院子有没有房产证这个房子是都有房产证但是院子你一定给一定的补偿啊啊因为人家原先在院是吧你就得有一定的补偿院子一般都没有房产证但是都但是这个院子跟这个这个这方面刚才你说补偿补偿嗯补偿房子,补钱钱,钱院子补偿钱补偿钱比较合法对,但是如果要是他这个如果他要是说同价位想买不能他这个一平再换一点那也不行但是院子你稍微的补钱得高点他跟那个四大乱界的那个不一样因为人家本身这么大的院子如果你补的少,他就但是也不能高于咱们这个房子的成本因为这里是一个老小区吧对现在问题也是刚好当年就是这种问题当年都是这种因为以前那个厂子厂房吧不是有平房有楼房楼房都是后盖平房之前的话就是分的这个厂子这个平房这个面积比较大是吧是平房都面积比较大本来它这个比如说这个小一般房子一般都得二三百平院里都不算好几间房,比如说以前咱们老家的房子北屋都四五间,我们家都得好几百平我们这个到时候就是说拆迁补偿的话房子有发展证的一个政策就是一个政策对还有盖的小屋的一个状态这好几个,我们都得具体的那么拆迁他们这个如果他们都是七八十平衡的话怎么就,到时候跟户型可以统一一下那么盖的时候,不用太,花样太多一般就是说,都是谁先签字他可以先选楼层啊楼层,因为这个楼层不是也有这个好楼层好的楼层,然后位置,东边都是好,一般人都喜欢买东边所以说谁早签我们好多,因为政策,比如说是可以选楼层,选平方米他可以加钱买,因为有的人比如说他想要一百平,二百平,可以加钱咱们又有一个政策,多少平之内是平民的价钱,多少平之内是商业的价钱因为我们不能说啊然
+[Text Detection] 在 1554.12 秒检测到关键词 '焦焦',current_time: 1530.00, 问题文本: 然后咱们这个回仓楼跟咱们这个新的居民住宅这个设计还是就不行不能一样然后咱们这个回仓楼要根据咱们这个住户他原先的这个平方数咱们核算然后咱们再盖这个回仓楼你好焦焦工程计划和建筑商合作的具体要求有哪些
+问题音频片段长度: 119200, dtype: float32, min: -0.311126708984375, max: 0.3134765625
+问题音频时间长度: 7.45
+
+
+[Agent] 接收到问题: 工程计划和建筑商合作的具体要求有哪些
+, 1735131350.1138813
+
+
+[Agent] 最终接收到问题: 工程计划和建筑商合作的具体要求有哪些
+, 1735131350.1140008
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4807 seconds, One token time: 0.1602 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 26, Total time: 1.4711 seconds, One token time: 0.0566 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+工程计划和建筑商合作的具体要求通常包括：
+
+1. 双方需要签订正式的合作协议，明确各自的权利和义务。
+
+2. 建筑商应该具备相应的资质和经验，能够满足项目的需求。
+
+3. 工程计划应该详细、清晰，包含所有必要的设计图纸和技术规范。
+
+4. 建筑商需要对工程计划进行审查，并提出可能的改进建议。
+
+5. 合作双方需要建立有效的沟通机制，及时解决问题和协调工作。
+
+6. 在施工过程中，建筑师需要对工程质量进行监督和指导。
+
+7. 工程完成后，需要进行验收和结算，确保工程符合合同约定的标准。
+talker 输出结束
+后咱们这个回仓楼跟咱们这个新的居民住宅这个设计还是就不行不能一样然后咱们这个回仓楼要根据咱们这个住户他原先的这个平方数咱们核算然后咱们再盖这个回仓楼你好焦焦工程计划和建筑商合作的具体要求有哪些最小的弧形就这么多然后看最大的平方数是多少但是咱们也不可能做成200多平方因为那个就是200多平方所以说我们就多分几套最大的能量設計成100多,130這樣能有123这样的,然后我们上下有个度嘛然后再怎么放变如果说他们想要大的然后就加强了加强了这样如果就是说有的有的有的但是肯定会出现那种有的说不想要房子的要钱的咱们鱼出来的那些剩的那个那些房子咱们也是可以卖的就是商业的卖我们这个都是当我们这个拆卸房子,房产证就是经过办的比较麻烦到时候如果我们要卖的话,价格就稍微低点吧房产证会满办,不会说跟商业楼一样办的那么快因为这个肯定还会涉及到请设计方面嗯 因为咱回现代不用设计不用贪念那么商业吧对,不需要太商业化,因为咱们刚才也说了,三十层,他们也会有意见的。还有就是他们这个,目前他们的具体评数你算过吗?需要他们盖几栋?現在我就算了四栋楼,三十层的话,比如说,四栋楼就满足了,因为我们是三十层楼,比较高,我们准备两梯四户,两个电梯四户,因为回线楼我们不可能像商品上盖的那么两梯两路,那个我们造价太高了。所以有点咱们找两个看上去一些专业性的开发商可以专门一些商业阶级专门回签了这个项目刚才也说了,在这块站回签了四个就行了那个面积,咱盖那个地方,那个四栋,四栋,那个面积会有余余是吧?嗯,得余几户,而且我们还得加上,我们这个四栋楼中间不是还得加一些一些绿化,然后小区,都算上去,还会余吗?啊,还会余几栋吗?余几层,余几层的话,你看有的人他可能会多买,或者多买一套,或者半套,是吧?它这个也不可能算的那么有的人比如说他就六十多平他可能想要100平甚至要两套房子我们都这个都打进去然后剩下的可能就会如果有我们其实我们我觉得我们那个地方还可以盖成五六栋然后剩下那两栋可以做商业的一些或者商业行吧商业的这个这一块跟他们这个是就是商业的住居民楼或者是说像这个回签楼跟这个咱们中占卖的商品可以挨着但是它肯定风格什么的建筑风格跟外观什么的肯定是不一样但是可以挨着比如说咱们把这个小区是两个门后面那个门前面主要是咱们这个正经商品房这个业主从这儿进来方便一点后面那个门就是咱们回前后走那个门也可以走两个小区还有绿化,因为现在有这个规定嘛,就是100米之内离路面都是150米的绿化,我们绿化一定要做好,然后里边的设施,比如说这个运动器材都得做,还有家里有物业都得盖上这个房子。因为他们都是一个厂子的他们要跟厂子里面的领导沟通后期的咱们只管一些前期的事情后期就直接交给他们厂子了咱们就不需要再去管了嗯,我們呃,最近也可以跟厂子沟通一下因为他们到底是留到他们多年哈而且好好沟通一点嗯可以给他们盖一个这个这个就这个居园会这个啊这个楼啊盖一下嗯就就嗯咱们那个居民活动部的西嗯嗯嗯那他们帮我们就是这样因为他们厂子领导嘛就是好说一下因为拆迁的话其实就是有一部分就是税务大的人他就不想要走老人都有这种思维身体又不好我们又不能很厉害就是有人带头带头这个效应还是挺厉害的而且我们一定要想到他所想比如说老人比如说我们就是说早点给他拆了一下就是跟他说我们这还要一层啊很棒我们一层设计也可以带点小院啊然后老人就说你早点拆就说你现在不选后期就说我们也没有办法可以给你一层我们这政策就是先签字的他就是选房子先选房子谈谈这一会儿还有什么想要说的吗?具体的,我们这个,第一就是资金先到位然后我们这么大这个平方米,这么大平方米,我们都得先电子我们到时候跟那个,就是承建商也是,他也得先电子承建这个你
+[Text Detection] 在 2042.22 秒检测到关键词 '焦焦',current_time: 2040.00, 问题文本: 你好,焦焦,基于之前我们讨论的内容,关于回迁楼的设计和建设,我们是否已经确定了具体的楼栋数量和每栋楼的层数,
+问题音频片段长度: 584075, dtype: float32, min: -0.301513671875, max: 0.31634521484375
+问题音频时间长度: 36.5046875
+
+
+[Agent] 接收到问题: 对,承建的话招标你好,焦焦基于之前我们讨论的内容关于回迁楼的设计和建设我们是否已经确定了具体的楼栋数量和每栋楼的层数如果四栋楼能满足需求那在考虑绿化和公共设施后是否还有足够的空间来满足居民的其他
+, 1735131381.2337575
+
+
+[Agent] 最终接收到问题: 对,承建的话招标你好,焦焦基于之前我们讨论的内容关于回迁楼的设计和建设我们是否已经确定了具体的楼栋数量和每栋楼的层数如果四栋楼能满足需求那在考虑绿化和公共设施后是否还有足够的空间来满足居民的其他
+, 1735131381.2338722
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4956 seconds, One token time: 0.1652 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：回迁楼 楼栋数量 层数 绿化 公共设施
+Token count: 40, Total time: 7.7277 seconds, One token time: 0.1932 seconds
+
+提取的关键词: ['回迁楼', '楼栋数量', '层数', '绿化', '公共设施']
+
+找到的上下文片段数量: 1
+会议中提到已确定回迁楼的设计，但未明确具体楼栋数量和每栋楼的层数。考虑到绿化和公共设施的需求，需确认是否有足够空间满足居民其他需求。建议进一步沟通以明确具体方案。
+Token count: 52, Total time: 10.0494 seconds, One token time: 0.1933 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：回迁楼 楼栋数量 层数 绿化 公共设施
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 因为他们都是一个厂子的他们要跟厂子里面的领导沟通后期的咱们只管一些前期的事情后期就直接交给他们厂子了咱们就不需要再去管了嗯,我們呃,最近也可以跟厂子沟通一下因为他们到底是留到他们多年哈而且好好沟通一点嗯可以给他们盖一个这个这个就这个居园会这个啊这个楼啊盖一下嗯就就嗯咱们那个居民活动部的西嗯嗯嗯那他们帮我们就是这样因为他们厂子领导嘛就是好说一下因为拆迁的话其实就是有一部分就是税务大的人他就不想要走老人都有这种思维身体又不好我们又不能很厉害就是有人带头带头这个效应还是挺厉害的而且我们一定要想到他所想比如说老人比如说我们就是说早点给他拆了一下就是跟他说我们这还要一层啊很棒我们一层设计也可以带点小院啊然后老人就说你早点拆就说你现在不选后期就说我们也没有办法可以给你一层我们这政策就是先签字的他就是选房子先选房子谈谈这一会儿还有什么想要说的吗?具体的,我们这个,第一就是资金先到位然后我们这么大这个平方米,这么大平方米,我们都得先电子我们到时候跟那个,就是承建商也是,他也得先电子承建这个你对,承建的话招标你好,焦焦基于之前我们讨论的内容关于回迁楼的设计和建设我们是否已经确定了具体【的】楼栋数量和每栋楼的层数如果四栋楼能满足需求那在考虑绿化和公共设施后是否还有足够的空间来满足居民的其他
+会议中提到已确定回迁楼的设计，但未明确具体楼栋数量和每栋楼的层数。考虑到绿化和公共设施的需求，需确认是否有足够空间满足居民其他需求。建议进一步沟通以明确具体方案。
+reasoner 输出结束
+好,焦焦,基于之前我们讨论的内容,关于回迁楼的设计和建设,我们是否已经确定了具体的楼栋数量和每栋楼的层数,
+[Audio Detection] 在 2128.07 秒检测到关键词 '好交交'。
+detection_time: 2128.07, current_time: 2100.00
+问题音频片段长度: 124864, dtype: float32, min: -0.465057373046875, max: 0.449554443359375
+问题音频时间长度: 7.804
+
+
+[Agent] 接收到问题: 针对招标协议员议程接问题您有哪些具体的建议和解决方案
+, 1735131401.4387133
+
+
+[Agent] 最终接收到问题: 针对招标协议员议程接问题您有哪些具体的建议和解决方案
+, 1735131401.4388235
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4670 seconds, One token time: 0.1557 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 117, Total time: 3.8821 seconds, One token time: 0.0332 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在解决招标协接易承接问题时，可以考虑以下几点：
+1. 建立规范的招投标程序和管理体系；
+2. 加强对投标企业的资质审查和管理，确保其具备完成项目的能力；
+3. 严格执行工程合同管理制度，确保合同的合法性和有效性；
+4. 推进电子招投标系统的建设和应用，提高交易透明度和效率；
+5. 加大对违法行为的打击力度，维护市场秩序和公平竞争。同时，也需要加强相关法律法规的宣传和教育，提高各方的法律意识和素质。
+talker 输出结束
+
+会议数据处理完成。

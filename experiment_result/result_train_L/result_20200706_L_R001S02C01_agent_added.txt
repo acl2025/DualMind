@@ -1,0 +1,290 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200706_L_R001S02C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 75
+Loading classifier_llm...
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.12it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.98s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.91s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.75s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.93s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.94s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.94s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.06s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.23s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:04,  4.98s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.77s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.78s/it]
+0202,我是指导老师022,我是大学生创业员A026,我是大学生创业员B023,我是大学生创业员C023,我是大学生创业B024,我是大学生创业员E我是大学生创业E来猜我想把咱们的各位想要把咱们的各位叫过来主要就是开一个咱们大学生创业的交流会我想听一下各位的这个创业这个未来创业有什么想法?我想听一下大家的想法然后从他们这个A同学这边开始A同学你有什么想法?嗯我想在以后在一个大学门口开一家非常有特色的摄影院因为现在就是菜馆菜馆东北菜东北菜为什么在大学门口要开一个有特色的餐饮店因为现在大会儿很大偶尔 偶尔 经常会有聚会容量比较大而且客户都是正向的而且每年有三个月的假期我们这就是北方城市,所以靠这一口的人比较多。店面投资量相对来说也小一些。就是学校的人流量比较大,是看中这一点吗?对,主要是学校人流量比较大。如果你是百度贷款买家的话,可能只能租每个人的工作是通过自己创业以后从创业中心会有一万到两万的经济给你支持但是根本觉得你在一个月之内可以收入这么多因为电源费在小门口租的人都知道人的量大都会干外卖这些事情那也危险了对呀 我也可以考外卖呀我也可以经常搞一些优惠的活动嘛他们如果公开物价的一番你的经理人没有主持喜欢用房租过来找他就找了一千块钱你这块确实不错然后他租给了一房你的意思就是说会有经理人跟我抢这个门是对 在大街门口你觉得谁会放弃这块小东东嗯就我们压力大压力大市场经常压力大但是餐饮行业它确实是一个更不变的行业对它没有市场它没有红牌没有蓝牌它一直都是热炒对只要足够有特色对 只要足够有特色你怎么着也能经营菜市场那你的东北菜菜系是做什么的呢东北菜对啊 东北菜菜系嘛肯定是要从东北请过来专业的厨师哦那你老师要做什么的对这方面了解吗?大家知道的可能都是东北乱土耳其他有别的吗?东北大垃圾还有东北的小烧烤小烧烤文化像在东北三省争议很大的锅你是打算请哪里的?这个我还是觉得请东北那边的有三种活力功夫一个是搅铁锅然后做出来的还有一个是通过烤毛色然后做出来的他们怎么做可以有选择吧菜单上可以有选择但一次只要前两步的时候就一个都会做的都会做就可以了一个菜有两种做法同一个吐司但是一般的话每一块吐司都是会坚持自己的压力这个我跟主持是协商吧这个问题我觉得不是什么大问题主要还是你看啊大家大学生吃饭主要就是要有气对 我建议你店面装潢要特色一点比如说现在的学生都喜欢英国联盟玩玩游戏嘛游戏主题的主题对吧我可以在这个对,我就可以这个,虽然是东北菜,我里面确定是东北菜,但是我店里面可以有东北人家什么的。我就叫,不用说能够自己餐厅,门口挂几个油皮模型,然后里面有一个大盆木,就是游戏直播,比赛的直播。或者说我可以在旁边放几台电脑。我建议就是你可以搞一个餐厅然后里边有很多非常有主题的单家但是那样成本就更大了呀我觉得就先开一个范围别那么大的小餐馆毕竟学校周围的餐厅肯定不会少竞争肯定特别大而且你要想抓住学生的心首先你得量大实惠然后你的价钱还不能特别高对不对你不能一下子租一个特别大的店面然后竞争那么大你自己一个人感觉来一个色色的小餐馆对,小餐馆特色一,安静这个不是安静就是这个我插一条话都没那块的菜都没安静没有,都没平衡就在气氛上就在学生在一块吃饭大会,聚会我就说不能没日暗点心那个吗干净一点,像别的餐馆,乱糟糟的,干净卫生。平常看差不多现在的价格,那你这个项目可以具体的再计划一下,整个成本啊,整个市场的走向啊,后期风险是如何,风险的评估一下。然
+[Text Detection] 在 503.10 秒检测到关键词 '佼佼',current_time: 480.00, 问题文本: 然后我们在这个中央亚洲然后这个美洲我们到旅行大家来想问一下这些同学我想问一下这些同学这个训练什么专业让你想开个餐馆这个专业没有关系啊就是我上大学的时候看到了这方面的就是你好佼佼同学开设东北菜主题餐厅的想法中如何平衡特色橫特色語
+问题音频片段长度: 191147, dtype: float32, min: -0.084197998046875, max: 0.083587646484375
+问题音频时间长度: 11.9466875
+
+
+[Agent] 接收到问题: 东北菜主题餐厅的想法中如何平衡特色与市场竞争压力
+, 1735105562.8501668
+
+
+[Agent] 最终接收到问题: 东北菜主题餐厅的想法中如何平衡特色与市场竞争压力
+, 1735105562.850351
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9036 seconds, One token time: 0.3012 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在东北菜主题餐厅的设计中，要平衡特色与市场竞争压力，可以从以下几个方面考虑：
+
+1. 创新菜品：打造独特且具有东北地域特色的招牌菜，吸引消费者。
+
+2. 注重品质：保证食材的新鲜和原汁原味，提升用餐体验。
+
+3. 营销策略：利用线上线下多渠道进行推广，增加品牌知名度。
+
+4. 服务优化：提供周到贴心的服务，增强顾客满意度。
+
+5. 价格定位：根据目标市场和消费人群，合理定价，保持竞争力。
+
+6. 合理选址：选择人流量大、位置便利的地点开店，便于吸引顾客。
+
+7. 培训员工：对员工进行专业培训，提升他们的业务水平和服务质量。
+
+以上各点需要综合考虑，才能在保持特色的同时，应对市场竞争压力。
+talker 输出结束
+后我们在这个中央亚洲然后这个美洲我们到旅行大家来想问一下这些同学我想问一下这些同学这个训练什么专业让你想开个餐馆这个专业没有关系啊就是我上大学的时候看到了这方面的就是你好佼佼同学开设东北菜主题餐厅的想法中如何平衡特色橫特色語而且社會經驗比較少它沒有這方面的支持和接觸如果是實習過的大學生還好還是錄了一下門檻如果是那種沒實習的大學生他要想創業的話可能會有一點偏然後我想創業的項目就是想早賣一些機械零件比方說螺母啊 氣球啊 這些東西因为在五金这方面它也有很大需求因为建设方面它肯定都会有这些需求的找一个合作伙伴然后从创业中心申请一万到两万的创业费可以开一个小的五金店然后再做一些名片给自己宣传一下甚至可以甚至可以托家属的关系再找找人然后拉一个合作伙伴更容易不如社会吧,这样不容易被骗。也容易打开这个市场。对。还有就是你觉得这个市场目前是什么情况?五金店市场现在竞争特别的远处,也是跟餐饮行业差不多。餐饮行业就属于学校周边,还有学校、食堂都是竞争严重的地方。五金店又是什么呢?因为它建筑最方便,因为一,你要看质量,二就是价值。如果你质量好驾驶头,他们就会选择一些质量不适合的车工程价格稍偏低一点因为他们也要求利润的包所以这需要我的五金店和一些小的五金厂也有合作关系然后甚至还需要和那些经常倒卖五金店和赞投的那些厂子呀工地呀来给他们包揽一些活需要跑跑业务之类的然后还要如果是这个五金店是要合着开的话他要表哥出身一個五金公司去瓦查然后掏一些股份,肯定是要分给人家股份的,每年肯定要卖五天,还要分回来。如果是往后干的话,太多一个人干不过来,需要车拉的话,还需要再补一个年假。你们有什么想要办的,谈这个五金店的这个?他们是一万两万租一个,因为有一句话说得好,叫金角一边草木平旺,咱就租一个一边,叫那个金角。它不像饭店那种需要找人多的地方聊活的地方原本地特别偏我就找那种十二环三环左右的地方开个门店租金也不是很高那你的定卷是什么样的就是什么区域呢旁边都有什么建筑你是选择在商业区呢还是住宅区呢还是什么专门支持你卖的市场对你去社区旁边卖午饭,别人就多买点水果买个螺丝什么的属于小伙伴行,这个项目的话,就是在June的这个方面的计划写出来我看他拿的也不错,再给你知道一下我想开一个植物盆艺生活馆就是专门搞盆栽的我搞这个主要就是同志盆栽的DIY制作养护 修剪美容这一带这个产业现在市场是什么情况现在市场的话是现在人们生活压力比较大了然後我們需要這個因為綠色给人的心情带来舒适然后再说咱们这个盆栽也可以光骨多用的话有氧气也对人的生机比较好这样的话就是算是几方面吧一个是吸收有害气体进往空气制造氧气还有一个就是让人可以用来抽时间进行冥思之类的然后随着随着人们生活水平不断提高然后人们对这些盆栽需求量也越来越大然后每年咱们大型的花费交易在1亿3000万分左右然后交易数额在300亿这市场很大对市场很大但是咱们这个行业虽然说市场很大但是缺少了一个专门做这个的对品牌的经营力行对大经营力行对对而且咱们这个产业看有一些部门虽然是有,但是供货的渠道比较慢我打算做的一个是面对线上同城可以送到家,我们也可以定期的进行对你这个盆栽进行一个固定的售后可以给你修剪,进行一定的护理之类的还有我们现在这个种类的话,大概分三种中型的还有小型的和迷你的这个中型的话是比较现在比较流行的是一个人可以一个人可以自己搬也可以放到各种各样的地方然后小型的是在30公升以下的就是可以放在茶几啊或者是这个浴室啊之类的然后还有就是迷你的现在也是比较流行就是可以放在书桌啊就是你的这个窗盘啊就比较比较迷你比较方便然后至于种类的话就分四种吧大概一个是观观赏果树类还有一个就是这个彩色的彩色的还有一个就是绿叶保健的还有一个就是根茎的这个想法很痛苦成本是多少?成本的话,咱们这个分三档,高档中档和低档。高档的话,因为它是我们前期投入,是吗?嗯,前期投入。投入的话,前期投入大概需要个六万块钱吧对,因为我们需要就是先购买,然后制作,还有呃,那个我想问一下,就是你刚才说到的市场大,竞争力小,它是不是不赚钱啊?这个国力多销嘛,因为现在走量还是这个走量,现在市场竞争强,但是它这个市场竞争不强,但是我们需要把这个先做起来,做起来以后,我们慢慢往中高档走,这样的话,前期走量,后期走,走弊了。
+[Audio Detection] 在 1022.92 秒检测到关键词 '好交交'。
+detection_time: 1022.92, current_time: 1020.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.156524658203125, max: 0.15863037109375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于C同学提出的盆栽生活馆创业项目
+, 1735105602.1457543
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于C同学提出的盆栽生活馆创业项目租是通过你提到了提到了市场大胆竞争力小那么在当前的市场环境下租租是通过你认为如何通过提供差异化服务和产品来吸引顾客并在竞争中脱颖而出呢可是现在做起来的没有几点这样随时我们要创新去做它那这个花如果你大批机的话那一个护理需要请人工
+, 1735105604.615379
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4931 seconds, One token time: 0.1644 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：差异化服务 盆栽生活馆 竞争优势
+Token count: 34, Total time: 6.9616 seconds, One token time: 0.2048 seconds
+
+提取的关键词: ['差异化服务', '盆栽生活馆', '竞争优势']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+会议中提到将开设一个植物盆艺生活馆，专注于盆栽的DIY制作、养护、修剪和美容。目标市场定位在生活压力较大的人群，强调绿色植物能带来心理上的舒适感，同时具有净化空气和提供冥想空间的功能。预计市场规模庞大，但行业缺乏专门的品牌运营。成本方面分为三档，包括高档、中档和低档产品。
+Token count: 85, Total time: 16.5898 seconds, One token time: 0.1952 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：差异化服务 盆栽生活馆 竞争优势
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 它不像饭店那种需要找人多的地方聊活的地方原本地特别偏我就找那种十二环三环左右的地方开个门店租金也不是很高那你的定卷是什么样的就是什么区域呢旁边都有什么建筑你是选择在商业区呢还是住宅区呢还是什么专门支持你卖的市场对你去社区旁边卖午饭,别人就多买点水果买个螺丝什么的属于小伙伴行,这个项目的话,就是在June的这个方面的计划写出来我看他拿的也不错,再给你知道一下我想开一个植物盆艺生活馆就是专门搞盆栽的我搞这个主要就是同志盆栽的DIY制作养护 修剪美容这一带这个产业现在市场是什么情况现在市场的话是现在人们生活压力比较大了然後我們需要這個因為綠色给人的心情带来舒适然后再说咱们它不像饭店那种需要找人多的地方聊活的地方原本地特别偏我就找那种十二环三环左右的地方开个门店租金也不是很高那你的定卷是什么样的就是什么区域呢旁边都有什么建筑你是选择在商业区呢还是住宅区呢还是什么专门支持你卖的市场对你去社区旁边卖午饭,别人就多买点水果买个螺丝什么的属于小伙伴行,这个项目的话,就是在June的这个方面的计划写出来我看他拿的也不错,再给你知道一下我想开一个植物【盆】艺生活馆就是专门搞盆栽的我搞这个主要就是同志盆栽的DIY制作养护 修剪美容这一带这个产业现在市场是什么情况现在市场的话是现在人们生活压力比较大了然後我們需要這個因為綠色给人的心情带来舒适然后再说咱们这个盆栽也可以光骨多用的话有氧气也对人的生机比较好这样的话就是算是几方面吧一个是吸收有害气体进往空气制造氧气还有一个就是让人可以用来抽时间进行冥思之类的然后随着随着人们生活水平不断提高然后人们对这些盆栽需求量也越来越大然后每年咱们大型的花费交易在1亿3000万分左右然后交易数额在300亿这市场很大对市场很大但是咱们这个行业虽然说市场很大但是缺少了一个专门做这个的对品牌的经营力行对大经营力行对对而且咱们这个产业看有一些部门虽然是有,但是供货的渠道比较慢我打算做的一个是面对线上同城可以送到家,我们也可以定期的进行对你这个盆栽进行一个固定的售后可以给你修剪,进行一定的护理之类的还有我们现在这个种类的话,大概分三种中型的还有小型的和迷你的这个中型的话是比较现在比较流行的是一个人可以一个人可以自己搬也可以放到各种各样的地方然后小型的是在30公升以下的就是可以放在茶几啊或者是这个浴室啊之类的然后还有就是迷你的现在也是比较流行就是可以放在书桌啊就是你的这个窗盘啊就比较比较迷你比较方便然后至于种类的话就分四种吧大概一个是观观赏果树类还有一个就是这个彩色的彩色的还有一个就是绿叶保健的还有一个就是根茎的这个想法很痛苦成本是多少?成本的话,咱们这个分三档,高档中档和低
+会议中提到将开设一个植物盆艺生活馆，专注于盆栽的DIY制作、养护、修剪和美容。目标市场定位在生活压力较大的人群，强调绿色植物能带来心理上的舒适感，同时具有净化空气和提供冥想空间的功能。预计市场规模庞大，但行业缺乏专门的品牌运营。成本方面分为三档，包括高档、中档和低档产品。
+reasoner 输出结束
+就是甜点,然后里面有奶茶冰淇淋这些是主流然后因为民意实为天嘛,毕竟衣食住行在生活中还是最重要的然后还有那种甜品类的东西,就是一直是非常受女性的喜爱然后如果能在一个就是女性聚集那种地区开一个这样的店吧然后只要先站稳脚跟,然后我觉得慢慢的做起来应该是可以发展的。然后现在,就是因为蛋糕店也是属于餐饮服务业,主要是提供一些蛋糕,甜点,冰淇淋,然后肯定要有招牌的什么。雖然現在有很多這種招牌的奶茶店比如咱们现在大家都知道的那些co-go那些,那些都属于中档的消费吧,中低档也不算很高。然后像低档比较平价的那些就是蜜雪冰城那些。然后就是想打算开在社区的贸易街,开创期是一家,就是定位是一家中低档的蛋糕甜点店。然后再打算逐步发展成像立基村这种连锁的蛋糕店然后在创业初期需要的资金大概也不是特别多在3万左右吧在那里租一个店面然后买一些基础的设施对设备然后进一些原材料对这个原材料然后还需要服务员这一类的就是甜点师这些也都是需要的然后最开始的经营目标出於貿易階段这种店肯定也有所以竞争非常大但是还有一个优点就是说客源比较丰富然后女性毕竟也会想去尝试然后把店的装潢做得少女一些可爱一些然后就会更加吸引那些女生的目光吧刚开的时候其实没有太大的要求希望就是在一年多的时候可以先回粉慢慢的站稳,先不求多大的经济和利润然后在经营的过程中,就是不断创新服务业服务餐饮业主要就是为了满足这些消费者客户的需求然后有什么提出什么意见会及时改正只有掌握了消费者他们的口味想法,然后才能做得更加长远然后在做这个期间也肯定会做一些这些促销活动,比如说办什么卡啦,然后什么第二杯半价啦,这些第二份半价啦,我觉得这些都是可以的。然后主要的目标顾客吧,也就是女性,然后小孩这些,然后因为是在贸易街,然后购物娱乐的人就比较多。然后比如说四周学校的学生小区的居民然后课员数目比较长然后消费水平也不高,在中地党我觉得就比较适合大家。然后竞争对手其实也很多,但是就是想创立自己最独特的那种。行,就是你这边想法,做的进步,铺盆一点。嗯然后呢易同学嗯易同学在这边做一下这个因为关于大学生创业嘛因为目前大学生创业真的是比较困难所以我的计划是因为我的专业的关系我是学的计算机编程嘛然后我觉得我面对公司的经验非常重要所以我的计划是去公司大概积累经验一年或者半年吧然后我想我的创业计划是以后有一个软件开发游戏的这样一个团队公司这样成立一个公司对前期肯定需要去人家公司去学习对我的计划是要在那个公司里面学习一年半的然后主要是想有那个一人是一些有和我一样聚同道合对聚同道合的一些伙伴团队比较重要想法也知道重要然后因为现在这些电子时代然后游戏我们现在每个人手机上几乎都是混下的一两款游戏的所以我的目标是创建一款大家都会老大上小都会喜欢玩的一款游戏然后我的团队就是比较重要的一个认识的一些人就是创建一个对的对的一些这个大型的一些社区公司对去打理然后现实一些人然后有经验和资本之后然后创建一个我们自己小的工作室然后置办一两台或者三台电脑对 然后先从小的这些方便做夜面我们这些小的开始做起然后根据我们的平时创作灵感做一些小的什么游戏或者什么视频软件什么APP然后我觉得都是我们起步的一个基础我可以我可以我可以我可以我可以我可以我可以想开一个甜品店因为本身又比较喜欢红莓这一方面但是我和弟弟们不一样的话我是打算开一个与储物联动的一个甜品店就是像现在越来越多男生比较喜欢猫还有狗一些特别可爱的小猫像包的大写有蓝猫特别多种种类的猫它们都特别可爱用它们来形成互动的话就特别会带动特殊流量定位的话是多了但是价格是可以消极一点的因为是一定要像这种东西的话还是年轻人比较喜欢的如果说要引进这么多出入的话消费是比较高的像一只猫大概也是2000左右那么说初期的话需要大三部的话就是需要大概5万左右因为包括店面还有其他师傅还有一些创业人员单头店最重要的话像现在每个单头店进场都有的东西单头店这些都已经很偏好因为味道也不会有什么相差特别大特色所以说这里就需要一些创意然后我本身的话是有一个创意命名的话是叫做十二月主要是以食用泡芙皮和青菜刀和肉松组成的打算作为店家的特色然后出销活动的话就是像我已经提出的很多主题目购买,买多少,可以现在怎么样的活动比如说,猫啊,什么,和狗狗握手啊,这些什么就大概,稍微就是这么一个想法黑同学,你觉得这个想法有什么评价我觉得就是,只要今天就可以让宠物活动了有个后尾,有个点但是你要说,不光是喜欢的种类的苹果对,你今天也来评论各种种类的苹果还有种类也有不是,他喜欢的那种就是抓哪个种类的苹果主要是这种,像猫这种那时候他们知道被骚扰了,以后对方就在那边打小鸡所以说,赶走老人,首先是为了保护他们像有些人,他们不是很爱护人像是强猫这种小猫,其实是会伤害到中国人所以说,要定一个额度,让他们是给那些在天空中,在天空中,在天空中,在天空中,在天空中,在天空中,在天空中,在天空中,在天空中,
+[Audio Detection] 在 1717.50 秒检测到关键词 '好交交'。
+detection_time: 1717.50, current_time: 1710.00
+问题音频片段长度: 156843, dtype: float32, min: -0.15093994140625, max: 0.13458251953125
+问题音频时间长度: 9.8026875
+
+
+[Agent] 接收到问题: 如何通过创新吸引女性和孩小孩成为蛋糕店的主要顾客
+, 1735105666.1669533
+
+
+[Agent] 最终接收到问题: 如何通过创新吸引女性和孩小孩成为蛋糕店的主要顾客
+, 1735105666.1672418
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4825 seconds, One token time: 0.1608 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 139, Total time: 5.2764 seconds, One token time: 0.0380 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+目标人群主要是女性和孩子，因此在营销策略上可以考虑以下几点：
+
+1. 创造一个友好、温馨的环境：对于女性和孩子来说，舒适的环境非常重要。可以使用柔和的色彩和音乐来创造这样的氛围。
+
+2. 提供多种口味和款式的选择：女性和孩子往往对甜品有特别的喜爱，因此提供多种口味和款式的蛋糕可以吸引他们。
+
+3. 开展亲子活动：可以定期举办一些亲子活动，比如烘焙课程、画蛋糕比赛等，这样不仅可以吸引女性和孩子，还可以增强他们的黏性。
+
+4. 利用社交媒体进行宣传：女性和孩子都是社交媒体的主要用户，可以通过发布各种有趣、美味的蛋糕照片和视频来吸引他们。
+
+5. 提供优质的客户服务：女性和孩子往往更注重服务的质量，因此提供优质的服务可以让她们感到满意和舒适。
+
+6. 位置选择：选址在人流量大、靠近学校或购物中心的地方，这样可以更容易地吸引到女性和孩子。
+talker 输出结束
+是他自己家养的我可以给你们的建议就是出售出来的就是生怀者小猫可以进行出卖还有你店里面出那个黑龙猫你知道的可以进行配送也是一个很重要的一个其次就是毕竟咱们主要就是卖甜品嘛说了这么多咱们一直都说在成功上面咱们最后也没有说自己开展主要还是要典型自己的甜品猪猫是其次主要还是如果你想猫的话你可以另外开这个重点重点或者这个猫猫咖对我再说三个我觉得主要还是要提升自己店内的特色就是小气是上午我打算是用一目了十二目的用我打算每个月都是用一个特色也可以跟日本来进行联盟那D同学,这个F东西跟你的小粉一样的对他这个小粉怎么样?我觉得他这个比我这个更加创新吧有那个,有宠物嘛毕竟现在有很多人也是喜欢这个小动物我觉得我可以跟他学习一下学习一下对,见解一下我没有合作,因为没有合作,那边是照顾猫的,然后你这边是甜品这样点点可以的少因为像我这边的话,也会有一些和宇甜品的一些就是新的要法,就是你像木材棒,甜点,都需要新的特色。所以说,这边可以进行研发新的特色,那边的话进行销售或者说其他合作都可以。好,可以互相发展一下合作才能够用,对吧?对对对还有对她的想法对她的想法有不同的吗?意义类有不同吗?我觉得因为我们是做吃的东西蛋糕啊,或者什么甜品然后宠物嘛就很大的一个问题就是你怎么处理这个味道啊首先要去明显的是,做甜品的话,它是一些设施,是要隔开的,相当于是外面是用来进行服务的,内部的话是进行分配做甜品的。他们都会有自己的好习惯,自己会处理自己的那些,比如说,自己会铲屎铲屎班?对,他自己就会今天摆一下去,不需要特别大的措施,就是吃的你前期進貓的時候就需要對牠做一個定期的培訓就那样之类的你听的时候都会有错觉很平整平整对平整要有个错觉这个你要严格把控因为毕竟有一些人还是对还有就是食物跟这个往上这一块有些人觉得不卫生可能会刚才这个对你这边说这个气味气味就很很关键的一点你像一般的汉在这边,我们可以看到有一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。
+[Audio Detection] 在 2067.11 秒检测到关键词 '好交交'。
+detection_time: 2067.11, current_time: 2040.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.0518798828125, max: 0.056060791015625
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于甜品店与宠物店的合作模式你有什么建议平衡甜品和宠物的互动
+, 1735105689.8307102
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于甜品店与宠物店的合作模式你有什么建议平衡甜品和宠物的互动体验同时确保食品卫生和安全你对猫学义如果不学义的话有人带孩子来猫抓了因为不学义的话他什么都能干的出来
+, 1735105691.444578
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.5057 seconds, One token time: 0.1686 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：甜品店 宠物店 合作模式 食品卫生 安全 猫学 互动体验
+Token count: 48, Total time: 9.2799 seconds, One token time: 0.1933 seconds
+
+提取的关键词: ['甜品店', '宠物店', '合作模式', '食品卫生', '安全', '猫学', '互动体验']
+
+找到的上下文片段数量: 2
+建议可以在店内设置专门区域供猫咪活动，增加顾客互动性。同时，定期为猫咪进行健康检查和清洁，确保卫生。对于家长带孩子的情况，可设立监督机制，防止宠物伤害孩子。此外，可以提供宠物护理服务，如代管猫咪、日常喂食等，增强顾客粘性。这样既能提供独特的宠物互动体验，又能保证食品安全与卫生。
+Token count: 84, Total time: 16.6003 seconds, One token time: 0.1976 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：甜品店 宠物店 合作模式 食品卫生 安全 猫学 互动体验
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 嗯然后呢易同学嗯易同学在这边做一下这个因为关于大学生创业嘛因为目前大学生创业真的是比较困难所以我的计划是因为我的专业的关系我是学的计算机编程嘛然后我觉得我面对公司的经验非常重要所以我的计划是去公司大概积累经验一年或者半年吧然后我想我的创业计划是以后有一个软件开发游戏的这样一个团队公司这样成立一个公司对前期肯定需要去人家公司去学习对我的计划是要在那个公司里面学习一年半的然后主要是想有那个一人是一些有和我一样聚同道合对聚同道合的一些伙伴团队比较重要想法也知道重要然后因为现在这些电子时代然后游戏我们现在每个人手机上几乎都是混下的一两款游戏的所以我的目标是创建一款大家都会老大上小都会喜欢玩的一款游戏然后我的团队就是比较重要的一个认识的一些人就是创建一个对的对的一些这个大型的一些社区公司对去打理然后现实一些人然后有经验和资本之后然后创建一个我们自己小的工作室然后置办一两台或者三台电脑对 然后先从小的这些方便做夜面我们这些小的开始做起然后根据我们的平时创作灵感做一些小的什么游戏或者什么视频软件什么APP然后我觉得都是我们起步的一个基础我可以我可以我可以我可以我可以我可以我可以想开一个【甜】品店因为本身又比较喜欢红莓这一方面但是我和弟弟们不一样的话我是打算开一个与储物联动的一个甜品店就是像现在越来越多男生比较喜欢猫还有狗一些特别可爱的小猫像包的大写有蓝猫特别多种种类的猫它们都特别可爱用它们来形成互动的话就特别会带动特殊流量定位的话是多了但是价格是可以消极一点的因为是一定要像这种东西的话还是年轻人比较喜欢的如果说要引进这么多出入的话消费是比较高的像一只猫大概也是2000左右那么说初期的话需要大三部的话就是需要大概5万左右因为包括店面还有其他师傅还有一些创业人员单头店最重要的话像现在每个单头店进场都有的东西单头店这些都已经很偏好因为味道也不会有什么相差特别大特色所以说这里就需要一些创意然后我本身的话是有一个创意命名的话是叫做十二月主要是以食用泡芙皮和青菜刀和肉松组成的打算作为店家的特色然后出销活动的话就是像我已经提出的很多主题目购买,买多少,可以现在怎么样的活动比如说,猫啊,什么,和狗狗握手啊,这些什么就大概,稍微就是这么一个想法黑同学,你觉得这个想法有什么评价我觉得就是,只要今天就可以让宠物活动了有个后尾,有个点但是你要说,不光是喜欢的种类的苹果对,你今天也来评论各种种类的苹果还有种类也有不是,他喜欢的那种就是抓哪个种类的苹果主要是这种,像猫这种那时候他们知道被骚扰了,以后对方就在那边打小鸡所以说,赶走老人,首先是为了保护他们像有些人,他们不是很爱护人像是强猫这种小猫,其实是会伤害到中国人所以说,要定一个额度,让他们是给那些在天空中,在天空中,在天空中,在天空中,在天空中,在天空中,在天空中,在天空中,在天空中,如何通过创新吸引女性和孩小孩成为蛋糕店的主要顾客是他自己家养的我可以给你们的建议就是出售出来的就是生怀者小猫可以进行出卖还有你店里面出那个黑龙猫你知道的可以进行配送也是一个很重要的一个其次就是毕竟咱们主要就是卖甜品嘛说了这么多咱们一直都说在成功上面咱们最后也没有说自己开展主要还是要典型自己的甜品猪猫是其次主要还是如果你想猫的话你可以另外开这个重点重点或者这个猫猫咖对我再说三个我觉得主要还是要提升自己店内的特色就是小气是上午我打算是用一目了十二目的用我打算每个月都是用一个特色也可以跟日本来进行联盟那D同学,这个F东西跟你的小粉一样的对他这个小粉怎么样?我觉得他这个比我这个更加创新吧有那个,有宠物嘛毕竟现在有很多人也是喜欢这个小动物我觉得我可以跟他学习一下学习一下对,见解一下我没有合作,因为没有合作,那边是照顾猫的,然后你这边是甜品这样点点可以的少因为像我这边的话,也会有一些和宇甜品的一些就是新的要法,就是你像木材棒,甜点,都需要新的特
+---
+他们都会有自己的好习惯,自己会处理自己的那些,比如说,自己会铲屎铲屎班?对,他自己就会今天摆一下去,不需要特别大的措施,就是吃的你前期進貓的時候就需要對牠做一個定期的培訓就那样之类的你听的时候都会有错觉很平整平整对平整要有个错觉这个你要严格把控因为毕竟有一些人还是对还有就是食物跟这个往上这一块有些人觉得不卫生可能会刚才这个对你这边说这个气味气味就很很关键的一点你像一般的汉在这边,我们可以看到有一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。在这里,我们可以看到一个很大的变化。基于之前我们讨论的内容关于【甜】品店与宠物店的合作模式你有什么建议平衡甜品和宠物的互动体验同时确保食品卫生和安全你对猫学义如果不学义的话有人带孩子来猫抓了因为不学义的话他什么都能干的
+建议可以在店内设置专门区域供猫咪活动，增加顾客互动性。同时，定期为猫咪进行健康检查和清洁，确保卫生。对于家长带孩子的情况，可设立监督机制，防止宠物伤害孩子。此外，可以提供宠物护理服务，如代管猫咪、日常喂食等，增强顾客粘性。这样既能提供独特的宠物互动体验，又能保证食品安全与卫生。
+reasoner 输出结束
+而不是说可以想,因为你想想吧,它就是很有新鲜感但是他们在爱护动物方面做的不是很好你可以分区域,比如说这方面是做了绝对的,那方面是没做绝对的孩子们来的话可以去那边玩,然后大学生的话可以去那边配种的话干嘛,可以分区域嘛到时候你这个计划的话要写个具体的计划都在那里你要想到所有面对的顾客有哪些你要想到然后后期的刚才一些这个易同学说到这个安全问题安全问题你也要回答还有一个易同学说到这个气味对现在会上这几个都关系想到了可能会有一个难度好 行那咱们温床这个交流会就能到此结束散会響鐘
+[Audio Detection] 在 2235.42 秒检测到关键词 '好交交'。
+detection_time: 2235.42, current_time: 2220.00
+问题音频片段长度: 128896, dtype: float32, min: -0.0748291015625, max: 0.09033203125
+问题音频时间长度: 8.056
+
+
+[Agent] 接收到问题: 针对动物服务安全性和气味问题你有哪些具体的管理建议
+, 1735105723.5498776
+
+
+[Agent] 最终接收到问题: 针对动物服务安全性和气味问题你有哪些具体的管理建议
+, 1735105723.5500684
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4648 seconds, One token time: 0.1549 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 175, Total time: 5.6328 seconds, One token time: 0.0322 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+针对动物服务的安全性和气味问题，我有以下几点建议：
+
+1. 建立严格的消毒制度：定期对工作区域、工具和设备进行清洁和消毒，以防止细菌、病毒和其他病原体的滋生。
+
+2. 提供适当的训练：为员工提供必要的培训，使他们能够正确地处理和服务动物，避免因不当行为导致的安全问题和气味问题。
+
+3. 使用专业的清洁产品：使用无毒、无味的专业清洁产品，可以有效去除动物产生的异味，并保持环境的卫生。
+
+4. 定期检查动物的身体状况：定期检查动物的身体状况，及时发现并治疗疾病，以减少动物在服务过程中产生的异味。
+
+5. 提高员工的责任心：加强员工的责任心教育，让他们明白自己的工作不仅关系到动物的服务质量，也影响着环境的卫生和客户的满意度。
+
+6. 设立投诉机制：设立有效的投诉机制，鼓励客户提出对服务质量和气味问题的反馈，以便及时采取改进措施。
+talker 输出结束
+
+会议数据处理完成。

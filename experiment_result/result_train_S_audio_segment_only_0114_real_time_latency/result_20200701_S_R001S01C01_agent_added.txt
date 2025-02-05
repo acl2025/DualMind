@@ -1,0 +1,29 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+Traceback (most recent call last):
+  File "/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "agent/test_agent_audio_experiement_audio_segment_only.py", line 352, in <module>
+    main()
+  File "agent/test_agent_audio_experiement_audio_segment_only.py", line 18, in main
+    from agent.agent import process_agent_trigger
+  File "/home/leon/agent/agent/agent.py", line 1, in <module>
+    from agent.classifier_reasoner_talker import classifier_process_func, talker_process_func, reasoner_process_func
+  File "/home/leon/agent/agent/classifier_reasoner_talker.py", line 39, in <module>
+    from transformers import Qwen2AudioForConditionalGeneration, AutoProcessor
+ImportError: cannot import name 'Qwen2AudioForConditionalGeneration' from 'transformers' (/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/__init__.py)

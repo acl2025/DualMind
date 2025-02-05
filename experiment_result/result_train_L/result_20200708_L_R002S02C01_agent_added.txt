@@ -1,0 +1,256 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200708_L_R002S02C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 73
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.11s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.82s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.20s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.87s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.99s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.02s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.07s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.19s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:10,  5.38s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.07s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.84s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.86s/it]
+002我是主持人026我是咨询人A022是律师027咨询人B023咨询人C024咨询人B014咨询人E行 好的 今天咱们荣幸请到了法律方面的专家来给咱们这个进行一个法律方面的援助会不把吧不把这个会议那有请咱们这个先有请咱们这个律师先说一下这个法律上面的一些问题然后咱们就开始进行一些咨询大家好我这儿现在有一个案例就是一家人带着五岁的男孩他玩耍,走到湖边,假山那里,就是有吊桥嘛,有那种吊桥,然后上面,公园上面写着那个,未成年人不得上桥,然后水深危险,他挂了告示了,但是小孩还是比较调皮,最终淹死了,他掉下去了,他就是不让上去,他自己还是上去了,还是掉到水里淹死了。没有人营救无效大家对这个有什么看法大家对这个有什么看法就是觉得这个责任划分责任划分我觉得应该属于那种管理部门吧他为什么只立牌子了没有设立就是他有网他有那个他有那个那个安全网有安全网小孩子还淹死了小孩子自己那个攀爬嘛就是那个桥上它是有栏杆的而且是有那种那种孩子钻不出的那种小那个铁网但是他还是往上爬掉下去了就是高度不够高度够但是他爬上去了责任应该不算孩子的责任孩子自己想死啊如果追究責任的話就是不屬於那種自己就是非要去做之類的東西就屬於還是管理不大吧如果是處罰的話可以這個有什麼想法比如說是孩子在沒有家長陪同學自己有家長陪同學有家長是帶著孩子去的然后孩子在墙上爬爬上去然后直接掉到水里就是他在玩他在那个不该他去的地方他经常玩耍然后可能然后家长也没有看好孩子然后孩子就是听不到公园是有责任公园是有责任因为虽然说你立了牌子立了告示但是这样就可以说我没看见对不对人家就这样就会把责任推卸下去咱别管说到底对不对可以这样负一些责任,是吧。所以公园在这儿是有责任的。如果说真是有的水深危险,还有这一条桥,那我觉得真的是应该站起来,桥梁头站起来。看见了,过来说就得拦住它,必须得拦住。对,那么既然你开的公园有的家庭有坏,虽然说你尽可能地排除,但是你还得一起想办法的危险全给消灭,越州的孩子就是不能上去我觉得这边也是公园这边是做法有所欠缺就是虽然孩子还小比较开玩但是既然那个地方是危险为什么就是没有想到如果真的就是有那种孩子掉进去谁来营救这个人公园这个做的不太全面办事不太妥当但是我觉得也不全是公园的责任公园这边也是没有监督好吧就是公园的责任就应该是比较大一些因为它就像刚才自学生毕竟的那样它没有看见告示它完全可以把责任都推下到公园身上所以我觉得公园这边其实做得不太全面不太全面我这边想法正好相反我觉得既然这个公园是大家肯定会经常去玩的你说你看不见这个告示旁边是一个大水池你让你自己的孩子在外面乱跑我觉得最大的责任的那一方是家长因为他看管这个小孩不利对但是这个公园的他应该对他这个公园有很大的影响他应该更加做好这个管理方面这是为他自己就是加强他自己这个规模公司公园的那些人以后可能会因为这个受影响不来了或者什么的或者避孕多少天这都是他自己的影响如果他从最开始像B说的你加强人看守了这个肯定是没有这些隐患了所以我觉得但是更大的责任在家长这边他没有看管看管好自己的小孩如果说公园按照这个安全管理条例他设置了告示法设立这个安全网以及在那个公园可能那些手册以及门口的报上都说明了之后它完全是按照条例来做的比如说刚才大家说的那个有人看管设立救生员我们不能把我们禁止的问题的后果我们的体验做好比如说我们林场禁止烟火但是我们不能想着万一有人吸烟怎么办所以我们把消防队搬到林场旁边这是很不现实的一个问题因为我们禁止这件事情在我们的潜意识里这种事情是不会发生的所以说公园在这警告说水深危险不让孩子进入之后不可能让营救员在旁边待着因为他已经从自己的自身认为上来说已经把这个事情给杜绝了不会有后续发展问题如果他说完全按照这个条例来做的话他本身是没有特别大的责任的如果说是家长看到了一切他又是带着孩子过来他处于一个监护人的一个身份但是他没有起到完全的监护作用造成了孩子的意外死亡所以说家长可能负责但是就是也能因为法律问题吧所以说公务员是有次要责任的比如说你在警区坠落死亡您是意外罪过死亡警区没有任何的那个插手问题但他还是要负一定的责任要进行一定的赔偿所以就这件事责任划分来说我觉得那个家长应该是负主要责任的公园可能会进行一个人道主义赔偿是我可能的想法行 那在律师这边按法律上面这件事情啊家长确实是负主要责任然后公园方负自要责任但是他不是出于人道主义谢谢大家而
+[Text Detection] 在 509.57 秒检测到关键词 '娇娇',current_time: 480.00, 问题文本: 而是说它还是有一个监管不力的一个问题就是它虽然设置了那个告示牌还有那个安全网但是它这个既然是有危险系数的那它就不应该提供这些项目玩耍你好娇娇
+问题音频片段长度: 193024, dtype: float32, min: -0.106658935546875, max: 0.15533447265625
+问题音频时间长度: 12.064
+
+
+[Agent] 接收到问题: 在安全網的情況下如何進一步強化安全管理
+, 1735097109.7270336
+
+
+[Agent] 最终接收到问题: 在安全網的情況下如何進一步強化安全管理
+, 1735097109.727141
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9211 seconds, One token time: 0.3070 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在安全网的情况下，可以采取以下措施来进一步强化安全管理：
+
+1. 建立完善的安全管理制度和应急预案，确保管理的系统性和规范性。
+2. 提高用户的安全意识，加强用户对网络安全的自我保护能力。
+3. 定期进行安全检查和漏洞扫描，及时发现并修复安全问题。
+4. 强化员工的安全培训，提高员工的安全素质和技能水平。
+5. 利用先进的安全技术手段，如防火墙、入侵检测系统等，提升网络安全性。
+6. 加强与相关机构的合作，共同应对网络安全威胁和风险。
+talker 输出结束
+是说它还是有一个监管不力的一个问题就是它虽然设置了那个告示牌还有那个安全网但是它这个既然是有危险系数的那它就不应该提供这些项目玩耍你好娇娇律师和检察官是有区别的检察官是以法律条规为主进行那个大的辩护公平公正而律师是为自己完全是为自己当事人着想的即使你知道你的当事人已经犯了很大的问题但你也尽量地把这个问题减小给他减少那个惩罚这是律师的他跟检察官是一样的行 那咱刚才这个法律律师就抛出来这个问题要不要再重來一段咱们这个C这边开始说咨询就是想问一下你在日常生活中有很多法律其实大家都知道了你这边有什么你想平常或者你朋友遇到的问题遇到法律上的问题可以说一下生活上的一些事情有吗就是比如说我一个我一个朋友他们就是热恋中的情侣然后两个人男方在恋爱中,男方要求女方发一些不太雅观的照片,但是女方考虑到两个人的关系是情侣,以后有更好的发展,比如说结婚,她发过去了,但是分手之后,男方会拿这个来要挟女生,这个女生应该怎么做,应该怎么样维护自己的权益?首先这个他们的那个热线期间南方向女方输掉这种明慧这些视频资料是违法的就是强迫当事人的意愿提供一些色情服务这个是属于那种猥亵这个属于猥亵这是19年新的司法规定就算是情侣也是猥亵就算是情侣也是猥亵它违背当事人的意愿那如果是结婚了呢结婚了也违法对 也属于违线主要是在女方不知道的情况下女方违背本人意愿就是女方她不愿意向男孩提供这些责任但是男方强迫她 胁迫她但是如果女方当时发的时候她是愿意的她肯定是愿意的如果她是愿意的话 那就没有任何的后果如果说男方在分手以后以这个为要挟的话那就是敲打勒索相当于他已经犯了两个罪对像犯了两个罪一个就是诽窃一个就是敲打勒索虽然是热恋的情侣就算他们每天出去开房但是就是这一天女生就是不愿意为他提供那也算是诽窃还有就是分手以后男方以他的裸照护衣照作为要挟要提供一些资金方面这就是乔扎勒走的这两个罪名就要入刑法就是这个检察院会来处理就会不会这两个罪名加起来就会不会更严重一点就是罪上加罪罪上加罪所以在遇到这种情况下就要及时报警或者像法院就直接就然后这个判刑还是什么还是罚款吗这个是出判刑法你可以向公安局报案以后公安局可以移送检察院检察院提起公诉向法院提起公诉最后对犯罪件人士判刑具体这个结果可以由法院具体情况进行没有了吗先这个先没有嗯行然后咱们D这个嗯我这边的话就是有一个朋友吧他以前的事情是在公交车站等车的时候然后遇到了一个开着开着车的一个别的同事然后就坐着他的坐着免费乘坐了他的车然后在车上行驶到一半的时候因为紧急刹车好是自己,导致我朋友受伤了受伤了对,花了上万元的医药费上万元对,就是挺严重的那现在这个我朋友他可以要求这个司机他的同事负责吗不可以因为他们实际没有这个权利义务关系他们没有产生任何的费用之间的问题就是比如说但是是因为导致他这个开车有考虑到安全问题所以导致自己受伤了这个跟司机没有关系吗没有关系他们之间没有任何这个协议就是协议关系就比如说很简单的就我们坐出租车我们是没有签任何合同但是他们这个出租车公司潜移文化的就是这么个规定咱只要上他车他就要这样安全就有这个权利业务关系了你只是朋友顺路少你你们之间没有这个权利义务就像是一家人出去装车了那如果导致身亡了导致身亡也要看情况就是比如说是司机是主要责任的话那可能要看不是杀人如果身亡和受伤是两种不一样的情况是吗这是要看这个交通肇事主要责任如果说他因为这个司机的原因那个致乘客身亡他可能是要负责任的因为出人命了但是如果说那个我烧你不小心出事了你受伤了那你可能就要自费医了如果是因为这个司机他是违反了这些交通规则如果说出了人命了,他可能要出那个,可能有问题。如果说只是受伤,那么那只有你们进去。那我刚刚你说的那个出租车上是不一样的对吧那我想问一下如果你有重要的东西落在出租车上了这个出租车司机他是否有这个义务去找学员找你然后他有意义将它保管他没有权利带回机友如果在短期内施主没有将它所取的话他要交到出租公司
+[Audio Detection] 在 1025.98 秒检测到关键词 '好交交'。
+detection_time: 1025.98, current_time: 1020.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.123291015625, max: 0.126861572265625
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于热恋中的情谊旅分手后男方已要骗要挟女方的情况如果女方在
+, 1735097144.770914
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于热恋中的情侣旅分手后男方已不照片要挟女方的情况如果女方在热恋期间是自愿发送这些照片的那么男方的行为是否构成敲诈勒所罪女方应该如何维护自己的合法权益那你说施主他其实当时他有在寻找有在寻找但是就是没有结果
+, 1735097146.7802835
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4956 seconds, One token time: 0.1652 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：情侣旅手 照片要挟 权益维护
+Token count: 34, Total time: 6.9912 seconds, One token time: 0.2056 seconds
+
+提取的关键词: ['情侣旅手', '照片要挟', '权益维护']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+如果女方在热恋期间自愿发送照片，分手后男方以此为由进行威胁，则不构成敲诈勒索罪。女方应收集证据（如聊天记录），在必要时报警或寻求法律援助。若男方确实使用胁迫手段，警方将介入调查并追究其法律责任。女方应保持冷静，理性处理，避免直接冲突。
+Token count: 76, Total time: 15.1355 seconds, One token time: 0.1992 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：情侣旅手 照片要挟 权益维护
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 对,那么既然你开的公园有的家庭有坏,虽然说你尽可能地排除,但是你还得一起想办法的危险全给消灭,越州的孩子就是不能上去我觉得这边也是公园这边是做法有所欠缺就是虽然孩子还小比较开玩但是既然那个地方是危险为什么就是没有想到如果真的就是有那种孩子掉进去谁来营救这个人公园这个做的不太全面办事不太妥当但是我觉得也不全是公园的责任公园这边也是没有监督好吧就是公园的责任就应该是比较大一些因为它就像刚才自学生毕竟的那样它没有看见告示它完全可以把责任都推下到公园身上所以我觉得公园这边其实做得不太全面不太全面我这边想法正好相反我觉得既然这个公园是大家肯定会经常去玩的你说你看不见这个告示旁边是一个大水池你让你自己的孩子在外面乱跑我觉得最大的责任的那一方是家长因为他看管这个小孩不利对但是这个公园的他应该对他这个公园有很大的影响他应该更加做好这个管理方面这是为他自己就是加强他自己这个规模公司公园的那些人以后可能会因为这个受影响不来了或者什么的或者避孕多少天这都是他自己的影响如果他从最开始像B说的你加强人看守了这个肯定是没有这些隐患了所以我觉得但是更大的责任在家长这边他没有看管看管好自己的小孩如果说公园按照这个安全管理条例他设置了告示法设立这个安全网以及在那个公园可能那些手册以及门口的报上都说明了之后它完全是按照条例来做的比如说刚才大家说的那个有人看管设立救生员我们不能把我们禁止的问题的后果我们的体验做好比如说我们林场禁止烟火但是我们不能想着万一有人吸烟怎么办所以我们把消防队搬到林场旁边这是很不现实的一个问题因为我们禁止这件事情在我们的潜意识里这种事情是不会发生的所以说公园在这警告说水深危险不让孩子进入之后不可能让营救员在旁边待着因为他已经从自己的自身认为上来说已经把这个事情给杜绝了不会有后续发展问题如果他说完全按照这个条例来做的话他本身是没有特别大的责任的如果说是家长看到了一切他又是带着孩子过来他处于一个监护人的一个身份但是他没有起到完全的监护作用造成了孩子的意外死亡所以说家长可能负责但是就是也能因为法律问题吧所以说公务员是有次要责任的比如说你在警区坠落死亡您是意外罪过死亡警区没有任何的那个插手问题但他还是要负一定的责任要进行一定的赔偿所以就这件事责任划分来说我觉得那个家长应该是负主要责任的公园可能会进行一个人道主义赔偿是我可能的想法行 那在律师这边按法律上面这件事情啊家长确实是负主要责任然后公园方负自要责任但是他不是出于人道主义谢谢大家而在安全網的情況下如何進一步強化安全管理是说它还是有一个监管不力的一个问题就是它虽然设置了那个告示牌还有那个安全网但是它这个既然是有危险系数的那它就不应该提供这些项目玩耍你好娇娇律师和检察官是有区别的检察官是以法律条规为主进行那个大的辩护公平公正而律师是为自己完全是为自己当事人着想的即使你知道你的当事人已经犯了很大的问题但你也尽量地把这个问题减小给他减少那个惩罚这是律师的他跟检察官是一样的行 那咱刚才这个法律律师就抛出来这个问题要不要再重來一段咱们这个C这边开始说咨询就是想问一下你在日常生活中有很多法律其实大家都知道了你这边有什么你想平常或者你朋友遇到的问题遇到法律上的问题可以说一下生活上的一些事情有吗就是比如说我一个我一个朋友他们就是热恋中的情侣然后两个人男方在恋爱中,男方要求女方发一些不太雅观的照片,但是女方考虑到两个人的关系是情侣,以后有更好的发展,比如说结婚,她发过去了,但是分手之后,男方会拿这个来要挟女生,这个女生应该怎么做,应该怎么样维护自己的权益?首先这个他们的那个热线期间南方向女方输掉这种明慧这些视频资料是违法的就是强迫当事人的意愿提供一些色情服务这个是属于那种猥亵这个属于猥亵这是19年新的司法规定就算是情侣也是猥亵就算是情侣也是猥亵它违背当事人的意愿那如果是结婚了呢结婚了也违法对 也属于违线主要是在女方不知道的情况下女方违背本人意愿就是女方她不愿意向男孩提供这些责任但是男方强迫她 胁迫她但是如果女方当时发的时候她是愿意的她肯定是愿意的如果她是愿意的话 那就没有任何的后果如果说男方在分手以后以这个为要挟的话那就是敲打勒索相当于他已经犯了两个罪对像犯了两个罪一个就是诽窃一个就是敲打勒索虽然是热恋的情侣就算他们每天出去开房但是就是这一天女生就是不愿意为他提供那也算是诽窃还有就是分手以后男方以他的裸照护衣照作为要挟要提供一些资金方面这就是乔扎勒走的这两个罪名就要入刑法就是这个检察院会来处理就会不会这两个罪名加起来就会不会更严重一点就是罪上加罪罪上加罪所以在遇到这种情况下就要及时报警或者像法院就直接就然后这个判刑还是什么还是罚款吗这个是出判刑法你可以向公安局报案以后公安局可以移送检察院检察院提起公诉向法院提起公诉最后对犯罪件人士判刑具体这个结果可以由法院具体情况进行没有了吗先这个先没有嗯行然后咱们D这个嗯我这边的话就是有一个朋友吧他以前的事情是在公交车站等车的时候然后遇到了一个开着开着车的一个别的同事然后就坐着他的坐着免费乘坐了他的车然后在车上行驶到一半的时候因为紧急刹车好是自己,导致我朋友受伤了受伤了对,花了上万元的医药费上万元对,就是挺严重的那现在这个我朋友他可以要求这个司机他的同事负责吗不可以因为他们实际没有这个权利义务关系他们没有产生任何的费用之间的问题就是比如说但是是因为导致他这个开车有考虑到安全问题所以导致自己受伤了这个跟司机没有关系吗没有关系他们之间没有任何这个协议就是协议关系就比如说很简单的就我们坐出租车我们是没有签任何合同但是他们这个出租车公司潜移文化的就是这么个规定咱只要上他车他就要这样安全就有这个权利业务关系了你只是朋友顺路少你你们之间没有这个权利义务就像是一家人出去装车了那如果导致身亡了导致身亡也要看情况就是比如说是司机是主要责任的话那可能要看不是杀人如果身亡和受伤是两种不一样的情况是吗这是要看这个交通肇事主要责任如果说他因为这个司机的原因那个致乘客身亡他可能是要负责任的因为出人命了但是如果说那个我烧你不小心出事了你受伤了那你可能就要自费医了如果是因为这个司机他是违反了这些交通规则如果说出了人命了,他可能要出那个,可能有问题。如果说只是受伤,那么那只有你们进去。那我刚刚你说的那个出租车上是不一样的对吧那我想问一下如果你有重要的东西落在出租车上了这个出租车司机他是否有这个义务去找学员找你然后他有意义将它保管他没有权利带回机友如果在短期内施主没有将它所取的话他要交到出租公司基于之前我们讨论的内容关于热恋中的情侣旅分手后男方已不【照】片要挟女方的情况如果女方在热恋期间是自愿发送这些照片的那么男方的行为是否构成敲诈勒所罪女方应该如何维护自己的合法权益那你说施主他其实当时他有在寻找有在寻找但是就是没有
+如果女方在热恋期间自愿发送照片，分手后男方以此为由进行威胁，则不构成敲诈勒索罪。女方应收集证据（如聊天记录），在必要时报警或寻求法律援助。若男方确实使用胁迫手段，警方将介入调查并追究其法律责任。女方应保持冷静，理性处理，避免直接冲突。
+reasoner 输出结束
+法律师跟你说的,说一下那刚才他说那个问题,咱去法院起诉基本告明,是吧?去法院什么?起诉,起诉他那个同事法院不会支持的,因为你们没有权利业务关系行,那咱异这个这边有点我在电视上看过的但是因为机动车被一个非机动车给占让了他就往非机动车道歪了一下就歪了这一下把孩子给撞到然后孩子就是抢救无效死亡了就这个市里面就是这个突然出现的行人然后没有减速的保姆还有这个占用机动车道的非机动车还有拐过来拐入非机动车道的司机就这么多人里面每个人都有错但是如果追责的话可能谁是负最大的责任主要责任还是保姆既然是防武关系的话,他们就有一种合作的义务比如说我去接你的孩子,我就是你的监护人我有义务保护你的生命安全还有这个行人,他可能只是符违反交通的规则就是重灯啊或者说没有按照这个焦点的规定在这边的交通道路行驶那他可能只是负很小的一个责任还有就是这个公交车司机他要负这个或是这人死亡的责任因为在所有人里面每个人都是属于一个间接之人死亡而只有公交车司机是直接之人死亡的是他压了过去如果这个车没有驶过来的话但是因为有这个车她是直接这孩子死亡的所以说公交车司机会不会负的责任比较大一点因为她也违反了她相对来说比那个你的意思是说前面还有一辆车不是就是保姆她是为了避让行人她摔倒了但是如果没有这辆违反就是交通走入非进入车道的公交车的话孩子可能只是摔倒但是她司机孩子的直接死因是被公交车碾压而这个公交车她为了避让请不吝点赞 订阅 转发 打赏支持明镜与点点栏目走入了机动车道的一个车而进入了非机动车道只拐了那么一下但是碰巧这个时候还是摔倒了他也是有违法行为他不是就是单纯的压过海而是他违规进入了非机动车道作为这个直接致人死亡的最大原因他会不会负责任可能比保姆要大一点保姆可能只是他最大的过错就是他没有及时在时钟头减速每个人发的错都不是很大人死亡的这个会不会太严重公交车负次要责任然后保姆负主要责任那其他行人什么就没有特别大的责任还有清卫那个行人负的是也是次要责任就是他们每个人就是关于这件事件里面的人都有一定的责任对吧这个只是保姆负主要责任好还有什么想要问的吗有什么想要咨询这边想咨询两个小问题首先就是根据民事方面这方面咨询恶法算法什么恶法算法对因为有些的法律会违背大多数人的意愿不公正但是它的法律法律成立咱不要说关于这个有什么想要咨询的就像还有一个上一个问题就略过下一个问题就是如果在一个十字路口那一块正好修路行人他要路过但是他是属于闯红灯式的路过只是想走出去看一下正好路过了一辆水泥车水泥车看到了行人与正在进行左拐的车辆他往左打了一下方向盘进行了车祸然后那个左拐的车辆他没有及时刹车因为可能司机经过了碰撞他没有当场死亡但是司机碰到了旁边的就是一个行走的一个遛狗的一个人就属于一个路人椅但是司机把那个人撞死了这是属于谁的责任你可以再去看看就是属于假在施工的一个路段他想走出去一两步探头看看有没有车想要进行闯红灯因为他需要有急事当时人去说正好此时正好绿灯嘛是一车他要往前行驶他看到行人以后人的下意识反应是避让他避让了一下那个正在探头的那个行人他与另一辆车发生了车祸将另一辆车发生了碰撞然后那辆车又撞死了路人这个刑事责任应该算谁为什么呀为什么是两个司机啊因为有一辆车正在走过来他没有进行什么他他也是被撞的他也需要负责任吗如果说他那个一辆车他没有避障行人那如果第一辆车没有避让行人,把行人撞死了,那算什么?把他撞死的话,他也是负那个次要的责任,就是违反交通的行人负责任。那……甚至有可能是无责任,就是没有任何责任。就是,因为是假嘛,他违反了交通规则。他没有闯祸的啊,他只是要进行闯祸的。他只是在維修路段,他一個視野忙,他走出去一兩步去看一看他
+[Text Detection] 在 1546.00 秒检测到关键词 '焦焦',current_time: 1530.00, 问题文本: 他也没有车他还没有进行闯红灯他属于一个探头行为但是司机看到了这个人他与A车与B车发生了碰撞将B车撞了出去B车将路人也撞死了你好焦焦行人闯红灯导致车祸责任如何划分那这个A车A车和B车都要付出了责任请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+问题音频片段长度: 128683, dtype: float32, min: -0.129638671875, max: 0.12646484375
+问题音频时间长度: 8.0426875
+
+
+[Agent] 接收到问题: 你好焦焦行人闯红灯导致车祸
+, 1735097199.9321365
+
+
+[Agent] 最终接收到问题: 你好焦焦行人闯红灯导致车祸
+, 1735097199.9323266
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4824 seconds, One token time: 0.1608 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 105, Total time: 4.0561 seconds, One token time: 0.0386 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+这段音频中，我听到了一个29岁男性使用胶辽官话-青岛话说“你好叫叫行人闯红灯导致车祸”。
+talker 输出结束
+也没有车他还没有进行闯红灯他属于一个探头行为但是司机看到了这个人他与A车与B车发生了碰撞将B车撞了出去B车将路人也撞死了你好焦焦行人闯红灯导致车祸责任如何划分那这个A车A车和B车都要付出了责任请不吝点赞 订阅 转发 打赏支持明镜与点点栏目路人甲他要在东西要进行闯洪洞的行为但是这个南北的司机从南边开过来的水泥车他看到了行人他向他的左边避让了一下正好从北边开过来的司机进行了冲撞属于撞到了驾驶位属于撞到了驾驶位将车顶了出去正好这个车是撞到了路人仪路人儀也在進行就是绿灯行驶相当于路人椅的司机就是B车的司机和路人椅当场死亡两个车都正常行驶两个车都正常行驶但是A车它是水泥车司机相对于驾驶位置较高没有只是受了一些轻伤因为A这个他拐了一下然后导致了B车冲出去撞死了路人是这个原因吗对那A车负责责任但是这个路人甲它探头了它影响司机的那个就是违规的只有路人甲一个人剩下的人都是间接行驶的就是正常行驶的但是因为它的违规造成了一系列的死亡那是那个路人甲负责责任没有炒红灯了是因为他不管他炒红灯那他到底是有没有这个违规行为你一直在说他是违规的行为然后你这会儿又说他没有违规我说的意思是他要进行违规行为那就没有违规行为那如果说他还没有进行违规行为他属于一个试验房区域他只是碳摔个头的身子还没出来他往前行走了两步我觉得你这个案件是我觉得这个案件可以暂时由B来说B这边有什么事情吗这是之前看过的一个关于爱狗人士的就是说大国车司机小毛拉了一车肉狗准备去屠宰在高速上被一群爱狗人士给拦下来高速拦车然后这群爱狗人士把司机在车上拦了十几个小时嗯然後也是上节目了,或者是说,乌鲁莱狗,合情合法合理,然后你们让他们这么一拦我,其实老板也不敢用我,老板都把我辞了,因为说老板说你出去拉堂狗惹这么大的事,不敢用你,然后帮爱狗人士说,他说的不对,他这帮狗都没有证,就说得用食品安全检疫证,就得用证,没有他这狗呀都是都有病都有毒因为上参考他就在犯罪我们是在阻止他犯罪那这司机说我得有证他说其实怎么回事呢是这司机这狗有证是什么他这证是抽检的有时候他拉一条狗但检疫部门没有每一只狗都检查这检疫部门说抽查了几只狗这几只狗没问题然后让司机又拉走但是有些人说,你说不对,说法律规定了,你得一苟一证。那是不是,因为检疫部门就有这么多检疫的。然后现在又说这个事儿,这个责任,这法律责任,他们都有什么法律责任。你剪輯部門他是沒有做到自己的這個他只是挑選那個隨機的這個剪輯那你這個應該是那個異狗这是检疫公司检疫部门的问题还有就是群众拦截货车司机在高速上进来的是违反交通正常安全法群众也要负评论责任然后货车司机没有责任因为他只是被货车公司老板的一个雇佣官他只负责运输他是正常行程他没有得死然后就是如果说群众们说这个狗是有问题的然后这个老板就知道是病狗要进行受害那他就给很多市民的吃钱得死只负责用对 死去没有任何死还有就是老板因为这个事把他死掉了那他就是为他老公要对自己的死就是老板就是没有任何合理的原因,就是死去的原因那地方,有男的,他车那些人啊,车在高速上跑了十几个小时然后就说,这司机他虐待狗,说这狗俩啊,都没吃没喝的老师说我没被狗的水狗都会喝得特别急你那你怎么看这个这种事情他拦了十几个小时本来人一两小时就能把狗送到了他们愣了十几个小时然后说司机虐待这也是吴东山的事这还是吴东山的事这还是吴东山的事这也就说其实也算好了他们告诉是打着爱狗的名义不知他到底是想干嘛他
+[Text Detection] 在 1989.11 秒检测到关键词 '好交',current_time: 1980.00, 问题文本: 他来不及靠然后也算说是都解散是交警来说算是花钱把这狗买下来了这算是好交警花钱可不是叫你是交警来说交警协调卖狗人是花钱把这狗买了当然也就花了个低价然后让司机还赔了点钱就这说好的那时候不光说是高速包括这什么消音到处来的你那路罢了
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.05797576904296875, max: 0.05089569091796875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 交警华人不是交警交警来说交警协调挖狗人士花钱把狗买了然后又花了个低价然后司机还赔了点钱这都好的那时候不光说是高速
+, 1735097227.9263573
+
+
+[Agent] 最终接收到问题: 交警华人不是交警交警来说交警协调挖狗人士花钱把狗买了然后又花了个低价然后司机还赔了点钱这都好的那时候不光说是高速
+, 1735097227.9264784
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4830 seconds, One token time: 0.1610 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：挖狗人士 低价
+Token count: 27, Total time: 5.1388 seconds, One token time: 0.1903 seconds
+
+提取的关键词: ['挖狗人士', '低价']
+
+找到的上下文片段数量: 1
+会议讨论了检疫部门未正确执行检疫工作的责任问题。同时提到，有群众因拦截货车导致延误，认为司机虐待动物，但实际上延误是由于群众长时间滞留所致。货车司机无责，仅按雇主要求执行运输任务。群众拦截行为违反交通安全法，需承担相应责任。事件中，有人假借“爱狗”之名，实则谋取私利，最终通过高价买走狗狗并让司机赔偿。整体事件反映了管理混乱和道德缺失问题。
+Token count: 107, Total time: 20.8080 seconds, One token time: 0.1945 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：挖狗人士 低价
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 你剪輯部門他是沒有做到自己的這個他只是挑選那個隨機的這個剪輯那你這個應該是那個異狗这是检疫公司检疫部门的问题还有就是群众拦截货车司机在高速上进来的是违反交通正常安全法群众也要负评论责任然后货车司机没有责任因为他只是被货车公司老板的一个雇佣官他只负责运输他是正常行程他没有得死然后就是如果说群众们说这个狗是有问题的然后这个老板就知道是病狗要进行受害那他就给很多市民的吃钱得死只负责用对 死去没有任何死还有就是老板因为这个事把他死掉了那他就是为他老公要对自己的死就是老板就是没有任何合理的原因,就是死去的原因那地方,有男的,他车那些人啊,车在高速上跑了十几个小时然后就说,这司机他虐待狗,说这狗俩啊,都没吃没喝的老师说我没被狗的水狗都会喝得特别急你那你怎么看这个这种事情他拦了十几个小时本来人一两小时就能把狗送到了他们愣了十几个小时然后说司机虐待这也是吴东山的事这还是吴东山的事这还是吴东山的事这也就说其实也算好了他们告诉是打着爱狗的名义不知他到底是想干嘛他交警华人不是交警交警来说交警协调挖狗人士花钱把狗买了然后又花了个【低】价然后司机还赔了点钱这都好的那时候不光说是高速
+会议讨论了检疫部门未正确执行检疫工作的责任问题。同时提到，有群众因拦截货车导致延误，认为司机虐待动物，但实际上延误是由于群众长时间滞留所致。货车司机无责，仅按雇主要求执行运输任务。群众拦截行为违反交通安全法，需承担相应责任。事件中，有人假借“爱狗”之名，实则谋取私利，最终通过高价买走狗狗并让司机赔偿。整体事件反映了管理混乱和道德缺失问题。
+reasoner 输出结束
+来不及靠然后也算说是都解散是交警来说算是花钱把这狗买下来了这算是好交警花钱可不是叫你是交警来说交警协调卖狗人是花钱把这狗买了当然也就花了个低价然后让司机还赔了点钱就这说好的那时候不光说是高速包括这什么消音到处来的你那路罢了责任归属A车司机因为B让闯红灯的路人假而导致B车冲出去撞死路人以这种情况下A车车是否应该负主要责任同时对于检疫部门在狗指运输过程中的抽查行为你认为是否符合法律规定的你那咱们本次的法律援助会就到此为止,你
+[Text Detection] 在 2161.07 秒检测到关键词 '你好交',current_time: 2160.00, 问题文本: 你好交扑法和援助后大家如何有效自卫并应对警察到来前的情况
+问题音频片段长度: 187222, dtype: float32, min: -0.106903076171875, max: 0.110260009765625
+问题音频时间长度: 11.701375
+
+
+[Agent] 接收到问题: 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1735097258.8180084
+
+
+[Agent] 最终接收到问题: 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1735097258.8181152
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4662 seconds, One token time: 0.1554 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+这里主要是请求用户的支持，不需要进行任何查询或检索操作。
+
+### 格式 ###
+1. 行动：无需操作
+2. 行动输入：无需输入
+Token count: 39, Total time: 7.4909 seconds, One token time: 0.1921 seconds
+
+reasoner输出：
+这里主要是请求用户的支持，不需要进行任何查询或检索操作。
+
+### 格式 ###
+1. 行动：无需操作
+2. 行动输入：无需输入这里主要是请求用户的支持，不需要进行任何查询或检索操作。
+
+### 格式 ###
+1. 行动：无需操作
+2. 行动输入：无需输入
+reasoner 输出结束
+好交扑法和援助后大家如何有效自卫并应对警察到来前的情况
+会议数据处理完成。

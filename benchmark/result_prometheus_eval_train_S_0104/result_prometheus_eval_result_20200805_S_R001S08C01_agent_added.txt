@@ -1,0 +1,101 @@
+Question: 你好 焦焦如何判斷甲乙丙三方在撩咬狗豬撞人案中的連帶責任
+Instruction:
+你好 焦焦如何判斷甲乙丙三方在撩咬狗豬撞人案中的連帶責任
+
+Reference Answer:
+判断甲乙丙三方在该案中的连带责任，需分析各方过错程度、责任大小和行为对结果的影响度。考察各自行为与结果之间的因果关系，根据法律规定和相关责任原则（如过错责任原则、举证责任倒置原则等），综合评估确定各自的责任份额。
+
+Assistant Answer:
+甲、乙、丙三方在车祸中对受害者的连带责任，需要根据具体的情况来判断：
+
+1. 如果甲、乙、丙三方都有过错，则应当根据各自的责任比例来承担赔偿责任。
+
+2. 如果甲是主要责任者，乙和丙是次要责任者，则甲应当承担主要的赔偿责任，乙和丙则承担次要的赔偿责任。
+
+3. 如果甲和乙是主责，丙是次责，则甲和乙应当承担主要的赔偿责任，丙承担次责。
+
+4. 如果甲、乙、丙都没有明显过错，则可以按照各自的过错程度来平均分担赔偿责任。
+
+以上仅是一个大致的判断方式，具体的连带责任还需要根据实际情况和法律规定来确定。
+
+Feedback:
+The response provided some level of understanding of the concepts of liability and negligence in the context of an accident. It correctly identifies that the responsibility of a party is proportional to their negligence, and there is a clear linkage between negligence and responsibility. However, the explanation could have been more nuanced. It oversimplified the issue by offering general categories of fault rather than evaluating the specific behaviors and their impact on the result. Moreover, the suggestion to determine responsibility based on the overtness of their wrongdoing could lead to misjudgment as it fails to account for less obvious factors such as the standard of care or the reasonable expectation of behavior. Although the response did mention that the responsibility should be based on legal regulations and specific situations, it did not delve into how this should be applied in practice, thus lacking practical guidance. The overall quality of the response was satisfactory, but it fell short in terms of depth and the incorporation of key legal principles. Therefore, the response only partially meets the criteria for positive scoring according to the rubric. So the overall score is 3. 
+[RESULT] 3
+
+Score: 3
+--------------------------------------------------
+Question: 你好焦焦基于之前我们讨论的内容关于大学生结婚的问题你能否具体解释一下现在大学生结婚是否合法如果可以结婚那么在校期间他们是否可以要孩子学校是否需要对此负责
+Instruction:
+你好焦焦基于之前我们讨论的内容关于大学生结婚的问题你能否具体解释一下现在大学生结婚是否合法如果可以结婚那么在校期间他们是否可以要孩子学校是否需要对此负责
+
+Reference Answer:
+当前，大学生结婚是合法的，男生需满22周岁，女生需满20周岁。在校期间可以要孩子，但学校没有义务提供特别支持或负责。
+
+Assistant Answer:
+\n根据会议内容，关于【大】学生结婚的问题，当前大学生结婚是合法的，男生需满22周岁，女生需满20周岁。至于在校期间他们是否可以要孩子，这更多涉及到个人生活决定，并非法律禁止，但学校可能没有必须为此提供支持或照顾的义务。\n
+
+Feedback:
+The response provided a correct explanation about the legality of university students getting married, mentioning the age requirements for both male and female students. This aligns well with the content of the discussion and directly addresses the question about the validity of marriage for students. However, it falls slightly short on the second part of the question. It correctly notes that there is no specific legal obligation for universities to provide support or supervision for students who have children. Nonetheless, it could have offered more clarity by explicitly stating that universities are not legally required to provide special assistance or oversight for these situations. This would have made the response more precise and useful for the inquirer. As such, the response is generally accurate, relevant, and helpful, but could benefit from further specificity regarding the responsibilities of universities in relation to students with children. So the overall score is 4. [RESULT] 4
+
+Score: 4
+--------------------------------------------------
+Question: 你好,教教如何判断朋友圈,招供信息的真实性,并维护求职者权益。
+Instruction:
+你好,教教如何判断朋友圈,招供信息的真实性,并维护求职者权益。
+
+Reference Answer:
+核实信息：比对官方网站、联系公司确认。保护权益：提前了解行业薪酬标准，签订正式工作合同，遇欺诈及时报警或寻求法律帮助。
+
+Assistant Answer:
+判断朋友圈招工信息的真实性可以从以下几个方面入手：
+1. 招聘公司是否正规，可以通过搜索引擎查询公司的相关信息；
+2. 工作内容是否符合自己的职业规划和兴趣爱好；
+3. 工资待遇是否合理，不要过分高或低；
+4. 是否需要支付押金或者培训费等费用，要谨慎对待。
+同时，求职者在应聘过程中也要注意维护自己的权益，比如要求签订书面合同、了解清楚工作职责和薪酬待遇、不要轻易透露个人隐私等。如果遇到疑似诈骗的情况，应立即停止联系并报警。
+
+Feedback:
+The response provides a comprehensive method for evaluating the authenticity of job recruitment information from a friend's circle, highlighting key aspects such as the legitimacy of the company, alignment with the individual's career plans and interests, and the reasonableness of wages and conditions. The response also wisely advises on how to protect one's rights during the job application process, recommending the need to understand the terms of employment, including responsibilities and compensation, as well as the importance of privacy. However, while the advice is sound, it could benefit from further clarification on the need to independently verify information and the potential risks associated with responding to job advertisements without proper due diligence. This slight lack of depth in the explanation may cause confusion or oversight in practical implementation. Nonetheless, the overall advice remains highly relevant and beneficial for job seekers, showing a good balance between accuracy, relevance, continuity, and utility. Thus, the response is generally well-rounded, with only minor shortcomings. 
+[RESULT] 4
+
+Score: 4
+--------------------------------------------------
+Question: 你好焦焦基于之前我们讨论的内容关于故意伤害案件中受害人量解犯罪嫌疑人的情况你认为这种情况下犯罪嫌疑人能否免是刑事责任还有你提到了律师告律师的情况能否具体解释一下在什么情况下会出现律师告律师的情形
+Instruction:
+你好焦焦基于之前我们讨论的内容关于故意伤害案件中受害人量解犯罪嫌疑人的情况你认为这种情况下犯罪嫌疑人能否免是刑事责任还有你提到了律师告律师的情况能否具体解释一下在什么情况下会出现律师告律师的情形
+
+Reference Answer:
+犯罪嫌疑人是否能免除刑事责任取决于其行为能力和具体情况。精神病患者可能有限或无行为能力，可能不承担刑事责任，但监护人需承担赔偿责任。律师告律师的情形可能出现在职业行为或诉讼过程中，例如违反职业道德、误导法庭等情况。
+
+Assistant Answer:
+\n根据会议内容，目前未满18岁或缺乏性能力的人被视为“无人”、“现人”及“完人”，其中八岁以下或无法自我识别的精神病患者视为“无人”，八至十六岁或十八岁以下视为“现人”，十八岁以上视为“完人”。十六至十八岁的人如果能够自食其力则视为“完人”。精神病人根据病情分为无行为能力和有限行为能力，前者如严重无法自控的精神病人，后者如轻度精神障碍者。14周岁以下未成年人不负刑事责任，监护人需承担赔偿责任；14至16周岁间若为父母教唆犯罪，则父母需承担相应法律责任。\n
+
+Feedback:
+The response provided does not address the query accurately. The discussion was specifically about intentional harm cases, but the response mainly discusses age categories and different categories of mental health, which are not relevant to the initial question. While there are some references to mental health in relation to criminal responsibility, they are vague and not explicitly linked to the context of intentional harm cases. The response does not mention the role of lawyers in these cases, which was a part of the original query. Therefore, the response fails to meet the criteria of being correct, relevant, and useful in the context of the question asked. So the overall score is 1. [RESULT] 1
+
+Score: 1
+--------------------------------------------------
+Question: 你好娇娇如何区分为成年人犯罪是个人行为还是受父母教唆
+Instruction:
+你好娇娇如何区分为成年人犯罪是个人行为还是受父母教唆
+
+Reference Answer:
+成年人犯罪是否为个人行为或受父母教唆，需通过调查其过往行为、家庭环境、父母言行和对案件的具体影响。查看犯罪动机、行为人与父母的沟通记录和双方关系密切程度。法律专家和心理学家的评估也是关键。
+
+Assistant Answer:
+判断未成年人犯罪是个人行为还是受父母教唆，需要综合考虑多个方面的情况。如果未成年人在犯罪过程中表现出自主思考和决策的能力，那么可以认为这是个人行为。然而，如果父母或其他家庭成员在犯罪前对未成年人进行了暗示或鼓励，或者在犯罪过程中提供了帮助或支持，那么可以认为这是受到了父母的教唆。
+
+此外，还需要考虑犯罪的具体情况，包括犯罪的性质、程度、动机等，以及未成年人的成长环境和经历，例如是否有受到虐待或欺凌的历史等。综合这些因素，才能准确地判断未成年人犯罪是个人行为还是受父母教唆。
+
+Feedback:
+回答讨论判断未成年人犯罪是个人行为还是受父母教唆。该回答涵着合理的考虑方法，包括犯罪过程中的自主思考和决策的能力、父母或家庭成员的暗示、鼓励或支持、犯罪的具体情况、成长环境和经历等。 
+
+然而，该回答不遵循关于法律专家和心理学家的评估，也没有谈及家庭环境、父母言行和对案件的具体影响，这些都是重要的指标在判断是个人行为还是受到父母的教唆。
+
+更具体地，沟通记录和双方关系密切程度的查看是判断犯罪的关键, 这点被忽略. 因此，虽然该回答的内容正确和相关, 但它的有用性和完整性受到限制，特别是在与父母教唆有关的犯罪中的讨论. 所以，根据评估，该回答的质量问题存在，尤其是在与父母教唆有关的犯罪中的讨论。 
+
+遥，回答正确但存在重大正确性或相关性问题。 
+[RESULT] 2
+
+Score: 2
+--------------------------------------------------

@@ -1,0 +1,263 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200623_S_R001S07C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading reasoner_llm...
+Loading classifier_llm...
+Starting processing from 0s, total chunks: 72
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.42it/s]Loading Whisper model...
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:04,  1.66s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.74s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.36s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.31s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.38s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.34s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.50s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.73s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:18<00:05,  5.29s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.97s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.97s/it]
+我002我是总经理009我是业务部主管015我是结算部012我是市场战略发展请考虑今天把各位交给来开一个联会,对,约会和联会,目前各部门的情况,在会上做一个这个,汇报,从这个,战略部。我们现在面临人群比较广阔比方说车贷小额的车贷我们也是一个大象然后还有这个创业的创业贷开公司的不能说开公司的开一个小型的门市的我们也可以给他放贷然后大型公司不超过30万的借贷我们也是可以放贷的因为我们的理念是不超过30万的人有理由的有征信的就给批嘛所以说我们给到的额度是从五万到三十万之间我们都会征信没有问题我们都会放缓然后这个因为这个市场前提巨大因为它面对的人情也广阔有毕业的大学生也有失业的下降都可以在我们这里有些想要创业的一些人因为他们没有经验对对对,我们在我们这里贷款然后用资金来做进行他们的二次创业所以要比银行这方面省的手续要很大我们要比银行手续多然后我们的利率也要比他低这样的话省了他也要跑贷吧对对对所以说呢很多客户都要找我们来进行一些小额的贷款目前在战略发展上面你还有想要说的话未来可以用哪种未来的话我们要做一个APP的软件然后更加的透明然后让贷款的人他只要征信合适我们就可以给他放额十万二十万都是没有问题的然后保命他的手机号因为这个手机号它一用的话就会用不清甚至有的人会用了十年二十年对吧现在大的手机号有的用过十几年都已经有了小的因为我们呢因为诚信问题他一看这个人手机号都用了十来年了就说明这个人诚信没有问题他老是一直在换手机号怕别人找他的人这些人就没有诚信了所以说一般的手机号用个一个月两个月的像这样的那就会影响他的代办活动了一号的使用时间越长,那么它的额率就会越高。嗯,谢谢。嗯,上次的业务情况,上次的业务不?上次的业务的话,呃,经过这一月的整体情况吧,还是比较好的。上个月整体情况比较良好。嗯,对。成了多少人?大概有十几单整体带的额度每个人平均下来就是15万美金我们部门也是严格执行了岗位的职责遵循了国家的各种法律还有就是在贷款的前提嘛就是要保证他的贷款人的信誉嘛然后我们之前一定是考核他的信誉度的然后就是办理贷款的审查工作嘛方方面面都是要做全的还有还会有充分的证据然后做好了分析预测的工作还有评估论证等等还有我们还会防止还要减少现在的资产损失确保公司的还会确保公司保证客户的安全上个月还会协调公安和法院的关系还会搞好不良贷款的轻收工作要杜绝和防止不良贷款更重要的是我们做到了管理规范化程序化和科学化业务方面,目前业务方面在同类型的行业当中,业务量上个月有所增加吗?在整体来说还是比较平缓的吧我们的行业还是我们的公司未来也有可能因为这个大趋势影响目前这个创业也比较少了这个消费能力今年这个消费能力都要消费欲望化就是下降了收入增长的影响就是贷款的还是比较少但是但是咱们相比于通行同行业之间还是在上风结算还是比较稳定的同行业的是要有牵一牵结算目前还算比较好的每一段 催钱不还的就是有个别的就是欠不还我们一般在这儿就是每天在早上或是晚上打电话提醒他让他进去换款有的我们会通过他的家人 亲戚 朋友来给有的那种特别难缠的,我们会上门推出还款。我还短信提醒他花款包括他的额度什么日期花款日都提醒他那提醒好上个月咱们的催收任务多少?上個月的接收任務多少?上個月還算可以,不是太多的都还了吗?有个别一个两个,到现在还没还。哦,是。针对这个有什么处理的办法吗?这处理办法就是,第一就是主要还是推他还款。这个,他那个电话能打通吗?电话现在是能打通。能打通。他为什么不还款,有过这个电话吗?有过他
+[Text Detection] 在 592.83 秒检测到关键词 '焦焦',current_time: 570.00, 问题文本: 他现在工作也不是太稳定现在因为这疫情也没什么好工作也是打成功的他现在有了他就还当然还不完也算是再还款再一个这方面针对这个事情有什么想法你好焦焦如何提升公司在小额贷款业务中的市场竞争力和
+问题音频片段长度: 187904, dtype: float32, min: -0.1976318359375, max: 0.241546630859375
+问题音频时间长度: 11.744
+
+
+[Agent] 接收到问题: 公司在小额贷款业务中的市场竞争力和客户满意度
+, 1735132517.3305175
+
+
+[Agent] 最终接收到问题: 公司在小额贷款业务中的市场竞争力和客户满意度
+, 1735132517.3306365
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9155 seconds, One token time: 0.3052 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+本公司的市场竞争力和客户满意度在行业中处于较高水平，这得益于我们优秀的风控体系、创新的产品设计以及优质的服务体验。我们持续投入研发和创新，以满足客户需求，保持行业领先地位。同时，我们也重视客户反馈，不断优化产品和服务，提高客户满意度。
+talker 输出结束
+现在工作也不是太稳定现在因为这疫情也没什么好工作也是打成功的他现在有了他就还当然还不完也算是再还款再一个这方面针对这个事情有什么想法你好焦焦如何提升公司在小额贷款业务中的市场竞争力和三年的话你所交的利息会更高这样但是三年的话你全期你一个月需要还以前你现在过了你这一个月你就需要给我们四百就可以了但是你这跑三年你这样总体总体下来的金额要更多了但是没有办法呀他的收入达不到那个所以说他只能只能选择再来分析时间我们对分期啊让自己自己因为我们告知他了对吧你不还如果你一味的欠着不还就会形成你征信不征信然后你不诚信的话你将来你坐火车对吧你孩子的就学都会成问题所以我们对我们都已经直面的告诉他了所以说你为了杜绝你的诚信问题我们把这个期限给你加长如果这个你还不能发那对不起了那你的成绩就有问题了我们呢也只能人通和爱了你自己看着办吧到时候咱们就要我们要起诉他法律途径然后走法律途径起诉他然后呢如果他名下有房产那就控制对吧我们需要我们结算我们都有这方面的有这样的公关战略当然这样的人是很少的1000个里面定会充足一个两个怎么要及时的耗费他呢如果不还的话有什么后果对他因为就跟滚雪球一样你越不还滚的会越大因为我们虽然不是高一点但是按我们这个计算的话他的越来越大都会告知他如果你不还或者你你现在就说你不能按月还按年还两年还三年还对我们会给他一个计划叫他选择一下两年不行就三年对吧 叫他自己选择如果他再还不了那就对不起了那就只能我们上东西然后做法律还有业务这边,下个月有什么比较大的客户吗?下个月有好几个创业的人吧,创业的大学生给我联系了,需要带25万。对,有两个25万的和三个20万的人。然后呢我们会严格的按照程序先向客户申请,然后我们再进行调查,用户会进行调查,然后贷款受理。咱们要对它产业的评估,它是准备贷款从哪个方面的?他要从事电子方面的电子方面的对有两个是电子方面的,还有一个就是自己开一些经营的店对,有一个是饭店还有一个就是五金银之类的然后呢,我们会准备好材料清单,申请表,接待申请书还有我们的调查报告好实际情况怎么要掌握对我们会把调查报告做的进一步做的详细一些然后再进行审批吧审批和审查站在这边有什么想要补充的吗这个呢我们后期会派人看他这个店是否盈利然后盈利的多少然后来确保一下看他能不能定期地给我们还款这样避免一下我们的损失别到时候不能定期地收回贷款咱们要看一下他这个偿还档例对我们会调查他们的家庭状况还会留他们另一个亲人的联系方式吧然后如果出现意外的话我们会联系他们还有就是这个业务咱们可以去这个,它是来咱们公司,还是咱们找到了?是,有三个是来咱们公司的,说明咱们公司品质还是比较好的,还有两个是通过推销,通过销售找到的。我们要让销售与他独联系,把我们公司的一些产品介绍详细一点,让他有一个心理上的准备。行吧?行,可以。这就是我们这个业务方面。目前,我们公司有几款产品,尤其是荷兰的几款产品。主打的是小额的车贷,然后创业贷,然后开车轮椅店的话,开小贷,开这个宴酒门市的话,我们也给予一定的可以贷款。大概现在有个五六种吧,五六种的贷款方式。目前咱这个,这是主打的是吧?对,这是主打的。有些产品已经不是这个市场了,要怎么说呢,抛弃它,这方面有哪些市场?小额的农业贷款的话,现在暂时已经停止发放了。停止发放了,对,在催收款上还有吗?催收款上,介绍给人还有吗?小额的农业贷款。現在推出款小兒的農民
+[Audio Detection] 在 1075.22 秒检测到关键词 '好交交'。
+detection_time: 1075.22, current_time: 1050.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.2239990234375, max: 0.200286865234375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容针对上个月催收任务中存在个别客户为能按时还款的情况
+, 1735132545.610826
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容针对上个月催收任务中存在个别客户为能按时还款的情况你有什么具体的处理办法和建议我们应该如何平衡客户的还款压力和公司的贷款回收风险对 因为这个小额贷小额农业贷款呢因为市场农民的形势有的不容乐观我们的
+, 1735132547.6222131
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4948 seconds, One token time: 0.1649 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：催收任务 客户还款压力 公司贷款回收风险 小额贷 小额农业贷款 农民形势
+Token count: 49, Total time: 9.9076 seconds, One token time: 0.2022 seconds
+
+提取的关键词: ['催收任务', '客户还款压力', '公司贷款回收风险', '小额贷', '小额农业贷款', '农民形势']
+
+找到的上下文片段数量: 3
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+上个月的催收任务中有个别客户未能按时还款。具体处理办法是首先推动客户还款，联系客户或其家人、朋友催款，对于特别难缠的客户则会上门催收。如果仍未还款，会通过法律途径起诉，并可能采取财产保全措施。这些措施旨在提醒客户保持良好的信用记录，以避免未来在出行、教育等方面受到影响。
+Token count: 84, Total time: 16.6551 seconds, One token time: 0.1983 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：催收任务 客户还款压力 公司贷款回收风险 小额贷 小额农业贷款 农民形势
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 我002我是总经理009我是业务部主管015我是结算部012我是市场战略发展请考虑今天把各位交给来开一个联会,对,约会和联会,目前各部门的情况,在会上做一个这个,汇报,从这个,战略部。我们现在面临人群比较广阔比方说车【贷】小额的车贷我们也是一个大象然后还有这个创业的创业贷开公司的不能说开公司的开一个小型的门市的我们也可以给他放贷然后大型公司不超过30万的借贷我们也是可以放贷的因为我们的理念是不超过30万的人有理由的有征信的就给批嘛所以说我们给到的额度是从五万到三十万之间我们都会征信没有问题我们都会放缓然后这个因为这个市场前提巨大因为它面对的人情也广阔有毕业的大学生也有失业的下降都可以在我们这里有些想要创业的一些人因为他们没有经验对对对,我们在我们这里贷款然后用资金来做进行他们的二次创业所以要比银行这方面省的手续要很大我们要比银行手续多然后我们的利率也要比他低这样的话省了他也要跑贷吧对对对所以说呢很多客户都要找我们来进行一些小额的贷款目前在战略发展上面你还有想要说的话未来可以用哪种未来的话我们要做一个APP的软件然后更加的透明然后让贷款的人他只要征信合适我们就可以给他放额十万二十万都是没有问题的然后保命他的手机号因为这个手机号它一用的话就会用不清甚至有的人会用了十年二十年对吧现在大的手机号有的用过十几年都已经有了小的因为我们呢因为诚信问题他一看这个人手机号都用了十来年了就说明这个人诚信没有问题他老是一直在换手机号怕别人找他的人这些人就没有诚信了所以说一般的手机号用个一个月两个月的像这样的那就会影响他的代办活动了一号的使用时间越长,那么它的额率就会越高。
+---
+成了多少人?大概有十几单整体带的额度每个人平均下来就是15万美金我们部门也是严格执行了岗位的职责遵循了国家的各种法律还有就是在贷款的前提嘛就是要保证他的贷款人的信誉嘛然后我们之前一定是考核他的信誉度的然后就是办理贷款的审查工作嘛方方面面都是要做全的还有还会有充分的证据然后做好了分析预测的工作还有评估论证等等还有我们还会防止还要减少现在的资产损失确保公司的还会确保公司保证客户的安全上个月还会协调公安和法院的关系还会搞好不良贷款的轻收工作要杜绝和防止不良贷款更重要的是我们做到了管理规范化程序化和科学化业务方面,目前业务方面在同类型的行业当中,业务量上个月有所增加吗?在整体来说还是比较平缓的吧我们的行业还是我们的公司未来也有可能因为这个大趋势影响目前这个创业也比较少了这个消费能力今年这个消费能力都要消费欲望化就是下降了收入增长的影响就是贷款的还是比较少但是但是咱们相比于通行同行业之间还是在上风结算还是比较稳定的同行业的是要有牵一牵结算目前还算比较好的每一段 催钱不还的就是有个别的就是欠不还我们一般在这儿就是每天在早上或是晚上打电话提醒他让他进去换款有的我们会通过他的家人 亲戚 朋友来给有的那种特别难缠的,我们会上门推出还款。我还短信提醒他花款包括他的额度什么日期花款日都提醒他那提醒好上个月咱们的【催】收任务多少?上個月的接收任務多少?上個月還算可以,不是太多的都还了吗?有个别一个两个,到现在还没还。哦,是。针对这个有什么处理的办法吗?这处理办法就是,第一就是主要还是推他还款。这个,他那个电话能打通吗?电话现在是能打通。能打通。他为什么不还款,有过这个电话吗?有过他公司在小额贷款业务中的市场竞争力和客户满意度现在工作也不是太稳定现在因为这疫情也没什么好工作也是打成功的他现在有了他就还当然还不完也算是再还款再一个这方面针对这个事情有什么想法你好焦焦如何提升公司在小额贷款业务中的市场竞争力和三年的话你所交的利息会更高这样但是三年的话你全期你一个月需要还以前你现在过了你这一个月你就需要给我们四百就可以了但是你这跑三年你这样总体总体下来的金额要更多了但是没有办法呀他的收入达不到那个所以说他只能只能选择再来分析时间我们对分期啊让自己自己因为我们告知他了对吧你不还如果你一味的欠着不还就会形成你征信不征信然后你不诚信的话你将来你坐火车对吧你孩子的就学都会成问题所以我们对我们都已经直面的告诉他了所以说你为了杜绝你的诚信问题我们把这个期限给你加长如果这个你还不能发那对不起了那你的成绩就有问题了我们呢也只能人通和爱了你自己看着办吧到时候咱们就要我们要起诉他法律途径然后走法律途径起诉他然后呢如果他名下有房产那就控制对吧我们需要我们结算我们都有这方面的有这样的公关战略当然这样的人是很少的1000个里面定会充足一个两个怎么要及时的耗费他呢如果不还的话有什么后果对他因为就跟滚雪球一样你越不还滚的会越大因为我们虽然不是高一点但是按我们这个计算的话他的越来越大都会告知他如果你不还或者你你现在就说你不能按月还按年还两年还三年还对我们会给他一个计划叫他选择一下两年不行就三年对吧 叫他自己选择如果他再还不了那就对不起了那就只能我们上东西然后做法律还有业务这边,下个月有什么比较大的客户吗?下个月有好几个创业的人吧,创业的大学生给我联系了,需要带25
+---
+目前,我们公司有几款产品,尤其是荷兰的几款产品。主打的是小额的车贷,然后创业贷,然后开车轮椅店的话,开小贷,开这个宴酒门市目前,我们公司有几款产品,尤其是荷兰的几款产品。主打的是小额的车贷,然后创业贷,然后开车轮椅店的话,开小贷,开这个宴酒门市的话,我们也给予一定的可以贷款。大概现在有个五六种吧,五六种的贷款方式。目前咱这个,这是主打的是吧?对,这是主打的。有些产品已经不是这个市场了,要怎么说呢,抛弃它,这方面有哪些市场?小额的农业贷款的话,现在暂时已经停止发放了。停止发放了,对,在催收款上还有吗?催收款上,介绍给人还有吗?小额的农业贷款。現在推出款小兒的農民基于之前我们讨论的内容针对上个月【催】收任务中存在个别客户为能按时还款的情况你有什么具体的处理办
+上个月的催收任务中有个别客户未能按时还款。具体处理办法是首先推动客户还款，联系客户或其家人、朋友催款，对于特别难缠的客户则会上门催收。如果仍未还款，会通过法律途径起诉，并可能采取财产保全措施。这些措施旨在提醒客户保持良好的信用记录，以避免未来在出行、教育等方面受到影响。
+reasoner 输出结束
+市场农民的形势有的不容乐观我们的回收不是很好因为农民们他们养猪养鸡然后贷款这个还行但是中大地的话有一些就是回收不是很好然后我们决定把这个贷款下架了不再做这个了既然咱这个结算这边没有了对,也不用催收了,然后这个贷款放在里面现在主抓一下这个汽车的分期付款和小额的经济贷款因为这个面临市区都是在城市化的比较多因为城市化的人他们对城市还是比较保守的基本上都能够按时的回收他们偿还能力也比较对,偿还能力还是比较可以的嗯,行还有就是咱们刚才说到的这种嗯这个车贷嗯就是这些都是就是一些这个30万以下的车吗对10万一般情况下就是10万10万以上30万以下,然后是分期付款,一年以内。就是个别的话,最多是两年24个月,不再做长期。业务这方面对这个有什么看法?这方面我觉得取消小额赠偷费贷款的话还是有必要的,毕竟现在呢呃 贷款人数也不是很多而且贷款这个车车车在这个啊对还有啊十万以上有个三十万以下一个第二方面说的是车贷先说完这个嗯然后就是第二方面就是车贷呃我觉得车贷吗咱们可以提升一些毕竟现在对呃三十万呃三十万风景的话有些低了现在年轻人追求的更加高尚一些然后所以说他们需要贷的金额都比较多至于打底的10万打底的我觉得也可以降低一些就把咱们的贷款的范围扩大一些像一些老年人那咱们这个可以压,但是不可以压太低10万以下,10万以下咱们可以10万以下也不是不能做,也能做,但是就是说,因为我们只要是一单,就要做的话,我们就要考虑它的回报率五万以下的话或者十万以下的话那个回报率太低了我们尽可能的做的话虽然它风险很低但是我们的利润也很低就是说我们前期可能做我们后期就是不打算再做小哥的这个一年我给你分几个月还还是就借你三个月三个月你就立马给我还来对不对就是说偏向于这个10万超过10万以上这个的话了做个长期一年或者两年这样的话我们的利率高这样我们收益也好嗯也是那30万以上呢30万以上我们暂时还没有开拓如果如果我们短期的这个手的回收的好的话,我们可以考虑一下30万到50万卖进的这个,大额的这个可以考虑一下。大额的咱们肯定会针对一些这个,那个就是房贷,我们现在还没有跨界房贷,但是可以考虑一下,因为房地产这块贷款买房也是一个趋势。如果是30万以上的车贷的话,它的风险可能也会比较低一点,毕竟能买得起30万以上的车的人,他的收入也是非常可观的。站在业务这边说,30万以上的车贷是什么?这个嘛当然要30万以上的车都是已经是很好的车了对对我们这有过一个也不是说没有,他也就是将将出了点头,然后他想贷三十多万,我们这给他做了,因为他是买的一辆国产的温池。然后你说他没有能力,可能是有这个能力,所以说我们有过一单,然后给的他的期限是两年偿还,对,然后分期一个月一环就行了。我们像他这种车的话,我们也是,如果他不能按时给我们还贷款的话,对不起,你这车你就启动不了了,我们有软件控制他这个车,所以今天都有告示,别人到时候你开车跑山里头了,八级我们这儿给锁住了,到期了你不还贷款,你带无人区吗,你怎么办,对吧,都有告示。提前跟他说签合协议对目前的结算也是有缺少的方式那6这边有什么看法可以增加一些结算的方式吗缺少联系方式的话谢谢大家增加一个结算方式哦 结算方式对结算方式的话就怎么催修呢啊首先呢咱肯定是要把它如果不还的话肯定是要列入实行名单嗯还有就是咱们可以有更充分的抵押就是把抵押物再提升一点吧如果不还的话,它的损失可能会更大还有就是像亲人啊亲人这方面也
+[Text Detection] 在 1617.46 秒检测到关键词 '娇娇',current_time: 1590.00, 问题文本: 也应该进行催促吧不应该只联系本人朋友啊亲人啊应该都要都要通知到以防失信的名单也可能会带给别人扣上危害你好 娇娇针对小额
+问题音频片段长度: 205483, dtype: float32, min: -0.214263916015625, max: 0.255828857421875
+问题音频时间长度: 12.8426875
+
+
+[Agent] 接收到问题: 你好焦焦针对小鹅农业贷款停止发放的原因能否检要说明市场和回收情况这个
+, 1735132600.0727663
+
+
+[Agent] 最终接收到问题: 你好焦焦针对小鹅农业贷款停止发放的原因能否检要说明市场和回收情况这个
+, 1735132600.0728714
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4876 seconds, One token time: 0.1625 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：小鹅 农业贷款 停止 发放 市场 回收 情况
+Token count: 45, Total time: 8.6404 seconds, One token time: 0.1920 seconds
+
+提取的关键词: ['小鹅', '农业贷款', '停止', '发放', '市场', '回收', '情况']
+
+找到的上下文片段数量: 2
+目前公司主打小额车贷、创业贷等几种贷款方式。对于小额农业贷款已停止发放，主要原因是农民还款情况不佳。对于不能按时还款的客户，公司会采取控制车辆启动等措施，并将其列入黑名单。关于催收，公司计划增加更多的结算方式，如提供更多抵押物等，以提高贷款回收率。
+Token count: 74, Total time: 14.4334 seconds, One token time: 0.1950 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：小鹅 农业贷款 停止 发放 市场 回收 情况
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 目前,我们公司有几款产品,尤其是荷兰的几款产品。主打的是小额的车贷,然后创业贷,然后开车轮椅店的话,开小贷,开这个宴酒门市的话,我们也给予一定的可以贷款。大概现在有个五六种吧,五六种的贷款方式。目前咱这个,这是主打的是吧?对,这是主打的。有些产品已经不是这个市场了,要怎么说呢,抛弃它,这方面有哪些市场?小额的农业贷款的话,现在暂时已经停止发放了。停止发放了,对,在催收款上还有吗?催收款上,介绍给人还有吗?小额的农业贷款。現在推出款小兒的農民基于之前我们讨论的内容针对上个月催收任务中存在个别客户为能按时还款的情况你有什么具体的处理办法和建议我们应该如何平衡客户的还款压力和公司的贷款回收风险对 因为这个小额贷小额【农】业贷款呢因为市场农民的形势有的不容乐观我们的市场农民的形势有的不容乐观我们的回收不是很好因为农民们他们养猪养鸡然后贷款这个还行但是中大地的话有一些就是回收不是很好然后我们决定把这个贷款下架了不再做这个了既然咱这个结算这边没有了对,也不用催收了,然后这个贷款放在目前,我们公司有几款产品,尤其是荷兰的几款产品。主打的是小额的车贷,然后创业贷,然后开车轮椅店的话,开小贷,开这个宴酒门市的话,我们也给予一定的可以贷款。大概现在有个五六种吧,五六种的贷款方式。目前咱这个,这是主打的是吧?对,这是主打的。有些产品已经不是这个市场了,要怎么说呢,抛弃它,这方面有哪些市场?小额的【农】业贷款的话,现在暂时已经停止发
+---
+我们像他这种车的话,我们也是,如果他不能按时给我们还贷款的话,对不起,你这车你就启动不了了,我们有软件控制他这个车,我们像他这种车的话,我们也是,如果他不能按时给我们还贷款的话,对不起,你这车你就启动不了了,我们有软件控制他这个车,所以今天都有告示,别人到时候你开车跑山里头了,八级我们这儿给锁住了,到期了你不还贷款,你带无人区吗,你怎么办,对吧,都有告示。提前跟他说签合协议对目前的结算也是有缺少的方式那6这边有什么看法可以增加一些结算的方式吗缺少联系方式的话谢谢大家增加一个结算方式哦 结算方式对结算方式的话就怎么催修呢啊首先呢咱肯定是要把它如果不还的话肯定是要列入实行名单嗯还有就是咱们可以有更充分的抵押就是把抵押物再提升一点吧如果不还的话
+目前公司主打小额车贷、创业贷等几种贷款方式。对于小额农业贷款已停止发放，主要原因是农民还款情况不佳。对于不能按时还款的客户，公司会采取控制车辆启动等措施，并将其列入黑名单。关于催收，公司计划增加更多的结算方式，如提供更多抵押物等，以提高贷款回收率。
+reasoner 输出结束
+应该进行催促吧不应该只联系本人朋友啊亲人啊应该都要都要通知到以防失信的名单也可能会带给别人扣上危害你好 娇娇针对小额但是他不还我们就睡了他这贷款买车他不还这就等于是给他一个人缘的压力就是你不还钱他这个什么他赖人塑造一个形象朋友们都知道他欠人家钱了不还钱你看他是个这样的人以后这些人他会跟你交往吗对吧他们就会考虑了所以说这个途径也是可以的但是二十三五我们就说了这是第一啊我们才告知你后面的话对不起啊你自己都不给你自己抬天下板这样的话马上我们就要争气上见了争气上对于你来说就是你的行动手组火车高铁你不能做药膳费汽车高校费也相当于不少中国也不能说,也直面你了然后如果你的孩子上学就别说跑的学校了,赖的学校一看你的征信就不收了这就是你的难处很大将来你孩子一嫌小,上户口你都成问题这方面咱可以做一个现场片那个自己你就耍赖,你就不去赚钱,不去还钱,没事。你越不去赚钱,你越套表神。得了。你自己慢慢给他看不了两三天,他就知道自己去挣钱去还钱了。对。这方面咱们要,现在这个赖,老赖,这方面各式各样的。我们有一套完整的战略来对付老贷对然后有一套战略体系需要咱们各个同事通力配合当然我们前期放贷的时候也是看过他的诚心所以说不能说没有漏网失语确实是笼子大了什么鸟都有难免会出现大公司也是信息的一些共享在别的方面,我们会很保密的到时候可以用户去说信息方面是安全的还有就是早上他们的App的问题不是要网上带上吗这个的话我们战略也在研发然后根据手机号的程序因为手机号的运用年限因为手机它一人一个手机号它都有它的真实的身份所以说我们的App要绑定它的手机号然后查询你应用年限然后自动出额度所以您就把他水钱还有要的相关的水钱家里呢也要还要填亲戚直系亲属对或者亲属或者亲戚呢都要填然后不能少于三个然后才开始放贷而且我们放贷因为程序和这个都很把关的情况下现在我们的房贷是很快的最晚不超过三天就可以放贷因为咱们这个业务流程要可以在一块快对我们就是为了体现的就是额度小放入款快然后利益度低这就是我们银行的优秀的地方也就是我们客户选择我们的最大的好处对还有就是我觉得可以增添一个在APP上增添小额贷款在收集了一定程度上的证件信息以后可以进行生活贷款但是这个生活贷款是有限度是有额度的就是比较小如果他不还同样可以打电话催促是这样的一般的小额贷款因为因为咱们前期也是说了为什么因为他们一般的人手里都有信用卡信用卡也都养的额头都养在三万左右他一个人他的信用卡不只是一张卡有的人甚至有两张三张或者四张五张他们用信用卡去导的这些人他们就不会选择我们了所以说我们基本上小额头我们就不再做明白吧大型公司,像是平工百家,有这方面的业务包括支付宝也好,很难竞争对,我们也有,微贷,因为他们是做的这种专业的咱们负责的领域就是10万,30万对,我们不做10万的影响公司在咱们公司的一个生存环境吧还有这种太小额的这个三万五万人家也不说实话因为现在信用卡比较广泛他们小额的信用卡两三万的人很多但是大额的信用卡的人就少了或者他们这个很多就是因为他们的因为那个收益很小因为大型公司
+[Audio Detection] 在 2065.60 秒检测到关键词 '好交交'。
+detection_time: 2065.60, current_time: 2040.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.194061279296875, max: 0.1883544921875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于催收策略我们提到了将借款人的失信行为告知其亲朋好友
+, 1735132647.2588897
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于催收策略我们提到了将借款人的失信行为告知其亲朋好友以增加社会压力我想请问一下这种策略在实际操作中可能会遇到哪些法律和道德风险我们应该如何平衡催收效果和借款人的隐私权对我们这儿发现就是说但凡需要借钱的人
+, 1735132649.2816648
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4843 seconds, One token time: 0.1614 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：法律道德风险 催收策略
+Token count: 29, Total time: 5.5861 seconds, One token time: 0.1926 seconds
+
+提取的关键词: ['法律道德风险', '催收策略']
+
+找到的上下文片段数量: 1
+这种策略可能遇到的法律风险包括侵犯借款人隐私权和违反个人信息保护法规；道德风险则涉及社会舆论压力和道德谴责。平衡催收效果与隐私权可采取措施：1）限制信息范围，仅通知直系亲属；2）获得借款人同意；3）确保信息准确无误；4）设立申诉机制；5）遵循相关法律法规，避免违法行为。
+Token count: 83, Total time: 16.1845 seconds, One token time: 0.1950 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：法律道德风险 催收策略
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 我们有一套完整的战略来对付老贷对然后有一套战略体系需要咱们各个同事通力配合当然我们前期放贷的时候也是看过他的诚心所以说不能说没有漏网失语确实是笼子大了什么鸟都有难免会出现大公司也是信息的一些共享在别的方面,我们会很保密的到时候可以用户去说信息方面是安全的还有就是早上他们的App的问题不是要网上带上吗这个的话我们战略也在研发然后根据手机号的程序因为手机号的运用年限因为手机它一人一个手机号它都有它的真实的身份所以说我们的App要绑定它的手机号然后查询你应用年限然后自动出额度所以您就把他水钱还有要的相关的水钱家里呢也要还要填亲戚直系亲属对或者亲属或者亲戚呢都要填然后不能少于三个然后才开始放贷而且我们放贷因为程序和这个都很把关的情况下现在我们的房贷是很快的最晚不超过三天就可以放贷因为咱们这个业务流程要可以在一块快对我们就是为了体现的就是额度小放入款快然后利益度低这就是我们银行的优秀的地方也就是我们客户选择我们的最大的好处对还有就是我觉得可以增添一个在APP上增添小额贷款在收集了一定程度上的证件信息以后可以进行生活贷款但是这个生活贷款是有限度是有额度的就是比较小如果他不还同样可以打电话催促是这样的一般的小额贷款因为因为咱们前期也是说了为什么因为他们一般的人手里都有信用卡信用卡也都养的额头都养在三万左右他一个人他的信用卡不只是一张卡有的人甚至有两张三张或者四张五张他们用信用卡去导的这些人他们就不会选择我们了所以说我们基本上小额头我们就不再做明白吧大型公司,像是平工百家,有这方面的业务包括支付宝也好,很难竞争对,我们也有,微贷,因为他们是做的这种专业的咱们负责的领域就是10万,30万对,我们不做10万的影响公司在咱们公司的一个生存环境吧还有这种太小额的这个三万五万人家也不说实话因为现在信用卡比较广泛他们小额的信用卡两三万的人很多但是大额的信用卡的人就少了或者他们这个很多就是因为他们的因为那个收益很小因为大型公司基于之前我们讨论的内容关于【催】收策略我们提到了将借款人的失信行为告知其亲朋好友以增加社会压力我想请问一下这种策略在实际操作中可能会遇到哪些法律和道德风险我们应该如何平衡催收效果和借款人的隐私权对我们这儿发现就是说但凡需要借钱
+这种策略可能遇到的法律风险包括侵犯借款人隐私权和违反个人信息保护法规；道德风险则涉及社会舆论压力和道德谴责。平衡催收效果与隐私权可采取措施：1）限制信息范围，仅通知直系亲属；2）获得借款人同意；3）确保信息准确无误；4）设立申诉机制；5）遵循相关法律法规，避免违法行为。
+reasoner 输出结束
+借款人的隐私权对我们这儿发现就是说但凡需要借钱的人超过十万他们才会找我们小额的他们一般不会找我们那咱今天这个会就先开到这儿好的
+[Audio Detection] 在 2144.51 秒检测到关键词 '好交交'。
+detection_time: 2144.51, current_time: 2130.00
+问题音频片段长度: 166352, dtype: float32, min: -0.225311279296875, max: 0.188629150390625
+问题音频时间长度: 10.397
+
+
+[Agent] 接收到问题: 针对公司定位和贷款需求你认为如何优化我们的服务策略
+, 1735132673.8720608
+
+
+[Agent] 最终接收到问题: 针对公司定位和贷款需求你认为如何优化我们的服务策略
+, 1735132673.8722315
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4659 seconds, One token time: 0.1553 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：公司定位 贷款需求 服务策略优化
+Token count: 33, Total time: 6.3304 seconds, One token time: 0.1918 seconds
+
+提取的关键词: ['公司定位', '贷款需求', '服务策略优化']
+
+找到的上下文片段数量: 1
+会议中提到的催收策略可能面临法律（如侵犯隐私权）和道德风险。建议在实际操作中谨慎行事，确保遵守相关法律法规，并尊重借款人隐私权。可以通过内部培训提升员工合规意识，制定明确的催收流程与标准，同时考虑提供更多还款途径或分期选项，减轻借款人压力，从而平衡催收效果与借款人权益保护。
+Token count: 80, Total time: 15.6635 seconds, One token time: 0.1958 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：公司定位 贷款需求 服务策略优化
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 我们有一套完整的战略来对付老贷对然后有一套战略体系需要咱们各个同事通力配合当然我们前期放贷的时候也是看过他的诚心所以说不能说没有漏网失语确实是笼子大了什么鸟都有难免会出现大公司也是信息的一些共享在别的方面,我们会很保密的到时候可以用户去说信息方面是安全的还有就是早上他们的App的问题不是要网上带上吗这个的话我们战略也在研发然后根据手机号的程序因为手机号的运用年限因为手机它一人一个手机号它都有它的真实的身份所以说我们的App要绑定它的手机号然后查询你应用年限然后自动出额度所以您就把他水钱还有要的相关的水钱家里呢也要还要填亲戚直系亲属对或者亲属或者亲戚呢都要填然后不能少于三个然后才开始放贷而且我们放贷因为程序和这个都很把关的情况下现在我们的房贷是很快的最晚不超过三天就可以放贷因为咱们这个业务流程要可以在一块快对我们就是为了体现的就是额度小放入款快然后利益度低这就是我们银行的优秀的地方也就是我们客户选择我们的最大的好处对还有就是我觉得可以增添一个在APP上增添小额贷款在收集了一定程度上的证件信息以后可以进行生活贷款但是这个生活贷款是有限度是有额度的就是比较小如果他不还同样可以打电话催促是这样的一般的小额贷款因为因为咱们前期也是说了为什么因为他们一般的人手里都有信用卡信用卡也都养的额头都养在三万左右他一个人他的信用卡不只是一张卡有的人甚至有两张三张或者四张五张他们用信用卡去导的这些人他们就不会选择我们了所以说我们基本上小额头我们就不再做明白吧大型公司,像是平工百家,有这方面的业务包括支付宝也好,很难竞争对,我们也有,微贷,因为他们是做的这种专业的咱们负责的领域就是10万,30万对,我们不做10万的影响公司在咱们公司的一个生存环境吧还有这种太小额的这个三万五万人家也不说实话因为现在信用卡比较广泛他们小额的信用卡两三万的人很多但是大额的信用卡的人就少了或者他们这个很多就是因为他们的因为那个收益很小因为大型公司基于之前我们讨论的内容关于催收策略我们提到了将借款人的失信行为告知其亲朋好友以增加社会压力我想请问一下这种策略在实际操作中可能会遇到哪些法律和道德风险我们应该如何平衡催收效果和借款人的隐私权对我们这儿发现就是说但凡需要借钱的人借款人的隐私权对我们这儿发现就是说但凡需要借钱的人超过十万他们才会找我们小额的他们一般不会找我们那咱今天这个会就先开到这儿好的针对【公】司定位和贷款需求你认为如何优化我们的服务
+会议中提到的催收策略可能面临法律（如侵犯隐私权）和道德风险。建议在实际操作中谨慎行事，确保遵守相关法律法规，并尊重借款人隐私权。可以通过内部培训提升员工合规意识，制定明确的催收流程与标准，同时考虑提供更多还款途径或分期选项，减轻借款人压力，从而平衡催收效果与借款人权益保护。
+reasoner 输出结束
+
+会议数据处理完成。

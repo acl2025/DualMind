@@ -1,0 +1,142 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200707_L_R001S08C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Starting processing from 0s, total chunks: 297
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.19it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.98s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.19s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:04,  1.63s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.69s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.73s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.82s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.88s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:09,  4.73s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.68s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.58s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.54s/it]
+怪 significantly Jake哎呀овали我的哦你让三五是放书你让三五是角色设计你让二四五是剧本然后我是剧本剪辑剧本 剪划然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我可以把自己的想法说出来 然后让博士帮对于咱们这一个观念上就有个前景进行一个 有一个大概的了解吧 那首先咱们现在这个比较好就是 做来点啊 成功 所以说咱们 咱们打算做的话就是做一个不同于他们的 他们是以 嗯 他们是三个点 咱们是要做一个二维嗯 这段话关于故事 咱们要从咱们各个嗯 各位都参与 呃 会议的人 来进行一些把你下巴的个人觉得可以 咱们可以啊 没人 啊 没人因为我们不是想做咱们先中国一点 地球快一点 都能是吗 那因为里面会有很多人物 阿姬 或者 呃 各种人物吗 我觉得那个 呃 故事线 就是因为 运动联盟 他其实背景后面就每个人物都有一些人物关系 我觉得可以用来 进展我的 他的故事 比较庞大我们只是借鉴其中的一点 然后也会借着这个游戏的这个因为他影响力比较大 可以做一下宣传 搞一段 跟当年魔兽一样对对对做一个CVA动画 咱们也可以根据一些英雄想 然后对一些大区给他们如果第一段战友说的比较好的话 咱可以推进对对对其实在乌克兰 这些工作 最后是一种比较新鲜的比赛我们的第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次我 想 就是 可能 吃不可以吧 就是 病 病 所以 从 天 到 咱 得 了都 慢点 然后 像 神 能 长 长 白 草 这 两 个 都的 神 化 故 士 吧 可能 可以 把 电 接 合 一下 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最什麼點這些結合起來會不會顯得太粗糙如果擺十公尺這就是一種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 種 種就是可以就是使用它的一個泡泡長白草長白草但是它不用泡泡草換成另外一個長白草然後就是這樣的話 日夜和動漫有點是不是不沾邊呢對 我這個就是打算是就是屬於那種小孩子還在某某某的階段屬於看一個新鮮事物但是 兄弟的話 可能會看到他們的故事要講什麼 屬於一種成長的那種那這樣是不是市場 市場太小了謝謝 如果可以的話 就可以把故事 講得比較好就是 如果 要考慮市場就是 小白是最喜歡的女生 這是可以加的 加的就是 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她因此 紀錄Br зачем讓你們奔馳我陽天 changes所以吧就算了所以也 不是 hunted就不是來求ading竟然 sing sacrificated而且你要是要改傳統的東西的話廣電力量能不能我覺得我首先想考慮的就是走一個什麼樣的風格的一個電影 一個動漫 是結合東西方的是熱血的 還是像你剛剛說的 把病毒列為一個元素要怎麼設計一下 這樣的電影就是以微妙 就是相約病毒侵入 然後咱們通道一下嬌嬌惹羞 將病毒元素融入動漫故事 同時吸引青年觀眾然後把病毒消滅掉 讓大家能夠復生這個長白草 我想把這個元素加進去這屬於一種熱血動漫痾 算是熱血吧所以以後 在多年以後 咱們的公司的生意就會變成長白草 變成沙漿我們會有更多的活動 比如說 青年這一段 我覺得你可以把範圍當擴大一點比如說 遊戲園 我不玩遊戲 你們說的 我不太懂所以玩的不多 所以你要用那種做動畫 我覺得不會吸引女生的眼球先找個定位 定位的話 但是咱們就不成功這一點是可以選擇的 但是我大概算是不保護一些人的就是相當於因為應該好的故事啊 其實是需要比較好的參賽人 比較不可能做然後這兩個招牌的拍子也會在就是抗擊這一隊伍的力量 進場 起到很大的關鍵度抗擊變動 最後還是非常積極 非常正能量的一個人 是嗎正能量的意思 其實可以就是問一下在座的相對來說 當你都看這個動漫結合起來大家可以問一下你們喜歡什麼動漫結我是比較喜歡呼吸倦的那種對 對還有所以你所以你喜歡的那種 稍微溫暖一點 溫暖一點對 去隱形的那個對 而且不能是那種 老套的東西而不是為了做動漫 為了做電影 對 要有什麼正報的意見既然這麼說了 還是有更好的情緒 可以說一下嗯 比如說堅持不懈反正一些是會現象的比如那種像比較火的那些 都看了 火影啊 海賊王啊 戰龍 這種都罷了我覺得動漫和電影 中間有很大區別因為電影的話 只是一場所以你必須要給別人一個很長的記憶點 以後就會留下一個深刻的印象就像那一個點 觀眾記得特別清楚如果有這種的話 做一個電影其實又有太大的用場我們要做一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個就像最近上映的比較火的多種溫暖的從白色原型反正其實這就是屬於講述的這個愛情對的多種的和那些我們講述的和那個就是堅持不懈可以把主人公那個形象放在現代不過是他身上是有那個 他想放進去的那個 旁白草那個元素在他抗擊的那個病毒啊 我覺得可以把這個主人公發生的故事的背景放在多少年 幾百年之後然後他最後做出來的經歷的事情 可能和神龍長白草的這個故事是比較相像的 可以徵求一下大家的意見如果可以要要問的話 可以讓大家請問一下自己的意見就是 主流電動這個動漫這塊我覺得還是搞一下 還是演技力量吧一些老套路的話但是 網上肯定有會有流動打發的 還是應該設計一個定點的路線肯定都是正直話題來寫的 但是過程的話 可以一波級的可以反轉 反轉這樣才有看起來很動脈比較火一點的 其實火一點的電視劇或者電影其實是嫌疑天多有沒有想加入這個懸疑在動漫裡面因為的動漫是真的有一個提議啊就是咱們未設定的工程是會來的但是 因為從小學習 比如說然後他就是會肯定會接觸到的就是 然後就各種的 就是消化物質然後咱們學音樂可以加進去 音樂就是 會是一個就是這個目標如果一個 這樣看起來會不會更好聽 還有煩惱
+[Audio Detection] 在 1025.61 秒检测到关键词 '好交交'。
+detection_time: 1025.61, current_time: 1022.00
+问题音频片段长度: 145239, dtype: float32, min: -0.0592041015625, max: 0.0697021484375
+问题音频时间长度: 9.0774375
+
+
+[Agent] 接收到问题: 好 講你好 交基於之前我們討論的內容 關於動漫設計 我們是否應該將故事
+, 1735023858.4606297
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 好 講你好 交基於之前我們討論的內容關於動漫設計 我們是否應該將故事背景設定在未來結合神長百草的元素來表現主人攻抗 抵病毒的奉獻精神同時 講我們是否應該加入加入懸疑元素和愛情線以增加故事的复杂性和吸引力
+, 1735023860.0635893
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+0
+Token count: 3, Total time: 0.9203 seconds, One token time: 0.3068 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：动漫设计 故事背景 未来 元素 主人公 抗病毒 悬疑 爱情线 复杂性 吸引力
+Token count: 55, Total time: 11.0167 seconds, One token time: 0.2003 seconds
+
+提取的关键词: ['动漫设计', '故事背景', '未来', '元素', '主人公', '抗病毒', '悬疑', '爱情线', '复杂性', '吸引力']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，故事背景将设定在未来，并结合神长白草元素展现主角对抗病毒的奉献精神。同时，计划加入悬疑元素和爱情线，以增加故事复杂性并吸引更多观众。
+Token count: 46, Total time: 9.5717 seconds, One token time: 0.2081 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：动漫设计 故事背景 未来 元素 主人公 抗病毒 悬疑 爱情线 复杂性 吸引力
+使用工具：信息检索RAG
+agent工具结果：RAG used context:  significantly Jake哎呀овали我的哦你让三五是放书你让三五是角色设计你让二四五是剧本然后我是剧本剪辑剧本 剪划然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我把这个剪辑剪到一个 然后我可以把自己的想法说出来 然后让博士帮对于咱们这一个观念上就有个前景进行一个 有一个大概的了解吧 那首先咱们现在这个比较好就是 做来点啊 成功 所以说咱们 咱们打算做的话就是做一个不同于他们的 他们是以 嗯 他们是三个点 咱们是要做一个二维嗯 这段话关于故事 咱们要从咱们各个嗯 各位都参与 呃 会议的人 来进行一些把你下巴的个人觉得可以 咱们可以啊 没人 啊 没人因为我们不是想做咱们先中国一点 地球快一点 都能是吗 那因为里面会有很多人物 阿姬 或者 呃 各种人物吗 我觉得那个 呃 故事线 就是因为 运动联盟 他其实背景后面就每个人物都有一些人物关系 我觉得可以用来 进展我的 他的故事 比较庞大我们只是借鉴其中的一点 然后也会借着这个游戏的这个因为他影响力比较大 可以做一下宣传 搞一段 跟当年魔兽一样对对对做一个CVA动画 咱们也可以根据一些英雄想 然后对一些大区给他们如果第一段战友说的比较好的话 咱可以推进对对对其实在乌克兰 这些工作 最后是一种比较新鲜的比赛我们的第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次 第一次我 想 就是 可能 吃不可以吧 就是 病 病 所以 从 天 到 咱 得 了都 慢点 然后 像 神 能 长 长 白 草 这 两 个 都的 神 化 故 士 吧 可能 可以 把 电 接 合 一下 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最 最什麼點這些結合起來會不會顯得太粗糙如果擺十公尺這就是一種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 這種 種 種就是可以就是使用它的一個泡泡長白草長白草但是它不用泡泡草換成另外一個長白草然後就是這樣的話 日夜和動漫有點是不是不沾邊呢對 我這個就是打算是就是屬於那種小孩子還在某某某的階段屬於看一個新鮮事物但是 兄弟的話 可能會看到他們的故事要講什麼 屬於一種成長的那種那這樣是不是市場 市場太小了謝謝 如果可以的話 就可以把故事 講得比較好就是 如果 要考慮市場就是 小白是最喜歡的女生 這是可以加的 加的就是 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她 她因此 紀錄Br зачем讓你們奔馳我陽天 changes所以吧就算了所以也 不是 hunted就不是來求ading竟然 sing sacrificated而且你要是要改傳統的東西的話廣電力量能不能我覺得我首先想考慮的就是走一個什麼樣的風格的一個電影 一個動漫 是結合東西方的是熱血的 還是像你剛剛說的 把病毒列為一個元素要怎麼設計一下 這樣的電影就是以微妙 就是相約病毒侵入 然後咱們通道一下嬌嬌惹羞 將病毒元素融入動漫故事 同時吸引青年觀眾然後把病毒消滅掉 讓大家能夠復生這個長白草 我想把這個元素加進去這屬於一種熱血動漫痾 算是熱血吧所以以後 在多年以後 咱們的公司的生意就會變成長白草 變成沙漿我們會有更多的活動 比如說 青年這一段 我覺得你可以把範圍當擴大一點比如說 遊戲園 我不玩遊戲 你們說的 我不太懂所以玩的不多 所以你要用那種做動畫 我覺得不會吸引女生的眼球先找個定位 定位的話 但是咱們就不成功這一點是可以選擇的 但是我大概算是不保護一些人的就是相當於因為應該好的故事啊 其實是需要比較好的參賽人 比較不可能做然後這兩個招牌的拍子也會在就是抗擊這一隊伍的力量 進場 起到很大的關鍵度抗擊變動 最後還是非常積極 非常正能量的一個人 是嗎正能量的意思 其實可以就是問一下在座的相對來說 當你都看這個動漫結合起來大家可以問一下你們喜歡什麼動漫結我是比較喜歡呼吸倦的那種對 對還有所以你所以你喜歡的那種 稍微溫暖一點 溫暖一點對 去隱形的那個對 而且不能是那種 老套的東西而不是為了做動漫 為了做電影 對 要有什麼正報的意見既然這麼說了 還是有更好的情緒 可以說一下嗯 比如說堅持不懈反正一些是會現象的比如那種像比較火的那些 都看了 火影啊 海賊王啊 戰龍 這種都罷了我覺得動漫和電影 中間有很大區別因為電影的話 只是一場所以你必須要給別人一個很長的記憶點 以後就會留下一個深刻的印象就像那一個點 觀眾記得特別清楚如果有這種的話 做一個電影其實又有太大的用場我們要做一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個就像最近上映的比較火的多種溫暖的從白色原型反正其實這就是屬於講述的這個愛情對的多種的和那些我們講述的和那個就是堅持不懈可以把主人公那個形象放在現代不過是他身上是有那個 他想放進去的那個 旁白草那個元素在他抗擊的那個病毒啊 我覺得可以把這個主人公發生的故事的背景放在多少年 幾百年之後然後他最後做出來的經歷的事情 可能和神龍長白草的這個故事是比較相像的 可以徵求一下大家的意見如果可以要要問的話 可以讓大家請問一下自己的意見就是 主流電動這個動漫這塊我覺得還是搞一下 還是演技力量吧一些老套路的話但是 網上肯定有會有流動打發的 還是應該設計一個定點的路線肯定都是正直話題來寫的 但是過程的話 可以一波級的可以反轉 反轉這樣才有看起來很動脈比較火一點的 其實火一點的電視劇或者電影其實是嫌疑天多有沒有想加入這個懸疑在動漫裡面因為的動漫是真的有一個提議啊就是咱們未設定的工程是會來的但是 因為從小學習 比如說然後他就是會肯定會接觸到的就是 然後就各種的 就是消化物質然後咱們學音樂可以加進去 音樂就是 會是一個就是這個目標如果一個 這樣看起來會不會更好聽 還有煩惱好 講你好 交基於之前我們討論的內容關於動漫設計 我們是否應該將【故】事背景設定在未來結合神長百草的元素來表現主人攻抗 抵病毒的奉獻精神同時 講我們是否應該加入加入懸疑元素和愛情線以增加故事的复杂性和吸
+根据会议内容，故事背景将设定在未来，并结合神长白草元素展现主角对抗病毒的奉献精神。同时，计划加入悬疑元素和爱情线，以增加故事复杂性并吸引更多观众。
+reasoner 输出结束
+我看這個 音樂是一個 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常好的 非常应该加入加入悬疑元素和爱情线以增加故事的复杂性和吸引力如果是加反派的话 要定时做反派假设它是来自于外星人的一个 或者说是在人物的一个这就是我们的一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个改变人的性格 然后会造成 就是可以 咱们就想见一下就是那阿里斯塔跟天使感觉很好是什么呢 就是 主角一号和主角二号 大家都认为主角是一号但是他这样 表示 要告诉你这个主角是二号 那么可以把这样的感觉相对来说是当然理解不了 这就是一些悬疑的那种 然后这个是一件题目大家认为他是难移 但是其实他不是难移这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个这边其实还是得根据整体的风格做出来的这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个来 这个我觉得在这个上面就是人物不用特别多就是主人公吧 主人性 对 主人性 太多的话反而会特别难嗯 再说 再说一下 我看 我想法 这个就属于我的这个题目原则 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个candidate fitting然后让观众看的时候你是想题目和你这个电影的题目和你的内容它是有反转的这样的选语吗题目要留有人疑惑让人会思考会想题目肯定跟你的题目内容是一样的刚才说的这个 游泳前一遍的可能听了一个奇怪的对 我说的意思是什么呢 是让观众有而不是让剧情我的意思是让观众人像我给你们说 阿丽西塔叫天使 然后单剧情动漫就有一个叫阿丽西塔了 肯定知道她是主角吧就让观众不知道她是主角 就是题目是以咱们动漫内容为例的题目不要告诉他们主角是这个 让他们自己去思考他们的动漫内容就是想给你说一下 当然也有一种比较优秀的角色和一个强势的相伴我觉得他刚才说的有旋律 让作者有思考 让观众有思考 我觉得这个点就因为很多现在电影就是直接一说题目 一说电影就大概能想到套路 你就知道结局我觉得这样看完之后 人不会对这个动漫 或者这个电影有太大的忌计一点对 让人根本就留不住我觉得摄影法就是推人的形象 这就是一个转换好最好做一些特别细节的一些图点然后让人看完之后特别反思的那种 都会想散发发现不同的细节 然后会这个动漫有更多的理解在结尾 升华一下这个主题的思想有些空白让观看的人思考一下对 然后留下一个理念 也会引发人思考然后再看一些电影 它会有些东西它就会没有过脑但是当你在电厂看完这个电影以后就看不出来 给他们有这种便宜 而且最好还有这方面的肯定这种板子 这方面有点尖 这方面有点滑 这方面有点滑这方面有点滑 这方面有点滑这方面有点滑 这方面有点滑这方面有点滑 这方面有点滑 这方面有点滑这个机箱没法把它的把管这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机箱没法把它的把管 这个机�这个机�这个机� 这个机� 这个机�对 如果是想要制作这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这hamburger他是这个解读的吗 这个这个医学方面的这个医学 然后我们会后期根据你想要打造的这个人物的角色啊 然后编导一个 这个故事 一个比较有转折 然后起伏的一个故事然后再根据那个我们想要升华的那个最终的主题思想然后 念一下这个剧本 需要最后留白的一些让观众思考的一些第一点 这个都得根据我们最终定下来的这个人物还有东西
+[Audio Detection] 在 1573.71 秒检测到关键词 '好交交'。
+detection_time: 1573.71, current_time: 1568.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.100860595703125, max: 0.1048583984375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 第二点 如何设计角色以避免侵权病 增加观众的思考和重看欲望
+, 1735023973.7087362
+
+
+[Agent] 最终接收到问题: 第二点 如何设计角色以避免侵权病 增加观众的思考和重看欲望
+, 1735023973.7088542
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4839 seconds, One token time: 0.1613 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+设计角色时，应注重独特性和鲜明的个性，避免与其他作品的角色过于相似。同时，角色的行为和决策应当具有逻辑性和可信度，这样才能增加观众的投入感和代入感。此外，角色的成长和发展也应该是渐进的，而不是突然的，这样才能让观众更好地理解和接受角色的变化。最后，要注意保护角色的隐私和个人选择，避免过多干涉和过度解释，这样才能保持角色的独立性和真实性。
+talker 输出结束
+在处理下来的 正确的认识 正确的有正量的老板想问问大概想有几个角色周三是男儿 周三是女儿是谁 做成羁绊 或是羁绊 就相当于就是 来一 过家二 家中 回家最后选择结局 如果这方面 如果这样坐下来的话 看别人看点会有感动啊 激动 或者是属于情绪高涨的一种状态 如果这样 这种形式的话 如果做地质的话 会感动有 又稍微 哦 这样会不会太单调怎么样 嗯 这个方法不是单纯一个 这个电话 哦 加入加入哦 嗯 两个 没 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要 要如果要让观众感能够做好的话咱们的故事是不是要把观众的情绪带进去哦 是这个这一本方面 写剧本的时候是肯定会考虑这个故事发展 故事的跌宕起伏还有会考虑到观众观看时候的这些心理 这个基本方面是要考虑到的如果要出第二部的话 第一部不留嫌疑的话 第二部可以出太长最后会留一个空白点 让观众思考一下他没有感觉到自豪的感觉 他只思考他的情绪没有被淡的那方面 没有想那么多一个人看一个电影就是一个人的感觉我们可以在各大影评网站上 按照我们的意思去写一些影评对吧看你的角色塑造好了 通过对角色性格的分析 然后最终得到了一种自保感然后可能周围的角色 检测一下 然后可能下一轮转 关于风格这就是我们的一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个 一个就是 像谷歌 或者 西方的那种 就是 神秘学他们不是要中西结合嘛 对 难以一是西方 然后 拿二是中方对 不用特别举起来 都是拿一边 这样就更好因为现在就是西方的这方面 关于科技方面的 我感觉还比较多我们也想去见一下 把他们的工作整理好 然后给他们做一些学习然后这样的话就是 一定要咱们去到二维链三个月 二月的话就组织起来 可能会有分量如果是像西方一个 中方一个 两个月算的话它的电池会在二维链上开启如果开电 开手直接呼入主机的话 会有分量一个电池 然后但是咱们结合是一样的因为电池是以互联网化为切入点的对 这个相应就是很简单的一个日常直接放到带过 这边很短就可以带过了因为咱们是怎么讲的 咱们是要讲的 咱们浪费电池量 对我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量 这个是我们的电池量这个是我们的电池量 这个是我们的电池量他就看待一个打耳相遇的故事咱们的男女和男女相遇有什么我们不考虑加入女孩的角色吗加入 觉得这个对对的 挺好我觉得肯定有女孩 因为没有女人过男主播这个电影特别动漫特别不少 没有哪一个动漫到现在说是没有对 没有人愿意看 像我们这种演这个人 没有人会愿意看对对对 海神线的话就是需要两下一次好 可以我们可以反感一下就像拿一指中方就是就是拿这个可以反感一下拿二拿二这个这个一会他 这个都 만下嗯嗯嗯让人 состояни耶你好这设定电影啊我们是否考虑将他们设定东西方文化的代表并通过他们的故事来展现中西文化的碰撞和融合他通过角色的性格塑造和故事转折 蓝转折来增强观众的自豪感和情感共鸣中文字幕志愿者 杨茜茜
+会议数据处理完成。

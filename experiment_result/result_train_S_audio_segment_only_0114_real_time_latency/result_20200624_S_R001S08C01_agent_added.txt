@@ -1,0 +1,210 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200624_S_R001S08C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 67
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+Process SpawnProcess-2:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/agent/agent/classifier_reasoner_talker.py", line 248, in planner_process_func
+    planner_llm = LocalQwenLLM(
+  File "/home/leon/agent/agent/agent_utils.py", line 69, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 4135, in from_pretrained
+    hf_quantizer.preprocess_model(
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/quantizers/base.py", line 194, in preprocess_model
+    return self._process_model_before_weight_loading(model, **kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/quantizers/quantizer_gptq.py", line 103, in _process_model_before_weight_loading
+    model = self.optimum_quantizer.convert_model(model, **kwargs)
+TypeError: convert_model() got an unexpected keyword argument 'device_map'
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+Process SpawnPoolWorker-4:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/wewks/audio_keyword_detection.py", line 9, in init_kws_worker
+    from wewks.wekws.wekws.bin.stream_kws_ctc import KeyWordSpotter
+  File "/home/leon/agent/wewks/wekws/wekws/bin/stream_kws_ctc.py", line 25, in <module>
+    import torchaudio.compliance.kaldi as kaldi
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/__init__.py", line 1, in <module>
+    from . import (  # noqa: F401
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/__init__.py", line 45, in <module>
+    _load_lib("libtorchaudio")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/utils.py", line 64, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/ctypes/__init__.py", line 382, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /hdd/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/lib/libtorchaudio.so: undefined symbol: _ZN2at4_ops10zeros_like4callERKNS_6TensorEN3c108optionalINS5_10ScalarTypeEEENS6_INS5_6LayoutEEENS6_INS5_6DeviceEEENS6_IbEENS6_INS5_12MemoryFormatEEE
+Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:05<00:20,  5.20s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+Initializing KWS models...
+Process SpawnPoolWorker-6:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/wewks/audio_keyword_detection.py", line 9, in init_kws_worker
+    from wewks.wekws.wekws.bin.stream_kws_ctc import KeyWordSpotter
+  File "/home/leon/agent/wewks/wekws/wekws/bin/stream_kws_ctc.py", line 25, in <module>
+    import torchaudio.compliance.kaldi as kaldi
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/__init__.py", line 1, in <module>
+    from . import (  # noqa: F401
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/__init__.py", line 45, in <module>
+    _load_lib("libtorchaudio")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/utils.py", line 64, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/ctypes/__init__.py", line 382, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /hdd/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/lib/libtorchaudio.so: undefined symbol: _ZN2at4_ops10zeros_like4callERKNS_6TensorEN3c108optionalINS5_10ScalarTypeEEENS6_INS5_6LayoutEEENS6_INS5_6DeviceEEENS6_IbEENS6_INS5_12MemoryFormatEEE
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:15<00:24,  8.15s/it]Initializing KWS models...
+Process SpawnPoolWorker-7:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/wewks/audio_keyword_detection.py", line 9, in init_kws_worker
+    from wewks.wekws.wekws.bin.stream_kws_ctc import KeyWordSpotter
+  File "/home/leon/agent/wewks/wekws/wekws/bin/stream_kws_ctc.py", line 25, in <module>
+    import torchaudio.compliance.kaldi as kaldi
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/__init__.py", line 1, in <module>
+    from . import (  # noqa: F401
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/__init__.py", line 45, in <module>
+    _load_lib("libtorchaudio")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/utils.py", line 64, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/ctypes/__init__.py", line 382, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /hdd/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/lib/libtorchaudio.so: undefined symbol: _ZN2at4_ops10zeros_like4callERKNS_6TensorEN3c108optionalINS5_10ScalarTypeEEENS6_INS5_6LayoutEEENS6_INS5_6DeviceEEENS6_IbEENS6_INS5_12MemoryFormatEEE
+Initializing KWS models...
+Process SpawnPoolWorker-8:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/wewks/audio_keyword_detection.py", line 9, in init_kws_worker
+    from wewks.wekws.wekws.bin.stream_kws_ctc import KeyWordSpotter
+  File "/home/leon/agent/wewks/wekws/wekws/bin/stream_kws_ctc.py", line 25, in <module>
+    import torchaudio.compliance.kaldi as kaldi
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/__init__.py", line 1, in <module>
+    from . import (  # noqa: F401
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/__init__.py", line 45, in <module>
+    _load_lib("libtorchaudio")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/utils.py", line 64, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/ctypes/__init__.py", line 382, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /hdd/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/lib/libtorchaudio.so: undefined symbol: _ZN2at4_ops10zeros_like4callERKNS_6TensorEN3c108optionalINS5_10ScalarTypeEEENS6_INS5_6LayoutEEENS6_INS5_6DeviceEEENS6_IbEENS6_INS5_12MemoryFormatEEE
+Initializing KWS models...
+Process SpawnPoolWorker-9:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/wewks/audio_keyword_detection.py", line 9, in init_kws_worker
+    from wewks.wekws.wekws.bin.stream_kws_ctc import KeyWordSpotter
+  File "/home/leon/agent/wewks/wekws/wekws/bin/stream_kws_ctc.py", line 25, in <module>
+    import torchaudio.compliance.kaldi as kaldi
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/__init__.py", line 1, in <module>
+    from . import (  # noqa: F401
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/__init__.py", line 45, in <module>
+    _load_lib("libtorchaudio")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/utils.py", line 64, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/ctypes/__init__.py", line 382, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /hdd/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/lib/libtorchaudio.so: undefined symbol: _ZN2at4_ops10zeros_like4callERKNS_6TensorEN3c108optionalINS5_10ScalarTypeEEENS6_INS5_6LayoutEEENS6_INS5_6DeviceEEENS6_IbEENS6_INS5_12MemoryFormatEEE
+Initializing KWS models...
+Process SpawnPoolWorker-10:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/wewks/audio_keyword_detection.py", line 9, in init_kws_worker
+    from wewks.wekws.wekws.bin.stream_kws_ctc import KeyWordSpotter
+  File "/home/leon/agent/wewks/wekws/wekws/bin/stream_kws_ctc.py", line 25, in <module>
+    import torchaudio.compliance.kaldi as kaldi
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/__init__.py", line 1, in <module>
+    from . import (  # noqa: F401
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/__init__.py", line 45, in <module>
+    _load_lib("libtorchaudio")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/utils.py", line 64, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/ctypes/__init__.py", line 382, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /hdd/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/lib/libtorchaudio.so: undefined symbol: _ZN2at4_ops10zeros_like4callERKNS_6TensorEN3c108optionalINS5_10ScalarTypeEEENS6_INS5_6LayoutEEENS6_INS5_6DeviceEEENS6_IbEENS6_INS5_12MemoryFormatEEE
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:37<00:29, 14.55s/it]Initializing KWS models...
+Process SpawnPoolWorker-11:
+Traceback (most recent call last):
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/multiprocessing/pool.py", line 109, in worker
+    initializer(*initargs)
+  File "/home/leon/agent/wewks/audio_keyword_detection.py", line 9, in init_kws_worker
+    from wewks.wekws.wekws.bin.stream_kws_ctc import KeyWordSpotter
+  File "/home/leon/agent/wewks/wekws/wekws/bin/stream_kws_ctc.py", line 25, in <module>
+    import torchaudio.compliance.kaldi as kaldi
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/__init__.py", line 1, in <module>
+    from . import (  # noqa: F401
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/__init__.py", line 45, in <module>
+    _load_lib("libtorchaudio")
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/_extension/utils.py", line 64, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/home/leon/miniconda3/envs/qwen/lib/python3.9/ctypes/__init__.py", line 382, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /hdd/miniconda3/envs/qwen/lib/python3.9/site-packages/torchaudio/lib/libtorchaudio.so: undefined symbol: _ZN2at4_ops10zeros_like4callERKNS_6TensorEN3c108optionalINS5_10ScalarTypeEEENS6_INS5_6LayoutEEENS6_INS5_6DeviceEEENS6_IbEENS6_INS5_12MemoryFormatEEE

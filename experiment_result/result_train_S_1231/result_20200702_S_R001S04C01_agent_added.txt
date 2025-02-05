@@ -1,0 +1,232 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200702_S_R001S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Starting processing from 0s, total chunks: 78
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.16s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.30it/s]Loading Whisper model...
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.36s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.26s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.10s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.11s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.74s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.93s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.74s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.68s/it]
+002我是总经理035是设计0202我是建筑师007我是市场部行咱们今天来开咱们这个会每周的议会就这么说吧,咱们先,各部门先汇报一下各部门的这个情况吧,各部门的一些这个,上周的一些部门的情况,一些问题,一些的一些问题,先汇报一下吧,然后从咱们两个部门下来。设计。设计吧。设计。设计这一块,咱们上周。这是接了一个中间一局的承包接了一个什么中间一局哦 中间然后他们给承包给咱们一片园林然后咱们这个装饰公司主要是负责借看园林的设计然后还有这个它不仅是那种设计还有它底部一些管道排水然后这些然后咱们的效果图的话是做出来的对,这方面已经发给他们的他们的那个国务师,他们去检查看合不合格合格的话,这时候会对接,然后我们会和这个施工队也对接,让他们去施工然后咱们这边主要是出國我们的服务设计已经设计好了,需要后期的配合现在因为疫情,工作量不太多所以我们这个人员可以进行财源材料方面有什么看法材料方面这一块因为咱们这高清间的几个人才主要就是那几个像一些设计师助理咱们有舞蹈阵营的设计师助理吧我觉得可以采个一到两名就可以了让一个设计师用一到两个人应该是可以的这方面你觉得人选出来了吗?需要才的人?人选还没出来,接下来会对他们进行一些考核根据考核的成果吧,决定谁走谁丢现在你对这五个助理是吧?六个这六个对他们有一种什么样的印象呢?六个小伙都是男的吧?对,都是男的都挺踏实的,但是他们的学艺能力不太一样,有的学艺能力比较强,一点都通,有的那种是学艺能力不强,但是他比较踏实,愿意学,能熬也能学会,这个就看到时候临城就面对,看谁更强一些吧。目前对这个,这六个这个带考核的这些,你觉得是什么样的?他们说了吗还没有要他们做一个这方面心理的准备好 接下来我们跟你说还有就是咱们刚才说到这六个小伙要根据他们一个肯定是工作踏实的咱们先留下还有就是业务稍比较强一点业务比较强的能力比较强的他们先留下就这两个要求还有什么?上周设计之外没有什么问题上周没什么问题没什么问题对对行然后呢这个市场这个上周上周我们主要做的工作就是跟进一下就是咱们原有的订单还有就是说有咨询的然后跟进了一下然后再一个就是我们跟进那个结果情况怎么样有几个有意向的然后有意向的话我们就是跟这个咱们那个设计设计一块再跟这个客户进行对接然后要根据他们的情况出几套大家出几套然后让他们去选自己喜欢的然后就是约他们来咱们公司嘛然后面谈一下然后这样咱们不仅跟我们市场然后跟这个设计师这一块一块团这样的话他们那个要求设计师了解的更明确一点对对对然后更好达到他们的要求更好地了解并且我们主要是我们市场吧也没办法就是就是很全面地跟那个客户说这个设计方面专业的问题还得也不用说的太专业我觉得出图比什么都好吧对更直观一点对因为太专业的我觉得客户他们对这个也不太了解他们只是想要一种他们的思想他们有风格对但是他们思想也不是太成熟需要咱们设计这方面去给他们经营去给他们巩固一下这个去引导他们对引导他们对对对嗯然后就是我们我们这一块还带领我们这个团队嘛就去这个进行了一家扫楼就是咱们新新那个焦盘就是这些新的楼盘已经交工了这些然后就扫一下楼就是看什么有一些毛屁股还没有装修我们就在门上塞个管靠什么的去扫一下楼这样的话可以留一下我们的联系方式看这边如果有这个小区你想要装修的还没有找到这个转租公司的或者现在队伍里装修公司的这些都可以到咱们这儿对对主要是我们就是做了一个这个还有一个就是说去对外进行了一次宣传就是对外发放咱们公司的宣传资料一方面就是提高咱们公司的知名度嘛另一方面就是拓展一些也意向的客
+[Text Detection] 在 507.10 秒检测到关键词 '焦焦',current_time: 493.00, 问题文本: 客户不一定就是有时候不一定就是光打电话来因为打电话嘛接触不到真实的人他们以为就会是炸开电话什么的这样你好焦焦针对设计部门裁员你建议如何根据员工表现和能力进行合理筛选我们还是可以利用一下就是出去出去做一下宣传然后拖一下课
+问题音频片段长度: 154966, dtype: float32, min: -0.144073486328125, max: 0.158966064453125
+问题音频时间长度: 9.685375
+
+
+[Agent] 接收到问题: 焦焦针对设计部门裁员你建议如何根据员工表现和能力进行合理筛选
+, 1735617603.137944
+
+
+[Agent] 最终接收到问题: 焦焦针对设计部门裁员你建议如何根据员工表现和能力进行合理筛选
+, 1735617603.1380556
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在设计部门裁员时，建议根据员工的绩效评估、项目贡献度、创新能力、团队协作精神等因素进行合理筛选。同时，还需考虑到员工的职业发展规划和公司的未来战略规划，确保裁员决策的公正性和合理性。最终，应该尽可能减少对个人的负面影响，保持良好的企业文化氛围。
+talker 输出结束
+户不一定就是有时候不一定就是光打电话来因为打电话嘛接触不到真实的人他们以为就会是炸开电话什么的这样你好焦焦针对设计部门裁员你建议如何根据员工表现和能力进行合理筛选我们还是可以利用一下就是出去出去做一下宣传然后拖一下课针对一些这个房屋装修的对还有一些这个针对一些公司装修的目前在这儿有这个业务吗嗯有但是相对来说少一点但是如果说公司装修的话它其实还是利润还是比较大的对因为它公司装修其实总的来说吧现在的小型公司专业风格还是比较简单的这些要求也没有那么高只是空间大然后风格上也都比较稍微比较统一一点这种小型公司所以说咱们这个不像这种家装要求多一点然后咱们这个施工难度更大一点所以咱们这个下一步我们可以我们市场这边可以进一步扩大公司业务的装修还有一些我们可以参与的就是参加一些招标比如说一些银行还有一些国家刚才设计计划有的中间一条我们市场这边也会时刻关注一下各大银行的官网如果有这种招待信息的发布的话我们会及时投标就是报名吧然后后期准备然后进标然后准备进标然后因为这个是国家的工程咱们资金什么的保障还是很到位的嗯我们这个资格到位价格比的到位咱们还是有希望就是拿到这拿到这些标的嗯如果我们工程做的多的话后期对我们整个公司的这个呃资质啊就是我们这些工程做的越多我们以后再接工程就这个实力在这的就更就已经把广告打出去对就嗯就更有说服力了对地产开发进入专门,搞一个专门的合作对这样我们有恰当的目前的话还是有的就是我们也是会去对咱们整个市的楼盘分析咱们楼盘分布然后不断了解咱们这个动态还有入住情况,装修情况都会去了解如果知道有新楼盘想要那个咱们的装修公司也得时时了解这个情况然后我们就会去找开放商进去洽谈最好还是能接一些这些业务尤其是想要打这种有的大的开放商就经常会主打这些精装修然后我们就会跟他们合作是这样的因为如果是精装修的话,它那个设计的模板还是每个户型都是一样的用的东西也都一样,这还是对我们来说比较省心然后成本来说也低了一部分因为这些楼都有这些户型都是用的同样的图各种都是一样的然后设计就有不同的模式对,然后我们建的都是同样的材料这样相比来说就是量大了然后我们材料方面用的也更省心然后成本就会降低利用率也高一点基本上我们其实可以跟他们后期如果接这个项目的话可以跟他们好好洽谈一下然后至于这个如何定价这个后期是可以商量的主要是还得找到我们市场这边会一直注意的这也是我们也要进行的一项工作就是咱们刚才说到这个大型的一些咱们公司有营业务还是家的装修等一些这个但是未来要发展肯定会更多的公司这些大型的装修对 跟这些开发商进行合作对 换点一个方向吧嗯像这个工程我们是工作上之前已经接过了项目就是设计师手中的图纸在经理的代理人已经开始这个设计师手中的图纸对 有时候跟这个现场有一定的出入对有这个是我接下来要说的就是在施工的过程中过程中呢就是发现地下的弹线走线还有就是国家电缆一些比较比较重要的设置就是不太清楚我希望就是设计师可以提供更清楚的走线走线方向然后方便施工对施工这个方面我会论这个电脑国家电脑去找他们要一些这个室内的一些文字对,找一些像样图,找一些复制图,然后设计的话就尽量避开这些线。好的,然后就是这段时间呢,咱们其实工人的到岗率还是比较低的一个原因。然后所以,总的来说进展不是很大,然后又基于咱们这个大项目,这个中间的大项目。然后所以其他的项目的进程就比较缓慢。我建议咱们实行分享承包制承包出去咱们可以承包出去之后可以单独的合作然后咱们可以从中获取利益嗯承包你建议对承包对咱们的货收制度质量上面有什么办法呢质量上面呢承包出去之后咱们要最后检测如果发现坏了不够关的项目,应该把他开除,这部分损失的费用就承包给个人承担。但是我如果就是就是我想着说就是如果说咱们这个用量我
+[Text Detection] 在 1010.86 秒检测到关键词 '娇娇',current_time: 986.00, 问题文本: 我们可以把这个效果承包出去但是如果就是说我们现在业务好艰难现在来说的话还是相比于往年这个时间段的话这个业务还是有所下降的不太容易接到了对你好 娇娇基于之前我们讨论的内容
+问题音频片段长度: 455840, dtype: float32, min: -0.188690185546875, max: 0.19158935546875
+问题音频时间长度: 28.49
+
+
+[Agent] 接收到问题: 你好,娇娇。基于之前我们讨论的内容,关于公司装修业务的拓展,你怎么看待我们与地产开发商合作进行精装修项目的可行性?你认为在合作过程中,我们应该如何确保设计图纸与现场实际情况的一致性,以避免施工过程中出现的问题?
+, 1735617633.0689495
+
+
+[Agent] 最终接收到问题: 你好,娇娇。基于之前我们讨论的内容,关于公司装修业务的拓展,你怎么看待我们与地产开发商合作进行精装修项目的可行性?你认为在合作过程中,我们应该如何确保设计图纸与现场实际情况的一致性,以避免施工过程中出现的问题?
+, 1735617633.069055
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：装修业务 地产开发商 精装修项目 设计图纸 实际情况一致性
+
+
+提取的关键词: ['装修业务', '地产开发商', '精装修项目', '设计图纸', '实际情况一致性']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:261: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+
+Token count: 120, Total time: 46.7554 seconds, One token time: 0.3896 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：装修', '业务', ' ', '地', '产', '开发商', ' ', '精', '装修', '项目', ' 设', '计', '图纸', ' 实', '际', '情况', '一致性', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 好的,然后就是这段时间呢,咱们其实工人的到岗率还是比较低的一个原因。然后所以,总的来说进展不是很大,然后又基于咱们这个大项目,这个中间的大项目。然后所以其他的项目的进程就比较缓慢。我建议咱们实行分享承包制承包出去咱们可以承包出去之后可以单独的合作然后咱们可以从中获取利益嗯承包你建议对承包对咱们的货收制度质量上面有什么办法呢质量上面呢承包出去之后咱们要最后检测如果发现坏了不够关的项目,应该把他开除,这部分损失的费用就承包给个人承担。但是我如果就是就是我想着说就是如果说咱们这个用量我你好,娇娇。基于之前我们讨论的内容,关于公司装修业务的拓展,你怎么看待我们与地产开发商合作进行精装修项目的可行性?你认为在合作过程中,我们应该如何确保设计图纸与现场实【际】情况的一致性,以避免施工过程中出现的问题?\n ###agent根据会议片段的输出开始：###\n关于装修业务拓展，与地产开发商合作进行精装修项目是可行的。为了确保设计图纸与实际情况一致，在合作过程中应做到如下几点：\n\n1. **前期沟通**：详细沟通项目需求，确保双方理解一致；\n2. **现场勘查**：在施工前进行全面现场勘查，确认场地条件符合图纸要求；\n3. **定期检查**：施工过程中定期进行实地检查，确保按图施工；\n4. **调整机制**：建立灵活的设计调整机制，及时应对现场变化。\n\n通过以上措施，可有效避免施工中的问题。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 好的,然后就是这段时间呢,咱们其实工人的到岗率还是比较低的一个原因。然后所以,总的来说进展不是很大,然后又基于咱们这个大项目,这个中间的大项目。然后所以其他的项目的进程就比较缓慢。我建议咱们实行分享承包制承包出去咱们可以承包出去之后可以单独的合作然后咱们可以从中获取利益嗯承包你建议对承包对咱们的货收制度质量上面有什么办法呢质量上面呢承包出去之后咱们要最后检测如果发现坏了不够关的项目,应该把他开除,这部分损失的费用就承包给个人承担。但是我如果就是就是我想着说就是如果说咱们这个用量我你好,娇娇。基于之前我们讨论的内容,关于公司装修业务的拓展,你怎么看待我们与地产开发商合作进行精装修项目的可行性?你认为在合作过程中,我们应该如何确保设计图纸与现场实【际】情况的一致性,以避免施工过程中出现的问题?
+ ###agent根据会议片段的输出开始：###
+关于装修业务拓展，与地产开发商合作进行精装修项目是可行的。为了确保设计图纸与实际情况一致，在合作过程中应做到如下几点：
+
+1. **前期沟通**：详细沟通项目需求，确保双方理解一致；
+2. **现场勘查**：在施工前进行全面现场勘查，确认场地条件符合图纸要求；
+3. **定期检查**：施工过程中定期进行实地检查，确保按图施工；
+4. **调整机制**：建立灵活的设计调整机制，及时应对现场变化。
+
+通过以上措施，可有效避免施工中的问题。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+们可以把这个效果承包出去但是如果就是说我们现在业务好艰难现在来说的话还是相比于往年这个时间段的话这个业务还是有所下降的不太容易接到了对你好 娇娇基于之前我们讨论的内容就是更加选择一些营销方法吧把这个单子更接更多的单子吧但是就是承包的话这个也是可以的但是得考虑咱们的利益方面具有这些姿势需要在他们身上好了之后才能够光把施工承包给他们这个也是可以的对,连设计这些图纸还是咱们自己做的对,还有需要的东西最后的就是这点检测也是咱们自己的对,咱们也可以纯承包出去就是让他们施工还有一个也就是包工包料让他们去弄这两种但是也就核算这个利益核算这个利润市场这一块给客户打电话现在我们这个业务员这些这个话语方面一直要培训是有因为有时候我们也会就是隔一段时间也要也要更新一下这个话术还有针对咱们这个套餐嘛也要更新这个话术的但是就是说在打电话过程中呢我们对这个套餐肯定不会很因为时间还是打电话这个时间还是短的就是很简单的描述一下最好的就是邀请客户到现场来并且我们每次如果打电话有活动的话主要还是介绍这个活动所以我们这个打电话的过程中呢,这个话术减练,然后也突出入眼现在很多人对这个打电话都是很反感的我们尽量就是在短时间内,把我们是谁,然后要干嘛的然后给人家说清楚,如果对方不反感的话,我们再继续往下聊然后最终的目的是让他们来到咱们公司看一看咱们设计这玩意儿做了一些效果图对然后就是现场聊这样是我们这个是我们的目的嗯就是打电话这一块然后我们也会定期就是根据这个因为我们每天嘛就是业务员对打电话的客服都会把他下午快下班的时候把他一天打个电话那问题反馈都会写认知呈报给我们请不吝点赞 订阅 转发 打赏支持明镜与点点栏目给我们看,如果有问题,也要写出解决问题的方案然后我们在后边再讨论,如何解决就是这样的他们自己有那种解决方案的能力吗?就是让他们写上意见建议,然后我们再讨论然后再一起讨论,好听点还得是那个什么,不能光发现,还得有这个解决问题的能力,因为大家集资网易吧。前一阵我们这个,市场这个做到这个线上线下,同时这个进行。针对这个线上,现在线上都是一个在这个装修这个平台,然后有这个。排名是什么样的情况?排名的话,在咱们本市的话,排名还是比较靠前的因为像这种大型的装修装饰公司还是不多的一般都是小型的,个人的那种像咱们这个大型的还是不多,超前三吧的嘛嗯,然后,但是就是我们也是经常会工厂观察同行之间的情况互相了解提高竞争力观察对方了解市场的发展方向近期设计出来的有效果效果除了做了一个传道网上的公众号,咱们现在公众号运营是怎么样?公众号的话,咱们现在运营还是挺好的,因为现在大家对这个用手机去线上浏览,浏览这些网页呀,公众号呀,各种东西都很多。虽然我们是工作人员,但是我们没事的时候也会有点点玩对,就是了解一些信息,很多现在都不一定是从路边看到的广告很多都是从手机上看到的所以我们这个市场这边对这个公众号也是一周发四篇发四篇相关的内容我们也是根据这个咱们公司做的活动还有这个节假日我们都会出相应的公众号内容还有就是咱们有时候也会展示一下我们公司的整体风貌在公众号上都会体现然后还会宣传一些装修的比较好的一些加装风格然后现场的那些视频都会通过公众号发出来嗯咱们到时候咱们要这样做目前咱这个嗯嗯目前怎么说呢下半年是咱一个销售的市场增值季吧嗯下半年市场肯定会身上的占比也会变得越来越大因为下半年装修的人会比较多上半年因为大趋势的影响不可抗拒所以装修的人比较少下半年肯定会越来越多因为装修们肯定就是一就是一些结婚的嗯一些年轻人现在很喜欢这种比起我那种生活上的嗯品味对还有这个现代化风格对轻奢的这种对对 这样设计这种颜色好找几个途中对现代化风格因为原先的时候人们都想装修最简单的那种就是刷个白墙啊,整个大灯啊,就很简单的那种现在人们都对装修的要求也高了随着这个时代吧,发展那个,然后网络也发达了然后就是各种风格都会出现对,对这种颜色上他们也就是对对这种颜色上他们也就是接
+[Text Detection] 在 1549.27 秒检测到关键词 '娇娇',current_time: 1537.00, 问题文本: 接受能力也强了,不一定光白色,也有很多人现在就喜欢那种灰色调的,很多都能接受了。你好,娇娇,如何提升业务员电话沟通技巧和话术培训效果?就是一些极简主义,然后奢华主义,现在最多是哪种方法?现在我们市场这一边了解
+问题音频片段长度: 115030, dtype: float32, min: -0.18896484375, max: 0.18267822265625
+问题音频时间长度: 7.189375
+
+
+[Agent] 接收到问题: 如何提升业务员电话沟通技巧和话术培训效果
+, 1735617724.772661
+
+
+[Agent] 最终接收到问题: 如何提升业务员电话沟通技巧和话术培训效果
+, 1735617724.7728012
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 54, Total time: 2.3711 seconds, One token time: 0.0439 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+要提升业务员电话沟通技巧和话术培训效果，可以考虑以下几点：
+1. 设定明确的培训目标和内容；
+2. 创设模拟场景，让学员在实践中应用所学；
+3. 使用互动式的教学方法，增强学员参与度；
+4. 提供反馈和指导，帮助学员改正不足；
+5. 培训后跟进，确保知识和技能的掌握。
+talker 输出结束
+受能力也强了,不一定光白色,也有很多人现在就喜欢那种灰色调的,很多都能接受了。你好,娇娇,如何提升业务员电话沟通技巧和话术培训效果?就是一些极简主义,然后奢华主义,现在最多是哪种方法?现在我们市场这一边了解施工这边还有什么问题施工这有一个最重要的问题就是咱们就是前两天有一个公司当然是一个比较小点的公司然后施工的时候也有一个施工人员从高处不慎剧热产生了一种工伤然后咱们目前还就是安全处置比较好但是防患力未良所以就是我感觉还是需要在安全上投入更大的关注然后就是希望技术部门这边就是泰族专门的技术人员好好的施工队进行交接然后平常没事的时候可以多交流这样方便我们施工队的过程进行其他没什么问题现在咱们这个装修这方面主要是一是咱们选材现在有没有客户选择呢?就看咱们这一方面套餐这方面事实上这一方面咱们的套餐里边都有有分着的因为有些客户呢他就是想着咱们帮人家设计施工但是人家那个装饰材料人家就想自己去挑选的我们施工的时候,一些顾客喜欢自己买材料,让我们自己施工对,这个对我们来说,不用我们选了,倒是也省钱但是我们也少了一部分收入吧也会破坏整体的方案,还需要更改对,因为他们选择的东西,跟咱们设计那块还是有出入的不是说完全一方面怎么去引导客户用就是一方面是要介绍咱们选的东西的这个东西的好的地方是在哪然后就是用我们所选的品牌我们给到的力度要比他们自己选就是去购买这个东西的话便宜的力度要大一点因为我们是这些招式公司嘛,就是跟他们合作的这种零售跟批发的价格肯定是不一样的所以说我们同样的东西让我们去那个买,就不是一样的价格我们可以把这个价格表他们其实可以出去问,打听的我们把这个价格表给他们对比一下,他们就知道我们这样,我们包工包料这样的话,其实是省钱的对于他们来说是省钱的然后就是说也要给他们介绍如果我们去选这个东西肯定是我们会跟他提前商量这个颜色呀风格呀都会商量的在他们认可的情况下我们要根据我们的设计达到就是说最好的效果吧这是我们就是平时如果跟他们推销就是介绍的话会给他们请不吝点赞 订阅 转发 打赏支持明镜与点点栏目我们在这方面的能力上尽可能的为顾客着想,给顾客提供更舒适的环境。如果实在不行的话,顾客比较有个性化,那咱们就在另一边做。只要尽力为顾客提供更好的环境就可以。是这样的因为有些顾客他们其实因为现在这个装修个房子买个房子都他们提前肯定也都会货币参加自己也去逛过也会问很多装饰公司我们就是很真诚的跟他们做合作让他们感受到我们真诚其实对我们盘城业务也是有很大帮助的咱们公司的量产就是以顾客为主服务到位 价格也到位对,还有就是建造人和我们这个产品,因为我们这个物料的话,以我们设计的方案来选取,比较科学化。对,他选了一些会,会,咱们施工队施工的时候,会掺强人意,各个设计方案,对,掺强人意。包架的棉细表这方面可以怎么说呢这方面更加精细一点原来这个包架比较粗糙到这要单文的价位更加精细一点更加客户可以感觉到价格比较优惠实惠嗯这一方面很有用的比如说墙面啊 地面的处理啊这个嗯包括这个墓室的一些东西台风啊 台风啊 金把啊 一些然后这个精细的画架然后阳光费上面有一个一个人多少钱 二人多少钱都是精打 精细的画架嗯效果图这方面要设计的更加贴合实际更人性化让别人一看就能看清不是很虚幻的那种东西现在人们靠着眼睛上原来都是飘着很虚无的东西实用实用跟图纸差的有点太大对,应该用过电解的实用能力加工方面一定要通过各种各样的配合业务方面要多进一届大型的方向我们也会不断关注吧因为其实这些大型的装修装修业务呢对我们公司来说还是挺好的因为整地运还是在这儿待着的哈哈哈哈嗯好今天要考虑的车公司也不难啊哈哈嗯然后就是刚才提到的这个裁员的问题我觉得就是裁员的问题其
+[Text Detection] 在 2049.24 秒检测到关键词 '焦焦',current_time: 2030.00, 问题文本: 其实很很很微妙尤其是这个这个这个时间如果就是说我们能承受这两个承受这两个的话就是还是保留这个咱们这些人员但是如果说他确实是业务能力跟不上你好焦焦基于之前我们讨论的内容关于施工安全问题你怎么看待我们公司目前的安全错误
+问题音频片段长度: 363350, dtype: float32, min: -0.16583251953125, max: 0.174285888671875
+问题音频时间长度: 22.709375
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容,关于施工安全问题,你怎么看待我们公司目前的安全措施?是否需要进一步增强安全培训和防护措施,以防止类似施工人员从高处坠落的工伤、事故?
+, 1735617755.364361
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容,关于施工安全问题,你怎么看待我们公司目前的安全措施?是否需要进一步增强安全培训和防护措施,以防止类似施工人员从高处坠落的工伤、事故?
+, 1735617755.3645773
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：施工安全 安全培训 防护措施 高处坠落 工伤事故
+
+
+提取的关键词: ['施工安全', '安全培训', '防护措施', '高处坠落', '工伤事故']
+
+找到的上下文片段数量: 1
+
+Token count: 82, Total time: 31.9263 seconds, One token time: 0.3893 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：施工', '安全', ' ', '安', '全', '培训', ' ', '防', '护', '措施', ' ', '高', '处', '坠', '落', ' ', '工', '伤', '事故', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 包架的棉细表这方面可以怎么说呢这方面更加精细一点原来这个包架比较粗糙到这要单文的价位更加精细一点更加客户可以感觉到价格比较优惠实惠嗯这一方面很有用的比如说墙面啊 地面的处理啊这个嗯包括这个墓室的一些东西台风啊 台风啊 金把啊 一些然后这个精细的画架然后阳光费上面有一个一个人多少钱 二人多少钱都是精打 精细的画架嗯效果图这方面要设计的更加贴合实际更人性化让别人一看就能看清不是很虚幻的那种东西现在人们靠着眼睛上原来都是飘着很虚无的东西实用实用跟图纸差的有点太大对,应该用过电解的实用能力加工方面一定要通过各种各样的配合业务方面要多进一届大型的方向我们也会不断关注吧因为其实这些大型的装修装修业务呢对我们公司来说还是挺好的因为整地运还是在这儿待着的哈哈哈哈嗯好今天要考虑的车公司也不难啊哈哈嗯然后就是刚才提到的这个裁员的问题我觉得就是裁员的问题其基于之前我们讨论的内容,关于【施】工安全问题,你怎么看待我们公司目前的安全措施?是否需要进一步增强安全培训和防护措施,以防止类似施工人员从高处坠落的工伤、事\n ###agent根据会议片段的输出开始：###\n关于施工安全问题，会议上提及了当前的安全措施还存在不足之处，特别是高处作业人员的安全保障方面。因此，我们认为有必要进一步加强安全培训和防护措施，确保每位员工都能够掌握必要的安全知识与技能。同时，应增加安全检查频率，及时发现并整改安全隐患，从而有效预防类似高处坠落等工伤事故的发生，保障员工的生命安全。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 包架的棉细表这方面可以怎么说呢这方面更加精细一点原来这个包架比较粗糙到这要单文的价位更加精细一点更加客户可以感觉到价格比较优惠实惠嗯这一方面很有用的比如说墙面啊 地面的处理啊这个嗯包括这个墓室的一些东西台风啊 台风啊 金把啊 一些然后这个精细的画架然后阳光费上面有一个一个人多少钱 二人多少钱都是精打 精细的画架嗯效果图这方面要设计的更加贴合实际更人性化让别人一看就能看清不是很虚幻的那种东西现在人们靠着眼睛上原来都是飘着很虚无的东西实用实用跟图纸差的有点太大对,应该用过电解的实用能力加工方面一定要通过各种各样的配合业务方面要多进一届大型的方向我们也会不断关注吧因为其实这些大型的装修装修业务呢对我们公司来说还是挺好的因为整地运还是在这儿待着的哈哈哈哈嗯好今天要考虑的车公司也不难啊哈哈嗯然后就是刚才提到的这个裁员的问题我觉得就是裁员的问题其基于之前我们讨论的内容,关于【施】工安全问题,你怎么看待我们公司目前的安全措施?是否需要进一步增强安全培训和防护措施,以防止类似施工人员从高处坠落的工伤、事
+ ###agent根据会议片段的输出开始：###
+关于施工安全问题，会议上提及了当前的安全措施还存在不足之处，特别是高处作业人员的安全保障方面。因此，我们认为有必要进一步加强安全培训和防护措施，确保每位员工都能够掌握必要的安全知识与技能。同时，应增加安全检查频率，及时发现并整改安全隐患，从而有效预防类似高处坠落等工伤事故的发生，保障员工的生命安全。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+实很很很微妙尤其是这个这个这个时间如果就是说我们能承受这两个承受这两个的话就是还是保留这个咱们这些人员但是如果说他确实是业务能力跟不上你好焦焦基于之前我们讨论的内容关于施工安全问题你怎么看待我们公司目前的安全错误他们刚才说的那个注意都在实际期是吗对,他们现在不是照顾是临时的哦,那都在实际期实际期啊其实速写实在的一方面就是比较聪明一点都不透的然后工作态度就不太良好但是他只要有对公司奉献的心我也可以考虑得了嗯,这个方面还是设计部让你自己看你自己的情况来判断还是什么当然记得写一个刺身原因是不得要写进去的然后不知道我这边还有什么问题可以说一下下个月有几个项目下个月有15个项目要跟咱们设计这一块对接一下因为这个明天正在施工的这些也有快结束的然后我们这一块也接了新的顾客过来就是想跟咱们设计这一块好好再谈一谈订一下这个方案,然后进一步开始施工吧就是这样的我们施工队之后会和设计部加加联系嘛然后找到更合适的方法设计今天就先到這吧散會我感覺我能去當銷售的
+[Audio Detection] 在 2240.74 秒检测到关键词 '好交交'。
+detection_time: 2240.74, current_time: 2233.00
+问题音频片段长度: 127840, dtype: float32, min: -0.135650634765625, max: 0.151519775390625
+问题音频时间长度: 7.99
+
+
+[Agent] 接收到问题: 针对助理实习期问题你有哪些建议来优化人员管理和项目对接
+, 1735617812.3283226
+
+
+[Agent] 最终接收到问题: 针对助理实习期问题你有哪些建议来优化人员管理和项目对接
+, 1735617812.3284273
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 72, Total time: 2.4640 seconds, One token time: 0.0342 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+优化助理实习期，建议从以下几个方面入手：
+1. 明确目标和职责：在助理实习开始之前，需要明确其目标和职责，让实习生了解自己的工作范围和期望。
+2. 提供足够的支持：提供足够的支持和资源，帮助实习生完成任务。这包括必要的培训、指导和反馈。
+3. 设定考核标准：设定清晰的考核标准，以便评估实习生的表现和进步。这可以包括定期的检查、项目成果评估等。
+4. 建立良好的沟通机制：建立良好的沟通机制，保持与实习生的密切联系。这可以通过定期会议、一对一讨论等方式实现。
+5. 提供发展机会：为实习生提供发展机会，鼓励他们探索新的领域和技能。这可以通过提供额外的培训、参与重要项目等方式实现。
+talker 输出结束
+
+会议数据处理完成。

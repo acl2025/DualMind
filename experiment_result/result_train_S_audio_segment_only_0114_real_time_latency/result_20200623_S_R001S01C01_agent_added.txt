@@ -1,0 +1,480 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200623_S_R001S01C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 66
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.20s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.21it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.41s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.52s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.12s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.26s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.90s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.10s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.85s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.78s/it]
+我002我是投资老师009我是大吉生A005我是单纯生B今天想要和大家一起探讨一下大学生创业问题他们今年来学校鼓励大学生自主创业很多大学生都走上自主创业的道路咱们学校也鼓励大家让自己穿我觉得未来是一个创业的天下,各位学生知道怎么认为吗?我觉得现在越来越多的大学生都在创业,无论是为了惊险还是为了梦想,创业对于大学生来说都是一个很好的选择。我觉得应该让更多人脱离打工更多的大学生脱离打工的命运然后真正的接受这个社会吧做社会真正的主人这一点创业也有风险但是也所以咱们今天开了这个交流会一起商讨一下讨论一下我觉得吧要天时地利人和都要然后才能决定你自己是去打工还是自己去创业我呢作为一个刚刚毕业的大学生在学校里学习了很多知识我现在准备我会去养猪因为呢你是这个专业是吧对这方面专业的对 我正好是农大毕业的对然后养猪呢我们正好家乡有地有地而且这时候呢猪肉的价格也居高不下所以它是肯定有很好的饭碗签字的所以我决定回家养猪有什么想法B同学当地这个社会创业是尤其重要的我们在大学都学习了很多知识到现在毕业了我们应该去创业因为创业也有风险我也觉得我会失败的好 有可能所以有可能翻山不及要么就是一路高峰要么就是有可能翻山不及你不创业你怎么知道能成功还是不成功呢对我的想法就是开个公司装修现在都是在城市买房子城市装修的人多嗯是啊,你干装修,你像现在行行业业各行业的装修工资太多了,那你一刚入手的话肯定会有继承力,是吧?所以说,我还是觉得我老朱总有我的事,这个对我来说还是比较专业,专业比较非常。你说装修嘛,你大学毕业,一,你没有特别好的经验,二,你也没有从事过这个行业。对不对 你只是在学校学习了对可能是这个玩意儿 这个装这个这方面设计玩意儿 是吧嗯我觉得你应该深思熟虑一下好好再看一看这个 这个装修方面呢属于很深这个东西呢因为我还是了解一点因为前年我们家旅房就广告给我他接触了一下这个东西嗯所以说你 你好好懂吧 懂吧看看这个行业我感觉应该专业的可以的,因为我也是在装修公司长大的吧。前几年有一个大型的高级公司叫九州高级公司就是客户来到我需要装修房子好吧,那你先掏一个装修秘符金吧不多,十万总共我们给你装下来的时候就是年纪人下的一比二十万先掏一个前期费给你,十万块钱有很多房子它借了房子以后哎哟,觉得人家这东西用的又好然后算一下装修费用过来到时候你就零包入住了然后很多人都给他掏了钱等着到时候房子交工下来装修结果这房子一年以后下来了然后去找这公司装修吧就这公司没了没有了哎这怎么办这怎么没有了这么大的公司这怎么办又形成了一个诈骗回来这些房东干净告了然后找到几个房东就说有个人名下有个人就这一个人那边抓了但是钱没有了没有钱了深谙金额上千了就是这样子老百姓辛辛苦苦挣的钱就被他们给钱挪了所以说创业也要长成业组以个人的装修我说的这个意思是什么呢就是被九州这样把这个装修的行业给抹黑了就会造成一个你们装修公司的艰难所以说你装油公司它被他们冷了你就说你们的每迈一步就更加简单十大十大地前走所以说每个行业它有它的简单之处就是我告诉你呢就是我觉得你应该深思熟虑一下就说这个行业我是不是可以涉足还是我要确实我应该把我所学的这些东西我换一个实验对吧是这样谢谢大家考虑考虑再考虑一下嗯哎哎同学哎我觉得吧创业的第一步呢就是一定要找到一些志同道合的朋友是吧要有跟你一起能够共同实现哎理想然后给你有共同目标的人然后有相似的文化背景这样你们相处了才更有默契然后我的我的我的目标呢就是当一个保密卡公司开一个房地产公司然后也是吧哎毕竟有那个呃家族企业的文化影响然后我也会想开开开一个属于自己的房地产公司吧一方面就是为了啊不辜负父母的那什么期待了还有还有我觉得吧创业的第二步呢就是一定要有资金做底子这方面我觉得我还是有有
+[Text Detection] 在 509.00 秒检测到关键词 '好教教',current_time: 496.00, 问题文本: 有资本那你这就属于富二代了那你要是这样的话家族它有充足的基金支持那你就可以你好教教大学生创业时如何平衡资金团队和市场需求多一点但是说我觉得现在房地产有风险为什么因为现在咱们习近平咱们这个
+资本那你这就属于富二代了那你要是这样的话家族它有充足的基金支持那你就可以你好教教大学生创业时如何平衡资金团队和市场需求多一点但是说我觉得现在房地产有风险为什么因为现在咱们习近平咱们这个七里河这边的大风集团他的房子都能打到7.5折原本卖一万多的房子一平的房子现在卖到7000是吧所以说给这个房地产带来很大的风机是你这个以前确实是有点想我觉得像你这样有自力的富二代你不如跟我一块儿投资一个养猪的干个大型的养猪场是吧 你又有资金又有技术又有经验三年用大学的很好我们前期我也我也看了有一个河南的叫做洛河黑猪哎呀那个猪肉质鲜美包子是肥而不腻让你吃了以后想着就跟野猪肉都要好吃它的价格呢你看吧原先的时候咱们普通猪肉才10123一块块钱一斤那个猪肉的价格就已经到了50了50块然后现在猪的价格基本上在25左右咱们那路和黑猪起码能卖到上百刚才他说那么多 你们俩觉得这个养殖这个行业会有什么难处呢他说的都是好 是 我觉得养猪这个有个猪牛感 然后得病有什么能有不得了 那损失也很大哎呦,你看,这就不了解了,我们开了个洋路上的吧但凡进入了都会进入消毒的可以说杜绝它的温地来源但是天灾反党还有如果我们因为我学的就是这个专业我接触的就是这个东西我肯定会保证在源头就给它掐断不会叫它进行温浴如果我们是分片饲养即使是猪瘟有只不过我们这一片片距离大概也就是12头猪会产生别的天驹就不会了但是你看每年因为禽流感死的猪啊什么的不加少数不要相信那些那些时间它们都是假的地加费现在养猪的都挺多的你想想现在养猪是一兆钱但是养猪的人多了猪肉肯定就便宜了我刚才跟你说了我这个猪跟普通的猪它是不一样的品种不一样我这是专门的洛河黑猪洛河黑猪多大然后我们怎么去养殖它除了喂饲料叫它整天吃着睡以外这个不行啊这个猪肉它的肉就不会紧致它就会松软了所以我们想了办法我们天天猪人员赶着这个猪跑找他在住院里头来回跑从东跑到西跑从西跑到东两个小时不点断地一直跑然后再给它歇的时候喝水再吃饲料这时候绞的这个猪肉啊它才是特别的紧致味道鲜美你说的说的是是这么一回事但是因为你学这个专业怎么从你的专业当中更科学地去去两者谈论对我们是除了在食品、饲料方面然后就是注重一下猪的运动不能让它就成天睡着养鸟别人一打开猪,哇,你这猪肉全都是鸟,肥油这样它的肉质是不好的所以说要猪去运动我还琢磨了,刚跑还是不行的还要给它找这只蹦,给它加个块儿每个猪从过那的时候都抱这样的话,猪油状,然后它的肉就会赶上野猪肉的味道了我不知道大多数人那这些猪的成本肯定很高对呀,我们前一步说了得有资金,它这个花费肯定是很大的对吧这个跟普通的养猪,普通的养猪菜就是猪饲料这些东西我们只不过比他多了一张感触的还有加了跨栏的猪粽那它的市场价格会不会很高呢因为就单单的这两项我们这个猪肉的味道就非常鲜美而且可以超越市场上的有没有想过如果价格太高了会有人买而且知道的人也会很少而且这个怎么跑啊像猪跑啊 像猪运动啊 肉质鲜美啊那都是消費者看不到的我们现在都很方便了,我们都有微信,我们都录制了视频,谁买了我们的肉,我们可以在我们的大厅里放着。那消费者毕竟不会先加你微信先看的,他肯定会买的时候肯定会直接办。我们前期搞一个活动,免费品尝我们猪肉炖出来的肉,让大家伙尝一尝,然后这个肉就在这摆着让我看。我们前期的广告费用肯定要投入的你总不能说我们什么也不投入然而我是猪我说猪肉就是好吃你们就买吧一百块钱一斤你们买吧那不可能对吧对我们前期搞活动我说你们来我们可以说先推出一些廉价的就是我们这些猪就是没有经过我们改良的猪肉我们只卖多少比市场价格一样25你尝一尝这是我们炖的那种尝一尝你们味道我们这个肉好吃跟市场的价格又一样他就会买我们的我们那儿就推出了我们说运动猪肉,你们也可以尝尝,这个就是价格稍贵一点,这个50块钱一斤。虽然说创业和品质,创业的东西品质也要好,但是你肯定还是要具备一些条件的,比如说你肯定要创业,它要人脉。他要面对的老百姓的价格也有然后呢富一点的是吧富豪们吃的猪肉100块钱一斤的我们也有就看他们针对的人群我们是不同的老百姓呢吃的廉价的猪肉我们也有高端的猪肉我们也有分阶层的对分阶层的但是就就谁想吃我们的猪肉都可以啊我们就有分了25块钱一斤的有50块钱一斤有上百的上百的就是我们的经典猪肉了我们这个猪肉是喂的饲料也是定性的就是这些东西然后我们还有定期的而且每周二我给他泡澡早点猪绝对是背道先领的那我跟我公司商量一下投资三四十亿吧你们这边你们应该说一下你们这个观点你们这企业刚才不是说房地产的那个放休吗投资是投资投资是投资我现在可以根据咱们那个我还是有我自己的打算你投资是自己打算的我说到有资本资本这方面应该是没有问题的还有房地产这个创业未来一定要新型的房地产说一些计划你不知道他老是房地产这个专业肯定从老师的建议当中肯定需要创新要创新才能为难我就想着吧,找一些新型的,就是你刚才说的新型的那种房地产,什么呢?咱不是卖房子,咱是租房子的。然后要弄一些青年公寓,然后青年公寓里面有游泳馆,有图书馆,有自习室,然后可以供学生,让学生也可以住得起。然后咱们这个咱
+[Text Detection] 在 1112.27 秒检测到关键词 '焦焦',current_time: 1085.00, 问题文本: 咱们这个青霞公寓就是租房然后也可以卖房当你交够一定的年份了然后他就可以把你这个租金出去然后把剩下的全额买房的钱然后一定交了这个房子就属于你了你好焦焦基于之前我们讨论的
+们这个青霞公寓就是租房然后也可以卖房当你交够一定的年份了然后他就可以把你这个租金出去然后把剩下的全额买房的钱然后一定交了这个房子就属于你了你好焦焦基于之前我们讨论的这个东西你可以说出来你觉得应该是吧是现在买房的人都多但是装修的就跟c刚刚说的拿着钱跑了是吧我们这是给他装完然后再再让他们给我们钱先装后给钱这样呢消费者肯定不用担心刚刚c说的那种问题了是那这样呢肯定会打消了他们这个但是你有没有考虑到你的前期费用压力会有多大你知道装修一套房子现在下来大概就是简简单单的装修一百平米的房子将近就要二十万就是再简单一点的特别简单的也得十万出头恐怕你还没有涉足这个东西你没有了解这个东西我觉得吧可以这样然后前一天交钱第二天工作减轻了顾客不必要的疑虑然后幸运度就提高还有时候从B当中我不管你以后怎么去管理你这个公司怎么去一个流程我就想听到你刚才说想创业装修装修这个行业你说了半天我怎么没感觉到它有什么好处它有什么创新点是吧整个想法,我不管你后面到底是赔还是啥,我现在想听听你这个,放心点在哪里,怎么让我去给你投资,怎么觉得你这个公司未来会越来越好。现在买房的人肯定不是买的都是那个毛坯房,它入住肯定是需要装修的毛坯房四面都是洋灰的沙面它肯定需要装修才能入住我感觉现在只要买房肯定都得装修现在有宏大的碧桂园之类的他们推出的房子金光修你就可以临房入住了你充斥量就是每一个电器多一板凳所以说给装修行业也有冲击我觉得吧这个房子也都是跟一些装修工合作的是吧嗯所以说是吧我们也可以合作一下让直接直接带家具入住对然后让公司和房地产公司合作这样吧顾客的疑虑也会减少这西刚刚说的他经过多他他是不是也要装修经过说的是些房地产你就自己干的你想讲的 aa 大学生说的意思就是说让我们合作但是就说这样的话就你要开装修公司的话就矛盾了你必须跟房地产去挂扣他的是这个意思你没理解吗所以说你要自己自主创业跟这个就产生疏忽了就是说你首先就是一个大的装修公司我只能去挂扣房地产公司了他也有两个你要不然连你房地产连你不会挂扣房地产连连我们自己的房子我们自己就来装了我何必要你呢还有就是你这个创业我没感觉到你这个这个新的想法是吧或者你有自己的设计理念或者咱每年咱们针对一些高端人群咱们有自己的设计设计理念装修风格可以说是那我们你刚刚说的这个专业理念什么主题啊什么的我们会根据那你客户人家给我们的小粉然后我为人家设计的包人家满意哎哎这个我觉得吧你知道他那个装修那行业是吧我给你提一下建议可以可以弄装修的话就是全自动人工智能进装修然后现在不是有一些听卓文心虚的有利用的人工智能嘛可以依照那个然后进行装修然后就是房地产我觉得还有什么我还有一点想法就是向农村搞房地产发展现在呢农村房地产肯定是很弱的而且很少人去做这件事尤其是山区里面而且农村有一个什么好处呢 就是鸡皮便宜你这想法 对 但是国家现在是耕地不允许再占有能力了所以说这个农村的房地产只不过是自己的房子严谨盖一个一层或者冲击量让顶多让你盖个两层那个不属于房地产来干的不属于农民来自己家里的单赖房子所
+[Text Detection] 在 1547.83 秒检测到关键词 '娇娇',current_time: 1519.00, 问题文本: 所以说现在有一些企业干这个但是他那个不是买的地是把一些老房子旧房子进行拆迁以后然后进行了翻盖翻盖的话人家就个人出钱个人找人盖人家会找你这种大型的房地产吗人家不会找你们大型的房地产你好 娇娇如何通过创新
+以说现在有一些企业干这个但是他那个不是买的地是把一些老房子旧房子进行拆迁以后然后进行了翻盖翻盖的话人家就个人出钱个人找人盖人家会找你这种大型的房地产吗人家不会找你们大型的房地产你好 娇娇如何通过创新所以说创业都是有分散的你可以去一下风景区景区也是景区然后它可以说允许盖别墅然后或者在盖办的店之类的你走到这个方面可能会有发展前景还有呢就是当然了房地产要求的更大但是更多的就是品质嘛不能搞搞一些豆豆渣工程咱一定要讲诚信还是不是不能卖出的楼盘就撒撒口上干我觉得你这个行业是需要资金太大对于我来说我还是嗯还好好养我的猪比较好等养猪前进广播之后再可能会设置对手但是也不见得到时候我要把我们这个猪盖上连锁然后也是全国都卖我们的肉我们的充饥我们起的牌子就叫洛河黑猪然后把它走到中国千家万户我们有廉价的有中道的有高道的刚才那个我说呢,现在房地产在短期内处于供应过剩的状态。但是呢,我觉得呢,随着工业的发展,就是工业化,城镇化,城镇动势推进嘛。而且像觉得现在买房子的大部分的农民都有多样的农民。然后随着那个国民收入消费结构的不断升级然后我国房地产业仍处于可以大有作为的重要战略机遇期据分析房地产企业想要走得更远就要打破商业地产同质化的翻底谢谢大家重新调整规划的战略部署然后机要队已有的商业地产态然后进行优化打造活市场需求的商业地产业态你这个都是些说的是片面的不是直观的直观的就是说现在房地产它并不是说很景气它很有可能会出现暴动他一旦在泡沫行头无法控制的时候那就会造成大的房产冲击你有没有想过这个问题瘟疫带来的四面影响就是大伙谁也不能出去了然后上半年的房地产为什么要打折呢他大伙他要打折他为什么要不收资金对吧因为他的资金也不充足了他资金不充足了然后他的房地产就不能继续下去他的工人 他们别的人也要开支没有人在他的房子里面打所以说他过时他在飞行期间他已经7点5钟了但是现在飞行控制过了谁都在7点5钟里面可以喝就不能打他打到5点5钟但是他没有说不方便方便的 落架了他只是说打个5分钟他就要落架了已经迟到过程了对啊已经迟到过程了但是防御下现在已经不可以让人打了那因为你们朝鲜你的方向就是说已经过去就放假了你现在短时间内肯定没办法回账大家肯定还是要他可能不会回账但是他肯定不会再下降你觉得就是说我这方向还是容易回账的但是在短期之内它是一个网络你现在实验了放假不变他已经是在短期之内就是打平了但是主要的不是在放假是打平了现在看到的很少现在看到的很少都是保护的都是保护的我先传出一下最后总结一下创业的想法创业的想法我觉得创业一定要有资金有人在就没有这个想法我觉得我觉得会有很大的很大的一个人只要经营得到想掏钱然后有很好的大局观能很好的发展让货力我们说出了一个点子它这个这个材料成本比比较高这样子我们挣钱吧挣出货请不吝点赞 订阅 转发 打赏支持明镜与点点栏目謝謝我们这个C这个想法很通俗A这个想法我们来坚持这个我觉得你要回去需要去思考一下自己的这个意识在哪里先把我们的这个交易会先到这儿好谢谢大家
+[Audio Detection] 在 1997.61 秒检测到关键词 '好交交'。
+detection_time: 1997.61, current_time: 1984.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200623_S_R001S01C01_agent_added/out_001-M_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 687605, dtype: float32, min: -0.36627960205078125, max: 0.3055839538574219
+问题音频时间长度: 42.9753125
+
+
+[Agent] 接收到问题: 你好 娇娇基于之前我们讨论的内容关于房地产行业目前面临的挑战你认为房地产企业应如何调整战略布局打破同质化竞争以适应市场需求和城镇化发展的趋势同时对于房地产泡沫的风险我们应如何提前预判和应对
+, 1736827828.2754679
+问题音频STT前的时刻: 1736827828.275674
+问题音频STT后的时刻: 1736827828.7372074
+问题音频STT时间: 0.4615333080291748
+
+
+[Agent] 最终接收到问题: 你好,教教大学生创业时如何平衡资金团队和市场需求。
+, 1736827828.737563
+问题音频送入Planner的时刻: 1736827828.7380447
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1736827829.364341
+planner new_token time: 1736827829.7560194
+planner new_token time: 1736827829.7564142
+First token received: 1, time: 1736827829.757361
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1736827829.9662602
+talker first token time: 1736827830.4758666
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1736827830.509322
+talker first token time: 1736827830.5348482
+talker first token time: 1736827830.5606425
+talker first token time: 1736827830.6112804
+talker first token time: 1736827830.661961
+talker first token time: 1736827830.6873436
+talker first token time: 1736827830.712827
+talker first token time: 1736827830.738212
+talker first token time: 1736827830.763755
+talker first token time: 1736827830.7892118
+talker first token time: 1736827830.839866
+talker first token time: 1736827830.8904998
+talker first token time: 1736827830.9159648
+talker first token time: 1736827830.9414907
+talker first token time: 1736827830.9669747
+talker first token time: 1736827830.99257
+talker first token time: 1736827831.0182214
+talker first token time: 1736827831.0437176
+talker first token time: 1736827831.0946662
+talker first token time: 1736827831.1203196
+talker first token time: 1736827831.1459806
+talker first token time: 1736827831.171502
+talker first token time: 1736827831.2224574
+talker first token time: 1736827831.2479537
+talker first token time: 1736827831.2738383
+talker first token time: 1736827831.2998712
+talker first token time: 1736827831.3516796
+talker first token time: 1736827831.4035747
+talker first token time: 1736827831.4296248
+talker first token time: 1736827831.4556992
+talker first token time: 1736827831.4818096
+talker first token time: 1736827831.5080621
+talker first token time: 1736827831.5601807
+talker first token time: 1736827831.586279
+talker first token time: 1736827831.612455
+talker first token time: 1736827831.6648293
+talker first token time: 1736827831.6911778
+talker first token time: 1736827831.7174518
+talker first token time: 1736827831.743671
+talker first token time: 1736827831.7699437
+talker first token time: 1736827831.8223934
+talker first token time: 1736827831.8750036
+talker first token time: 1736827831.9014428
+talker first token time: 1736827831.9279163
+talker first token time: 1736827831.9541895
+talker first token time: 1736827831.980528
+talker first token time: 1736827832.033083
+talker first token time: 1736827832.0595868
+talker first token time: 1736827832.1125908
+talker first token time: 1736827832.1392727
+talker first token time: 1736827832.1659591
+talker first token time: 1736827832.2192795
+talker first token time: 1736827832.27307
+talker first token time: 1736827832.2995782
+talker first token time: 1736827832.3260424
+talker first token time: 1736827832.3525925
+talker first token time: 1736827832.4055185
+talker first token time: 1736827832.4321978
+talker first token time: 1736827832.4854925
+talker first token time: 1736827832.5123303
+talker first token time: 1736827832.5391316
+talker first token time: 1736827832.5659306
+talker first token time: 1736827832.5924172
+talker first token time: 1736827832.645458
+talker first token time: 1736827832.6721437
+talker first token time: 1736827832.6986768
+talker first token time: 1736827832.7252178
+talker first token time: 1736827832.751883
+talker first token time: 1736827832.8050022
+talker first token time: 1736827832.8316727
+talker first token time: 1736827832.8583786
+talker first token time: 1736827832.885054
+talker first token time: 1736827832.9118695
+talker first token time: 1736827832.9385695
+talker first token time: 1736827832.9932857
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在大学生创业中，资金、团队和市场需求是三个重要因素。首先，要明确自己的创业目标和商业模式，制定详细的商业计划，包括资金需求分析。其次，组建一个高效的创业团队，成员之间互补，具备专业的技能和经验。再次，了解市场的需求和趋势，把握机遇，避免盲目决策。最后，积极寻找资金来源，可以通过众筹、天使投资等方式筹集资金。平衡这三者的关系，才能使创业项目取得成功。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200623_S_R001S01C01_agent_added/out_001-M_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 687605, dtype: float32, min: -0.36627960205078125, max: 0.3055839538574219
+问题音频时间长度: 42.9753125
+
+
+[Agent] 接收到问题: 你好 娇娇基于之前我们讨论的内容关于房地产行业目前面临的挑战你认为房地产企业应如何调整战略布局打破同质化竞争以适应市场需求和城镇化发展的趋势同时对于房地产泡沫的风险我们应如何提前预判和应对
+, 1736827834.8173213
+问题音频STT前的时刻: 1736827834.8174572
+问题音频STT后的时刻: 1736827836.6669028
+问题音频STT时间: 1.8494455814361572
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容,关于养殖行业面临的挑战,特别是疫情对养殖业的影响,你认为我们应该如何科学管理以减少疫情带来的损失,并保证猪肉品质,同时针对不同消费阶层,我们如何制定合理的定价策略,以满足不同消费者的需求
+, 1736827836.6670587
+问题音频送入Planner的时刻: 1736827836.667686
+planner new_token time: 1736827837.3207517
+planner new_token time: 1736827837.709593
+First token received: 0, time: 1736827837.7097774
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1736827838.1004894
+planner new_token time: 1736827838.490705
+planner new_token time: 1736827838.880926
+planner new_token time: 1736827839.271302
+planner new_token time: 1736827839.6620102
+planner new_token time: 1736827840.0523129
+planner new_token time: 1736827840.4423194
+planner new_token time: 1736827840.8327525
+planner new_token time: 1736827841.224092
+planner new_token time: 1736827841.61446
+planner new_token time: 1736827842.004075
+planner new_token time: 1736827842.3946853
+planner new_token time: 1736827842.7847717
+planner new_token time: 1736827843.174867
+planner new_token time: 1736827843.5651515
+planner new_token time: 1736827843.957183
+planner new_token time: 1736827844.3482704
+planner new_token time: 1736827844.74017
+planner new_token time: 1736827845.1305513
+planner new_token time: 1736827845.5215716
+planner new_token time: 1736827845.9120927
+planner new_token time: 1736827846.3018568
+planner new_token time: 1736827846.692317
+planner new_token time: 1736827847.0831485
+planner new_token time: 1736827847.474383
+planner new_token time: 1736827847.8656278
+planner new_token time: 1736827848.257142
+planner new_token time: 1736827848.648248
+planner new_token time: 1736827849.0395675
+planner new_token time: 1736827849.4309685
+planner new_token time: 1736827849.8221717
+planner new_token time: 1736827850.2137756
+planner new_token time: 1736827850.6047175
+planner new_token time: 1736827850.9961183
+planner new_token time: 1736827851.3876028
+planner new_token time: 1736827851.779613
+planner new_token time: 1736827852.1703823
+planner new_token time: 1736827852.5628767
+planner new_token time: 1736827852.9551396
+planner new_token time: 1736827853.3472478
+planner new_token time: 1736827853.7393782
+planner new_token time: 1736827854.1304839
+planner new_token time: 1736827854.5208633
+planner new_token time: 1736827854.912055
+planner new_token time: 1736827854.9129188
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：疫情影响 养殖行业 科学管理 猪肉品质 定价策略 消费阶层
+
+
+提取的关键词: ['疫情影响', '养殖行业', '科学管理', '猪肉品质', '定价策略', '消费阶层']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:261: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+
+Token count: 80, Total time: 31.2950 seconds, One token time: 0.3912 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：疫情', '影响', ' ', '养', '殖', '行业', ' ', '科', '学', '管理', ' ', '猪', '肉', '品质', ' ', '定', '价', '策略', ' ', '消', '费', '阶层', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###然后随着那个国民收入消费结构的不断升级然后我国房地产业仍处于可以大有作为的重要战略机遇期据分析房地产企业想要走得更远就要打破商业地产同质化的翻底谢谢大家重新调整规划的战略部署然后机要队已有的商业地产态然后进行优化打造活市场需求的商业地产业态你这个都是些说的是片面的不是直观的直观的就是说现在房地产它并不是说很景气它很有可能会出现暴动他一旦在泡沫行头无法控制的时候那就会造成大的房产冲击你有没有想过这个问题瘟疫带来的四面影响就是大伙谁也不能出去了然后上半年的房地产为什么要打折呢他大伙他要打折他为什么要不收资金对吧因为他的资金也不充足了他资金不充足了然后他的房地产就不能继续下去他的工人 他们别的人也要开支没有人在他的房子里面打所以说他过时他在飞行期间他已经7点5钟了但是现在飞行控制过了谁都在7点5钟里面可以喝就不能打他打到5点5钟但是他没有说不方便方便的 落架了他只是说打个5分钟他就要落架了已经迟到过程了对啊已经迟到过程了但是防御下现在已经不可以让人打了那因为你们朝鲜你的方向就是说已经过去就放假了你现在短时间内肯定没办法回账大家肯定还是要他可能不会回账但是他肯定不会再下降你觉得就是说我这方向还是容易回账的但是在短期之内它是一个网络你现在实验了放假不变他已经是在短期之内就是打平了但是主要的不是在放假是打平了现在看到的很少现在看到的很少都是保护的都是保护的我先传出一下最后总结一下创业的想法创业的想法我觉得创业一定要有资金有人在就没有这个想法我觉得我觉得会有很大的很大的一个人只要经营得到想掏钱然后有很好的大局观能很好的发展让货力我们说出了一个点子它这个这个材料成本比比较高这样子我们挣钱吧挣出货请不吝点赞 订阅 转发 打赏支持明镜与点点栏目謝謝我们这个C这个想法很通俗A这个想法我们来坚持这个我觉得你要回去需要去思考一下自己的这个意识在哪里先把我们的这个交易会先到这儿好谢谢大家你好,教教大学生创业时如何平衡资金团队和市场需求。你好,焦焦,基于之前我们讨论的内容,关于【养】殖行业面临的挑战,特别是疫情对养殖业的影响,你认为我们应该如何科学管理以减少疫情带来的损失,并保证猪肉品质,同时针对不同消费阶层,我们如何制定合理的定价策略,以满足不同消费者的###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n本次会议并未直接提及有关大学生创业时如何平衡资金、团队和市场需求的问题。不过，根据会议内容可提炼几点建议：首先，创业者需要确保充足的启动资金，并持续关注资金状况；其次，建立稳定的团队合作模式，注重成员间的协作；最后，深入了解市场需求，根据市场反馈灵活调整产品或服务定位。希望这些建议对你有所帮助。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###然后随着那个国民收入消费结构的不断升级然后我国房地产业仍处于可以大有作为的重要战略机遇期据分析房地产企业想要走得更远就要打破商业地产同质化的翻底谢谢大家重新调整规划的战略部署然后机要队已有的商业地产态然后进行优化打造活市场需求的商业地产业态你这个都是些说的是片面的不是直观的直观的就是说现在房地产它并不是说很景气它很有可能会出现暴动他一旦在泡沫行头无法控制的时候那就会造成大的房产冲击你有没有想过这个问题瘟疫带来的四面影响就是大伙谁也不能出去了然后上半年的房地产为什么要打折呢他大伙他要打折他为什么要不收资金对吧因为他的资金也不充足了他资金不充足了然后他的房地产就不能继续下去他的工人 他们别的人也要开支没有人在他的房子里面打所以说他过时他在飞行期间他已经7点5钟了但是现在飞行控制过了谁都在7点5钟里面可以喝就不能打他打到5点5钟但是他没有说不方便方便的 落架了他只是说打个5分钟他就要落架了已经迟到过程了对啊已经迟到过程了但是防御下现在已经不可以让人打了那因为你们朝鲜你的方向就是说已经过去就放假了你现在短时间内肯定没办法回账大家肯定还是要他可能不会回账但是他肯定不会再下降你觉得就是说我这方向还是容易回账的但是在短期之内它是一个网络你现在实验了放假不变他已经是在短期之内就是打平了但是主要的不是在放假是打平了现在看到的很少现在看到的很少都是保护的都是保护的我先传出一下最后总结一下创业的想法创业的想法我觉得创业一定要有资金有人在就没有这个想法我觉得我觉得会有很大的很大的一个人只要经营得到想掏钱然后有很好的大局观能很好的发展让货力我们说出了一个点子它这个这个材料成本比比较高这样子我们挣钱吧挣出货请不吝点赞 订阅 转发 打赏支持明镜与点点栏目謝謝我们这个C这个想法很通俗A这个想法我们来坚持这个我觉得你要回去需要去思考一下自己的这个意识在哪里先把我们的这个交易会先到这儿好谢谢大家你好,教教大学生创业时如何平衡资金团队和市场需求。你好,焦焦,基于之前我们讨论的内容,关于【养】殖行业面临的挑战,特别是疫情对养殖业的影响,你认为我们应该如何科学管理以减少疫情带来的损失,并保证猪肉品质,同时针对不同消费阶层,我们如何制定合理的定价策略,以满足不同消费者的###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+本次会议并未直接提及有关大学生创业时如何平衡资金、团队和市场需求的问题。不过，根据会议内容可提炼几点建议：首先，创业者需要确保充足的启动资金，并持续关注资金状况；其次，建立稳定的团队合作模式，注重成员间的协作；最后，深入了解市场需求，根据市场反馈灵活调整产品或服务定位。希望这些建议对你有所帮助。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200623_S_R001S01C01_agent_added/out_001-M_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 687605, dtype: float32, min: -0.36627960205078125, max: 0.3055839538574219
+问题音频时间长度: 42.9753125
+
+
+[Agent] 接收到问题: 你好 娇娇基于之前我们讨论的内容关于房地产行业目前面临的挑战你认为房地产企业应如何调整战略布局打破同质化竞争以适应市场需求和城镇化发展的趋势同时对于房地产泡沫的风险我们应如何提前预判和应对
+, 1736827888.1654735
+问题音频STT前的时刻: 1736827888.165589
+问题音频STT后的时刻: 1736827888.6858034
+问题音频STT时间: 0.520214319229126
+
+
+[Agent] 最终接收到问题: 你好,焦焦,如何通过创新提升房地产和装修行业的竞争力?
+, 1736827888.6863222
+问题音频送入Planner的时刻: 1736827888.6867447
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1736827889.3181047
+planner new_token time: 1736827889.7093024
+planner new_token time: 1736827889.7097397
+First token received: 1, time: 1736827889.7098293
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1736827889.7223191
+talker first token time: 1736827889.9591947
+talker first token time: 1736827890.0109248
+talker first token time: 1736827890.0453618
+talker first token time: 1736827890.0963159
+talker first token time: 1736827890.1219618
+talker first token time: 1736827890.1476746
+talker first token time: 1736827890.1732607
+talker first token time: 1736827890.19862
+talker first token time: 1736827890.2492762
+talker first token time: 1736827890.2749457
+talker first token time: 1736827890.3006163
+talker first token time: 1736827890.3266213
+talker first token time: 1736827890.352296
+talker first token time: 1736827890.3780062
+talker first token time: 1736827890.4034832
+talker first token time: 1736827890.4289305
+talker first token time: 1736827890.4545264
+talker first token time: 1736827890.5300193
+talker first token time: 1736827890.5554216
+talker first token time: 1736827890.5808454
+talker first token time: 1736827890.6062617
+talker first token time: 1736827890.6570594
+talker first token time: 1736827890.7078729
+talker first token time: 1736827890.7333183
+talker first token time: 1736827890.7590132
+talker first token time: 1736827890.784619
+talker first token time: 1736827890.8101966
+talker first token time: 1736827890.8361115
+talker first token time: 1736827890.887128
+talker first token time: 1736827890.912867
+talker first token time: 1736827890.938464
+talker first token time: 1736827890.9640691
+talker first token time: 1736827890.9896712
+talker first token time: 1736827891.0658693
+talker first token time: 1736827891.0915174
+talker first token time: 1736827891.1170635
+talker first token time: 1736827891.1426358
+talker first token time: 1736827891.1682136
+talker first token time: 1736827891.193871
+talker first token time: 1736827891.2195263
+talker first token time: 1736827891.2705677
+talker first token time: 1736827891.296263
+talker first token time: 1736827891.3219137
+talker first token time: 1736827891.3476274
+talker first token time: 1736827891.373349
+talker first token time: 1736827891.3992364
+talker first token time: 1736827891.42491
+talker first token time: 1736827891.4506557
+talker first token time: 1736827891.5268617
+talker first token time: 1736827891.5524387
+talker first token time: 1736827891.5780542
+talker first token time: 1736827891.628989
+talker first token time: 1736827891.6545925
+talker first token time: 1736827891.6804266
+talker first token time: 1736827891.7063527
+talker first token time: 1736827891.7322938
+talker first token time: 1736827891.7838783
+talker first token time: 1736827891.809786
+talker first token time: 1736827891.835745
+talker first token time: 1736827891.8616724
+talker first token time: 1736827891.887643
+talker first token time: 1736827891.913637
+talker first token time: 1736827891.9906018
+talker first token time: 1736827892.0166192
+talker first token time: 1736827892.0427997
+talker first token time: 1736827892.0690336
+talker first token time: 1736827892.0952332
+talker first token time: 1736827892.1213639
+talker first token time: 1736827892.1473918
+talker first token time: 1736827892.1734753
+talker first token time: 1736827892.225327
+talker first token time: 1736827892.2513597
+talker first token time: 1736827892.277338
+talker first token time: 1736827892.3033943
+talker first token time: 1736827892.329342
+talker first token time: 1736827892.407385
+talker first token time: 1736827892.4334288
+talker first token time: 1736827892.4592314
+talker first token time: 1736827892.4851468
+talker first token time: 1736827892.5110006
+talker first token time: 1736827892.5368812
+talker first token time: 1736827892.5884252
+talker first token time: 1736827892.614389
+talker first token time: 1736827892.6403596
+talker first token time: 1736827892.6663508
+talker first token time: 1736827892.7183273
+
+talker输出：
+
+Token count: 77, Total time: 3.2110 seconds, One token time: 0.0417 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+你好，娇娇。针对房地产和装修行业，可以从以下几个方面进行创新来提升竞争力：
+
+1. 利用互联网+模式，打造线上线下的融合平台，提供更便捷的服务。
+
+2. 引入新的设计元素和技术，提高装修的品质和环保性。
+
+3. 提升服务水平，通过优秀的售前售后服务，增强客户满意度和口碑。
+
+4. 推出多样化的房屋产品和服务，满足不同消费者的需求。
+
+5. 加强品牌建设和营销推广，扩大影响力和市场份额。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200623_S_R001S01C01_agent_added/out_001-M_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 687605, dtype: float32, min: -0.36627960205078125, max: 0.3055839538574219
+问题音频时间长度: 42.9753125
+
+
+[Agent] 接收到问题: 你好 娇娇基于之前我们讨论的内容关于房地产行业目前面临的挑战你认为房地产企业应如何调整战略布局打破同质化竞争以适应市场需求和城镇化发展的趋势同时对于房地产泡沫的风险我们应如何提前预判和应对
+, 1736827894.5455222
+问题音频STT前的时刻: 1736827894.5456376
+问题音频STT后的时刻: 1736827896.3810372
+问题音频STT时间: 1.8353996276855469
+
+
+[Agent] 最终接收到问题: 你好,焦焦。基于之前我们讨论的内容,关于房地产行业目前面临的挑战,你认为房地产企业应如何调整战略布局,打破同质化竞争,以适应市场需求和城镇化发展的趋势,同时对于房地产泡沫的风险,我们应如何提前预判和应对?對
+, 1736827896.381211
+问题音频送入Planner的时刻: 1736827896.3817413
+planner new_token time: 1736827897.0334296
+planner new_token time: 1736827897.4251196
+First token received: 0, time: 1736827897.425245
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1736827897.817247
+planner new_token time: 1736827898.2084289
+planner new_token time: 1736827898.6002975
+planner new_token time: 1736827898.9916935
+planner new_token time: 1736827899.3833272
+planner new_token time: 1736827899.7749052
+planner new_token time: 1736827900.1666672
+planner new_token time: 1736827900.5588403
+planner new_token time: 1736827900.9508252
+planner new_token time: 1736827901.3432574
+planner new_token time: 1736827901.7356606
+planner new_token time: 1736827902.1273644
+planner new_token time: 1736827902.519531
+planner new_token time: 1736827902.910946
+planner new_token time: 1736827903.3022523
+planner new_token time: 1736827903.6936057
+planner new_token time: 1736827904.0850282
+planner new_token time: 1736827904.4764442
+planner new_token time: 1736827904.868485
+planner new_token time: 1736827905.2602313
+planner new_token time: 1736827905.651726
+planner new_token time: 1736827906.0440824
+planner new_token time: 1736827906.435508
+planner new_token time: 1736827906.8282545
+planner new_token time: 1736827907.2196162
+planner new_token time: 1736827907.6112053
+planner new_token time: 1736827908.0026195
+planner new_token time: 1736827908.3940825
+planner new_token time: 1736827908.7861395
+planner new_token time: 1736827909.1785495
+planner new_token time: 1736827909.5702887
+planner new_token time: 1736827909.9628546
+planner new_token time: 1736827910.355468
+planner new_token time: 1736827910.7483752
+planner new_token time: 1736827911.142552
+planner new_token time: 1736827911.5355635
+planner new_token time: 1736827911.928684
+planner new_token time: 1736827912.321013
+planner new_token time: 1736827912.7136557
+planner new_token time: 1736827913.1060102
+planner new_token time: 1736827913.4989278
+planner new_token time: 1736827913.4995916
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：房地产行业 挑战 同质化竞争 房地产泡沫 风险应对
+
+
+提取的关键词: ['房地产行业', '挑战', '同质化竞争', '房地产泡沫', '风险应对']
+
+找到的上下文片段数量: 1
+
+Token count: 79, Total time: 31.0272 seconds, One token time: 0.3927 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：房地产', '行业', ' ', '挑', '战', ' ', '同', '质', '化', '竞争', ' ', '房', '地产', '泡沫', ' ', '风', '险', '应对', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###然后随着那个国民收入消费结构的不断升级然后我国房地产业仍处于可以大有作为的重要战略机遇期据分析房地产企业想要走得更远就要打破商业地产同质化的翻底谢谢大家重新调整规划的战略部署然后机要队已有的商业地产态然后进行优化打造活市场需求的商业地产业态你这个都是些说的是片面的不是直观的直观的就是说现在房地产它并不是说很景气它很有可能会出现暴动他一旦在泡沫行头无法控制的时候那就会造成大的房产冲击你有没有想过这个问题瘟疫带来的四面影响就是大伙谁也不能出去了然后上半年的房地产为什么要打折呢他大伙他要打折他为什么要不收资金对吧因为他的资金也不充足了他资金不充足了然后他的房地产就不能继续下去他的工人 他们别的人也要开支没有人在他的房子里面打所以说他过时他在飞行期间他已经7点5钟了但是现在飞行控制过了谁都在7点5钟里面可以喝就不能打他打到5点5钟但是他没有说不方便方便的 落架了他只是说打个5分钟他就要落架了已经迟到过程了对啊已经迟到过程了但是防御下现在已经不可以让人打了那因为你们朝鲜你的方向就是说已经过去就放假了你现在短时间内肯定没办法回账大家肯定还是要他可能不会回账但是他肯定不会再下降你觉得就是说我这方向还是容易回账的但是在短期之内它是一个网络你现在实验了放假不变他已经是在短期之内就是打平了但是主要的不是在放假是打平了现在看到的很少现在看到的很少都是保护的都是保护的我先传出一下最后总结一下创业的想法创业的想法我觉得创业一定要有资金有人在就没有这个想法我觉得我觉得会有很大的很大的一个人只要经营得到想掏钱然后有很好的大局观能很好的发展让货力我们说出了一个点子它这个这个材料成本比比较高这样子我们挣钱吧挣出货请不吝点赞 订阅 转发 打赏支持明镜与点点栏目謝謝我们这个C这个想法很通俗A这个想法我们来坚持这个我觉得你要回去需要去思考一下自己的这个意识在哪里先把我们的这个交易会先到这儿好谢谢大家你好,教教大学生创业时如何平衡资金团队和市场需求。你好,焦焦,基于之前我们讨论的内容,关于养殖行业面临的挑战,特别是疫情对养殖业的影响,你认为我们应该如何科学管理以减少疫情带来的损失,并保证猪肉品质,同时针对不同消费阶层,我们如何制定合理的定价策略,以满足不同消费者的需求你好,焦焦,如何通过创新提升房地产和装修行业的竞争力?你好,焦焦。基于之前我们讨论的内容,关于房【地】产行业目前面临的挑战,你认为房地产企业应如何调整战略布局,打破同质化竞争,以适应市场需求和城镇化发展的趋势,同时对于房地产泡沫的风险,我们应如何提前预判和应对?對###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n房地产企业应当重新调整规划的战略部署，优化现有的商业地产形态，以更好地符合市场需求。面对同质化竞争，企业需打破常规，创新商业模式。针对房地产泡沫风险，企业应密切关注市场动态，审慎评估财务状况，确保现金流稳定，并制定灵活的价格策略。此外，还需提高预警机制，以便及时应对潜在危机，保障企业的持续健康发展。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###然后随着那个国民收入消费结构的不断升级然后我国房地产业仍处于可以大有作为的重要战略机遇期据分析房地产企业想要走得更远就要打破商业地产同质化的翻底谢谢大家重新调整规划的战略部署然后机要队已有的商业地产态然后进行优化打造活市场需求的商业地产业态你这个都是些说的是片面的不是直观的直观的就是说现在房地产它并不是说很景气它很有可能会出现暴动他一旦在泡沫行头无法控制的时候那就会造成大的房产冲击你有没有想过这个问题瘟疫带来的四面影响就是大伙谁也不能出去了然后上半年的房地产为什么要打折呢他大伙他要打折他为什么要不收资金对吧因为他的资金也不充足了他资金不充足了然后他的房地产就不能继续下去他的工人 他们别的人也要开支没有人在他的房子里面打所以说他过时他在飞行期间他已经7点5钟了但是现在飞行控制过了谁都在7点5钟里面可以喝就不能打他打到5点5钟但是他没有说不方便方便的 落架了他只是说打个5分钟他就要落架了已经迟到过程了对啊已经迟到过程了但是防御下现在已经不可以让人打了那因为你们朝鲜你的方向就是说已经过去就放假了你现在短时间内肯定没办法回账大家肯定还是要他可能不会回账但是他肯定不会再下降你觉得就是说我这方向还是容易回账的但是在短期之内它是一个网络你现在实验了放假不变他已经是在短期之内就是打平了但是主要的不是在放假是打平了现在看到的很少现在看到的很少都是保护的都是保护的我先传出一下最后总结一下创业的想法创业的想法我觉得创业一定要有资金有人在就没有这个想法我觉得我觉得会有很大的很大的一个人只要经营得到想掏钱然后有很好的大局观能很好的发展让货力我们说出了一个点子它这个这个材料成本比比较高这样子我们挣钱吧挣出货请不吝点赞 订阅 转发 打赏支持明镜与点点栏目謝謝我们这个C这个想法很通俗A这个想法我们来坚持这个我觉得你要回去需要去思考一下自己的这个意识在哪里先把我们的这个交易会先到这儿好谢谢大家你好,教教大学生创业时如何平衡资金团队和市场需求。你好,焦焦,基于之前我们讨论的内容,关于养殖行业面临的挑战,特别是疫情对养殖业的影响,你认为我们应该如何科学管理以减少疫情带来的损失,并保证猪肉品质,同时针对不同消费阶层,我们如何制定合理的定价策略,以满足不同消费者的需求你好,焦焦,如何通过创新提升房地产和装修行业的竞争力?你好,焦焦。基于之前我们讨论的内容,关于房【地】产行业目前面临的挑战,你认为房地产企业应如何调整战略布局,打破同质化竞争,以适应市场需求和城镇化发展的趋势,同时对于房地产泡沫的风险,我们应如何提前预判和应对?對###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+房地产企业应当重新调整规划的战略部署，优化现有的商业地产形态，以更好地符合市场需求。面对同质化竞争，企业需打破常规，创新商业模式。针对房地产泡沫风险，企业应密切关注市场动态，审慎评估财务状况，确保现金流稳定，并制定灵活的价格策略。此外，还需提高预警机制，以便及时应对潜在危机，保障企业的持续健康发展。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+会议数据处理完成。

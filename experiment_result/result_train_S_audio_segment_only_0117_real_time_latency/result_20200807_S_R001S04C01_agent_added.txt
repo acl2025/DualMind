@@ -1,0 +1,503 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200807_S_R001S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 76
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5055: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.33s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:02<00:09,  2.45s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:04<00:06,  2.05s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:07<00:04,  4.34s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:12<00:00,  4.68s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:12<00:00,  4.28s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:09,  4.80s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.75s/it]哇002我是经理018我是设计部011我是主管010我是市场部
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.88s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.86s/it]
+007生产部行,好的咱们公司呢看一下咱是个服装厂吗看一下咱上半年的一些情况以及市场的销售情况然后我们下半年需要怎么做下面由我们的主管来主持一场主持一下这场会议好的现在的话因为新年过半了我们这边的话整個疫情影響整个服装行业发展并不是特别好然后库房这边应该是有这个存货的是吧库存这边的话先各个部门挨个先说一下现在部门的一个现状吧从生产部开始吧我们这边呢就是上半年了因为疫情的凉度就是库存量比较大给你做个香蕉或者是一些线上销售的因为这些人们都不能出门嘛所以而且还有一个原因就是前半年好多人都没有工资单位啊特别是教育机构啊所以这个消费水平都有低了导致了我们一些服装的一些库存以前畅销的也是因为人们要考虑一下我得先先吃饱肚子我才能可以去穿紧因为那个吃穿嘛首先是吃前半年不开支的或者说开的少的这些就会考虑一下解疑缩食那先解疑后缩食所以但是这个现在这个疫情区域平稳吧人们也都慢慢的从四月份开始走出了家门然后对这个川这方面也开始了恢复的正常的需求我们就要首先我认为我们这个市场这一块要加大一些宣传力度或者说搞一些这个促销的活动把我们库存的这些服装先清出去然后我们再生产其他的因为每年我们都会有一些就是每年的就是新款如果我们今年没有销出去的话难道明年有什么救火所以我们要清一下库存然后我们才回贡一下资金然后我们再可以进下轮投资,否则这些库存存在的话,这就成了死钱了,我们要用钱活起来。生产部这边的话,就是说它这个库存量是比较多的是吧?对对对。那市场部这边的话,我们后期的这个之前,年前签的这几个大批量的这个客户,大订单,他们现在是什么状态,这边的货款到齐了吗?咱们年前餐的这个货款是到齐了虽然咱们是签字订单是咱们负责把衣服卖给他们他们再往下销售嗯对然后咱们是这个生产是生产出来了然后也给给咱们把这个衣服也都给到他们了所以说货款应该货款他们都给到咱们嗯咱们上半年的话这个因为上半年咱们只有这几个大的订单所以咱们公司整体的话还是亏损状态嗯 接下来的话咱们要这个 因为下半年去评问之后 咱们要对这个市场进行一定的调查嗯 发放一定的调查文件和对顾客进行一定的这个满意度调查和这个样式调查 看他们喜欢什么样的咱们也要去对这个不仅仅是咱们的城市还要对一些其他的我觉得你这个市场调查是非常有必要的但是你刚才提到分发试卷什么的我觉得在咱们自己城市里还可以单说的要是说像您刚刚说的别的城市什么的这些潮流的趋势我个人的建议是您可以在微博上用咱们的官方账号来发起一个投票或者说一个然后说看一看这个这些顾客们这些平时买衣服的人对他们的消费趋势是哪方面我们可以优先考虑这一方面对对对我接下来就要说的是这个咱们的线上线下的两方面因为咱们现在不单单是要在咱们本城市销售全国各地都要销售咱们的衣服咱们这个是分析和预测工作就要做好吗市场的信息的收集整理和反馈掌握市场的动态然后不断扩大市场不断扩大咱们公司产品的在市场的占有率然后再者说咱们这个公司把卖市场咱们市场其实一直都挺好的然后咱们在网上也有了咱们自己的网店大家在咱们网店里边买衣服啊我觉得咱们这个品牌来说它的影响力还是有的然后可能咱们今天上半年的款是我们设计部设计的对吧然后现在也是有很多的库存一个我是想希望说咱们以现在的这个款然后我们多走一些网上的这个线上的消息剩下的我们会设计部会尽快的想办法来抢救这次吧然后说我们的成衣可能会说是分单件和套装的套装这方面我们会做一些新的搭配然后说让它变费为宝然后这些单件来说我们也会给它进行一个我们自己来给它进行一个搭配然后把它做成一个套装来打开一个做成一个新品来销售我觉得这样的方法是可以实行的设计部这边的话就是说对我们成本上的话也是一个节省对然后后期的话以下生产部这边首先咱们这个成立的质量是一定要达标的然后现在因为这个没有问题对这边的话因为现在是有库存然后需要设计部这边的话就是配合的做一下然后咱们看这个套装或者是说长像有一些裙装呢和套装的这个外套呀什么的混搭一下然后把它更有力的一个推广出去市场这边的话你像你这个市场调查肯定是要做到位的因为现在也是功夫产现在基本已经无误正轨了那后期设计部并不是说他完全要把所有的经费都放在这个清空层上面我们后期是需要发展的然后你需要配合着这个设计部这边做一个市场
+[Audio Detection] 在 510.90 秒检测到关键词 '好交交'。
+detection_time: 510.90, current_time: 496.00
+然后就在商场的外面临时搭一个台子因为他们专门店就在卖我们的衣服嘛就是这些业余的模特儿穿上我们的衣服刚才说到这种搭配我们给他们一些搭配让他们穿上我们的衣服还有就是像我们的气袍我们可以组织一场气袍秀让这些老年人中年人对吧或者说这个年轻的我们的旗袍去走秀他们也很高兴我们给他们一个展示自我的一个平台我们也可以把我们的服装给我们服装做一个广告让围观的人看到因为其实我们就是打一个表就是全部都是我们品牌的服装无论是这个旗袍秀还是这个服装秀都是我们品牌的服装就是让人们认识我们就是通过这样一次活动让路过的经过的走落的在商场逛的这些人都了解我们知道我们看到我们穿上我们然后感受我们这样我觉得我们在价格上也不用太低或者说我们可以有一个比如说200赠多少或者500减多少这样的活动去促销一下如果说促销简单是从价格上来说那我们就太亏了我们要从视觉效果上就是广告效应因为我们去投入广告的话其实这个效果还不如这种秀场的效果更好我们这个市场部的这个意见是非常好的然后就是说需要你市场部去跟我们所有的线下销售的一个门店去进行一个沟通然后设计部从中配合搭配这个衣服的一个穿搭还有秀场的一个安排都是需要大家一块去配合的我觉得这个生产部提到的秀场那个安排建议是可行的但是他说我们要采用的是不是专业的模特然后就可以说去找一些业余的好首先来说我觉得也可以接受这些业余的模特来但是嗯我想的是他们可以穿一些我们的嗯就是怎么说我们可以做一些新的搭配给他穿但是我们的主打款我们的主打款什么的我觉得还是需要来说用专业的模特来来把它衬托出来有一个或者两个因为咱们的牌子是我们的宣传广告因为咱们的牌子来说我觉得用业余的模特来说我们这种钱是不用守在这种地步上的因为好东西都是要用来衬托的你找一些业余的模特来说他们可能就是说对 体现不出来咱们的衣服的档次首先他们就把价格拉下去了我们的价格也没办法提上去虽然说咱们这件衣服的成本可能只有二十三十这样但是我们可以说找一些人对把它牵扯出来就把它卖的价格更高首先我们的档次就在这里所以说这个业余的模特我们可以安排在就是说一些小的门店可以搞一些活动他们来做然后我们主打的门店像咱们像咱们的商场啊这样一些精品门店的话我们是需要动用到这些专业的模特来做的然后我们还可以搞一个主打秀场就是说我们可以设立在我们的城市一个高端的一个地区然后我们设立一个秀场设计在这里然后找一些咱们业内的知名的一些厂家或者说这个商场的我们的承收部,他们可以来观看我们的衣服,我们的秀,说他们感兴趣的话,也可以说在这个秀结束了以后,然后说来跟咱们谈一下合作。我觉得咱们的档次在这儿,他们肯定也会跟咱们合作的。所以说这些钱就不要省了吧,该花的时候就花。后期的话我们的这个活动并不是说我们要优惠在这个价格上我们活动不是说所有的活动他都是需要把你的这个价格往下降的要的就是说你这个活动的一个对观众的一个吸引眼球要的是一个宣传对做一个引导引导他们去消费然后这边的话你像这个我们现在也是有这个像在各大视频软件上也是有这个销售的营销的然后我建议秀场的话到时候可以拼几个有一个像网红,流量比较大的,还有媒体,然后可以给我们做一个直播,因为现在直播带货这个行业是非常好的,发展是非常快。就在咱们这个搞这个活动的时候也可以进行直播。对。让不仅线下游,让线上的人,来不到现场的人也可以。也可以观看咱们的秀,对吧?然后在咱们这个直播的时候也可以就是把咱们卖场的衣服都放在但是这个活动的话还是需要少量的这个不能太多多的话就是会引起一个反感而且大家都熟悉你的这个流程了然后后期的话也是需要市场部这边多动脑筋多出几场活动然后我们并不是说完全都要靠走秀这方面来走如果仅仅凭走秀的话那我们可能就能瞬间的并不能带给我们更大的一个好的销量然后你市场部这边安排一下再具体的去跑一些这个其他的商场工厂这边我们现在是因为我们工厂做的都是比较大的然后我们这个成衣量也是比较多所以我们更多的话也是需要各个其他的一个门店的一个类型加盟帮我们去出售这些衣服出售这些衣服然后你后期的话也是多去跑一跑这个大令丹这个的话肯定是要有的然后设计部这边的话有没有说想过咱们单独的推出一款或者是说几款定制款这个倒是想过因为现在的人群呢他们比较注意的一点是独一无二因为现在女生喜欢自己穿的衣服就是自己的衣服不洗对吧首先来说我们会在下半年推出我们的限定款这个限定款呢说不仅仅是你有钱才可以买到而且你还需要说时间而且你需要在提前预购啊什么的这些出一个限定款这样它会比较吸引这些人的眼球还有的话就是我打算一
+[Text Detection] 在 1043.99 秒检测到关键词 '娇娇',current_time: 1023.00, 问题文本: 一个明星同款就是说明星同款这个衣服呢是可以带来很好的效益的因为比如说我比较喜欢的一个明星他穿的衣服是吧会觉得很好看我也想拥有你好娇娇基于之前我们讨论的内容关于如何提升品牌当次和吸引消费者的问题
+个明星同款就是说明星同款这个衣服呢是可以带来很好的效益的因为比如说我比较喜欢的一个明星他穿的衣服是吧会觉得很好看我也想拥有你好娇娇基于之前我们讨论的内容关于如何提升品牌当次和吸引消费者的问题也是比较不错的然后这边我们会考虑后面会考虑找一位就是说现在流量比较多当红一点的但是一定要有实力的那种女演员来参与我们的设计然后说这样我们的主题都有了说就是我们一个偶像一个明星来设计参与设计的服装这样也会说我们以后的销售来说也是比较好卖的因为毕竟说是自己的偶像参与设计的一个衣服大家都会比较感兴趣看完它是能设计出来的衣服是什么样子的所以说销量应该也不错这个想法是挺不错的然后因为我们现在的话像这个穿搭这方面还有风格的改变更多的话是倾向于女女性这方面,那对于男士这方面,设计部有没有其他的想法呢?这个是有的,刚才还没有跟您说到,我们设计部新来了几个设计师都是比较优秀的,然后他们就是主打的男装,然后因为现在其实正式的男装,趋向都是一些偏西服类型的然后他们几个来面试的时候带来了自己就是也不错这种西服风也有,但是也有这种偏休闲一点的西服风,因为西服穿上去其实不是太舒服的。然后人一天穿下来也是比较累的,所以说他们会在面料的舒适度上下了比较大的用心吧。我觉得还是比较不错的但是咱们现在这个部分咱们这个厂还是没有出现过这个南庄的这一说所以说现在也目前是在试着来试一试吧然后做了几件成衣然后我们接下来也会就是说带着您来看一看然后也会说根据市场部的调查然后可以让他再来一个对南庄的趋势我们一块来做了然后说这个方面就是可以的我有看到抖音上面有说送衣服这个就是说也是街头采访然后说可能会送你一些小礼物或者是说让你穿上他的衣服去帮他做一个推广那市场部这边的话诚意我建议是说可以考虑去做在市场做调查的时候可以让这个调查人员让顾客感受一下咱们的衣服穿上咱们的这个衣服因为我们的这个成本其实不高主要是做到一个调查和宣传可以拍的视频在各大平台上宣传的时候也可以买一些水军干嘛的把咱们这个视频的热度提上去让更多的人能看到咱们的视频能了解到咱们的品牌能够有一些这个算是回馈吧让更多的人看到咱们的视频和衣服之后他们能来买我们的衣服咱们这个支出跟这个收入一定是会成正比的然后我这还有一个想法就是说我们也可以跟一些电视节目来合作就是说比如说现在这个真人秀这个走向趋势是非常大的像一些优秀的这些综艺节目他们都是有你的品牌代沐商然后他们穿的衣服或者说每一项游戏啊什么可能会换衣服这些都是用厂家来提供的由品牌方来提供的我们可以说是跟一个风景节目去谈一下合作然后把这个把咱们的衣服就是说免费提供给他们穿因为嘉宾来说也总共也就那么几位也不多所以说成本也是不高然后就好咱们还可以推广的咱们的衣服这个的话这个的话就是说还是你后期具体的要都是去跟市场部这边沟通然后需要市场部把这个合作谈下来然后你去和市场部一起把这个衣服样衣这方面然后一起去挑选然后我这边的话你像设计部这方面想法都是非常不错的后期的话就是需要我们生产部和市场部这方面配合生产这方面你生产部会保质保量对,你其他的在这段时间内做好单纯的你部门这方面还有什么其他的问题吗我们这边就是说只要我们设计出来的一些新款我们都会在这段时间内保质保量的完成然后我们的工人其实一直都是非常敬业的在必要的时候我们加班加点大家都没有任何的怨言但是我也在各个车间里跟大家说了如果是加班加点即使是正常情况下我们一定要注意安全特别是机械这一块对于机械的一些维护维修我们的这些维修人员非常的精心尽责我们也给予他们一定的奖励所有的凉乌在每一个细节上因为我们的检察人员验收这一块做得非常严格不能让我们的我们就是把握的就是不合格的我们检究这儿就是这个这边就不能入关不能入库不合格的不能入库那么在这个出入的时候不合格的我們要再次檢查不能说小伙出去了开线了之类的这样的瑕疵绝对不可以有因为毕竟我们是品牌服装嘛我们一定要让所有的顾客买了我们服装之后就穿上不但在这一样是颜色 这些款式因为我们是一个整体嘛我对员工一直都说我们要尊重设计人员的他们辛苦来设计出来的时候我们设计得很美我们做的很美这个整体就是一个败笔了所以我们在每一只哪一线都要做到这个精工细做我们就要求精求细让每一个员工做好自己的本职工作把每一件衣服每一只哪一线都做到极致做到最好这是我们的要求那我这还有一个问题就是说我们下半年的主打款我会考虑用到这个次刺
+[Text Detection] 在 1566.08 秒检测到关键词 '焦焦',current_time: 1550.00, 问题文本: 刺绣的元素然后我想说刺绣来说一般都是比较精细的咱们工厂说有没有这种刺绣这一方面做的功能有没有做的特别好的你好焦焦如何结合明星效应和电视节目合作来提升品牌服装销量其实一般就请我来说就是说普通的服装我们都是用我们机器
+绣的元素然后我想说刺绣来说一般都是比较精细的咱们工厂说有没有这种刺绣这一方面做的功能有没有做的特别好的你好焦焦如何结合明星效应和电视节目合作来提升品牌服装销量其实一般就请我来说就是说普通的服装我们都是用我们机器其实看价格吧人们也知道我这个价格肯定就是不是人工刺绣的价格也买不到人们也能够接受但是对于那些定制品方的话有刺绣的肯定是人工刺绣的他们都是专门学习的或者是传统的家族的就是有这个刺绣的历史他们还是很精湛的这个没有问题嗯好那那个生产部不只要保证人身安全整个仓库的安全也是很像火灾的隐患也是一定要查清楚的因为现在三福天天气比较干燥炎热然后很容易引起火灾所以不管是在下班以后还是说你们在上班的时候我希望川普这边的话就是要做好一个全面的检查对,在这个安全方面呢,我们就是首先就是在整个的车间普及了这个安全消防的这些常识,像必要的比如一些四总司会啊,这些最基础的消防安全知识,大家都懂都会,然后就是这个消防窗啊,这些灭火器啊,每一个人都要会用,然后在固定的地点位置定期的去更换,然后就是所有的车间所有的人我们是戒指禁止吸烟的你有烟或者你吸烟下班之后吸或者说你就不要把这个烟带到这个车间里面来杜绝明火因为这个布料呢其实它是不防火的一样问题吗对特别是在仓库里面禁止火我们会有这个标志牌金曲烟火所有的你不能洗烟,进烟进火的地方然后通风换气这一块一方面我们要进烟进火一方面要防潮如果这个布料是受潮了那么就会影响到它的美观甚至于就废了这一批布所以在防潮防火这方面我们一直都是很小心的在做的因為倉庫的東西比較多通道切记千万不要堵住这个安全通道我们始终是说的禁止放任何的杂物如果出现不小心的把东西放在安全通道上我们会及时的梳理把它清理掉任何的时候不管说有人就大意了说放这儿吧这儿也不用这个地方就是为了防止万一的一定要保持安全通道的所以这一点上一直在跟大家强调每天的班前会班后会都在跟大家说到安全这方面如果没有了安全一旦发生了火灾那我们的所有的辛苦都就丢了仓库的话损失是非常大的所以仓库这方面如果说口头传达没有那么好的效果的话可以说是去加些惩罚测试嗯啊可以就是责任人质嘛就是对轮班谁出现了责任就是负责嗯就是一追到底这个责任我们这个就是细化责任之人对对对只要是出了问题你们就可以追究到人不是说追究到车间或者追究到班组只追究到人嗯我们是我们厂是嗯问责于车间车间问责于班组班组问责于人是这样的好所以出了事之后立刻大家知道是谁问题誰來承擔市场这边有什么问题啊?我这边的话,咱们这个上半年其实这个销售差评还是没有那么多大,还是有几率的。差评的话,主要是咱们这个一个是送货不及时。送货不及时的话,这就考虑到这个物流的问题了。物流的话,咱们这个公司一直跟这个物流公司合作,也可能是因为这个这个洪水嘛,因为洪水在拿方那边下暴雨,然后洪水它可能送的比较慢,咱们跟客户交流以后,客户也是能理解咱们这个物流的问题。再一个咱们这个插评对对对这个不是咱们人为能够所主导的再一个插评的话就是他们会嫌咱们这个这个课客服 态度不够好这个我们也会这个我们也急需处理了对这个相应的客服进行了一定的这个惩罚如果他再被投诉的话咱们就采取是第一次警告 第二次罚钱第三次进行劝退去进行这个这个惩罚措施对,这个的话,像差别人这方面,我们一定要追究起来,从根源解决问题。对。我觉得这样的事情发生之后呢,就要坚持三不放过的原则。就是责任人没有得到教训,不能放过。然后这个事故没有补救的措施,不能放过。大众,就是所有的员工没有得到教训,不能放过。一定要堅持在辦公會、辦年會反復強調這件事情如果坚持三不放弱的原则之后,才能够杜绝类似的事情再次的发生。对的,然后差评那边主要就是这两方面。咱们这儿主要是大客户,咱们负责大客户的一些关系的维护与管理。对,这个客户的维系是一定要做好的但是我们不能仅仅靠着老客户对,我们是需要去发掘新的客户,这个的话应用于线下门店可以,但是如果说大批量的订货,这个老客户不一定的话怎么做到,所以说还是需要市场部这边再深度的去挖掘,首先你要实地去考察然后知道我们这边有什么我们能够带给他什么比
+[Text Detection] 在 2070.80 秒检测到关键词 '娇娇',current_time: 2046.00, 问题文本: 比如像一些公司对大一点的公司对公司可能需要团建的时候穿一样的衣服或者是在毕业季的时候在毕业季的时候大家在毕业季的时候大家毕业的一些礼服之类的班服这个都可以你好娇娇基于之前我们讨论的内容关于仓库安全问题
+如像一些公司对大一点的公司对公司可能需要团建的时候穿一样的衣服或者是在毕业季的时候在毕业季的时候大家在毕业季的时候大家毕业的一些礼服之类的班服这个都可以你好娇娇基于之前我们讨论的内容关于仓库安全问题可以生产一些情侣服,也挺长交的。对,这个就需要我们调研以后,去跟他们谈一些合作。下面就需要我们去调查,去看他们哪里需要我们,去跟他们商讨这些东西。对,我们这边的话,要把我们现有的资源去推广出去。嗯,世紀部這邊的話对于整体的安排还有什么问题吗总体的安排来说我觉得我们首先需要把这个我们的库存清出去对吧这是一个首要的问题然后我们清出去以后可以开始我们下半年准备一场秀的准备这些衣服啊什么的我们要开始生产了然后其他的问题呢我觉得像刚刚市长们提到的那些可以跟一些公司的团建来说,这些定制服装来做,我觉得我们的生产部如果说他有经历的话,也是可以考虑接受的。因为像这些公司,他的公服,还有一些学校的校服,幼儿园的员服,这些都是大批量的,市场部可以去跑一跑,我觉得也是挺好的。然后咱们我们设计部现在主要的工作呢就是说把咱们我们就开始准备下半年的绣款了因为我们也是一个时尚的品牌我们不能完全靠团建或是统一的校服来做销量也是需要新的顾客然后我们应对的话是当下的渠道对对我们现在是当下的一个年轻群体所以说设计部这边的话也是需要多辛苦然后再去设计出更多更好的一个款式也是需要这个辛苦市场部的一个配合然后这边让儿童还有妇女这一方面可以加大一些利用因为有一句话说赚妇女赚女人和孩子的钱毫不眨眼因为父母对于孩子来说都是很多的天然对他很舍得给孩子花钱那女人呢也很舍得打扮自己特别是男朋友要给女朋友买东西的时候也会付息代价为了好女朋友欢心嘛所以在设计这方面如果有一些新颖的潮流的时尚的款式讨论女孩的喜的话那么销量是不成问题的那这样吧那这个生产过后期的话把你们这边安全措施的一个讲法问题然后你订一个合同然后用一个文件发送给我然后这边的话市场部也是需要现在都说后期的安排还有设计部这边您把你们后期的一个安排然后你定出一个文档然后发送给我这边然后就赶紧着手去准备好那各部门下去之后记得交给我们的主管好的那今天就先到里边你
+[Text Detection] 在 2327.64 秒检测到关键词 '焦焦',current_time: 2325.00, 问题文本: 你好,焦焦,如何?有效清蒼病危下半年,秀准备衣服请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+好,焦焦,如何?有效清蒼病危下半年,秀准备衣服请不吝点赞 订阅 转发 打赏支持明镜与点点栏目会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200807_S_R001S04C01_agent_added/out_001-F_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 275429, dtype: float32, min: -0.18222427368164062, max: 0.1403350830078125
+问题音频时间长度: 17.2143125
+
+
+[Agent] 接收到问题: 你好,焦焦,如何?有效清蒼病危下半年,秀准备衣服请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1737102518.1756053
+问题音频STT前的时刻: 1737102518.1757495
+问题音频STT后的时刻: 1737102518.7790818
+问题音频STT时间: 0.6033322811126709
+
+
+[Agent] 最终接收到问题: 你好,教教如何通过线上渠道提高库存服装的销量并预测市场趋势
+, 1737102518.7792494
+问题音频送入Planner的时刻: 1737102518.779651
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1737102519.4024565
+planner new_token time: 1737102519.7951674
+planner new_token time: 1737102519.7956533
+First token received: 1, time: 1737102519.7965689
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1737102519.8489702
+talker first token time: 1737102520.4952133
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1737102520.554952
+talker first token time: 1737102520.5810916
+talker first token time: 1737102520.6071882
+talker first token time: 1737102520.633137
+talker first token time: 1737102520.6592057
+talker first token time: 1737102520.6851206
+talker first token time: 1737102520.7113135
+talker first token time: 1737102520.7373126
+talker first token time: 1737102520.763289
+talker first token time: 1737102520.7898254
+talker first token time: 1737102520.8160985
+talker first token time: 1737102520.8421233
+talker first token time: 1737102520.8679755
+talker first token time: 1737102520.8938813
+talker first token time: 1737102520.9197502
+talker first token time: 1737102520.9965906
+talker first token time: 1737102521.0224712
+talker first token time: 1737102521.0482864
+talker first token time: 1737102521.0741334
+talker first token time: 1737102521.099879
+talker first token time: 1737102521.1257184
+talker first token time: 1737102521.151494
+talker first token time: 1737102521.1773183
+talker first token time: 1737102521.228842
+talker first token time: 1737102521.254782
+talker first token time: 1737102521.306283
+talker first token time: 1737102521.33219
+talker first token time: 1737102521.3839698
+talker first token time: 1737102521.4102736
+talker first token time: 1737102521.4367743
+talker first token time: 1737102521.4631
+talker first token time: 1737102521.4893296
+talker first token time: 1737102521.552819
+talker first token time: 1737102521.5793452
+talker first token time: 1737102521.6062133
+talker first token time: 1737102521.63328
+talker first token time: 1737102521.7111912
+talker first token time: 1737102521.7373428
+talker first token time: 1737102521.7637143
+talker first token time: 1737102521.7899177
+talker first token time: 1737102521.8160694
+talker first token time: 1737102521.8422194
+talker first token time: 1737102521.8684485
+talker first token time: 1737102521.9208896
+talker first token time: 1737102521.9473388
+talker first token time: 1737102521.9736948
+talker first token time: 1737102522.000148
+talker first token time: 1737102522.0263982
+talker first token time: 1737102522.104708
+talker first token time: 1737102522.131077
+talker first token time: 1737102522.1573865
+talker first token time: 1737102522.1835566
+talker first token time: 1737102522.20976
+talker first token time: 1737102522.2360053
+talker first token time: 1737102522.2885334
+talker first token time: 1737102522.3148828
+talker first token time: 1737102522.3411882
+talker first token time: 1737102522.4193292
+talker first token time: 1737102522.4456174
+talker first token time: 1737102522.4719646
+talker first token time: 1737102522.4982076
+talker first token time: 1737102522.5245678
+talker first token time: 1737102522.5707572
+talker first token time: 1737102522.5979738
+talker first token time: 1737102522.653395
+talker first token time: 1737102522.6830482
+talker first token time: 1737102522.709655
+talker first token time: 1737102522.736498
+talker first token time: 1737102522.7632127
+talker first token time: 1737102522.820964
+talker first token time: 1737102522.8480632
+talker first token time: 1737102522.874923
+talker first token time: 1737102522.9017773
+talker first token time: 1737102522.9803424
+talker first token time: 1737102523.0067794
+talker first token time: 1737102523.033514
+talker first token time: 1737102523.059875
+talker first token time: 1737102523.0862205
+talker first token time: 1737102523.1126192
+talker first token time: 1737102523.139049
+talker first token time: 1737102523.1655245
+talker first token time: 1737102523.1918404
+talker first token time: 1737102523.2181098
+talker first token time: 1737102523.2444088
+talker first token time: 1737102523.270731
+talker first token time: 1737102523.297038
+talker first token time: 1737102523.3233438
+talker first token time: 1737102523.3762572
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+你好，可以通过以下几种方式来提高库存服装的销量和预测市场趋势：
+
+1. 利用线上渠道进行促销活动，如打折、满减、买一送一等，吸引消费者购买。
+2. 通过社交媒体平台进行宣传推广，增加品牌曝光度。
+3. 定期更新产品款式，迎合市场需求。
+4. 分析顾客评价和购物行为，了解消费者需求和喜好，优化产品策略。
+5. 利用大数据和人工智能技术对市场趋势进行预测和分析。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200807_S_R001S04C01_agent_added/out_001-F_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 275429, dtype: float32, min: -0.18222427368164062, max: 0.1403350830078125
+问题音频时间长度: 17.2143125
+
+
+[Agent] 接收到问题: 你好,焦焦,如何?有效清蒼病危下半年,秀准备衣服请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1737102524.7326136
+问题音频STT前的时刻: 1737102524.7327278
+问题音频STT后的时刻: 1737102526.4254591
+问题音频STT时间: 1.6927313804626465
+
+
+[Agent] 最终接收到问题: 你好焦焦基于之前我们讨论的内容关于如何提升品牌当次和吸引消费者的问题你怎么看待使用业余模特和专特结合的方式来进行新品展示和秀场活动同时我们应该如何平衡成本和效果确保既能吸引眼球又能保持品牌形象
+, 1737102526.425675
+问题音频送入Planner的时刻: 1737102526.4261591
+planner new_token time: 1737102527.0768712
+planner new_token time: 1737102527.4659264
+First token received: 0, time: 1737102527.4660423
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1737102527.8554065
+planner new_token time: 1737102528.245027
+planner new_token time: 1737102528.6346664
+planner new_token time: 1737102529.0246024
+planner new_token time: 1737102529.4154963
+planner new_token time: 1737102529.8053086
+planner new_token time: 1737102530.1946898
+planner new_token time: 1737102530.5845668
+planner new_token time: 1737102530.9743006
+planner new_token time: 1737102531.364485
+planner new_token time: 1737102531.7540607
+planner new_token time: 1737102532.1436167
+planner new_token time: 1737102532.5336304
+planner new_token time: 1737102532.9236577
+planner new_token time: 1737102533.3140357
+planner new_token time: 1737102533.7042866
+planner new_token time: 1737102534.094754
+planner new_token time: 1737102534.4844604
+planner new_token time: 1737102534.8766148
+planner new_token time: 1737102535.2659862
+planner new_token time: 1737102535.6569886
+planner new_token time: 1737102536.046965
+planner new_token time: 1737102536.438288
+planner new_token time: 1737102536.8292685
+planner new_token time: 1737102537.2202954
+planner new_token time: 1737102537.6111498
+planner new_token time: 1737102538.0015774
+planner new_token time: 1737102538.3919656
+planner new_token time: 1737102538.7824838
+planner new_token time: 1737102539.173479
+planner new_token time: 1737102539.5638642
+planner new_token time: 1737102539.9546936
+planner new_token time: 1737102540.344593
+planner new_token time: 1737102540.7357628
+planner new_token time: 1737102541.125717
+planner new_token time: 1737102541.5171335
+planner new_token time: 1737102541.9078097
+planner new_token time: 1737102542.2989569
+planner new_token time: 1737102542.6894822
+planner new_token time: 1737102543.0817752
+planner new_token time: 1737102543.0825038
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：业余模特 专特结合 新品展示 成本和效果 平衡成本和效果
+
+
+提取的关键词: ['业余模特', '专特结合', '新品展示', '成本和效果', '平衡成本和效果']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+
+Token count: 116, Total time: 46.4105 seconds, One token time: 0.4001 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：业余', '模特', ' ', '专', '特', '结合', ' 新', '品', '展示', ' 成', '本', '和', '效果', ' ', '平', '衡', '成本', '和', '效果', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###那市场部这边的话,我们后期的这个之前,年前签的这几个大批量的这个客户,大订单,他们现在是什么状态,这边的货款到齐了吗?咱们年前餐的这个货款是到齐了虽然咱们是签字订单是咱们负责把衣服卖给他们他们再往下销售嗯对然后咱们是这个生产是生产出来了然后也给给咱们把这个衣服也都给到他们了所以说货款应该货款他们都给到咱们嗯咱们上半年的话这个因为上半年咱们只有这几个大的订单所以咱们公司整体的话还是亏损状态嗯 接下来的话咱们要这个 因为下半年去评问之后 咱们要对这个市场进行一定的调查嗯 发放一定的调查文件和对顾客进行一定的这个满意度调查和这个样式调查 看他们喜欢什么样的咱们也要去对这个不仅仅是咱们的城市还要对一些其他的我觉得你这个市场调查是非常有必要的但是你刚才提到分发试卷什么的我觉得在咱们自己城市里还可以单说的要是说像您刚刚说的别的城市什么的这些潮流的趋势我个人的建议是您可以在微博上用咱们的官方账号来发起一个投票或者说一个然后说看一看这个这些顾客们这些平时买衣服的人对他们的消费趋势是哪方面我们可以优先考虑这一方面对对对我接下来就要说的是这个咱们的线上线下的两方面因为咱们现在不单单是要在咱们本城市销售全国各地都要销售咱们的衣服咱们这个是分析和预测工作就要做好吗市场的信息的收集整理和反馈掌握市场的动态然后不断扩大市场不断扩大咱们公司产品的在市场的占有率然后再者说咱们这个公司把卖市场咱们市场其实一直都挺好的然后咱们在网上也有了咱们自己的网店大家在咱们网店里边买衣服啊我觉得咱们这个品牌来说它的影响力还是有的然后可能咱们今天上半年的款是我们设计部设计的对吧然后现在也是有很多的库存一个我是想希望说咱们以现在的这个款然后我们多走一些网上的这个线上的消息剩下的我们会设计部会尽快的想办法来抢救这次吧然后说我们的成衣可能会说是分单件和套装的套装这方面我们会做一些新的搭配然后说让它变费为宝然后这些单件来说我们也会给它进行一个我们自己来给它进行一个搭配然后把它做成一个套装来打开一个做成一个新品来销售我觉得这样的方法是可以实行的设计部这边的话就是说对我们成本上的话也是一个节省对然后后期的话以下生产部这边首先咱们这个成立的质量是一定要达标的然后现在因为这个没有问题对这边的话因为现在是有库存然后需要设计部这边的话就是配合的做一下然后咱们看这个套装或者是说长像有一些裙装呢和套装的这个外套呀什么的混搭一下然后把它更有力的一个推广出去市场这边的话你像你这个市场调查肯定是要做到位的因为现在也是功夫产现在基本已经无误正轨了那后期设计部并不是说他完全要把所有的经费都放在这个清空层上面我们后期是需要发展的然后你需要配合着这个设计部这边做一个市场然后就在商场的外面临时搭一个台子因为他们专门店就在卖我们的衣服嘛就是这些【业】余的模特儿穿上我们的衣服刚才说到这种搭配我们给他们一些搭配让他们穿上我们的衣服还有就是像我们的气袍我们可以组织一场气袍秀让这些老年人中年人对吧或者说这个年轻的我们的旗袍去走秀他们也很高兴我们给他们一个展示自我的一个平台我们也可以把我们的服装给我们服装做一个广告让围观的人看到因为其实我们就是打一个表就是全部都是我们品牌的服装无论是这个旗袍秀还是这个服装秀都是我们品牌的服装就是让人们认识我们就是通过这样一次活动让路过的经过的走落的在商场逛的这些人都了解我们知道我们看到我们穿上我们然后感受我们这样我觉得我们在价格上也不用太低或者说我们可以有一个比如说200赠多少或者500减多少这样的活动去促销一下如果说促销简单是从价格上来说那我们就太亏了我们要从视觉效果上就是广告效应因为我们去投入广告的话其实这个效果还不如这种秀场的效果更好我们这个市场部的这个意见是非常好的然后就是说需要你市场部去跟我们所有的线下销售的一个门店去进行一个沟通然后设计部从中配合搭配这个衣服的一个穿搭还有秀场的一个安排都是需要大家一块去配合的我觉得这个生产部提到的秀场那个安排建议是可行的但是他说我们要采用的是不是专业的模特然后就可以说去找一些业余的好首先来说我觉得也可以接受这些业余的模特来但是嗯我想的是他们可以穿一些我们的嗯就是怎么说我们可以做一些新的搭配给他穿但是我们的主打款我们的主打款什么的我觉得还是需要来说用专业的模特来来把它衬托出来有一个或者两个因为咱们的牌子是我们的宣传广告因为咱们的牌子来说我觉得用业余的模特来说我们这种钱是不用守在这种地步上的因为好东西都是要用来衬托的你找一些业余的模特来说他们可能就是说对 体现不出来咱们的衣服的档次首先他们就把价格拉下去了我们的价格也没办法提上去虽然说咱们这件衣服的成本可能只有二十三十这样但是我们可以说找一些人对把它牵扯出来就把它卖的价格更高首先我们的档次就在这里所以说这个业余的模特我们可以安排在就是说一些小的门店可以搞一些活动他们来做然后我们主打的门店像咱们像咱们的商场啊这样一些精品门店的话我们是需要动用到这些专业的模特来做的然后我们还可以搞一个主打秀场就是说我们可以设立在我们的城市一个高端的一个地区然后我们设立一个秀场设计在这里然后找一些咱们业内的知名的一些厂家或者说这个商场的我们的承收部,他们可以来观看我们的衣服,我们的秀,说他们感兴趣的话,也可以说在这个秀结束了以后,然后说来跟咱们谈一下合作。\n---\n然后咱们我们设计部现在主要的工作呢就是说把咱们我们就开始准备下半年的绣款了因为我们也是一个时尚的品牌我们不能完全靠团建或是统一的校服来做销量也是需要新的顾客然后我们应对的话是当下的渠道对对我们现在是当下的一个年轻群体所以说设计部这边的话也是需要多辛苦然后再去设计出更多更好的一个款式也是需要这个辛苦市场部的一个配合然后这边让儿童还有妇女这一方面可以加大一些利用因为有一句话说赚妇女赚女人和孩子的钱毫不眨眼因为父母对于孩子来说都是很多的天然对他很舍得给孩子花钱那女人呢也很舍得打扮自己特别是男朋友要给女朋友买东西的时候也会付息代价为了好女朋友欢心嘛所以在设计这方面如果有一些新颖的潮流的时尚的款式讨论女孩的喜的话那么销量是不成问题的那这样吧那这个生产过后期的话把你们这边安全措施的一个讲法问题然后你订一个合同然后用一个文件发送给我然后这边的话市场部也是需要现在都说后期的安排还有设计部这边您把你们后期的一个安排然后你定出一个文档然后发送给我这边然后就赶紧着手去准备好那各部门下去之后记得交给我们的主管好的那今天就先到里边你好,焦焦,如何?有效清蒼病危下半年,秀准备衣服请不吝点赞 订阅 转发 打赏支持明镜与点点栏目你好,教教如何通过线上渠道提高库存服装的销量并预测市场趋势你好焦焦基于之前我们讨论的内容关于如何提升品牌当次和吸引消费者的问题你怎么看待使用【业】余模特和专特结合的方式来进行新品展示和秀场活动同时我们应该如何平衡成本和效果确保既能吸引眼球又能保持品牌###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n会议中提到使用业余模特与专业模特结合的方式来进行新品展示和秀场活动。业余模特可以用于较小规模的活动及店铺，而专业模特则用于主打产品和高端秀场，以提升品牌形象和档次。此外，通过举办旗袍秀等创意活动，不仅能够增加曝光度，还能通过视觉效果达到更好的广告效应。为了平衡成本与效果，需针对不同场合选择合适的模特，并制定有效的促销策略如“买一赠一”或“满减优惠”，从而既吸引眼球又保持品牌价值。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###那市场部这边的话,我们后期的这个之前,年前签的这几个大批量的这个客户,大订单,他们现在是什么状态,这边的货款到齐了吗?咱们年前餐的这个货款是到齐了虽然咱们是签字订单是咱们负责把衣服卖给他们他们再往下销售嗯对然后咱们是这个生产是生产出来了然后也给给咱们把这个衣服也都给到他们了所以说货款应该货款他们都给到咱们嗯咱们上半年的话这个因为上半年咱们只有这几个大的订单所以咱们公司整体的话还是亏损状态嗯 接下来的话咱们要这个 因为下半年去评问之后 咱们要对这个市场进行一定的调查嗯 发放一定的调查文件和对顾客进行一定的这个满意度调查和这个样式调查 看他们喜欢什么样的咱们也要去对这个不仅仅是咱们的城市还要对一些其他的我觉得你这个市场调查是非常有必要的但是你刚才提到分发试卷什么的我觉得在咱们自己城市里还可以单说的要是说像您刚刚说的别的城市什么的这些潮流的趋势我个人的建议是您可以在微博上用咱们的官方账号来发起一个投票或者说一个然后说看一看这个这些顾客们这些平时买衣服的人对他们的消费趋势是哪方面我们可以优先考虑这一方面对对对我接下来就要说的是这个咱们的线上线下的两方面因为咱们现在不单单是要在咱们本城市销售全国各地都要销售咱们的衣服咱们这个是分析和预测工作就要做好吗市场的信息的收集整理和反馈掌握市场的动态然后不断扩大市场不断扩大咱们公司产品的在市场的占有率然后再者说咱们这个公司把卖市场咱们市场其实一直都挺好的然后咱们在网上也有了咱们自己的网店大家在咱们网店里边买衣服啊我觉得咱们这个品牌来说它的影响力还是有的然后可能咱们今天上半年的款是我们设计部设计的对吧然后现在也是有很多的库存一个我是想希望说咱们以现在的这个款然后我们多走一些网上的这个线上的消息剩下的我们会设计部会尽快的想办法来抢救这次吧然后说我们的成衣可能会说是分单件和套装的套装这方面我们会做一些新的搭配然后说让它变费为宝然后这些单件来说我们也会给它进行一个我们自己来给它进行一个搭配然后把它做成一个套装来打开一个做成一个新品来销售我觉得这样的方法是可以实行的设计部这边的话就是说对我们成本上的话也是一个节省对然后后期的话以下生产部这边首先咱们这个成立的质量是一定要达标的然后现在因为这个没有问题对这边的话因为现在是有库存然后需要设计部这边的话就是配合的做一下然后咱们看这个套装或者是说长像有一些裙装呢和套装的这个外套呀什么的混搭一下然后把它更有力的一个推广出去市场这边的话你像你这个市场调查肯定是要做到位的因为现在也是功夫产现在基本已经无误正轨了那后期设计部并不是说他完全要把所有的经费都放在这个清空层上面我们后期是需要发展的然后你需要配合着这个设计部这边做一个市场然后就在商场的外面临时搭一个台子因为他们专门店就在卖我们的衣服嘛就是这些【业】余的模特儿穿上我们的衣服刚才说到这种搭配我们给他们一些搭配让他们穿上我们的衣服还有就是像我们的气袍我们可以组织一场气袍秀让这些老年人中年人对吧或者说这个年轻的我们的旗袍去走秀他们也很高兴我们给他们一个展示自我的一个平台我们也可以把我们的服装给我们服装做一个广告让围观的人看到因为其实我们就是打一个表就是全部都是我们品牌的服装无论是这个旗袍秀还是这个服装秀都是我们品牌的服装就是让人们认识我们就是通过这样一次活动让路过的经过的走落的在商场逛的这些人都了解我们知道我们看到我们穿上我们然后感受我们这样我觉得我们在价格上也不用太低或者说我们可以有一个比如说200赠多少或者500减多少这样的活动去促销一下如果说促销简单是从价格上来说那我们就太亏了我们要从视觉效果上就是广告效应因为我们去投入广告的话其实这个效果还不如这种秀场的效果更好我们这个市场部的这个意见是非常好的然后就是说需要你市场部去跟我们所有的线下销售的一个门店去进行一个沟通然后设计部从中配合搭配这个衣服的一个穿搭还有秀场的一个安排都是需要大家一块去配合的我觉得这个生产部提到的秀场那个安排建议是可行的但是他说我们要采用的是不是专业的模特然后就可以说去找一些业余的好首先来说我觉得也可以接受这些业余的模特来但是嗯我想的是他们可以穿一些我们的嗯就是怎么说我们可以做一些新的搭配给他穿但是我们的主打款我们的主打款什么的我觉得还是需要来说用专业的模特来来把它衬托出来有一个或者两个因为咱们的牌子是我们的宣传广告因为咱们的牌子来说我觉得用业余的模特来说我们这种钱是不用守在这种地步上的因为好东西都是要用来衬托的你找一些业余的模特来说他们可能就是说对 体现不出来咱们的衣服的档次首先他们就把价格拉下去了我们的价格也没办法提上去虽然说咱们这件衣服的成本可能只有二十三十这样但是我们可以说找一些人对把它牵扯出来就把它卖的价格更高首先我们的档次就在这里所以说这个业余的模特我们可以安排在就是说一些小的门店可以搞一些活动他们来做然后我们主打的门店像咱们像咱们的商场啊这样一些精品门店的话我们是需要动用到这些专业的模特来做的然后我们还可以搞一个主打秀场就是说我们可以设立在我们的城市一个高端的一个地区然后我们设立一个秀场设计在这里然后找一些咱们业内的知名的一些厂家或者说这个商场的我们的承收部,他们可以来观看我们的衣服,我们的秀,说他们感兴趣的话,也可以说在这个秀结束了以后,然后说来跟咱们谈一下合作。
+---
+然后咱们我们设计部现在主要的工作呢就是说把咱们我们就开始准备下半年的绣款了因为我们也是一个时尚的品牌我们不能完全靠团建或是统一的校服来做销量也是需要新的顾客然后我们应对的话是当下的渠道对对我们现在是当下的一个年轻群体所以说设计部这边的话也是需要多辛苦然后再去设计出更多更好的一个款式也是需要这个辛苦市场部的一个配合然后这边让儿童还有妇女这一方面可以加大一些利用因为有一句话说赚妇女赚女人和孩子的钱毫不眨眼因为父母对于孩子来说都是很多的天然对他很舍得给孩子花钱那女人呢也很舍得打扮自己特别是男朋友要给女朋友买东西的时候也会付息代价为了好女朋友欢心嘛所以在设计这方面如果有一些新颖的潮流的时尚的款式讨论女孩的喜的话那么销量是不成问题的那这样吧那这个生产过后期的话把你们这边安全措施的一个讲法问题然后你订一个合同然后用一个文件发送给我然后这边的话市场部也是需要现在都说后期的安排还有设计部这边您把你们后期的一个安排然后你定出一个文档然后发送给我这边然后就赶紧着手去准备好那各部门下去之后记得交给我们的主管好的那今天就先到里边你好,焦焦,如何?有效清蒼病危下半年,秀准备衣服请不吝点赞 订阅 转发 打赏支持明镜与点点栏目你好,教教如何通过线上渠道提高库存服装的销量并预测市场趋势你好焦焦基于之前我们讨论的内容关于如何提升品牌当次和吸引消费者的问题你怎么看待使用【业】余模特和专特结合的方式来进行新品展示和秀场活动同时我们应该如何平衡成本和效果确保既能吸引眼球又能保持品牌###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+会议中提到使用业余模特与专业模特结合的方式来进行新品展示和秀场活动。业余模特可以用于较小规模的活动及店铺，而专业模特则用于主打产品和高端秀场，以提升品牌形象和档次。此外，通过举办旗袍秀等创意活动，不仅能够增加曝光度，还能通过视觉效果达到更好的广告效应。为了平衡成本与效果，需针对不同场合选择合适的模特，并制定有效的促销策略如“买一赠一”或“满减优惠”，从而既吸引眼球又保持品牌价值。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200807_S_R001S04C01_agent_added/out_001-F_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 275429, dtype: float32, min: -0.18222427368164062, max: 0.1403350830078125
+问题音频时间长度: 17.2143125
+
+
+[Agent] 接收到问题: 你好,焦焦,如何?有效清蒼病危下半年,秀准备衣服请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1737102590.7542832
+问题音频STT前的时刻: 1737102590.7544115
+问题音频STT后的时刻: 1737102591.3939106
+问题音频STT时间: 0.6394991874694824
+
+
+[Agent] 最终接收到问题: 你好 嬌嬌如何结合明星效应和电视节目合作来提升品牌服装销量
+, 1737102591.3940973
+问题音频送入Planner的时刻: 1737102591.394409
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:628: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1737102591.997878
+planner new_token time: 1737102592.3893049
+planner new_token time: 1737102592.3897233
+First token received: 1, time: 1737102592.3898168
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1737102592.4039977
+talker first token time: 1737102592.712612
+talker first token time: 1737102592.7645957
+talker first token time: 1737102592.7905025
+talker first token time: 1737102592.8165078
+talker first token time: 1737102592.8423588
+talker first token time: 1737102592.8681905
+talker first token time: 1737102592.8939862
+talker first token time: 1737102592.9197931
+talker first token time: 1737102592.9455986
+talker first token time: 1737102592.9713206
+talker first token time: 1737102592.9972107
+talker first token time: 1737102593.0230944
+talker first token time: 1737102593.0492272
+talker first token time: 1737102593.0753944
+talker first token time: 1737102593.1016943
+talker first token time: 1737102593.127802
+talker first token time: 1737102593.1538796
+talker first token time: 1737102593.1797059
+talker first token time: 1737102593.2056284
+talker first token time: 1737102593.2318144
+talker first token time: 1737102593.2578123
+talker first token time: 1737102593.3348837
+talker first token time: 1737102593.386656
+talker first token time: 1737102593.4125109
+talker first token time: 1737102593.438421
+talker first token time: 1737102593.4645164
+talker first token time: 1737102593.4904091
+talker first token time: 1737102593.5163705
+talker first token time: 1737102593.542345
+talker first token time: 1737102593.5686142
+talker first token time: 1737102593.6204064
+talker first token time: 1737102593.6466491
+talker first token time: 1737102593.672692
+talker first token time: 1737102593.6988146
+talker first token time: 1737102593.7251484
+talker first token time: 1737102593.751162
+talker first token time: 1737102593.7775695
+talker first token time: 1737102593.8036985
+talker first token time: 1737102593.8298223
+talker first token time: 1737102593.8557515
+talker first token time: 1737102593.9329178
+talker first token time: 1737102593.958863
+talker first token time: 1737102593.9848158
+talker first token time: 1737102594.0106845
+talker first token time: 1737102594.0366895
+talker first token time: 1737102594.062541
+talker first token time: 1737102594.0883744
+talker first token time: 1737102594.1402519
+talker first token time: 1737102594.1663914
+talker first token time: 1737102594.192795
+talker first token time: 1737102594.2188554
+talker first token time: 1737102594.245148
+talker first token time: 1737102594.271432
+talker first token time: 1737102594.2977488
+talker first token time: 1737102594.3496332
+talker first token time: 1737102594.3759682
+talker first token time: 1737102594.402309
+talker first token time: 1737102594.4289489
+talker first token time: 1737102594.4552572
+talker first token time: 1737102594.482058
+talker first token time: 1737102594.5088115
+talker first token time: 1737102594.535309
+talker first token time: 1737102594.5618794
+talker first token time: 1737102594.5883899
+talker first token time: 1737102594.6661363
+talker first token time: 1737102594.7183962
+talker first token time: 1737102594.7449076
+talker first token time: 1737102594.7710645
+talker first token time: 1737102594.7973804
+talker first token time: 1737102594.8237932
+talker first token time: 1737102594.8501668
+talker first token time: 1737102594.8764129
+talker first token time: 1737102594.9030163
+talker first token time: 1737102594.9294283
+talker first token time: 1737102594.955823
+talker first token time: 1737102594.9822385
+talker first token time: 1737102595.0088315
+talker first token time: 1737102595.0613916
+talker first token time: 1737102595.0879197
+talker first token time: 1737102595.1143677
+talker first token time: 1737102595.1412065
+talker first token time: 1737102595.1731653
+talker first token time: 1737102595.199821
+talker first token time: 1737102595.2525284
+talker first token time: 1737102595.2791123
+talker first token time: 1737102595.3055353
+talker first token time: 1737102595.3321795
+talker first token time: 1737102595.3586988
+talker first token time: 1737102595.3853233
+talker first token time: 1737102595.4121394
+talker first token time: 1737102595.4902875
+talker first token time: 1737102595.5166233
+talker first token time: 1737102595.5428538
+talker first token time: 1737102595.5690868
+talker first token time: 1737102595.595283
+talker first token time: 1737102595.62157
+talker first token time: 1737102595.647887
+talker first token time: 1737102595.674527
+talker first token time: 1737102595.7009594
+talker first token time: 1737102595.7532709
+talker first token time: 1737102595.7799783
+talker first token time: 1737102595.8064194
+talker first token time: 1737102595.8330631
+talker first token time: 1737102595.8594694
+talker first token time: 1737102595.886153
+talker first token time: 1737102595.9127843
+talker first token time: 1737102595.9656615
+talker first token time: 1737102595.9921374
+talker first token time: 1737102596.0188508
+talker first token time: 1737102596.045421
+talker first token time: 1737102596.0716739
+talker first token time: 1737102596.0978508
+talker first token time: 1737102596.1241648
+talker first token time: 1737102596.1507864
+talker first token time: 1737102596.1771405
+talker first token time: 1737102596.2036564
+talker first token time: 1737102596.229918
+talker first token time: 1737102596.2562432
+talker first token time: 1737102596.2827892
+talker first token time: 1737102596.309323
+talker first token time: 1737102596.3357465
+talker first token time: 1737102596.362157
+talker first token time: 1737102596.3885136
+talker first token time: 1737102596.4156682
+talker first token time: 1737102596.4421384
+talker first token time: 1737102596.4948168
+talker first token time: 1737102596.521253
+talker first token time: 1737102596.5477898
+talker first token time: 1737102596.6007006
+
+talker输出：
+
+Token count: 90, Total time: 3.5523 seconds, One token time: 0.0395 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+你好，娇娇。
+
+利用明星效应和电视节目合作来提升品牌服装销量有以下几种方式：
+
+1. 邀请当红明星作为品牌形象代言人，通过其高人气和影响力推广品牌服装。
+2. 利用电视节目植入广告，让观众在欣赏节目的同时，对品牌服装产生兴趣并产生购买欲望。
+3. 联合知名电视节目举办服装设计大赛或时装秀，借助节目的热度和影响力，提高品牌知名度和美誉度。
+4. 在节目中设置品牌专属环节或特别嘉宾，让消费者更直接地接触到品牌服装，增加购买意愿。
+
+以上就是一些利用明星效应和电视节目合作提升品牌服装销量的方法，希望能对你有所帮助。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200807_S_R001S04C01_agent_added/out_001-F_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 275429, dtype: float32, min: -0.18222427368164062, max: 0.1403350830078125
+问题音频时间长度: 17.2143125
+
+
+[Agent] 接收到问题: 你好,焦焦,如何?有效清蒼病危下半年,秀准备衣服请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1737102597.9565704
+问题音频STT前的时刻: 1737102597.9567292
+问题音频STT后的时刻: 1737102600.169216
+问题音频STT时间: 2.212486743927002
+
+
+[Agent] 最终接收到问题: 你好焦焦,基于之前我们讨论的内容,关于仓库安全问题,你提到了要全面检查火灾隐患,并且强调了仓库安全通道的重要性。那么针对仓库安全通道被堵塞的问题我们应该如何制定有效的措施来确保通道畅通无阻防止因堵塞导致的安全隐患呢
+, 1737102600.1694643
+问题音频送入Planner的时刻: 1737102600.1697688
+planner new_token time: 1737102600.8237746
+planner new_token time: 1737102601.2160244
+First token received: 0, time: 1737102601.2161462
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1737102601.608341
+planner new_token time: 1737102602.0004625
+planner new_token time: 1737102602.39225
+planner new_token time: 1737102602.784468
+planner new_token time: 1737102603.176595
+planner new_token time: 1737102603.567801
+planner new_token time: 1737102603.9602218
+planner new_token time: 1737102604.3519757
+planner new_token time: 1737102604.7436566
+planner new_token time: 1737102605.1352515
+planner new_token time: 1737102605.5265055
+planner new_token time: 1737102605.9195437
+planner new_token time: 1737102606.311014
+planner new_token time: 1737102606.7030516
+planner new_token time: 1737102607.0955005
+planner new_token time: 1737102607.4868164
+planner new_token time: 1737102607.8802547
+planner new_token time: 1737102608.2720215
+planner new_token time: 1737102608.664769
+planner new_token time: 1737102609.0582461
+planner new_token time: 1737102609.4507253
+planner new_token time: 1737102609.8421566
+planner new_token time: 1737102610.234189
+planner new_token time: 1737102610.6255522

@@ -1,0 +1,175 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200707_L_R001S05C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Starting processing from 0s, total chunks: 329
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.08it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.06s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.29s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.86s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.49s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.58s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.74s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.83s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:09,  4.79s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.71s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.60s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.59s/it]
+纤维202我是龙尚202我是小龙202我是小龙203我是人力治疗部204我是风险成功205我是眼睛206我是人力治疗部207我是人力治疗部208我是人力治疗部209我是人力治疗部2010我是人力治疗部2011我是人力治疗部2012我是人力治疗部2013我是人力治疗部2014我是人力治疗部2013我是人力治疗部2014我是人力治疗部2013我是人力治疗部2014我是人力治疗部2013我是人力治疗部2014我是人力治疗部2013我是人力治疗部2013我是人力治疗部2013我是人力治疗部2013我是人力治疗部2013我是人力治疗部2013我是人力治疗部2013我是人力治疗部2013我是人力治疗部2013我是人力治疗部2013我是人力治�我是人力治疗部2013我是人力治疗部2013我是人力治疗部2013我是人力治疗部2013好 接下来我主要说几方面嘛一方面是咱们这个公司基本情况上半年的基本一个基本月月情况还有一方面 第二方面就是咱们这个团队的管理然后第三方方面就是这个市场的对这个行业和市场的分析 然后第四方方面就是这个销售推广 然后再一个方面就是咱们这个风险评估这一块首先咱们说这个公司的资本情况 咱们那是一个这个娱乐 健身 比赛 餐饮为一起的这个大的这个娱乐主题 以篮球为主题的娱乐公司 然后咱们这个是属于一个运动 运动系列的一个公司对对对 然后咱们的这个服务相对来说是比较多的他们从这个这个技术研发案来说一下我们这个上半年都有什么项目对吧 对所以说他们 然后在那个篮球什么 用完以后 可能会有出很多汗 对我们在预示方面会下很大的一个工作 对咱们就是上半年的话就是相当于 可能因为有自己的一个就是洗浴的地方然后开展的就是有一些药物 还有一些软鱼 到一些现在的天象 这些就是机会 要反应情况怎么样因为就是 咱们采用一些药物 然后在 它们可以进行然后 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个嗯 那这个那市场营销这边咱们上半年的这个营销情况是什么样的是打开 因为咱们是搞运动项目嘛 嗯 主要打开了这方面 主要是想要拿出价想要拿球 或者一些别的运动项目 咱们也有设计 像是这个羽毛球拍啊羽毛球拍子的这方面的市场还在进行发展 主要是在销售较好的拍子现在学校还有场所啊 很多安装的课点就会有设计现在公司重立初期有没有跟别的地盘合作 有没有对他们进行风险投资之类的这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的 这些都会有的你也想认出他人是谁吧?对,就像刚才说的,他大家就是非常有自信的我也是抓这个篮球场的唯一事情篮球场就是一个生产公司这些方面有风雨,还有浴室方面也是配套的风投这一块现在没有上风险投资比如一些比较创新的项目关于一下 不知道你有没有听过 静默超这种 打篮球以后 因为肌肉太过紧绷 然后可以就照顾他们的内容按摩师使用的那种 经过超对待进行按摩 这是对消负疲劳的一个很好的因为像国内的经过相做的情况也不是很好 是会和国外的就是经过相当的进行合作加的也不会特别高 然后主要的话就是他们需要招一些按摩器的话他没有那么全面 对他只是一小部分经过超大对你的肌肉和你的肩骨进行按摩会更好对 进点按摩的这个东西 进行摩擦一个的话大概1000多 然后对 这当然是属于就是在国外的话就是瘦了 瘦是像一些就是MV的主项 他们就会有这个时候就需要这个风险评估部这块去对他进行一个评估 看需不需要 我们能不能进行更家里果样然后咱们这个其实不只要生产这些东西 我觉得下半年还可以去搞一些护具还有一个是护具 还有一个就是这个NBA主要是主打的一些球衣啊 踢去啊 还有一些这个篮球如何提升公司篮球相关产品的市场竞争力和客户满意度对 而且这个NBA今年的这个篮球从这个这个 直播边换成了量胜 那我们可以根据这个去跟这个量胜合作 也可以用它弄球嘛 这个 这网然后我们会找这个 这个 这一块去探讨一下他们这个篮球的这个是不是好用哦 现在是我们的研发部吗 因为你是 而我们就是转盘的是那个 将来配染一些什么项目进行那个 年大往后加我们的工具 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个summer志很 vampire志很 vampire志很 vampire志很 vampire志很 vampire志很 vampire志很 vampire志很 vampire但拍到陀螺後來就是遇到仙女 quien también se enfrentent se da culpa por que se encontraıl mytho dos home Anyone watching my video always takes me sad, mainly mislead the video. 我 mult散 지�眼睛睜睜的 Touch on my agree Shaggy portrait close up都是我的祖國祖國愛 sanborn diablo 天使就cksould save me i live in the forest iba saharaazioni 天使就cks passing by市场现在其实不是很乐观因为因为有很多别的娱乐项目现在都然后又因为现在这个特殊情况出去在一块聚集打篮球的就比较少所以我们的这个风险其实还有很大 因为我们投资了很多的钱在这个设备研发上面 所以我们为了避免风险然后就成立了一个研发小组在上个月 开发新的与篮球相关的项目 然后为了促进一下大家现在对篮球的兴趣然后就想增强一下大家对这个篮球的趣味性和实用性 所以我们为了抓住这个客户的心 然后和我们各部门都密切的进行了合作和交流 希望就是我们的建议是希望可以多举行一下这个篮球的希望可以通过直播的方式 然后在网上进行宣传 然后激发一下大家对篮球的热情好 人力资源这边上个月 比如说是一直在制定一些规模然后对 然后上个月规划有哪些呢 可以具体说一下吗就是对这个项目里面包含的各种嗯对包含的各种内容 嗯 比如说他这个主主主流是篮球 然后就要对篮球的形式 活动就在做一个就是做一个想要做一个规划 意思就是说 嗯 规划一些更好的活动 然后让大家都参与进来准备了举办对举办篮球赛 然后进行是先举办篮球赛 然后往后再有 比如说比如说就是搞了一个这种 来球对决 因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为因为然后这个拉队可以让他们比赛不仅有球队的比赛 这个拉队也可以有比赛一些人就是 然后这个一会儿 同时也可以带来就是工作对 就是选一些有经验 比较有活力的人 然后来就是来完成这项活动然后还有一个就是因为现在就是这个项目就是比较大 然后需要一些特别负责任有经验的人 然后现在人力资源这边也是在招呼在培训使这些员工就是更加有责任心 然后能把工作岗位完成的非常好平常的话也会编制员工手册 让他们在工作中建立这些最起码的管理规范这些事情 近期咱们执行的加把对各部门的一个管理这些事情我看对他们的态度都有所出现现在我们的作为这个 creation 这样的就是这个描述重现的话 大家的态度就不太正确然后咱们这个主打的这个是篮球嘛你打完球之后 你还可以去在打篮球场上享受各种各样的优质服务对外来的战略的话 咱们这儿是可以设置一个服务区通是这个篮球场地 四周是座位 然后在周围的话有这个商店啊 这个这个一些具体的这个免费店 这个衣服卖衣服那这个NBA 进了一些T恤啊 还有鞋啊之类的咱们这个就是中央俱乐部嘛他们在可以 咱们这个 刚才把这个 这项任务 这项任务那主要就是分给这个市场研发 他们去这个看一下 接下来咱们要往哪个方向发展这个市场研发 就跟这个营销这边去要合作一下看没关系 那个主要是打开这袋吧 然后打开球的话需要复制的话 相当于就是要成功地控制肩膀的按摩然后有波子源 咱们就是相应 每次来整个单场然后大组的人就是提供一些服务的信箱 给你一条玻璃 然后这是相应的运动然后就是擦汗 反而就是一个比较好的方式 在这个单位的下雨市场人销这边咱们现在主要的这个咱们不是打室内篮球 室内篮球的一些器械 它们今天进入了大球的质量 器械方面打EPC的方面 从别的公司来进设备从公司这个器械方面没有什么进入压力 而且现在最近的市场我们最近市场应该在开发的地方 我们是在打通平方球的渠道因为在炎热的夏天而且到疫情 打篮球的人向里面回校场 然后室内场所家喻吧 然后正式装球开这种活动 打开另一个市场 然后用电市场 正式的自立 打篮球 这个不能评估这个你要放这个皮毛球 我们看吧嗯 这边觉得这边觉得是
+[Audio Detection] 在 1103.90 秒检测到关键词 '好交交'。
+detection_time: 1103.90, current_time: 1099.00
+问题音频片段长度: 166742, dtype: float32, min: -0.06231689453125, max: 0.06951904296875
+问题音频时间长度: 10.421375
+
+
+[Agent] 接收到问题: 我们计划如何
+, 1735024760.176915
+
+
+[Agent] 最终接收到问题: 我们计划如何
+, 1735024760.1770284
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+0
+Token count: 3, Total time: 0.9191 seconds, One token time: 0.3064 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+这个问题信息不足，无法直接形成一个具体的检索关键词。请提供更多的背景信息或具体问题。
+Token count: 23, Total time: 4.7819 seconds, One token time: 0.2079 seconds
+
+reasoner输出：
+这个问题信息不足，无法直接形成一个具体的检索关键词。请提供更多的背景信息或具体问题。这个问题信息不足，无法直接形成一个具体的检索关键词。请提供更多的背景信息或具体问题。
+reasoner 输出结束
+我们项目的知名度和吸引力呢 同时如何通过增加篮球赛和拉拉对比赛来活跃气氛吸引更多人参与其实 天光球的市场还挺好的 因为中国人有很多的学生啊 或者平时业余爱好人都会抽有空的时间就会去打乒乓球嘛因为咱们不是一个场所嘛 是一个活动场所提供一些好的条件 设备 环境啊现在尤其是夏天 在外面玩肯定是不如在室内玩比较舒服的如果在室内制作一个乒乓球场的话 因为是两个人一块其实不用像篮球那样 还要注意人员聚集所以这个其实是可以进行一下补贴的有一个建议 下面就是咱们可以找一些团队有一个小夫人 因为已经在消费然后让他们联系到他们的场所可以带一些平常生活的小人物 然后现在消费 这个也是可以的咱们这个上半年的这个人亏情况是什么样子可以 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去 来 去方法就是通过科普的生产和科普的研发像一般感染者都会有一种比较新的出现吧嗯 对这些合作其实感觉会是有很大的一些篮球课 就是不只是我们长所不只是可以打篮球还可以进行一些教学可以找一些篮球的教练 或者一些知名的球星谢谢一下大家对我们的关注程度我们可以搞一下这个顺便现在这些小孩都喜欢打篮球 但是又没有很多技术含量 所以就会选择我们这些篮球课那我们这个 现在这个员工这个上半年咱们不是在亏损的状态 咱们这个人员要不要考虑裁员这个问题啊这个哥哥们说一下吧我觉得可以先适当的裁一部分然后先把这个人裁了之后咱们可以把这个财务重心放在宣传上等这个效果起来了这种作用 咱们可以慢慢增加人数我们现在的考量不需要测试 因为我们在古打篮球赛 可能这边还可以开阔一些我们现在的考量不需要测试 因为我们在古打篮球赛 可能这边还可以开阔一些但是我们这方面是自打 属于他们家用的平板球 而不是可以直接的我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的 但是我们的球赛是一个很简单的要是把打开另一个市场 而且可以就是像有些人在小区啊 会打一个五号球队打球毕竟是一个无约会项目 所以他需要十个人但是如果这样的话就是因为我们打的是篮球 所以如果在进行别的的效果的话 还要有更多的如果只是单独开放篮球 也就是一个类型的篮球的话然后自己主打篮球 然后副业 做一个这个aría然后把他移成两边 他没有办法主打篮球 因为这样的抽象他的力度 也没有办法因为要是一直是主打篮球的话 需要打开别的时机这场的第五对方的推算 咱们才会继续做下来的选择 请一些教练这种东西 因为很多器材现在都是公司用自己的钱在往里面垫 或者是一个盈利方向还是一个亏损方向对 项目开发那边收益的 对 但是按照市场来说的话 疫情的所以这个属于一个很有风险的一个东西必须要如果一直主打篮球的话 他这个疫情如果就
+[Text Detection] 在 1552.96 秒检测到关键词 '焦焦',current_time: 1547.00, 问题文本: 就是持续的话 咱们的公司亏欠的太多了 你好 焦焦 如何
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.0672607421875, max: 0.062835693359375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 如何通过乒乓球市场开发来弥补篮球业务的亏损
+, 1735024796.2144592
+
+
+[Agent] 最终接收到问题: 如何通过乒乓球市场开发来弥补篮球业务的亏损
+, 1735024796.214598
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4821 seconds, One token time: 0.1607 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+通过开发乒乓球市场来弥补篮球业务的亏损，可以考虑以下策略：
+
+1. 建立多样化的体育产品线：除了传统的篮球产品，还可以引入乒乓球相关的产品，如球拍、服装等，以满足不同消费者的需求。
+
+2. 利用社交媒体和网络平台进行推广：利用微博、微信、抖音等社交媒体平台，以及公司官方网站和博客，积极推广乒乓球产品，提高品牌知名度。
+
+3. 开展线上线下活动：举办乒乓球比赛、训练营等活动，吸引消费者参与，同时也可以通过这些活动收集反馈信息，优化产品和服务。
+
+4. 合作推广：与其他相关企业或机构合作，共同推广乒乓球产品，扩大市场份额。
+
+5. 提升产品质量和服务水平：提供高质量、高性价比的产品和服务，提升消费者满意度，从而吸引更多消费者购买。
+
+6. 运用数据分析：通过对消费者的购买行为进行数据分析，了解他们的需求和喜好，从而制定更精准的营销策略。
+talker 输出结束
+是持续的话 咱们的公司亏欠的太多了 你好 焦焦 如何因为咱们主打的开篮球 刚才也说了 就是应该会出现一些案例如果一起过去打球的人 自然而然就做了这个不缺人的而且可以请球星 如果服务到位的话 篮球市场很快就会打开这就是比较满上你的体系了 如果擦把脸恢复正常咱们很快就能正常运转现在是新闻街上的调研员然后咱们这儿看咱们这儿现在有这个这个打球啊 咱们有这个这个体育啊 咱们是不是还少点这个汉语 汉语 汉语对 你想他们 他们比如打完球的话 可能比较累 起得更早然后需要补充一些这个蛋白质啊 或者是 这样的东西嗯 嗯 嗯所以说在注重健康面 我们是需要下比较大的源 如果是开小直接的话 其实对他们的健康对我的意思就是在上面咱们就可以搞一把这个这些健康餐最后还可以和一些能力公司合作 因为有的人在打那种 如果他不能在健身的话 咱们这里提供水和一些蛋白质的方法 因为很多人在运动完都咱们就跟这个音乐一样 打下来财务这边就是对这个大额额就不看 对饮料这一方面这个铺的字啊 这个饮料 加得了能量 能量 能量他们大概会给咱们铺多少钱啊 就他们会给咱们铺多少 提供什么样的对对对如果是可口可道的做法的话 给提供680现在是较小 可以两方合作一下 协商 签两个合同咱们到时候会拯救这个并销融影会自动发贷机就可以对这个就可以自动发贷机到时候就有这个 发贷 这个财务就到时候咱们这个公司算是现在比较大然后还有别的公司给他们投资公司 账 现在比较大数了这个财务这边有没有什么好办法去就是解决这个办法这个我可以给财务官提个意见 就让他以这种想象这个就是 往事比较精彩的一道路 大概就属于让你一个月后录一次可以这个咔咱们这儿像员工那个待遇吧 咱们像咱们这些高手这待遇都是比较好的 但是这些像底床啊 这些服务人呐就把他们的这个工资待遇都不是很高 大家觉得有没有必要给他们提升一部分工资呢我觉得可以 这样的话可以希望他们的工资能够提升我们的市场 现在打开了一边市场 比较鲜艳 也会加一些那些没有长工资的 因为疫情原因 往下一些什么 赖球场的关系现在不是 相对来说 教授这个 这个研发的这个方面就是你的部门去学校长街我们的主要是增加一些人手 公司方面的现在家公司现在 尽量原来的比较风险比较大的市场 面对这一块 面对这一块对这个市场这一块 要进行一个调查 这一块你觉得咱们刚才 大家是有没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 没有饮料可以和那个可口可乐或者能量饮料可以合作一下 这个是刚才我们临时冲刚才他们打现建议这个风险比较大这个相对来说的话风险大的就是打开新的市场就是羽毛球或者黑毛球 打开这个别的市场风险来说比较大那这个是什么建议年轻人爱玩的呢 其实应该做一下市场调查这是他是吃灌的噻现在 settlement意退还ان我们现在做起来的这个篮球的设备关于篮球的刚刚说的那些给篮球赛呀或者找一些球星或者收一些篮球课 这都是我觉得可以促进一下我们现在这个当前这些情况那如果你想持续在这的话怎么办我们现在就先来看一个 市场风险评估你认为与可口可作投资加德勒尔妙的钱在风险有多大 同时针对公司有钱的资产状况况和员工待遇 我们应该如何平衡投资新项目与维持现有与篮球市场之间的关系请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目明镜与点点栏目 明镜与点点栏目 明镜与点点栏目
+[Audio Detection] 在 2288.78 秒检测到关键词 '好交交'。
+detection_time: 2288.78, current_time: 2282.00
+问题音频片段长度: 130251, dtype: float32, min: -0.065185546875, max: 0.068145751953125
+问题音频时间长度: 8.1406875
+
+
+[Agent] 接收到问题: 明镜与点点栏目 明镜与点点栏目 明镜与点点栏目
+, 1735024848.711307
+
+
+[Agent] 最终接收到问题: 明镜与点点栏目 明镜与点点栏目 明镜与点点栏目
+, 1735024848.7114272
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4861 seconds, One token time: 0.1620 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 157, Total time: 5.9469 seconds, One token time: 0.0379 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+为了确保俱乐部会员在疫情期间安全参与活动，建议采取以下措施：
+1. 减少人员聚集：通过线上活动、视频会议等方式减少人员聚集；
+2. 强化卫生防护：加强场地消毒、通风等措施，要求会员佩戴口罩并保持社交距离；
+3. 发布疫情防控指南：提供疫情防控知识和技能的宣传资料，提醒会员注意个人健康和安全；
+4. 及时反馈信息：建立有效的信息沟通机制，及时向会员反馈疫情形势和活动安排的变化。
+talker 输出结束
+
+会议数据处理完成。

@@ -1,0 +1,244 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200805_S_R001S01C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Starting processing from 0s, total chunks: 77
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.28it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.75s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.61s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.90s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.20s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.27s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.20s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.31s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.51s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.15s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.89s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.89s/it]
+我我我我我我我我我我我我我我我我我我我会议就是我们公司的一些近况上半年的一些情况以及下半年怎么做然后接下来由我们的主管来主持一下这场会议上半年了大家待会儿先说一下各个岗位的上半年的情况因为毕竟我们这个物业跟其他物业不一样我们是全国一级资质的有的人会说有的小区物业费只有五毛有的小区物业费只有一块二那我们小区物业费为什么会这么高我们要让业主在我们这儿入住的每一个业主包括是他们的亲戚朋友都觉得我们这儿就算是给我们交点物业费是用超所值的而且大家都愿意掏一份钱心甘情愿的所以我觉得上半年的话大家都有一个会对自己的工作会有个了解会回顾一下上半年的工作我们哪做的比较好什么地方做的还不到位从保安部开始说我们保安部上半年的情况总体来说还是比较不错就是业主本来反映我们这个安保部首先我们我们这个停车这方面,就是比如说有外宾来的话,我们会有专门的公共停车场,也不是公共停车场,就是这些来访问的这种停车场。就比如说,他们每一家都有自己的车位,对吧?然后,就好多别的小区的现状就是,来来我们一地方停,就是很容易见到他们一家私人车位。我们咱们小区就是会有一天还有一片空地,就是专门让这些来访者乘客的位置然后我们就会有三名保安并且都是有颜值,有身材,然后还有制服然后我们还有礼仪培训就是在每个转角,在那上岗,然后引导外地来把他们请客是专门负责的看到车的其实每一户都有地下车位他们如果可以方便的话也可以让业主自己引导他们到地下车位因为毕竟我们小区是人车分离在小区门口外面的车位是有限的如果他们可以停到自己的地下车位里面的话也可以省我们一些工作量不单单是省工作量而且也可以控住好多的车位这样子有来我们小区搬车的一些人也可以往这儿服务你们的制服一直都是统一的而且因为保安这一块我们小区不是像一些低端的小区对咱们用一些老头什么的去看门咱们用的都是年轻一点的退伍兵对当然虽然这个代理工薪资代理也比较高所以还是能招揽这些人才像是那些地区要低端的小区他们的保安只有很低的薪水所以只能招到一些就是比较大一点的他们就是说白了就是说你们这块就是烹饪饭吃嘛就是混日子呢咱们这个不一样咱们就是请来的就是跟那些退伍军有关系或者说是那些想要去当工程或者说是动车动车这个动保他们结果没有选上就是最后有一个好好的一步传来现在门口站岗的这个保安呢其实是很重要的因为白亚网网的咱们小区大门口守着是一条大路是一条主路那么白亚网网的人看着我们这个保安在这站岗其实他就是我们小区的一面旗帜了等于是那他的仪表它的形象包括它的动作都会代表着我们的物业的形象对这一点要严格的要求还有就是这个安保方面就比如说咱们小区的这个防盗还是比较全面的就是上半年没有任何一起这个盗窃案件发生小区里面的那个摄像头怎么样有没有预期的做检查嗯就是每一个季度都会去做一个检查就是检查一下设备是否蛮好然后咱们这个摄像头的覆盖率还是比较完整的要做到无死角嗯,几乎没有什么死角然后不能每个季度因为电器设备现在进入鱼季必须每个月甚至半个月去统一地做一次检查特别是因为电器嘛一些线路的一些老化啊好不是新的消息,是存在保化的现象,但是如果有受潮、短路的现象是很严重的问题,把这个点,安全的问题一定要做好,运电一定要保门安全,否则会发生一些火灾,或者人员出电事故,这就是大事了。现在这个下级我们会增加排查率,增加水平。进化保健的话,你们上半年情况如何?先说一下这个首先,物业费比别的小区高出很多,卫生方面达到,很及时,不到50米会隔放一个垃圾桶,不到100米会隔放一个大型垃圾桶,会进行统一的回收。然后还有就是属于比方说社区有一些超市我们的这些我们这个后期人这边也会提供比如说食品安全证我们这边也会定期出人进去检查万一顾客买的菜或者是买的食品什么的就是会有那种比方说磕啊坏啊之类的这些东西他没有及时的就是切掉或者像一些菜叶给它摘掉之类的东西也会提醒还有就是过期的产品会不会上架赚一些这种钱就属于这方面还有就是处于停车吧这方面我会跟保安部那边说的会有这个小区虽然有地下停车场汽车肯定不会乱停但是会有一些就有人会不自觉会停一些自行车这方面我们都会让候勤部还有保安部配合把这些车给他们挪放到哪个位置然后再提醒毕竟咱们这个是属于上门服务嘛有一些就比方说就会提醒一些住户告诉他们是谁的车通知一下然后给你搬到了哪儿然后下回注意一下有与其特别好的这种写上的方式给他们提醒一下水质然后绿化那一块的话因为咱们小区跟其他小区是有区别的我们有一些非常珍贵的像银杏树这些绿化的这些树木要是
+[Audio Detection] 在 511.34 秒检测到关键词 '好交交'。
+detection_time: 511.34, current_time: 510.00
+问题音频片段长度: 175275, dtype: float32, min: -0.09130859375, max: 0.1046142578125
+问题音频时间长度: 10.9546875
+
+
+[Agent] 接收到问题: 如何提升区小节服务质量确保物业费用物有所值
+, 1735133241.6332817
+
+
+[Agent] 最终接收到问题: 如何提升区小节服务质量确保物业费用物有所值
+, 1735133241.6334589
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9190 seconds, One token time: 0.3063 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+1. 建立健全的管理制度，提高服务效率。
+2. 提升员工素质和服务水平，提供个性化服务。
+3. 加强设施设备维护和更新，提高小区环境质量。
+4. 定期进行满意度调查，了解业主需求，改进服务。
+5. 公示物业费用使用情况，透明收费，避免纠纷。
+6. 创新服务模式，如引入智能物业管理，提升科技含量。
+talker 输出结束
+我们可以处理的这些东西在他们做一些事情的时候可以派人去做一些协助也给自己一些学习的机会另外就是关于保洁这一块要严格的按照保洁标准去要求因为毕竟我们是金牌物业我们是国家一级资质的物业我们收了比别的小区高一倍的物业费要让业主觉得物有所值或者物超所值我们现在在各个方面各个细节上做到位了就像我们的就是精装的入户大堂按照保洁的标准我们的地面是要没有脚印没有水印的包括一些小孩业主的一些小孩他们吐的那些口香糖什么我们要在第一时间做一个清理所以保洁的人员要随身带好自己的工具比如说一些什么的,要及时的把这些东西清理掉小区里边所有的一些细节其实细节就决定了成本我们做的其实就是细节化的服务高质量的高品质的就是细节的我们的目标就是求精求细是这样的所以在细节上一定要抓住严格按照因为保洁标准很早的时候就从开始我们就发发了一定要让每一个人把保洁标准备过其实不是说拿着那个去备是拿着那个去做对做到就知道栏杆要擦到一米之内我拿白手套摸是没有污渍的玻璃我要是擦到没有水印没有污渍也没有手印的这才可以他们在做的时候要有人去检查要定期的他们自己在那每天每个人都要日检那班组长呢去周检主管了每个月也要去检查一遍在这个过程中这个物业的保洁人员其实是把自己端起车来的他们走到任何一个地方去做保洁都是主管的材料这是我们要求从我们这儿走出去的任何一个保洁人员在外面都可以去给他们做主管因为我们是金牌物业客服首先咱们是学区房然后咱们的房产证和社保什么都资料整理的比较好然后就是财政支出这一方面绿色环保还有保安工资都比较稳定收取的服务费也比较合适就是有个别用业主拖欠情况也都给他们打电话催了咱这个社区也要注意人文关怀所以也希望我们的服务人员就是对业主都比较热情也会给他们发放一些福利大家也会经常电话去联系业主进行问卷看看他们对哪些有不满所以咱们把那个优点咱们的优点和不足也记录下来了正在进一步的改善首先就是这些其实是在做一个跟业主的一个沟通对业主有任何的满意或者不满意第一是客户知道客户知道之后才可以反馈给公司我们工作可能能够做进一步的调进我们要有一个满意度调查表每个月或者是一个季度最好是每个月发一次让来我们这儿发事了我们可以登门去做一个调查对我们哪一点不满对我们哪一点是肯定的一定要做一个详细的记录这样我们才能够改进工作对 也就叫数据分析对 因为我们是要求精求细的所以我们就要细致细化到每一个家庭听到每个家庭的心声听到他们的回音我们是做了但是效果怎么样我们不知道对不对一定要有人来投诉或者说有人来上门感谢请不吝点赞 订阅 转发 打赏支持明镜与点点栏目我们这样太被动了我们要知道业主对我们的工作是满意还是不满意还是认可还是不认可我们就要一走出去去每一个业主家里去听听他们的声音对有时候也会对他们进行一些代收服务还有那个钥匙不好的话钥匙坏的话就是我们也尽快给他们配上就送上楼去电梯方面就是有时候电梯就停的话就会影响他们的上班再见这一方面就是希望电梯一定要定期的做一些维护一定要不能等它出故障要防患于被染因为这个电梯如果是故障的话会严重的影响到业主的生活工作他们的效率因为我们是高端的小区我们是金牌的物业所以所有事情不能等它出故障我们再去解决而在它没有出问题的时候我们就去防范虽然我们的电梯用的都是正规厂家的但是我们还是要定心做一些维修维护请专业的人员来不要太麻烦要说他没事一定要等他他没事的时候我们就去找事去一定要找事不能等有事我们再去解决那样背后我们一定要去主动去做一些工作而不是去被动去解决一些问题所有的事情我们一定要想到业主的前面去谢谢大家不能等到业主找我们说给我们处理问题我们不是处理问题我们是把问题消灭在他的萌芽状态或者说根本就不让他萌芽这是我们的工作的目的这才是我们收费或者说我们的金牌的为什么是金牌我们为什么是一级的资质为什么人家要逃避别人小区贵一倍的物业费接受我们的服务他们是愿意的谢谢大家还有宠物方面我也提醒各个业主都注意安全,不要让它们到处乱跑。还有宠物,它们可以随身带着一些袋子,如果宠物有一些粪便,它们自己就清理掉。其实我是见过,在小区我也经常转一转,有素质的业主,它们自己随身带着。有的一些盘修物,吐了还是拉了,他们急着拿一个带着,身上自己抓了,扔了就其实这也是我们小区跟别的小区不一样的别的小区这个就是等着物业来处理吧等着大伯伯上来处理吧我们的小区我们的物业质量高我们的物业服务好我们的小区我们的业主他们的素质也高其实这个就很简单如果你家里很干净谁去你家也不好意思我不换鞋或者说你屋里扔点什么了如果你家很乱他也就不介意了谢谢大家你
+[Text Detection] 在 1021.54 秒检测到关键词 '焦焦',current_time: 1020.00, 问题文本: 你好,焦焦。基于之前我们讨论的内容,关于小区绿化养护工作,特别是珍贵树种如银杏树的保护。您認為我們應該如何組織人員學習養護知識以確保這些珍貴樹種得到有效保護
+问题音频片段长度: 553622, dtype: float32, min: -0.10150146484375, max: 0.10772705078125
+问题音频时间长度: 34.601375
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容,关于小区绿化养护工作,特别是珍贵树种如银杏树的保护。您认为我们应该如何组织人员学习养护知识以确保这些珍贵树种得到有效保护同时提升我们物业的服务品质其实这个是一个
+, 1735133280.225756
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容,关于小区绿化养护工作,特别是珍贵树种如银杏树的保护。您认为我们应该如何组织人员学习养护知识以确保这些珍贵树种得到有效保护同时提升我们物业的服务品质其实这个是一个
+, 1735133280.2258763
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4865 seconds, One token time: 0.1622 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：小区绿化 养护知识 学习
+Token count: 31, Total time: 6.3729 seconds, One token time: 0.2056 seconds
+
+提取的关键词: ['小区绿化', '养护知识', '学习']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+会议讨论了小区绿化养护，尤其是银杏树等珍贵树种的保护。建议组织人员学习养护知识，提高服务品质。可以通过培训、分享经验等方式，增强员工的专业技能和责任心。同时，提高业主素质也很关键，鼓励随身携带清洁工具，保持环境卫生，共同维护小区绿化和美观。这样不仅保护了树木，也提升了整体服务质量。
+Token count: 81, Total time: 15.6601 seconds, One token time: 0.1933 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：小区绿化 养护知识 学习
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 还有宠物,它们可以随身带着一些袋子,如果宠物有一些粪便,它们自己就清理掉。其实我是见过,在小区我也经常转一转,有素质的业主,它们自己随身带着。有的一些盘修物,吐了还是拉了,他们急着拿一个带着,身上自己抓了,扔了就其实这也是我们小区跟别的小区不一样的别的小区这个就是等着物业来处理吧等着大伯伯上来处理吧我们的小区我们的物业质量高我们的物业服务好我们的小区我们的业主他们的素质也高其实这个就很简单如果你家里很干净谁去你家也不好意思我不换鞋或者说你屋里扔点什么了如果你家很乱他也就不介意了谢谢大家你基于之前我们讨论的内容,关于小区绿化养护工作,特别是珍贵树种如银杏树的保护。您认为我们应该如何组织人员学习养【护】知识以确保这些珍贵树种得到有效保护同时提升我们物业的服务品质其实这个是一个
+会议讨论了小区绿化养护，尤其是银杏树等珍贵树种的保护。建议组织人员学习养护知识，提高服务品质。可以通过培训、分享经验等方式，增强员工的专业技能和责任心。同时，提高业主素质也很关键，鼓励随身携带清洁工具，保持环境卫生，共同维护小区绿化和美观。这样不仅保护了树木，也提升了整体服务质量。
+reasoner 输出结束
+好,焦焦。基于之前我们讨论的内容,关于小区绿化养护工作,特别是珍贵树种如银杏树的保护。您認為我們應該如何組織人員學習養護知識以確保這些珍貴樹種得到有效保護那么一定要注意大家上下班的安全路上的时候。那下半年的话,你们有什么计划或者说有什么想改进的地方?下半年就是效率再提高吧,然后这个问卷每次也会做一个报告,然后就会也在努力地改善对电商问卷的结果进行分析。我们小区是有这个社区的门诊的要定期的给60岁以上的老人做一些简单的体检特别是孩子们白天都去上班了那么这个老人呢,就一个人在家一定要让孩子们,如果说孩子们没有教育老人用那个一键服务就是因为我们是一个金台物业我们会有这个一键的呼叫如果老人在家里有什么问题他只要是按那个,就像医院那个就像红箭一样它只要一按这些客户就有消息,我们一定要及时的第一时间去通知带着我们的社区的医生上门去服务如果需要急救的或者需要什么的话对于这样的家庭,一定要孩子留钥匙或者说留下联系方式家里有60岁以上老人,特别是有这种心脏病啊高血压啊,糖尿病啊这种病史的在这一块一定要做好一个调查嗯客户这边都有接收到哪些投诉什么的投诉方面就是那个就是电梯方面还有就是用水用电方面的话就是断电啥的都非常热还有就是那个那个环境就是每个小区每一层那个卫生不太干净这个问题有点多啊投诉的这也是不允许的如果再发生这种问题出一个台我们社区决定决定这样的问题,是谁的责任?如果说你适合在这一档位,能升任的话,你就干吧。升不了,你就去比比出去。你觉得这要求的严,好,你可以去其他要求不严的。可以弄的,可以让你混的。我们这不是混的,我们这就是在工作的。不允许有这样的现象。再听见了,一定要责任到人,心语划分到人是谁去出事不能说不知道这一块是负责的不允许有这样的事情发生出于的概念对 咱们工作人员工资也都比较高然后管理部门也分得比较清楚也会让相关部门去及时督促联系那边的话是准备刚才说了有老人还有一些家族卫生不是很干净的这方面我们会采取一些比如说,去他们家经过允许以后给他们打扫一下家庭卫生,进行简单的打扫,比如说蹲地啊,扫地啊,擦桌子,就属于这方面,擦一下窗台,不会有尘土,针对这些不干净的家庭。当然这些是处于另开一个项目,比如说,我们毕竟是负责社区的那些环保嘛,他如果是想上门服务的话,我们会比较忙。现在用保鲜的话可以我们也可以跟一些家属服务公司取得联系一些好的家属公司他们一些比较专业的比较好的这些服务人员可以跟我们做一个对接我们会定期的跟他们就是提前我们小区如果说有这种服务要求的话可以跟人家预约可以过来跟他们做毕竟都是双重大家不能够忙的但是外围的楼道,包括金庄的入户大堂,包括小区里面的,这都会有我们的。把外围一定要做好,人家家里的事,他跟我们预约了之后,我们可以给他们找的根。对,还有就是刚才这个客户说的上半年投资问题,我们这也进行了解决。就刚才比方说楼道卫生问题,我们是分到个人头上的。因为这个毕竟咱们这是金牌管理模式吗他们那只要有一次的话就不会进行批评什么的 直接就会给他们进行开出一些警告然后我再看一下 我再看一下他下一星期的表现 如果下一星期的表现不行的话直接开出 这就属于刚才这个主管说的杀一停呗 还有这个投诉什么一些水电这个问题我把那个维修的还有那个剪安剪的那个师傅因为那个安检的师傅有时候老师跟投诉的一样我去调查的时候他也会偷懒就是不会定期调查我们这儿主要求的是三天一小茶然后两周一大茶属于这种但是那个师傅经常偷懒就是他不会去检查他认为这种电梯啊水电这个线路是没有问题的毕竟咱们是新小区所以他定期整管佛乐环这种人,这个李师傅已经开除了,我们给他换了一个师傅,不管他姓什么,干好了就行,反正这个维修这边我已经换人员了。关于电这一块其实我们是有费用电的无论是电梯还是其他的不能让业主特别是夏天的时候断电了会非常难过我们要及时的启动备用电源,而且是要在一个小时之内排除故障,及时送电,保证每一位业主舒心舒适。而且这个我们是每个小区都有那个通告栏我们都会定期张贴一些东西还有一些LED灯电子板会给大家打上去就会属于闪屏的那种模式让这些字进行滚动让业主看到消息如果不看公式栏里那些文字的话注意到那些比较显眼的就会告诉他们就是停电以后备用电源最好不要用什么大功率的东西不要用开空调用电脑又看电视的因为社区人太多照明就可以了对照明然后开个空调就可以了然后如果比较热的话是吧然后就是不要大批量用电我们会第一时间优先保证的是电梯的电然后再是家庭用电谢谢大家因为社区的人比较多他万一有一些人在坐电梯的时候像一些忽然停电他这些毕竟这种事一年也没有几次对就不会让他出出现这种问题要杜绝然后就是说一下毕竟这个人他停电以后他都会慌在电梯里面所以不会就会我们这备用电源是在20秒之内就可以通向整个小区不会让移民因
+[Text Detection] 在 1552.83 秒检测到关键词 '娇娇',current_time: 1530.00, 问题文本: 因为有些人他是有那种幽闭恐惧症的对我们不知道谁会有甚至他自己可能也不太了解我居然会有这样的病他在电梯里是很危险的对对 我们对电梯那个紧急救护那个人其实也一直在连着来你好 娇娇针对小区卫生和水电问题你有哪些具体的改进措施建议这些
+问题音频片段长度: 187392, dtype: float32, min: -0.07184982299804688, max: 0.098358154296875
+问题音频时间长度: 11.712
+
+
+[Agent] 接收到问题: 你有哪些具体的改进措施建议对这些东西因为平常不用但是我们虽然说平常不用
+, 1735133335.357608
+
+
+[Agent] 最终接收到问题: 你有哪些具体的改进措施建议对这些东西因为平常不用但是我们虽然说平常不用
+, 1735133335.357724
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4826 seconds, One token time: 0.1609 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 70, Total time: 3.1518 seconds, One token time: 0.0450 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+针对不用但需要考虑的事项，建议制定详细的文档和预案，确保在需要时能够快速找到解决方案。同时，可以定期进行审查和更新，以适应变化。
+talker 输出结束
+为有些人他是有那种幽闭恐惧症的对我们不知道谁会有甚至他自己可能也不太了解我居然会有这样的病他在电梯里是很危险的对对 我们对电梯那个紧急救护那个人其实也一直在连着来你好 娇娇针对小区卫生和水电问题你有哪些具体的改进措施建议这些我们已经进行改进,安装了一些小型的锂电池,它就是为了防止那种报警系统,比如说像一些社区忽然停电,它报警系统有时候会没电这种现象,我们就会安装一些小型的锂电池定期的更换。电话一定能长通?就是为了电话和报警长通,因为它怕忽然停电,假如说有一些没收到消息的时候。在電器裡面的人一定會覺得非常的恐懼如果他人其實跟外面人取得一些沟通的话会给心里面有一些安慰对下一位反正这就是下半年有一个计划就是咱们之前一直都是用门禁卡的方式嗯现在我们计划是安装一个人脸尸体因为有的时候你无法确定这个人是不是咱们的业主是否是外人人就是来搞破坏的如果每个业主都让他们安装上有人脸监控的人脸识别的话他们进小区也方便比如说我们在门禁卡他们就要向我们安保部求助才能让他进来而且还有证明一下身份就很麻烦如果说按照这个被封的高下证的效率而且也方便也是可以提高咱们这个安全水平外人很难进来当然咱们这个门禁卡也是同时实行就是他都可以进来一般外人他是没有文件卡的他也没有人脸对吧然后虽然说这个设备需要有成本但是为了咱们但是咱们这个小区的这个水平比较高一路上还是可以付其他费用的而且人均到每个人每一户的头上其实也没多少基金还有一点就是我上次在小区转的时候发现一个细节我觉得非常好就是有一个老人提了很多的东西进来然后我们的保安就立刻过去帮着你提过来就送到了楼下我觉得这一点做得非常好因为来来往往的也不光是我们小区的人其实这一个它可能是一种本能是觉得因为是扶老你看一个老人嘛,就是很本能的去做,但是他做这一点我觉得非常好,他让人感觉很暖心。在这儿住着觉得外人从那路过的,其他的人也觉得在这儿住这么好啊,人家还帮着把东西提到家里面去。因为其实买菜的,基本上如果说有老人和年轻人一起住的,基本上都是老人。老人出去买菜、做饭,年轻人回来之后就直接吃饭就可以了。服务的他回家之后跟他孩子们一起回家这个小伙子真好其实他夸的不单单是这个保安是整个物业是对我们全体的一个肯定我觉得这一点有必要在这儿说出来让每一个我们的工作人员去学习还是那句话我们就要求精求细高质量的财务就是贴心的让他觉得因为我们一直说的是管家式的服务什么是管家式的服务就是很贴心的讓人覺得是很暖心的这个细节我觉得是非常好大家再回去下半年的工作要总结一下我们上半年有什么值得肯定的还有什么值得需要改进的要让我们工作更进一步更上一层楼那那个门口是不是保安部应该设立一些比方说现在一些检查车牌号现在一些车主肯定都是车主较多嘛咱们小区比较让他们买完以后去保安那块去进行电子登记去手打上那些车牌号这样的话咱们的保安就不用一直就是首页值班对啊,咱们一直都实行这种方式啊这种,那你的保安估计你有首页值班吗?什么什么值班,你说的首页值班当然会玩,我们是24小时的呀然后每天晚上都有三次巡逻他在哪值班啊?保安室啊反而是各个出口各个出口咱们小区不是有四个出口吗对呀那刚才说的,前面第一开始主管问的我还有一些问题比方说像摄像头网区要怎么处理咱们小区是几乎没有网区的几乎没有,就是有360度那它会不会摄像头在调转的那一瞬间比方说看不到人之类的我们是有这个是有模式的他往这转的时候像我这个摄像头一定会往这走它是没有任何死角的几乎没有任何死角的但是它不可能就是说全覆盖了就是一点点都看得见全都看得见,这不可能的会多多少少会有一点点的纰漏那我们财务会多加支出多买新摄像头不是不是,我的意思是你这个摄像头你再得要严密,它也不可能就是说永远,你永远都能看到任何死角这是无法避免的但是现在就以我们现中的这个安保水平摄像头的自盖率是完全足够避免所有的居家任何隐患咱们现在也不是说咱们就保护什么国家机密还没有到那种地步就是日常的生活出行还有安全防水防盗防火防盗这些都没问题那外人进小区会怎么处理他说是亲戚会登记的对呀,咱们要取得联系呀跟这个业主取得联系咱们不可能轻易让别人进来这样的话对安全不是原则你说他来干嘛他搞不惯还是成不惯呀说不定会吧那我们小区的那个娱乐设备那些都怎么样现身细材是吧对,现身细材还有就是我们保安部也会派一两名就是会游泳的去当那个就是咱们小西坑是有一个大大那个游泳池嘛中间的游泳池嘛咱们会在这安排我们保安部会在那安排一两名救生员就是一天有两名他们到班的哦那我们这边后勤这边是一直都会进行比方说游泳池咱们这毕竟是露天游泳池嘛万一会有一些树叶啊跳进去我们都会定期的清理而且水用的都是清水微向一些游泳馆里面下放一些水,然后往里头添加一些化学物质这种多次利用的水我们这种属于是两天就给它换一盒水而且,咱们这个游泳池建的地方也是非常的完美就是它的南面就有一个住宅楼,很高就是不会被太阳晒到,对,很凉快属于阴亮,对,而且正好现在处于夏季而且比较适合下午游泳下
+[Text Detection] 在 2061.70 秒检测到关键词 '娇娇',current_time: 2040.00, 问题文本: 下午的时候太阳不会直射这个位置下半年我们也会建一个心理资源室业主的心理问题也是非常重要的一个一项事情所以我们要时刻关注他们的心理你好 娇娇基于之前我们讨论的内容关于小区安保和服务质量的提升
+问题音频片段长度: 649696, dtype: float32, min: -0.099945068359375, max: 0.104705810546875
+问题音频时间长度: 40.606
+
+
+[Agent] 接收到问题: 与之前我们讨论的内容关于小区安保和服务质量的提升你如何看待我们计划安装人脸识别系统来提高小区安全水平同时对于保安在帮助老人家的贴心服务我们应该如何进一步推广和鼓励以提升物业的整体服务形象我们可以空气的给你一些有限制的信息
+, 1735133372.5468175
+
+
+[Agent] 最终接收到问题: 与之前我们讨论的内容关于小区安保和服务质量的提升你如何看待我们计划安装人脸识别系统来提高小区安全水平同时对于保安在帮助老人家的贴心服务我们应该如何进一步推广和鼓励以提升物业的整体服务形象我们可以空气的给你一些有限制的信息
+, 1735133372.5469458
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4829 seconds, One token time: 0.1610 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：小区安保 人脸识别系统 保安服务
+Token count: 30, Total time: 5.7384 seconds, One token time: 0.1913 seconds
+
+提取的关键词: ['小区安保', '人脸识别系统', '保安服务']
+
+找到的上下文片段数量: 1
+会议提出考虑安装人脸识别系统以提高小区安全性，并强调应推广保安对老年人的贴心服务。为提升整体服务形象，需定期总结工作、表彰优秀员工，同时加强摄像头监控系统的优化，确保无死角覆盖。人脸识别系统的引入将显著增强安全措施，而通过培训和激励机制，可以进一步推广保安的贴心服务，从而提升物业形象。
+Token count: 79, Total time: 15.4690 seconds, One token time: 0.1958 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：小区安保 人脸识别系统 保安服务
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 服务的他回家之后跟他孩子们一起回家这个小伙子真好其实他夸的不单单是这个保安是整个物业是对我们全体的一个肯定我觉得这一点有必要在这儿说出来让每一个我们的工作人员去学习还是那句话我们就要求精求细高质量的财务就是贴心的让他觉得因为我们一直说的是管家式的服务什么是管家式的服务就是很贴心的讓人覺得是很暖心的这个细节我觉得是非常好大家再回去下半年的工作要总结一下我们上半年有什么值得肯定的还有什么值得需要改进的要让我们工作更进一步更上一层楼那那个门口是不是保安部应该设立一些比方说现在一些检查车牌号现在一些车主肯定都是车主较多嘛咱们小区比较让他们买完以后去保安那块去进行电子登记去手打上那些车牌号这样的话咱们的保安就不用一直就是首页值班对啊,咱们一直都实行这种方式啊这种,那你的保安估计你有首页值班吗?什么什么值班,你说的首页值班当然会玩,我们是24小时的呀然后每天晚上都有三次巡逻他在哪值班啊?保安室啊反而是各个出口各个出口咱们小区不是有四个出口吗对呀那刚才说的,前面第一开始主管问的我还有一些问题比方说像摄像头网区要怎么处理咱们小区是几乎没有网区的几乎没有,就是有360度那它会不会摄像头在调转的那一瞬间比方说看不到人之类的我们是有这个是有模式的他往这转的时候像我这个摄像头一定会往这走它是没有任何死角的几乎没有任何死角的但是它不可能就是说全覆盖了就是一点点都看得见全都看得见,这不可能的会多多少少会有一点点的纰漏那我们财务会多加支出多买新摄像头不是不是,我的意思是你这个摄像头你再得要严密,它也不可能就是说永远,你永远都能看到任何死角这是无法避免的但是现在就以我们现中的这个安保水平摄像头的自盖率是完全足够避免所有的居家任何隐患咱们现在也不是说咱们就保护什么国家机密还没有到那种地步就是日常的生活出行还有安全防水防盗防火防盗这些都没问题那外人进小区会怎么处理他说是亲戚会登记的对呀,咱们要取得联系呀跟这个业主取得联系咱们不可能轻易让别人进来这样的话对安全不是原则你说他来干嘛他搞不惯还是成不惯呀说不定会吧那我们小区的那个娱乐设备那些都怎么样现身细材是吧对,现身细材还有就是我们保安部也会派一两名就是会游泳的去当那个就是咱们小西坑是有一个大大那个游泳池嘛中间的游泳池嘛咱们会在这安排我们保安部会在那安排一两名救生员就是一天有两名他们到班的哦那我们这边后勤这边是一直都会进行比方说游泳池咱们这毕竟是露天游泳池嘛万一会有一些树叶啊跳进去我们都会定期的清理而且水用的都是清水微向一些游泳馆里面下放一些水,然后往里头添加一些化学物质这种多次利用的水我们这种属于是两天就给它换一盒水而且,咱们这个游泳池建的地方也是非常的完美就是它的南面就有一个住宅楼,很高就是不会被太阳晒到,对,很凉快属于阴亮,对,而且正好现在处于夏季而且比较适合下午游泳下与之前我们讨论的内容关于【小】区安保和服务质量的提升你如何看待我们计划安装人脸识别系统来提高小区安全水平同时对于保安在帮助老人家的贴心服务我们应该如何进一步推广和鼓励以提升物业的整体服务形象我们可以空气的给你一些有限制的
+会议提出考虑安装人脸识别系统以提高小区安全性，并强调应推广保安对老年人的贴心服务。为提升整体服务形象，需定期总结工作、表彰优秀员工，同时加强摄像头监控系统的优化，确保无死角覆盖。人脸识别系统的引入将显著增强安全措施，而通过培训和激励机制，可以进一步推广保安的贴心服务，从而提升物业形象。
+reasoner 输出结束
+午的时候太阳不会直射这个位置下半年我们也会建一个心理资源室业主的心理问题也是非常重要的一个一项事情所以我们要时刻关注他们的心理你好 娇娇基于之前我们讨论的内容关于小区安保和服务质量的提升就是给一些有资质的心理学的有资质的请过来毕竟我们小区无论是我们的房屋我们的绿化我们的物业服务都是一级的所以要跟我们相提备所以我们也请过来谢谢大家刚才说的那个设计的那些娱乐设施这个我们都会定期的擦拭还有喷水因为我们是属于建在了一些像一些美化的一些瓷砖上面像一些种一些花花草草之类的那种那都有消毒吗这些设备是每天晚上定期消毒就是他们使用爱好消毒而且就是比方说在夏季的时候比较炎热我们会进行每隔一个半小时进行一次洒水也是进行一次浇花也是洒水然后小区的一些这个尖的器材一定要定期的检查不单单要把它擦拭干净一定要注意安全因为这些尖器材像老人呢小孩啊窗户玩安全是第一的对如果我们把小区打扫再干净花草搞得种得再美如果在安全问题那我们所有的服务所有的工作都归于零了对,就属于功亏益愧了所以这方面我们这个就是属于定期的会检查一些单杠、双杠因为这个老年人活动的单杠、双杠较多然后还有小孩子们的东西,比方说像一些鞦韆因为鞦韆这方面它如果在盗的时候螺丝会松的话它就会被拍得帅那些螺丝啊那些东西一定要检查好这些地方不容忽视我们这属于是半年就会定期更换一次螺丝然后每个星期都会检查两到三次就是这种安全问题因为这个工作是一个长期的有要耐心的工作不要说没事没事千万不要存在这种矫情的心理因为业主安全是我们的工作正宗之中那你们下去记得就是给我发一个下半年的一个计划表什么的好的大家都没有什么问题了吧没了那咱这场会议就到这了散会你
+[Text Detection] 在 2283.87 秒检测到关键词 '焦焦',current_time: 2280.00, 问题文本: 你好,焦焦下半年计划表中应包含哪些设施维护和安全检查的具体措施
+问题音频片段长度: 193366, dtype: float32, min: -0.0897216796875, max: 0.084503173828125
+问题音频时间长度: 12.085375
+
+
+[Agent] 接收到问题: 你好 娇娇
+, 1735133405.896628
+
+
+[Agent] 最终接收到问题: 你好 娇娇
+, 1735133405.8970659
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4602 seconds, One token time: 0.1534 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 33, Total time: 1.2879 seconds, One token time: 0.0390 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+这段音频的背景声中有附近的人群嘈杂声。
+talker 输出结束
+好,焦焦下半年计划表中应包含哪些设施维护和安全检查的具体措施
+会议数据处理完成。

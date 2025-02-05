@@ -1,0 +1,229 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200624_S_R001S07C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Starting processing from 0s, total chunks: 64
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.27it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.72s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.78s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.08s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.28s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.35s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.28s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.40s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.63s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:18<00:05,  5.22s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.93s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.94s/it]
+016我是市场贵,017我是市化贵行,好的,咱们开会咱们先,各个人先总结一下,咱们这个,各个人的一些情况那从咱们那个策划里边来你觉得近期的话发生最大的问题是什么?主要的就是产品太过于落后然后根据现在一些对漫画动画这种的就是说小猪配器或者是一些成年人喜欢的那种乐高这种都可以就是变花样花样偏少然后就是孩子的这种一直的激怒或者是一种可以对话的机器然后可以讲故事的机器这种就是卖声好一点像热膏的话,卖的话,就是一袋一袋散膏嘛这样的话,有些货会提出来,有些问题就可能大卖了,可能它会掉几个然后就组装不起来,所以我觉得就是每一个零件的话,都可以多带几个谢谢这个策划方案策划方案这个这个这个这个策划方案这个这个这个这个这个这个这个我们有一个十兄弟你先说一下上面有什么生产情况生产是可以的我们生产了各种玩具和人物然后有枪械的车大概有3000多件那你能办出市场这张吗对于市场来说已经是可以满足的了我们近期要多增加一下这个产量然后我们后期研发的话我们想研制一个石兄弟的这个小模型对 还有这样一出的话它有个十个 每个人物的一个然后老大,大长腿,老二,然后说就是,就是整个功能的这个使用力。然后你一买的话,你就不只买我一个,一买就买我十个,对吧?嗯。这样的话,我们的利润也会高,我们生产也就要降大劲。嗯。针对这个设计,针对这个有什么设计,有什么活动可以设计出来?比如说现在流行的小自配器现在有一个实用地实用地生产会可以生产会对你要把这个实用地的塑料处办这个这样的一个可以可以就是如果要是一起买的话那个是丹瓜馒头对会比较便宜然后就是把电视咱们开始要策划开一个这个活动或者是咱们要写一个这个故事对吧这个实用力发展的故事对这老板小婉已经蛮喜欢的实用力是那个电视机里的一个节奏是吗就根据他那个来嘛比方说老大是一个长嘴老大还有一个大口老九不一定是需要有那个时空的手办就也可以把他爸妈家里面也是很经典的一个角色爸爸妈妈家里面也可以也可以是手办一家子都齐了对吧你跟我说手机经典点大口酒肯定不要跟他们一样,因为这是一个清洁的地方要编发自己的一个故事,所以需要像我一样想一想我们不能清洁一样的电影我们只能学习一下,我们要做一个经典的手办就是小医生他们愿意在学习桌上,只能放一下诶,师兄弟,干,把这一放,一看学习的时候疲劳了,然后欣赏一下就是手感塑料的做成了跟一個人一樣的展現那種的話我覺得因為現在如果是小朋友的話他就是比較喜歡對這些可以動的比較好奇比如說一個挖掘機他就會可以讓他放音樂你做的这个的话也可以用这个比如说可以放音乐呀可以电话呀小鸡皮儿因为他们师兄弟每个兄弟他有不同的不同的能力是因为这个所以说他们有些人说你单一买我这一个就会十几个亿只要一买就是成套对 成本消费相对来说还便宜一点但是你要单个买的话就没有意义就这样所以说你买一个美衣冲套上那边策划也可以有什么策划有什么花有故事可以给他们编排一个故事有一些情节然后可能可以就是卖整套的时候可以编排一个故事写成一个稿先考虑一下市场这个市场这个情况,然后咱们一会儿再讨论这个水平比拖挂这个事儿,行吧?来,市场说一下,我们部门这个情况。市场说的话,我们上个月就是在,就是总监领导,引导一下然后做出了一些培训考核然后还对市场的一些调研就是制定了一些方案就比如从小孩子从零岁零到二岁到三岁的这些这是一个阶段然后再就是四岁到八岁就是一个阶段然后就是再上小学然后再大一点的话就是大一点的少年或者常年这种像幼儿的话,他们一般对世界都比较好奇他们心里做一些科教类的玩具比如说一些知识人可以让他们点读的那种教他们说话,让他们对世界认识先是认识,然后像一些积木就是三岁,三到六岁的这种积木可以开动开开放就是一致的动脑的像小一点的话就是可以让这玩具比如带音乐可以在地上走然后分男孩女孩这种像男孩的话对比如说奥特曼有些玩具机器人比较感兴趣像女孩的话可能对芭比娃娃呀毛绒玩具这些就是比较感兴趣再是大一点的话大一点的比如说小学三四年级,二年级到四年级这种,他们就在开发蛋了。对他们在这些方面,就有这种类型。她是成年人,用遥控的遥控机车,飞机,遥控型的,就是一年半的女生,五六年级的这种。就
+[Text Detection] 在 642.15 秒检测到关键词 '好焦',current_time: 630.00, 问题文本: 就比较喜欢飞机模型啊然后遥控汽车然后赛车的一般成年人也会喜欢你好焦策划不针对十兄弟玩具市场推广有何创新方案我们也可以研发那种小型的遥控无人机然后玩具类谢谢大家
+问题音频片段长度: 171691, dtype: float32, min: -0.225128173828125, max: 0.255340576171875
+问题音频时间长度: 10.7306875
+
+
+[Agent] 接收到问题: 你好焦策划不针对十兄弟玩具市场推广有何创新
+, 1735131685.37286
+
+
+[Agent] 最终接收到问题: 你好焦策划不针对十兄弟玩具市场推广有何创新
+, 1735131685.3730335
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9301 seconds, One token time: 0.3100 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+你好教策划不针对十兄弟玩具市场推广，而是有创新的营销方式。
+talker 输出结束
+比较喜欢飞机模型啊然后遥控汽车然后赛车的一般成年人也会喜欢你好焦策划不针对十兄弟玩具市场推广有何创新方案我们也可以研发那种小型的遥控无人机然后玩具类谢谢大家直直的升空,然后进行平行的飞行,这样的五个人机。还有就是咱们这个生产,目前咱这个生产设备,跟国际上的,跟上国际的一些生产厂家吗?我们生产的没有问题跟国际的可能是有一定差距但是我们对于我们自己的消费人群是能够接受的因为我们的东西皮质也耐用因为我们的东西都是很不错的我们自己用的材料都是很环保的也不会有异味然后我们自己生产的这个飞行器也不错我们的发电机也是持久耐用疫情影响市场客户流失的情况,市场有什么办法?这些的话,可以在线上进行销售。比如说,可以开个淘宝店,在线上进行销售。因為 翼翔雖然但是朋友小朋友也不上学了不上学的话在家里也会很无聊所以买玩具其实如果线上的话应该很吃香吧吃得开现在都闲在家里面闲在家里面也没事干小朋友大人为了哄孩子可能会给他们买一些这些让他们能自己玩住自己玩打发一下不不了打发时间很冷在现场开放电影可以吗?现场写下我们都能同时进行可以同时进行现在也可以了因为现在以前差不多可以对,可以开放电影可以去看电影还有就是我们这个公司市场部还应该积极就是去收回掉岩然后拉拢客户,拉拢这些,拉拢客户,然后门店,就是一些玩具店啊,或者一些商场里面卖玩具的一些地方。应该的,就是,跟他们合作吧。让他们来我们这儿就是,捡过呀,或者什么的,给他们提供。这个我觉得应该我们也要自己需要去他那里推销。對 就是不斷的免疫症我们的东西是物美价廉,而且你要什么都可以生产小到遥控汽车,大到遥控飞机,然后跑车,模型,人物,我们都可以生产请先了解一下他们十个特殊的异能现在十个特殊的异能就是老大老大有千眼有顺风耳有大力神有飞天有遁地还有通投还有天舞還有大口九,大口十,差不多十个月就被二年了像这种感觉可以根据他们特点比如说牵眼吧,眼睛可以独特一点伸后耳都可以大一点对,耳朵变大一点,牵着眼睛大一点这就告诉他们,这是老大,老大就是牵着眼老二就是伸后耳,老三呢就是大力三然後賣了頭就結束了这个是一个中国神话传说这个有什么故事刚才也说了家人很丰美不美食吧对咱们可以找到这个怎么说一家人
+[Audio Detection] 在 1023.45 秒检测到关键词 '好交交'。
+detection_time: 1023.45, current_time: 1020.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.22821044921875, max: 0.245330810546875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于我们公司生产的玩具产品如何结合中国神话传说来设计具有独特卖点的玩具
+, 1735131705.4464495
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于我们公司生产的玩具产品如何结合中国神话传说来设计具有独特卖点的玩具以吸引不同年龄段的消费者特别是针对小学生和成年人的市场我们应该如何定位和推广这些玩具产品持久力力能持久力父母是没有力能的但是这台里边是十个空地只有力能的
+, 1735131707.4718459
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4944 seconds, One token time: 0.1648 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：玩具产品 中国神话传说 独特卖点 消费者定位 推广策略
+Token count: 43, Total time: 8.7550 seconds, One token time: 0.2036 seconds
+
+提取的关键词: ['玩具产品', '中国神话传说', '独特卖点', '消费者定位', '推广策略']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，我们可以设计一系列结合中国神话传说的玩具产品。例如，可以制作具有“千眼”、“顺风耳”等特殊异能角色的遥控玩具，如遥控汽车、飞机和跑车等。通过放大这些角色的独特特征（如大眼睛、大耳朵），增强其辨识度。此外，还可以设计一些互动游戏，让孩子们了解中国神话传说的故事背景，从而吸引不同年龄段的消费者。这样既能体现产品的物美价廉，又能传递中国文化元素。
+Token count: 108, Total time: 20.9644 seconds, One token time: 0.1941 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：玩具产品 中国神话传说 独特卖点 消费者定位 推广策略
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 對 就是不斷的免疫症我们的东西是物美价廉,而且你要什么都可以生产小到遥控汽车,大到遥控飞机,然后跑车,模型,人物,我们都可以生對 就是不斷的免疫症我们的东西是物美价廉,而且你要什么都可以生产小到遥控汽车,大到遥控飞机,然后跑车,模型,人物,我们都可以生产请先了解一下他们十个特殊的异能现在十个特殊的异能就是老大老大有千眼有顺风耳有大力神有飞天有遁地还有通投还有天舞還有大口九,大口十,差不多十个月就被二年了像这种感觉可以根据他们特点比如说牵眼吧,眼睛可以独特一点伸后耳都可以大一点对,耳朵变大一点,牵着眼睛大一点这就告诉他们,这是老大,老大就是牵着眼老二就是伸后耳,老三呢就是大力三然後賣了頭就結束了这个是一个【中】国神话传说这个有什么故事刚才也说了家人很丰美不美食吧对咱们可以找到这个怎么说一家人基于之前我们讨论的内容关于我们公司生产的玩具产品如何结合中国神话传说来设计具有独特卖点的玩具以吸引不同年龄段的消费
+根据会议内容，我们可以设计一系列结合中国神话传说的玩具产品。例如，可以制作具有“千眼”、“顺风耳”等特殊异能角色的遥控玩具，如遥控汽车、飞机和跑车等。通过放大这些角色的独特特征（如大眼睛、大耳朵），增强其辨识度。此外，还可以设计一些互动游戏，让孩子们了解中国神话传说的故事背景，从而吸引不同年龄段的消费者。这样既能体现产品的物美价廉，又能传递中国文化元素。
+reasoner 输出结束
+演生故事,娱乐节目可以买,比如说,生产一些画本啊买这个,送他们,就是那些漫画本可以啊,可以可以看,简单的漫画本,然后讲解一下石兄弟的故事,对吧对,这样也可以讲一些石兄弟的技能像他們或者像那種可以自己的圖自己圖畫的那種我們可以夾雜一些中國的傳說故事尤其是千年之光就是中國的比較古老的傳說我們可以根據咱們遵循一下咱們這些同情的故事一定要跟他們的一致小朋友的比如说牵一眼就是就是让小朋友养成一个良好的学习让他们看着这个不敷衍分的时候要不要离得太近保护他们的视力对保护他们眼睛是吧这是一个对只有这样看得更远这个实际好这个到多少人就好要抓住这方面家长的一些心思最终买买这个是家长的好钱家长觉得孩子有教育孩子喜欢家长舍得自己的钱他的本主意其实也就是说兄弟要抱团啊对吧一个单独的一个兄弟他是那不是那么厉害的但是十个兄弟在一起类似于就是一一一一只筷子一只筷子白了十只筷子白不干对就是这个意思所以咱们这个故事呢就是有教育为了教育孩子们去就是共同抱团才能够消耗出去呢这边 策划有什么好的小伙儿我觉得可以每个针对他们的技能写一个简短的一个故事然后比如说 老二 老二是什么老二是顺中耳三合二然后这三合二是什么呢收工耳实际上就类似于我们的手机我们千里之外打个电话就行了可以说收工耳在他的耳朵设计的时候带个耳机对吧其实上现在就能够解决了千里眼吧我们有眼镜但收工耳我们有耳机打电话带个耳机就是解决了这个3803可以可以设定到握的拳头就会在这儿然后这个就会在这儿可以夸张一点,那个胳膊就特别粗然后刚才说到这个,我刚才就说了老大可能都可以让他们去从这个地方保护一个势力跟像老大一样老二就是这个,是花儿好像老二一样,上课的时候不一听讲,要长耳朵,不一听。这个就是老三。老三就是多吃饭。对,多吃饭,这样能有力气。老四是很好的,全身像橡皮一样柔软,其实跟我们现在柔树一样,它就是柔软四。这方面大家可以想一下,大家可以通一下一下这个人。你要有福尔的心我觉得可以的我觉得我们可以重点就是在这些科教类的玩具上面多准备化形体因为现在孩子们都越来越受重视然后家长们也是让他们都他们都就对他们虽然还小小孩就开始抱一些什么一脑的那种那种幼儿园所以在这个上面我觉得应该发现就比如说一些意志的一些玩具以前机器人就可以教就可以说话的那种然后也可以教小朋友可以说按一下还是可以中华那种玩具玩具下轮中间写那种数字一二三四五就是比如说,语句话呀,或者一个英文单词啊,这种,教小朋友的这种,我觉得这种会比较受欢迎。那真是一个老四,你要怎么看?这个石兄弟我也不怎么了解,这个老四。不是一个橡皮,它就是软的,你怎么不懂怎么是,它就有点事儿那种。在这上啊嗯这个可能就是这算什么?刚柔中继吧对啊,它就是一个柔软的技术可以根据这个来说一下老三他就有劲儿,他就看着比较高老四就是软就是柔软就是告诉我们,就是,刚的时候可能有刚的好,但是柔的时候可以对一些,比如说一些小朋友他胆儿比较小,但是老四欺负了就是不能让他灰心然后也不能不自卑啊不能让他灰心啊柔也有柔的好所以呢咱们学习好咱们考个又柔可刚对柔可刚这个系列怎么可以每个每个人物都要有自己的一个小故事就是用这个刚才说的我们这些爸爸妈妈或者把发红了整个那种如所不难为嗯保护孩子的那种想象爸爸的大叔的那种妈妈的怀抱这一方面我们可以把形象设计一下我们可以把形象设计一下我们可以把形象设计一下我们可以把形象设计一下我们可以把形象设计一下我们可以把形象设计一下我们可以把形象设计一下我们可以把形象设计一下我们可以把形象设计一下我们可以把形象设计一下
+[Audio Detection] 在 1568.49 秒检测到关键词 '好交交'。
+detection_time: 1568.49, current_time: 1560.00
+问题音频片段长度: 136192, dtype: float32, min: -0.23663330078125, max: 0.23150634765625
+问题音频时间长度: 8.512
+
+
+[Agent] 接收到问题: 如何将十兄弟的故事儿童教育和玩具设计相结合
+, 1735131765.0997
+
+
+[Agent] 最终接收到问题: 如何将十兄弟的故事儿童教育和玩具设计相结合
+, 1735131765.0999868
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4822 seconds, One token time: 0.1607 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 18, Total time: 1.2234 seconds, One token time: 0.0680 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+将十兄弟的故事情节融入儿童教育和玩具设计中，可以采用以下方法：
+
+1. 故事背景：在玩具设计中，可以将十兄弟的故事作为背景，通过角色扮演、故事讲述等方式让孩子们了解他们的故事。
+
+2. 情节元素：在儿童教育中，可以利用十兄弟故事中的情节元素，如勇敢、团结、友爱等价值观进行教育。
+
+3. 互动体验：设计一些能够模拟十兄弟故事场景的玩具，让孩子们可以通过互动体验来理解和记忆故事。
+
+4. 产品包装：在玩具产品的包装上，可以印制十兄弟的故事插图和相关介绍，增强孩子们对产品的认知和兴趣。
+
+5. 数字媒体：开发基于十兄弟故事的数字媒体内容，如动画片、电子书等，以便于更广泛的传播和教育。
+
+6. 社交活动：组织一些以十兄弟故事为主题的社交活动，如角色扮演游戏、讲故事比赛等，既能让孩子们参与其中，又能提高他们对故事的理解和记忆。
+talker 输出结束
+有没有玩具手机的问题因为疫情嘛然后也生产的玩具也不多是不是可以在工人这边选择选择一下适当的选择一下工人然后像我们市场这边的话因为销售了他们出去跑业务什么的看个人能力,看他们的个人能力怎么样如果要是不行的话,换人,裁剪工人我们的用人肯定不是要那么多了我们是否也需要现在裁剪一下有什么好的想法,哪个部分需要擦一遍?生产部,生产部像一些,比如说看他们平时的一些出勤率啊,或者年纪的问题上这样,那样的,这样的。女生超50岁的话,我们可以劝退。女生超40岁,男生超50岁,我们提前退休。工资的话,因为提前退休的话,我们只是给他造一个姚老加五险就可以了。这样保证了他每一月到手里大概有个六七百块钱。然后也不至于他不能生活。市场那边呢?市场那边的话就是可以一些自己跑业务的一个业务员看他们个人能力怎么样然后如果不行的话就是先是警告然后他们每个月负担量如果还是不想的话就是签费这个消化也有消费视觉都是在儿童方面的如果考业务的话可能就是去连接一些幼儿园或者是幼儿集体的那种找到一些活动可以把以前压着货然后做一些促销然后还有就是就是因为一旦然后声音不太好的话就可以从品质上面再加上嗯那刚刚那个文字会有说这么多本次会就先开到这儿嗯
+[Audio Detection] 在 1879.08 秒检测到关键词 '好交交'。
+detection_time: 1879.08, current_time: 1860.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.20867919921875, max: 0.207611083984375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于疫情影响材料成本上升的问题各部门提出了哪些具体的应对措施市场部门提出了哪些具体的应对措施
+, 1735131785.202902
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于疫情影响材料成本上升的问题各部门提出了哪些具体的应对措施市场部门在调整销售策略方面有哪些想法生产部门在控制成本和人管理方面有哪些具体建议
+, 1735131786.6921203
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4675 seconds, One token time: 0.1558 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：疫情影响 材料成本 应对措施 市场部门 销售策略 生产部门 控制成本 人事管理
+Token count: 49, Total time: 9.4301 seconds, One token time: 0.1925 seconds
+
+提取的关键词: ['疫情影响', '材料成本', '应对措施', '市场部门', '销售策略', '生产部门', '控制成本', '人事管理']
+
+找到的上下文片段数量: 2
+针对疫情导致市场变化和客户流失，会议提出可通过线上销售来增加销量，如开设淘宝店。此外，考虑到孩子们在家时间多，市场部计划积极回收客户、联系玩具店及商场，并通过幼儿园等活动做促销。公司还考虑了员工因疫情提前退休的福利，提供基本生活保障。这些措施旨在应对市场和生产挑战，确保公司持续发展。
+Token count: 83, Total time: 16.2254 seconds, One token time: 0.1955 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：疫情影响 材料成本 应对措施 市场部门 销售策略 生产部门 控制成本 人事管理
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 她是成年人,用遥控的遥控机车,飞机,遥控型的,就是一年半的女生,五六年级的这种。就你好焦策划不针对十兄弟玩具市场推广有何创新比较喜欢飞机模型啊然后遥控汽车然后赛车的一般成年人也会喜欢你好焦策划不针对十兄弟玩具市场推广有何创新方案我们也可以研发那种小型的遥控无人机然后玩具类谢谢大家直直的升空,然后进行平行的飞行,这样的五个人机。还有就是咱们这个生产,目前咱这个生产设备,跟国际上的,跟上国际的一些生产厂家吗?我们生产的没有问题跟国际的可能是有一定差距但是我们对于我们自己的消费人群是能够接受的因为我们的东西皮质也耐用因为我们的东西都是很不错的我们自己用的材料都是很环保的也不会有异味然后我们自己生产的这个飞行器也不错我们的发电机也是持久耐用【疫】情影响市场客户流失的情况,市场有什么办法?这些的话,可以在线上进行销售。比如说,可以开个淘宝店,在线上进行销售。因為 翼翔雖然但是朋友小朋友也不上学了不上学的话在家里也会很无聊所以买玩具其实如果线上的话应该很吃香吧吃得开现在都闲在家里面闲在家里面也没事干小朋友大人为了哄孩子可能会给他们买一些这些让他们能自己玩住自己玩打发一下不不了打发时间很冷在现场开放电影可以吗?现场写下我们都能同时进行可以同时进行现在也可以了因为现在以前差不多可以对,可以开放电影可以去看电影还有就是我们这个公司市场部还应该积极就是去收回掉岩然后拉拢客户,拉拢这些,拉拢客户,然后门店,就是一些玩具店啊,或者一些商场里面卖玩具的一些地
+---
+工资的话,因为提前退休的话,我们只是给他造工资的话,因为提前退休的话,我们只是给他造一个姚老加五险就可以了。这样保证了他每一月到手里大概有个六七百块钱。然后也不至于他不能生活。市场那边呢?市场那边的话就是可以一些自己跑业务的一个业务员看他们个人能力怎么样然后如果不行的话就是先是警告然后他们每个月负担量如果还是不想的话就是签费这个消化也有消费视觉都是在儿童方面的如果考业务的话可能就是去连接一些幼儿园或者是幼儿集体的那种找到一些活动可以把以前压着货然后做一些促销然后还有就是就是因为一旦然后声音不太好的话就可以从品质上面再加上嗯那刚刚那个文字会有说这么多本次会就先开到这儿嗯基于之前我们讨论的内容关于【疫】情影响材料成本上升的问题各部门提出了哪些具体的应对措施市场部门在调整销售策略方面有哪些想
+针对疫情导致市场变化和客户流失，会议提出可通过线上销售来增加销量，如开设淘宝店。此外，考虑到孩子们在家时间多，市场部计划积极回收客户、联系玩具店及商场，并通过幼儿园等活动做促销。公司还考虑了员工因疫情提前退休的福利，提供基本生活保障。这些措施旨在应对市场和生产挑战，确保公司持续发展。
+reasoner 输出结束
+
+会议数据处理完成。

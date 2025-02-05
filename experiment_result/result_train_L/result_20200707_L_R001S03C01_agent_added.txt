@@ -1,0 +1,312 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200707_L_R001S03C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 74
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.13s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.80s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.42s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.88s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.09s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.14s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.11s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.23s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:10,  5.45s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.10s/it]響鐘
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.86s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.88s/it]
+年二二我是总经理,年二二我是工程部,年二三我是保洁部,年二四我是财务,年二五我是客服。今天我們就是為了拍攝會議連結一下上個月上個季度的投資情況還有未來这一季度的计划首先我问一下保安部上个月上个季度咱们小区内有没有什么意识上个季度小区有一个居民是一号车的一家人有什么印象再说了以前早期在车祸里面那也就是说咱们小区的这个门禁卡方面还是有需要一代更新这个是透过小区的那个软件是销售之类的已经进行了投入了而且这个是一卡需要改进还是需要细胞制作链系统这个设备会改进下一个一个是弱链系统还有一个就是这个防止一卡多进谢谢大家现在咱们小区住一段刷卡式的那有没有可能改成人脸识别什么的大家有没有建议人脸识别我建议还是不要走因为如果是租屋的话他路有点太多对 因为人脸有点装屑财务部这边觉得这个设备是需要很大的经费的这个经费是要全体的业主他们共同负担也要看这业主愿不愿意对啊 所以我觉得大体当初的话那个业主像这一样肯定是可能被处理多了我觉得人脸视频这个其实不太可行吧比如说业主在家在小区里是可以那业主的朋友或者业主的父母谁要是想进来想来家里这不太方便想要雇的信息量太大对 信息量太大然后人员太杂这样那怎么处理这个外人人员的密码?这个需要保安这一块去登记了吧保安部这一块需要对这个有卡的人就让他出示密码没有卡的人就登记但是AOA5不用了AOA5就是这个部署嘛它是清起来的它不清然后保安那块不让人联系这个可以登记啊比如說這個其實可以就是可以让业主自己去管事,业主下一手就把他给去管。我觉得我这边建议我们可以多安几个监控,这样的话就是防止东西丢失了的话,才可以通过监控来寻找一下。那咱们小区的监控怎么寻找呢?这个盲区还是有的很大的像一些不哪里都跑走的地方都会有盲区还有一些小区的楼的侧面啊那个通道上都有一些盲区那这个盲区可以像财务部申请的那样申请一个盲区把盲区都补上了而且也可以做一个具体的调查在这一段时间,我已经开始了我现在在做的事情是我现在在做的事情是我现在在做的事情是我现在在做的事情是我现在在做的事情是我现在在做的事情是就是就会接到很多的诉讼然后刚才所说把那个RT有些保安数据不是特别高就是对于业主很亲切的态度不是特别好这个保安就是就是该怎么做我觉得还是要培训一下这些必要的这些礼仪啊这些还有一些就是外来人员没有卡或者怎么进入我觉得应该加强一下培训谢谢大家面对这些问题应该怎么处理可以在门口或者保安室按照这样的如果保安进行事务较低的一些东西的话可以进行相对于处罚罚金在后处一家银管公司他就会有所改进有所重新新造一些保安按时说会不会出现一些问题就是他的微博公司就像他很像对业主的信息来说他觉得特别好然后导致监控拍下来的时候就开始知道他了发来以后他的感觉这个月资少的行为对业主的态度也会变得差点这个的话如果遇到这种情况就开始了那公司刚才总共咱们这个公司这边之间是什么样的这个规章呢关于这个态度问题如果态度问题首先是第一次是投手警告第二次是罚款第三次就是开始对咱这个一定要做好这个还有就是家常平时的教育还有培训对那这个设备- 哪些部份的插纪录有哪些需要维修?- 上过的还有这纪录,现在是训期嘛,下纪,有什么需要整改的地方,需要维修的设备?- 上个纪录的话,主要是对楼梯的保温层,还有对墙皮的脱落进行维修。- 刷漆是吗?对对 刷漆 然后补一下这个墙体然后对这个保温槽的话有的地方剥落了,然后该剥的就剥一剥对,这有医院主要进行辅助了就是传染的那些花,像你还有华丽桑就是没有及时处理好对,咱们往后会及时的去维修然后迅期的话,咱们用的措施就是多,因为之前咱们的有一些这个出水泵是没有开的,没有开起来咱们这个这个泵就是只派了一些专门的人去看守这个泵接下来这个训练期的话应该就雇一些这个专业的相关工作人员去就是对这个泵进行检修然后下雨的话自行这个开泵去抽水排水还有就是这个咱们想出这个景盖也会有一些破损然后维修的话之前咱们用的是那种老式的井盖就比较纯 比较无方面咱们现在要采用那种轻型的井盖一个是方便我们去打开它 维修和检查再一個就是他結實比之前老師更結實一些还有就是这个刚才说到摄像头啊,这个摄像头也要更新了,就更新了,把它换成那种高清的,然后一个是这个方便咱们去看这个监控,如果真的有盗窃的话,就是方便看到大家方便看到这个人的轮廓,还有脸。再一个就
+[Text Detection] 在 562.41 秒检测到关键词 '焦焦',current_time: 540.00, 问题文本: 就是这个绿化绿化带绿化部分啊这个绿化部分的话就是有一有一部分绿化是遭到这个一些这个蚊虫啊这个蚂蚁啊之类的腐蚀就是他会你好焦焦焦关于小区门进卡改进是否考虑过人脸识别系统
+问题音频片段长度: 131414, dtype: float32, min: -0.102264404296875, max: 0.093048095703125
+问题音频时间长度: 8.213375
+
+
+[Agent] 接收到问题: 是否考虑过人脸识别系统
+, 1735099338.1149895
+
+
+[Agent] 最终接收到问题: 是否考虑过人脸识别系统
+, 1735099338.115124
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9057 seconds, One token time: 0.3019 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+很抱歉，我无法在没有额外信息的情况下确定是否考虑过人脸识别系统。可以提供更多的上下文或信息吗？
+talker 输出结束
+是这个绿化绿化带绿化部分啊这个绿化部分的话就是有一有一部分绿化是遭到这个一些这个蚊虫啊这个蚂蚁啊之类的腐蚀就是他会你好焦焦焦关于小区门进卡改进是否考虑过人脸识别系统或者是说损失也是要承担的嘛但是这个就要考虑到跟业主协商看他们的车到底需要停在哪不啊,咱们业主如果说在咱们小区十月的可能还要是要停到地下停车场他们不会往外停啊怎么呢,南宝部对这方面有什么想法呢就是地下停车场我觉得如果是这样设计的话最好设计一个可以设置一个跑车层或者一個地上才能找到或者你看安一个车缝这些东西因为相对于防水层来说的话车缝造价很低我觉得可以更新一下排水系统这样更便利一点然后咱们工程部咱们行政法的排水系统现在还完善吗排水系统一直都完善但是如果真的下暴雨下就是那種特大如果下大暴雨和特大暴雨的时候,咱们还不及时游泳。那咱们车工会不会向小路申请报告可以加关系的收整棒还有就是保健部要经常去清理就是清理积水主要的情况就是清洁和安保然后咱们人手的话也不需要说是在找一些人如果咱们一个小区嘛,就是说咱们可以把一部分的老人家和青年人员,就是在这儿安排来进行一个水平,就是把这个这个。好,你不觉得这个排水系统,因为现在旭期,然后水量特别大,排不出去,咱们小区这个绿化,就会受到影响。然后就是比如发炎的那些草,那些绿植就是受到的伤害非常大,希望把这个小区地面上排水系统做得更好一些,更完善一些。除了积水的话,还有摆样子,小区的绿化,就是所有的倒垒。好,这个会找修理人员专门再进行修改。然后保洁这边有什么问题呢?一是咱们这个小区的各种设施比如说垃圾桶有的都受到就已经是不能再用了对需要更新然后这个是需要向财务部门跟财务部门沟通一下然后那些绿化标识这也需要采购一下因为要贴在那形物的地方对吧然后还有第二个呢就是社区现在小区里有很多然后居民开始养宠物然后对宠物这些他们在小区里就是遛狗了那些时候会产生一些那些排泄物那些寵物的有的居民素质很高会处理但有的就并不会说随手把他们的寵物产生那些垃圾那没有实质的进行只有我们保洁人员来进行但是这样处理就会很困难有没有别的想法假装垃圾袋需要和安保一起安保有安保的工作听着业主们去热狗,让到我们小区问一下,谢谢我觉得我有一个提议就是可以,我们小区可以制定一个计划就是有人发现这样的行为,然后举报的时候可以进行奖励然后对那个人进行惩罚,然后这样可能会增加一些这是业主自己的小区这是自己的小区,所以环境方面需要每个人都注意这方面可以给他开放一个六个房子小区内怎么可能还要有那么多空调的场地就像空调给他改一下就有没有这种情况就是业主他并不是没有什么他忘了带一些清理他一些东西有没有这种情况这种情况我觉得可以就是去跟保洁人员及时地说然后及时清理不会到时候那边很吵很麻烦是否可以增加一些关于在旁边的沙土,然后一些特产?对,沙土我觉得可以在旁边备一些。对,可以备一些,不是直接就埋起来吗?就是放到上面,然后再缠着。就是需要和保鞋,在垃圾桶旁边放一些垃圾袋什么的。還有一些費用的組合就是一組可以比如說在上樓去拿,就是需要和房間和財務部進行的,還有就是怕業主在入口的時候如果有在草層上,就一定要去跟他們說,怎麼樣去免費服務。所以就需要制定一下我們小區的那個...衛生署。對。那你們有什麼想法嗎?可以在草帆上用標語標誌進行总
+[Text Detection] 在 995.36 秒检测到关键词 '好交',current_time: 990.00, 问题文本: 总结一下好交基于之前我们讨论的内容关于去小区防汛措施特别
+问题音频片段长度: 536566, dtype: float32, min: -0.1669921875, max: 0.17486572265625
+问题音频时间长度: 33.535375
+
+
+[Agent] 接收到问题: 总结一下好交基于之前我们讨论的内容关于去小区防汛措施特别是地下停车场容易进水的问题安保部和工程不有什么具体的建议和解决方案吗
+, 1735099363.1581447
+
+
+[Agent] 最终接收到问题: 总结一下好交基于之前我们讨论的内容关于去小区防汛措施特别是地下停车场容易进水的问题安保部和工程不有什么具体的建议和解决方案吗
+, 1735099363.1582596
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4836 seconds, One token time: 0.1612 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 25, Total time: 1.3598 seconds, One token time: 0.0544 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+根据讨论，无法将业主权益卡复制给普通居民。但可以采取措施提高小区防汛能力，比如地下停车场的排水系统。
+talker 输出结束
+结一下好交基于之前我们讨论的内容关于去小区防汛措施特别多加一些垃圾桶如果它不把它放在盆子上这样的话就有点少了在盆子上进去的话它自己也可以吃一些东西保洁这边觉得是可以多加一些垃圾桶专门就是宠物的东西这个刚才听你们说这个有没有投诉呢是有没有投诉的因为想在业主方素质就是比较高的一个也會有一些就是自己的宠物在草原上就是进行了大温面然后也没有进行处理然后给他们就是在草原上旁边然后就是来散步的夜都不算那么大个因为毕竟很少生意的就是大温气的因为他们保育人员很困難就是说每天都是前一天草原上的草原但是说的总是对的所以这个图图老师我们就是进行了上面就是进行了调解读问就是把这个举报以后我们是先通过查监控然后对就是进行这种行为的验出就是有了解然后咱们就是可以通过给他打电话請安慰一些這些畫面但是具体的话,毕竟我们是服务我们的行业,业主怎么做我们也没法,这种不大的制度,需要各个小区有一个基本的度量制度,基本上,實行是需要全球區域的人去實行的我覺得它可以由總經理指定一份給所有業主我之前有一个协议处,我看是有一个自己的商业我觉得与业主协商不是一件很好的计划,主要还是但是从经费方面考虑的话,因为我们小区里的各种事项都需要经费安装摄像头滤化或者地下車庫水的問題積水的問題還有垃圾桶都需要經費所以如果我們什麼都做得太好的話我們其實經費上有很大壓力所以還是需要和小區這些戶主協商這個可以通過咱們畢竟是一個小區服務公司我們想要幫一下公司這些甲官員進行商量讓他們來承包這個車區的那些利潤品您不想讓客戶講話來談談我們的物業費物業費是一部分像什麼電梯停車場的那些需要物業費以外所以這些新增的東西,咱們可以由甲黃航運產公司來給咱們提供單航運產公司,就是和咱們運營,就是這兩年來的一大年期,就是快接完業務看你可以去售房部詢問一下,一般都會管家售後,如果是建房在三道樓內購在這裏,我們可以看到,在這裏,我們可以看到,在這裏,我們可以看到,在這裏,我們可以看到,在這裏,我們可以看到,小区有动物或人的情况吗?动物感情的情况,终于没有了。现在有,有些独立的反应就是已经被大型犬被弄了。因为最后的结果就是今天协商,然后大型犬的组成就是进行了非常好的这个发展的话,那我还有没有其他的其他就是还有就是社区的台子这种问题我感觉只能起到谢谢大家通过家长给孩子教育客户这边的话就是建议就是加监控然后就是比如说因为业主他们的车辆被炸了咱们就是可以对 第一时间调查然后这一部分进行缩分的话我们客户就是可以进行就是安排人来进行协商还有一些就是小孩子吃完的东西去社区里面那个属于一个休闲洋所一个就是里面晚上游玩的地方往那个游荒里面跟一些垃圾的东西这些东西有时候没有精确处理还有客人都不太会这个话可能保洁的话可以注意一下这边的反馈之后会马上处理然后现在因为现在都实行垃圾分类所以咱们小区现在就简单的那种垃圾桶不行然后也需要采购一些那种专门的那些垃圾桶进行回收然后希望这个也就是咱们小区的物业就是可以通知到居民让他们进行垃圾分类因为有的比如说电池那些有害的它都是要回收的如果只是把垃圾随便扔到垃圾桶里我们保洁人员被围起来也非常麻烦就是很有难度因为每天小区这么多居民产生了垃圾不是说随便分一下内居都分清楚的希望这个能给小区的居民都通知到对 根据控制的话就是咱们除以垃圾是必须要分出来的这种话就是需要咱们就是与外面就是咱们清洁过需要租一辆车 然后把垃圾你也联系一下,让他们帮着大家去发行其实是很简单的,然后就是即时的联系,然后就是这样做,每天来几趟因为一定要一个大的小区,他们传承来这个路由同保持这边有什么问题,目前?还有就是经理这边要负责市场业务业种和组织访问联系即使是同志
+[Audio Detection] 在 1545.87 秒检测到关键词 '好交交'。
+detection_time: 1545.87, current_time: 1530.00
+问题音频片段长度: 121686, dtype: float32, min: -0.133697509765625, max: 0.123992919921875
+问题音频时间长度: 7.605375
+
+
+[Agent] 接收到问题: 如何有效解决业租租投诉和小区垃圾垃圾分类问题
+, 1735099391.6786327
+
+
+[Agent] 最终接收到问题: 如何有效解决业租租投诉和小区垃圾垃圾分类问题
+, 1735099391.6787684
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4838 seconds, One token time: 0.1613 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 27, Total time: 1.3955 seconds, One token time: 0.0517 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+为有效解决业主要求增加物业费和小区垃圾分类问题，建议采取以下措施：
+1. 召开业主大会，广泛听取业主意见，了解大家对物业管理和服务的需求。
+2. 增加物业服务人员和设施，提高服务质量和效率，让业主感受到物有所值。
+3. 制定严格的垃圾分类制度，并进行宣传和培训，使业主养成良好的垃圾分类习惯。
+4. 加强与街道、社区等相关部门的沟通协作，共同推进垃圾分类工作的顺利开展。
+5. 对于乱扔垃圾的行为，要依法依规进行处罚，维护小区环境卫生。
+talker 输出结束
+而且后期如果你要机动车变多了,那你这种车万多吗?那只要需要财务是去扩大一下,然后定一下,可能需要买材料,还有就是工件,这个从这里给你设计。那上一个季度咱们经费主要运用在哪个地方?上个季度的话就是有很大的增长很多需要改进的地方比如说加了垃圾桶什么的安装摄像头坏了的地方又重新安装了一下还有就是一些客户投诉的赔偿损失他一天上,包括给党的音乐经济额额高奖,就说党在小组还有白城有些地方就是像反正还有一些小主意,就是8号口罩,也是一些个月,就是财务部,就是上个月,就是他的财务已经得到8分的一个财务。就上个季度有那个电梯里电梯里就是按键不好用了然后刷卡有的住户说刷卡不灵敏了所以改进了一下电梯里的那个设备那是怎么改进的我这边就是一个是急着更新换代直接就更新了吗很多用户现在直接就更新了吗看这个时候就要看是业主的卡不灵敏还是咱们的设备不灵敏如果是这一栋楼的人都都反映说这个不太好用那我们就要去检查我们设备是不是我们设备出现了问题如果就单单是这一户居民的话我们可以考虑让这个居民去给这个居民就是让他去换这个电梯卡在這次的演出中,我們都看到了一大堆的小蝶在這次的演出中,我們都看到了一大堆的小蝶在這次的演出中,我們都看到了一大堆的小蝶在這次的演出中,我們都看到了一大堆的小蝶在這次的演出中,我們都看到了一大堆的小蝶在這次的演出中,我們都看到了一大堆的小蝶就是把我們的意見給他,然後他就進行檢查對還有問,南口的路上,我們家的垃圾和潑水是如何?高中之物是常見的對,一定要顧家安全遮擋對,就有一個感覺就是差點被打到但是幸好沒有出現這件事情就造成了那些傷害的情況要做到责任划分他们要做到告知的义务如果高层跑舞队人遭到什么损害的话他需要受到什么责任这个高层跑舞队人需要受到什么损害如果真的是杀手了他也不得了自己的处理自己的处理拿回一波的潮流中间新盖的楼房在施工,他们有没有查到我们有没有业主说的举报这个问题?这方面的话是有进行投注的,但是特别少,所以咱们只插了片。他们的小区的话,这个社会上的话,就是咱们隔音制度比较不错的,对您以后对咱们的隔音进行了调查吗?如果临近施工地段的话,我们也会加装一些临时的隔音板。就是临近施工地段的时候,我们会实际考察一下它这个噪音是不是影响了居民的正常生活。如果对这个人的正常生活有影响的话还是可以的对,我们就可以加装一层这个隔音码你可以去和工地调解一下如果调解不好的话,他们可以跟着你做问问现在我们的客户认识大概是这些部份他想追求画面就是,很多是什么品种的花呀草呀草就属于普通的那种草,就属于那种正常的绿化草原的样子。花可以种一些异样的东西,可以种一些五彩的东西,也可以找一部分种一些玫瑰。那如果就怕有些人自己踩在咱们才会不当地的好遇到传统问题的人你知道吗稍微简单的说不要说做得那么好那咱们现在大概一天巡逻几次巡逻的时间是几点还有你们设置几个点位小区每一栋楼都有三个点位大门也有一个点位然后公园和街道都设置了两个点位他们每期早上会巡逻三次下午巡逻三次上班时间就是从八点到十二点然后进行换班上午班和下午班那夜间是什么问题夜间是什么问题法案我非常记得因为有的法案会反而就不取消但如果发现不成法那你你先得通报批评然后进行法案如果还是不改定的话就开始了车辈检修大概是多久检修一次主要出现的问题又在哪里我们通常一个季度减重一次一个季度减重一次吗对对,因为如果你减重太频繁的话没有一个必要的一个季度就不够了哪些设备是成本的主要是出电线呀,水管管道啊天阳能啊,一些东西现在小区业主他们大多数是天阳能还是电能开
+[Text Detection] 在 2044.67 秒检测到关键词 '基于之前',current_time: 2040.00, 问题文本: 开一次会议总结一下你好 焦 焦基于之前我们讨论的内容关于小区经费使用核投诉处理的问题我想请问一下上个季度咱们小区的经费主要运用在哪些地方总结一下
+问题音频片段长度: 546123, dtype: float32, min: -0.1544189453125, max: 0.1007080078125
+问题音频时间长度: 34.1326875
+
+
+[Agent] 接收到问题: 咱们小区现在是说太阳路的交通开一次会议总结一下你好 焦 焦基于之前我们讨论的内容关于小区经费使用核投诉处理的问题我想请问一下上个季度咱们小区的经费主要运用在哪些地方总结一下另外主要上个街到了哪些举报和投诉原因是什么针对
+, 1735099424.132158
+
+
+[Agent] 最终接收到问题: 咱们小区现在是说太阳路的交通开一次会议总结一下你好 焦 焦基于之前我们讨论的内容关于小区经费使用核投诉处理的问题我想请问一下上个季度咱们小区的经费主要运用在哪些地方总结一下另外主要上个街到了哪些举报和投诉原因是什么针对
+, 1735099424.1323228
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4930 seconds, One token time: 0.1643 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：会议总结工具
+2. 行动输入：总结内容包括：上个季度小区经费使用情况，上街接到的投诉和举报原因。
+Token count: 40, Total time: 8.1187 seconds, One token time: 0.2030 seconds
+/home/leon/agent/agent/agent_tools.py:98: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  summary = reasoner_llm(prompt)
+### 会议总结
+
+#### 一、会议主要内容
+
+1. **保安部**
+   - 安装门禁系统的更新及人脸识别系统的可行性讨论。
+   - 监控系统的更新，尤其是安装高清摄像头。
+
+2. **工程部**
+   - 排水系统改造，特别是地下车库排水问题。
+   - 防汛措施的改进。
+   - 工程设备的维护与更新，如电梯设备。
+   - 绿化区域的维护，特别是受虫害影响的植物。
+
+3. **财务部**
+   - 各项费用的具体使用情况。
+   - 安全设备的采购费用。
+   - 处理客户投诉的成本。
+
+4. **保洁部**
+   - 宠物粪便清理措施。
+   - 垃圾分类垃圾桶的购置。
+   - 增加垃圾桶数量。
+
+#### 二、主要问题与建议
+
+1. **门禁系统与人脸识别系统**
+   - 财务部建议：由于需要较高的投资，建议与业主协商分担费用。
+   - 安保部建议：采用传统的刷卡方式，避免人脸识别带来的不便。
+   - 建议：安装高清监控系统，提高安全性；同时增设人脸识别功能。
+
+2. **排水系统**
+   - 建议：增加地下车库的排水设施，减少暴雨时的积水问题。
+   - 安保部建议：在小区内设置更多垃圾桶，避免因垃圾桶不足造成的垃圾堆积问题。
+
+3. **绿化区域**
+   - 建议：更换轻型井盖，提高安全性；更新绿化植物，减少病虫害。
+   - 保洁部建议：增加绿化区域，提高美观度。
+
+4. **设备维护**
+   - 建议：定期检查并维修设备，确保正常使用。
+   - 财务部建议：制定详细的设备更新计划，并与业主协商分担费用。
+
+#### 三、费用管理
+
+- 上个季度的费用主要用于安装新的监控设备、更新电梯设备、增加垃圾桶和绿化区域的维护。
+- 每季度进行一次设备维护和检修工作，以确保设备正常运行。
+- 针对各项费用，建议与业主进行进一步沟通，争取更多的资金支持。
+
+#### 四、未来计划
+
+1. 进一步完善小区的监控系统，提升安全防范能力。
+2. 安排专业人员对排水系统进行全面检查和修复，确保汛期安全。
+
+Token count: 513, Total time: 103.4307 seconds, One token time: 0.2016 seconds
+
+reasoner输出：
+1. 行动：会议总结工具
+2. 行动输入：总结内容包括：上个季度小区经费使用情况，上街接到的投诉和举报原因。
+使用工具：会议总结工具
+agent工具结果：### 会议总结
+
+#### 一、会议主要内容
+
+1. **保安部**
+   - 安装门禁系统的更新及人脸识别系统的可行性讨论。
+   - 监控系统的更新，尤其是安装高清摄像头。
+
+2. **工程部**
+   - 排水系统改造，特别是地下车库排水问题。
+   - 防汛措施的改进。
+   - 工程设备的维护与更新，如电梯设备。
+   - 绿化区域的维护，特别是受虫害影响的植物。
+
+3. **财务部**
+   - 各项费用的具体使用情况。
+   - 安全设备的采购费用。
+   - 处理客户投诉的成本。
+
+4. **保洁部**
+   - 宠物粪便清理措施。
+   - 垃圾分类垃圾桶的购置。
+   - 增加垃圾桶数量。
+
+#### 二、主要问题与建议
+
+1. **门禁系统与人脸识别系统**
+   - 财务部建议：由于需要较高的投资，建议与业主协商分担费用。
+   - 安保部建议：采用传统的刷卡方式，避免人脸识别带来的不便。
+   - 建议：安装高清监控系统，提高安全性；同时增设人脸识别功能。
+
+2. **排水系统**
+   - 建议：增加地下车库的排水设施，减少暴雨时的积水问题。
+   - 安保部建议：在小区内设置更多垃圾桶，避免因垃圾桶不足造成的垃圾堆积问题。
+
+3. **绿化区域**
+   - 建议：更换轻型井盖，提高安全性；更新绿化植物，减少病虫害。
+   - 保洁部建议：增加绿化区域，提高美观度。
+
+4. **设备维护**
+   - 建议：定期检查并维修设备，确保正常使用。
+   - 财务部建议：制定详细的设备更新计划，并与业主协商分担费用。
+
+#### 三、费用管理
+
+- 上个季度的费用主要用于安装新的监控设备、更新电梯设备、增加垃圾桶和绿化区域的维护。
+- 每季度进行一次设备维护和检修工作，以确保设备正常运行。
+- 针对各项费用，建议与业主进行进一步沟通，争取更多的资金支持。
+
+#### 四、未来计划
+
+1. 进一步完善小区的监控系统，提升安全防范能力。
+2. 安排专业人员对排水系统进行全面检查和修复，确保汛期安全。
+
+reasoner 输出结束
+一次会议总结一下你好 焦 焦基于之前我们讨论的内容关于小区经费使用核投诉处理的问题我想请问一下上个季度咱们小区的经费主要运用在哪些地方总结一下那这个马来街部呢?除了让财务部采购一些一些标识,比如说公知,然后提示,别的之外也没有什么。嗯,财务部呢?嗯,财务部的工作刚刚已经汇报完。那客服部呢?響鐘接
+[Text Detection] 在 2196.21 秒检测到关键词 '焦焦',current_time: 2190.00, 问题文本: 接一下你好焦焦小区太阳能使用情况如何是否存在漏水和积水问题
+问题音频片段长度: 141142, dtype: float32, min: -0.017108917236328125, max: 0.013011932373046875
+问题音频时间长度: 8.821375
+一下你好焦焦小区太阳能使用情况如何是否存在漏水和积水问题
+会议数据处理完成。

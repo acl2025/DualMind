@@ -1,0 +1,560 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200701_S_R001S07C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 66
+Initializing talker model in talker_process_func...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Loading Whisper model...
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.29s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.35it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:03,  1.30s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:08<00:04,  4.91s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.98s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:13<00:00,  4.60s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:11<00:09,  4.76s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:15<00:04,  4.72s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.61s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:17<00:00,  3.52s/it]
+请不吝点赞 订阅 转发 打赏支持明镜与点点栏目中文字幕志愿者 杨茜茜这次会议主要就是为了上半年的工作做一个这方面的总结还有就是本次会议要切实的各部分人把自己各部分的一些问题在会上多说一下,同时也要各部分人的一些思想后期这边开始上半年的工作情况前半年因为受疫情的影响我们的酒店的整体的营业额出现了大幅度的下滑但是从上个月上半个月之后因为疫情的温暖我們開始積極採取補救措施包括上个月我们承接了保险公司的一个活动我们在一楼的东厅西厅二楼的大厅给保险公司准备了会议室他们来接待他们的新郎客户进行一些宣传最后共进揽插虽然档次不高但是我们也集中全力地做好这次的服务给我们自己因为他们保险公司对我们的评价也很高包括他们的新到客户也会对我们服务有一个高度的认可这样的话也会对我们后半年的工作有一个积极的影响以后就是在下个月的话我们还会跟其他的公司洽谈一些合作争取到更多的订单包括我们参与的这一方面我们会做到一些比如在卫生方面的还有食品进入的一些条件我们会在食品进入我们酒店的时候对食品进行严格的控制因为我们餐饮部是入口的东西所以要求会非常的严格从进入酒店之前的包括它的新鲜程度食材的新鲜程度包括以后消毒措施包括后厨的这些卫生的情况每一个环节都要严格把关层层把关这样的话一定要保证客户就餐的卫生安全还有就咱们后勤这一块看看这个一些这个刚才说的那些对方想要改进的地方吗然后就是因为在疫情期间那个客房是控制的闲置的是比较多的那么现在因为但是咱们也进行这个定期的打扫对我们现在就是每天进行一些检查就是班组长的日检查主管的周检查包括我对他们的一个每个月的检查不会松懈因为无论是客房还是餐饮我们都必须让客户感觉到我们的干净 卫生 温馨和我们的热情像客房的床单就是要求的就是客人走之后必须撤换 清洗 消毒然后重新的铺设对于地面的话我们要求的是无水渍、无脚印、无污渍对于床单也必须是白色的床单必须是没有一点点污渍的我们宁可如果说这个床单有了这个比如说孩子们画的这个圆珠笔的这个印啊或者什么的不容易清洗的我们宁可换新的不要在省这个小钱而影响我们整体的形象这样的话人家会说啊这个床单是没有洗过的但是如果说出现这种情况的话我们宁可去换新的床单也不要要有这这个屋子等于是出现就是这种小瑕疵要避免包括餐饮的这一块的话尽量我们会控制得非常严包括后期的这些管理所有的食材进来可能都不会当天吃完那么我们在存放的时候就要生与熟分开然后冷与热分开海鮮魚要有一个分制的我们有一些装这些东西的一些材料那么我们就必须把它们分开比如说鱼类很容易串外包括所有的蔬菜如何是在初期的一些清理工作都要做好做到位就是细化到每一个环节然後責任到美包括因为这个安全也是很重要的特别后厨的有煤气有火嘛对安全这个方面这个灭火器的使用我们要对每个员工进行灭火常识这些知识的一些培训应急的一些措施比如说四总四会啊这些都要知道包括灭火器的使用防范包括比如说厨房如果情急失火了我们要怎么做厨房有专人负责但是灭火器也要有专人负责还有就是出现其他情况之后我们要怎么做怎么去应对对于灭火器它的性能比如说干粉灭火器二氧化碳灭火器它们一些常识都培训到位包括有保安对我们有一些培训因为他们对这些安防这一块会更专业一些定期的给大家一个培训这个不是多余的跟职工说清楚因为防火责任重大生命是高于一切的跟员工在这一方面就是安全 卫生还有就是服务的标准上有一个严格的细化的一些要求刚才您也说了一些我们上次会议我们想要一些房间,想要更换一下这个床,是吧?床单,对,一些床单。那这个,这些床呢,床需要怎么样?床,我们会列一张那个清单,因为如果有一些床的就是床板有一些裂缝啊,或者床腿有一些断裂、剔的那个不安全,而且我们不能说半夜睡觉客户里摔一下或者闪一下这样无用
+[Audio Detection] 在 504.95 秒检测到关键词 '好交交'。
+detection_time: 504.95, current_time: 496.00
+一些快报废的因为我需要定期更换的对 要定期更换还有一些刚才说到的大型的会议室会议室的一些会议馆的也要去检查一下有没有这些不能使用的对 其实就是对员工有一个应该说是一个指导一个引导你在打好医生的时候不是简单的是拖拖地 擦擦桌子在大号卫生所也检查一下桌椅板凳有没有该换的 损坏的因为我们要创造一个打造一个干净整洁的环境但是更重要的是安全人家承包我们这个会议室某公司的老总居然摔里面头那我们就惨了要检查这些设备惨不惨 对咱们公司这个形象形象就是一个负面的影响太厉害了还有就是咱们这个一些这个音箱设备会议室的音箱设备以前需要更换了吗音箱设备现在目前没有发现有需要更换的但是空调要定期的清洗嗯 空调这方面嗯行然后咱们这个目前大概这个我们这边然后我们员工有败地的然后因为疫情影响然后也没有进行反访但是因为我们这边这个订单量也比较降低就是客户需求量降低的话我们业务没有平时那么忙所以我们那个前期还是运转是比较正常的然后我们这么长时间就是一直就是疏忽了一个前台的一个这个门面问题然后前一段时间就是看了看发现就是我们就是迎宾的那个栏杆其实它有一定的松动呢就是有些客人就在门口有问题或者接了电话的时候就会倚靠那个栏杆就这个有一个暗箱所以把门口的栏杆策划了一下然后我们的迎宾地毯也是有一定年头了就是一直反复洗的话就已经没有别人那么鲜艳了所以就整体来看可能是不太漂亮想要装换一下对,想要把这个装换一下然后我们说一下我们前台这几个店员的业务情况目前订单量比较低,但是还是有的然后还是以我们这个大床房标间它的这个订单市值量是比较大然后那个但是就比如说有一些那个旅游团过来的话它对这个标间的那个因为我们走的是内部价格嘛会比较低还有那些跟企业合作的然后它的内部价格比较低当然它有时会临时出现那个公换房间的这个情况发生就比如说有一对夫妻俩他们当时安排的本来就是大厂房但是我们分配过来的是一个标签但是我们现在已经没有大厂房了他会就跟我们谈谈有点过不去就一直说这个问题所以我们就希望以后跟他们这些旅行团说清楚那他们把这个单就给我们给详细一点因为我们这边要比较热门尤其是旅游热门期的时候我们房间都是不供的他们如果少的话我们可以更换即时更换免了一些纷争但是如果我们通关不及时的话对于我们酒店来说其实是有一定影响的所以想要跟旅行团队我们这些合同商家那边说清楚把我们这个详细的都给安排清楚就不要再出现这种失误了毕竟我们前台人员还是比较为难的然后还有就是我们那个里边部那个行李存放处我们现在采用的那个方式不是手卡方式吗就是那个客人过来的时候现在是存放他不开房间现在是存放行李我们手法是一分之二但是我们经常会遇到把手卡丢失的这个问题因为它暂时没有开房然后我们这边没有它的记录然后它又说这个行李是它的这个问题比较麻烦所以我们在想着要不要做一个其他的应对的二层防护措施这样的话可以减少一些不必要的这些麻烦这是我们暂时存在的问题别的没有前台方才你说有部分员工没有返港还没返港对,有一些比较刚开始因为我们有武汉地区的那些员工当时也是因为疫情原因没有返港然后现在因为变动比较大所以他们现在就是跟我们这边说的就是先不回来了所以我们给他们先办了一个停职停薪然后现在我们还是运营的过来然后就是慢慢这个移行过去之后如果周围的呼吸症房之后,我们可能在员工方面有一点不够。然后往年我们都是跟高校合作的一批实习生过来嘛。今年这个也是先合作暂停了嘛,他们也是过不来。所以说我们这些人手方面可能是有一些紧张的。你这方面需要咱们先找一个人吗?对,就是先找一个,反正先跟实习做起嘛。因为前台作为酒店的门面一定要端庄大广然后投尺伶俐然后因为我们也有外宾接待所以有一个最基本的双语要求这个是基本的然后其他就是因为我们还有我们因为我们用的订单的系统是我们总部处的它是一个外语的所以对这些学历方面我们也是有一个要求的你要看得懂这个怎么能会操作然后我们这边也是师傅在鼓励一带一的形式所以说他们只要他们自身没有什么问题的话我们这边也应该可以快点上手的这个是学历要强大这个双运对 这个要是一个最基本的男女性别有多强大我们这边现在男士可能有点少因为我们职业班的时候最起码要因为男士在场然后是因为我们是班制嘛一个星期就歇一天做一天班这样的然后所以说我们就是男士其實起碼每天晚上有一個有些人他可能就是连着两天就值夜班有一点累所以我们这边招的话可以先主要招一些男士主要一些男士对需要多少我们现在男士最起码需要两个然后女士的话三个就可以了三个几个男的对近期就是对就是我们往后可能会需要的就是现在可以运营的过大但是我可能会应该进场现在还可以那咱到时候跟那个人士这个说一下按这个对招工这个要求写下来好好给他说然后就是咱们这个客服客服这边咱们克服这边的话咱们下个月的资金非常少然后投诉投诉量是比较少的,因为我们后勤部队做的也比较好,投诉量的话减少了很多,咨询量多,但是最后的订单量并没有多。这方面的话,我们部门也做了一些沟通,开了一个会,总结了一些经验,打算在下个月的话,我们会有一个工作流程的培训,然后就是让我们客服和顾客之间建立良好的沟通关系,实施客户封闲和顾客问答然后我们做好及时的解决和回答然后维持良好的服务秩序提供微笑主动热情细致快速准确的客户服务并且的话就是我们客服务的话也是要求业绩的不光是在订单量的成功这方面的业绩还有一些就是咱们订单完成的或者是入住完毕的会给他们发一个短信然后对我们的服务扩幅做一些评价,最后我们都会归到业绩里的。确保我们工作人员的服务态度吧。对于咱这个客服部门,目前咱们这个下半年,因为上半年这个业绩情况不太好,肚子痛不大,肚腱痛苦,肚子痛苦,肚子痛苦,肚子痛苦下半年有什么改变,有什么方式去改变以前也基本去这个平板首先呢就是我们客服部提定了规定就是对于咱们咨询的一些客户的话就是做好服务问答然后确保咱们咨询的电话可以成功转为订单这个客户能不流失就不流失下订一些就是多成交订单的话咱们客服部可以拨打一些电话就是跟一些旅行团拨打一下然后问问他们是否就是这两天这个月或者是下个月是否会有团来咱们这旅游呢大概是多少呢让我们提前做好准备呀之类的就是跟多跟咱们一些老顾客老的旅行团然后做一些沟通嘛然后或者是说你比如比如说咱们一些老顾客经常来咱们这儿出差的可以打一个问候电话,回访电话或者是一些老顾客,他有自己的妻子过生日或者是经常来咱们这儿订房的高档客户的也是可以做一个好的回访的目前可以增加一天这个毛病老婆客服部除了一些业绩上的竞争,培养大家的竞争能力,提高业绩。活动可以组织一些,嗯就是咱们客咱们客服嘛然后他其实每个人都会有固定的一些顾客名咱
+[Text Detection] 在 1263.75 秒检测到关键词 '娇娇',current_time: 1240.00, 问题文本: 咱们就可以让顾客来访或者是说到咱们会展厅来访然后讲解一下咱们新的可以开展一些新的房间主题房间可以给他们介绍一下你好 娇娇基于之前我们讨论的内容关于酒店前台
+们就可以让顾客来访或者是说到咱们会展厅来访然后讲解一下咱们新的可以开展一些新的房间主题房间可以给他们介绍一下你好 娇娇基于之前我们讨论的内容关于酒店前台生日证我们都会看不到那我们就注意一些细节如果正好是在他生日期间我们可以送上生日花束或者说吃饭的时候送上一碗寿面或者是一个蛋糕这样的话可以增加客户的归属感觉得好像就是进了我们酒店宾至如归嘛就真正的让他们感受到宾至如归这种感觉好像就是回家了你看,他们像亲人一样照顾我他给我过生日他自己发了朋友圈了或者说跟亲朋好友说了这无形中就是给我们酒店做一个广告虽然我们是买了一束鲜花或者说买了一个蛋糕虽然我们是投入了一些但是这种广告效能是更好的而且非常的温情人们也非常的认可对像一些老顾客在他们的生日前夕咱们也可以提前打拨打电话拨过去然后问问咱们这边生日有什么打算吗?可以提前准备好或者是说有一些结婚纪念日的对可以来咱们这边咱们公司的话也可以在咱们的展座帮他们策划一场纪念日活动也是可以的包括一些老人过寿啊孩子过摆摊啊我们都可以跟我们老客户的回访来得到这些订单如果我们不打这个电话可能他一定会请客过程中会摆几桌现在就包括老人过生也很少在家里先麻烦对吧都是酒店但是去哪个酒店不是去呢为什么不把他拉到我们酒店来呢我们这个电话打过去一个问候就是简单的一个家常话一个问候然后可能我们聊着聊着说多了他就会说下个月我妈过生日或者说下个月谁谁谁家可能是他亲一家的孩子过百天我们就可以邀请他过来而且我们可以给他一个回扣对 然后咱们公司的讲厅的话也可以承包一些外边的业务比如说他们的婚礼或者是说有一些商业的活动之类的演出之类的也可以在我们酒店的会展厅做活动这个的话也能增加我们酒店的收益是这样的下个月,我们就来一个省里面的运动,参观市场,进行市场。这方面有护膜,这方面有鸡蛋护膜这方面说一下这方面具体护膜的一个技法我们这边如果接待领导的话,我们先是防员确定我们顶层的那两个套房,就是6个888,这两个套房可以提前预留出来。接待的时候是由经理带着我们我们下面这几个主管一起接待然后给他做一下我们酒店的一个基本的介绍还有功能介绍比如说我们那个游泳馆然后健身器材馆还有那个茶街市这个我们都可以跟领导先介绍一下如果他们提前有需求的话我们都可以跟他预留出来然后那个我们前台这边礼宾部也是由他们的主管然后把那一天时间控出来做一个基本的接待然后我们还是打算就是因为我们这个这边的绿花设施什么都比较好所以我们打算做一个简单的参观然后当时如果我们这些展厅有租赁出去的话我们也可以跟领导进行简单介绍一下我们这些会议室的功能还有我们这些茶歇室这一类的如果我们能展示的话就提前展示 不能展示的话我们也可以做一个基本的介绍前進步大概就是然
+[Text Detection] 在 1604.25 秒检测到关键词 '好教教',current_time: 1581.00, 问题文本: 然后我们服务这一方面呢我们这些果盘茶歇都是按照我们这个最高会员的标准准备的然后还有这个这些服务比如说那个客房服务教导服务都是他们这个电话线是一线的你好教教如何提升客服部门业绩和客户满意度有哪些具体错误
+后我们服务这一方面呢我们这些果盘茶歇都是按照我们这个最高会员的标准准备的然后还有这个这些服务比如说那个客房服务教导服务都是他们这个电话线是一线的你好教教如何提升客服部门业绩和客户满意度有哪些具体错误尤其是卫生这一块都要强化一些像我们客服部的话我觉得提前拨打电话进行时间上的行程上的安排上的论候制定一方面的流程和前台对接一下然后的话就是政府部门嗯,其實這方面如果我们做好的话,也就是和政府部门合作的话,也是有一些收益的。像一些比如说外省的人来视察呀,或者是政府部门做的一些团建活动之类的。然后对我们外包的话也是非常有帮助的。所以这方面卫生的话是肯定是需要注意的。还有就是各部门还有想要这个对水上进行帮助的问题,再回答谈论一下。安全方面要格外的注意安全是重中之重所以对于灭口器、小黄霜这些要加强检查还有记得及时更换,保证客人安全,如果没有安全的话,其他都空了。还有就是咱们线上营销,就是在一些APP上,贴出广告的酒店广告的一些营销,咱们可以跟他们APP合作,推翻复数稍微多一点,这样的话咨询量会比较多。我们现在这边是前台八台这边的销量最近不是特别好所以我们打算把八台这边重新装修维护一下然后那些软饮的那些种类我们想丰富一下然后我们和这些线上商家合作的时候可以把我们这些八台的产品推销出去我这边还有一点就是一再地强调我们是无烟的酒店所以特别是对后厨的虽然有的厨师但是抽烟的,但是一定不能把烟带进后厨,因为后厨这个安全工作是更要出力的,包括卫生。如果你,即使你炒菜的时候,你工作里没有抽烟,但是你都有烟的话,如果客人投诉的话,这是一个很麻烦的问题。所以即使我们不能强调每个员工的必须戒烟我们也告诉他不能在工作场所出现大陆机构这个问题就是第一是安全意困第二个也是对个人卫生的一个要求嗯刚才这个目前这个说的对反正目前刚才说的都是对咱们公司这个一些这个服务啊这些他们说的然后对人员咱们都能够了解这点各个园队有一个具体的一个规则规章这个然后酒店也有一个综合规章这个会存在情况,所遇到的一些情况,这边会存在不一当中,还有想要什么关于人员方面?就是咱们客服部的话,因为马上就要到暑期了嘛,暑期的话,像旅行的话,旅行团或者是咱们出来玩的话,就是可能订单量会增加,然后这方面就是咱们线上一定要做好配合客服的话也可以招一批可以招两三个新人过来然后做咨询工作的话然后人员充配一点或者是做回饭的话这样工作协调可以协调过来就是比较好的那我们最近的话那个司机因为我们公经司机只有两个嘛一个是接短途的一个是接那个行程比较长的司机然后有出现问题就是有的时候本来原定的计划是这一班车然后我们把我们现在已经安排好单车路,到下一站,到电话之后,会出现司机还没有回来,司机还在路上的情况。所以我们想在这边申请一辆车,再多配一个司机,把这个车子配开。我们这边就是厨师和配菜的需要在招因为有一个厨师他要要结婚了,他可能会休18天的婚假,那我们不能这个岗位不能空着,我们需要在他休婚假之前再招一个厨师。嗯,那到时候各部门呢,各部门招一个这个计划,把这个事先考上。那既然各位现在都没什么问题了,咱们这次会就先看到这,散会。
+[Audio Detection] 在 1991.45 秒检测到关键词 '好交交'。
+detection_time: 1991.45, current_time: 1984.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200701_S_R001S07C01_agent_added/out_001-F_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 535701, dtype: float32, min: -0.123504638671875, max: 0.125335693359375
+问题音频时间长度: 33.4813125
+
+
+[Agent] 接收到问题: 你好 娇娇基于之前我们讨论的内容关于客服部即将到来的属期订单量增加我们计划招聘两三个新人来应对咨询和回访工作你觉得这样的人员配置是否充足是否还有其他需要补充的地方
+, 1736826935.6897397
+问题音频STT前的时刻: 1736826935.6898468
+问题音频STT后的时刻: 1736826936.207559
+问题音频STT时间: 0.5177123546600342
+
+
+[Agent] 最终接收到问题: 你好 焦焦真对上半年工作总结各部门有哪些具体改进措施
+, 1736826936.2080944
+问题音频送入Planner的时刻: 1736826936.208681
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1736826936.8616316
+planner new_token time: 1736826937.2528417
+planner new_token time: 1736826937.2532363
+First token received: 1, time: 1736826937.2540884
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1736826937.456972
+talker first token time: 1736826937.9753442
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1736826938.0091758
+talker first token time: 1736826938.03504
+talker first token time: 1736826938.060724
+talker first token time: 1736826938.086309
+talker first token time: 1736826938.1121054
+talker first token time: 1736826938.16301
+talker first token time: 1736826938.1887994
+talker first token time: 1736826938.2145681
+talker first token time: 1736826938.240397
+talker first token time: 1736826938.291676
+talker first token time: 1736826938.342963
+talker first token time: 1736826938.3688514
+talker first token time: 1736826938.3948848
+talker first token time: 1736826938.4208286
+talker first token time: 1736826938.4478347
+talker first token time: 1736826938.4997241
+talker first token time: 1736826938.5258768
+talker first token time: 1736826938.5520134
+talker first token time: 1736826938.603886
+talker first token time: 1736826938.6299007
+talker first token time: 1736826938.655931
+talker first token time: 1736826938.6820366
+talker first token time: 1736826938.7080898
+talker first token time: 1736826938.7342665
+talker first token time: 1736826938.7863753
+talker first token time: 1736826938.8126607
+talker first token time: 1736826938.838851
+talker first token time: 1736826938.8911057
+talker first token time: 1736826938.9177475
+talker first token time: 1736826938.9446123
+talker first token time: 1736826938.9710896
+talker first token time: 1736826938.9974
+talker first token time: 1736826939.0238109
+talker first token time: 1736826939.0759912
+talker first token time: 1736826939.1023037
+talker first token time: 1736826939.1287565
+talker first token time: 1736826939.155051
+talker first token time: 1736826939.207562
+talker first token time: 1736826939.2340972
+talker first token time: 1736826939.2605462
+talker first token time: 1736826939.2869833
+talker first token time: 1736826939.339538
+talker first token time: 1736826939.365878
+talker first token time: 1736826939.3922563
+talker first token time: 1736826939.4189835
+talker first token time: 1736826939.4458783
+talker first token time: 1736826939.4985988
+talker first token time: 1736826939.525253
+talker first token time: 1736826939.5518527
+talker first token time: 1736826939.5782576
+talker first token time: 1736826939.631861
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+各部门需要根据自身情况进行总结，提出具体改进措施。例如，销售部门可以提高销售额，优化销售策略；市场部门可以通过增加宣传力度，提升品牌知名度；人力资源部可以加强员工培训，提高团队素质等。各部门应主动承担责任，制定实际可行的计划，不断推动企业的发展。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200701_S_R001S07C01_agent_added/out_001-F_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 535701, dtype: float32, min: -0.123504638671875, max: 0.125335693359375
+问题音频时间长度: 33.4813125
+
+
+[Agent] 接收到问题: 你好 娇娇基于之前我们讨论的内容关于客服部即将到来的属期订单量增加我们计划招聘两三个新人来应对咨询和回访工作你觉得这样的人员配置是否充足是否还有其他需要补充的地方
+, 1736826941.202822
+问题音频STT前的时刻: 1736826941.20297
+问题音频STT后的时刻: 1736826943.051173
+问题音频STT时间: 1.8482029438018799
+
+
+[Agent] 最终接收到问题: 你好 娇娇基于之前我们讨论的内容关于酒店前台员工招聘的具体要求能否详细说明一下学历要求 双语能力以及性别比例的具体标准同时 针对灭火器和空调设备的定期更换和维护我们是否有详细的计划和执行标准
+, 1736826943.0513406
+问题音频送入Planner的时刻: 1736826943.05176
+planner new_token time: 1736826943.7032921
+planner new_token time: 1736826944.0916865
+First token received: 0, time: 1736826944.0919118
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1736826944.4808471
+planner new_token time: 1736826944.8693755
+planner new_token time: 1736826945.2580595
+planner new_token time: 1736826945.6482632
+planner new_token time: 1736826946.0390086
+planner new_token time: 1736826946.4274464
+planner new_token time: 1736826946.8164487
+planner new_token time: 1736826947.2056088
+planner new_token time: 1736826947.594801
+planner new_token time: 1736826947.9836285
+planner new_token time: 1736826948.372125
+planner new_token time: 1736826948.7606223
+planner new_token time: 1736826949.149838
+planner new_token time: 1736826949.5387995
+planner new_token time: 1736826949.9283001
+planner new_token time: 1736826950.317686
+planner new_token time: 1736826950.7071872
+planner new_token time: 1736826951.0964289
+planner new_token time: 1736826951.4862838
+planner new_token time: 1736826951.87605
+planner new_token time: 1736826952.266958
+planner new_token time: 1736826952.65675
+planner new_token time: 1736826953.0472198
+planner new_token time: 1736826953.4378734
+planner new_token time: 1736826953.8283362
+planner new_token time: 1736826954.217844
+planner new_token time: 1736826954.608577
+planner new_token time: 1736826954.9981234
+planner new_token time: 1736826955.3884916
+planner new_token time: 1736826955.7786686
+planner new_token time: 1736826956.1693723
+planner new_token time: 1736826956.5597634
+planner new_token time: 1736826956.950408
+planner new_token time: 1736826957.3408349
+planner new_token time: 1736826957.7312944
+planner new_token time: 1736826958.122064
+planner new_token time: 1736826958.5123777
+planner new_token time: 1736826958.9030123
+planner new_token time: 1736826959.2939095
+planner new_token time: 1736826959.6847029
+planner new_token time: 1736826960.075781
+planner new_token time: 1736826960.4669936
+planner new_token time: 1736826960.857942
+planner new_token time: 1736826961.2491653
+planner new_token time: 1736826961.6428819
+planner new_token time: 1736826962.0362256
+planner new_token time: 1736826962.4271386
+planner new_token time: 1736826962.818797
+planner new_token time: 1736826963.2096498
+planner new_token time: 1736826963.6009667
+planner new_token time: 1736826963.6017888
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：酒店前台员工招聘 学历要求 双语能力 性别比例 灭火器 定期更换 维护标准
+
+
+提取的关键词: ['酒店前台员工招聘', '学历要求', '双语能力', '性别比例', '灭火器', '定期更换', '维护标准']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:261: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+
+Token count: 90, Total time: 35.7221 seconds, One token time: 0.3969 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：酒店', '前台', '员工', '招聘', ' ', '学', '历', '要求', ' ', '双', '语', '能力', ' ', '性', '别', '比例', ' ', '灭', '火', '器', ' ', '定', '期', '更换', ' ', '维', '护', '标准', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###不吝点赞 订阅 转发 打赏支持明镜与点点栏目中文字幕志愿者 杨茜茜这次会议主要就是为了上半年的工作做一个这方面的总结还有就是本次会议要切实的各部分人把自己各部分的一些问题在会上多说一下,同时也要各部分人的一些思想后期这边开始上半年的工作情况前半年因为受疫情的影响我们的酒店的整体的营业额出现了大幅度的下滑但是从上个月上半个月之后因为疫情的温暖我們開始積極採取補救措施包括上个月我们承接了保险公司的一个活动我们在一楼的东厅西厅二楼的大厅给保险公司准备了会议室他们来接待他们的新郎客户进行一些宣传最后共进揽插虽然档次不高但是我们也集中全力地做好这次的服务给我们自己因为他们保险公司对我们的评价也很高包括他们的新到客户也会对我们服务有一个高度的认可这样的话也会对我们后半年的工作有一个积极的影响以后就是在下个月的话我们还会跟其他的公司洽谈一些合作争取到更多的订单包括我们参与的这一方面我们会做到一些比如在卫生方面的还有食品进入的一些条件我们会在食品进入我们酒店的时候对食品进行严格的控制因为我们餐饮部是入口的东西所以要求会非常的严格从进入酒店之前的包括它的新鲜程度食材的新鲜程度包括以后消毒措施包括后厨的这些卫生的情况每一个环节都要严格把关层层把关这样的话一定要保证客户就餐的卫生安全还有就咱们后勤这一块看看这个一些这个刚才说的那些对方想要改进的地方吗然后就是因为在疫情期间那个客房是控制的闲置的是比较多的那么现在因为但是咱们也进行这个定期的打扫对我们现在就是每天进行一些检查就是班组长的日检查主管的周检查包括我对他们的一个每个月的检查不会松懈因为无论是客房还是餐饮我们都必须让客户感觉到我们的干净 卫生 温馨和我们的热情像客房的床单就是要求的就是客人走之后必须撤换 清洗 消毒然后重新的铺设对于地面的话我们要求的是无水渍、无脚印、无污渍对于床单也必须是白色的床单必须是没有一点点污渍的我们宁可如果说这个床单有了这个比如说孩子们画的这个圆珠笔的这个印啊或者什么的不容易清洗的我们宁可换新的不要在省这个小钱而影响我们整体的形象这样的话人家会说啊这个床单是没有洗过的但是如果说出现这种情况的话我们宁可去换新的床单也不要要有这这个屋子等于是出现就是这种小瑕疵要避免包括餐饮的这一块的话尽量我们会控制得非常严包括后期的这些管理所有的食材进来可能都不会当天吃完那么我们在存放的时候就要生与熟分开然后冷与热分开海鮮魚要有一个分制的我们有一些装这些东西的一些材料那么我们就必须把它们分开比如说鱼类很容易串外包括所有的蔬菜如何是在初期的一些清理工作都要做好做到位就是细化到每一个环节然後責任到美包括因为这个安全也是很重要的特别后厨的有煤气有火嘛对安全这个方面这个【灭】火器的使用我们要对每个员工进行灭火常识这些知识的一些培训应急的一些措施比如说四总四会啊这些都要知道包括灭火器的使用防范包括比如说厨房如果情急失火了我们要怎么做厨房有专人负责但是灭火器也要有专人负责还有就是出现其他情况之后我们要怎么做怎么去应对对于灭火器它的性能比如说干粉灭火器二氧化碳灭火器它们一些常识都培训到位包括有保安对我们有一些培训因为他们对这些安防这一块会更专业一些定期的给大家一个培训这个不是多余的跟职工说清楚因为防火责任重大生命是高于一切的跟员工在这一方面就是安全 卫生还有就是服务的标准上有一个严格的细化的一些要求刚才您也说了一些我们上次会议我们想要一些房间,想要更换一下这个床,是吧?床单,对,一些床单。\n---\n所以即使我们不能强调每个员工的必须戒烟我们也告诉他不能在工作场所出现大陆机构这个问题就是第一是安全意困第二个也是对个人卫生的一个要求嗯刚才这个目前这个说的对反正目前刚才说的都是对咱们公司这个一些这个服务啊这些他们说的然后对人员咱们都能够了解这点各个园队有一个具体的一个规则规章这个然后酒店也有一个综合规章这个会存在情况,所遇到的一些情况,这边会存在不一当中,还有想要什么关于人员方面?就是咱们客服部的话,因为马上就要到暑期了嘛,暑期的话,像旅行的话,旅行团或者是咱们出来玩的话,就是可能订单量会增加,然后这方面就是咱们线上一定要做好配合客服的话也可以招一批可以招两三个新人过来然后做咨询工作的话然后人员充配一点或者是做回饭的话这样工作协调可以协调过来就是比较好的那我们最近的话那个司机因为我们公经司机只有两个嘛一个是接短途的一个是接那个行程比较长的司机然后有出现问题就是有的时候本来原定的计划是这一班车然后我们把我们现在已经安排好单车路,到下一站,到电话之后,会出现司机还没有回来,司机还在路上的情况。所以我们想在这边申请一辆车,再多配一个司机,把这个车子配开。我们这边就是厨师和配菜的需要在招因为有一个厨师他要要结婚了,他可能会休18天的婚假,那我们不能这个岗位不能空着,我们需要在他休婚假之前再招一个厨师。嗯,那到时候各部门呢,各部门招一个这个计划,把这个事先考上。那既然各位现在都没什么问题了,咱们这次会就先看到这,散会。你好 焦焦真对上半年工作总结各部门有哪些具体改进措施你好 娇娇基于之前我们讨论的内容关于【酒】店前台员工招聘的具体要求能否详细说明一下学历要求 双语能力以及性别比例的具体标准同时 针对灭火器和空调设备的定期更换和维护我们是否有详细的计划和执行###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n关于【灭火器】和空调设备的定期更换及维护，会议提到对所有员工进行灭火常识培训，确保他们了解灭火器的使用方法。此外，提到防火责任重大，生命高于一切，需定期给员工进行消防安全培训。然而，会议内容并未详细提及具体的计划和执行步骤。因此，针对灭火器和空调设备的定期更换和维护，还需进一步制定并落实相关详细计划。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###不吝点赞 订阅 转发 打赏支持明镜与点点栏目中文字幕志愿者 杨茜茜这次会议主要就是为了上半年的工作做一个这方面的总结还有就是本次会议要切实的各部分人把自己各部分的一些问题在会上多说一下,同时也要各部分人的一些思想后期这边开始上半年的工作情况前半年因为受疫情的影响我们的酒店的整体的营业额出现了大幅度的下滑但是从上个月上半个月之后因为疫情的温暖我們開始積極採取補救措施包括上个月我们承接了保险公司的一个活动我们在一楼的东厅西厅二楼的大厅给保险公司准备了会议室他们来接待他们的新郎客户进行一些宣传最后共进揽插虽然档次不高但是我们也集中全力地做好这次的服务给我们自己因为他们保险公司对我们的评价也很高包括他们的新到客户也会对我们服务有一个高度的认可这样的话也会对我们后半年的工作有一个积极的影响以后就是在下个月的话我们还会跟其他的公司洽谈一些合作争取到更多的订单包括我们参与的这一方面我们会做到一些比如在卫生方面的还有食品进入的一些条件我们会在食品进入我们酒店的时候对食品进行严格的控制因为我们餐饮部是入口的东西所以要求会非常的严格从进入酒店之前的包括它的新鲜程度食材的新鲜程度包括以后消毒措施包括后厨的这些卫生的情况每一个环节都要严格把关层层把关这样的话一定要保证客户就餐的卫生安全还有就咱们后勤这一块看看这个一些这个刚才说的那些对方想要改进的地方吗然后就是因为在疫情期间那个客房是控制的闲置的是比较多的那么现在因为但是咱们也进行这个定期的打扫对我们现在就是每天进行一些检查就是班组长的日检查主管的周检查包括我对他们的一个每个月的检查不会松懈因为无论是客房还是餐饮我们都必须让客户感觉到我们的干净 卫生 温馨和我们的热情像客房的床单就是要求的就是客人走之后必须撤换 清洗 消毒然后重新的铺设对于地面的话我们要求的是无水渍、无脚印、无污渍对于床单也必须是白色的床单必须是没有一点点污渍的我们宁可如果说这个床单有了这个比如说孩子们画的这个圆珠笔的这个印啊或者什么的不容易清洗的我们宁可换新的不要在省这个小钱而影响我们整体的形象这样的话人家会说啊这个床单是没有洗过的但是如果说出现这种情况的话我们宁可去换新的床单也不要要有这这个屋子等于是出现就是这种小瑕疵要避免包括餐饮的这一块的话尽量我们会控制得非常严包括后期的这些管理所有的食材进来可能都不会当天吃完那么我们在存放的时候就要生与熟分开然后冷与热分开海鮮魚要有一个分制的我们有一些装这些东西的一些材料那么我们就必须把它们分开比如说鱼类很容易串外包括所有的蔬菜如何是在初期的一些清理工作都要做好做到位就是细化到每一个环节然後責任到美包括因为这个安全也是很重要的特别后厨的有煤气有火嘛对安全这个方面这个【灭】火器的使用我们要对每个员工进行灭火常识这些知识的一些培训应急的一些措施比如说四总四会啊这些都要知道包括灭火器的使用防范包括比如说厨房如果情急失火了我们要怎么做厨房有专人负责但是灭火器也要有专人负责还有就是出现其他情况之后我们要怎么做怎么去应对对于灭火器它的性能比如说干粉灭火器二氧化碳灭火器它们一些常识都培训到位包括有保安对我们有一些培训因为他们对这些安防这一块会更专业一些定期的给大家一个培训这个不是多余的跟职工说清楚因为防火责任重大生命是高于一切的跟员工在这一方面就是安全 卫生还有就是服务的标准上有一个严格的细化的一些要求刚才您也说了一些我们上次会议我们想要一些房间,想要更换一下这个床,是吧?床单,对,一些床单。
+---
+所以即使我们不能强调每个员工的必须戒烟我们也告诉他不能在工作场所出现大陆机构这个问题就是第一是安全意困第二个也是对个人卫生的一个要求嗯刚才这个目前这个说的对反正目前刚才说的都是对咱们公司这个一些这个服务啊这些他们说的然后对人员咱们都能够了解这点各个园队有一个具体的一个规则规章这个然后酒店也有一个综合规章这个会存在情况,所遇到的一些情况,这边会存在不一当中,还有想要什么关于人员方面?就是咱们客服部的话,因为马上就要到暑期了嘛,暑期的话,像旅行的话,旅行团或者是咱们出来玩的话,就是可能订单量会增加,然后这方面就是咱们线上一定要做好配合客服的话也可以招一批可以招两三个新人过来然后做咨询工作的话然后人员充配一点或者是做回饭的话这样工作协调可以协调过来就是比较好的那我们最近的话那个司机因为我们公经司机只有两个嘛一个是接短途的一个是接那个行程比较长的司机然后有出现问题就是有的时候本来原定的计划是这一班车然后我们把我们现在已经安排好单车路,到下一站,到电话之后,会出现司机还没有回来,司机还在路上的情况。所以我们想在这边申请一辆车,再多配一个司机,把这个车子配开。我们这边就是厨师和配菜的需要在招因为有一个厨师他要要结婚了,他可能会休18天的婚假,那我们不能这个岗位不能空着,我们需要在他休婚假之前再招一个厨师。嗯,那到时候各部门呢,各部门招一个这个计划,把这个事先考上。那既然各位现在都没什么问题了,咱们这次会就先看到这,散会。你好 焦焦真对上半年工作总结各部门有哪些具体改进措施你好 娇娇基于之前我们讨论的内容关于【酒】店前台员工招聘的具体要求能否详细说明一下学历要求 双语能力以及性别比例的具体标准同时 针对灭火器和空调设备的定期更换和维护我们是否有详细的计划和执行###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+关于【灭火器】和空调设备的定期更换及维护，会议提到对所有员工进行灭火常识培训，确保他们了解灭火器的使用方法。此外，提到防火责任重大，生命高于一切，需定期给员工进行消防安全培训。然而，会议内容并未详细提及具体的计划和执行步骤。因此，针对灭火器和空调设备的定期更换和维护，还需进一步制定并落实相关详细计划。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200701_S_R001S07C01_agent_added/out_001-F_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 535701, dtype: float32, min: -0.123504638671875, max: 0.125335693359375
+问题音频时间长度: 33.4813125
+
+
+[Agent] 接收到问题: 你好 娇娇基于之前我们讨论的内容关于客服部即将到来的属期订单量增加我们计划招聘两三个新人来应对咨询和回访工作你觉得这样的人员配置是否充足是否还有其他需要补充的地方
+, 1736827001.0016115
+问题音频STT前的时刻: 1736827001.001753
+问题音频STT后的时刻: 1736827002.5216894
+问题音频STT时间: 1.5199363231658936
+
+
+[Agent] 最终接收到问题: 你好,焦焦,如何提升客服部门业绩和客户满意度,有哪些具体措施?
+, 1736827002.5218744
+问题音频送入Planner的时刻: 1736827002.52225
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1736827003.1268017
+planner new_token time: 1736827003.5178044
+planner new_token time: 1736827003.5181384
+First token received: 1, time: 1736827003.5182874
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1736827003.5299132
+talker first token time: 1736827003.8074493
+talker first token time: 1736827003.8335958
+talker first token time: 1736827003.8592098
+talker first token time: 1736827003.8848054
+talker first token time: 1736827003.910337
+talker first token time: 1736827003.9358835
+talker first token time: 1736827003.9615052
+talker first token time: 1736827003.9872162
+talker first token time: 1736827004.0129633
+talker first token time: 1736827004.038591
+talker first token time: 1736827004.06426
+talker first token time: 1736827004.0898907
+talker first token time: 1736827004.11553
+talker first token time: 1736827004.1412406
+talker first token time: 1736827004.1671343
+talker first token time: 1736827004.2437224
+talker first token time: 1736827004.2948384
+talker first token time: 1736827004.3206136
+talker first token time: 1736827004.3463933
+talker first token time: 1736827004.3720512
+talker first token time: 1736827004.4232228
+talker first token time: 1736827004.4489312
+talker first token time: 1736827004.474625
+talker first token time: 1736827004.500505
+talker first token time: 1736827004.5519245
+talker first token time: 1736827004.5776622
+talker first token time: 1736827004.603617
+talker first token time: 1736827004.6294308
+talker first token time: 1736827004.6553493
+talker first token time: 1736827004.6812463
+talker first token time: 1736827004.7070556
+talker first token time: 1736827004.7328892
+talker first token time: 1736827004.758789
+talker first token time: 1736827004.7846646
+talker first token time: 1736827004.8105447
+talker first token time: 1736827004.8868904
+talker first token time: 1736827004.9125862
+talker first token time: 1736827004.938224
+talker first token time: 1736827004.96404
+talker first token time: 1736827005.0178406
+talker first token time: 1736827005.04414
+talker first token time: 1736827005.0707178
+talker first token time: 1736827005.0967522
+talker first token time: 1736827005.1482425
+talker first token time: 1736827005.1742258
+talker first token time: 1736827005.2003152
+talker first token time: 1736827005.2264688
+talker first token time: 1736827005.2527587
+talker first token time: 1736827005.2786484
+talker first token time: 1736827005.3307216
+talker first token time: 1736827005.3567178
+talker first token time: 1736827005.382551
+talker first token time: 1736827005.4085004
+talker first token time: 1736827005.4346342
+talker first token time: 1736827005.512002
+talker first token time: 1736827005.5380692
+talker first token time: 1736827005.5641053
+talker first token time: 1736827005.6159196
+talker first token time: 1736827005.6421416
+talker first token time: 1736827005.668301
+talker first token time: 1736827005.694499
+talker first token time: 1736827005.7207143
+talker first token time: 1736827005.7469342
+talker first token time: 1736827005.773135
+talker first token time: 1736827005.7993338
+talker first token time: 1736827005.8336432
+talker first token time: 1736827005.8598974
+talker first token time: 1736827005.8860118
+talker first token time: 1736827005.9121222
+talker first token time: 1736827005.9382815
+talker first token time: 1736827005.964635
+talker first token time: 1736827005.9908981
+talker first token time: 1736827006.0684447
+talker first token time: 1736827006.1202857
+talker first token time: 1736827006.1466928
+talker first token time: 1736827006.1730504
+talker first token time: 1736827006.225141
+talker first token time: 1736827006.251226
+talker first token time: 1736827006.277548
+talker first token time: 1736827006.3038473
+talker first token time: 1736827006.330233
+talker first token time: 1736827006.3565106
+talker first token time: 1736827006.3827562
+talker first token time: 1736827006.4348233
+talker first token time: 1736827006.4611123
+talker first token time: 1736827006.4874144
+talker first token time: 1736827006.513665
+talker first token time: 1736827006.5400152
+talker first token time: 1736827006.5665352
+talker first token time: 1736827006.5927355
+talker first token time: 1736827006.6703384
+talker first token time: 1736827006.7223601
+talker first token time: 1736827006.7484596
+talker first token time: 1736827006.774854
+talker first token time: 1736827006.8009129
+talker first token time: 1736827006.8269873
+talker first token time: 1736827006.8789308
+talker first token time: 1736827006.9050605
+talker first token time: 1736827006.9312139
+talker first token time: 1736827006.9573662
+talker first token time: 1736827006.9835174
+talker first token time: 1736827007.0096068
+talker first token time: 1736827007.035959
+talker first token time: 1736827007.0623374
+talker first token time: 1736827007.088702
+talker first token time: 1736827007.1413984
+talker first token time: 1736827007.1677928
+talker first token time: 1736827007.1941035
+talker first token time: 1736827007.2203743
+talker first token time: 1736827007.246674
+talker first token time: 1736827007.3242693
+talker first token time: 1736827007.35036
+talker first token time: 1736827007.3773627
+talker first token time: 1736827007.403542
+talker first token time: 1736827007.4555793
+talker first token time: 1736827007.4817464
+talker first token time: 1736827007.507981
+talker first token time: 1736827007.53448
+talker first token time: 1736827007.560883
+talker first token time: 1736827007.587207
+talker first token time: 1736827007.6133409
+talker first token time: 1736827007.6396372
+talker first token time: 1736827007.666037
+talker first token time: 1736827007.6923764
+talker first token time: 1736827007.7190807
+talker first token time: 1736827007.7454376
+talker first token time: 1736827007.7718182
+talker first token time: 1736827007.7981625
+talker first token time: 1736827007.8244183
+talker first token time: 1736827007.850853
+talker first token time: 1736827007.8771398
+talker first token time: 1736827007.9549453
+talker first token time: 1736827007.981075
+talker first token time: 1736827008.0072372
+talker first token time: 1736827008.0597425
+talker first token time: 1736827008.0859947
+talker first token time: 1736827008.1121707
+talker first token time: 1736827008.138795
+talker first token time: 1736827008.1653447
+talker first token time: 1736827008.2179027
+talker first token time: 1736827008.24429
+talker first token time: 1736827008.2706926
+talker first token time: 1736827008.2969358
+talker first token time: 1736827008.323232
+talker first token time: 1736827008.401122
+talker first token time: 1736827008.4292333
+talker first token time: 1736827008.4557686
+talker first token time: 1736827008.4819958
+talker first token time: 1736827008.5339944
+talker first token time: 1736827008.5601223
+talker first token time: 1736827008.5863037
+talker first token time: 1736827008.612703
+talker first token time: 1736827008.6651616
+talker first token time: 1736827008.6917117
+talker first token time: 1736827008.7180336
+talker first token time: 1736827008.7443714
+talker first token time: 1736827008.770849
+talker first token time: 1736827008.7971225
+talker first token time: 1736827008.8234148
+talker first token time: 1736827008.8759003
+talker first token time: 1736827008.9022672
+talker first token time: 1736827008.9549825
+talker first token time: 1736827008.9813683
+talker first token time: 1736827009.0080988
+talker first token time: 1736827009.034605
+talker first token time: 1736827009.061097
+talker first token time: 1736827009.1143255
+
+talker输出：
+
+Token count: 53, Total time: 2.3515 seconds, One token time: 0.0444 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+教教可以通过以下几个具体措施来提升客服部门业绩和客户满意度：
+
+1. 培训专业技能：提供持续的培训，以确保客服团队具备处理各种问题的专业技能。
+
+2. 提高响应速度：通过优化工作流程，提高客服团队的响应速度，减少客户的等待时间。
+
+3. 个性化服务：尽可能了解每个客户的需求和偏好，并为他们提供个性化的服务。
+
+4. 持续改进：定期收集客户反馈并进行分析，以便对服务进行持续改进。
+
+5. 建立良好的沟通氛围：鼓励客服团队成员之间的积极沟通和合作，以提高整体效率。
+
+6. 提供激励机制：设定明确的业绩指标，并为达到或超过这些目标的员工提供奖励。
+
+7. 关注客户需求：始终将客户需求放在首位，尽力满足他们的期望。
+
+8. 保持友好态度：无论面对何种情况，客服团队成员都应保持友好、耐心的态度，以建立良好的客户关系。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200701_S_R001S07C01_agent_added/out_001-F_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 535701, dtype: float32, min: -0.123504638671875, max: 0.125335693359375
+问题音频时间长度: 33.4813125
+
+
+[Agent] 接收到问题: 你好 娇娇基于之前我们讨论的内容关于客服部即将到来的属期订单量增加我们计划招聘两三个新人来应对咨询和回访工作你觉得这样的人员配置是否充足是否还有其他需要补充的地方
+, 1736827010.6276662
+问题音频STT前的时刻: 1736827010.6277807
+问题音频STT后的时刻: 1736827012.0594974
+问题音频STT时间: 1.4317166805267334
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容,关于客服部即将到来的署,期定单量增加,我们计划招聘两三个新人来应对咨询和回访工作。得,你觉得这样的人员配置是否充足,是否还有其他需要补充的地方?
+, 1736827012.0597157
+问题音频送入Planner的时刻: 1736827012.0603282
+planner new_token time: 1736827012.7117126
+planner new_token time: 1736827013.1032183
+First token received: 0, time: 1736827013.1033273
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1736827013.493903
+planner new_token time: 1736827013.8844078
+planner new_token time: 1736827014.2746868
+planner new_token time: 1736827014.6669188
+planner new_token time: 1736827015.0584524
+planner new_token time: 1736827015.4505548
+planner new_token time: 1736827015.8427744
+planner new_token time: 1736827016.2341733
+planner new_token time: 1736827016.6271062
+planner new_token time: 1736827017.0191832
+planner new_token time: 1736827017.410613
+planner new_token time: 1736827017.802253
+planner new_token time: 1736827018.193417
+planner new_token time: 1736827018.5850708
+planner new_token time: 1736827018.9760985
+planner new_token time: 1736827019.3677406
+planner new_token time: 1736827019.7601008
+planner new_token time: 1736827020.1514587
+planner new_token time: 1736827020.5430818
+planner new_token time: 1736827020.9348674
+planner new_token time: 1736827021.3260102
+planner new_token time: 1736827021.7172883
+planner new_token time: 1736827022.108657
+planner new_token time: 1736827022.49996
+planner new_token time: 1736827022.8912818
+planner new_token time: 1736827023.2826817
+planner new_token time: 1736827023.67438
+planner new_token time: 1736827024.066482
+planner new_token time: 1736827024.4582028
+planner new_token time: 1736827024.8501728
+planner new_token time: 1736827025.2421594
+planner new_token time: 1736827025.6343665
+planner new_token time: 1736827026.0279498
+planner new_token time: 1736827026.4206815
+planner new_token time: 1736827026.8125582
+planner new_token time: 1736827027.2042804
+planner new_token time: 1736827027.596048
+planner new_token time: 1736827027.987466
+planner new_token time: 1736827028.3792844
+planner new_token time: 1736827028.7709785
+planner new_token time: 1736827029.1627498
+planner new_token time: 1736827029.5543818
+planner new_token time: 1736827029.9458613
+planner new_token time: 1736827030.3378263
+planner new_token time: 1736827030.7298117
+planner new_token time: 1736827031.1226118
+planner new_token time: 1736827031.5142124
+planner new_token time: 1736827031.515085
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：客服部 署期定单量增加 招聘新人 应对咨询和回访工作 人员配置
+
+
+提取的关键词: ['客服部', '署期定单量增加', '招聘新人', '应对咨询和回访工作', '人员配置']
+
+找到的上下文片段数量: 2
+
+Token count: 84, Total time: 33.0593 seconds, One token time: 0.3936 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：客服', '部', ' ', '署', '期', '定', '单', '量', '增加', ' ', '招', '聘', '新人', ' ', '应', '对', '咨询', '和', '回', '访', '工作', ' ', '人员', '配置', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###对于咱这个客服部门,目前咱们这个下半年,因为上半年这个业绩情况不太好,肚子痛不大,肚腱痛苦,肚子痛苦,肚子痛苦,肚子痛苦下半年有什么改变,有什么方式去改变以前也基本去这个平板首先呢就是我们客服部提定了规定就是对于咱们咨询的一些客户的话就是做好服务问答然后确保咱们咨询的电话可以成功转为订单这个客户能不流失就不流失下订一些就是多成交订单的话咱们客服部可以拨打一些电话就是跟一些旅行团拨打一下然后问问他们是否就是这两天这个月或者是下个月是否会有团来咱们这旅游呢大概是多少呢让我们提前做好准备呀之类的就是跟多跟咱们一些老顾客老的旅行团然后做一些沟通嘛然后或者是说你比如比如说咱们一些老顾客经常来咱们这儿出差的可以打一个问候电话,回访电话或者是一些老顾客,他有自己的妻子过生日或者是经常来咱们这儿订房的高档客户的也是可以做一个好的回访的目前可以增加一天这个毛病老婆【客】服部除了一些业绩上的竞争,培养大家的竞争能力,提高业绩。活动可以组织一些,嗯就是咱们客咱们客服嘛然后他其实每个人都会有固定的一些顾客名咱们就可以让顾客来访或者是说到咱们会展厅来访然后讲解一下咱们新的可以开展一些新的房间主题房间可以给他们介绍一下你好 娇娇基于之前我们讨论的内容关于酒店前台生日证我们都会看不到那我们就注意一些细节如果正好是在他生日期间我们可以送上生日花束或者说吃饭的时候送上一碗寿面或者是一个蛋糕这样的话可以增加客户的归属感觉得好像就是进了我们酒店宾至如归嘛就真正的让他们感受到宾至如归这种感觉好像就是回家了你看,他们像亲人一样照顾我他给我过生日他自己发了朋友圈了或者说跟亲朋好友说了这无形中就是给我们酒店做一个广告虽然我们是买了一束鲜花或者说买了一个蛋糕虽然我们是投入了一些但是这种广告效能是更好的而且非常的温情人们也非常的认可对像一些老顾客在他们的生日前夕咱们也可以提前打拨打电话拨过\n---\n我们这边就是厨师和配菜的需要在招因为有一个厨师他要要结婚了,他可能会休18天的婚假,那我们不能这个岗位不能空着,我们需要在他休婚假之前再招一个厨师。嗯,那到时候各部门呢,各部门招一个这个计划,把这个事先考上。那既然各位现在都没什么问题了,咱们这次会就先看到这,散会。你好 焦焦真对上半年工作总结各部门有哪些具体改进措施你好 娇娇基于之前我们讨论的内容关于酒店前台员工招聘的具体要求能否详细说明一下学历要求 双语能力以及性别比例的具体标准同时 针对灭火器和空调设备的定期更换和维护我们是否有详细的计划和执行标准你好,焦焦,如何提升客服部门业绩和客户满意度,有哪些具体措施?你好,焦焦,基于之前我们讨论的内容,关于客服部即将到来的署,期定单量增加,我们计划招聘两三个新人来【应】对咨询和回访工作。得,你觉得这样的人员配置是否充足,是否还有其他需要补充的地方?###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n为了提升客服部门业绩和客户满意度，具体的措施包括：优化服务流程，确保咨询电话成功转化为订单；加强与旅行团及老顾客的沟通，通过电话回访等方式建立良好关系；为重要客户提供个性化服务，如生日祝福等，增强客户的归属感和忠诚度。此外，还计划招聘两到三人来应对增加的工作量，确保服务质量的同时提高业绩。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###对于咱这个客服部门,目前咱们这个下半年,因为上半年这个业绩情况不太好,肚子痛不大,肚腱痛苦,肚子痛苦,肚子痛苦,肚子痛苦下半年有什么改变,有什么方式去改变以前也基本去这个平板首先呢就是我们客服部提定了规定就是对于咱们咨询的一些客户的话就是做好服务问答然后确保咱们咨询的电话可以成功转为订单这个客户能不流失就不流失下订一些就是多成交订单的话咱们客服部可以拨打一些电话就是跟一些旅行团拨打一下然后问问他们是否就是这两天这个月或者是下个月是否会有团来咱们这旅游呢大概是多少呢让我们提前做好准备呀之类的就是跟多跟咱们一些老顾客老的旅行团然后做一些沟通嘛然后或者是说你比如比如说咱们一些老顾客经常来咱们这儿出差的可以打一个问候电话,回访电话或者是一些老顾客,他有自己的妻子过生日或者是经常来咱们这儿订房的高档客户的也是可以做一个好的回访的目前可以增加一天这个毛病老婆【客】服部除了一些业绩上的竞争,培养大家的竞争能力,提高业绩。活动可以组织一些,嗯就是咱们客咱们客服嘛然后他其实每个人都会有固定的一些顾客名咱们就可以让顾客来访或者是说到咱们会展厅来访然后讲解一下咱们新的可以开展一些新的房间主题房间可以给他们介绍一下你好 娇娇基于之前我们讨论的内容关于酒店前台生日证我们都会看不到那我们就注意一些细节如果正好是在他生日期间我们可以送上生日花束或者说吃饭的时候送上一碗寿面或者是一个蛋糕这样的话可以增加客户的归属感觉得好像就是进了我们酒店宾至如归嘛就真正的让他们感受到宾至如归这种感觉好像就是回家了你看,他们像亲人一样照顾我他给我过生日他自己发了朋友圈了或者说跟亲朋好友说了这无形中就是给我们酒店做一个广告虽然我们是买了一束鲜花或者说买了一个蛋糕虽然我们是投入了一些但是这种广告效能是更好的而且非常的温情人们也非常的认可对像一些老顾客在他们的生日前夕咱们也可以提前打拨打电话拨过
+---
+我们这边就是厨师和配菜的需要在招因为有一个厨师他要要结婚了,他可能会休18天的婚假,那我们不能这个岗位不能空着,我们需要在他休婚假之前再招一个厨师。嗯,那到时候各部门呢,各部门招一个这个计划,把这个事先考上。那既然各位现在都没什么问题了,咱们这次会就先看到这,散会。你好 焦焦真对上半年工作总结各部门有哪些具体改进措施你好 娇娇基于之前我们讨论的内容关于酒店前台员工招聘的具体要求能否详细说明一下学历要求 双语能力以及性别比例的具体标准同时 针对灭火器和空调设备的定期更换和维护我们是否有详细的计划和执行标准你好,焦焦,如何提升客服部门业绩和客户满意度,有哪些具体措施?你好,焦焦,基于之前我们讨论的内容,关于客服部即将到来的署,期定单量增加,我们计划招聘两三个新人来【应】对咨询和回访工作。得,你觉得这样的人员配置是否充足,是否还有其他需要补充的地方?###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+为了提升客服部门业绩和客户满意度，具体的措施包括：优化服务流程，确保咨询电话成功转化为订单；加强与旅行团及老顾客的沟通，通过电话回访等方式建立良好关系；为重要客户提供个性化服务，如生日祝福等，增强客户的归属感和忠诚度。此外，还计划招聘两到三人来应对增加的工作量，确保服务质量的同时提高业绩。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+会议数据处理完成。

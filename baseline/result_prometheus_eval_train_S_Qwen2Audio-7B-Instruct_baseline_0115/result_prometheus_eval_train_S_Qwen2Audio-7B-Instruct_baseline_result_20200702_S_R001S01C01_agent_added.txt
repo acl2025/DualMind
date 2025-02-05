@@ -1,0 +1,15 @@
+Question: 你好,焦焦,针对火鸡面口味问题,如何改进以满足市场需求?
+Instruction:
+你好,焦焦,针对火鸡面口味问题,如何改进以满足市场需求?
+
+Reference Answer:
+你好！针对火鸡面口味改进，建议进行市场调研，收集消费者反馈，了解偏好和不满点。可尝试调整辣度、增加或减少某些调味料比例，引入新的口味元素，比如酸、甜、香料等，以满足更广泛的市场需求。同时，注意健康趋势，减少人工添加剂，使用天然原料。
+
+Assistant Answer:
+none
+
+Feedback:
+The given response falls short in every aspect outlined in the score rubric. It lacks factual correctness and does not address the core question posed by the user, which was to improve the taste of fire chicken based on market requirements. There is no content provided, no structure or organization in the answer, and it does not even attempt to fulfill the user's need for information or guidance. As a result, the response fails to meet any of the criteria set forth in the rubric, making it completely inadequate and unhelpful for the user. So the overall score is 1. [RESULT] 1
+
+Score: 1
+--------------------------------------------------

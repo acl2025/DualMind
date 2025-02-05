@@ -1,0 +1,187 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200706_L_R001S06C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Starting processing from 0s, total chunks: 313
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.20s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.44s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.45s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:04<00:06,  2.16s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.75s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.86s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.86s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.95s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:09,  4.91s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.80s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.67s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.70s/it]
+comparat storms雷雷工程项目做的人126123 材料123 物料124 仓库124 工程项目做人126 123 工程项目做人124 工程项目做人124 工程项目做人124 工程项目做人 124 工程项目做人做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 12工程项目做人 124 工程项目做人 124 工程项目做人 124做人 124 工程项目做人 124做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124做人 124 工程项目做人 124做人 124 工程项目做人 124工程项目做人 124 做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124
+[Audio Detection] 在 513.14 秒检测到关键词 '好交交'。
+detection_time: 513.14, current_time: 511.00
+问题音频片段长度: 104448, dtype: float32, min: -0.141143798828125, max: 0.138702392578125
+问题音频时间长度: 6.528
+
+
+[Agent] 接收到问题: 工程项目做人 124 工程项目做人 124
+, 1735027714.380994
+
+
+[Agent] 最终接收到问题: 工程项目做人 124 工程项目做人 124
+, 1735027714.3813136
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9611 seconds, One token time: 0.3204 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在高温环境中，工人防暑降温是至关重要的。为了有效布置水源以满足工人需求，可以考虑以下几点：
+
+1. 在工作场所设置临时喷雾水帘或风扇，帮助工人降低体温。
+
+2. 提供足够的饮用水，定时检查水源是否充足，并确保水质安全。
+
+3. 如果条件允许，可以在工作区域设置空调或通风设备，创造一个凉爽的工作环境。
+
+4. 建立健全防暑降温机制，制定科学的作息计划，避免工人在最热的时候进行高强度工作。
+
+以上措施应该根据实际情况灵活应用，以最大程度地保护工人的健康和生命安全。
+talker 输出结束
+工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124如果真的是超过工期了跟甲方可能是有这个合同但是规定是死的 人是活的 我们就可以去跟甲方协调这个事情对对 因为这个天气的事情是谁也不能左右的现在我们在说这个 连续下来等一下 其实我们现在温度特别高 希望下暴雨 如果下了三天就差不多了下三天呢就上传播信了 下五天呢就上传球信了那最主要就是高温所以连续一个月高温都很正常 这种情况下你们是不是得考虑一下液体的使用方法我们也要考虑到液监制度和附近居民的一些协调的问题这个赃银这边的话可以把一些赃银大的机械安排到下午或凌晨早上六七点的时候 或者说晚上八点的时候大家也还没睡的时候 也比较容易但是需要你们考虑一下 这个人员买了什么 什么 什么 什么如果要加上夜间时空的话 早上可以让他们8点那些吧 放屁上吧 这些上夜班的就去掉 然后白天可以从8点下到中午11点 然后下午3点就开始上班 因为3点钟这个太阳不是很热这个可以根据温度来计算现在是减少了主板的节省白天的话可以干一些不是特别的在室外做一些活泼 比如说擂砖或者钢管就可以按摩 咱们这个楼的主体结构已经盖好了楼里边去加工一些 吃饭吃饭而且你这个室内就有几个室内环境 跟算是一个密闭吧 反正就是这个室内环境 人家不通风特别闷这种情况 这个楼梯内的 要比外面的闷得还要烫这张的主题想完成的话 可以用香蕉锁管连接到水管上 往楼里头浇一下然后再用水 降温 而且处理阴凉的大碳 它也比较香脆如果前天下雨的话就可以用这些雨水也可以往里浇好 现在我们就来看看 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些白天的时候因为温度特别高就比如说施工对接那些魔法点脚物料估计在那可能会有时高温会引起火灾 所以在建筑工地旁边一定要这种消防器消防设施 这是一个 然后另一个就是一些破漆的边角物料 然后该回收的回收该重新加工的加工该出售的出售 然后一定要防止一些这样天气干燥引起的火灾好 现在我们就来看看 这边的这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个cashвал string然后这个仕 Pixel DIDN'T除了这些 还有什么这个面部措施 防护措施就是帮我 需要一个水管 没有布置 只是需要因为因为工地有好多地方都是需要防护的如果要要求 那是可能的 如果要求 工地开了 开了 主要如果要求 同时要说这个建筑工地非常快的那个灭火器不太理用 比如五万一千个我可以让你拿太阳晒一个五万一千个 这个可以在这个楼里可以设一个高热水箱 然后用这个高热水箱然后用牙刷你这个楼别管哪个楼都要有两个或者两个以上的消火栓对这个火去灭这个火所以说这个消火栓是必备的 我们可以在这个就是盖楼的这个楼主体盖好这个高温水箱也存在的时候 我们把这个高温水箱集收成一样水这个有火山的话我们就提升水面
+[Audio Detection] 在 1013.13 秒检测到关键词 '好交交'。
+detection_time: 1013.13, current_time: 1008.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.29449462890625, max: 0.256072998046875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 好 基于之前我们讨论的内容 关于房产工期限制和连续下雨的问题 你怎么看待夜间施工的可行性考虑到高温季节连续一个月的情况 我们应该
+, 1735027779.9163465
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于房产工期限制和连续下雨的问题 你怎么看待夜间施工的可行性考虑到绿道高温季节连续一个月的情况 我们应该如何调整施工计划和人员安排 以确保工程进度和工人安全同时对于工地环境和防火措施我们还需要做哪些改进
+, 1735027781.7189307
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4943 seconds, One token time: 0.1648 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：房产工期限制 连续下雨 夜间施工 绿道高温 施工计划 人员安排 工地环境 防火措施
+Token count: 53, Total time: 10.7303 seconds, One token time: 0.2025 seconds
+
+提取的关键词: ['房产工期限制', '连续下雨', '夜间施工', '绿道高温', '施工计划', '人员安排', '工地环境', '防火措施']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+夜间施工可行，建议调整为：白天8-11点、下午3-6点工作，其余时间休息避高温。需设置消防设施，确保消防器材充足，如高水箱、多个消火栓。同时，使用水管浇水降低材料温度，保护工人安全。
+Token count: 63, Total time: 12.9531 seconds, One token time: 0.2056 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：房产工期限制 连续下雨 夜间施工 绿道高温 施工计划 人员安排 工地环境 防火措施
+使用工具：信息检索RAG
+agent工具结果：RAG used context: omparat storms雷雷工程项目做的人126123 材料123 物料124 仓库124 工程项目做人126 123 工程项目做人124 工程项目做人124 工程项目做人124 工程项目做人 124 工程项目做人做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 124 工程项目做人 12工程项目做人 124 工程项目做人 124 工程项目做人 124做人 124 工程项目做人 124做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124做人 124 工程项目做人 124做人 124 工程项目做人 124工程项目做人 124 做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124 工程项目做人 124工程项目做人 124 工程项目做人 124人 124 工程项目做人 124如果真的是超过工期了跟甲方可能是有这个合同但是规定是死的 人是活的 我们就可以去跟甲方协调这个事情对对 因为这个天气的事情是谁也不能左右的现在我们在说这个 连续下来等一下 其实我们现在温度特别高 希望下暴雨 如果下了三天就差不多了下三天呢就上传播信了 下五天呢就上传球信了那最主要就是高温所以连续一个月高温都很正常 这种情况下你们是不是得考虑一下液体的使用方法我们也要考虑到液监制度和附近居民的一些协调的问题这个赃银这边的话可以把一些赃银大的机械安排到下午或凌晨早上六七点的时候 或者说晚上八点的时候大家也还没睡的时候 也比较容易但是需要你们考虑一下 这个人员买了什么 什么 什么 什么如果要加上夜间时空的话 早上可以让他们8点那些吧 放屁上吧 这些上夜班的就去掉 然后白天可以从8点下到中午11点 然后下午3点就开始上班 因为3点钟这个太阳不是很热这个可以根据温度来计算现在是减少了主板的节省白天的话可以干一些不是特别的在室外做一些活泼 比如说擂砖或者钢管就可以按摩 咱们这个楼的主体结构已经盖好了楼里边去加工一些 吃饭吃饭而且你这个室内就有几个室内环境 跟算是一个密闭吧 反正就是这个室内环境 人家不通风特别闷这种情况 这个楼梯内的 要比外面的闷得还要烫这张的主题想完成的话 可以用香蕉锁管连接到水管上 往楼里头浇一下然后再用水 降温 而且处理阴凉的大碳 它也比较香脆如果前天下雨的话就可以用这些雨水也可以往里浇好 现在我们就来看看 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些白天的时候因为温度特别高就比如说施工对接那些魔法点脚物料估计在那可能会有时高温会引起火灾 所以在建筑工地旁边一定要这种消防器消防设施 这是一个 然后另一个就是一些破漆的边角物料 然后该回收的回收该重新加工的加工该出售的出售 然后一定要防止一些这样天气干燥引起的火灾好 现在我们就来看看 这边的这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个 这个cashвал string然后这个仕 Pixel DIDN'T除了这些 还有什么这个面部措施 防护措施就是帮我 需要一个水管 没有布置 只是需要因为因为工地有好多地方都是需要防护的如果要要求 那是可能的 如果要求 工地开了 开了 主要如果要求 同时要说这个建筑工地非常快的那个灭火器不太理用 比如五万一千个我可以让你拿太阳晒一个五万一千个 这个可以在这个楼里可以设一个高热水箱 然后用这个高热水箱然后用牙刷你这个楼别管哪个楼都要有两个或者两个以上的消火栓对这个火去灭这个火所以说这个消火栓是必备的 我们可以在这个就是盖楼的这个楼主体盖好这个高温水箱也存在的时候 我们把这个高温水箱集收成一样水这个有火山的话我们就提升水面基于之前我们讨论的内容关于【房】产工期限制和连续下雨的问题 你怎么看待夜间施工的可行性考虑到绿道高温季节连续一个月的情况 我们应该如何调整施工计划和人员安排 以确保工程进度和工人安全同时对于工地环境和防火措施我们还需要做哪些
+夜间施工可行，建议调整为：白天8-11点、下午3-6点工作，其余时间休息避高温。需设置消防设施，确保消防器材充足，如高水箱、多个消火栓。同时，使用水管浇水降低材料温度，保护工人安全。
+reasoner 输出结束
+同时对于工地环境和防火措施 我们还需要做哪些改变就是物料或者汤煮那边 一样物还有什么有害物的部分也需要处理一定要用到材料 用的材料是对牛排是需要单独处理的这个估计 工地上还没有什么有害物的部分使用时间 时间吧 都不知道我们怎么一堆木头堆到一块儿 木头堆一个然后再往旁边再放我再找几个 就烧这一块儿 就烧这一片儿不然一堆到一块儿 木料一烧 可能点不到的东西就变了是不是需要用隔壶呢 用小牌小牌不用 你在操作整个把仓库里面包一层那个防火格板就行了 他就算烧的话 他也不会烧到别的地方但是你那样成本会高呀所以说需要考虑 安全来打 需要一起考虑他一定带小仓库大仓库的场地 四个小仓库 分开分开 物料每个仓库放一样 然后都分开的地方 如果这个煮小仓库没有的话 那就完了然后取完三个仓库的料以后 料不够的话 再进然后再次平分对方 其他的发生的存数会降到最小而且不会而且要多设置几个仓库管理万一有些工地有些人去拿材料 多拿点 去外面倒卖对 这个的话 咱们工地开销也吃不下 如果都倒卖往里面招的话就不是招球 最主要的一个要求就是吃的工地而且还不能招自己对 只能说捡手之道的那一步嗯 打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打打搅粘毙掌核专家hidden camera至少有三个人在场去清点货物然后起步的时候就到每个散户的那边去对那这一块是说散户的服务员如果要攻击本地的人的话 不太合适万一是谁的机器的话 两个一起挡在一块就不行了 咱们也看不出来刘宫 你必须想干嘛这个ity mostly with在他的推出对 我还不知道 Academy的内容上qual llev撤打探撤打的探 früher每次都是这么乱来  supply 24时也在此只是 应该用enoute吧这个 companions的硬台 一� provisionThe app被清人的或手温 monitoring首先要备一些清凉结束的饮品如果真的种出这么严重的还及时往医院里边送现在工地上有那种 像一个张丹之家的救护车 对对 差不多这样但是他医生啊 他就是就是他要是进行做的 他是需要那个场地的嗯 这个好 算是几个小人手就可以了 因为那种急救急救的人这这急救的 这场地上安排的话就是 安排到连空速度好 没人可以或者说功力不见得像 你像光是装处的人 你是工伤那种人就过去 机械伤啊 摔伤啊打伤的那些 可能比中午还要准备 这些是临时搭建的 如果是要搭上的话 这边已经要销售了 规划好路线 就是医院最近的路线 会有一辆车就是始终处于自己的他 这样子 随时面临的情况之前我们提到了吗 比如说给这个工人的这个我们集中采购一下也花了很多钱你看这预算差不多也够 用车子装点空调 这样的话最起码 你不用担心大半夜睡着觉你电话过来 挂个二维码 挂点什么都好这对于他们消息是比较好的西瓜这个成本太高了 因为工地上的太多了西瓜也要处理得好 基本上他们是无成本的 西瓜也就这样我觉得要提供西瓜的话 西瓜能用人力成本都比西瓜好吃完之后 走飞机的垃圾也是一个 出门要回头拿个西瓜现在可以让厨师熬上好几锅鱼肉汤 在他们过程开始的时候 开始干活的时候去食堂打鱼这边是厨房 这边是厨房 这边是厨房这边是厨房 这边是厨房我觉得还不如你那种大房子 其实有多少钱 你看起来要带点水那些带点水的 什么柳草 西瓜 全天无限量无用我说你想在这吃西瓜 行了 两个小时煮 只能去开心通这边有个小小的 这边有个小小的 这边有个小小的 这边有个小小的这边有个小小的 这边有个小小的 这边有个小小的共多少有多少人就切多少 有多少共多少 这就不可能了你晚上喝水呢 你可能一天就喝一杯 从早上吃到晚上 第二天到晚上再喝一杯什么时候可 什么时候 什么时候 这个就跟食堂 食堂你讲 食堂专门可以开一个窗口 对对对 去放一些东西那个草菇也可以进香 放在里面专门 就是进香来的现在这种东西的话 不一放时间太长的话 就是这个拉丁小瓜 然后 recently I bought raddick mit천 increases 这个拉丁小瓜 然后我买了西瓜 买西瓜 买西瓜西瓜的 随时才买 找那种菠萝 就是那种种西瓜的菠萝霜 菠萝霜然后在那里 Har Steel这种菠萝 这种菠萝 这种菠萝 这种菠萝 这种菠萝这种菠萝 这种菠萝 这种菠萝这种菠萝 这种菠萝 这种菠萝那种菠萝 这种菠萝 这种菠萝自己熬的 自己熬的自己熬的那 您库领了您为了那这种 像西瓜 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些 像那些是 让他 按数字 一个数字给他拿一个西瓜 按量三字 把 把名单 用这可以 也可以搞冰块啊也可以 要不就 做 就他买 或者说 其实就租吧 其实这个也有租赁的 租一两个那种比较大的那个 因为他没有那咱们也不用多高的度 别说零下零上15度相对于白年看说都已经凉快了 已经算是凉的这种了算是风天速 ?可以在现在开出一个商量 提供一些别的东西这种东西是很重要的 因为它是一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的 一个很重要的嗯 但是卖东西不能忘记我你以为要想要卖东西不能忘记我你以为要想要卖东西不能忘记我这个方面他们也是必须要不断投入 这个会有大问题吗然后大冷堂就变成放冰加热一下夏天还行 因为热水老了 直接凉水吧有的人因为要考虑大多数人嘛 有的人肯定万一如果今天闹肚子 他再写两篇稿子对 因为下车嘛大水泵的水前的比较一般的节奏 比较清晰 这个做了一段而且大水泵的出水力也比冰山泵的好 所以要用大水泵主要就是加一个接力保护线 多加一些 把这电导到地里的额度可以 然后就是给工人们做好这个它就要那种 它就要那种 你导 你来不及导到地上 你就马在那边这样在变天之前 让价格人先进行 先进行是一种办法我最好还是让 给人下来比较好来 想一下 让我再考虑一下 我们的 呃 进行 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么 什么嗯 建压也不是多高 工地 工地的话 正常这样是要有的要压的话 再深入到嗯嗯对吧 因为我们保证就是 工作的时候就就他就要大点就让他下来给这个给这个那个价格 然后费一套房子就可以了他说他觉得他得打到顶上做几样 打到顶上做几样 没有把你卡掉你卡掉了 卡掉了对 卡掉了就是接触多做几个准备对 然后就跟 他的家人室做几个准备要不让他要与那些的钢铁交流 要稍微远一点把那个抽时间给你找一个人 然后上去吧 谈谈那个 家事事的
+[Audio Detection] 在 2059.75 秒检测到关键词 '好交交'。
+detection_time: 2059.75, current_time: 2058.00
+问题音频片段长度: 145408, dtype: float32, min: -0.13397216796875, max: 0.11993408203125
+问题音频时间长度: 9.088
+
+
+[Agent] 接收到问题: 交 基于之前我们讨论的内容 关于工地房属 这样文措师我们提到了提供西瓜
+, 1735027931.8879375
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 交 基于之前我们讨论的内容 关于工地房属 像温措师我们提到了提供西瓜 绿豆汤等 那么具体来说 处则的这个一直到 咱们这些房属的供应量是如何确定的是否需要根据工人的实际需求来调整供应量 以确保技能满足工人需求 而又不至于造成浪费呢
+, 1735027933.8923664
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4954 seconds, One token time: 0.1651 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 113, Total time: 4.1537 seconds, One token time: 0.0368 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+是的，需要根据工人的实际需求来调整供应量，以确保既能满足工人需求又不至于造成浪费。
+talker 输出结束
+是否需要根据工人的实际需求来调整供应量 以确保技能满足工人而又不至于造成浪费呢请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目这间工作的高标的情况里面出一个表 出一个工作表 安排一类的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+会议数据处理完成。

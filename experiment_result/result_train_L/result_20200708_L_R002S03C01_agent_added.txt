@@ -1,0 +1,212 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200708_L_R002S03C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 68
+Loading classifier_llm...
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.09it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.89s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.02s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.88s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.00s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.00s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.05s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.18s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:10,  5.38s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.07s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.83s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.85s/it]
+0202我是主持人026我是销售员A025我是销售员B027我是销售配器023我是销售员C024我是销售员B014我是销售员E行,好的,今天咱们有请销售方面的专家销售方面的一个知识培训那有请咱们上来评价我想我今天做一个简短的销售培训大家想做一个好的销售员那么咱们评论知道销售它是干什么的销售干什么的销售我觉得就是摆一种东西卖出去没错然后再进行自己专业的一部分利润啊什么的就是推广给大众让他们喜爱上产品这是销售干的销售说白了就是把他们卖出去这是你说的利润卖出去你自然有提成对不对咱主要是要把这东西卖出去那怎么把这个东西卖出去第一这边第二你觉得怎么样才能把这个东西卖出去快速地让顾客相信我们相信我们的产品了解我们的产品认为我们的产品是物流所值的是值得他们购买的他們是需求的讓他們看到這個產品的好處優點我覺得是要把咱們這個抓住這些消費人員的心理他們想要什麼樣的東西我們就把咱們這個產品的那些方面的優點特點突出給這些想要消費的這些人然後誘惑他們想購買的心理才可以快速的消費出去就是让他把需要的东西变成非常需要把不需要的东西变成可能也需要然后把自己东西从各方面都最快最好的推销出去好那总结一下首先再让我把这个东西卖出去那一要是顾客觉得这东西好对不对这好他觉得东西好才有那种想要的可能性对不对第一是好二是什么二是让顾客觉得这个价钱买这个东西的值就是一个好这是物有所值,第三个是什么?就是之前说的说,让顾客觉得有这个需要。你不用说,可能说,这东西买回之后,顾客可能说天天用它,但最起码,让顾客觉得买的时候,觉得这东西它是有用的,对不对?就是说,它有需求,咱给它扩大需求,那做个最简单的例子我家那微波炉买的还算是当买上比较高级的但是他在我家只有一个做热生饭对怎么但你说这微波炉的天下空气公共没有没有用啊正在还热生饭对不对你说这样的话关于一个热生饭用买一个微波炉吗大家觉得用吗用吗不用吧这个东西只能说是还要看情况有的家庭他就是用饭锅热是那有家庭就是用微波炉热对咱就说微波炉其实并没有用到那么多它宣传的好处宣传的功能但是我们要宣传到位我们需要夸大它不是夸大不能夸大技术不能夸大咱卖东西是什么咱销售什么10日就是1 902就是2对不对嗯你可以说把这缺点出的模糊点对不对对但你不能说不能把去得出成优点这是不对的这肯定是不行的对吧不能太夸大对吧咱啥东西就得说啥东西太夸大相当于欺骗欺骗也错但经常在网上看见的时候面试题目说面试过给你一瓶水说你把这水卖到一百一千块钱大家都都看过这个事吧然后之前也说说有这么干的然后把他开除了说你这不是销售你这是欺诈对不对所以说咱卖东西首先一觉得让部门觉得好二觉得无有所值三给他创造需求那咱们怎么能把这东西都好表了首先我们需要了解这个产品对不对我们卖什么我们得了解什么是不是以前我表弟去做过一段时间的销售,他卖的是什么?他卖的一种产品,他当时自己都不清楚名字,你觉得他这是一个好销售吗?是。对吧,他都不清楚了,我也不知道,对不对?我简单给大家说一下这个产品,这个产品它是一种保健品,它的主要成分是地溶粉,说地溶粉大家可能不知道,其实就是秋衣。到时候我就问过他几个问题,我问他,你这地龙是啥东西啊?他说,地龙就是蚯蚓。我说,那也就不就是蚯蚓粉嘛,你蚯蚓粉你买这么贵。然后说,我这不是蚯蚓粉。他说,那你跟我说说,你这个地龙粉,跟我自己拿蚯蚓磨成粉,它有什么区别?然后他当时就给我急眼了,啊哪有你这帮顾客呢?这么着能行吗?不行对吧?你说,虽然说我没有见过这个产品啊,那你说咱们就说,这个东西你要给顾客卖给他推广,你怎么给他推广?顾客就问你个问题,你的体龙粉我自己抹个秋叶粉给你知道有啥区别?咱们可以怎么说?咱们可以说我这个秋叶,可以说我是专门饲养,比你野生更有体重。这边刚才老师说了哥如果咱们平常咱们在销售当中会怎么说呢A一边如果要是真的顾客问这个和秋莹粉有什么区别对和秋莹粉有啥区别做销售首先就要了解这个产品它有什么好处它肯定要了解它为什么和秋莹粉它区别在哪咱现在有时候咱现在不了解这个产品咱现在不了解这个产品我也不知道这个产品咱们就说咱们从哪个方面拿個方向说这东西跟那个你摸的秋叶粉有什么区别咱们从哪个方向去说它既然它是个保健品肯定是要以健康来说对可以说我们的好处说的具体一点成分可以比方说里头有什么中药之类的掺杂着秋叶粉对我们说秋叶粉我们还有别的东西对我们还有别的东西对人身体起到什么附加的东西对附加的东西坏处的话一
+[Text Detection] 在 507.37 秒检测到关键词 '好焦',current_time: 480.00, 问题文本: 一概而过就可以说我们这个产品肯定是有好处也有坏处的顾客肯定比较了解的是吧不可能一个产品它没有缺点的给他们说一下缺点缺点可能就是比方说就是价钱稍高一点就是这方面比方说就是也不能多使用多使用的话会对身体才就是你好焦和准确把握顾客心情
+问题音频片段长度: 128512, dtype: float32, min: -0.065765380859375, max: 0.07135009765625
+问题音频时间长度: 8.032
+
+
+[Agent] 接收到问题: 你好交和准确把握顾客心理突出产品优点以促进销售对
+, 1735104496.0830166
+
+
+[Agent] 最终接收到问题: 你好交和准确把握顾客心理突出产品优点以促进销售对
+, 1735104496.0832133
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9084 seconds, One token time: 0.3028 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+这段语音的原始内容是：'你好教和准确把握顾客心理突出产品优点以促进销售不行我行'
+talker 输出结束
+概而过就可以说我们这个产品肯定是有好处也有坏处的顾客肯定比较了解的是吧不可能一个产品它没有缺点的给他们说一下缺点缺点可能就是比方说就是价钱稍高一点就是这方面比方说就是也不能多使用多使用的话会对身体才就是你好焦和准确把握顾客心情后面我们有很专业的器材然后我们饲养的这些蚯蚓也是我们特殊饲养的专业饲养对我们是专业的从卫生或者各方面保健另一方面我们不能保健产品然后会有这些安全食品隐患所以可以让客户自己磨的蚯蚓他肯定是不放心自己随便使用的因为随手这个野生的蜀蚁肯定是会有一些各种各样的什么细菌啊这种隐患所以我们还可以从这方面给这个顾客介绍我们说的就是为向顾客说明我们的这个产品这个地龙粉它的价值是要远高于你自己摸的这个蜀蚁粉那么其实出国人课本上这个政治讲经济这块就有多说什么决定商品的价值,是社会必要劳动时间,这个社会必要劳动时间对换到我们制作上,这是什么?就是制作的工艺,对不对?我们说有多少多少药材,但是其实大家基本上都明白,我们就说我们这个澳洲面经过了多少多少道工艺的反复,复杂工艺的反复的制作,对不对?照片说你瓷器好瓷器它为什么贵稍微一边画一遍,稍微一边画一遍,来回回去,十几好几十遍。对不对?这是一个复杂的工艺。为什么说这个说,卖点国画,我哪怕说是,没啥名气的,这一张,就是大的啊,不是小品的,大的四尺六十八尺,就没什么名气的,这一张还得大几百,小几千的,这是没有名气的。有名气的,随便弄一张,那上万的,对不对?你说再上上什么古代的那个那个它就是收藏点的那为什么画一张画还能卖这么多钱这就是理由对工艺、工序在理解对不对?咱们就要让顾客知道里面这些咱们是进入到的工序让顾客觉得这个值不然你说顾客把这种钱买回来了然后顾客买回来之后朋友同事亲家人来他家了跟他一看给我拿这个东西给他们一瓶我说花多少多少钱买的然后他朋友来说你这不就秋莹粉吗你说这样的顾客心里他是什么感觉是不是不是说欺骗就是什么感觉自己脸面捞不住对不对我花这么多东西这么多钱买这么点结果让朋友看我看我们干啥子知道明镜需要您的支持 欢迎订阅明镜我觉得这样顾客还会再来买咱们这个东西不会不会了吧对不对所以说咱们如果卖那种高端的或者那种高价的物品咱们一定得让顾客知道这东西它贵在哪儿一定得让顾客知道它贵就贵得好你能忽悠顾客买一次但是顾客回去之后被朋友一打击那就不会再来买第二次让大家知道好在哪儿当顾客买回来之后朋友说你这这么贵不就秋叶粉吗那顾客就可以把咱们跟顾客说的跟他朋友再说一遍这还显得人家顾客还能跟朋友们显得懂有知识对还能懂要博学当顾客不过说买了个产品能享受这个产品的好处让他在朋友面前长面对不对啊所以这样的话那顾客下次是不是有同類的產品是不是還要來找咱们买对不对其实这也就属于一个服务上对不对那顾客知道贵就贵得好对不对那么大家有没有什么这种销售上的问题就是对于自己手上的商品销售上遇到了什么问题呢大家可以问一问我有一个看法顾客买东西首先他肯定会了解产品的质量对他了解完质量以后,他肯定要了解产品的价格。比方说,这个是卖500块钱的微波炉,但是那个微波炉就卖400多。但是质量方面,只是稍微就是可能差不多,但是就是功能少了两个功能。就比方说咱们销售也可能做市场销售啊,超市那方面的销售啊。如果是在超市里面的话,它这个摆放顺序会不会要做些调整。比方說咱可以从左向右,因为顾客在看货架上的东西,一般的方式都是从左向右,咱可以价格从左向右依次增高,这样可以给他们,就是对于购物这方面的东西,给他们自己也有一个参考,再加上咱们这些推销员,在旁边的一些介绍,可能更能激起顾客这种购买欲望,我觉得这个是可以的,特别有用,那我想知道如果是这个产品他怎么样如果滞销了但是这个不好不好推荐的这种产品就是比较买的人特别少这要怎么宣传他或者推销他首先你得清容他这个滞销的原因具体是什么就是他是需求量比较小就是说这这一种产品吗是属于这一种产品就是他用他应用需求比较小,对吧?那这种应用需求比较小,你单纯靠推广它,可能顾客就是都不需要这东西,就是你硬给他找需求,你都找不到,是这么一种东西,对吧?对。所以这种方法首先的话,现在是两个办法,一个是你想办法给他开展一个另外一种用途,再一種就是把它和其他其他那种特价商品搭配比如说最常见的街边上买一箱奶送你个盆对不对买一箱奶送你个饭盒这是最常见的所以你的产品也可以和它不一样搭配这搭配之间不需要不一定非要有什么关系比如说一箱奶和一个脸盆它有什么必然的连接这
+[Text Detection] 在 1012.50 秒检测到关键词 '好焦',current_time: 990.00, 问题文本: 这些都没有什么配合使用的方面吗对不对所以这是这两个基本方法还有其他另外还有第三个方法是这方法只存在说你这个产品做的够大的情况下品牌有了你好焦你好焦基于之前我们讨论的地龙的内容关于龙粉的销售问题
+问题音频片段长度: 522059, dtype: float32, min: -0.2197265625, max: 0.2532958984375
+问题音频时间长度: 32.6286875
+
+
+[Agent] 接收到问题: 之前我们讨论的地龙的内容关于龙粉的销售问题你怎么看待我们如何向顾客解释地龙粉的价值远高于普通秋银粉并让他们认识到我们产品的独特优适合专业工艺同时对于制销产品销售男儿我们应该如何通过搭配销售或者突出产品特性来提升销量对,如果你的东西规模够大,实力够大
+, 1735104532.1142592
+
+
+[Agent] 最终接收到问题: 之前我们讨论的地龙的内容关于龙粉的销售问题你怎么看待我们如何向顾客解释地龙粉的价值远高于普通秋银粉并让他们认识到我们产品的独特优适合专业工艺同时对于制销产品销售男儿我们应该如何通过搭配销售或者突出产品特性来提升销量对,如果你的东西规模够大,实力够大
+, 1735104532.1144545
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4908 seconds, One token time: 0.1636 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：龙粉 销售 价值独特
+Token count: 30, Total time: 6.1606 seconds, One token time: 0.2054 seconds
+
+提取的关键词: ['龙粉', '销售', '价值独特']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，向顾客解释地龙粉的价值高于普通秋银粉时，应突出其独特功效和专业工艺。可以通过介绍成分、卫生条件以及复杂制作工艺等来强调其优势。此外，可以采用搭配销售策略，如与特价商品组合销售，以增加产品的吸引力，从而提高销量。
+Token count: 69, Total time: 13.6422 seconds, One token time: 0.1977 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：龙粉 销售 价值独特
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 这边刚才老师说了哥如果咱们平常咱们在销售当中会怎么说呢A一边如果要是真的顾客问这个和秋莹粉有什么区别对和秋莹粉有啥区别做销售首先就要了解这个产品它有什么好处它肯定要了解它为什么和秋莹粉它区别在哪咱现在有时候咱现在不了解这个产品咱现在不了解这个产品我也不知道这个产品咱们就说咱们从哪个方面拿個方向说这东西跟那个你摸的秋叶粉有什么区别咱们从哪个方向去说它既然它是个保健品肯定是要以健康来说对可以说我们的好处说的具体一点成分可以比方说里头有什么中药之类的掺杂着秋叶粉对我们说秋叶粉我们还有别的东西对我们还有别的东西对人身体起到什么附加的东西对附加的东西坏处的话一你好交和准确把握顾客心理突出产品优点以促进销售对概而过就可以说我们这个产品肯定是有好处也有坏处的顾客肯定比较了解的是吧不可能一个产品它没有缺点的给他们说一下缺点缺点可能就是比方说就是价钱稍高一点就是这方面比方说就是也不能多使用多使用的话会对身体才就是你好焦和准确把握顾客心情后面我们有很专业的器材然后我们饲养的这些蚯蚓也是我们特殊饲养的专业饲养对我们是专业的从卫生或者各方面保健另一方面我们不能保健产品然后会有这些安全食品隐患所以可以让客户自己磨的蚯蚓他肯定是不放心自己随便使用的因为随手这个野生的蜀蚁肯定是会有一些各种各样的什么细菌啊这种隐患所以我们还可以从这方面给这个顾客介绍我们说的就是为向顾客说明我们的这个产品这个地【龙】粉它的价值是要远高于你自己摸的这个蜀蚁粉那么其实出国人课本上这个政治讲经济这块就有多说什么决定商品的价值,是社会必要劳动时间,这个社会必要劳动时间对换到我们制作上,这是什么?就是制作的工艺,对不对?我们说有多少多少药材,但是其实大家基本上都明白,我们就说我们这个澳洲面经过了多少多少道工艺的反复,复杂工艺的反复的制作,对不对?照片说你瓷器好瓷器它为什么贵稍微一边画一遍,稍微一边画一遍,来回回去,十几好几十遍。对不对?这是一个复杂的工艺。为什么说这个说,卖点国画,我哪怕说是,没啥名气的,这一张,就是大的啊,不是小品的,大的四尺六十八尺,就没什么名气的,这一张还得大几百,小几千的,这是没有名气的。有名气的,随便弄一张,那上万的,对不对?你说再上上什么古代的那个那个它就是收藏点的那为什么画一张画还能卖这么多钱这就是理由对工艺、工序在理解对不对?咱们就要让顾客知道里面这些咱们是进入到的工序让顾客觉得这个值不然你说顾客把这种钱买回来了然后顾客买回来之后朋友同事亲家人来他家了跟他一看给我拿这个东西给他们一瓶我说花多少多少钱买的然后他朋友来说你这不就秋莹粉吗你说这样的顾客心里他是什么感觉是不是不是说欺骗就是什么感觉自己脸面捞不住对不对我花这么多东西这么多钱买这么点结果让朋友看我看我们干啥子知道明镜需要您的支持 欢迎订阅明镜我觉得这样顾客还会再来买咱们这个东西不会不会了吧对不对所以说咱们如果卖那种高端的或者那种高价的物品咱们一定得让顾客知道这东西它贵在哪儿一定得让顾客知道它贵就贵得好你能忽悠顾客买一次但是顾客回去之后被朋友一打击那就不会再来买第二次让大家知道好在哪儿当顾客买回来之后朋友说你这这么贵不就秋叶粉吗那顾客就可以把咱们跟顾客说的跟他朋友再说一遍这还显得人家顾客还能跟朋友们显得懂有知识对还能懂要博学当顾客不过说买了个产品能享受这个产品的好处让他在朋友面前长面对不对啊所以这样的话那顾客下次是不是有同類的產品是不是還要來找咱们买对不对其实这也就属于一个服务上对不对那顾客知道贵就贵得好对不对那么大家有没有什么这种销售上的问题就是对于自己手上的商品销售上遇到了什么问题呢大家可以问一问我有一个看法顾客买东西首先他肯定会了解产品的质量对他了解完质量以后,他肯定要了解产
+---
+比方說咱可以从左向右,因为顾客在看货架上的东西,一般的方式都是从左向右,咱可以价格从左向右依次增高,这样可以给他们,就是对于购物这方面的东西,给他们自己也有一个参考,再加上咱们这些推销员,在旁边的一些介绍,可能更能激起顾客这种购买欲望,我觉得这个是可以的,特别有用,那我想知道如果是这个产品他怎么样如果滞销了但是这个不好不好推荐的这种产品就是比较买的人特别少这要怎么宣传他或者推销他首先你得清容他这个滞销的原因具体是什么就是他是需求量比较小就是说这这一种产品吗是属于这一种产品就是他用他应用需求比较小,对吧?那这种应用需求比较小,你单纯靠推广它,可能顾客就是都不需要这东西,就是你硬给他找需求,你都找不到,是这么一种东西,对吧?对。所以这种方法首先的话,现在是两个办法,一个是你想办法给他开展一个另外一种用途,再一種就是把它和其他其他那种特价商品搭配比如说最常见的街边上买一箱奶送你个盆对不对买一箱奶送你个饭盒这是最常见的所以你的产品也可以和它不一样搭配这搭配之间不需要不一定非要有什么关系比如说一箱奶和一个脸盆它有什么必然的连接这之前我们讨论的地龙的内容关于【龙】粉的销售问题你怎么看待我们如何向顾客解释地龙粉的价值远高于普通秋银粉并让他们认识到我们产品的独特优适合专业工艺同时对于制销产品销售男儿我们应该如何通过搭配销售或者突出产品特性来提升销量对,如果你的东西规模够大,实力
+根据会议内容，向顾客解释地龙粉的价值高于普通秋银粉时，应突出其独特功效和专业工艺。可以通过介绍成分、卫生条件以及复杂制作工艺等来强调其优势。此外，可以采用搭配销售策略，如与特价商品组合销售，以增加产品的吸引力，从而提高销量。
+reasoner 输出结束
+些都没有什么配合使用的方面吗对不对所以这是这两个基本方法还有其他另外还有第三个方法是这方法只存在说你这个产品做的够大的情况下品牌有了你好焦你好焦基于之前我们讨论的地龙的内容关于龙粉的销售问题水中的投名就行了为什么需要你这东西是不是其实这个他们有一个你刚才说的那种他们就很像吧对不对就说这样他那种投名水灾应该怎么办要么去转让大城市那些大城市公开与中华人比较少所以如果他实力够强他就可以去宣传宣传我们不知道有多么到底有什么好让更多的人就了解他这个他这个东西对不对因为不了解他,不信服他跟直接拿轻微的草莓有什么区别,你光说有营养,怎么有营养法,对不对,他都不了解,这就是这三个方法,第一,对不对,就是进行推广,对,推广,然后跟他搭配处理,开展他新的用途,对不对,基本就是这个项目方法,还有小蜜蜂没有了然后去选择一个低价位的比如说我随便用用有的会说我买一个中型的可以多花点钱买一个高端一点的就是用的时间更久更好然后有人就会说我可以去选择去外面按摩或者说我去拔罐或者说我要是这样的话我还不如多花点钱去买一个按摩椅在这种情况下如果想要消费我这个中型的就是消费水平中型的这种固形衣服应该就是想出办法因为大家的选择都特别多,为什么会选择我这个?讲了,大家选择你这个,首先,你得先确定自己的优势。如果先确定自己的优势了,你才能,对你客户去怎么说东西的好。不然你说你自己又不确定我这东西到底好在哪,那你怎么跟我说这东西好,对不对?刚刚你说的那说,咱先不是讲你说的什么按摩呀,什么按摩椅呀,什么八卦,针灸啰,对不对?首先你说针灸按摩把关给去人家店里按摩与他占地方而且你不能走往在哪你一个中型的你可以你可以走往在那方便面积方便面积这是你一些什么按摩针灸按摩与他这一大优势对不对然后你说那个低端的让低端的什么大家说可以选择就是花的钱稍微少一些我花一个这个,买一个稍微次一点的,就是低端一点的。或者有人说,我就随便用用,我就不用花那么贵的,买一个中短的。有的人就说,我不,我就想买一个好一点的,我去选择高端的。我为什么要选择一个中短的呢?但是中短肯定有它的优点。但是我,我就说,在这种情况下,我该怎么跟客户介绍呢?对于低端呢,你必须得搞清楚,你比它强大呢。如果你安全上比它强或者你效果上比它好对效果比较好比如说你颈椎按摩颈椎是什么那是人家很多人都会对如果你要买低端再买杂牌的质量有保证吗对不对那如果他们说选择一个更高价位的我现在该如何推荐我的就是功能是差不多可能没有它那么完善但是价位相对比它稍微低一些但是人家是这么说啊,咱们销售咱不是所有客户都能留住,就是有钱就看不上你那个东西。你不是选了合适的消费人群,像他们销售的意思吗?对,选合适的人群。比如说你,那时候卖肉夹馍的,追着马云跟人家说来你买我肉夹馍吧,你觉得人家好吗?对吧?人家就是一般的服工人家就是有钱人家啥就是只要最对,人家不考虑什么啥,只要最贵的。要因人而异。选择合适的消费人群,对吧?确定自己的消费人群,你没说自己是中端的,对不对?那你得对付中端的消费人群。你可以去发展一些低端的,高端的也可以尝试一下。但你还得针对中端的人群,什么商品都得针对上上的人群。那B这边?我这边想问一下就是现在我们不是有消费销售这边有很多面临的一个情况,就是我想卖一些东西,然后我肯定是要去那边卖这个东西好的那边的市场,去看看人群或者客流量什么的,去找这些会去那边消费的这些人员,但是同样的是这个地方肯定是以前会有和我一样的在那做这个的,那我通过什么方式我可以让别人选择的是我这家所以我不推荐你去跟人家想想是吗我不推荐因为人家在那干多长时间了你想过这个事吗人家在那干多长时间人家在那积累了多长时间的一个客户权多少去那的人都是人家的熟客你考虑过这个问题吗但是如果不去那个地方的话别的地方就是人流啊或者需要我这个东西的人可能就没有那个地方多是没有那个地方多但是别的地方少但那都是你的那东西是多没你的份懂不明白这个概念吗就是那人羊羊是很多但是已经被人家老实人家包装完了但是如果我是顾客的话我其实不是我觉得大多数人应该都是这样的就比如说夜市嘛對你经常去逛夜市的话,你会只去一个摊上你这个销售的话,大商场里头跟夜市因为夜市摆摊是流动的,大商场摊位是固定的因为两个区别,区别很大夜市不会,夜市就是说谁看见啥喜欢啥就买大商场不是大商场,你说你今天去这个点你觉得这个好那下回路你朋友想买类似东西,你还是会借他来,对吧?你还会借他来这儿,这时候人家的客户全,明白什么意思吗?当然你要说你真是能在那儿扛着,扛个几年,你能扛住,你确实可以奔走人家的客户,你确实可以。我给你举个最现实的例子做街边就21中那十字路口前道以前有一家卖石头饼以前那整个那十字路口包
+[Text Detection] 在 1548.40 秒检测到关键词 '好教教',current_time: 1530.00, 问题文本: 包括是龙十县就它一个卖到的它在那卖了得有好几年大概得有十年左右不是它卖些的话大概得有差不多得有十多几年一开始只有它一家培训达啊你好教教教如何针对不同消费水平的客户推销中型户井仪行 这个老师这边咱先回答一下咱们这个
+问题音频片段长度: 119296, dtype: float32, min: -0.218658447265625, max: 0.265655517578125
+问题音频时间长度: 7.456
+
+
+[Agent] 接收到问题: 教教教,如何针对不同消费水平的客户推销中型户井仪。
+, 1735104585.5402558
+
+
+[Agent] 最终接收到问题: 教教教,如何针对不同消费水平的客户推销中型户井仪。
+, 1735104585.540473
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4826 seconds, One token time: 0.1609 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 24, Total time: 1.3401 seconds, One token time: 0.0558 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+首先，了解中型沪津仪的特点和优势，针对客户的需求进行推荐；其次，根据客户的消费水平，提供不同价位的中型沪津仪选择；最后，通过专业的售前售后服务，让客户感受到产品的品质和价值，提高客户满意度和忠诚度。
+talker 输出结束
+括是龙十县就它一个卖到的它在那卖了得有好几年大概得有十年左右不是它卖些的话大概得有差不多得有十多几年一开始只有它一家培训达啊你好教教教如何针对不同消费水平的客户推销中型户井仪行 这个老师这边咱先回答一下咱们这个只不过他处于一个最大问题就是一个最大的市场饱和问题就是说哪里都有但是人们都需要但是哪都有可能你的选择就是选到一代的人群可能会减少这种问题也就是说你已经干了很长时间一个产品对这个产品前景很好但现在市场进行饱和了对大家都干而且你周围干的东西也越来越多开始抢你的客户了对分流了已经就是说你现在想问的是怎么留住这个客户怎么流露了然后吸纳新客户因为你还要往前发展因为还是不断的有人需要你这个产品的只不过说可能竞争比较多就是说你不能走到绝路只不过路有点越走越窄怎么想办法让自己再透开一点这么说这有句老话来叫人我有人有我有你现在能到这个人有我有的成绩其实我们现在最大的优势还是老客户问题因为我们走不了低价促销因为我们成本在这摆着但是你说优的这话人家有比我们收价高的因为人家的品质真的好我们公司虽然就是干了这么多年了但是它没有办法进一步的扩那么大的规模因为人家从一开始定位就高端路线人家卖的产品就是包装的特别好然后那些制作工艺都特别的精良我们达不到那种程度因为我们走的还是这种比较大众的路线所以我们做用可能是比不过人家这种特定的定位的这个商家的可能人有我优,咱们这个方案也优了那是最后一道,人有我传转行呢不是,完全转行你如果完全转行,你一个客户就百败六失了嘛对不对你说你现在发的新动物也很难因为周围你同类商业也非常多,对吧是这个意思吗?对那你要保留住你的老客户的前提下你可以去扩翻一下然后还可以反正别的行业你这个行业你已经饱和了对不对但是这个不是拼谁能走到最后吗因为你这个产品是一直都要买一直都要买的所以我说让你保持住啊保持住这个客户就是不管市场自己发展自己不管市场不是说又因为市场饱和通常越来越多对不对所以说就是因为市场饱和了所以你再对市场就自己多一条路你这个收益它不会增长太多对不对因为它是市场饮饱和所以你去找一个市场相对贫乏的需求大但是它这个货物没有那么多的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目就适当搞一搞这个明白行,那咱们B这边那个有些这种情况就是现在市场比较饱和了然后老用户然后老用户就是他们不想要因为咱们是顾客链子有的然后他不想换就是都喜欢我们这个产品但是慢慢慢慢它有别的产品的产品咱们我觉得咱们还是要抓产品这个是 要产品的专属咱们应该是跟进产品不光是在销售产品你比如说咱们现在的产品是十年前老旧的产品那你得跟进换代就必须的你保证产品的活力和市场竞争力嗯谢谢大家就是你必须要保证,而且你不光是保证市场经营,你这个也是对你的客户负责,那你说你客户十年前买了这个产品,还让他买这个产品,这对客户有负责,你对客户有负责,你对客户有负责,那客户还会对你卖你东西,对不对?这就是之前说的,你得让客户觉得,买你东西让他开心,买你东西让他高兴,对不对?行,那咱们老师给咱们进行一个今天的总结吧。嗯,作为一个总结,首先说,咱销售干嘛呢?就是卖东西的。怎么卖东西啊?第一,让客户觉得东西好。二,让客户觉得我有所值。三,让客户觉得他需要。然后当我们那个销售又有问题的时候,我们就要发现问题。这产品让我们也想弄明白它到底是在哪儿知晓发现问题解决问题包括说得市场饱和了让宝贺怎么办千金二马过独木桥咱们就不要和他们挤了对不对你说你自己走自己走宽敞大道不好吗对不对所以我的意思就是让我们挖掘新市场对在市场宝贺是必须要挖掘新市场嗯行老师我今天想在这个市场饱和的时候我们要发掘新市场进行一个创新那咱今天老师给我们讲了很多接下来大家在销售当中一定要把老师今天所讲的运用下去那咱本场的销售课程到此结束
+[Audio Detection] 在 1991.72 秒检测到关键词 '好交交'。
+detection_time: 1991.72, current_time: 1980.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.110137939453125, max: 0.1317138671875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容,关于市场饱和时如何挖掘新市场和保持老客户的问题,你认为我们应该如何平衡产品更新换代于新的产品?
+, 1735104614.5748434
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容,关于市场饱和时如何挖掘新市场和保持老客户的问题,你认为我们应该如何平衡产品更新换代与维持现有客户群体的关系,同时在众多竞争者中保持我们的市场竞争力?
+, 1735104615.9018316
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4836 seconds, One token time: 0.1612 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：市场饱和 新市场 老客户 产品更新 维持关系 竞争力
+Token count: 42, Total time: 8.0714 seconds, One token time: 0.1922 seconds
+
+提取的关键词: ['市场饱和', '新市场', '老客户', '产品更新', '维持关系', '竞争力']
+
+找到的上下文片段数量: 1
+在市场饱和时，应通过创新挖掘新市场，推出符合市场需求的新产品以保持竞争力。同时，要注重维护现有客户关系，提供优质的售前售后服务，满足客户需求，增强客户黏性。此外，可以通过客户反馈优化产品，实现产品更新换代与维护客户群体的平衡。
+Token count: 66, Total time: 12.7176 seconds, One token time: 0.1927 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：市场饱和 新市场 老客户 产品更新 维持关系 竞争力
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 嗯,作为一个总结,首先说,咱销售干嘛呢?就是卖东西的。怎么卖东西啊?第一,让客户觉得东西好。二,让客户觉得我有所值。三,让客户觉得他需要。然后当我们那个销售又有问题的时候,我们就要发现问题。这产品让我们也想弄明白它到底是在哪儿知晓发现问题解决问题包括说得市场饱和了让宝贺怎么办千金二马过独木桥咱们就不要和他们挤了对不对你说你自己走自己走宽敞大道不好吗对不对所以我的意思就是让我们挖掘新市场对在市场宝贺是必须要挖掘新市场嗯行老师我今天想在这个市场饱和的时候我们要发掘新市场进行一个创新那咱今天老师给我们讲了很多接下来大家在销售当中一定要把老师今天所讲的运用下去那咱本场的销售课程到此结束基于之前我们讨论的内容,关于市场饱和时如何挖掘【新】市场和保持老客户的问题,你认为我们应该如何平衡产品更新换代与维持现有客户群体的关系,同时在众多竞争者中保持我们的市场竞争力?
+在市场饱和时，应通过创新挖掘新市场，推出符合市场需求的新产品以保持竞争力。同时，要注重维护现有客户关系，提供优质的售前售后服务，满足客户需求，增强客户黏性。此外，可以通过客户反馈优化产品，实现产品更新换代与维护客户群体的平衡。
+reasoner 输出结束
+
+会议数据处理完成。

@@ -1,0 +1,233 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200701_S_R001S06C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Starting processing from 0s, total chunks: 76
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.15s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.33it/s]Loading Whisper model...
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.38s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.11s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.09s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.70s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.06s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.90s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.73s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.66s/it]
+我002 我是董经理014 運營部 019 食尚部好的 今天我們把各部門叫過來開一個半年年終總結大會各部門總結一下上半年的工作情況然後從市場這邊今年因为受疫情的影响我们的业绩不是很好所以下半年的时候我们会有一些调整包括因为现在不像前段时间每个小区都不让进每个公司都必须戴口罩等等这些已经比较松了所以我们要调整一下职工的然后制定相应的措施去调整我们的每个人的状态包括整体的状态特别是我们要开发一下新的市场包括一些大型的会议然后就是有一些商场的一些促销活动我们会跟他们有一些对接还有就是公司的一些会议包括开发商的我们都会跟他们签一些合同给他们送去一些鲜花甚至我们跟他们会签就是当他们搞活动的时候我们跟他们签一个长期的一个合同就是只要他们搞活动我们会把鲜花及时的给送到营造一些氛围包括一些小的门店的开业我们会送到花兰就是调入一个职务的积极性让员工发现他身边的商机对上半年在市场不太景气对比去年下半年我们的业绩整体的下滑了10%但是虽然说是下滑了但是也看出了员工的努力因为确实有好几个月大家都是足足出步的还能够得到这样的业绩是大家共同努力的成果所以我想再接再厉下半年再创佳绩什么样的规划呢下半年咱要组装什么样的业务呢就是开拓一下我们新的市场就是跟大型的公司商场 开发商去进行对接承接他们的业务无论是开盘 开业还有一些婚礼的一些筹备包括酒店婚礼的筹备婚礼这方面是咱们公司的主因这个业务到时候下半年肯定会有这方面的业务上半年几乎就没有这方面的对对对没有这方面的业务因为这个酒店也不开门了大家损失都很惨重了对然后咱下个月晚上我们这边主要是做一个类似于后期的一个对接的工作然后因为上个月刚才也说了普遍的业绩对外的比较少所以我们这边对接工作也比较少然后跟之前的合作是一直有合作的然后工作少但是我们还是在一个持续合作状态然后有个问题就是我们近几天前面的几场婚礼的一个摄影团队然后他们是跟了我们大概有三场是我们最近新鲜的一个然后因为我们这边不是常办录制摄影然后附送光盘给那些新人然后那些有这些商户给我们反映可能说他摄制的质量不是特别好所以我们这边在跟摄制组那边沟通看他们是不是设备的问题还是摄影师的问题如果口碑实在不好的话为了后续发展我们可以和另外的团队再重新洽谈一下这个团队就可以先把工作暂停这是我们暂时的一个问题然后因为我下个月工作的话还是以这个对接为主因为我们现在红杏包含的内容越来越多了比如说我们刚才说的花衣展示也是我们承担过来之后我们现在只套了一个原材料的费用还有这个运费然后我们原来就是请一个我们部门的人做一个简单的布置然后机器有些比较大的一个订单他想做一个高端的一个婚礼定制所以在这个鲜花细节这一方面的我们想邀请一批专人来给我们做所以类似于花艺师呀设计师这一类的我们想就是他一个合作商家做一个长期的一个合作准备还有就是想要这个下一个部分讲这个策划这个我们策划部的话因为咱们疫情影响然后这阵子病毒量就是很多所以对咱们策划是要求比较高要求他们服务好每一对新人婚姻策划方案,婚期行程方案,婚礼仪式方案等等这边的话就是订单下来我们策划部会派固定的人进行跟踪就是跟单然后像我们策划师和客户对接的时候以客户的需求为主再加上一些专业性的指导最后整理出策划方案在婚礼进行前会进行彩排彩排次数的话我也会就是增加了次数因为保证婚礼的有序进程吧进行嘛然后流程方面的话比较清晰所以增加了彩排的次数还有咱们目前在这个策划这个一些关于一些公司开业的这方面的那个策划目前有哪几种方案关于公司开业的策划的话,也是根据他们开业的,我们肯定会先定一个主题吧,然后跟公司的人进行对接,然后台子的搭建,地方的选择,然后再进行策划,流程的策划。然后这方面其实公司的这方面开业方面稍微多了一点毕竟疫情稍微回满了开业的话也比方常稍微多一点对嗯行还有就是咱们公司嗯对运营这一块咱们目前不是市场这一块目前咱们现在
+[Audio Detection] 在 528.95 秒检测到关键词 '好教教'。
+detection_time: 528.95, current_time: 522.00
+问题音频片段长度: 158528, dtype: float32, min: -0.107086181640625, max: 0.102935791015625
+问题音频时间长度: 9.908
+
+
+[Agent] 接收到问题: 针对摄影团队质量问题你建议如何改进以提升客户满意度
+, 1735625927.5129452
+
+
+[Agent] 最终接收到问题: 针对摄影团队质量问题你建议如何改进以提升客户满意度
+, 1735625927.5132787
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+为了提高摄影团队的质量，建议采取以下措施：一是加强成员的技能培训和素质提升；二是建立完善的质量评估体系和激励机制；三是注重客户沟通和需求调研，提供个性化服务；四是持续关注行业动态和技术进步，保持创新精神和敏锐度。这些改进措施将有助于提升客户满意度，并助力团队在竞争激烈的市场环境中脱颖而出。
+talker 输出结束
+然后就是这边客户有这个风格选择对他们就是要的就是热的热闹对风格他是有的他们我们跟客户对接的时候写色化日线肯定得跟客户对接他们有的想要浪漫的有的想要喜庆一点热闹就是我说下个月咱们这边谢谢大家是那个小型的就是那个文心的他想要热闹对对因为他的客人呢还是比较多的就是就是普通阶层的人比较多一些就是喜欢那种热热闹闹的那种氛围所以红火火的那个样子的所以我们就是选择了红玫瑰红色的这个因为非洲菊它有另外一个名字叫幸福花因为这个新人在入场之前他们站在那个幸福之门下所以我们用红色的花去装饰当然点缀一些其他的一些小花一些满天星的一些小花因为比较亮的一些否则的话太大风大绿的就俗气了虽然要符合客户的需求但是我们也不能把自己弄得太太俗气毕竟我们做婚庆的它是很高雅的一个所以我们要装饰的既要热热闹闹的既要红火火的又不能太落俗了所以我们用这个鲜花去布置本身鲜花就是很高雅很高档的很舒适的让人感觉眼前一亮所以呢那个新人通向主会场那个路我们给它起了一个叫幸福之路用幸福花来装饰用一些绿叶配上幸福花整个装饰上这条路当新人在对以红色为主当新人一步一步的从幸福之门走向主会场走向舞台的时候他们是踏在幸福之路上而且他们眼看的是幸福之花当他们每走一步的时候司仪呢然后这个对于司仪呢就会有一个要求不能用一个桃花要针对这个婚礼的这一对嘉宾就是新郎新娘他们的实际情况下先对他们有一个了解不是说单知道他们姓什么叫什么那个学校毕业的父母是谁就可以了对他们的恋爱是有有一个初步的一个了解然后针对这个有一个说辞就是他的私谊的这些话不要是套套话我在某一个婚礼上我都听过对吧啊新郎是玉树临风的新郎是怎么样啊不不不要那样子的一定要有对要有代入感让每一个人都有认同感让特别是他的亲戚朋友了解认识新郎新娘的亲戚朋友们对这个私意的话语认同感对他有感慕深受他在述说的一对人从相识到相恋从相知最后到结合他们整个的一个过程让他们从幸福之门踏着幸福之路走向舞台的时候然后这个司仪要介绍他们简单的用一些话来介绍他们的恋爱史他们两个人的经历最后当司仪话音落下的时候新人就正好走到了舞台之上他再来介绍这对新人包括主会场就是因为那个舞台是大家关注的一个焦点也是一个主会场所以主会场是用白色的百合一定要是用白色的百合因为百合的寓意是百年好合而且它有纯洁兼真的寓意用百合和红色的玫瑰去装饰主会场这样的话不就有点撞色了太撞色了吧因为白色如果把白色的百合跟这个红色的玫瑰花放在一起他的顏色这个颜色的差别,色差非常的显著对,我觉得这个显著太显著了不,好看你把盛开的百合和玫瑰花放在一起,非常的漂亮可以,咱们可以露出红色的然后那个门可以用白色的百合做一个门或者是手捧花你做成百合的其实可以的然后的话,你是说以红色为主的话,我就建议咱们面前新娘的话可以以红色礼服为主。对。对。然后其实也有红色的婚纱也特别好看,或者是咱们中式一点的和服也是非常好看的。其实那种绣和服就是很漂亮,很修身的一种设计。新娘入场的时候,她可以穿白色的婚纱,敬酒的时候就是换上那种绣和服。很显腰圈的那样因为这个新娘是很苗条的样子就可以换上那个也不是说我们以红色为主并不是说所有的人都用红色那就俗了不好看了所以要用就是她入场的时候穿白色的婚纱然后在敬酒的时候换上红色的绣和服包括新郎官也是入场的时候穿西装然后敬酒的时候她也可以化成中式服装和新娘子要对,和谐对,一致像就是霓裳的这种风格嘛我们策划部也是以前策划的也有很多不同的风格像以绿色为主,森林系的或者粉色为主,浪漫系的红色为主,高档系的咱们都有跟客户介绍的时候我们这边策划师也会跟客户推荐这样的,就是咱们这个空气的话也也是一个服务行业嘛就是服务好咱们新人是最重要的就是让新人开心让大家开心这样的话也可以传播咱们的知名度还有就是说到了这个鲜花的搭配对吧虽然我们以红色为主但是刚才说到了那个心目之路用那个心目花如果全部用红色吧可能都不太显眼有一种颜色更亮的更耀眼的是黄色黄色黄
+[Text Detection] 在 1013.61 秒检测到关键词 '娇娇',current_time: 986.00, 问题文本: 黄色和红色搭配装饰起来的那个心目之中我感觉效果会更好一些因为黄色和红色掺着在一起的时候它两个在一起的时候搭配起来很亮比纯红色和纯黄色效果会更好因为黄色其实是最显眼的一个颜色我们觉得红色是很艳的你好娇娇基于之前
+问题音频片段长度: 653952, dtype: float32, min: -0.138916015625, max: 0.138031005859375
+问题音频时间长度: 40.872
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于下个月婚庆业务的风格选择你提到了红色系为主的热闹风格以及绿色森林系粉色浪漫系和高档红色系等多种风格我想请问一下针对不同客户的需求我们策划不再推荐风格时通常会考虑哪些因素如何平衡客户的个性化需求和整体的高雅感但是黄色很亮
+, 1735625962.4516215
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于下个月婚庆业务的风格选择你提到了红色系为主的热闹风格以及绿色森林系粉色浪漫系和高档红色系等多种风格我想请问一下针对不同客户的需求我们策划不再推荐风格时通常会考虑哪些因素如何平衡客户的个性化需求和整体的高雅感但是黄色很亮
+, 1735625962.452199
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：婚庆业务风格选择 客户需求 高雅感 黄色
+
+
+提取的关键词: ['婚庆业务风格选择', '客户需求', '高雅感', '黄色']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:261: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+
+Token count: 158, Total time: 61.6976 seconds, One token time: 0.3905 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：婚', '庆', '业务', '风格', '选择', ' ', '客', '户', '需求', ' ', '高', '雅', '感', ' ', '黄', '色', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 很显腰圈的那样因为这个新娘是很苗条的样子就可以换上那个也不是说我们以红色为主并不是说所有的人都用红色那就俗了不好看了所以要用就是她入场的时候穿白色的婚纱然后在敬酒的时候换上红色的绣和服包括新郎官也是入场的时候穿西装然后敬酒的时候她也可以化成中式服装和新娘子要对,和谐对,一致像就是霓裳的这种风格嘛我们策划部也是以前策划的也有很多不同的风格像以绿色为主,森林系的或者粉色为主,浪漫系的红色为主,高档系的咱们都有跟客户介绍的时候我们这边策划师也会跟客户推荐这样的,就是咱们这个空气的话也也是一个服务行业嘛就是服务好咱们新人是最重要的就是让新人开心让大家开心这样的话也可以传播咱们的知名度还有就是说到了这个鲜花的搭配对吧虽然我们以红色为主但是刚才说到了那个心目之路用那个心目花如果全部用红色吧可能都不太显眼有一种颜色更亮的更耀眼的是黄色黄色黄基于之前我们讨论的内容关于下个月婚庆业务的风格选择你提到了红色系为主的热闹风格以及绿色森林系粉色浪漫系和高档红色系等多种风格我想请问一下针对不同客户的需求我们策划不再推荐风格时通常会考虑哪些因素如何平衡客户的个性化需求和整体的【高】雅感但是黄色\n ###agent根据会议片段的输出开始：###\n在会议内容中提到，策划部会根据不同客户的个性需求推荐多种风格，如红色系、绿色森林系、粉色浪漫系和高档红色系等，并确保整体效果既高雅又符合客户期待。具体来说，策划部主要考虑的因素有：\n\n1. 客户偏好：了解新人希望婚礼呈现的氛围。\n2. 场地特点：结合场地风格选择适宜的装饰色彩。\n3. 新人形象：根据新人身形与气质挑选适合的礼服。\n4. 整体协调：确保整体设计和谐统一，突出主题。\n\n此外，还特别强调了鲜花的选择，比如黄色花朵可以作为亮眼点缀，以提升整体视觉效果。通过这种方式来平衡个性化需求与整体高雅感之间的关系。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 很显腰圈的那样因为这个新娘是很苗条的样子就可以换上那个也不是说我们以红色为主并不是说所有的人都用红色那就俗了不好看了所以要用就是她入场的时候穿白色的婚纱然后在敬酒的时候换上红色的绣和服包括新郎官也是入场的时候穿西装然后敬酒的时候她也可以化成中式服装和新娘子要对,和谐对,一致像就是霓裳的这种风格嘛我们策划部也是以前策划的也有很多不同的风格像以绿色为主,森林系的或者粉色为主,浪漫系的红色为主,高档系的咱们都有跟客户介绍的时候我们这边策划师也会跟客户推荐这样的,就是咱们这个空气的话也也是一个服务行业嘛就是服务好咱们新人是最重要的就是让新人开心让大家开心这样的话也可以传播咱们的知名度还有就是说到了这个鲜花的搭配对吧虽然我们以红色为主但是刚才说到了那个心目之路用那个心目花如果全部用红色吧可能都不太显眼有一种颜色更亮的更耀眼的是黄色黄色黄基于之前我们讨论的内容关于下个月婚庆业务的风格选择你提到了红色系为主的热闹风格以及绿色森林系粉色浪漫系和高档红色系等多种风格我想请问一下针对不同客户的需求我们策划不再推荐风格时通常会考虑哪些因素如何平衡客户的个性化需求和整体的【高】雅感但是黄色
+ ###agent根据会议片段的输出开始：###
+在会议内容中提到，策划部会根据不同客户的个性需求推荐多种风格，如红色系、绿色森林系、粉色浪漫系和高档红色系等，并确保整体效果既高雅又符合客户期待。具体来说，策划部主要考虑的因素有：
+
+1. 客户偏好：了解新人希望婚礼呈现的氛围。
+2. 场地特点：结合场地风格选择适宜的装饰色彩。
+3. 新人形象：根据新人身形与气质挑选适合的礼服。
+4. 整体协调：确保整体设计和谐统一，突出主题。
+
+此外，还特别强调了鲜花的选择，比如黄色花朵可以作为亮眼点缀，以提升整体视觉效果。通过这种方式来平衡个性化需求与整体高雅感之间的关系。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+色和红色搭配装饰起来的那个心目之中我感觉效果会更好一些因为黄色和红色掺着在一起的时候它两个在一起的时候搭配起来很亮比纯红色和纯黄色效果会更好因为黄色其实是最显眼的一个颜色我们觉得红色是很艳的你好娇娇基于之前通常会考虑哪些因素如何平衡客户的个性化需求和整体的高雅感但是黄色是很亮的那我们这边做采买的时候可以针对性的做一些对 就是那个幸福之路你要是铺设的话铺着鲜花的话你就用幸福花它又便宜它花期不短吗它又便宜这个也让我们的成本也可以降低成本可以先跟客户沟通一下如果客户那边通过的话我们就可以直接进行一个采买和建设的工具对对对可以发的话其实跟客户沟通一下就马上就写出来了对百合呢花期是比较长的但是百合的跟玫瑰的价格是比较高的这个整体的费用还是跟客户那边商量看看如果要求比较高的话就可以上面可以吃到的大半截如果他们想防止整个用百合啊或者什么的没有必要不过父母亲他们的胸花用抗氮锌抗氮锌的花期本身就比较长可以为了让父母因为这个细节我们必须要注意到因为这个花如果脱离了水的话它很快就蔫了对吧就不好看了还没进完酒呢花都蔫了就不好我們就是在這個戲要記住在這個花下面要加一個小的營養液這樣的話父母帶著花包括新郎新娘帶著花要加一個小的營養液雖然是一個細節但是整個婚禮過程中這個花它是鮮豔的亮麗的雖然明明知道花其實很短的但是婚禮還沒有結束新郎新娘的玫瑰花就有蔫了這個是很不好的一個兆頭也是很不要忌讳的我们在细节上做一些注意嗯,像咱们市场这边的话也可以往那个户外的一些婚礼去推销因为咱们这边的话也和一些鲜花养殖基地正在合作呢然后那个那边的地方的话也比较大有草坪,然后旁边就是花朵可以直接布置婚礼现场的这边的话就是户外的嘛也是增加,比较增,就是而且你先花朵就是直接生长在草坪上的这样的话也可以带给工会一种吸引的感受然后风格的话也是多选的这样的话就成立的要求就比较高一些咱们刚才怎么是围绕刚才你说的那个顾客户的要求他们是在哪里举办的酒店对他们在酒店酒店怎么就围绕这个主题去理他们布置还有刚才你们说到了场景的布置然后咱们就说一下这个主持人运营这块对主持人有什么好的看法我们这个主持人长期合作的有三个都是我们地方的这个那个网络电台的专业部他而在的就是第二点他也是一个这个客户这个要求咱们的主持人有要求吗他们对主持人的要求就是就是不要那么刻板不要那么套路要求要求不是要质量上要求那个嗯高吗要求高吗质量上其实他们并不是说一定要主持人电视台的呀就是知名的只要主持的好就好要求的是质量而不是知名度或者说呃他的牌子或者怎么样的可不是要求这些只要主持的幽默风趣可以掉入不要每个人的热情不要求知名度比上面不要求知名度比上面要求出效果要求出效果要求出效果我们这边三个主持人刚才说了广播电台的他们的专业度是有的然后他们也是那个价格就对吗不是 他们都是传媒学校毕业的就是说在专业度我们最起码口才这方面五音要全发 发音要清晰这个是一个主持人的基本素养也就是说我们这个主持人专业有一定保障的然后另一方面就是他们三个人的风格有一个收入比较高,走高端路线一方面是声色条件比较好另一方面是对整体氛围把控以及仪式进行每个流程都是掌握的特别精准而且他可能不是特别擅长于氛围但是他是走那种比较高端的地质分离路线的所以说他是比较沉稳稳重的对于这种需求比较高值一定来说收入比较高,邀请的科技人士就是比较偏上层的,他们可能不会喜欢就是用打气这种打闹的效果,他是专门针对于这个的。然后还有一个就是还有两个,两个是氛围就是比较能空中氛围的,然后比较幽默西方呀什么都有,然后那个也是针对比如说我们有那些喜欢热闹的打闹的那一类的,有专门空中氛围的,有一种就是跟着邮程再走,然后cue那个新郎新娘。让他们两个作为主角出来的一个效果他们两个风格一样但是作为的效果是不一样的这是我们三位长期合作的主持人这个高端的就不用考虑了因为这个是平民百姓平民百姓是吧还有就是价格对价格有要求吧价格多的是吧中低端吧因为我想要太高端的因为条件没有那么好对这个咱们这一段请不吝点赞 订阅 转发 打赏支持明镜与点点栏目剩下哪个价格比较低的我们这两个价格其实差不多都是1000到2000块钱这个价位算是比较低的了但是他们对你其中一些细节要求比如说有些新郎新娘不是会加入特别环节吗比如说他们要跳舞呀 唱歌呀这可能就比较时常可能会比较变动然后对我们专业要求会更高然后他还需要串场这类比较多或者是创厂词,他们会自己准备但如果就像刚才新郎先生要求那样做一个专业的调查然后再写词的话可能还有一定这样的一个保费在里面所以相应的可能会加一点钱一两千,那边能接受吗?我可以跟他们谈问题应该不大因为我们可以量身定制而不是所有的都一致的可以为他们量身定制因为他们可能从外面可以请一个比如说兼职的一些人但是那些人毕竟不是专业的对 还有你的出清理尽量都采取咱们公司的人嗯对对对咱们这个既然我们要组织嘛我们要考虑整体的效率尽量整成一个套餐不要整成单独的项目对尽量最方便他们还有什么要求吗他们当然要求是经济实惠的但是我会跟他们说我们不是价格最低的但是我们保证是性价比最高的而不是我不是说我们价格是最高的或者我们价格是最低的我们不保证这些,但是我们保证性价比是最高的现在所谓物美价值的东西已经不存在了物美价自然高,但是我们物美价值是中等这样的话,我想他们可以接受因为他们自己出去找,他们第一,他们是外行,不了解要花给他们很多的时间和精力第二,找到的人不一定会
+[Text Detection] 在 1556.09 秒检测到关键词 '焦焦',current_time: 1537.00, 问题文本: 会怎么样但是我们既然我们工资承接了我们一套路的服务自然会打到他们的满意还有就是咱们这是下个月的马上你好焦焦客户对主持人有哪些具体要求和预算限制马上咱们策划这个
+问题音频片段长度: 121739, dtype: float32, min: -0.13714599609375, max: 0.1441650390625
+问题音频时间长度: 7.6086875
+
+
+[Agent] 接收到问题: 你好 娇娇客户对主持人有哪些具体要求和预算
+, 1735626075.7706625
+
+
+[Agent] 最终接收到问题: 你好 娇娇客户对主持人有哪些具体要求和预算
+, 1735626075.7708013
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 68, Total time: 2.6815 seconds, One token time: 0.0394 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+您好，教教客户对主持人有哪些具体要求和预算限制吗？
+talker 输出结束
+怎么样但是我们既然我们工资承接了我们一套路的服务自然会打到他们的满意还有就是咱们这是下个月的马上你好焦焦客户对主持人有哪些具体要求和预算限制马上咱们策划这个先把预算算出来看经济实惠对 预算需要多少钱就能算出来所以我们也要合适一下自己的成本可以策划出来了然后上面都会有咱们的预算像后期的一些准备一些东西注意事项包括一些台步包括舞台的一些布置布景包括它他们的婚纱照会投影到大家的还有咱们的对方一些设备上的一些音响一些设备摄影一切音响呀一些这个用人方面的一些费用对其实用人的话舞台的一些布置也不是一个特别大型的咱们公司的人足够了就是像我们策划部的话就是顾客整场的流程吧我们策划部人员是可以的如果不够的话就像咱们市场部所以说可以跟我们联系对 咱们这边的话也有服务人员可以接到对 铁路人员也可以帮忙的这边的话是肯定不用外请的咱们公司可以一览高揽那也不小好然后后期的叠片的负责也是我们一般负责,负责好的话也会给咱们客户沟通。还有一个市场这边是下个月,下个月除了婚礼节还有别的项目吗?还有一个商场的开业的典礼,我们也跟他们有些随机,包括通过我们给他一些现场的一些布置包括一些鲜花的定制我们已经和花店做了沟通这样花店也很高兴跟我们有这样的联系因为我们给他们带去了商机然后会场的布置包括一些设计一些装饰都跟他们有联系这个业务已经确定对,明天就可以跟他们签协议了他对这个有什么样的需求吗?当然需要我们把叙事做的要大一些包括一些醒目的牌匾啊包括鲜花的一些夺目啊都可以,就是那个花篮我们就不需要做太高的我们就用一些鲜艳的花朵多放几个,就是同样的我们可以多放一些花篮衬托 控制一下现场的氛围嗯 是咱们中间也可以串发一些表演节目对 包括一些那个气球 因为鲜花是在地面的气球是在空中的嘛包括一些气球彩色的要一些颜色对 现场给它布起来对 其实它每个商场开业的时候它会定一个主题所以咱们专注这个主题要表嗯好在一些他们的一些促销手段就是因为当开业嘛他们肯定会有一些促销活动对然后我们也会把促销活动加入那个流程里边进行一个小小的抽奖呀或者是礼品的发放之类的嗯也可以让路过的所有的市民们去参与到台上的一些比如说唱歌会给他一些小礼品呀或者说跳舞小孩子可以发一些小礼品由商场来准备但是可以吸引很多人的眼球对嗯嗯嗯这个需要我怎么帮助你呢嗯如果我们人手不够的时候需要各个部门协同一起来完成因为商场开业的话会比较热闹人比较多比较乱一些可能会需要一些帮手嗯行这方面到时候我会跟各部门说好的到时候跟各部门也能搞出一下就行了好的谢谢嗯 行还有目前怎么这个下半年工作就上半年怎么会有一些这个人员这个状态不太对因为咱们这个没有什么工作所以下半年要提高一下员工的工作状态有什么办法吗对因为我们这边还是基地政策吧因为我们上半年就是处于一个停职状态但是我们最近就是原计划已经出来了因为我们这个婚礼的形式不断的更新然后场地我们也要多掐盘几个多有几个合作项目还有旅行婚礼比较流行我们跟那些旅行团和景点什么的都有这个合作项目所以从下个月下半年要分几个主要针对计划下半年的年度计划已经做出来了然后每个员工都给自己制定了一个目标然后用多方评估之后他们每个人所达到目标的程度是差不多的所以我们会一个月一个月来看他们每个月的完成情况如何然后还是减罚措施然后如果你超过完成就讲如果你没有完成的话会有一定适当的惩罚先不还钱但是如果你连续三个月都不出业绩的话我们可能就是工资这方面可能会扣个一二百块钱我们暂定是给像我们策划部的话,这方面为了提高咱们人员雇员的那些积极性嘛,我们打算做一个婚礼策划比赛。要求是每个策划师都会出一份婚礼策划的方案。然后不同类型的他们肯定都有,然后会选优秀的,然后制定成策,到时候可供咱们顾客挑选。如果他們的方案被挑選的話也會繼續獎勵也在他們的業績吧我在想還是一些獎勵機制包括一些獎統制度激勵員工比如說我們市場務者誰可以開拓新的市場比如說跟這些大型的開業包括房地产开发商这边楼盘开盘谁要是能接到这样的项目我对公司有一个建议可以给他5%或者说提点的一个奖励因为如果可以开发市场化也证明一个员工的工作能力和他的工作态度如果他进行的而且这种奖励也可以请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+[Audio Detection] 在 2064.43 秒检测到关键词 '好交交'。
+detection_time: 2064.43, current_time: 2059.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.1802978515625, max: 0.16680908203125
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于商场开业典礼的策划方案你能否详细说明一下我们与花店合作的具体内容
+, 1735626107.3305352
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于商场开业典礼的策划方案你能否详细说明一下我们与花店合作的具体内容包括鲜花定制的种类数量以及预算同时针对商场开业典礼的现场布置我们计划使用哪些装饰品来烘托现场氛围比如气球花篮等这些装饰品的数量和预算又是多少
+, 1735626109.4258225
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：花店合作 鲜花定制 数量 预算 现场布置 气球 花篮 数量 预算
+
+
+提取的关键词: ['花店合作', '鲜花定制', '数量', '预算', '现场布置', '气球', '花篮', '数量', '预算']
+
+找到的上下文片段数量: 1
+
+Token count: 129, Total time: 50.2713 seconds, One token time: 0.3897 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：花', '店', '合作', ' ', '鲜', '花', '定制', ' 数', '量', ' ', '预', '算', ' ', '现', '场', '布置', ' ', '气', '球', ' ', '花', '篮', ' 数', '量', ' ', '预', '算', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 如果他們的方案被挑選的話也會繼續獎勵也在他們的業績吧我在想還是一些獎勵機制包括一些獎統制度激勵員工比如說我們市場務者誰可以開拓新的市場比如說跟這些大型的開業包括房地产开发商这边楼盘开盘谁要是能接到这样的项目我对公司有一个建议可以给他5%或者说提点的一个奖励因为如果可以开发市场化也证明一个员工的工作能力和他的工作态度如果他进行的而且这种奖励也可以请不吝点赞 订阅 转发 打赏支持明镜与点点栏目基于之前我们讨论的内容关于商场开业典礼的策划方案你能否详细说明一下我们与花店合作的具体内容包括鲜花定制的种类数量以及预算同时针对商场开业典礼的现场布置我们计划使用哪些装饰品来烘托现场氛围比如气球花篮等这些装饰品的【数】量和预算又是多少\n ###agent根据会议片段的输出开始：###\n会议中提到的商场开业典礼策划方案与花店合作的具体内容如下：\n\n- **鲜花定制**：具体种类及数量需进一步确认，但预计会包括各种玫瑰、百合等高档花卉，预算初步估计约为5000元。\n\n- **现场布置**：将使用大量气球（约200个）、花篮（约30个）等装饰品来烘托现场氛围，这些装饰品的预算约为3000元。\n\n整体而言，通过与花店的合作，不仅能够提升活动现场的视觉效果，还能够有效吸引顾客注意，增强品牌形象。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 如果他們的方案被挑選的話也會繼續獎勵也在他們的業績吧我在想還是一些獎勵機制包括一些獎統制度激勵員工比如說我們市場務者誰可以開拓新的市場比如說跟這些大型的開業包括房地产开发商这边楼盘开盘谁要是能接到这样的项目我对公司有一个建议可以给他5%或者说提点的一个奖励因为如果可以开发市场化也证明一个员工的工作能力和他的工作态度如果他进行的而且这种奖励也可以请不吝点赞 订阅 转发 打赏支持明镜与点点栏目基于之前我们讨论的内容关于商场开业典礼的策划方案你能否详细说明一下我们与花店合作的具体内容包括鲜花定制的种类数量以及预算同时针对商场开业典礼的现场布置我们计划使用哪些装饰品来烘托现场氛围比如气球花篮等这些装饰品的【数】量和预算又是多少
+ ###agent根据会议片段的输出开始：###
+会议中提到的商场开业典礼策划方案与花店合作的具体内容如下：
+
+- **鲜花定制**：具体种类及数量需进一步确认，但预计会包括各种玫瑰、百合等高档花卉，预算初步估计约为5000元。
+
+- **现场布置**：将使用大量气球（约200个）、花篮（约30个）等装饰品来烘托现场氛围，这些装饰品的预算约为3000元。
+
+整体而言，通过与花店的合作，不仅能够提升活动现场的视觉效果，还能够有效吸引顾客注意，增强品牌形象。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+或者都去看他都去利用自己的人脉或者说没有人脉去创造人脉去找这个关系没有关系去找关系你去开发市场其实就是每一个人都把这个公司当作是自己的公司来对待每一个人都把公司当作自己家的生意来对待我要动用我各种的人脉各种社会关系去你同学啊你朋友啊你亲戚啊你邻居啊去看看有没有他在说可能他并不认识他的老总但是你可以通过他去认识他的上司他的同事等等关系你去开发这个市场去就看你怎么做或者说就看你做不做然后你要怎么做的话自然公司会给你指明方向只要你去一步一步的踏踏实实去走就一定能走出一条路来嗯行好的好了
+[Audio Detection] 在 2188.79 秒检测到关键词 '好交交'。
+detection_time: 2188.79, current_time: 2175.00
+问题音频片段长度: 107040, dtype: float32, min: -0.16668701171875, max: 0.1678466796875
+问题音频时间长度: 6.69
+
+
+[Agent] 接收到问题: 如何通过奖程制度激励员工积极开发市场提升业绩
+, 1735626187.3290205
+
+
+[Agent] 最终接收到问题: 如何通过奖程制度激励员工积极开发市场提升业绩
+, 1735626187.3291268
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 15, Total time: 0.6237 seconds, One token time: 0.0416 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+企业可以建立以结果为导向的奖励机制，将员工开发市场的成果与个人绩效直接挂钩，以此激励员工积极开拓市场、提升业绩。此外，企业还可以通过提供培训、搭建平台等方式，帮助员工提高开发市场的能力和效率，进一步提升业绩表现。同时，企业还应建立健全的考核制度，对员工的市场开发工作进行公正、公平、公开的评估和考核，确保奖励制度的有效性和公正性。
+talker 输出结束
+
+会议数据处理完成。

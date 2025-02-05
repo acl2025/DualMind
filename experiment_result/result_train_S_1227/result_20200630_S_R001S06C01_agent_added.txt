@@ -1,0 +1,228 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200630_S_R001S06C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading reasoner_llm...
+Loading classifier_llm...
+Starting processing from 0s, total chunks: 67
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.39it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:04,  1.66s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.78s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.98s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.27s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.35s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.29s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.40s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.53s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.16s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.89s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.88s/it]
+002,我是总经理。005,生产部。007,采购。018,市场部。行,咱们来开会。我们先呼报一下客户们来接下来的网程请报告从生产方面开始我们这个今年的产量还是挺好的,都超出了往年。目前因为有外卖了,所以房源这个行业怎么做呢,就一定影响了。生產這邊要研發一些新的產品先录一下上个月的一些生产情况然后再说一下目前生产部门有研发新产品吗或者说研发新产品先说一下上个月的一些生产情况传言的一些情况上个月就是产量都挺好的我们都完成了任务我们车边现在也是分白班夜班,然后分这个做面的,然后蔬菜的,脱水蔬菜的,还有油炸的,这个成天分好几个。生产分为白班和夜班白班每天12小时一档包生产就是方便面品种呢挺多的主要的反正我们还是这个红烧面卖的比较好红烧牛肉面就是香辣的呀葱香的面反正没有红烧牛肉面卖的是最好的我们现在这个新品种呢还有这个干拌面跟武汉的拌面有点差不多最近比较这个什么我们现在就是方便面的品种我们还像什么上面研发了现在就是像你看现在人都喜欢吃粉我们现在也研究一些粉就是螺蛳粉什么的也是分好几种口味有红烧的鸡肉的鸡汁面,就是品种有挺多的鸡肉的这个螺蛳粉都是向这个发展新品种开发,我们就是长期的办法就是每年都会有新品种上市方便面就是生产的还是传统的方便面红烧的呀然后现在就是主要是我们这个料大一袋半都卖的比较好因为咱们这个黄米面目前咱们要为了应对现在这个市场咱们要推出这种非油炸都要采取这种这个还是咱们这个黄米面因为现在这个外卖多了推出自己的特色生产这条线上为啥定位卖人多了因为一方面没有营养二觉得油炸性食品对身体不太好对,这是人的观念吧因为根深蒂固有这种思想,所以生产这边一定要拿出来几套方案应对这方面,要去处理到总统的健康面。都选的这个面粉什么的或是那种现在就是说改就是说就是说纯天然的啊无污染的然后呃绿色的健康的现在就是现在这个方便面也对呃跟跟这个进时代的进步吧哈现在人民都也要健康啊卫生干净啊我们这个车间的生产车间呢就是说每每天都必须的就是呃大小卫生消毒啊然后一定要反而要干净然後衛生还有新兵省开发的,我们现在也正在研究吧,就是我看这些拌面,干拌面什么,还有现在就是新流行的这种火锅,就是那种无水的火锅,直接就可以吃,我们现在这个面我也想要这种发展,现在搞这种研究。听听市场里边怎么说,然后这个生产在配合市场,去改变一下生产的一些方式,生产的品种,市场里边怎么说的一下?我们这个市场这方面,主要针对咱们这些厂子的一些方面面之类的做了一些调查,然后就觉得吧嗯要是三月份还好同时疫情大家都是为了囤货像方便面啊还有粉丝啊之类的大家都愿意比较存储然后销售也是很可观的但是当国内解冻之后然后就像刚才经理说的有了外卖的兴起是吧逐渐的减少了然后一方面是因为他们外卖另一方面也可能就是口味的问题吧不过刚才那个我经理说的也对,就像那个红烧味儿,确实很受大家喜欢。不过,像那个还有就稍微辣一点的口味儿,大家也都是比较喜欢的。就是说,像辣的那方面,我感觉也可以再多找几个口味儿,多试一下,是吧?另外就是现在不是最流行吃粉啊什么的。像您说的也可以就多研究多开发一下另外就是,现在也就是流行看直播线上然后到时候我们市场部也已经跟一些直播大咖商就正洽谈到,正在接触,就是看然后就说我们也是给出最优惠然后让他们帮咱们做宣传,然后合作共赢嘛,是吧然后找出咱们自己的
+[Audio Detection] 在 517.52 秒检测到关键词 '好交交'。
+detection_time: 517.52, current_time: 510.00
+问题音频片段长度: 189888, dtype: float32, min: -0.228668212890625, max: 0.264312744140625
+问题音频时间长度: 11.868
+
+
+[Agent] 接收到问题: 针对外卖兴起对方变面行业的影响你认为生产部门应如何调整产品策略
+, 1735126231.951907
+
+
+[Agent] 最终接收到问题: 针对外卖兴起对方变面行业的影响你认为生产部门应如何调整产品策略
+, 1735126231.952033
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+0
+Token count: 3, Total time: 0.9090 seconds, One token time: 0.3030 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：外卖 影响 生产策略
+Token count: 29, Total time: 5.9580 seconds, One token time: 0.2054 seconds
+
+提取的关键词: ['外卖', '影响', '生产策略']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+生产部门应调整产品策略，根据市场变化灵活调整。首先，增加辣味和红烧味等受欢迎口味的产品研发与生产。其次，鉴于外卖兴起对方便面行业的影响，应考虑开发新的产品类型，如适合外卖的新型方便食品类。最后，积极寻求与直播平台合作，利用直播推广新产品，以扩大市场影响力和销量。
+Token count: 80, Total time: 15.4661 seconds, One token time: 0.1933 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：外卖 影响 生产策略
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 听听市场里边怎么说,然后这个生产在配合市场,去改变一下生产的一些方式,生产的品种,市场里边怎么说的一下?我们这个市场这方面,主要针对咱们这些厂子的一些方面面之类的做了一些调查,然后就觉得吧嗯要是三月份还好同时疫情大家都是为了囤货像方便面啊还有粉丝啊之类的大家都愿意比较存储然后销售也是很可观的但是当国内解冻之后然后就像刚才经理说的有了外卖的兴起是吧逐渐的减少了然后一方面是因为他们外卖另一方面也可能就是口味的问题吧不过刚才那个我经理说的也对,就像那个红烧味儿,确实很受大家喜欢。不过,像那个还有就稍微辣一点的口味儿,大家也都是比较喜欢的。就是说,像辣的那方面,我感觉也可以再多找几个口味儿,多试一下,是吧?另外就是现在不是最流行吃粉啊什么的。像您说的也可以就多研究多开发一下另外就是,现在也就是流行看直播线上然后到时候我们市场部也已经跟一些直播大咖商就正洽谈到,正在接触,就是看然后就说我们也是给出最优惠然后让他们帮咱们做宣传,然后合作共赢嘛,是吧然后找出咱们自己的针对外卖兴起对方变面行业的影响你认为生产部门应如何调整【产】品策略
+生产部门应调整产品策略，根据市场变化灵活调整。首先，增加辣味和红烧味等受欢迎口味的产品研发与生产。其次，鉴于外卖兴起对方便面行业的影响，应考虑开发新的产品类型，如适合外卖的新型方便食品类。最后，积极寻求与直播平台合作，利用直播推广新产品，以扩大市场影响力和销量。
+reasoner 输出结束
+这样的话每个口味都可以选一点就跟真卖的那种然后口味多样你先选择咱们也可以尝试这方面发展然后这样的话就跟零食一样零食对零食面那种这样我感觉吧因为比如小孩子吃了多可以不用那么咸因为这样相对来说对大人来说也好对小孩来说也好我们就比较健康大人们就觉得吃的没那么咸,天下劲没那么多,那就买这种吧,我觉得那样比较好一点。还有目前咱们这个市场,这边咱们这个挂面,我们平常都没有调料,这上面咱们可以找个调料,像咱们这个方便园一样调料。谢谢大家这样的话,事先也做过调查,就想有类是市场这边调查,调查一下什么情况这个怎么来说,就是是有的,但是我感觉销量没有就是普通挂面销量,我感觉差不多就跟你说,感觉这个做不做其实没什么区别是在调料的情况下人家买挂面的话,主要的就是回家自己调味做的吧放那面它就是说有墙有的人挂面比先面条好保存在家里边多存几包,他就是随时可以做我感觉因为好多人买挂面就是为了自己自己拌着吃或者调着吃如果弄调了的话反而让他们失掉那种兴趣就跟放面炒锅了对,还不如放里面好吃可以不用调料也没事嗯目前咱们这个还有市场这边咱们这个近期采购咱方面面的一些厂家一些商场这一块有什么接到过什么投诉吗对咱面这个方面没有,对,咱们这个质量还是有保证的,因为都是经过严格把关,首先从南生产都是严格进行把关的,然后我们这儿每次发出去货之前都会质检一下,至少经过三道检查,然后才发出去,所以没有反应过来说货期啊,或者少包啊。或者是卫生的理论有杂质啊我们现在就是要求特别严因为食品嘛就是干净卫生还有现在就是市场上会出现火腿肠里头加点鸡毛然后饮料里边有里边有这个须须状有头发什么我们现在就是对于这个生产里边也要求特别严进来都得戴帽子啊进车间无具的啊头衣服连鞋都是那种一次性的就是干净卫生嗯目前生产这边,调料这边还是原来那些配方吗?有没有新的研究呢?我们现在就是说,你看传统的方便面,其实就是您说的这个,有的时候说,现在没有外卖,营养健康,是吧?但是我们这个也可以打出这样你看外卖写的好多是小的小饭店什么的其实它并不是说特别干净我们现在生产的方便面全部都是无菌的生产车间就是特别干净我们生产人员都是进去的时候都有脂肪丸消毒都进去车间穿的都是这种无菌服就是一类的袜子啊鞋啊头发啊都会套上帽子还有就是因为我们这个调料的话,我们现在也是新开发的新品种比如说蔬菜多一点你看以前我们打开这个包,你看不见这个菜一样都是因为它特别小了,扎扎还有肉粒大一点里边有时候我们还加热蛋,就是一个卤蛋现在我们想这个配料上面,然后一直在改进比如说蔬菜啊有人说你里边写着牛肉面连个牛肉粒都没我们现在一直在改,我们这个料也要给足嗯嗯,行嗯,还有就是说,一些网红面嗯网红吃的一些产品,刚才说的粉之类的嗯嗯生产粉类的生产线有几条我们这个就是正在研究开发中刚开始上这个线才上了两条线因为粉我们这边就是说以前没有生产过因为这属于南方的一个新的品种但是现在就是粉的话螺蛳粉我们都卖的特别好所以我们就也在研究口味的话我们也有试吃的就是说心上的这个还是比较好设的价格上我们也会设定很合适的价格然后到时候试销一下估计咱们商业应该也差不了那个螺蛳粉的那个除了粉以外它那个配料更加要求更高一点它里面的配料要比包片面要多嗯不能是干的,比如说酥的,什么都不能是干的东西就是那种咱们可以,就是那种鲜酥的,是这种的嗯,采购这边反正就是说,也是跟我们都,反正我们都经常在一起碰面吧我们有什么需要采购都会,因为最近就是说做这个粉的话采购别的这个蔬菜啊,设备啊,包装啊,都得重新的采购设计请不吝点赞 订阅 转发 打赏支持明镜与点点栏目像
+[Text Detection] 在 1012.24 秒检测到关键词 '基于之前',current_time: 990.00, 问题文本: 像咱们方便面主要用的还是面粉然后将调料这一块比如蔬菜 牛肉 鸡肉这一块还有在大量用的就是咖啡料这几方面如果咱们有一款商品比方说是105档的这个目前还是你好 焦基于之前我们讨论的内容关于方便面和挂面的
+问题音频片段长度: 713600, dtype: float32, min: -0.28057861328125, max: 0.2947998046875
+问题音频时间长度: 44.6
+
+
+[Agent] 接收到问题: 你好焦焦基于之前我们讨论的内容关于方便面和挂面的生产和市场情况我想问一下目前我们在调料包的研发和改进方面有哪些新的进展针对消费者对健康和口味多样化的需求我们有哪些具体的应对措施另外关于挂面是否需要添加调料包我们根据市场调研得出
+, 1735126282.529173
+
+
+[Agent] 最终接收到问题: 你好焦焦基于之前我们讨论的内容关于方便面和挂面的生产和市场情况我想问一下目前我们在调料包的研发和改进方面有哪些新的进展针对消费者对健康和口味多样化的需求我们有哪些具体的应对措施另外关于挂面是否需要添加调料包我们根据市场调研得出
+, 1735126282.5295844
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4932 seconds, One token time: 0.1644 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：调料包 研发 进展 消费者 需求 健康 口味多样化 挂面 调料包 市场调研
+Token count: 61, Total time: 11.7784 seconds, One token time: 0.1931 seconds
+
+提取的关键词: ['调料包', '研发', '进展', '消费者', '需求', '健康', '口味多样化', '挂面', '调料包', '市场调研']
+
+找到的上下文片段数量: 2
+目前在调料包的研发和改进方面，公司已经增加了蔬菜含量，改进了肉粒大小，并且引入了卤蛋等新元素。为了满足消费者对健康和口味多样化的追求，公司持续开发新品种，如螺蛳粉等，并计划增加生产线。此外，公司也注重无菌生产环境，确保产品卫生安全。针对挂面，公司考虑是否需要添加调料包以提升口感和便利性，但尚未作出最终决定。
+Token count: 98, Total time: 19.2847 seconds, One token time: 0.1968 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：调料包 研发 进展 消费者 需求 健康 口味多样化 挂面 调料包 市场调研
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 生产分为白班和夜班白班每天12小时一档包生产就是方便面品种呢挺多的主要的反正我们还是这个红烧面卖的比较好红烧牛肉面就是香辣的呀葱香的面反正没有红烧牛肉面卖的是最好的我们现在这个新品种呢还有这个干拌面跟武汉的拌面有点差不多最近比较这个什么我们现在就是方便面的品种我们还像什么上面研发了现在就是像你看现在人都喜欢吃粉我们现在也研究一些粉就是螺蛳粉什么的也是分好几种口味有红烧的鸡肉的鸡汁面,就是品种有挺多的鸡肉的这个螺蛳粉都是向这个发展新品种开发,我们就是长期的办法就是每年都会有新品种上市方便面就是生产的还是传统的方便面红烧的呀个。生产分为白班和夜班白班每天12小时一档包生产就是方便面品种呢挺多的主要的反正我们还是这个红烧面卖的比较好红烧牛肉面就是香辣的呀葱香的面反正没有红烧牛肉面卖的是最好的我们现在这个新品种呢还有这个干拌面跟武汉的拌面有点差不多最近比较这个什么我们现在就是方便面的品种我们还像什么上面研发了现在就是像你看现在人都喜欢吃粉我们现在也研究一些粉就是螺蛳粉什么的也是分好几种口味有红烧的鸡肉的鸡汁面,就是品种有挺多的鸡肉的这个螺蛳粉都是向这个发展新品种开发,我们就是长期的办法就是每年都会有新品种上市方便面就是生产的还是传统的方便面红烧的呀然后现在就是主要是我们这个料大一袋半都卖的比较好因为咱们这个黄米面目前咱们要为了应对现在这个市场咱们要推出这种非油炸都要采取这种这个还是咱们这个黄米面因为现在这个外卖多了推出自己的特色
+---
+或者是卫生的理论有杂质啊我们现在就是要求特别严因为食品嘛就是干净卫生还有现在就是市场上会出现火腿肠里头加点鸡毛然后饮料里边有里边有这个须须状有头发什么我们现在就是对于这个生产里边也要求特别严进来都得戴帽子啊进车间无具的啊头衣服连鞋都是那种一次性的就是干净卫生嗯目前生产这边,调料这边还是原来那些配方吗?有没有新的研究呢?我们现在就是说,你看传统的方便面,其实就是您说的这个,有的时候说,现在没有外卖,营养健康,是吧?但是我们这个也可以打出这样你看外卖写的好多是小的小饭店什么的其实它并不是说特别干净我们现在生产的方便面全部都是无菌的生产车间就是特别干净我们生产人员都是进去的时候都有脂肪丸消毒都进去车间穿的都是这种无菌服就是一类的袜子啊鞋啊头发啊都会套上帽子还有就是因为我们这个调料的话,我们现在也是新开发的新品种比如说蔬菜多一点你看以前我们打开这个包,你看不见这个菜一样都是因为它特别小了,扎扎还有肉粒大一点里边有时候我们还加热蛋,就是一个卤蛋现在我们想这个配料上面,然后一直在改进比如说蔬菜啊有人说你里边写着牛肉面连个牛肉粒都没我们现在一直在改,我们这个料也要给足嗯嗯,行嗯,还有就是说,一些网红面嗯网红吃的一些产品,刚才说的粉之类的嗯嗯生产粉类的生产线有几条我们这个就是正在研究开发中刚开始上这个线才上了两条线因为粉我们这边就是说以前没有生产过因为这属于南方的一个新的品种但是现在就是粉的话螺蛳粉我们都卖的特别好所以我们就也在研究口味的话我们也有试吃的就是说心上的这个还是比较好设的价格上我们也会设定很合适的价格然后到时候试销一下估计咱们商业应该也差不了那个螺蛳粉的那个除了粉以外它那个配料更加要求更高一点它里面的配料要比包片面要多嗯不能是干的,比如说酥的,什么都不能是干的东西就是那种咱们可以,就是那种鲜酥的,是这种的嗯,采购这边反正就是说,也是跟我们都,反正我们都经常在一起碰面吧我们有什么需要采购都会,因为最近就是说做这个粉的话采购别的这个蔬菜啊,设备啊,包装啊,都得重新的采购设计请不吝点赞 订阅 转发 打赏支持明镜与点点栏目像你好焦焦基于之前我们讨论的内容关于方便面和挂面的生产和市场情况我想问一下目前我们在【调】料包的研发和改进方面有哪些新的进展针对消费者对健康和口味多样化的需求我们有哪些具体的应对措施另外关于挂面是否需要添加调料包我们根据市场调研
+目前在调料包的研发和改进方面，公司已经增加了蔬菜含量，改进了肉粒大小，并且引入了卤蛋等新元素。为了满足消费者对健康和口味多样化的追求，公司持续开发新品种，如螺蛳粉等，并计划增加生产线。此外，公司也注重无菌生产环境，确保产品卫生安全。针对挂面，公司考虑是否需要添加调料包以提升口感和便利性，但尚未作出最终决定。
+reasoner 输出结束
+咱们方便面主要用的还是面粉然后将调料这一块比如蔬菜 牛肉 鸡肉这一块还有在大量用的就是咖啡料这几方面如果咱们有一款商品比方说是105档的这个目前还是你好 焦基于之前我们讨论的内容关于方便面和挂面的是否需要添加调料包我们根据市场调研得出了什么结论别的厂家合作的采用他们的轮档咱们现在没有自己的工艺咱们就先采用了他们的他们不挂名只是为咱们提供的原材料是这样的面粉呢我们就是现在主要的面粉还是采用的本地的面粉但是也是会考虑,也有外地的因为那个什么呢,还是多方面考虑吧看哪边供应得上,就用哪边然后某一期的价格合适了,就用哪边的然后这个蔬菜的话,就是主要的还是用的是咱们自己自己这边的蔬菜人生才能自己进修脱干的蔬菜,还有牛肉,猪肉都是自己烘干的调味料呢,咱们也是,咱们成品量呢,有盐,味精之类的我们都成品的进来,有咱们专门的工艺嘛配方,然后我们自己配比,然后打成材料包除了這方面主要的还有包装,包装的话就是包一包的这样的方面面,有统装的,包的要求没有那么高,但是统装的要求就高一点,它对安全性就要高一点。對,就是在我們剛才說的口中要健康對,然後他主要是比如说,方便面纸桶和纸杯都是P1模组成的纸桶和食品接触不能含有萤光剂,不能存在危害问题因为我们是需要加热水,加热的嗯还有制作内部的涂层成P1,P1原料完全符合国家包装材料,用天然加热剂使用,卫生标准的无毒,长期使用,对我们身体是没有害的。还有,如果平时用微波炉加热的话,也是不会产生致癌物质的。这个要求是非常高的。还有咱们的贝肠这一层咱们旁边面外面的光油是无色无味的,没有毒,主要是由树脂做成的都是符合国家和国外的标准的,所以说安全上是没有问题的有些网上会有些问题,就说前面面的桶加热会不会这个是完全不会的嗯是这样如果说就是还有咱们如果加这个粉的这个生产线的话我们就会在采购这一块要加加一部分这个粉的那个那个采购线这个粉呢咱们本地的也有也有 也要期待的也有南方也会去考察,人家那边的粉是什么,更好吃一点看看他们用什么材质做成的然后我们也会去考察采购方面我们也会做到很好用料上一定要保证口感所以要很符合那边所以我们这个口感也要偏那边一点嗯嗯对,咱们这个不同地方咱们产品去看这边对地方了解多了南方北方一些这个要求不一样目前咱这个南方那边喜欢一些什么产品南方一些他们就比较喜欢粉之类的嗯 它们的口味就比较平均辣的那种,比较有滋味的那种,口味较重一点。酸辣酸菜的这一块。对,酸菜面也是,我们北方这边软,就是清淡的。如果咱们也要增加这个螺蛳粉这一块的生酸线的话,通过其他生产轮流制作的厂家来面对有很多配料的这个我们也要去学习了去研究一个配方我们现在就正在就是说现在不是说方便面吧就是说一就是说油炸食品不健康是吧还有就是有的人就说有天蝦剂是吧还有的致癌物质所以说现在就是说好多人就就说说对我们现在就是说生产部门所以我会研究一下比如说我们就是非油炸是吧然后添加剂就是其实它都需要一定的添加剂但是就是说在国家这个允许的范围内就是大家都可以放心使用还有就是这个高温就是经过高温就是说超过120度它就会致癌现在就是我们就是说现在就是非油炸了嘛它就不会有那种高温也就在这研究这些因为这个好多人就说致癌正在研究比如说是非油炸然后就是布那个什么高温加工的话就是说正在研究这些工艺其实那个咱们也现在针对方便面的调料我们也研究就是说它也有这种营养是吧就是多含点像粉那样,料包都比较足咱们方便也可以像他们那样吃多搭配点蔬菜,就会有多点维生素盐,油,味精都少放一点研究出新型的调料包往后呢我们还会研究就是适合就是说免费的方面面啊还有就是糖尿病人的方面面就是适合不同的人群吧所以这往后的真的我们也是研究的正在研究对 这样一个方向方向对 这个生产这个抓住这一点因为未来嘛我觉得有人预言说因为现在外卖对
+[Text Detection] 在 1557.45 秒检测到关键词 '娇娇',current_time: 1530.00, 问题文本: 对咱方便面这一块会有一个巨大的影响我觉得不会我觉得咱方便面会进入一个怎么说呢就是安全健康绿色是未来的一个主题也是未来因为一些小型的生产作坊对咱方便面这个行业影响很大你好 娇娇如何确保方便面
+问题音频片段长度: 153302, dtype: float32, min: -0.2528076171875, max: 0.311004638671875
+问题音频时间长度: 9.581375
+
+
+[Agent] 接收到问题: 如何确保方便面包装安全并满足不同地区口味需求
+, 1735126341.7527072
+
+
+[Agent] 最终接收到问题: 如何确保方便面包装安全并满足不同地区口味需求
+, 1735126341.7528102
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4862 seconds, One token time: 0.1621 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+要确保方便面包装安全并满足不同地区口味需求，可以采取以下措施：
+
+1. 严格挑选包装材料，确保其耐用性、防水性和透气性。
+
+2. 针对不同地区消费者的口味偏好，推出多种口味的方便面，如辣味、咸味、酸味等，并且可以根据消费者反馈进行改良。
+
+3. 在包装设计上，注重美观和实用性，使其既能够保护方便面的质量，又能够吸引消费者的目光。
+
+4. 加强包装的安全性，如使用不易破裂的材料制成包装，防止包装内的产品受到污染或损坏。
+
+5. 提高产品的储存条件，确保在保质期内保持产品的品质和口感。
+
+6. 建立完善的售后服务体系，及时解决消费者在使用过程中遇到的问题，提高消费者的满意度。
+talker 输出结束
+咱方便面这一块会有一个巨大的影响我觉得不会我觉得咱方便面会进入一个怎么说呢就是安全健康绿色是未来的一个主题也是未来因为一些小型的生产作坊对咱方便面这个行业影响很大你好 娇娇如何确保方便面他们会跟不上这个时代嗯我觉得像咱们这种大型的嗯会未来会越来越发展的越好嗯也没有他们在搞坏这个市场对我们就是主要就是说就是说我们生产吧就是说得研究新的口味因为这个人啊这个现在就是说呃口味的真的变化特别快嗯就一直在更新啊还有就是营养啊健康我们一定要啊我看就是啊啊我们就是说花园面场啊我们就多种口味我们以后呢我们会出这个湿的这个湿的泡面面就是鲜的泡面面嗯就是我们自己在研究嗯对我们市场也会加大调研然后研究一下消费者心里然后对那个咱们这个销售活动做一些更好的策划活动之类的嗯好嗯谢谢还有就是咱们近期然后推出一款像这个嗯自嗨锅自嗨锅大压的额点吧嗯然后这个黄焖面也要推出一款这个自嗨黄焖面自嗨面嗯这个反正有一定的技术吧我们也好好生产就是我们到时候跟这个采购部门就是商量就是说这个原材料是吧 还有包装啊什么的其实自开锅的话,咱们的配料跟底料有的话,咱们其他的产品,咱们其他的配料主要是蔬菜,粉这一块。咱们其实蔬菜和粉的话,其实咱们也好吃,因为咱们平时咱们这个方便店的蔬菜包也是因为也用到蔬菜的,蔬菜這一塊,我們還是有吃到的就是这个蔬菜包更大等料更足吧不是他不是说那种他就是说他里面的咱们自嗨过里面的蔬菜呀什么的嗯就是咱们这个采购这一块的话就是肯定是把这个蔬菜咱们就要做这个业务的话咱们的蔬菜采购量更多了所以说跟商家这一块跟供应商这一块再进一步的讨论,让家居再降低一下还有就是,还有锅下面的那个产生热量的那个东西那个也需要我们采购加上水它就会产生热量然后让这个蔬菜什么的都好这个也需要采购别的吧都好爽一点对 收散线吧 反正原来的也可以用它这个其实自发哥就是锅的上上感觉有一个自发软对 模式自发软我感觉原料上面你们可以就可以选一些优质面粉一些新鲜蔬菜之类的因为这样的话大家的口感会比较更好一点嗯 跟家裡这样的话消费者对咱们的认证度也高一点所以我觉得这个价格没事咱可以稍微定高一点毕竟咱那个质量在那摆着呢是吧口感更好吃起来更好吃而且也健康所以说就希望咱们可以研发出的这种又健康又美味所以说不用担心价格因为只要你这个质量有保障了价格真的不是问题嗯我们这个生产的话生产线都是更新的都是微电脑的控制然后我们车间都是无菌车间地气消毒工人们也都是进来的时候都有紫外线消毒然后这种换衣服全部都是什么然后一般我们就是生产车间就是这种无菌的情况下就是都是生产所以干净卫生质量都有保障生产就是新的产品就陆续的来开发吧我们新的每年都是你看就是不管是包装啊还有就是生产工艺啊都会有更新的就是每年都会更新因为我们这个厂子如果要是没有新产品的推出我感觉消费就是每年都必须有新产品的然后通常时代的发展嗯目前购物还有什么问题吗?没有了,我们购物们只需要有新的生产品,就是互相配合吧。然后我们需要什么开发新产品,采购都要配合,买新的东西,仪器啊,什么的东西。那咱们把车过一个先你
+[Text Detection] 在 1951.54 秒检测到关键词 '焦焦',current_time: 1950.00, 问题文本: 你好,焦焦,基于之前我们讨论的内容,关于方便面行业受小型作坊影响的问题,我们如何通过推出自嗨面等新产品来提升品牌形象,同时确保产品质量和卫生安全。以应对市场
+问题音频片段长度: 517054, dtype: float32, min: -0.284423828125, max: 0.310211181640625
+问题音频时间长度: 32.315875
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于方便面行业受小型作坊影响的问题我们如何通过推出自嗨面等新产品来提升品牌形象同时确保产品质量和卫生安全以应对市场竞争和消费者需求的变化
+, 1735126370.8596914
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于方便面行业受小型作坊影响的问题我们如何通过推出自嗨面等新产品来提升品牌形象同时确保产品质量和卫生安全以应对市场竞争和消费者需求的变化
+, 1735126370.859804
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4833 seconds, One token time: 0.1611 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：方便面 小型作坊 自嗨面 品牌形象 产品质量 卫生安全 市场竞争 消费者需求
+Token count: 52, Total time: 10.0027 seconds, One token time: 0.1924 seconds
+
+提取的关键词: ['方便面', '小型作坊', '自嗨面', '品牌形象', '产品质量', '卫生安全', '市场竞争', '消费者需求']
+
+找到的上下文片段数量: 2
+根据会议内容，生产部门需调整产品策略以适应市场需求的变化。具体措施包括：1) 开发更多健康、天然的原料，如纯天然无污染的食材；2) 研发新口味，特别是辣味和微辣口味；3) 跟进直播带货趋势，与知名主播合作推广产品；4) 改进传统方便面的配料，增加蔬菜等新鲜成分；5) 研究并引入新的挂面产品，如螺蛳粉等；6) 考虑为挂面添加独立的调料包以提升口感和满足多样化需求。
+Token count: 133, Total time: 26.3045 seconds, One token time: 0.1978 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：方便面 小型作坊 自嗨面 品牌形象 产品质量 卫生安全 市场竞争 消费者需求
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 都选的这个面粉什么的或是那种现在就是说改就是说就是说纯天然的啊无污染的然后呃绿色的健康的现在就是现在这个方便面也对呃跟跟这个进时代的进步吧哈现在人民都也要健康啊卫生干净啊我们这个车间的生产车间呢就是说每每天都必须的就是呃大小卫生消毒啊然后一定要反而要干净然後衛生还有新兵省开发的,我们现在也正在研究吧,就是我看这些拌面,干拌面什么,还有现在就是新流行的这种火锅,就是那种无水的火锅,直接就可以吃,我们现在这个面我也想要这种发展,现在搞这种研究。听听市场里边怎么说,然后这个生产在配合市场,去改变一下生产的一些方式,生产的品种,市场里边怎么说的一下?我们这个市场这方面,主要针对咱们这些厂子的一些方面面之类的做了一些调查,然后就觉得吧嗯要是三月份还好同时疫情大家都是为了囤货像【方】便面啊还有粉丝啊之类的大家都愿意比较存储然后销售也是很可观的但是当国内解冻之后然后就像刚才经理说的有了外卖的兴起是吧逐渐的减少了然后一方面是因为他们外卖另一方面也可能就是口味的问题吧不过刚才那个我经理说的也对,就像那个红烧味儿,确实很受大家喜欢。不过,像那个还有就稍微辣一点的口味儿,大家也都是比较喜欢的。就是说,像辣的那方面,我感觉也可以再多找几个口味儿,多试一下,是吧?另外就是现在不是最流行吃粉啊什么的。像您说的也可以就多研究多开发一下另外就是,现在也就是流行看直播线上然后到时候我们市场部也已经跟一些直播大咖商就正洽谈到,正在接触,就是看然后就说我们也是给出最优惠然后让他们帮咱们做宣传,然后合作共赢嘛,是吧然后找出咱们自己的针对外卖兴起对方变面行业的影响你认为生产部门应如何调整产品策略这样的话每个口味都可以选一点就跟真卖的那种然
+---
+或者是卫生的理论有杂质啊我们现在就是要求特别严因为食品嘛就是干净卫生还有现在就是市场上会出现火腿肠里头加点鸡毛然后饮料里边有里边有这个须须状有头发什么我们现在就是对于这个生产里边也要求特别严进来都得戴帽子啊进车间无具的啊头衣服连鞋都是那种一次性的就是干净卫生嗯目前生产这边,调料这边还是原来那些配方吗?有没有新的研究呢?我们现在就是说,你看传统的方便面,其实就是您说的这个,有的时候说,现在没有外卖,营养健康,是吧?但是我们这个也可以打出这样你看外卖写的好多是小的小饭店什么的其实它并不是说特别干净我们现在生产的方便面全部都是无菌的生产车间就是特别干净我们生产人员都是进去的时候都有脂肪丸消毒都进去车间穿的都是这种无菌服就是一类的袜子啊鞋啊头发啊都会套上帽子还有就是因为我们这个调料的话,我们现在也是新开发的新品种比如说蔬菜多一点你看以前我们打开这个包,你看不见这个菜一样都是或者是卫生的理论有杂质啊我们现在就是要求特别严因为食品嘛就是干净卫生还有现在就是市场上会出现火腿肠里头加点鸡毛然后饮料里边有里边有这个须须状有头发什么我们现在就是对于这个生产里边也要求特别严进来都得戴帽子啊进车间无具的啊头衣服连鞋都是那种一次性的就是干净卫生嗯目前生产这边,调料这边还是原来那些配方吗?有没有新的研究呢?我们现在就是说,你看传统的【方】便面,其实就是您说的这个,有的时候说,现在没有外卖,营养健康,是吧?但是我们这个也可以打出这样你看外卖写的好多是小的小饭店什么的其实它并不是说特别干净我们现在生产的方便面全部都是无菌的生产车间就是特别干净我们生产人员都是进去的时候都有脂肪丸消毒都进去车间穿的都是这种无菌服就是一类的袜子啊鞋啊头发啊都会套上帽子还有就是因为我们这个调料的话,我们现在也是新开发的新品种比如说蔬菜多一点你看以前我们打开这个包,你看不见这个菜一样都是因为它特别小了,扎扎还有肉粒大一点里边有时候我们还加热蛋,就是一个卤蛋现在我们想这个配料上面,然后一直在改进比如说蔬菜啊有人说你里边写着牛肉面连个牛肉粒都没我们现在一直在改,我们这个料也要给足嗯嗯,行嗯,还有就是说,一些网红面嗯网红吃的一些产品,刚才说的粉之类的嗯嗯生产粉类的生产线有几条我们这个就是正在研究开发中刚开始上这个线才上了两条线因为粉我们这边就是说以前没有生产过因为这属于南方的一个新的品种但是现在就是粉的话螺蛳粉我们都卖的特别好所以我们就也在研究口味的话我们也有试吃的就是说心上的这个还是比较好设的价格上我们也会设定很合适的价格然后到时候试销一下估计咱们商业应该也差不了那个螺蛳粉的那个除了粉以外它那个配料更加要求更高一点它里面的配料要比包片面要多嗯不能是干的,比如说酥的,什么都不能是干的东西就是那种咱们可以,就是那种鲜酥的,是这种的嗯,采购这边反正就是说,也是跟我们都,反正我们都经常在一起碰面吧我们有什么需要采购都会,因为最近就是说做这个粉的话采购别的这个蔬菜啊,设备啊,包装啊,都得重新的采购设计请不吝点赞 订阅 转发 打赏支持明镜与点点栏目像你好焦焦基于之前我们讨论的内容关于方便面和挂面的生产和市场情况我想问一下目前我们在调料包的研发和改进方面有哪些新的进展针对消费者对健康和口味多样化的需求我们有哪些具体的应对措施另外关于挂面是否需要添加调料包我们根据市场调研得出咱们方便面主要用的还是面粉然后将调料这一块比如蔬菜 牛肉 鸡肉这一块还有在大量用的就是咖啡料这几方面如果咱们有一款
+根据会议内容，生产部门需调整产品策略以适应市场需求的变化。具体措施包括：1) 开发更多健康、天然的原料，如纯天然无污染的食材；2) 研发新口味，特别是辣味和微辣口味；3) 跟进直播带货趋势，与知名主播合作推广产品；4) 改进传统方便面的配料，增加蔬菜等新鲜成分；5) 研究并引入新的挂面产品，如螺蛳粉等；6) 考虑为挂面添加独立的调料包以提升口感和满足多样化需求。
+reasoner 输出结束
+好,焦焦,基于之前我们讨论的内容,关于方便面行业受小型作坊影响的问题,我们如何通过推出自嗨面等新产品来提升品牌形象,同时确保产品质量和卫生安全。以应对市场
+会议数据处理完成。

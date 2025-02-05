@@ -1,0 +1,192 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200706_L_R001S06C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 313
+Initializing talker model in talker_process_func...
+Loading reasoner_llm...
+Loading classifier_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:17<01:08, 17.17s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:19<00:19, 19.15s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:19<00:19, 19.73s/it]桃花花桃花花雷雷工程项目做的人126123 柴族123 无聊谷124 仓库谷厂地的这些厂地的这些那个什么这个厂地的一些这个安排包括咱们这个防暑啊 防汛呢 防火这方面都说一样其实咱们夏天这雷雨天气电机人类对于咱们工地来说
+Loading checkpoint shards: 100%|██████████| 2/2 [00:25<00:00, 11.64s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:25<00:00, 12.76s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:26<00:00, 11.88s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:26<00:00, 13.05s/it]
+咱们都最学习一下护照 果然到时候出什么事了 也跑不了我们来唱首《雨凉》吧 先说一下这个防暑这边 防暑这边有什么说法 有什么防线应该是需要把这个水缘好好复制一下因为 工人呢 他们在今天工作的时候/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+是特别缺水的 所以说要把这个水是要换来一个比较容易得到的水这样的话就是 需要多放几个多布置的水不只要水 还有一些有解水的饮品 比如汤之类的然后为了防止那个汛气到来 要提前做好一些准备措施 比如说及时清理钢筋堆放防止那些杂物积水 钢筋上面垫上木头 然后防止积水对钢筋造成锈齿 雨天的时候也应该对钢筋进行覆盖那个什么土钩膜 就是在上面放一层膜 然后检查它是不是有漏洞 如果有漏水的现象就要及时更换这个钢筋收锈 这是一个问题顺其的话 主要还是要做好排水
+Loading checkpoint shards:  40%|████      | 2/5 [00:29<00:43, 14.43s/it]一个是排水管道 一个是泵 我们可以在这个工具旁边设置一个小小型的泵站来专门去管理这个泵 再一个就是这个排水管道的话要这个水主要就是排到这个市场的雨水和污水管 但是我们要控制这个流量 不能说把这个市场的雨水和污水比较低是需要不进行加工或直接采取吗?雨水的话你不需要进来我说只是汛期的时候咱们家有工地上排的雨水你需要一个排水管道?对那需要各家管道吗?对 汛期的时候就把这个铺设上有这个管道 然后有泵 去排水有一定距离啊那看情况 你看那种简易的蓝色那个简易板 那种情况就是临时的三天三四天那个对 如果是那种情况的话 也是需要做好环境的那个挖的螃蟹那个是防风的这个是下面打断的下面打完钢码之后 再进入一个一般的表现现在主要就是说 弄地外场围墙不算高吧 而是万一要塌了 打软了也没很高这个打到人 不会 咱们可以在里面用钢筋的部分去上去 就可以在那边靠靠我们一下成本怎么样 要在这一圈 能不能留个成本成本不会很高 因为钢结构可以给它做到毫无 进行二次驱动 就可以拆卸了这种钢结构这些东西的话 你可以在去期要上两天 等下通课的时候 转配提前给它的开展 因为在星期到来以后 咱们工地的施工问题肯定有 不能让工人们在进去施工了 因为就会考虑到一些安全的问题也许 晚上咱们这儿会有花旗帝吗?
+Loading checkpoint shards:  60%|██████    | 3/5 [00:40<00:25, 12.93s/it]这个病 如果需要 lunch time 那就 什么东西都 也许是对当下的管理因为三天 潘州水疾 可能要求就不一样了嗯 这个倒是这个舞蹈 你们可以跟那个 走弯站说一下 走弯 看一下 你可以直接去走弯站看一下那个什么情况 它这个不同的不同的温度 不同的湿度 会不同的比例我们这会根据自己的程式来用水泥的对对哟 咱们自己用的水泥是
+Loading checkpoint shards:  80%|████████  | 4/5 [00:47<00:10, 10.56s/it]我们的水泥是 水泥是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东没有必要 而且没有那个机械的那个大规模的大批量的这个什么 几百多上千多去这个小核弹实地考察一下 看看那个情况 资质的那个什么情况还有防循一定要做好防抄
+Loading checkpoint shards: 100%|██████████| 5/5 [00:51<00:00,  7.94s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:51<00:00, 10.21s/it]
+对 因为发现的同时 它的雨水量怎么会增加 它雨量什么的 空气怎么在雨水中 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会�在轻度潮湿的时候继续工作的可能性 如果是在下雨场下就会让它发布可能性的事物稍微潮湿一点没有关系真的下暴雨的话就要停工呀 什么都干不了因为要考虑到自家发电嘛
+[Audio Detection] 在 513.14 秒检测到关键词 '好焦焦'。
+detection_time: 513.14, current_time: 511.00
+问题音频片段长度: 104448, dtype: float32, min: -0.141143798828125, max: 0.138702392578125
+问题音频时间长度: 6.528
+
+
+[Agent] 接收到问题: 如何有效布置水源 以满足工人防暑需求
+, 1735017541.8106282
+
+
+[Agent] 最终接收到问题: 如何有效布置水源 以满足工人防暑需求
+, 1735017541.8108094
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9229 seconds, One token time: 0.3076 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在炎热的夏季，工人防暑降温是至关重要的。为了有效地布置水源以满足工人的需求，可以考虑以下几点：
+
+1. 在工作场所设置临时喷雾水帘或手持喷雾器，定时喷洒水雾，保持空气湿润。
+
+2. 提供足够的饮用水，设立饮水站或提供水杯，确保工人随时都能补充身体水分。
+
+3. 如果条件允许，可以在工作区域设置空调或风扇等设备，调节室内温度和湿度。
+
+4. 建立防暑降温管理制度，合理安排工作时间，避免在最热的时间段进行户外作业。
+
+以上措施不仅可以有效缓解工人的高温劳动强度，提高工作效率，还能减少中暑等意外事件的发生。
+talker 输出结束
+比如就像那个高温到多少度的温度 到40度或者多少度 工程不能替工发一些高温补贴什么的 就是这个防暑跟防旋是一样的 就是下雨到多少毫米 量到多少毫米和这个温度到多少度都是不能替工的 就是有明儿规定的如果是新规定的话 因为连续有半天下雨 就是无法进行工作这种情况应该是需要一个所谓的改变 不能说一直停下来是正常的如果一直下暴雨的话就确实是要停工 我们可以跟这个甲方商量其实像我们的产业可以进行一些 比如说搭建一些配膛它的功能量太大了 如果你要盖一个二级扫楼的话 你没什么大用的配膛在开启的话 我们的供给会延长高温的生活区 而且你高温暴雨是根本就不可能让你工作的我们在这个名为renew之下可以以阳产为主如果真的是超过工期了 跟甲方可能是有这个合同但是规定是死的 人是活的 我们就可以去跟甲方协调这个事情对对 因为这个天气的事情是谁也不能左右的现在我们在说这个 连续下来等一下 其实我们现在温度特别高 希望下暴雨 如果下了三天就差不多了下三天呢就上传播信了 下五天呢就上传球信了那最主要就是高温所以连续一个月高温都很正常 这种情况下你们是不是得考虑一下液体的使用方法我们也要考虑到液监制度和附近居民的一些协调的问题这个赃银这边的话可以把一些赃银大的机械安排到下午或凌晨早上六七点的时候 或者说晚上八点的时候大家也还没睡的时候 也比较容易但是需要你们考虑一下 这个人员买了什么 什么 什么 什么如果要加上夜间时空的话 早上可以让他们8点那些吧 放屁上吧 这些上夜班的就去掉 然后白天可以从8点下到中午11点 然后下午3点就开始上班 因为3点钟这个太阳不是很热这个可以根据温度来计算现在是减少了主板的节省白天的话可以干一些不是特别的在室外做一些活泼 比如说擂砖或者钢管就可以按摩 咱们这个楼的主体结构已经盖好了楼里边去加工一些 吃饭吃饭而且你这个室内就有几个室内环境 跟算是一个密闭吧 反正就是这个室内环境 人家不通风特别闷这种情况 这个楼梯内的 要比外面的闷得还要烫这张的主题想完成的话 可以用香蕉锁管连接到水管上 往楼里头浇一下然后再用水 降温 而且处理阴凉的大碳 它也比较香脆如果前天下雨的话就可以用这些鲜奶油和水去除腥味, 然后用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下,然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下,白天的时候因为温度特别高, 比如说施工, 背景那些磨把, 点脚, 物料,所以在建筑工地旁边一定要消防器, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下,然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下重新加工了该出售的出售, 然后一定要防止一些天气干燥引起的火灾。。除了这些,还有什么面部措施和防火措施?因为因为风景,好多地方都是需要防火的。所以说,这个我们还得保,就是防火,回来防火吧。如果要要求,那是可能的,如果要求,那你能够离开的话,那主要是要,如果要求,同时要的。那你找那个工地,在那个工地的那个具体情况,你这样也不能。想说这个建筑工地,非常无害的那个灭火器,不太理用。比如五万,一千个可能。我可以让你把太阳晒一个五万一千个灭火器就能打过。在这个楼里可以设一个高热水箱。然后用这个高热水箱然后用牙刷消毒。然后用牙刷消毒。然后别管哪个洞口,都要有两个或两个以上的消火栓,去灭这个火。所以说这个消火栓是必备的,我们可以在这个盖楼的这个煮起盖好的高温水箱也存在的时候,我们把这个高温水箱集收进来。这个有火山的话,我们可以提升水面。
+[Audio Detection] 在 1013.13 秒检测到关键词 '好焦焦'。
+detection_time: 1013.13, current_time: 1008.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.29449462890625, max: 0.256072998046875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 好,基于之前我们讨论的内容,关于房产工期限制和连续下雨的问题,你怎么看待夜间施工的可行性?
+, 1735017590.4231935
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于房产工期限制和连续下雨的问题,你怎么看待夜间施工的可行性?参考绿道高温季节连续一个个的情况我们应该如何调整施工计划和人员安排以确保工程进度和工人安全同时对于工地环境和防火措施我们还需要做哪些改进
+, 1735017592.251794
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4909 seconds, One token time: 0.1636 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：房产工期 连续下雨 夜间施工 施工计划 人员安排 工程进度 工人安全 工地环境 防火措施
+Token count: 56, Total time: 11.2027 seconds, One token time: 0.2000 seconds
+
+提取的关键词: ['房产工期', '连续下雨', '夜间施工', '施工计划', '人员安排', '工程进度', '工人安全', '工地环境', '防火措施']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，夜间施工的可行性需谨慎评估。连续下雨导致工期延误，应调整施工计划，避开雨天施工。对于防火措施，建议增设高热水箱，并确保每个楼层有两个以上的消火栓。此外，应增加灭火器数量，特别是高温季节，需定期检查并更新消防设备，确保其有效性。同时，合理安排人员轮班，保障工人安全与健康。
+Token count: 87, Total time: 16.7827 seconds, One token time: 0.1929 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：房产工期 连续下雨 夜间施工 施工计划 人员安排 工程进度 工人安全 工地环境 防火措施
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 那你找那个工地,在那个工地的那个具体情况,你这样也不能。想说这个建筑工地,非常无害的那个灭火器,不太理用。比如五万,一千个可能。我可以让你把太阳晒一个五万一千个灭火器就能打过。在这个楼里可以设一个高热水箱。然后用这个高热水箱然后用牙刷消毒。然后用牙刷消毒。然后别管哪个洞口,都要有两个或两个以上的消火栓,去灭这个火。所以说这个消火栓是必备的,我们可以在这个盖楼的这个煮起盖好的高温水箱也存在的时候,我们把这个高温水箱集收进来。这个有火山的话,我们可以提升水面。基于之前我们讨论的内容关于房产工期限制和连续下雨的问题,你怎么看待夜间施工的可行性?参考绿道高温季节连续一个个的情况我们应该如何调整施工计划和人员安排以确保工程进度和工人安全同时对于工地环境和【防】火措施我们还需要做哪些改进
+根据会议内容，夜间施工的可行性需谨慎评估。连续下雨导致工期延误，应调整施工计划，避开雨天施工。对于防火措施，建议增设高热水箱，并确保每个楼层有两个以上的消火栓。此外，应增加灭火器数量，特别是高温季节，需定期检查并更新消防设备，确保其有效性。同时，合理安排人员轮班，保障工人安全与健康。
+reasoner 输出结束
+我们将使用施工计划和人员安排,以确保工程进度和工人安全。同时,对于工地环境和防火措施,我们还需要做哪些改变?我们的工程是以确保工程进度和防火措施,以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。 我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。我们的工程是以确保工程进度和防火措施。这个方面他们也是需要不良口味。 这个会有大碗麻麻。我们的工程是以确保工程进度和防火措施。 这个会有大碗麻麻。有的人因为要考虑大多数人嘛, 有的人肯定万一如果今天闹肚子,他再写两篇稿。大水泵的水前能力要比钢板接近,比较清贵。 这个就会赚了。而且大水泵的出水力也比钢板下水的好。 所以要用大水泵。主要是加一些接地保护线。 多加一些。然后给工人们做好这个。然后把他卡掉那种。 卡掉那种你来不及倒到地上。 你就马上就给他架。在变天之前,让价格人先进行。 上。嗯。 工作。 或者全他好像普通的。 你发不回来。是一种办法。 最好还是让学员下来比较好。嗯。 建压也不错。 工地。 应该好像正常这样小的玩。小的做的很好。重加集中,作者们做的好。好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好好好好喝牛角看看所以就给这个那个价格 然后备一套房屋图就可以了然后你一定要开包了对就是接触多做几乎准备然后就跟不然就那个它的价值是这样要让它要有那些的钢筋 叫它俩稍微远一点把那个抽时间给你找一个人 然后上去吧 谈谈那个价值是那些
+[Audio Detection] 在 2059.75 秒检测到关键词 '好焦焦'。
+detection_time: 2059.75, current_time: 2058.00
+问题音频片段长度: 145408, dtype: float32, min: -0.13397216796875, max: 0.11993408203125
+问题音频时间长度: 9.088
+
+
+[Agent] 接收到问题: 那些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这
+, 1735017690.6763804
+
+
+[Agent] 最终接收到问题: 那些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这
+, 1735017690.676607
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.5295 seconds, One token time: 0.1765 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：这些
+Token count: 23, Total time: 4.3880 seconds, One token time: 0.1908 seconds
+
+提取的关键词: ['这些']
+
+找到的上下文片段数量: 2
+会议讨论了工程项目的安全措施，重点强调了防暑、防汛和防火。为应对高温天气，需确保工人有充足的饮水和解暑饮品，并在雨季前做好排水准备。此外，还提到可根据天气调整施工时间和方式，以保障工人的安全与健康。
+Token count: 62, Total time: 12.7558 seconds, One token time: 0.2057 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：这些
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 花花花桃花花雷雷工程项目做的人126123 柴族123 无聊谷124 仓库谷厂地的【这】些厂地的这些那个什么这个厂地的一些这个安排包括咱们这个防暑啊 防汛呢 防火这方面都说一样其实咱们夏天这雷雨天气电机人类对于咱们工地来说咱们都最学习一下护照 果然到时候出什么事了 也跑不了我们来唱首《雨凉》吧 先说一下这个防暑这边 防暑这边有什么说法 有什么防线应该是需要把这个水缘好好复制一下因为 工人呢 他们在今天工作的时候是特别缺水的 所以说要把这个水是要换来一个比较容易得到的水这样的话就是 需要多放几个多布置的水不只要水 还有一些有解水的饮品 比如汤之类的然后为了防止那个汛气到来 要提前做好一些准备措施 比如说及时清理钢筋堆放防止那些杂物积水 钢筋上面垫上木头 然后防止积水对钢筋造成锈齿 雨天的时候也应该对钢筋进行覆盖那个什么土钩膜 就是在上面放一层膜 然后检查它是不是有漏洞 如果有漏水的现象就要及时更换这个钢筋收锈 这是一个问题顺其的话 主要还是要做好排水一个是排水管道 一个是泵 我们可以在这个工具旁边设置一个小小型的泵站来专门去管理这个泵 再一个就是这个排水管道的话要这个水主要就是排到这个市场的雨水和污水管 但是我们要控制这个流量 不能说把这个市场的雨水和污水比较低是需要不进行加工或直接采取吗?雨水的话你不需要进来我说只是汛期的时候咱们家有工地上排的雨水你需要一个排水管道?对那需要各家管道吗?对 汛期的时候就把这个铺设上有这个管道 然后有泵 去排水有一定距离啊那看情况 你看那种简易的蓝色那个简易板 那种情况就是临时的三天三四天那个对 如果是那种情况的话 也是需要做好环境的那个挖的螃蟹那个是防风的这个是下面打断的下面打完钢码之后 再进入一个一般的表现现在主要就是说 弄地外场围墙不算高吧 而是万一要塌了 打软了也没很高这个打到人 不会 咱们可以在里面用钢筋的部分去上去 就可以在那边靠靠我们一下成本怎么样 要在这一圈 能不能留个成本成本不会很高 因为钢结构可以给它做到毫无 进行二次驱动 就可以拆卸了这种钢结构这些东西的话 你可以在去期要上两天 等下通课的时候 转配提前给它的开展 因为在星期到来以后 咱们工地的施工问题肯定有 不能让工人们在进去施工了 因为就会考虑到一些安全的问题也许 晚上咱们这儿会有花旗帝吗?这个病 如果需要 lunch time 那就 什么东西都 也许是对当下的管理因为三天 潘州水疾 可能要求就不一样了嗯 这个倒是这个舞蹈 你们可以跟那个 走弯站说一下 走弯 看一下 你可以直接去走弯站看一下那个什么情况 它这个不同的不同的温度 不同的湿度 会不同的比例我们这会根据自己的程式来用水泥的对对哟 咱们自己用的水泥是我们的水泥是 水泥是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东西 它是一个很重要的东没有必要 而且没有那个机械的那个大规模的大批量的这个什么 几百多上千多去这个小核弹实地考察一下 看看那个情况 资质的那个什么情况还有防循一定要做好防抄对 因为发现的同时 它的雨水量怎么会增加 它雨量什么的 空气怎么在雨水中 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会增加 它会�在轻度潮湿的时候继续工作的可能性 如果是在下雨场下就会让它发布可能性的事物稍微潮湿一点没有关系真的下暴雨的话就要停工呀 什么都干不了因为要考虑到自家发电嘛如何有效布置水源 以满足工人防暑需求比如就像那个高温到多少度的温度 到40度或者多少度 工程不能替工发一些高温补贴什么的 就是这个防暑跟防旋是一样的 就是下雨到多少毫米 量到多少毫米和这个温度到多少度都是不能替工的 就是有明儿规定的如果是新规定的话 因为连续有半天下雨 就是无法进行工作这种情况应该是需要一个所谓的改变 不能说一直停下来是正常的如果一直下暴雨的话就确实是要停工 我们可以跟这个甲方商量其实像我们的产业可以进行一些 比如说搭建一些配膛它的功能量太大了 如果你要盖一个二级扫楼的话 你没什么大用的配膛在开启的话 我们的供给会延长高温的生活区 而且你高温暴雨是根本就不可能让你工作的我们在这个名为renew之下可以以阳产为主如果真的是超过工期了 跟甲方可能是有这个合同但是规定是死的 人是活的 我们就可以去跟甲方协调这个事情对对 因为这个天气的事情是谁也不能左右的现在我们在说这个 连续下来等一下 其实我们现在温度特别高 希望下暴雨 如果下了三天就差不多了下三天呢就上传播信了 下五天呢就上传球信了那最主要就是高温所以连续一个月高温都很正常 这种情况下你们是不是得考虑一下液体的使用方法我们也要考虑到液监制度和附近居民的一些协调的问题这个赃银这边的话可以把一些赃银大的机械安排到下午或凌晨早上六七点的时候 或者说晚上八点的时候大家也还没睡的时候 也比较容易但是需要你们考虑一下 这个人员买了什么 什么 什么 什么如果要加上夜间时空的话 早上可以让他们8点那些吧 放屁上吧 这些上夜班的就去掉 然后白天可以从8点下到中午11点 然后下午3点就开始上班 因为3点钟这个太阳不是很热这个可以根据温度来计算现在是减少了主板的节省白天的话可以干一些不是特别的在室外做一些活泼 比如说擂砖或者钢管就可以按摩 咱们这个楼的主体结构已经盖好了楼里边去加工一些 吃饭吃饭而且你这个室内就有几个室内环境 跟算是一个密闭吧 反正就是这个室内环境 人家不通风特别闷这种情况 这个楼梯内的 要比外面的闷得还要烫这张的主题想完成的话 可以用香蕉锁管连接到水管上 往楼里头浇一下然后再用水 降温 而且处理阴凉的大碳 它也比较香脆如果前天下雨的话就可以用这些鲜奶油和水去除腥味, 然后用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下,然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下,白天的时候因为温度特别高, 比如说施工, 背景那些磨把, 点脚, 物料,所以在建筑工地旁边一定要消防器, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下,然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下, 然后再用水浇一下重新加工了该出售的出售, 然后一定要防止一些天气干燥引起的
+---
+好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好,好好好好喝牛角看看所以就给这个那个价格 然后备一套房屋图就可以了然后你一定要开包了对就是接触多做几乎准备然后就跟不然就那个它的价值是这样要让它要有那些的钢筋 叫它俩稍微远一点把那个抽时间给你找一个人 然后上去吧 谈谈那个价值是那些那些 【这】些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些 这些
+会议讨论了工程项目的安全措施，重点强调了防暑、防汛和防火。为应对高温天气，需确保工人有充足的饮水和解暑饮品，并在雨季前做好排水准备。此外，还提到可根据天气调整施工时间和方式，以保障工人的安全与健康。
+reasoner 输出结束
+是否需要根据工人的实际需求来调整供应量 以确保技能满足工人而又不至于造成浪费呢请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目这间工作的高标的情况里面出一个表 出一个工作表 安排一类的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+会议数据处理完成。

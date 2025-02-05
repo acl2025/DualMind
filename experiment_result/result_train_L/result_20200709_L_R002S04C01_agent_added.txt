@@ -1,0 +1,168 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200709_L_R002S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 66
+Loading classifier_llm...
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.28s/it]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.20s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.86s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.51s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.47s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.00s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.23s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.49s/it]
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:09,  4.94s/it]/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.80s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.66s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.67s/it]
+0102我是董事长026我是安保部028经理019参与部023超市部024服装部行 咱们各个人几天开公司的月末总结会每个月都要开会总结会一万请你这边进行一个总结吧对的总结吧我经过那个董事长的话然后咱们总结一下上个月各部门各部门具体有什么情况有什么问题或者说有什么建议可以提一下先从那个菜银部开始吧这个月业绩呢跟上个月基本止停然后我们想在下就是说我们这个月呢主要就是对员工的一些深入的一些提醒和要求就是因为到了夏天了这些食材的新鲜程度我们要再加强一些我们提出了几点就是从材料里面这样开始严格把控食材的新鲜就是不新鲜的食材不合格的食材采购人员不进然后采购人员进来这些东西要由负责人来接收这些也就是说这个负责人如果看到不新鲜的或者不合格的食材他不收然后到了厨师那儿发现有不新鲜的不太好的这些食材无论是肉类 鱼类 还是菜类它不做然后等到了我们卖的这些如果发现了有一些不新鲜的不太好的就是不合格的为什么不合格或者说是新鲜成分不好的他们不卖就是说四层把关我们层层把关保证无论是我们内部的员工在这儿就餐还是来商场公务的这些顾客他们进餐保证了他们进餐的安全这一点我说因为病风口入嘛所以吃的东西一定要注意食品安全一定要注意对所以我们是采取了四重的法官就是要严格控制食材的安全食材的卫生让每一个就餐的员工和就餐的顾客都能够安全放心这是我们的相对就是在这个服务过程中,有没有说服务员对客人有没有什么出现有小情绪的情况?这个因为我们做服务行业的什么人都能遇得到素质高和素质低的对吧但是我们对员工的教育是不准不允许和顾客发生争执因为虽然我们并不信奉就是说顾客是上帝但是我们说顾客是我们的经济来源我们可以这样说因为如果我们太过强调和顾客上帝他们会有一种抵触的心理我们说顾客是我们的经济来源如果没有顾客的话我们做的东西没有人买我们是赔钱的我们就这个工资是跟我们的收益挂钩的不是说我们上一天把我们做出来的东西的不管卖不出去我们这个基本工资,我们给他们定的基本工资是有一个基数,那么奖金是有浮动的,如果我们的收益没有达到的话,我们的奖金会受影响,所以每一个人都会对自己有一个严格要求,不会说跟工作吵架呀,他们不会,他们会收敛自己。这样这一点其实我们对员工进行了服务的一些标准的一些要求比如说他们会对如果说您好请对不起这些文明用语十字的培训谢谢每个月都要做对对对每个月我们都坚持不要觉得这个是小事虽然讲过一遍但是还要每个月都要不断地加强对因为在这个餐饮部服务员用餐过程中就是客人用在这种过程中很容易发生矛盾如果说服务员和客人真的发生了口角争执是怎么处理的如果说有的服务员其实一般如果是这种情况其实一般都是客人挑起来的但是我们不能去单纯的归正于客人我们要从自己身上找原因如果真的发生这样的事情我们会先劝离工作人员由主服务员或者其他的带班的来处理这些事情然后我们会对这个工作人员首先进行一个安抚然后让他自己认得到自己的错误让他去给客人道歉我们是这样来处理的如果说就是在那个每一天餐饮部门肯定会有一个生食手史会有一个每天的每天就是新做出来的比如说那些手史如果说当天卖不出去或者说销售部会滞销了会怎么处理这个问题一般情况下就是这些熟食它有保鲜的程度那么我们会在首先我们会控制熟食的量就是生产的量就是做多少卖多少因为我们对每天的预算或者说每天的销量都会有一个统计这个统计就让我们对明天的制作的数目会有一定的预计不会说剩太多而且是在晚上我们会出新六折或者是甚至五折的打折这个质用优惠把它勾放出去,而不会把它放到冷冻里面,第二次再卖就影响口感,也影响我们的生意。好,下一个超市部门。超市部门这个月跟上个月相比来说就是销售经济有所轻微的增长现在因为夏天到了然后超市部门在对于比如说水果蔬菜生生鲜这些方面的话嗯就是比较畅销但是嗯有一个处于冷淡期的就是属于火锅底料因为现在夏天到了嘛然后大家更多的是选择去外面烧烤会在家里自行清烧烤像火锅这种比较炎热大家想到就会有有所排斥的东西处于一个冷淡期比如说冷饮我们也是处于一个畅销各种啤酒 各种解暑的果汁然后也是处在畅销的一个阶段然后现在比较夏天比较炎热嘛然后我们超市部门工作范围也比较大各种蔬菜 海鲜 然后水果它们的进货然后我们也会进行它的保质期的查看我们的服务人员会增加对食物是否过期过去这个项目的比往常的时间比往常的期间就是查看的像查看的次数要更加多一些然后为了保证这些食物的安全然后呢在日化这一方面呢因为夏天就是人们出门活动比冬天相对来说一般要多吧大家都比较爱出门活动然后日化这些大部分都是消耗品消耗品就是在生活中是必备的是必備的消耗品的销售有所增加这是我们超市这个月经济增长的一个大部分原因大部分原因就是日化类对 日化类和那些冷饮然后和那些水果因为这些夏天是需要畅销然后大家也都需要的一些东西这边咱夏天这些水果目前这个促销形式谢谢大家
+[Audio Detection] 在 572.28 秒检测到关键词 '好交交'。
+detection_time: 572.28, current_time: 570.00
+问题音频片段长度: 145920, dtype: float32, min: -0.060699462890625, max: 0.0560302734375
+问题音频时间长度: 9.12
+
+
+[Agent] 接收到问题: 如何却餐饮不实时才新鲜度并避免与顾客发生争执
+, 1735103854.0410109
+
+
+[Agent] 最终接收到问题: 如何却餐饮不实时才新鲜度并避免与顾客发生争执
+, 1735103854.0412073
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9091 seconds, One token time: 0.3030 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+为保持菜肴的新鲜度，可以在烹饪时控制火候，避免过度烹饪；另外，可以使用保温设备来保持食物的温度；在上菜时，也可以根据菜品的特点和顾客的需求，选择合适的上菜方式。同时，服务员应该有良好的服务态度，耐心听取顾客的意见和建议，尽量避免与顾客发生争执。
+talker 输出结束
+这个老弱病残这一类的特殊人群有没有什么特殊的照顾之类的老弱病残对于他们在一般情况下来说的话对于老弱病残比如说像这些小孩子来我们超市一层的话一般情况下他们要是想比如说比如说他们应该是有专业的电源进行一些引导对于老人来店里进行购买,我们会选择专业的人员进行陪同,比如说让老人说一个人推着那么重的车,或者一个人提着那么大的篮子难以行走,不方便。然后对于小孩的话,比如说我们有糖果区,如果小孩哭闹的话,其实适当的给一颗糖果也是无碍的,因为我们这么大一个超市,不会说因为一颗糖果,跟顾客发生口角,发生争执,这也是为了安抚顾客的心理。顾客就是在超市购买商品,就是不满意要退货的时候应该是具体的话有什么如果是因为商品的质量问题的话我们就比如说商品就是保质期过了或者不新鲜买回去的时候就已经有问题我们会及时给顾客那个退换如果说是因为顾客的后期处理后期管理的方式对我们这个商品就是才造成了无法使用的现象这个我们可能会就是简单的协调一下比如说有一些特殊的顾客他比如说性格比较极端如果对于被顾客诬骂或者殴打的话这种情况会被处理你说我们的服务人员被这种顾客对首先我们既然是服务员我们首先就是要先换一批工作人员然后先把那个比如说受到伤害的工作人员先安抚他的情绪然后再去调解我们这个顾客好我们顾客就是先冷静下来然后各个顾客然后他有什么方面的困扰我们就进行解决好那下面的话就是服装部服装部门的话这边首先是工作方面是根据上面的要求把店内的一些摆设还有新款做一些最好的展示安排一些人手对这个公司的促销活动进行一些销售做好竞争对手最新促销活动和款式变动的搜集第一时间反映到公司的总部做好会员的基本资料整理及跟踪维护老顾客时常保持与老顾客的联系也会对一些老顾客进行一些优惠了解顾客对产品的需求和最新动向这个是根据会员或者老顾客对我们店店铺服装店铺的一些反馈来进行一些改变的还会在销售技能方面我们服装部因为需要一直向顾客介绍介绍我们这个衣服所以店员必须要有一些一个好的心理我们会定期对店员进行一些培训必须在推荐的时候要有一些自信说我们的衣服它就是质量十分保证的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目它的款式也是最近新颖的我们一定要对自己的这个衣服有一定的信心然后才能让顾客对我们服装有一些信赖感其次呢还会对顾客的这个身材或者他的爱好进行一些合适的推荐还会进行一些手势的配合向顾客介绍我们衣服的款式版型不会让顾客感到很尴尬这个方面我们还会在在顾客试衣服的时候进行一些调整啊帮助一下顾客这是我们对这个我们店员的一些要求我们会定期做一些集中的培训还会把这个正确的说出我们衣服的一些优点优势目前咱刚说这么多下个月我们准备这个有国外的一些大牌服装我们这边准备引进一些这边有什么想法这边和国外合作的话我们首先会在店内空出留出一些一个区域是我们海外专品区可以明确地告诉顾客我们这个是刚引进的一些海外的一些名贵的一些服装可以方便顾客选购的时候一些更多的选择这一块有什么怎么给人家推广首先我们先会让引进人家的一些衣服可能银盒对刚才你说专门的地方这块咱就会去推广一些首先我们是先会让我们店员对这个海外产品有足够的了解他的版型他的品牌首先是要有一个足够的了解然后再对顾客进行介绍的时候方便向顾客介绍和推荐我们的这个新引进的衣服然后其次我们是可以请一些模特或者还或者一些专业人员然后进行一些我们衣服的展示怎么穿搭会对一些顾客进行一些这个怎么搭配怎么穿好看方面上的引导让顾客看到我们这个衣服是十分十分可以物美价廉的然后进行一些也可以进行一些海报的宣传放在我们那个店铺店铺前面请不吝点赞 订阅 转发 打赏支持明镜与点点栏目然后让顾客看到的时候就会不会是因为因为顾客买衣服的话,他首先会考虑这个是不是他喜欢的类型,如果有这个如果有这个穿出来的样式,这个模特的这个模板是很好的对一个顾客进行一些意见上的引导。这边的话就是那个咱们那个商场服务网也会有一个就是比如说提前就是提前有一个当前季度提前的一些衣服也会有那个当季淡季对淡季的衣服的制销的服装的上架下架这一块这个我们都是随时随时跟动市场的一些变动进行一些店内服装的一些改动现在流行这款衣服的话我们会在上我们我们会在上个月月底进行一些对上个月的一些总结然后对下个月进行怎么样的设计店内的设计会有一些改动对一些顾客的一些市场调研我们反映一下最近需要什么样的衣服对于这些淡季的衣服的话我们反季衣服是会进行一些限时的优惠活动对一些需要促销活动一些有心理需求的顾客他想要在夏季买一个比较便宜一点的棉服我们都是有照顾顾客的心理会现实抢购一些反季的衣服那下一个安保部安保部门我们这边主要就是以市场安全和人事安全为主要目的而且要保安忙工作要让他们了解这些消防知识是怎么样简单的处理而且简单又有效还有就是现在就是属于这种安保工作在工作当中我们毕竟是工作好几年了嘛他们在工作当中习惯性都是用经验去解决问题受这方面的干扰他们没有从客观的实际问题上面出发还有就是对于判断的这种思维呀都是属于用自己经历过的一些事情或者一些自己的处理方法来处理所以我们这个近期会进行开会处理还有就是首先就是内容上创新我感觉这方面我需要积极配合因为有时候让保安那种队长之类的指挥会顾客较多临场发挥的或者紧张之类的这方面就需要我们领导下去指导一下这样的话也可以调整他们的积极性还有他们的自信心然后我们这方面困难就属于是如果把队员这些工作人员他们受伤或者生病之类的东西我们会我们这个公司会派人去探望一下这样的话增加他们这种受到困难的时候他们知道会有人帮助他们而且是属于一种朋友的关系然后再去给他们如果是没有结婚的话会送去一些饭菜照顾他的饮食这样的话会让他们对我们在工作当中产生一些积极性请不吝点赞 订阅 转发 打赏支持明镜与点点栏目而不是为了工作而去工作而不是为了赚钱什么负责自己的部门因为这样的话他的心里也会松懈嘛他感觉到他不属于这一部分要让他融入进来还有就是思想上创新就比方说教育思想上给这些保安就是引导他们这些改观问题怎么样处理事物不要用自己的经验去处理要让他们客观的了解咱们商场这些规章制度怎么样处理请不吝点赞 订阅 转发 打赏支持明镜与点点栏目还有一些就是属于停车问题的方面停车问题的方面我们会采取就是合理的收费还有就是处理一些不知道停车会收费乱停车这一方面我们会联系交警配合我们工作先是用就是反正都是肯定用合理的语气去和这些顾客去交流如果这方面交流行不通的话顾客只要这么做我们就会采取一些就是法律手段就像贴条属于金钱上面的扣除还有我们这个工作一定要有创新就是有些时候他们这些说教直接就是指出来顾客哪打哪做的不对不如变成向顾客谈心做下来交流一下如果顾客有紧急事务的话需要处理的话一定要语速表演的就是说的够快然后话说的够准确让顾客感觉到咱们是用心在服务他们请不吝点赞 订阅 转发 打赏支持明镜与点点栏目还有就是属于保安全队队员就是属于需要他们的共同努力吧因为他们毕竟是受过我们这个部门军事化管理的而且还训练过他们的心理方面和一些体能方面肯定不会招一些体能较差的保安如果是以坏的方面想市场发生搏斗抢劫这类的方面保安能及时处理掉这些问题别的问题就是可以改善一下保安就是宿舍的生活条件方面的问题有些简陋,就比方说没有什么,他们是属于私人间,没有什么独立卫生间之类的,洗浴室还有就是生理上面的问题,就是有时候会出现用毒或者是停水之类的东西。这些话对于商场就是商场周边门口或者说就是有那些就是发散发小广告的或者说就是有一些就是那个小推车之类的那些就是小摊子挑战位置呢这个的话咱们这个MOG怎么管理的首先是进行协商因为我们这边是有地域之间的合同比方说地皮这块地皮就是属于我们的你不可以在这进行先和他进行合理的语气进行交流如果他还是不听的话我们就需要采取一些强硬的手段比方说就是直接制止他或者是向一些当地部门报道进行对我们这个地域使用的赔偿还有乱而且小广告这方面的问题我们会及时做到清理需要配合一下后勤工作人员怎么样学习一下怎么样处理掉这些小广告不会留污渍而且不会损坏这些公务这些方面这边的话就是上个月各部门也都说了上个月就有点烦闷然后咱们的话就是各部门再说一下对于下个月有什么期望会达到什么要求然后还有什么想说的我是本群队我
+[Text Detection] 在 1471.63 秒检测到关键词 '好交交',current_time: 1470.00, 问题文本: 我想晚上好交交交至于之前我们讨论的内容关于超市引进国外大大牌服装的推广问题你认为我们应该如结合和超市现有的促销活动和会员管理咱们想再来吸引顾客购买这些新引进的海外品牌服装呢同时针对老弱
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.12054443359375, max: 0.1942138671875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1735103915.4497523
+
+
+[Agent] 最终接收到问题: 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1735103915.4498868
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4823 seconds, One token time: 0.1608 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+我是一个AI助手，无法进行点赞、订阅、转发或打赏等操作。但我很高兴为您提供帮助！如果您有任何问题或需要信息，请告诉我。
+Token count: 34, Total time: 6.9197 seconds, One token time: 0.2035 seconds
+
+reasoner输出：
+我是一个AI助手，无法进行点赞、订阅、转发或打赏等操作。但我很高兴为您提供帮助！如果您有任何问题或需要信息，请告诉我。我是一个AI助手，无法进行点赞、订阅、转发或打赏等操作。但我很高兴为您提供帮助！如果您有任何问题或需要信息，请告诉我。
+reasoner 输出结束
+想晚上好交交交至于之前我们讨论的内容关于超市引进国外大大牌服装的推广问题你认为我们应该如结合和超市现有的促销活动和会员管理咱们想再来吸引顾客购买这些新引进的海外品牌服装呢同时针对老弱收费问题如何提高安保部门的管理效率和顾客满意度说的就是不过夜但是如果说当天的馒头我们都扔了的话也是很可惜的一件事情所以这一点需要各个部门的配合我们在主持这方面呢会提前早上会告诉我们或者说头一天晚上会跟我说明天你们部门是都吃什么然后几份你们最好是详细告诉我们几份米饭或者几份馒头或者几份烧饼这个样子的我们是论份的但是肯定每个人的根据大众的食量是够的然后这个菜呢我们会每个星期不同的变化的花色保证了大家的营养当然了卫生这方面大家要是百分之百的放心因为我们是有从法官的然后就是在对外销售这一块我们主抓的依然是快餐因为在商场嘛饭店坐着打吹打歌了,都是要一个快捷方便对,就是快捷方便,还有注意一下卫生这个是重点对,每个月咱们都要进行一个检查这一块专门除掉一批人对你们进行环境卫生的检查还有一些上级部门也会对咱们进行检查所以卫生方面一定要注意,下个部门超市部門然后在对于下个月的计划来说想要就是比这个月还要再增加一些所以呢其实在水果这方面我们是有销售的因为它我们跟火农业有直接合作然后所以呢我就想我们可以在我们的商品我们的水果这边设立一些试吃的那个摊位试吃摊位对然后比如说我们的我们橙子我们的那个水蜜桃我们的西瓜可以榨汁分给大家品尝如果大家觉得美味这是在水果部分,然后在日化部分呢,我觉得是可以跟楼上的,就是我们上层的那个服装那里进行联合,他们那里要是进行了消费,我们可以增动,比如说增动20块钱的购物券,是在一层日化部分消费,然后顾客在下面只要,只要达到这个,比如说使用30元,然后可以使用这个消费券,然后就在那个日化部分消费,这样就是可以比,促进消费,对,促进消费。下下個部分服装这方面的话就是根据一下市场调研,进行一些各个年龄阶段的人喜欢什么样的衣服进行一些改进,服装上进行一些款式的改进,然后也会给员工们制定一个明确的目标,我们下个月的这个销量任务计划,然后调动一下员工的积极性。还有就是下个月咱们这个大阪要进入咱们这个商场,这一块要做好充足的准备,對所以就是宣传一定要做到位这一块这一块我会负责安排下去行然后再来这个安保部门的话主要就是防止一下乱七小广告还有夜间巡逻这两项夜间巡逻的话我们现在是夜间巡逻两次介于咱们商场有一些贵重物品因为防止要让它丢失嘛所以我们一定要去罗汪可以增强一下人手还有就是属于消防盖这些东西所以如果看到的话直接让保安及时制止对 咱们要这个保安这一块要加大这个链接这个巡逻还有就是在这个消防这一块一定要注意一下这个消防器材要定期的检查然后刚才这些监控设备也要做定期的一些维修还有安全通道不能被违反杂物之类的这些问题第二要做一个每个月都要有一 监督者专门每个区域要有监督者二 实施者监督者要对他进行检查我會不定期進行調研抽查嗯 行嗯 還就是咱們這個各部門下個月咱們要加大對這個人員上面的一個管理上面的投入因為目前咱們這個上半年工作已經結束進入到下半年的一個工作所以咱們要加大對人員這個管理利率请不吝点赞 订阅 转发 打赏支持明镜与点点栏目嗯,争取让咱们每个人员在这个服务这个态度上都各进一步,行吧?行。行,那咱们本场会就先到此结束。我
+[Text Detection] 在 1922.59 秒检测到关键词 '娇娇',current_time: 1920.00, 问题文本: 我们想在你好娇娇基于之前我们讨论的内容关于商场的环境卫生检查你能否详细说明以下各部门如何抽调人员进行合作请问着让我们以及上级部门和如何对我们进行检查同时对于下个月
+是hard question，使用默认复杂问题持续时间。
+问题音频片段长度: 581399, dtype: float32, min: -0.1136474609375, max: 0.093292236328125
+问题音频时间长度: 36.3374375
+
+
+[Agent] 接收到问题: 我们想在你好娇娇基于之前我们讨论的内容关于商场的环境卫生检查你能否详细说明以下各部门如何抽调人员进行合作反正应让我们以及上级部门和如何对我们进行检查同时对于下个月大牌进入商场的准备工作和宣传工作我们具体应该如何执行以确保宣传到位
+, 1735103948.471092
+
+
+[Agent] 最终接收到问题: 我们想在你好娇娇基于之前我们讨论的内容关于商场的环境卫生检查你能否详细说明以下各部门如何抽调人员进行合作反正应让我们以及上级部门和如何对我们进行检查同时对于下个月大牌进入商场的准备工作和宣传工作我们具体应该如何执行以确保宣传到位
+, 1735103948.4712844
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4842 seconds, One token time: 0.1614 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：商场卫生检查 合作方案
+Token count: 29, Total time: 5.5396 seconds, One token time: 0.1910 seconds
+
+提取的关键词: ['商场卫生检查', '合作方案']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+针对环境和卫生检查，各部门需抽调人员合作，每区设监督者，由负责人不定期抽查。上级部门也会进行检查，确保卫生达标。对于下个月大牌服装进入商场，需加强宣传，确保到位；安保方面，增加夜间巡逻频次，强化消防设施检查，确保安全无隐患。各部门应紧密配合，共同提升商场管理水平和服务质量。
+Token count: 84, Total time: 16.5111 seconds, One token time: 0.1966 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：商场卫生检查 合作方案
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 这些话对于商场就是商场周边门口或者说就是有那些就是发散发小广告的或者说就是有一些就是那个小推车之类的那些就是小摊子挑战位置呢这个的话咱们这个MOG怎么管理的首先是进行协商因为我们这边是有地域之间的合同比方说地皮这块地皮就是属于我们的你不可以在这进行先和他进行合理的语气进行交流如果他还是不听的话我们就需要采取一些强硬的手段比方说就是直接制止他或者是向一些当地部门报道进行对我们这个地域使用的赔偿还有乱而且小广告这方面的问题我们会及时做到清理需要配合一下后勤工作人员怎么样学习一下怎么样处理掉这些小广告不会留污渍而且不会损坏这些公务这些方面这边的话就是上个月各部门也都说了上个月就有点烦闷然后咱们的话就是各部门再说一下对于下个月有什么期望会达到什么要求然后还有什么想说的我是本群队我请不吝点赞 订阅 转发 打赏支持明镜与点点栏目想晚上好交交交至于之前我们讨论的内容关于超市引进国外大大牌服装的推广问题你认为我们应该如结合和超市现有的促销活动和会员管理咱们想再来吸引顾客购买这些新引进的海外品牌服装呢同时针对老弱收费问题如何提高安保部门的管理效率和顾客满意度说的就是不过夜但是如果说当天的馒头我们都扔了的话也是很可惜的一件事情所以这一点需要各个部门的配合我们在主持这方面呢会提前早上会告诉我们或者说头一天晚上会跟我说明天你们部门是都吃什么然后几份你们最好是详细告诉我们几份米饭或者几份馒头或者几份烧饼这个样子的我们是论份的但是肯定每个人的根据大众的食量是够的然后这个菜呢我们会每个星期不同的变化的花色保证了大家的营养当然了卫生这方面大家要是百分之百的放心因为我们是有从法官的然后就是在对外销售这一块我们主抓的依然是快餐因为在商场嘛饭店坐着打吹打歌了,都是要一个快捷方便对,就是快捷方便,还有注意一下卫生这个是重点对,每个月咱们都要进行一个检查这一块专门除掉一批人对你们进行环【境】卫生的检查还有一些上级部门也会对咱们进行检查所以卫生方面一定要注意,下个部门超市部門然后在对于下个月的计划来说想要就是比这个月还要再增加一些所以呢其实在水果这方面我们是有销售的因为它我们跟火农业有直接合作然后所以呢我就想我们可以在我们的商品我们的水果这边设立一些试吃的那个摊位试吃摊位对然后比如说我们的我们橙子我们的那个水蜜桃我们的西瓜可以榨汁分给大家品尝如果大家觉得美味这是在水果部分,然后在日化部分呢,我觉得是可以跟楼上的,就是我们上层的那个服装那里进行联合,他们那里要是进行了消费,我们可以增动,比如说增动20块钱的购物券,是在一层日化部分消费,然后顾客在下面只要,只要达到这个,比如说使用30元,然后可以使用这个消费券,然后就在那个日化部分消费,这样就是可以比,促进消费,对,促进消
+---
+还有就是下个月咱们这个大阪要进入咱们这个商场,这一块要做好充足的准备,對所以就是宣传一定要做到位这一块这一块我会负责安排下去行然后再来这个安保部门的话主要就是防止一下乱七小广告还有夜间巡逻这两项夜间巡逻的话我们现在是夜间巡逻两次介于咱们商场有一些贵重物品因为防止要让它丢失嘛所以我们一定要去罗汪可以增强一下人手还有就是属于消防盖这些东西所以如果看到的话直接让保安及时制止对 咱们要这个保安这一块要加大这个链接这个巡逻还有就是在这个消防这一块一定要注意一下这个消防器材要定期的检查然后刚才这些监控设备也要做定期的一些维修还有安全通道不能被违反杂物之类的这些问题第二要做一个每个月都要有一 监督者专门每个区域要有监督者二 实施者监督者要对他进行检查我會不定期進行調研抽查嗯 行嗯 還就是咱們這個各部門下個月咱們要加大對這個人員上面的一個管理上面的投入因為目前咱們這個上半年工作已經結束進入到下半年的一個工作所以咱們要加大對人員這個管理利率请不吝点赞 订阅 转发 打赏支持明镜与点点栏目嗯,争取让咱们每个人员在这个服务这个态度上都各进一步,行吧?行。行,那咱们本场会就先到此结束。我我们想在你好娇娇基于之前我们讨论的内容关于商场的【环】境卫生检查你能否详细说明以下各部门如何抽调人员进行合作反正应让我们以及上级部门和如何对我们进行检查同时对于下个月大牌进入商场的准备工作和宣传工作我们具体应该如何执行以确保宣传
+针对环境和卫生检查，各部门需抽调人员合作，每区设监督者，由负责人不定期抽查。上级部门也会进行检查，确保卫生达标。对于下个月大牌服装进入商场，需加强宣传，确保到位；安保方面，增加夜间巡逻频次，强化消防设施检查，确保安全无隐患。各部门应紧密配合，共同提升商场管理水平和服务质量。
+reasoner 输出结束
+们想在你好娇娇基于之前我们讨论的内容关于商场的环境卫生检查你能否详细说明以下各部门如何抽调人员进行合作请问着让我们以及上级部门和如何对我们进行检查同时对于下个月
+会议数据处理完成。

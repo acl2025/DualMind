@@ -1,0 +1,222 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200708_L_R002S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 67
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.17s/it]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.83s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.21s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.99s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.01s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.04s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.06s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.20s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:10,  5.43s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.10s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.85s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.88s/it]
+我是董事长026我是项目部022我是研发部027我是市长宣传023我是总经理024我是财务部014管理处行 好的 今天把各位朋友叫过来开个上半年的总结会议总结一下咱们上半年的一个情况咱们有请先请在那个管理这边说上半年做了一个大家的一个个人考核然后各部门的情况都挺好的然后现在存在着一个很大的问题也是一个大家都容易忽略的问题就是这个迟到早退的问题我觉得大家工作可能都很辛苦然后可能个人也有个人的生活雙方可能有一點點的小衝突在就是不管你们个人的能力有多大你们能为这个公司做出了多少我觉得既然咱们成立了公司规章制度放在这里然后我希望大家都能遵守一下可能你每天迟到个一分钟两分钟你觉得没什么问题但是我觉得对于咱们公司的长久发展对于大家的一个比较严格的管理来说并不是一个特别好的现象所以我希望各部门那个部门经理能往下通知一下让员工把这个问题都改正一下因为最近咱们那个大家工作也都挺辛苦加班加点的因为咱们有新产品上市嘛都能理解然后加班时间也比较多但是你加班我们有加班费在里面并不代表你加班你就可以迟到所以我希望各部门主管往下通知的时候给员工强调一下这个问题好的目前针对刚才说的管理部门说这个迟到的问题这边总经理是怎么看待的迟到这个问题因为现在就是正在想有一个新项目开发下面的员工管理一定要就是规范一定要更加清晰,然后让员工们知道咱们现在公司正处于非常严峻的一个阶段,毕竟上半年的经济不太景气,咱们这种科技制造公司,然后在上半年和许多其他这些公司的合作,比如说一些机器的生产,然后也有一些也有一些耽误,然后咱们的财务状况也不是特别好。盤霧狀況這一塊不是特別好因为上半年咱们和别人的这些联合项目因为疫情嘛情况所以我们很难进行下去这方面合作就有了一些耽误然后又加上这个各部门什么产品需要什么费用我们已经开发出来的这些产品然后又后续进行了一些拓展所以升级财务状况其实不太乐观现在财务状况不太乐观针对这个总经理去吧现在是有一个新的一个想法现在是想咱们毕竟是科技公司嘛因为现在社会发展也很快科技发展也很快然后现在其实市面上已经有了比如说扫地机在家里家用的那种洗碗机这些都已经非常普遍了咱们现在呢是有一个新的想法就是说创造一个智能的家用机器人家用机器人对对这个看法其实咱们上半年的经济已经变得不太好如果研发这个的话可能也会需要大量的经费想问一下客户们对是否觉得有必要研发这个项目对这个这个这个项目怎么看呢我觉得这方面挺好的因为这个以前也有过这种病毒像疫情这种不容易聚集的地方而且很多人都在家里头有的也是想在家里头休息嘛到疫情到了休息的也懒了可以做一个这种家长机器人给他们在家里头打扫而且咱们的机器人肯定是要保证这种清洁私小的卫生啊干净啊我想我插个嘴是什么样的机器人就是在家里那种智能比如说最基本的家务如果可以的話在带一些有教育的方面带来的孩子对研发上面对刚才总经理对这个有这个想法对这个研发方面有困难吗研发部觉得首先这个受到疫情的冲击大家经济状况都很不乐观居民的生活水平相对来说有所下降然后这个项目毕竟不是一个小项目,需要大量的资金和人力去投入去研发,而且就算是研发出来,咱们产品的价格也不会,不是大众消费者,我觉得销量肯定不会很好。所以市场这块,刚才研发你刚才说针对研发方面你觉得有什么困难吗?年少的训练首先就是技术上的问题我们经理又我想是能够因为现在在家里的那种扫地和洗碗机这些都已经很普遍了所以我觉得在这个上面在进行加工的话就是结合起来对 不是特别困难但就在教育方面这个智能一点的这种方面我觉得这边有什么问题吗那就是考虑到我们这个人工智能的技术现在我们我们是做的是我们公司比较大我需要去那儿谈论,咱们现在所谓的人工智能,其实是一个逻辑应答的问题,它并不是真的有自己的事,它是一个逻辑的问答,对吧,所以说这个咱们与其说人工智能的技术有难点,咱们不如说是这种搜集,社会各种这种逻辑应答的问题,就是如果说想做一个,让大家觉得这种高端人工智能,我们需要一个庞大的逻辑硬拿问题的数据库这是一个最大的问题我觉得咱们不用研发出来那种特别像要辅导那些高中生不用那样的机器人我们就需要对不用下太大的成本这样的话其实没有什么看法像現在什麼小天才,什麼腹肌啊,什麼腰唱二哥的什么小东西的但是它不只是这个东西吧我知道我们就是想打发一个它就这个研发觉得有这个不完善的机器人有的肯定会有的目前这个市场是个什么样的市场市场啊首先咱们就明显就是一个高端产品所以它肯定不针对大众的但是如果它现在市场很大如果咱们把这个做好了知道做好之后咱们逐渐的熟悉这个制作流程制作工艺出现的显著之后咱们是可以做到成本到那个时候才有可能说通常大众是所以说他带咱们那个首先开始定他只能是高端人群能高端人群就没有一下这个别说这个疫情影响的说工人这个不上工没有工资对不对说经济消费很低了但是市场宣传对不了好
+[Audio Detection] 在 512.53 秒检测到关键词 '好交交'。
+detection_time: 512.53, current_time: 510.00
+问题音频片段长度: 188415, dtype: float32, min: -0.226043701171875, max: 0.20294189453125
+问题音频时间长度: 11.7759375
+
+
+[Agent] 接收到问题: 针对上半年经济不景气各部门有何措施改善财务状况
+, 1735097338.8326738
+
+
+[Agent] 最终接收到问题: 针对上半年经济不景气各部门有何措施改善财务状况
+, 1735097338.8327963
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9032 seconds, One token time: 0.3011 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+各部门应加强成本控制，提高资金使用效率；优化业务流程，降低不必要的开支；积极开拓新的收入来源，增加营业收入；加强财务分析和预警，及时发现和解决财务风险。
+talker 输出结束
+所以说我们针对这个高端人群,他们的消费能力依然是没有问题的,对吧。对这个市场方面,没有问题。我们一开始就是针对高端人群,然后等到我们这个技术娴熟了,制作工艺提上去了,产品成本下来了,这时候那疫情的影响早就过去了。对吧。我们也有针对高端我们能追得出中央市場也就為我們打開了這個市場前景是沒有問題的因為本來是現在疫情已經有所報長然後下半年我覺得經濟應該會發展的發展比較樂觀所以如果說這個咱們剛才說的這個人工智能機器人這個家用的這個就是最開始的那個消耗就是成本比較高的話大家有沒有什麼比较更好的來促進我們下半年經濟的發展就是如果咱們現在要設立的這個機器人這個人工機器人他沒辦法就是咱們一上市就被很多家庭所接受咱們現在應該創立一個什麼項目應該研發一個什麼樣的產品能讓這些家庭再用起來更加方便畢竟我們是科技公司可以改進嗎现在扫地机器人车类的东西它可能家里头有些死角它打扫不到那么机器人就是把这方面做得更加完善对可以把这方面吗缺点之类的完善一下因为相对于家乡机器人一般人在购物的思想都是一停是属于家庭用的机器人一般都是家庭清洁比较多还有就是比方说有的机器人它只是负责就是现在普遍机器人只是负责地面瓷砖的就是清理还有一些死角的清理就属于这种东西咱们可以加上清理地毯的一些东西比方说顺带一部分就是机器人底部可以改进一下小型的一种吸尘器相对于扫地的时候也可以把地毯清理一下因为刚才市场那边也说了要针对高端人群高端家庭一般都是面积广然后装修比较奢华相对于来说还有就是属于带孩子这方面如果真的需要交流的话需要采集一些小孩子之间的那种交流的方式怎么样能让孩子们就是跟这个机器人互动还有考虑这方面的别的方面暂时没有什么提议小曼刚才说这个项目说它这个需求,目前怎么那个,各位对这个刚才总经理说的家政这方面的机器还有什么样的需求?我觉得不用做那个自己做的机器就是咱们可以做咱们的系统一个什么系统就是那个居家系统比如说也是跟于那个人工智能挂钩比如说你一进家门,开空调。不是,刚才我的意思是针对刚才总经理提出这个家政积学这个项目,你们有什么样的需求?就做,咱一会儿言话再说这方面的谈判,咱先别的人先说一下你对这个家政积学就,对,需求,目前市场的这些需求肯定会一是不太完善,因为我们管理部最近招了一批新员工相对来说年龄层次是偏低的然后就是跟我们老员工相比他们的思路可能比较开阔一点对目前市场需求以及大多数年轻人的心态有一定的了解我就做了一个简单的访问调查然后他们这一批也就是85后90后以他们为主然后现在的市场的主力也是以这部分人为主成家立业的90后的其实都已经在成家立所以说他们生长在这个广播十分发达的时代他们的思维方式生活方式跟我们大多数人就是上一辈人的需求是不一样的我们第一次我们做的一个产品定位我们要卖这个扫地机器人它的单一功能就是扫地为了减轻我们的家务负担但是对于年轻人来讲它并不是仅仅这一个原因大家经常上网会发现就是扫地机器人会被年轻人瞒出很多花样比如说逗猫逗狗然后运送东西它因为它有一个到处走的一个功能所以说大家都可以用这种新花样我们也可以另辟蹊径我们跳出这个扫地机人只为扫地这一个项目我们可以开发一些它的一些另外的功能再一个就是说我们大家都说包装包装其实是一个很大众大家都比较接受一个现象就是说我们从外观上可以做一些改进然后更符合现在这些年轻人的消费观我们普通做的一个大众有白色呀 黑色呀但我们可以往上面做一些我们还可以和一些大公司大的动画动漫游戏生产公司做一个联合比如说大家那个可口可乐经常会跟别的公司联合还有那个迪士尼他会把自己的logo还有这些动漫的人物版权和好多的公司做一个联合生产联合发行然后这样的话对于年轻人来说就有一定的吸引性就类似于明星代言的广告项目一样这个东西我可能需要我们不需要,但是因为有了明星光环,然后这些粉丝会被起买单,然后我们做这个联名的话,就是像动漫人物有些喜欢的,比如说迪士尼系列,我就特别喜欢,在里的小朋友特别喜欢这个东西,那我选机器人,我们可以首选你这一款,因为你有这个商标,你有这个商标注册,你有这个跟他的联合的一个专利在里面,你家是独一无二的,所以我可能会选这个,所以我觉得我们要跳出原本它实用性的这个圈子来另辟蹊跻是更好的发展再好好地考虑一下还有市场市场目前咱们机器人这一块大家都对这方面有什么看法有什么质疑需要再次的经验咱面对是客户客户对这边有什么看法首先你要教好
+[Text Detection] 在 1021.02 秒检测到关键词 '焦焦',current_time: 1020.00, 问题文本: 好 焦焦基于之前我们讨论的内容针对总经理提出的家政机器人项目我们应该如何市场需求和关端家庭的特点而是市场宣传对不了因为首先开发出既满足清洁工能又能吸引年轻人的多功能家政机器人呢
+问题音频片段长度: 509942, dtype: float32, min: -0.308837890625, max: 0.31671142578125
+问题音频时间长度: 31.871375
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容针对总经理提出的家政机器人项目我们应该如何市场需求和关端家庭的特点是市场宣传对不了因为首先开发出既满足清洁工能又能吸引年轻人的多功能家政机器人
+, 1735097373.5233207
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容针对总经理提出的家政机器人项目我们应该如何市场需求和关端家庭的特点是市场宣传对不了因为首先开发出既满足清洁工能又能吸引年轻人的多功能家政机器人
+, 1735097373.5238092
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4873 seconds, One token time: 0.1624 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：市场需求 家庭特点 多功能家政机器人
+Token count: 33, Total time: 6.7330 seconds, One token time: 0.2040 seconds
+
+提取的关键词: ['市场需求', '家庭特点', '多功能家政机器人']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+根据会议内容，针对家政积学项目的需求，目前市场需求还不够完善。新招的员工主要是85后、90后的年轻人，他们的思维和需求与上一代有所不同。建议开发扫地机器人的新功能，如逗猫逗狗、运送物品等，并在外观设计上进行改进，使之更符合年轻人的审美。此外，可以考虑与大型动画、游戏公司合作，推出带有动漫元素的产品，增加吸引力。
+Token count: 96, Total time: 18.7198 seconds, One token time: 0.1950 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：市场需求 家庭特点 多功能家政机器人
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 不是,刚才我的意思是针对刚才总经理提出这个家政积学这个项目,你们有什么样的需求?就做,咱一会儿言话再说这方面的谈判,咱先别的人先说一下你对这个家政积学就,对,需求,目前市场的这些需求肯定会一是不太完善,因为我们管理部最近招了一批新员工相对来说年龄层次是偏低的然后就是跟我们老员工相比他们的思路可能比较开阔一点对目前市场需求以及大多数年轻人的心态有一定的了解我就做了一个简单的访问调查然后他们这一批也就是85后90后以他们为主然后现在的市场的主力也是以这部分人为主成家立业的90后的其实都已经在成家立所以说他们生长在这个广播十分发达的时代他们的思维方式生活方式跟我们大多数人就是上一辈人的需求是不一样的我们第一次我们做的一个产品定位我们要卖这个扫地机器人它的单一功能就是扫地为了减轻我们的家务负担但是对于年轻人来讲它并不是仅仅这一个原因大家经常上网会发现就是扫地机器人会被年轻人瞒出很多花样比如说逗猫逗狗然后运送东西它因为它有一个到处走的一个功能所以说大家都可以用这种新花样我们也可以另辟蹊径我们跳出这个扫地机人只为扫地这一个项目我们可以开发一些它的一些另外的功能再一个就是说我们大家都说包装包装其实是一个很大众大家都比较接受一个现象就是说我们从外观上可以做一些改进然后更符合现在这些年轻人的消费观我们普通做的一个大众有白色呀 黑色呀但我们可以往上面做一些我们还可以和一些大公司大的动画动漫游戏生产公司做一个联合比如说大家那个可口可乐经常会跟别的公司联合还有那个迪士尼他会把自己的logo还有这些动漫的人物版权和好多的公司做一个联合生产联合发行然后这样的话对于年轻人来说就有一定的吸引性就类似于明星代言的广告项目一样这个不是,刚才我的意思是针对刚才总经理提出这个家政积学这个项目,你们有什么样的需求?就做,咱一会儿言话再说这方面的谈判,咱先别的人先说一下你对这个家政积学就,对,需求,目前市场的这些需求肯定会一是不太完善,因为我们管理部最近招了一批新员工相对来说年龄层次是偏低的然后就是跟我们老员工相比他们的思路可能比较开阔一点对目前【市】场需求以及大多数年轻人的心态有一定的了解我就做了一个简单的访问调查然后他们这一批也就是85后90后以他们为主然后现在的市场的主力也是以这部分人为主成家立业的90后的其实都已经在成家立所以说他们生长在这个广播十分发达的时代他们的思维方式生活方式跟我们大多数人就是上一辈人的需求是不一样的我们第一次我们做的一个产品定位我们要卖这个扫地机器人它的单一功能就是扫地为了减轻我们的家务负担
+根据会议内容，针对家政积学项目的需求，目前市场需求还不够完善。新招的员工主要是85后、90后的年轻人，他们的思维和需求与上一代有所不同。建议开发扫地机器人的新功能，如逗猫逗狗、运送物品等，并在外观设计上进行改进，使之更符合年轻人的审美。此外，可以考虑与大型动画、游戏公司合作，推出带有动漫元素的产品，增加吸引力。
+reasoner 输出结束
+ 焦焦基于之前我们讨论的内容针对总经理提出的家政机器人项目我们应该如何市场需求和关端家庭的特点而是市场宣传对不了因为首先开发出既满足清洁工能又能吸引年轻人的多功能家政机器人呢就把这个其实是对的看了一下调查一下比如说他们跟什么动画或者说什么东西联动的话至少还要看咱们这一批商品他们针对一个什么样的人群怎么你说大人说其实如果说大人带着孩子来买的话咱们印象中的那些卡通图案效果就比大人单独来有好很多我当然单独来可能说你觉得还得可能喜欢这个但他只是可能但如果是带大人孩子过来还看哎这个别管他什么东西什么行风啊什么过头墙啊什么老鼠啊他一看这喜欢上那孩子不管他是什么使用啊还有看这个图形他喜欢了他家人看哦这是啥是个小机器人我说这还行有点用啊那还想买吗谁要买所以说,包装上是对下功夫,但是主要还是在成员本身上,或者是市场上?市场,市场,根据市场的一个站的角度来看,咱们刚才跟郭柏说了自己的一个需求,市场也说了市场的一个需求。那咱研发这一块,这一方面有难度吗?有技术方面有难度吗?需要耗份的成本大了,基金方面我们要一直是在做实验嘛然后还要做花案、策划,就是这个做的如何的一套就是难度很大,需要很大的经费需要经费比较大,研究也比较好目前这个领域还没有人涉及到有足力但是如果说还是看别的部门的协商吧我们只能说是尽量的去研发出来然后这个产品出来以后这个出售的效果是否能用我们的投入那个增增我们只能说是提供科技上的这个支持是否能咱们的市场是否会跟我们想象的一样对这个刚才说了项目投资非常大财务这边投资这边是有一些困难如果我们要专心弄这个项目的话其实我们一时间耗时对现在还没有,只是一个想法嘛,还没有开始研发。是否能……对,后期这个预算还有耗时时间多长,我们这个还需要和外面一些投资人联系,因为……现在咱们这个,这一块在做。我们一直在联系,因为由于情况不稳定嘛,一些合作我们也有取消了所以一直在加强和外面联系希望可以有更多的人来和我们投资合作这一块目前有找到合作方法吗目前的话目前的话我们的想法就是这个机器人的话就是可以和这个我觉得和动漫这块联合是一个好的想法就比如说这些电影现在正处于这个停产就是滞销嘛没有人去影院看电影然后电影也不会上映但是一旦恢复这个正常情况的话市场就会瞬间被打开那这些动漫电影就成为我们一个很被宣传的一方面和这个电影合作是一个好的对 这是一个好的一个条件我觉得我们这边正在和这个即将上映的这些动画有在协商还有就是咱们研发一定要有这个这块一定要抓紧有这个效果以后咱拿产品让咱们的投资方看到我觉得人家才会加大对咱们这个投资看到咱们说的话我觉得一旦确定下来然后就可以研发出几步少量的几部产品投入到一些人这些投资的合作伙伴他们可以试用一下感受到这个效果之后我们这个宣传力度就可以加大如果有不满意的可以再拿回来然后项目或者设计部然后再重新改一下改进然后再重新再去实验然后下半年对 刚才咱们这么多部门说完之后咱们其实下半年要研发的一个就是不设计教育了对下半年的宣传然后下半年咱们这个往往大家都有什么看法什么想法下半年的经济发展我觉得咱们可以做一个加在一个系统就是比如说只能从大门开始你只能解锁然后你一解锁你一进门就是比如说会系统自动开头就是有一种分别的模式你是回家吗如果就是这种智能你一开门就回家如果他回来晚了不想打扰人家休息没有开灯他自己开灯了会不会也是一种困扰就是如果说他家里面是有人的话那就已经不是这种自动开启模式就已经这个状态已经是属于开启的状态不会因为他一个人回来或者说自动的会有语音播报什么的或者说自动开灯啊这样会不会很麻烦呢做一个智能设置你可以自定义嘛你可以选择什么时段比如说你夜间休息时段就这个时段你12点回来灯也是不会开的嗯 对然后我觉得这个时长相对来说可能会比较有情景那这方面装修公司合作那这方面我会和那个什么家项目部会和一些编程公司合作一下因为现在的这些科技产品它们都是属于单项产品就属于那一项做得特别好需要编程这方面加大力度我会和一些编程公司合作一下配合一下项目部这样的话进行编程不会让机器人编程会出现故障会发生什么安全问题然后让科技部门配合装修公司在怎么样改进电路啊小区电路之类的通过这个小区电路这样的话可以拉投资人比方说像房产因为他要建小区的时候他线路肯定要提前给他们说好像说一些房产之类的就相当于新建了一个智能小区谢谢大家
+[Audio Detection] 在 1608.25 秒检测到关键词 '好交交'。
+detection_time: 1608.25, current_time: 1590.00
+问题音频片段长度: 219819, dtype: float32, min: -0.177337646484375, max: 0.169647216796875
+问题音频时间长度: 13.7386875
+
+
+[Agent] 接收到问题: 关于智能机器人研发你认为如何结合市场合同慢元素来吸引客户
+, 1735097429.6198826
+
+
+[Agent] 最终接收到问题: 关于智能机器人研发你认为如何结合市场合同慢元素来吸引客户
+, 1735097429.6200037
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4835 seconds, One token time: 0.1612 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 35, Total time: 1.8282 seconds, One token time: 0.0522 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+结合市场和动漫元素来吸引客户，可以从以下几方面入手：
+
+1. 增强产品的文化内涵：利用动漫IP的影响力，将产品与特定的文化背景相结合，使产品具有更丰富的文化内涵，从而吸引消费者。
+
+2. 创新产品的设计形式：可以借鉴动漫作品的设计风格，将独特的动漫形象融入产品设计中，增强产品的吸引力。
+
+3. 开展互动营销活动：例如可以通过举办动漫主题的展览、竞赛等活动，吸引消费者参与，增加他们对产品的认知和认可度。
+
+4. 提升产品的使用体验：可以考虑在产品功能上进行创新，使其更加贴近消费者的日常生活，提高产品的实用性和满意度。
+
+5. 利用社交媒体推广：借助热门的动漫社交平台，发布与产品相关的动漫内容，吸引更多年轻消费者关注和购买。
+talker 输出结束
+这个水军网上宣传不依据水考虑吗最好不要搞这个最好不要搞这个咱们的产品质量上面肯定是不会有问题的最好不要搞这个水军的事因为搞水军如果被基层对手查出来了那不管你到底好还是坏那这就是一个误点洗不掉所以不要搞这个水军所以现在就是我们自己先自主研发出来的这个东西,我们先做出来这个概念模型,再证明之后,然后我们再去宣传。先做出概念模型,然后可以让这些试验去检测,可以让他们先做一些预定,然后之后再做出样品,最后我们再做出这个,然后样品进行改进,最后我们再做出这个成品。坐入特命中就可以对这种实体的实时内容发布会难怪说在发布对你宣传肯定有发布会的对不对我的意思是还有什么多种的宣传方式发布会肯定是一种比如说还有什么形式的宣传方式那种宣传方式就是说我们会有图的人物对不对我们做出了一个样品之后它不是单独存在它是跟房间存在对不对跟收录物一样一个样板房对不对我们的样品它不是单独的哎呀需要在一个环境内才能形成那一套大腰系统。我们可以让我们同学进去做一个体验,对不对?包括我们可以找志愿者,甚至说,比如说马上的话,我们员工体验,对不对?进去之后有一个体验,或者有一个……咱们同学体验的时候就是让他们体验,但是在咱们那个员工啊、志愿者去体验的时候,咱们就可以支持一个录像或者说直播,真实的一个情况真实的情况然后在我们真实的情况里说可能有些问题可能说有反应不灵敏什么的那我们可以一直调整这个到时候要跟项目部对 而且我们这个哪怕是这些小的你直接暴露在了这些观众的顾客眼中但它其实并不会影响我们产品的信用反而让它过去的我们这都是靠谱对不对对如果到时候咱们的产品在那边试用的时候有烟花出来市場服務要適用的時候通科有什麼不滿意的地方對其實體驗當然也要及時趕要及時反饋然後研發或是項目都是在設計別的方案一方面是改進一方面是設計重新設計別的活動實際上就是一個宗旨一就是一二一二絕對不能幹那種做假的事對吧哪怕說宣傳的時候產品可能有瑕疵但是就得承認这个东西咱们其实是有借钱的对包括说我为什么敢说的啥有钱就承认瑕疵啊因为那个事儿它就是有钱人面的就那小米的雷军大家都知道吗小米手机小米上的小爱同学给军方会上跟那小爱同学聊结果就聊翻车了这个具体演绎就是啊雷军问那小爱同学小爱你能干什么然后小爱来就是人家还小你不要问这个问题他就说你让我很难拿你知道吗他这就回现场才知道了对 所以咱们这个在现场方面一定要注意这个产品的真实性可以优化一下 但不可以这个夸大其词的去提交咱们的产品还有就是咱上半年的工作已经结束了下半年咱们总经理这边也制定了相应的计划今天把咱们会上说的落实下去咱们单场会议到此结束散会
+[Audio Detection] 在 1955.24 秒检测到关键词 '好交交'。
+detection_time: 1955.24, current_time: 1950.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.25921630859375, max: 0.252960205078125
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于科技产品宣传方式的选择你如何看待我们采用实体发布会和体验
+, 1735097455.4403613
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于科技产品宣传方式的选择你如何看待我们采用实体发布会和体验是营销的策略首先应该是到同时考虑成本和效果我们是否应该避免使用水军进行网络宣传请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1735097457.3753936
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4923 seconds, One token time: 0.1641 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：科技产品宣传 成本效果 水军网络宣传
+Token count: 34, Total time: 6.5242 seconds, One token time: 0.1919 seconds
+
+提取的关键词: ['科技产品宣传', '成本效果', '水军网络宣传']
+
+找到的上下文片段数量: 1
+会议认为采用实体发布会和体验活动是有效的营销策略，能够真实展示产品，增强可信度，避免夸大宣传。同时，会议强调不应使用水军进行网络宣传，而是注重实际体验和反馈。这种做法既考虑了成本，又追求了宣传效果的真实性和可靠性。
+Token count: 63, Total time: 12.2218 seconds, One token time: 0.1940 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：科技产品宣传 成本效果 水军网络宣传
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 我们可以让我们同学进去做一个体验,对不对?包括我们可以找志愿者,甚至说,比如说马上的话,我们员工体验,对不对?进去之后有一个体验,或者有一个……咱们同学体验的时候就是让他们体验,但是在咱们那个员工啊、志愿者去体验的时候,咱们就可以支持一个录像或者说直播,真实的一个情况真实的情况然后在我们真实的情况里说可能有些问题可能说有反应不灵敏什么的那我们可以一直调整这个到时候要跟项目部对 而且我们这个哪怕是这些小的你直接暴露在了这些观众的顾客眼中但它其实并不会影响我们产品的信用反而让它过去的我们这都是靠谱对不对对如果到时候咱们的产品在那边试用的时候有烟花出来市場服務要適用的時候通科有什麼不滿意的地方對其實體驗當然也要及時趕要及時反饋然後研發或是項目都是在設計別的方案一方面是改進一方面是設計重新設計別的活動實際上就是一個宗旨一就是一二一二絕對不能幹那種做假的事對吧哪怕說宣傳的時候產品可能有瑕疵但是就得承認这个东西咱们其实是有借钱的对包括说我为什么敢说的啥有钱就承认瑕疵啊因为那个事儿它就是有钱人面的就那小米的雷军大家都知道吗小米手机小米上的小爱同学给军方会上跟那小爱同学聊结果就聊翻车了这个具体演绎就是啊雷军问那小爱同学小爱你能干什么然后小爱来就是人家还小你不要问这个问题他就说你让我很难拿你知道吗他这就回现场才知道了对 所以咱们这个在现场方面一定要注意这个产品的真实性可以优化一下 但不可以这个夸大其词的去提交咱们的产品还有就是咱上半年的工作已经结束了下半年咱们总经理这边也制定了相应的计划今天把咱们会上说的落实下去咱们单场会议到此结束散会基于之前我们讨论的内容【关】于科技产品宣传方式的选择你如何看待我们采用实体发布会和体验是营销的策略首先应该是到同时考虑成本和效果我们是否应该避免使用水军进行网络宣传请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+会议认为采用实体发布会和体验活动是有效的营销策略，能够真实展示产品，增强可信度，避免夸大宣传。同时，会议强调不应使用水军进行网络宣传，而是注重实际体验和反馈。这种做法既考虑了成本，又追求了宣传效果的真实性和可靠性。
+reasoner 输出结束
+
+会议数据处理完成。

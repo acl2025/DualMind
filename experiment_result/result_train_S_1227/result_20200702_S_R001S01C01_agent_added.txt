@@ -1,0 +1,191 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200702_S_R001S01C01_agent_added/base_add.wav
+Starting from 0 seconds
+Starting processing from 0s, total chunks: 66
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.04it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.39s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.57s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.72s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.67s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.79s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.39s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.08s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.34s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+我是阿豪部门我是分产部007销售好的今天把各部门叫过来开一个联合会这个例会是这样的咱们上个月咱们这个各部门先汇报一下咱们上个月各部门的一些相关的情况这个销售的市场比较成熟行嗯嗯就是说一下第嗯上个季度吧这个咱们这咱们厂这个面食和面面啊还有灌面还有粉这一块都是成上呃稳步上升的这个趋势的嗯因为现在这个和面面市场呢这个品牌嗯
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.14s/it]在前面还是那几个老品牌咱们这几个老品牌然后方便面粥它那个销售量最高的它是这个红烧的红烧牛肉面虽然它这个从很早就有这个口味到现在一直持续不变现在市场对这个统装的有什么看法统装的其实有一方面人都说它那个怕加热以后
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.88s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.86s/it]
+那个桶内部的内层薄膜有致癌的这个危险但是呢因为现在网上也有一些专家都出来已经辟谣了就是说他这个咱们那个桶的内部的这一款这个那个PE那个薄膜它是不会加热以后不会致癌的原先呢在市场上什么效果比较好?盆装的?袋装?总体来说,袋装的销售量比较好因为袋装的价格来说还是比较便宜然后居家呀,出去都是可以用的那桶装的话一般这个销售量但是他也是上升的相比于大状的还是还是低的然后然后现在我们这个市场这一块还有这个拌面干拌面嗯也在原先市场上这一款面不多现在我们也也推出这一款干拌面他他有这种也可以有红烧的还有一种就是咱们这个呃炸酱的这个口味还是挺好的现在这个上了以后这个销售量也是不错的因为它的这个量也不小然后味道也更香那个酱料更香一点这个销售的也挺好的然后咱们销售这一块呢其实咱们从全球来看的话咱们这个方便面销售量非常的大就咱们中国就消费掉了三分之一这样的大量现在都是一些老客户开发新的市场市场这块也是在逐步发展吧因为你看这些各个省市的代理们都有的其实现在然后咱们现在主要是做的一个工作就是稳定这个老客户然后把那些代理的工作跟他们沟通好,然后就是让他们追加销量吧因为咱这个品牌是稳定的,然后市场也是相对来说还是比较稳定主要是咱们把这个销量得做上去让他们给这些各个地区的代理,区域代理们也会经常激励出一些方案,然后把这个销量再提升一点然后也可以根据这个南北方的差异呀这个口味也会我们也会去做调查然后绑配给咱们生产这一块然后看看还能不能研发出新一款的这个方便面口味比如说咱们南方人还是比较喜欢吃辣一点的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目韩国那块有一个出名的火鸡面,但是在国内做的味道还是不行。但是咱们这个味道不行,跟咱们生产的有什么相处呢?火鸡面目前咱们在做的。火鸡面咱们在做的,但是总体来说做的不算多。因为咱们这个地区呢,不是那种穿金啊,特别爱吃辣。刚才他说那个,火鸡面味道,咱们这边做不开那种味道。但肯定跟人家韩国那边那个品牌相比来说差距还是大的。是,一方面是机器设备的原因,咱们机器设备其实已经用了很多年了。在做料的精细程度上没有人因为我们没有人家那种先进的设备能力另一方面就是咱们这儿的员工接触这个调料配方就是没有人家那么严密毕竟它也是一个外来的食物吧然后人家那个外国的食物的配方肯定就是说也是法人家也有自己的专利肯定把控制还是比较严的吧可能就是也不好不是很好吗?研制出跟人家那个味道像皮米的这个配料佐料吧嗯那咱们这个你们两个部门是什么想法?根据市场这个这一块有需求是有市场这一块是有需求的需求量还不少因为现在的人们都是通过网络也会看到这一款面就是说它很辣,很好吃,很过瘾市场还是有的因为传统的封面面这封面面怎么说呢现在这个市场稳定然后款式呢你稳定了,但是你的款式也得往上走也得有所创新这样的话你的销量才会我们要保证老品牌的产交,然后另一方面可以贴一个新的生产线,然后生产一些新的,这方面有研究吗?对,说到新的生产线,咱们车间有10条线,有5个板,但是现在开的线只有6条,也就是说咱们员工的数量没有达到。在保证老品牌的创作程度上,研究新品种的人比较少。那研发这边有什么研究新品种的忙?我们目前想要研究就是刚才那个火鸡面我们也想要就是以再投入投入过程中呢就是人力物力就是显示的有什么难度吗目前有,在配料的精度上,我们很多人就是尝试了各种比例的掺杂但是味道还是差强人意这应该怎么去解决呢?有办法吗?有什么方法吗?嗯,再,就是,问了一些技术人员,他们说就是咱
+[Text Detection] 在 593.57 秒检测到关键词 '焦焦',current_time: 570.00, 问题文本: 咱们现在的社会是智能的社会可以用智能的机器代替人类的操作如果就是一个人一天24个小时他不可能全天无息地研究这个配料而如果用机器来自动化地配比各种比例你好焦焦针对火鸡面口味问题如何改进以满足市场需求
+问题音频片段长度: 139264, dtype: float32, min: -0.17071533203125, max: 0.165985107421875
+问题音频时间长度: 8.704
+
+
+[Agent] 接收到问题: 针对火鸡面口为问题如何改进以满足市场需求
+, 1735132142.5768642
+
+
+[Agent] 最终接收到问题: 针对火鸡面口为问题如何改进以满足市场需求
+, 1735132142.5769897
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9086 seconds, One token time: 0.3029 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+要改进火鸡面口，可以考虑以下几点：
+
+1. 增加口味选择：提供多样化的口味选择，满足不同消费者的需求。
+
+2. 提升口感：优化火鸡面的口感，使其更加鲜美。
+
+3. 加强包装设计：提升火鸡面的包装设计，使其更吸引消费者。
+
+4. 创新配料：尝试加入新的配料，使火鸡面更具创新性和独特性。
+
+5. 加强品牌宣传：通过加强品牌宣传，提高火鸡面在市场上的知名度和影响力。
+
+6. 关注健康：考虑到现代消费者对健康饮食的关注，可以考虑推出低盐、低脂、低糖的火鸡面产品。
+talker 输出结束
+们现在的社会是智能的社会可以用智能的机器代替人类的操作如果就是一个人一天24个小时他不可能全天无息地研究这个配料而如果用机器来自动化地配比各种比例你好焦焦针对火鸡面口味问题如何改进以满足市场需求就是目前盈利的资金水平的话可能需要高出1.5倍还有就是这个市场然后我们这一块呢从这个品牌就咱们的品牌集中度这个区间来看咱们那个方便面市场集中还是急救度非常高就是说咱们在这个市场上占比还是比较大的嗯嗯那咱先谈谈这个生产这边说一下这个月的情况然后再回报一下下个月那个计划市场过的计划行上个月咱们这个生产这个时间一些这个日常情况建一些比较重要的回报一下就行好的基于上个月的生产达到了我们的生产目标但是相比之前确实有所下降如果按长期来说的话是一个不乐观的情势基于原因一方面就是因为人力冷军另一方面就是咱们设备的问题设备坏了还是需要换了咱们设备经常需要维修维修人员这边有冲突吗目前基本上够上机器坏的速度,但是基本上还是可以的。咱这个经常坏是设备老化了还是怎么操作问题?都有的,一方面就是设备老化,一方面就是因为咱车间嘛,又在G3的面,所以油比较多,然后对机器的运转维护就是比较困难。那现在目前一些像咱们这些厂家国外国内的一些这种厂家他们在这方面都有什么应对他们机器也是经常换有什么应对的就我了解呢其实在咱们这一块其实差不多因为他们也是跟在情况差不多对毕竟咱们的咱们的工厂也不算是也算是一种中包装水平谢谢大家这方面有想过办法去解决吗?有,就是研制新产品大力投入机器生产,但是它的成本近期来说肯定会有所涨。但是从长期来说,机器可以代替人力。从一个长远的方向来看,机器肯定是要比现在的生产模式要好很多。生产速度也快,头期虽然投入大的话,后面的话产量是高的。对。相比于人工在生产线上来说,生产效率是高的,因为人工是要咱们付费的,是吧?也需要付薪水的。但是相比来说,肯定是机器要好一点。这个上个月的一些工作的情况安全这边安全这边上个月中旬咱们这儿咱们厂子是进行了一次防火和防灾的演变因为上个月咱们出现这个安全事故嘛咱们厂子安全事故是出过一次的出过一次之后咱们再往后之后的这个是因为什么出的是因为工人的操作不到操作不到出现了这个漏电的事故所以咱们从那一次事故之后往后咱们每个月会定期的做一些防火防灾防电的一些演练然后咱们也会组织这些员工对这些紧急事故处理的一些能力对他们这些能力进行一个提升目前咱们厂子的一些摄像头这方面摄像头咱们场合是有一些监控死角对这个需要记得咱们厂子有记者怎么厂子的摄像头老早之前那些对咱们这个月下旬吧打算跟财务领域申请把这些摄像头换成新式的跟上这个新的电子产品换上一批新的摄像头目前安防部门的保安有什么工作情况?保安的话,我们现在采取的是24小时三班倒,保证每个时刻都会有人遇到突发情况。目前咱们保安有多少个目前咱们保安是一个班一个班有240名保安分成十个队,一个队24人,不定期的在房产自己赚嗯,行,目前咱们国家对环保抓得比较紧环保这一块,咱们这儿主要是,因为咱们是方圆院嘛,是主产的方圆院,所以油烟比较大對,然後對於這個咱們那兒因為下個上
+[Text Detection] 在 1012.89 秒检测到关键词 '娇娇',current_time: 990.00, 问题文本: 上个月咱们这环保是合格的然后下个月环保局说要来咱们这进行一次读查例行检查然后咱们这要进行一次改造嘛就把这个烟道啊还有这个油烟改造新风系统对对对你好娇娇基于之前我们讨论的内容关于设备老化和维修问题
+问题音频片段长度: 695115, dtype: float32, min: -0.174468994140625, max: 0.18310546875
+问题音频时间长度: 43.4446875
+
+
+[Agent] 接收到问题: 我们讨论的内容关于设备老化和维修问题你提到了设备经常需要维修维修人员目前基本能够跟上机器坏的速度我想请问一下具体来说设备老化和操作不当这两个因素哪一个对设备故障的影响更大我们应该如何平衡设备更新和维修人员配置以减少设备故障对生产的影响
+, 1735132172.5933013
+
+
+[Agent] 最终接收到问题: 我们讨论的内容关于设备老化和维修问题你提到了设备经常需要维修维修人员目前基本能够跟上机器坏的速度我想请问一下具体来说设备老化和操作不当这两个因素哪一个对设备故障的影响更大我们应该如何平衡设备更新和维修人员配置以减少设备故障对生产的影响
+, 1735132172.593416
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4934 seconds, One token time: 0.1645 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：设备老化 维修影响
+Token count: 28, Total time: 5.8030 seconds, One token time: 0.2073 seconds
+
+提取的关键词: ['设备老化', '维修影响']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+设备老化和操作不当都影响设备故障，但设备老化影响更大。建议优先更新老旧设备，并合理配置维修人员。具体措施包括：1) 定期评估设备状态，优先更换老化设备；2) 增加维修人员培训，提高操作规范性；3) 引入自动化检测系统，减少人为错误；4) 优化排班，确保维修人员充足。通过这些措施可以有效减少设备故障，保障生产稳定。
+Token count: 100, Total time: 19.6418 seconds, One token time: 0.1964 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：设备老化 维修影响
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 那研发这边有什么研究新品种的忙?我们目前想要研究就是刚才那个火鸡面我们也想要就是以再投入投入过程中呢就是人力物力就是显示的有什么难度吗目前有,在配料的精度上,我们很多人就是尝试了各种比例的掺杂但是味道还是差强人意这应该怎么去解决呢?有办法吗?有什么方法吗?嗯,再,就是,问了一些技术人员,他们说就是咱针对火鸡面口为问题如何改进以满足市场需求们现在的社会是智能的社会可以用智能的机器代替人类的操作如果就是一个人一天24个小时他不可能全天无息地研究这个配料而如果用机器来自动化地配比各种比例你好焦焦针对火鸡面口味问题如何改进以满足市场需求就是目前盈利的资金水平的话可能需要高出1.5倍还有就是这个市场然后我们这一块呢从这个品牌就咱们的品牌集中度这个区间来看咱们那个方便面市场集中还是急救度非常高就是说咱们在这个市场上占比还是比较大的嗯嗯那咱先谈谈这个生产这边说一下这个月的情况然后再回报一下下个月那个计划市场过的计划行上个月咱们这个生产这个时间一些这个日常情况建一些比较重要的回报一下就行好的基于上个月的生产达到了我们的生产目标但是相比之前确实有所下降如果按长期来说的话是一个不乐观的情势基于原因一方面就是因为人力冷军另一方面就是咱们设备的问题设备坏了还是需要换了咱们设备经常需要维修维修人员这边有冲突吗目前基本上够上机器坏的速度,但是基本上还是可以的。咱这个经常坏是【设】备老化了还是怎么操作问题?都有的,一方面就是设备老化,一方面就是因为咱车间嘛,又在G3的面,所以油比较多,然后对机器的运转维护就是比较困难。那现在目前一些像咱们这些厂家国外国内的一些这种厂家他们在这方面都有什么应对他们机器也是经常换有什么应对的就我了解呢其实在咱们这一块其实差不多因为他们也是跟在情况差不多对毕竟咱们的咱们的工厂也不算是也算是一种中包装水平谢谢大家这方面有想过办法去解决吗?有,就是研制新产品大力投入机器生产,但是它的成本近期来说肯定会有所涨。但是从长期来说,机器可以代替人力。从一个长远的方向来看,机器肯定是要比现在的生产模式要好很多。生产速度也快,头期虽然投入大的话,后面的话产量是高
+---
+这个上个月的一些工作的情况安全这边安全这边上个月中旬咱们这儿咱们厂子是进行了一次防火和防灾的演变因为上个月咱们出现这个安全事故嘛咱们厂子安全事故是出过一次的出过一次之后咱们再往后之后的这个是因为什么出的是因为工人的操作不到操作不到出现了这个漏电的事故所以咱们从那一次事故之后往后咱们每个月会定期的做一些防火防灾防电的一些演练然后咱们也会组织这些员工对这些紧急事故处理的一些能力对他们这些能力进行一个提升目前咱们厂子的一些摄像头这方面摄像头咱们场合是有一些监控死角对这个需要记得咱们厂子有记者怎么厂子的摄像头老早之前那些对咱们这个月下旬吧打算跟财务领域申请把这些摄像头换成新式的跟上这个新的电子产品换上一批新的摄像头目前安防部门的保安有什么工作情况?保安的话,我们现在采取的是24小时三班倒,保证每个时刻都会有人遇到突发情况。目前咱们保安有多少个目前咱们保安是一个班一个班有240名保安分成十个队,一个队24人,不定期的在房产自己赚嗯,行,目前咱们国家对环保抓得比较紧环保这一块,咱们这儿主要是,因为咱们是方圆院嘛,是主产的方圆院,所以油烟比较大對,然後對於這個咱們那兒因為下個上我们讨论的内容关于【设】备老化和维修问题你提到了设备经常需要维修维修人员目前基本能够跟上机器坏的速度我想请问一下具体来说设备老化和操作不当这两个因素哪一个对设备故障的影响更大我们应该如何平衡设备更新和维修人员配置以减少设备故障对生产的
+设备老化和操作不当都影响设备故障，但设备老化影响更大。建议优先更新老旧设备，并合理配置维修人员。具体措施包括：1) 定期评估设备状态，优先更换老化设备；2) 增加维修人员培训，提高操作规范性；3) 引入自动化检测系统，减少人为错误；4) 优化排班，确保维修人员充足。通过这些措施可以有效减少设备故障，保障生产稳定。
+reasoner 输出结束
+个月咱们这环保是合格的然后下个月环保局说要来咱们这进行一次读查例行检查然后咱们这要进行一次改造嘛就把这个烟道啊还有这个油烟改造新风系统对对对你好娇娇基于之前我们讨论的内容关于设备老化和维修问题减少设备故障对生产的影响新控系统这一块咱们要改造让现在三亚的油烟变得更小更能因为现在整个国家的环境质量都在上升所以咱们要各让时代对现在情况是什么样的情况环保设备这一块咱们这儿这个新风系统是两三年之前了咱们现在要及时的更换换成新的再一个就是咱们这个空气清华器也要换成新的因为它每一个时段它的绿 中间的绿网啊还有这个绿芯啊到繼續的狀況车间的抽风系统还有空调都需要及时更换,保证大家都有舒适的工作环境,这样工人的效率也能更高。因为这家目前对这个差别比较严还有就是咱们这个安全方面还有就是进咱们厂里做的事这方面我记得有一次咱们这个保安说服了好像没让人家分析有些事情是那次出现失误之后让他开除他然后对剩下的这些保安我们也开了大会告诉他们应该怎么办然后每一个人都有自己的公牌进场的话是有些公牌进场就是凭不管他如果他没带就算认识也不让他进对对对咱们就是举办保护人员对还有咱们这个面前还有就是刚才说了,需要夜晚加强这方面的行动一些监控司长,还有我们的线路线路老化的话,我们会继续的更换,继续的找一些维修工人还有检查工人,定期的检查维修出现一些意外啊什么的就会有一个线路独立宣传的线路还有咱们库房的那些原材料,因为那些还都算属于易燃物。加强对方的措施。尤其是生产这家比较有油的成分,各种各样的油管。所以生产安全很重要生产车间定期进行这方面安全知识的培训和大伙伴们、满两伙伴们合作进行这方面的安全培训还有咱们目前生产车间现在不是夏天了吗这方面生产车间温度是多少?热吗?相比之前可能但是咱们车间有几个大排的风扇在保证温度也是比较适宜的保证了员工的出入度刚才说了大排风扇一定要开启运作会比较严慎有可能出现中暑这个情况这个场子要生产车间要准备一些这个绿豆汤啊非常有能取色行吧我们我身上这些其实有备那种医药品就是说翻上一轮什么的我们市场这一个想说一下油炸和废油炸的方面面其实有一段时间,前头几年盛行了一下废油炸的方面面把一个品牌给拉起来了它那就是主打废油炸的但是按照着当时市场的趋势我们有想过要就是上产一个就是这种看这个市场这个销售比来说其实这个大众的消费啊还是比较虽然说是呃肥油炸的说是很比这个油炸的要健康但是这个销售来说还是这个油炸的这个销售率还是销售比率还是高一点嗯因为咱们怎么说呢这个油炸的所以他说是这个经常吃这种油炸方便面不健康但是都是经过辟谣也不是那样的你如果说要是吃废油炸的那为什么直接买挂面吃呢肯定还是因为那油炸的它油炸的这种方便面吧它既好吃然后它比那个废油炸的要好吃并且这种传统的这个消费观念就是消费习惯来说大家还是喜欢了这种口味的它这个口味来说这个非油炸的倒是没有这个油炸的口味要好口感要好是这样然后其实现在这个蜂蜜面市场的它这个产品市场很饱和了已经请不吝点赞 订阅 转发 打赏支持明镜与点点栏目如果再有新的方便面品牌插进来很难进入了我们现在市场要做的就是去走访观察吧然后把这个产品做的更高端一点因为这个市场保格了只能靠打价格站降低价格来增加销售量的话这个不是长远的一个方式可以采用这种方式但是还是想要把产品往上走再一个就是咱们把这个把这个销售的渠道也拓宽一点把这个产品结构还有这个销售渠道这个层次打得更宽一点是这样的避免競争的下降可以有高端的产品也可以是农村低端的产品就是平价的产品都有有些白领喜欢吃后面面或者桶装的他都喜欢吃那种汤非常好喝的你好嬌嬌如何改进环保设备和提升工厂安全措施以适应国家环保标准这个汤 谷汤的呀 或者是什么汤那个汤比较好喝他买桶面 他肯定喜欢喝那个汤这个是我们市场上就是近期研究就是调查 观察 然后发现的关于非油炸比油炸的健康呢,我是想说这是一种无稽之谈。我们车间呢,对油可是经过了层层的汇率,保证了材料的新鲜感。然后基于这个问题呢,我想说,我们现在有一门新的技术,叫半烧面。它在保证了,你们现在那个技术生态这个成熟吗?还有待成熟已经可以投放了吗我想说的是这个面呢我希望就是销售部通过走房调查然后看一下这个面的销售情况看看是不是适不适合现在生产行我们就是可以配合这一块去做个调研如果就是可以的话就是可以的话我们将会会不会加大这方面的力度也会在两个月之内就会有产品投放我们要加大这方面的研究还有就是近期咱们这个一些各部门的一些这个考勤问题各部门现在会发现目前咱们各部门有迟到的嘛请问一下,我们的保安是什么?我们的保安是人脸加指纹,识别,签到打卡,签到和签退。会有一小部分人会迟到,我们会具体问一问什么情况。如果是真的有事的话,我们会谅解。如果是无故迟到或者旷工我们也会尽量一样处罚再者就是说咱们这儿安全维修和检查人员他们这儿是我们要求他们是不能迟到和旷工一定不能迟到和旷工因为安全无小事嘛对咱们这儿就是要保证他们随时在搞这就是这个暗环这边的情况我们销售这一块肯定让我们销售一般都不做吧然后去跑业务我们这跟做班的地方不一样咱们打电话这方面目前咱们都是跑吗打电话的也有但是就是他们把这个任务都分派到各个人头上了他们有固定的我们这边就会每个时间都会分发给他们固定的让他们在这个时间内必须把这些回访客户的电话都得打到就是按这种不过就是说让他们就是抽一就是让他们这一天都在这儿打电话是不是这样的是让他们自己调配自己的时间去把这个电话都打完了然后必须得在每天下班的时候我们都要就是说你要去拜访客户或者今天打了个电话然后你必须得把这个日志写的要清楚有什么问题要汇报就是你的进度做到哪了都要汇报我们是采用这种的方式但是如果说我们现在没有这种按班按做些时间就是很正常的做班这个打卡时间但是我们就是看他这个如果去拜访也必须得拍照打卡是这样的如果出现他写日志不合规格我们也会也會這個我们生产部就是迟到早退的现象还是比较少的只是偶尔会有几个人迟到然后就是导致生产线比较开的比较晚但是我们也会有记录最后月底考虑特别还要想要汇报的我们这边没了请不吝点赞 订阅 转发 打赏支持明镜与点点栏目市场那边怎么样?生产过程还是就是咱们设备的问题我想就是公司应该加大力度增加资金来研究机器生产其他的没有什么安华这边主要就是如果增加这个新机器的生产新机器如果来的话咱们这儿也需要一部分这个新机器的维修和检查人员他人呢 还需要这个新机器一些操作人员嗯然后别的还往那边准备嗯行行那咱今天这个会就先开到这吧行好下去以后各部门把各部门这个工作再安排一下具体的安排一下行吧好散会您
+[Text Detection] 在 1923.87 秒检测到关键词 '焦焦',current_time: 1920.00, 问题文本: 您好,焦焦。基于之前我们讨论的内容关于生产部门提到的新机器维修
+是hard question，使用默认复杂问题持续时间。
+问题音频片段长度: 640000, dtype: float32, min: -0.155914306640625, max: 0.168182373046875
+问题音频时间长度: 40.0
+
+
+[Agent] 接收到问题: 您好,焦焦。基于之前我们讨论的内容关于生产部门提到的新机器维修和检查人员的需求你认为公司应该如何安排这些人员以确保新机器的顺利运行和维护
+, 1735132247.7847974
+
+
+[Agent] 最终接收到问题: 您好,焦焦。基于之前我们讨论的内容关于生产部门提到的新机器维修和检查人员的需求你认为公司应该如何安排这些人员以确保新机器的顺利运行和维护
+, 1735132247.7849753
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4742 seconds, One token time: 0.1581 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：生产部门 新机器 维修 检查人员 安排
+Token count: 37, Total time: 7.0881 seconds, One token time: 0.1916 seconds
+
+提取的关键词: ['生产部门', '新机器', '维修', '检查人员', '安排']
+
+找到的上下文片段数量: 2
+根据会议内容，公司应增加资金投入研发和采购新机器，并增设专门的维修和检查人员来维护新机器。考虑到新机器的引入可能导致成本上升，公司需平衡短期成本与长期效益。同时，培训现有员工或招聘新员工以适应新机器的操作需求，确保生产线的稳定运行。此外，加强设备保养，减少因设备老化和环境因素导致的故障率，提高生产效率。
+Token count: 91, Total time: 17.9203 seconds, One token time: 0.1969 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：生产部门 新机器 维修 检查人员 安排
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 那研发这边有什么研究新品种的忙?我们目前想要研究就是刚才那个火鸡面我们也想要就是以再投入投入过程中呢就是人力物力就是显示的有什么难度吗目前有,在配料的精度上,我们很多人就是尝试了各种比例的掺杂但是味道还是差强人意这应该怎么去解决呢?有办法吗?有什么方法吗?嗯,再,就是,问了一些技术人员,他们说就是咱针对火鸡面口为问题如何改进以满足市场需求们现在的社会是智能的社会可以用智能的机器代替人类的操作如果就是一个人一天24个小时他不可能全天无息地研究这个配料而如果用机器来自动化地配比各种比例你好焦焦针对火鸡面口味问题如何改进以满足市场需求就是目前盈利的资金水平的话可能需要高出1.5倍还有就是这个市场然后我们这一块呢从这个品牌就咱们的品牌集中度这个区间来看咱们那个方便面市场集中还是急救度非常高就是说咱们在这个市场上占比还是比较大的嗯嗯那咱先谈谈这个生产这边说一下这个月的情况然后再回报一下下个月那个计划市场过的计划行上个月咱们这个生产这个时间一些这个日常情况建一些比较重要的回报一下就行好的基于上个月的生产达到了我们的生产目标但是相比之前确实有所下降如果按长期来说的话是一个不乐观的情势基于原因一方面就是因为人力冷军另一方面就是咱们设备的问题设备坏了还是需要换了咱们设备经常需要【维】修维修人员这边有冲突吗目前基本上够上机器坏的速度,但是基本上还是可以的。咱这个经常坏是设备老化了还是怎么操作问题?都有的,一方面就是设备老化,一方面就是因为咱车间嘛,又在G3的面,所以油比较多,然后对机器的运转维护就是比较困难。那现在目前一些像咱们这些厂家国外国内的一些这种厂家他们在这方面都有什么应对他们机器也是经常换有什么应对的就我了解呢其实在咱们这一块其实差不多因为他们也是跟在情况差不多对毕竟咱们的咱们的工厂也不算是也算是一种中包装水平谢谢大家这方面有想过办法去解决吗?有,就是研制新产品大力投入机器生产,但是它的成本近期来说肯定会有所涨。但是从长期来说,机器可以代替人力。从一个长远的方向来看,机器肯定是要比现在的生产模式要好很
+---
+如果是无故迟到或者旷工我们也会尽量一样处罚再者就是说咱们这儿安全维修和检查人员他们这儿是我们要求他们是不能迟到和旷工一定不能迟到和旷工因为安全无小事嘛对咱们这儿就是要保证他们随时在搞这就是这个暗环这边的情况我们销售这一块肯定让我们销售一般都不做吧然后去跑业务我们这跟做班的地方不一样咱们打电话这方面目前咱们都是跑吗打电话的也有但是就是他们把这个任务都分派到各个人头上了他们有固定的我们这边就会每个时间都会分发给他们固定的让他们在这个时间内必须把这些回访客户的电话都得打到就是按这种不过就是说让他们就是抽一就是让他们这一天都在这儿打电话是不是这样的是让他们自己调配自己的时间去把这个电话都打完了然后必须得在每天下班的时候我们都要就是说你要去拜访客户或者今天打了个电话然后你必须得把这个日志写的要清楚有什么问题要汇报就是你的进度做到哪了都要汇报我们是采用这种的方式但是如果说我们现在没有这种按班按做些时间就是很正常的做班这个打卡时间但是我们就是看他这个如果去拜访也必须得拍照打卡是这样的如果出现他写日志不合规格我们也会也會這個我们生产部就是迟到早退的现象还是比较少的只是偶尔会有几个人迟到然后就是导致生产线比较开的比较晚但是我们也会有记录最后月底考虑特别还要想要汇报的我们这边没了请不吝点赞 订阅 转发 打赏支持明镜与点点栏目市场那边怎么样?生产过程还是就是咱们设备的问题我想就是公司应该加大力度增加资金来研究机器生产其他的没有什么安华这边主要就是如果增加这个新机器的生产新机器如果来的话咱们这儿也需要一部分这个新机器的维修和检查人员他人呢 还需要这个新机器一些操作人员嗯然后别的还往那边准备嗯行行那咱今天这个会就先开到这吧行好下去以后各部门把各部门这个工作再安排一下具体的安排一下行吧好散会您您好,焦焦。基于之前我们讨论的内容关于【生】产部门提到的新机器维修和检查人员的需求你认为公司应该如何安排这些人员以确保新机器的顺利运行和
+根据会议内容，公司应增加资金投入研发和采购新机器，并增设专门的维修和检查人员来维护新机器。考虑到新机器的引入可能导致成本上升，公司需平衡短期成本与长期效益。同时，培训现有员工或招聘新员工以适应新机器的操作需求，确保生产线的稳定运行。此外，加强设备保养，减少因设备老化和环境因素导致的故障率，提高生产效率。
+reasoner 输出结束
+好,焦焦。基于之前我们讨论的内容关于生产部门提到的新机器维修
+会议数据处理完成。

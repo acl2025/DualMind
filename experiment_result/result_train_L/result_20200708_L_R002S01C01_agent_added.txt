@@ -1,0 +1,205 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200708_L_R002S01C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 68
+Loading reasoner_llm...
+Loading classifier_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading Whisper model...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.10s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.68s/it]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.39it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.49s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.58s/it]
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.49s/it]/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.54s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.71s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:07<00:06,  3.12s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:12<00:03,  3.70s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:14<00:00,  2.96s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:14<00:00,  2.81s/it]
+请不吝点赞 订阅 转发 打赏支持明镜与点点栏目002我是校长026我是副校长02我是教育处027我是校长023我是自学处024我是市场014管理处行,好了,今天把各部门叫过来还有一个咱们这个就业指导会就业方面的一些问题这个这个谢谢大家就业是这个困扰很多大学生的一个问题所以今天咱们把各部门叫过来咱们就商讨一下这个问题关键在于咱们这个每个人对这个问题的一个看法现在由咱们这个副校长这边主持一下这个会好的刚才感谢校长的发言在本次会议的时候是就当代大学生就就业问题和去大公司好还是小公司好我可以先给大家举一个案例就像中国是大公司什么是小公司你这个明确的这个点你比我确定比方说像刚创业吧刚起步的创业公司吗他算大公司吗那也取决于他的规模呀如果他的规模特别大资金特别少他算大公司还是小公司所以现在就是在问一点好这方面交付处这方面有疑问先保留让我来讲以下案例因为他听完案例他自然就会懂就比方说一个中国一个亚马逊的一个副总裁张思宏他是从麦当劳的实习生开始就属于一种出去找工作可能和自己的专业不对口之类的学习收银制作薯条后来又跳槽到可口可乐公司到包装的员工然后他在2012年的时候又跳到了亚马逊他觉得需要自己创业从一个小规模的私营企业乐视公司开始盈利但是五个多月后他又离职然后他回到了亚马逊去找了一份相对来规模较大的公司属于亚马逊当地的公司虽然起步很低然后也没什么专业性还是属于一种餐饮的公司但是他觉得在这个大公司的发展和小公司的发展是有很大的区别的相对于大公司的像一些五险一金之类的东西或者一些社保医保可能都会给交小公司可能相对于工资待遇或者员工之间的关系比较融洽一起属于创业阶段这个两个大公司小公司是就当代大学生如果他们出去创业的话从小公司起步没有足够的资金是去大公司好还是小公司好如果去大公司的话没有任何提升空间或者是大公司和他的专业不对口这个因为很多这个学生都来找咱们老师去去找这个请教这个问题对所以刚才这个副校长这边把这个问题抛在那个会上所以大家对这个问题都怎么看咱们副校长说的这个,可以说一下你对这个事件的一个看法吗?我对这个事件的看法,就先说一下弊端吧,像一些大公司之类的。大公司如果你是学计算机的,可能你去那起步特别的低。你们就会觉着,大公司的薪水不如一些小公司,甚至还没有小公司的专业和自己对口。小公子他升职又特别的慢所以大家对这方面有什么看法吗就比方说升职之类的大公司比较稳定如果你刚出来就业就选择一个小公司那可能刚到那还没站到脚尖然后那个公司就已经倒闭没钱了所以我觉得应该首先是选择大公司去锻炼一下毕竟大公司里面的管理系统可能大公司里有很多企业家名人跟他们是一道不同的东西吧我也觉得我们应该首先考虑的是因为我们大学生刚出来就业的话有好的机会我们应该往长远的方面去考虑为我们以后升职或者更大的进步空间考虑小公司的话这方面就没有更多办法可以考虑没有更多机会我个人觉得如果说咱们选择小公司的话肯定大家关系同事间的氛围比较融洽然后升职的机会要比大公司要更高因為你是老人你是陪着这个公司一直在起步阶段就是你在起步阶段你就进入这个公司你一直陪伴这个公司的成长所以你在这个公司里升职加薪的机会是很高的当然也是有风险好以上三个部门发表了自己的意见就比方说吧其他部门有什么意见吗我觉得是要说能去大公司有的机会了还是想要去但也就是说所以他们作为一个刚毕业的学生的话你去了大公司谢谢大家那其实你去不了什么重要的岗位这是一个很现实的问题因为毕竟说你刚毕业人家大公司一进来你说我学管理的你把你公司给我管理吧人家可能给你管理吗对吧不可能但是我觉得如果你去小公司的话也是你得经过你的实习期然后你慢慢在公司里学习然后一步一步往上升这个和在大公司一样都是得慢慢往上升的是慢但是都得慢但是人家小公司的话更快到达你这个岗位小公司没有更多的岗位好好好以上部门都已经发表了一下自己的意见刚才也听了主要是这边听一下管理部门的意见你们再综合讨论一下我这边认为就是大家常说的一句话有简入奢易有奢入简单就是如果你一毕业就去参加了大公司大公司跟小公司它的资金是不一样的然后它运转起来也不一样一些设施也不一样比如说很正常一些事情就是大公司它配有很完美的设施餐厅条件还有这些茶水间呀大厅呀这些设备都比较好如果说你毕业你就进入大公司然后你适应了几年之后然后如果你觉得大公司没有发展空间当你在想回到小公司的时候你是很不适应的因为小公司它的一些设施根本就不完善比如说午餐它可能不给你报销然后车费不给你报销然后你就会有一种失落感一種差距在裡面你就感覺不舒服但是还有一个问题,就是说如果你从一开始,因为大学生嘛,就是象牙塔里长了这么多年,你突然进入大公司,大公司的层次是很严格的,然后它之间人际关系也是就是不像小公司那么的简单吧,所以说当你在这个很明显的一个等级之前的时候,你一个学生,刚毕业的学生,能不能很快地适应这个问题,所以说大家在考虑的时候,因为现在90后,往上长测就是一个四肢跳槽这是一个比较平
+[Text Detection] 在 530.15 秒检测到关键词 '娇娇',current_time: 510.00, 问题文本: 平凡的一个现象所以说如果你是选择是在大公司之间跳槽可能差距并没有那么大但是如果你在大小公司之间跳槽的话你的心理落差可能会对你的后续发展以及你这个以后的就业的方向都会有很大的影响你好 娇娇大学生就业选择大公司还是小公司各部门有哪些具体建议好 这边管理部刚才说了一下大公司的地方
+问题音频片段长度: 144384, dtype: float32, min: -0.099334716796875, max: 0.1480712890625
+问题音频时间长度: 9.024
+
+
+[Agent] 接收到问题: 就业选择大公司还是小公司各部门有哪些具体建议好这边管理部刚才说了一下这个
+, 1735104283.5605745
+
+
+[Agent] 最终接收到问题: 就业选择大公司还是小公司各部门有哪些具体建议好这边管理部刚才说了一下这个
+, 1735104283.5606833
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9192 seconds, One token time: 0.3064 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+根据你的语音信息，似乎是在讨论就业选择的问题，关于是去大公司还是小公司。对于这个问题，每个人可能有不同的看法。有些人认为大公司有更多的资源和机会，而有些人则更喜欢小公司的灵活性和亲密的工作环境。最终的选择应该取决于个人的职业目标、价值观和生活情况。至于各部门的具体建议，语音中并没有提供具体的信息，如果你需要这些建议，可能需要向相关部门或人士询问。
+talker 输出结束
+凡的一个现象所以说如果你是选择是在大公司之间跳槽可能差距并没有那么大但是如果你在大小公司之间跳槽的话你的心理落差可能会对你的后续发展以及你这个以后的就业的方向都会有很大的影响你好 娇娇大学生就业选择大公司还是小公司各部门有哪些具体建议好 这边管理部刚才说了一下大公司的地方还是找人代理的那些经验肯定和小公司那些经验是不一样的它有更大的规模然后可以见识到更多不一样的东西我觉得在我们这个年纪我们还更倾向于学生去大公司对 我更建议去打听一下对那我想问一下如果大公司它的人员工作比较复杂参杂的这些社会或者需要高情商的人来那你想什么时候去面对这个参杂的不是工作的,那你什么时候去啊?这个,这方面啊,我是属于让你们探讨一下,因为我这方面都有一点想法,我可以跟你们说一下。首先,小公司,如果你有什么不懂的,你可以及时问,他们可能会一些,就是叫哥呀,叫姐之类的,可能会帮助到你。这是其一。可能小公司的待遇,环境不是很好,但是也有它的优点大公司肯定也有他的利弊,大公司的利是什么呢,他的无险一金,养老保险肯定都会给你,还有一些大公司会提供一些住房公积金,这方面就会让你在社会上足以立足脚跟,这是大公司的优点,大公司的缺点就是什么,可能你去大公司工作,他们还会排斥你,如果你工作能力特别突出的话,你会不会把他们的饭碗抢掉,职位顶掉,或者如果他和你的关系不好,高层甚至上司他会不会为难你这些方面你会不会考虑如果你去公司他难道立马就会清囊交给你一些东西吗你问一些东西他可能故意刁难你会怎么办呢小公司你也会面临他就会清囊交给你吗难道你觉得社会上的小公司和国企央企竞争能力会更难吗但是我觉得这就需要你个人的一些人际关系方面但是你刚毕业出来你有那么多的社会阅历当毕业的大学生社会阅历会有多少吗是需要你这个人怎么不小心眼或者怎么和别人交流这是需要沟通的我觉得并不是说需要社会阅历但是你可以做到精神字号但是你能防范别人在背后给你使绊子吗别人对你使绊子你能够察觉到吗但是这个是每个不仅是公司了就是你人与人之间都会有这样的问题请不吝点赞 订阅 转发 打赏支持明镜与点点栏目我觉得可以先在小公司锻炼一下然后觉得自己这个时间成熟了再跳操一下大学生刚毕业主要是一个经验问题你不可能说毕业之后你找的第一家公司你就能工作十年二十年所以说你把眼光先放得短一点就是在你毕业的这个过渡期再一次将面对一到两年的工作期间,你想选择在大公司提高一下经验,还是在小公司做一下心理的过渡,支持一个不同的人可能会做出不同的选择。看就像刚才说的那些大公司和小公司的问题,和一个眼光的问题,就像小公司,小公司也有很多弊端,小公司的弊端就是,它的运营可能不完善,运营不完善,而且管理制度也不完善,然后业务也经常调整,可能人员他们部门之间也会互相的挑没有大公司那么完善但是如果你经历小公司这些弊端之后你已经面对过到大公司如果你出入社会就进入到大公司你就要经常在大公司如果说人员调配之间的属于人家部门领导去让当代大学生去调换你也没有办法左右如果是小公司的话你可以向上级提出你的意见说不定会审核一下大公司谁会管你这种个人情绪他只會管理一个公司的整体运营它会以团队协作为主它不会考虑到你的个人情绪因为你的能力没有那么突出以上你们有什么看法其实每个公司肯定都是有利有弊的举个比较现实的例子就比如说我上初中的时候两个兄弟班然后A班和B班B班的第一名考试永远考不过A班A班的第一名但是过了一年之后我拆班了两个班合到了一起之后B班的第一名突然就比A班的第一名强了是因为当他处于A班这个氛围这个环境中之后他会不自觉地跳出自己原来的舒适圈然后有了对比之后他才会更强他本身能力是有的但他处于B班这个比较低一层次的班级所以他永远赶超不过A班但当他进了A班之后他就会不自觉地把自己的能力进一步提高这个相对越来越多就是小公司和大公司的区别当你进了大公司之后你可以更好地发挥自己的实力但是另一个比较容易被忽略的问题就是说你在大公司里面所有人都比你能力强的时候你到底有没有出头之日就是说你能不能完全发挥自己的实力比如说大家常说的扫地僧就是少林寺里面比较一个低调但是他很有本事的一个人也就是说当你把自己放于一个扫地僧的位置的时候你真的可以有实力把自己的这个就是你有机会把自己的这个实力完全发出来 发展出来当然如果当你进了一个小公司大家说小公司为什么会小公司它的各方面都跟大公司有一个差别先不说资金问题就它人员问题它肯定没有大公司的人那个学历那么高见识那么广所以说当你个人能力还不错的时候你在小公司里面你就会是打尖的那一层你就会受到重重你就会不断地增强自己的见识然后不断地就是别人也找你帮忙然后上层领导也重用你在无形之间你就会发挥自己的价值你就会得到一种满足感从而更好的更好的往未来发展所以说不同的人不同的那个他在大公司和小公司里,可能他生存的感觉是不一样的。所以说我还是很强调利弊是肯定都有的,但是要根据个人情况来去选择。好,我再说一下我的看法。就比方说,你如果起步是大公司,但是你干到了毕业的时候都是二十多岁,你干到了快要四十岁的时候,你觉得实在是真的上升不上去了,你去跳槽到小公司你觉得是用小
+[Text Detection] 在 1016.17 秒检测到关键词 '娇娇',current_time: 990.00, 问题文本: 小公司还是大公司作为后边的后台就比方说如果刚毕业你去了小公司你去那里工作了到30多岁左右你去跳槽的大公司准备一个养老左右的一个就是规划可以规划自己生活可以去大公司养老但是小公司它做不到养老这方面因为小公司的未来发展你确定不了你们有什么看法你好 娇娇基于之前我们讨论的内容你提到大公司
+问题音频片段长度: 518987, dtype: float32, min: -0.20391082763671875, max: 0.2133331298828125
+问题音频时间长度: 32.4366875
+
+
+[Agent] 接收到问题: 至于之前我们讨论的内容,你提到大公司和小公司在员工发展和个人能力展现方面存在差异。那么对于刚毕业的大学生来说,如果他们选择先在小公司积累经验,然后再跳槽到大公司,这种职业路径对他们的长远发展会有哪些积极影响和潜在风险呢?需要大公司做
+, 1735104323.1465614
+
+
+[Agent] 最终接收到问题: 至于之前我们讨论的内容,你提到大公司和小公司在员工发展和个人能力展现方面存在差异。那么对于刚毕业的大学生来说,如果他们选择先在小公司积累经验,然后再跳槽到大公司,这种职业路径对他们的长远发展会有哪些积极影响和潜在风险呢?需要大公司做
+, 1735104323.146701
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4949 seconds, One token time: 0.1650 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：大公司 小公司 职业路径 发展 风险
+Token count: 38, Total time: 7.7326 seconds, One token time: 0.2035 seconds
+
+提取的关键词: ['大公司', '小公司', '职业路径', '发展', '风险']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+会议讨论了大学生就业时选择大公司还是小公司的问题。副校长提出可以从具体案例分析，如张思宏的经历，来帮助学生理解两者差异。大公司通常提供更好的福利（如五险一金），而小公司可能在初期能提供更融洽的工作环境和创业机会。选择应视个人职业规划和需求而定。大公司的稳定和发展机会与小公司的灵活性和成长潜力都是考量因素。
+Token count: 93, Total time: 18.1087 seconds, One token time: 0.1947 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：大公司 小公司 职业路径 发展 风险
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 不不吝点赞 订阅 转发 打赏支持明镜与点点栏目002我是校长026我是副校长02我是教育处027我是校长023我是自学处024我是市场014管理处行,好了,今天把各部门叫过来还有一个咱们这个就业指导会就业方面的一些问题这个这个谢谢大家就业是这个困扰很多大学生的一个问题所以今天咱们把各部门叫过来咱们就商讨一下这个问题关键在于咱们这个每个人对这个问题的一个看法现在由咱们这个副校长这边主持一下这个会好的刚才感谢校长的发言在本次会议的时候是就当代大学生就就业问题和去【大】公司好还是小公司好我可以先给大家举一个案例就像中国是大公司什么是小公司你这个明确的这个点你比我确定比方说像刚创业吧刚起步的创业公司吗他算大公司吗那也取决于他的规模呀如果他的规模特别大资金特别少他算大公司还是小公司所以现在就是在问一点好这方面交付处这方面有疑问先保留让我来讲以下案例因为他听完案例他自然就会懂就比方说一个中国一个亚马逊的一个副总裁张思宏他是从麦当劳的实习生开始就属于一种出去找工作可能和自己的专业不对口之类的学习收银制作薯条后来又跳槽到可口可乐公司到包装的员工然后他在2012年的时候又跳到了亚马逊他觉得需要自己创业从一个小规模的私营企业乐视公司开始盈利但是五个多月后他又离职然后他回到了亚马逊去找了一份相对来规模较大的公司属于亚马逊当地的公司虽然起步很低然后也没什么专业性还是属于一种餐饮的公司但是他觉得在这个大公司的发展和小公司的发展是有很大的区别的相对于大公司的像一些五险一金之类的东西或者一些社保医保可能都会给交小公司可能相对于工资待遇或者员工之间的关系比较融洽一起属于创业阶段这个两个大公司小公司是就当代大学生如果他们出去创业的话从小公司起步没有足够的资金是去大公司好还是小公司好如果去大公司的话没有任何提升空间或者是大公司和他的专业不对口这个因为很多这个学生都来找咱们老师去去找这个请教这个问题对所以刚才这个副校长这边把这个问题抛在那个会上所以大家对这个问题都怎么看咱们副校长说的这个,可以说一下你对这个事件的一个看法吗?我对这个事件的看法,就先说一下弊端吧,像一些大公司之
+会议讨论了大学生就业时选择大公司还是小公司的问题。副校长提出可以从具体案例分析，如张思宏的经历，来帮助学生理解两者差异。大公司通常提供更好的福利（如五险一金），而小公司可能在初期能提供更融洽的工作环境和创业机会。选择应视个人职业规划和需求而定。大公司的稳定和发展机会与小公司的灵活性和成长潜力都是考量因素。
+reasoner 输出结束
+公司还是大公司作为后边的后台就比方说如果刚毕业你去了小公司你去那里工作了到30多岁左右你去跳槽的大公司准备一个养老左右的一个就是规划可以规划自己生活可以去大公司养老但是小公司它做不到养老这方面因为小公司的未来发展你确定不了你们有什么看法你好 娇娇基于之前我们讨论的内容你提到大公司你的父母也没有退休可以自己过活所以说在你就是在一到两年的这个处于一个过渡期的时候你是完全可以追求自己想做的事情如果你过了三十岁以后一切都稳定下来之后你必须要保证自己未来退休之后的生活以及你孩子的那个学费等问题所以这个时候你是没有选择的所以说你放开一切就是你个人自由不担心花销这个方面就光是那个个人提升经验问题你是觉得大公司好一点还是小公司不用考虑那么多工资的问题因为不光你在大公司还是小公司然后就你个人花销而言都是完全够的所以说你就是想个人经历提高一点然后未来发展方向能更好能更稳定还是说你想舒舒服服的先把这个过渡期度过然后再慢慢地看未来管理部门这边给出了他自己的看法市场部和资讯部这边有什么看法感谢观看我才堅持大公司之類的對 因為我剛才就是聽到管理部門說的意見之後我覺得其實真的就是大學生畢業之後在20歲到30歲期間真的沒有什麼壓力所以在這段時間我覺得就是應該選擇想要去挑戰的事情你說你剛出來你就去一個小公司裡面競爭不會很激烈然後你的提升也不會很快還不如你去大公司先見識一下那些管理还有那些各种模式都熟悉都清楚以后等到你有了足够的阅历和资本然后你可以再试试选择跳槽并不是说在大公司你没有发展的余地了你就还要一直在那里我觉得可以先把小公司当做这个以后的那个发展背景好 咨询部这边的意见总结来说就是没有成功就不算失败就属于这种就是属于当在大学上敢拼嘛方面的精神那这边市场部有什么意见我觉得刚刚说的想以后把什么作为养老我觉得大学生刚出来是没有什么压力但是如果是我的话我要考虑去哪个公司我肯定要考虑这个公司的对首先就考虑的是这个问题所以相对来说大公司这方面肯定是条件各方面都比较好的为什么有一个好的条件在我面前我要去选一个小公司所以我觉得在我这个各方面都可以的情况下我肯定会选择去尝试一下挑战一下然后之后对之后这种养老什么的情况我觉得我有一定的资本之后我是不会选择继续在工作的我可以自己创业自己做一点别的事情这是我以后的一个想法市场部发表了意见,这边是属于女生的观点,这边教务教学部有什么想法吗?因为咱们属于男性嘛,男性以后肯定要面临房贷啊,车贷啊,之类的这方面的压力,他会怎么选择?你学的管理专业你到大公司你管理不上轮不到你管理就等你学这个技能那你又用不上不是说学了管理就要去管理我说学的技能是什么意思我说他学的这个技能他去不了他只能说一看别人但是对啊你现在小公司的话你可以无论熟练自己的技能或者你小公司你有有管理的经验你有做高层的经验那小公司的经验那边有大公司的经验对吧但是你小公司的经验是你实操得来的是你自己的你大部分看了再多的今天那是别人做的我只要先看了之后才能操作我不能还没没有看我就去操作那我可能什么都不会实现是检验真理的唯一标准那之前不得有了解了解才能实现吗在实现在做这是一个反复的过程你什么都不知道不存在说你这就属于先有亲爱的心要当的问题对不对要一样的我想我想插一下嘴就是你你刚刚说的是在大公司你学了这个专业,但是你不会从事这个专业的一些东西不光是这个专业,我是以为你过了这个专业你说,不管你有什么本事,你说大公司基本上就是整理文件,端插到手能端插到手,也就不赖了,你来说还整理文件更多一点好,这次大公司很现实的一个问题,就是你刚毕业到那儿之后,你基本上是无始可措的对啊因为大公司运营这么多年,它的系统已经很完善了它其实并不缺你这一个人只是为后续的扩展需要再进行你才招纳人而已所以说你刚到这儿之后你的信息流量可能是很大的你在你专业里比如说你年年专业第一你年年拿奖学金到了大公司发现之后所有项目都不让你接手然后给你一个机会之后你发现什么都不会做然后他说然后你就是上次问你的时候你说我没有实践我说那你大学这几年就白学了吗因为你学习和实践肯定是有差距但是到了大公司之后他不给你实践的机会但是他又不认可你在大学里取得表面的成绩这是一个很薄的油还有这个积少承多的问题就就业肯定刚才也说了教学部这边他肯定跟学生打交道特别多属于教学老师管理这方面教学从小做到大怎么样从小做到大他们这边教学生也得是从小做到大你不能像像小公司大公司你教学生也一样就像大國就相当于扔给你一套书让你自己学你可能看不懂小公司是什么可能老师在你旁边给你讲解可能属于这种但是当然讲解的也有不细的但是至少他在给你讲可能他在把一些他想要的人生阅历啊你说一下这方面小公司会更那个能让你有更多的实践的机会但是你去大公司的话你可能真的就是连对他倒数的机会都没有没错对他倒数都轮不着你必须是,我个人觉得就是你在小公司充分得到发挥的学习吧,得到充分的实践。你有一定的工作经验以后,你再去大公司。那才有可能能够掌控到大公司。但是说了这么多,那你们觉得应该怎么去指导这个学生就业呢?我觉得还是让学生的眼光刚毕业的学生眼光现在时间放低一下咱们还是说现实一点不要套高误原这个其实还是要根据个人能力分比如说一个人他很积极商业他的性格就是比较争强好胜这种他在大公司其实也可以走得开然后他人际关系这方面也是比较好的话他在大公司其实还是有潜力的你把他放到小公司可能就是有点限制但是对于那种个人能力但
+[Text Detection] 在 1553.81 秒检测到关键词 '娇娇',current_time: 1530.00, 问题文本: 但是他个人是有点闷闷的那种人他如果到了大公司他绝对是被打压的那一批所以把他放到这种小公司对他来说是一种好事所以咱们还是要最重点是具体问他具体分析根据个人能力个人理想以及他的性格方面让他更好的选择方向只明了一条方向让所有人去搜这是肯定不行的你好 娇娇大学生就夜莺手选大公司还是小公司你怎么看咱们教学部门只能给学生
+问题音频片段长度: 121686, dtype: float32, min: -0.100341796875, max: 0.1395263671875
+问题音频时间长度: 7.605375
+
+
+[Agent] 接收到问题: 大公司还是小公司你怎么看咱们教学部门只能给学生推荐
+, 1735104386.6040177
+
+
+[Agent] 最终接收到问题: 大公司还是小公司你怎么看咱们教学部门只能给学生推荐
+, 1735104386.604138
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4846 seconds, One token time: 0.1615 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 79, Total time: 3.1040 seconds, One token time: 0.0393 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在选择公司是大公司还是小公司时，应考虑个人的职业发展、工作环境和福利待遇等多个方面因素。同时，每个公司都有其优势和劣势，没有绝对的好与坏。教学部分只能为学生推荐，说明该公司的教育或培训服务可能更专注于学生个体的需求。
+talker 输出结束
+是他个人是有点闷闷的那种人他如果到了大公司他绝对是被打压的那一批所以把他放到这种小公司对他来说是一种好事所以咱们还是要最重点是具体问他具体分析根据个人能力个人理想以及他的性格方面让他更好的选择方向只明了一条方向让所有人去搜这是肯定不行的你好 娇娇大学生就夜莺手选大公司还是小公司你怎么看咱们教学部门只能给学生大公司如果会为了某一个利益将你这个人排挤掉,就像那种温温的人去大公司,不好说话,但是你又占着一个他想要的岗位,他就想想办法就快被你挤掉,所以去大公司这方面可以根据学生的能力让他们自己去选择,但是小公司的弊端就是什么,他可能不会给你交五险一金,他可能薪资待遇,你可能会后边提升上来,但是前面的西斯肯定不是让你很满意还有就是专业对口如果你执意要去大公司的话你的专业不对口也没有什么上升空间所以对这个专业对口这方面各位老师有什么发表意见就比方说毕业以后找了一份不属于你专业对口的工作你是要执意找一份的还是怎么说就现在来说你想找一个专业对口的这个不好找太少了请不吝点赞 订阅 转发 打赏支持明镜与点点栏目很少有专业对口尤其说你要是去大公司你还想专业对口那真的基本上没啥除非你学的是前台接待也不要这么悲观你又是学个企业管理上大公司真管不上对不对那市场咨询这方面呢我觉得这个考虑的话有看个人的意愿吧如果你这个专业肯定你学的专业首先是你最感兴趣的这个之外然后你或许对别的也会有一些兴趣我会首先考虑这样的工作对 但是肯定也会结合实际情况你不是说我学什么我出去一定要做什么对不会有那么多合适的职位等着自己所以适时需要挑战的时候也会说不用选择非要去对口好 就属于那种对口那也可以就是通过自己的努力对 还是看自身本人的性格本人的意愿本人的想法那有什么好的建议吗各位部门就是属于这种如果咱们以教学方式教给学生的话怎么样去引导他们因为是老师嘛肯定要引导学生啊如果这个学生执意要这么做咱们要怎么改善呢我觉得像刚刚那个部门说一定要先跟刚毕业的大学生说好咱们这个现实的情况不能让他们太好高骛远了这是很多大学生刚毕业都有的一个心理然后必须得告诉他们社会就是这么的现实去大公司也是面临很多的一些问题所以想一出去就有一个好的工作然后高的薪资这是不太可能的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目专业方面也是这样做什么工作也是不可以你学这个计算机的你想出去就是一个编一个软件然后大家都爱用的他这个软件这个是不可能一下就完成的所以这个大学生肯定是心理心理上他会有一个很理想化的一个想法我们一定要作为老师我们的目的是引导他们告诉他们以后这些情况让他们有更多的选择。这方面找工作也得看他们自己个人意愿,就说现在就业吧,大学生都知道现在找工作很难找,更别提找对口的工作,除非学历或者能力到达一定的高度,他才可能找到对口的专业。对于找工作这方面,老师们有什么对学生,就是给他们减压之类的心理指导,他们万一就认为就憋了夜现在就真的是无所事事怎么办呢各部门发表一下意见来教育部开始我觉得还是分具体情况分具体分析吧每个学生跟每个学生他的追求不一样咱们说现实一点有的学生就是家庭条件好家庭条件就是好或者说父母给他安排工作的我们可以不用过多的这个建议他们自己有自己的想法但是像那种就是希望自己从事的专业从事的工作就是自己对口的专业的话咱们就可以多给他们一些建议可能去某些公司啊或者说哪个单位他们可能薪资待遇不是很好但是慢慢会往上升但是是跟自己的专业是挂钩的对说了这么多这就是需要一个过程请不吝点赞 订阅 转发 打赏支持明镜与点点栏目刚才说了很多就是,刚才说这个有些学类专业跟自己干的工作是不一样的,尽量还是建议一些大学生,你学这个专业就先去尝试一下这个工作,然后根据自己的一个工作情况再去做决定。那今天下去以后,把这个会上的内容,不要让这边总结一下。好的,然后给学生,咱们把学生召集过来,然后开一个这个会。这边你来公开一下下次。那咱们本次会议就先到此结束,散会。
+[Audio Detection] 在 1994.20 秒检测到关键词 '好交交'。
+detection_time: 1994.20, current_time: 1980.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.12823486328125, max: 0.1375732421875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于大学生就业选择的问题你觉得我们应该如何引导学生正确认识专业对口与非对口公司
+, 1735104415.0630434
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于大学生就业选择的问题你觉得我们应该如何引导学生正确认识专业对口与非对口工作的差异并帮助他们根据自身能力兴趣和性格做出更合理的职业规划呢
+, 1735104416.542124
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4864 seconds, One token time: 0.1621 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 57, Total time: 1.8764 seconds, One token time: 0.0329 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+首先，我们需要提供充分的信息和资源，让学生了解不同专业和工作的详细信息，包括就业前景、薪资待遇、工作内容等。其次，我们可以通过举办职业讲座、研讨会等活动，邀请行业内的专家和成功人士分享他们的经验和见解，帮助学生更好地理解和认识不同职业的特点和发展趋势。此外，我们也应该鼓励学生进行实习或志愿者活动，让他们亲身体验不同职业的工作环境和要求，以便做出更符合自己能力和兴趣的职业选择。最后，我们应该提供个性化的职业咨询和支持，帮助他们解决职业规划中遇到的问题和挑战。
+talker 输出结束
+
+会议数据处理完成。

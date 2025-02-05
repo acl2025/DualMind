@@ -1,0 +1,251 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200623_S_R001S03C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 75
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.20s/it]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.13it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.43s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.30s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.14s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.13s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.77s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.97s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.77s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.72s/it]
+我3302我是总经理009呃我是运营615我是盛浩612我是策划嗯行好的今天把各位叫过来我们开一个阅读这个总结会议这边我想要问大家的一些问题这个运营这一块目前咱们合作的商家有啥钱呢咱们是有多少钱呢咱们合作的商家是主要搞一些服装的那些商家主要啊对带什么类服装吧,还有一些致命品的,什么品牌的有耐克的,有阿迪的咱也有合作还有就是李宁的国内国外都有是吧对主要还有一些推广还有那种巴黎时装秀的上面那些服装进行一个高端的定制对,咱们也是分阶层的吧有平民的,当然有平民的,平民售价的也有专门之类的一些富人的一些高端的,也可以进行定制还有就是还有就是还有一些电子商品咱们也是有一些合作像联想啊华为啊苹果都是有一些合作的还有就是随着信息技术的出飞猛进咱们的一些咱们的公司嘛也应该跟随时代嘛然后进行一些改革嘛在运营方面咱们还要运营方面还要解决一些就是比如说物流方面的物流方面的影响,咱们的物流还是比较落后吧,应该大力发展一下,然后应该跟更多的优秀的企业合作。行 那咱们这个目前策划这个厂家的活动有哪些呢价格要填充 价格是可以再压价格方面我们觉得没必要太压低了我们现在是搞活动的话准备请几个网红在抖音啦快手啦然后微视啦准备做些直播然后来提高一下我们这个店上的知名度然后除了在淘宝之外京东之外都有我们的经销项目还有一些去头条回头条上都会做我们的广告帮我们宣传这样的话我们的电子产品和服装都能够有所销售还有一些微商在微信上也做这个这样的话但是我们的价格的活动力度可以增大因为只要他们看到我们这个时候搞活动就是说能够加入进来然后我们这做直播你现在买我们的东西本来是该100的上面这时候拿就是60我只是做了个比喻就是说这样这个股主就被我们带来了去买了网红的例如应该是就是没运用的然后在这个窗上他们是多劳多得卖的东西越多他们的提成也就会越多京东和淘宝上他们是因为这个都是跟快递公司所合作的所以说这个价格的话几乎是嗯利润很低了就行了,没必要再往下压了。对。暂时就是这样。行。那行,目前咱们这个收入这方面有什么,上个月咱们这个收入的一些问题,这方面有什么总结呢?最主要就是商品的退换了。那是什么那是吃饭有时一不服啊对这这这咱这个咱这个吃饭都是一种标准的吗还可以吧标准是可以的但是就是买东西的那些人吧他提供的那些就是在那些淘宝他们给我们提供的身高啊体重啊什么的我们客户还问他标注的有一些不真实然后穿上感觉有点微胖啊什么的我们就需要跟他换一下货这个可以跟他们说我们的尺码是标准的对不对我们你所要的达乌洋说你买的这双鞋我们42的就是42的跟你尺子你脚炮长短是一样的但是你脚炮那就没办法了你应该就是你穿43的才合适对不对不是我们的炮做的不好是你的这个脚炮所以你只适合我们这个鞋的43而你不适合我们的是这样给他们说不可能就说是我们个人的原因对吧但是咱们也要讲一些退换对吧退换这方面都是怎么解决的退换退换的话看那买的是是否是有买那个运费险什么的买运费险的话是我们需要承担运费的要是没买运费钱的话需要按自己来承担这个运费还有一个就是那个装饰品的钮扣啊拉链脱落损坏什么的这些都应该不是我们的责任是它这个都是有那种磨损损坏什么的这是正常的这个是我们不需要承担可以可以让商机生产上还有一些是我们不用承担退换什么的比如说因为它保养烫啊什么的就是运衣服引起了问题我是
+[Audio Detection] 在 528.66 秒检测到关键词 '好交交'。
+detection_time: 528.66, current_time: 522.00
+问题音频片段长度: 134315, dtype: float32, min: -0.201568603515625, max: 0.161712646484375
+问题音频时间长度: 8.3946875
+
+
+[Agent] 接收到问题: 合作商家有哪些价格和活动力度是否需要调整
+, 1735622877.9843104
+
+
+[Agent] 最终接收到问题: 合作商家有哪些价格和活动力度是否需要调整
+, 1735622877.9845629
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+很抱歉，由于您没有提供更多的上下文信息，我无法准确回答您的问题。如果您能提供更多详细信息，我会尽力帮助您。
+talker 输出结束
+然后实际拍一些照片什么的直接更新还有可以根据大家的需求来满足他们的要求拍一些照片什么的图片更新咱们要做到及时还有一些产品图片咱们要设计的要求谢谢大家没关系,但是要切合一些的这个图片,不能太浮夸了是吧?是,这个有点厉害嗯,行那目前咱们这个下个月要进行一个直播的商品的买卸呢?这个有什么活动,并领这一行?并,那下个月咱们要进行直播的商品的买卸呢?主要呢就是,鞋这一行咱们这次主要针对的呢就是男性男性对然后大部分的男生就是青年男性大部分的男生是喜欢球鞋然后咱们就跟耐克进行了一个合作对就像耐克跟NBA的一些球星合作的球鞋嘛像欧文嘛还有现在已经没有了科比,还有詹姆斯那种鞋都可以拿出来去直播推一下就是有一些像咱们这次推出的货呢有平价的,也有高档次的,像AJ啊还有一些我觉得呢还有一些像它更高端的一些就是定制的定制的更高的一些定制的鞋咱们也可以适量的推出一些毕竟也是有少部分客户咱们也是尽量去满足的那在目前针对这些鞋啊销售有什么活动吗目前怎么办活动嘛就是咱们可以呃就是价格这方面应该是呃不不可以压低的咱们可以增一些消费券这些消费券呢是目前厂商这边有什么厂商这边厂商一边看你拿数量如果拿数量够多的话它的优惠还是比较大的策划 策划咱们这个厂商有咱们虚度一下准备自己的活动我这边准备请这个追风男孩三十五他们比较运力比较大然后呢搞一个现场的签名销售活动这样的话我们就是也不够很低因为我们的广告投入在这方面已经很高了只要你们来然后我们的所买的东西包括鞋衣服都需要签名的这样的话给我们的销售也能带来一部分然后给我们的那个知名度也能够打起来然后不同年龄段的同桩我们请有当地的形象好的小孩平常好的小孩女孩男孩来穿上我们的衣服鞋然后来一个市场秀就可以了然后另外的话我们找一些野魔这样的话我们搞好费用投入的话会稍小一点让他们穿上我们的衣服来走一下台这样的话我们搞好费用投入的少然后得到的那个效果还是很不错的谢谢我们要想要把这个工资搞好本月哪些商品的销量比较低呢?销量的话就是,本月的话就是一些长裤还有就是一些需要换季的那些鞋子嘛也是以后的销量比较低还有就是那些长袖、挂子咱们可以搞一些塑胶活动把这些不能压仓的把这些货低价的甩出去保证咱们不亏本的情况下尽量的清理一下货存吧目前目前搜索排名在同行业当中我们现在能够排在前三位大部分的都是我们的服装和鞋类电子产品7次吧然后手机华为排行第一现在苹果虽然是国外品牌他也是解释小量也是很不错的毕竟现在苹果也出了一些低端机价格也在三四千左右不是很昂贵所以老百姓还是可以接受还有就是咱们这个刚才也说了搞一些活动是吧对那是否可以邀约一些特殊的艺人来提高这方面的流量呢?我觉得哪些样的明星比较好的?都可以说这个从咱上后这边说吧我觉得吧可以是可以请一些流量明星的但是一些大牌的大半就一些老明星可能不屑也干这种事就是可能他的道士界的话比较端正然后一些流量明星应该是可以然后让他们通过直播带货的方式呢进行销售而且通过他们的流量呢这应该是可以很好的带动这个气氛氛围的嗯,行,稍后这边有什么想法?我们可以,请一些明星拍照片,拍一些照片什么的,写真啊什么的,然后即时更新一下照片,然后带动我们产品的销售。这方面你觉得请什么样的明星比较好?
+[Audio Detection] 在 1071.39 秒检测到关键词 '好交交'。
+detection_time: 1071.39, current_time: 1044.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.2174072265625, max: 0.20599365234375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于下个月直播的商品我们有哪些具体的计划针对男性球鞋我们与耐克合作推出了
+, 1735622905.0848079
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于下个月直播的商品我们有哪些具体的计划针对男性球鞋我们与耐克合作推出了哪些款式同时针对销量较低的长裤和换季鞋子我们计划采取哪些促销活动来清理库存呢我们想请一凤男孩作为我们的服装专门开演员然后我们的广告到片尔朗视
+, 1735622907.2583654
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：男性球鞋 耐克合作 款式 清理库存 促销活动 一凤男孩 服装专门开演员 广告
+
+
+提取的关键词: ['男性球鞋', '耐克合作', '款式', '清理库存', '促销活动', '一凤男孩', '服装专门开演员', '广告']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:261: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+
+Token count: 119, Total time: 46.7181 seconds, One token time: 0.3926 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：男性', '球', '鞋', ' ', '耐', '克', '合作', ' ', '款', '式', ' ', '清', '理', '库存', ' ', '促销', '活动', ' ', '一', '凤', '男孩', ' ', '服装', '专门', '开', '演员', ' ', '广', '告', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 那是什么那是吃饭有时一不服啊对这这这咱这个咱这个吃饭都是一种标准的吗还可以吧标准是可以的但是就是买东西的那些人吧他提供的那些就是在那些淘宝他们给我们提供的身高啊体重啊什么的我们客户还问他标注的有一些不真实然后穿上感觉有点微胖啊什么的我们就需要跟他换一下货这个可以跟他们说我们的尺码是标准的对不对我们你所要的达乌洋说你买的这双鞋我们42的就是42的跟你尺子你脚炮长短是一样的但是你脚炮那就没办法了你应该就是你穿43的才合适对不对不是我们的炮做的不好是你的这个脚炮所以你只适合我们这个鞋的43而你不适合我们的是这样给他们说不可能就说是我们个人的原因对吧但是咱们也要讲一些退换对吧退换这方面都是怎么解决的退换退换的话看那买的是是否是有买那个运费险什么的买运费险的话是我们需要承担运费的要是没买运费钱的话需要按自己来承担这个运费还有一个就是那个装饰品的钮扣啊拉链脱落损坏什么的这些都应该不是我们的责任是它这个都是有那种磨损损坏什么的这是正常的这个是我们不需要承担可以可以让商机生产上还有一些是我们不用承担退换什么的比如说因为它保养烫啊什么的就是运衣服引起了问题我是合作商家有哪些价格和活动力度是否需要调整然后实际拍一些照片什么的直接更新还有可以根据大家的需求来满足他们的要求拍一些照片什么的图片更新咱们要做到及时还有一些产品图片咱们要设计的要求谢谢大家没关系,但是要切合一些的这个图片,不能太浮夸了是吧?是,这个有点厉害嗯,行那目前咱们这个下个月要进行一个直播的商品的买卸呢?这个有什么活动,并领这一行?并,那下个月咱们要进行直播的商品的买卸呢?主要呢就是,鞋这一行咱们这次主要针对的呢就是男性男性对然后大部分的男生就是青年男性大部分的男生是喜欢球鞋然后咱们就跟耐克进行了一个合作对就像耐克跟NBA的一些球星合作的球鞋嘛像欧文嘛还有现在已经没有了科比,还有詹姆斯那种鞋都可以拿出来去直播推一下就是有一些像咱们这次推出的货呢有平价的,也有高档次的,像AJ啊还有一些我觉得呢还有一些像它更高端的一些就是定制的定制的更高的一些定制的鞋咱们也可以适量的推出一些毕竟也了。\n ###agent根据会议片段的输出开始：###\n此次会议主要讨论了商品退货换货流程、图片更新以及下月的直播商品推广计划。对于退货换货，若顾客购买时附带运费险，则由公司承担运费；否则需顾客自行承担。如果是因磨损或自然损坏导致的问题，公司则无需承担责任。关于直播商品促销活动，将重点推广男鞋系列，尤其是与NBA球星合作款式的耐克球鞋，包括欧文、科比及詹姆斯等球星签名鞋，并且会推出一些平价和高档款式，如AJ系列及定制高端鞋子。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 那是什么那是吃饭有时一不服啊对这这这咱这个咱这个吃饭都是一种标准的吗还可以吧标准是可以的但是就是买东西的那些人吧他提供的那些就是在那些淘宝他们给我们提供的身高啊体重啊什么的我们客户还问他标注的有一些不真实然后穿上感觉有点微胖啊什么的我们就需要跟他换一下货这个可以跟他们说我们的尺码是标准的对不对我们你所要的达乌洋说你买的这双鞋我们42的就是42的跟你尺子你脚炮长短是一样的但是你脚炮那就没办法了你应该就是你穿43的才合适对不对不是我们的炮做的不好是你的这个脚炮所以你只适合我们这个鞋的43而你不适合我们的是这样给他们说不可能就说是我们个人的原因对吧但是咱们也要讲一些退换对吧退换这方面都是怎么解决的退换退换的话看那买的是是否是有买那个运费险什么的买运费险的话是我们需要承担运费的要是没买运费钱的话需要按自己来承担这个运费还有一个就是那个装饰品的钮扣啊拉链脱落损坏什么的这些都应该不是我们的责任是它这个都是有那种磨损损坏什么的这是正常的这个是我们不需要承担可以可以让商机生产上还有一些是我们不用承担退换什么的比如说因为它保养烫啊什么的就是运衣服引起了问题我是合作商家有哪些价格和活动力度是否需要调整然后实际拍一些照片什么的直接更新还有可以根据大家的需求来满足他们的要求拍一些照片什么的图片更新咱们要做到及时还有一些产品图片咱们要设计的要求谢谢大家没关系,但是要切合一些的这个图片,不能太浮夸了是吧?是,这个有点厉害嗯,行那目前咱们这个下个月要进行一个直播的商品的买卸呢?这个有什么活动,并领这一行?并,那下个月咱们要进行直播的商品的买卸呢?主要呢就是,鞋这一行咱们这次主要针对的呢就是男性男性对然后大部分的男生就是青年男性大部分的男生是喜欢球鞋然后咱们就跟耐克进行了一个合作对就像耐克跟NBA的一些球星合作的球鞋嘛像欧文嘛还有现在已经没有了科比,还有詹姆斯那种鞋都可以拿出来去直播推一下就是有一些像咱们这次推出的货呢有平价的,也有高档次的,像AJ啊还有一些我觉得呢还有一些像它更高端的一些就是定制的定制的更高的一些定制的鞋咱们也可以适量的推出一些毕竟也了。
+ ###agent根据会议片段的输出开始：###
+此次会议主要讨论了商品退货换货流程、图片更新以及下月的直播商品推广计划。对于退货换货，若顾客购买时附带运费险，则由公司承担运费；否则需顾客自行承担。如果是因磨损或自然损坏导致的问题，公司则无需承担责任。关于直播商品促销活动，将重点推广男鞋系列，尤其是与NBA球星合作款式的耐克球鞋，包括欧文、科比及詹姆斯等球星签名鞋，并且会推出一些平价和高档款式，如AJ系列及定制高端鞋子。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+追逢男孩作为我们的服装专门开源人然后我们的广告照片视频全部都有追逢男孩三人组来给我们当伙伴宣传他们在提升流量方面他们这个市场大吗当然了他们现在属于是最红了最红了那这个成本问题呢成本问题在这上面我们做一次广告的投入就可以了然后因为他们这个年龄段正好是十七八岁他们也就是符合了小鲜肉然后小孩们也崇拜他们岁数大点的也在跟他们搞接近包括好多明星特别愿意跟他们做合作这样的话我们他们粉丝也对,他们的粉丝团也比较多因为他们的粉丝,包括小孩他们年龄段比较大所以我觉得我们高额投入给他们让他们做我们的代言人是很有必要的可以说我们跟他们合作了就没必要代表别的明星,别的网红给我们做的就是我觉得如果他们过气了怎么办考虑到了不可能就说他们永远是代言我们的品牌大概就是说一年两年我们需要更换一下这两年我们的搞不好费用说白了我们已经赚得很满了那么后期来我们再找另外的一个女明星了知名点的是吧这样的话我们一直在调换这样不会让观众们看的就是眼睛疲劳了发累了对因为他们有一定数量的这些粉丝可以促进咱们这个销售行吧还有就是目前咱们这个要减少一些这个成本这样的这个营销这方面的一些费用所以咱要拉一些在贊助方面,各位有什麼建議呢?我建議吧,就是應該找一些劇組啊,讓他們進行合作,讓他們這樣佈局,提到了宣傳的作用,也有投資的一部分吧。我是这样想的,因为我们跟京东了,淘宝了,还有快手了,抖音了都有合作,所以说他们商品他们要来我们这里卖,加盟,他们加盟我们,我们就收取一定的加盟费,而且这个加盟费也是不低的,我们可以向他保证,你的东西我们可以用做直播来销售,而且我们在淘宝上,京东上也都有旁边的销售,我们只要加盟我们,我们保证你就能够卖得好所以说我们这个加工费用是很昂贵的因为我们有追风男孩啊还有后期的知名大女明星来给我们代言对吧我们牌子不是单一的所以说你来我们这里看我们店呢穿穿衣步行鞋谢谢手机电子都可以挑对吧对所以我们面临的我们面临的东西很固对吧我们面临的老百姓就是从小到大的很多很广阔的是吧包括小到两三岁大到七八十岁衣服都能在我们这里挑出来手机嘛一个人都有每人都有你只要加盟我们,绝对你能够卖火。我的观点就是这样。行,那上后这边。我这边的话,对于赞助有什么好的想法,建议?可以跟一些大型的公司合作。然后让他们给我们赞助因为我们这什么平台都有我们销量也挺好的然后跟他们合作就是不仅我们可以找别人做广告让别人也可以找我们做广告对吧然后我们可以在服装上做一些广告还有一些电子商品都可以在封面上进行一些营销我们也可以通过给别人做广告的方式来赚取广告费目前咱们说了这么多然后运营这一块要去多跑几家行吧嗯 好的然后根据咱们这个公司整体的一个情况然后来去选择一些赞助商好的还有就是咱们这个是否可以开展几个线下的店铺策划这边可以,线下跟线上可以同步运行线下我们选择几个大型大版本的城市来有直营店然后我们的新型服装我们是线下跟线上同日发售这样的话我们价格统一,同一天销售做到你不愿意在网上买的话你可以在我们的直营店价格是一样的东西是一样的保证质量然后价格一样来我们直营店的话你可以穿戴试一下这样的话也会更方便给那个顾客没必要到时候比如说我们来网上买的东西不合适了进行兑换了我们直营店的话你就来这里试一下合适的你再买这样的话也能增加一下请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+[Audio Detection] 在 1541.14 秒检测到关键词 '好交交'。
+detection_time: 1541.14, current_time: 1537.00
+问题音频片段长度: 99499, dtype: float32, min: -0.21185302734375, max: 0.24359130859375
+问题音频时间长度: 6.2186875
+
+
+[Agent] 接收到问题: 请明星代言如何平衡成本与效果
+, 1735622999.0605142
+
+
+[Agent] 最终接收到问题: 请明星代言如何平衡成本与效果
+, 1735622999.0606434
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 27, Total time: 1.4800 seconds, One token time: 0.0548 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+雇佣明星代言需要平衡成本和效果，这可以通过以下几个方面来实现：
+
+1. 明确目标受众：了解目标受众的喜好和消费习惯，选择与产品或服务相关度高的明星进行代言。
+
+2. 制定预算：明确代言人的费用范围，并考虑其他相关费用如广告制作、宣传推广等，确保整个代言项目在可接受的成本范围内。
+
+3. 确定代言期限：根据产品或服务的生命周期和市场变化情况，合理确定代言期限，避免过早结束或过长的合同。
+
+4. 评估效果：通过数据分析和市场反馈等方式，定期评估代言的效果，以便及时调整营销策略。
+
+5. 选择合适的代言方式：除了传统的电视广告代言外，还可以选择网络代言、社交媒体代言等多种形式，以达到更广泛的覆盖和更高的效果。
+
+综上所述，雇佣明星代言需要全面考虑各种因素，以实现最佳的成本效益比。
+talker 输出结束
+在我们本店试穿然后他们能得到很好的体验感对那咱们这个面对的观点我觉得吧看一看,十几店是一个品牌走向更高端的一个阶级吧所以说,如果我们要打造的更高端,更时尚的品牌的话,那十几店是必不可少的从十几店的装修啊,环境啊,服务态度啊,上面来看更能体现出一个品牌来的优秀所以我认为开展实体店如果想要走向很高端开展实体店是很必要的必要是有这个必要的是吧对咱目前咱们在实体店方面咱们没有这个经验所以说咱们可以勾请一些这个我说了没有就是线上线下同时进行有的人呢他就是愿意在线上买他不愿意出门所以说呢我们线上就可以只要你知道我报给我们你的身高三媒体重我们就能够让你挑选到你合适的衣服合适的鞋然后实体链呢就是有些人他愿意转他愿意来这儿来试一下他不相信他觉得怕在网上买的东西请不吝点赞 订阅 转发 打赏支持明镜与点点栏目但是实体店要卖的东西肯定要贵实体店,我觉得实体店因为它有成本,装修的费用,租金费用,水电费用,人工费用,都在当中所以说,前期我们线上线下发行的这个东西,我们可以线上线下价钱一样这样的话它就会在线上卖也有可能有近附近的可以去实体店但是后期以后就是实体店的衣服要高于线上但是也不能高得很多或者就是后期我们搞一些实体店线上销售的跟实体店没有同样的款式实体店只有体验效果比较好对实体店就是高于线上的它就是有一个试穿能够找一件我自己合适的所以说它的价格就高于线上我们实体店要经营一些线上买不到的实体店基本上就是一些高端产品吧对,高端产品因为高端产品在网上的话,人们不能切身去感受的现在网上是买不到我们实体店的因为我们为了打知名度所以说我们是线上线下同时销售机款然后他们都知道我们现在线上线下都有但是一旦你了解我们知道我们的话你就想买到更好的所以说你只能在我们的实体店定制然后买到更好的你穿着合适的就只有在我们线下实体店就是相当于一个体验对,因为华山也是一间店也有的顾客可能他会在我们的实体店里面穿戴试一下对,还要问他,然后呢他觉得昂贵,然后他去网上买这个尺码了这样也不是没有,也肯定会有存在这个方面我也要考虑到咱们就要让咱们这个电商和那个实体店想结合起来我们公司对他的发展会更好战略,行吧是还有就是咱们这个还有就是然后咱就说一下咱们这个目前咱们这个到了这个夏天了是吧剩下的一些这个销售销售比较这个好的产品都比较棒正在这个公民业有公民链的可以在一块就是更好的就是与那个厂家嘛合作与厂家更好的沟通交流然后保证咱们的货存嘛能够足够还有呢就是夏天嘛当然都是裙子女生的裙子还有拖鞋凉鞋这个销售量都比较好然后我们可以开展一些相同品牌的然后属于自己的图案属于自己的品牌吧找一些更好的美工设计来加工一下我们的品牌然后通过然后通过代言啊通过直播销售提高他的销售业绩销售量这种服装不能单考虑就是世纪的产品主要考虑后缘比方说马上就要秋天了我们的秋装也要提前上然后秋装是刚上的秋装价格要高一点因为马上就要换季所以换季的产品是要贵一点的这样的话也可以给夏季的产品搞个活动因为马上夏季要过去的话它的服装就要有大折处对不古巴好的,各部门下去以后,把这方面的一些会上讲座的一些问题都去解决一下,行吧?嗯,当然有问题了。还有一些售后,我们不计咱们这个售后会遇到一些很难传的客户,咱们要耐心的去。给他讲解了嗯 这个都会哦 行其他两套部门还有什么问题吗练练会发还有问题吗具体的应该是就是这些了那这个策划这个
+[Audio Detection] 在 2060.78 秒检测到关键词 '好交交'。
+detection_time: 2060.78, current_time: 2059.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.194305419921875, max: 0.262176513671875
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 焦焦基于之前我们讨论的内容关于实体店的开设你认为我们应该如何平衡线上线下的价格策略以吸引顾客
+, 1735623031.4763627
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 焦焦基于之前我们讨论的内容关于实体店的开设你认为我们应该如何平衡线上线下的价格策略以吸引顾客同时保持利润同时针对即将到来的秋季我们应该如何调整夏季产品的促销活动以及提前被秋季新品的上市策略没有了现在我就是想奢华一起这个冬装夏销李中福的夏销正好
+, 1735623033.6796741
+First token received: 0
+===planner 进一步输出开始===
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：实体店 开设 平衡价格策略 吸引顾客 秋季产品促销 换季销售 策略
+
+
+提取的关键词: ['实体店', '开设', '平衡价格策略', '吸引顾客', '秋季产品促销', '换季销售', '策略']
+
+找到的上下文片段数量: 1
+
+Token count: 81, Total time: 32.0868 seconds, One token time: 0.3961 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：实体店', ' 开', '设', ' ', '平', '衡', '价格', '策略', ' ', '吸', '引', '顾客', ' ', '秋', '季', '产品', '促销', ' ', '换', '季', '销售', ' ', '策', '略', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:### 然后让他们给我们赞助因为我们这什么平台都有我们销量也挺好的然后跟他们合作就是不仅我们可以找别人做广告让别人也可以找我们做广告对吧然后我们可以在服装上做一些广告还有一些电子商品都可以在封面上进行一些营销我们也可以通过给别人做广告的方式来赚取广告费目前咱们说了这么多然后运营这一块要去多跑几家行吧嗯 好的然后根据咱们这个公司整体的一个情况然后来去选择一些赞助商好的还有就是咱们这个是否可以开展几个线下的店铺策划这边可以,线下跟线上可以同步运行线下我们选择几个大型大版本的城市来有直营店然后我们的新型服装我们是线下跟线上同日发售这样的话我们价格统一,同一天销售做到你不愿意在网上买的话你可以在我们的直营店价格是一样的东西是一样的保证质量然后价格一样来我们直营店的话你可以穿戴试一下这样的话也会更方便给那个顾客没必要到时候比如说我们来网上买的东西不合适了进行兑换了我们直营店的话你就来这里试一下合适的你再买这样的话也能增加一下请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请明星代言如何平衡成本与效果在我们本店试穿然后他们能得到很好的体验感对那咱们这个面对的观点我觉得吧看一看,十几店是一个品牌走向更高端的一个阶级吧所以说,如果我们要打造的更高端,更时尚的品牌的话,那十几店是必不可少的从十几店的装修啊,环境啊,服务态度啊,上面来看更能体现出一个品牌来的优秀所以我认为开展【实】体店如果想要走向很高端开展实体店是很必要的必要是有这个必要的是吧对咱目前咱们在实体店方面咱们没有这个经验所以说咱们可以勾请一些这个我说了没有就是线上线下同时进行有的人呢他就是愿意在线上买他不愿意出门所以说呢我们线上就可以只要你知道我报给我们你的身高三媒体重我们就能够让你挑选到你合适的衣服合适的鞋然后实体链呢就是有些人他愿意转他愿意来这儿来试一下他不相信他觉得怕在网上买的东西请不吝点赞 订阅 转发 打赏支持明镜与点点栏目但是实体店要卖的东西肯定要贵实体店,我觉得实体店因为它有成本,装修的费用,租金费用,水电费用,人工费用,都在当中所以说,前期我们线上线下发行的这个东西,我们可以线上线下价钱一样这样的话它就会在线上卖也有可能有近附近的可以去实体店但是后期以后就是实体店的衣服要高于线上但是也不能高得很多或者就是后期我们搞一些实体店线上销售的跟实体店没有同样的款式实体店只有体验效果比较好对实体店就是高于线上的它就是有一个试穿能够找一件我自己合适的所以说它的价格就高于线上我们实体店要经营一些线上买不到的实体店基本上就是一些高端产品吧对,高端产品因为高端产品在网上的话,人们不能切身去感受的现在网上是买不到我们实体店的因为我们为了打知名度所以说我们是线上线下同时销售机款然后他们都知道我们现在线上线下都有但是一旦你了解我们知道我们的话你就想买到更好的所以说你只能在我们的实体店定制然后买到更好的你穿着合适的就只有在我们线下实体店就是相当于一个体验对,因为华山也是一间店也有的顾客可能他会在我们的实体店里面穿戴试一下对,还要问他,然后呢他觉得昂贵,然后他去网上买这个尺码了这样也不是没有,也肯定会有存在这个方面我也要考虑到咱们就要让咱们这个电商和那个实体店想结合起来我们公司对他的发展会更好战略,行吧是还有就是咱们这个还有就是然后咱就说一下咱们这个目前咱们这个到了这个夏天了是吧剩下的一些这个销售销售比较这个好的产品都比较棒正在这个公民业有公民链的可以在一块就是更好的就是与那个厂家嘛合作与厂家更好的沟通交流然后保证咱们的货存嘛能够足够还有呢就是夏天嘛当然都是裙子女生的裙子还有拖鞋凉鞋这个销售量都比较好然后我们可以开展一些相同品牌的然后属于自己的图案属于自己的品牌吧找一些更好的美工设计来加工一下我们的品牌然后通过然后通过代言啊通过直播销售提高他的销售业绩销售量这种服装不能单考虑就是世纪的产品主要考虑后缘比方说马上就要秋天了我们的秋装也要提前上然后秋装是刚上的秋装价格要高一点因为马上就要换季所以换季的产品是要贵一点的这样的话也可以给夏季的产品搞个活动因为马上夏季要过去的话它的服装就要有大折处对不古巴好的,各部门下去以后,把这方面的一些会上讲座的一些问题都去解决一下,行吧?嗯,当然有问题\n ###agent根据会议片段的输出开始：###\n根据提供的会议内容，开展实体店对于品牌的发展是有必要的。实体店能作为高端品牌形象的重要体现，提供更好的顾客体验和服务，如试穿等。初期可采用线上线下价格一致策略，吸引附近顾客前往实体店；长远看，实体店的商品价格可略高于线上，尤其是那些线上买不到的高端产品。通过这种方式，既能增强顾客体验感，又能提升品牌形象。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：reasoner
+agent工具结果：###RAG used context:### 然后让他们给我们赞助因为我们这什么平台都有我们销量也挺好的然后跟他们合作就是不仅我们可以找别人做广告让别人也可以找我们做广告对吧然后我们可以在服装上做一些广告还有一些电子商品都可以在封面上进行一些营销我们也可以通过给别人做广告的方式来赚取广告费目前咱们说了这么多然后运营这一块要去多跑几家行吧嗯 好的然后根据咱们这个公司整体的一个情况然后来去选择一些赞助商好的还有就是咱们这个是否可以开展几个线下的店铺策划这边可以,线下跟线上可以同步运行线下我们选择几个大型大版本的城市来有直营店然后我们的新型服装我们是线下跟线上同日发售这样的话我们价格统一,同一天销售做到你不愿意在网上买的话你可以在我们的直营店价格是一样的东西是一样的保证质量然后价格一样来我们直营店的话你可以穿戴试一下这样的话也会更方便给那个顾客没必要到时候比如说我们来网上买的东西不合适了进行兑换了我们直营店的话你就来这里试一下合适的你再买这样的话也能增加一下请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请明星代言如何平衡成本与效果在我们本店试穿然后他们能得到很好的体验感对那咱们这个面对的观点我觉得吧看一看,十几店是一个品牌走向更高端的一个阶级吧所以说,如果我们要打造的更高端,更时尚的品牌的话,那十几店是必不可少的从十几店的装修啊,环境啊,服务态度啊,上面来看更能体现出一个品牌来的优秀所以我认为开展【实】体店如果想要走向很高端开展实体店是很必要的必要是有这个必要的是吧对咱目前咱们在实体店方面咱们没有这个经验所以说咱们可以勾请一些这个我说了没有就是线上线下同时进行有的人呢他就是愿意在线上买他不愿意出门所以说呢我们线上就可以只要你知道我报给我们你的身高三媒体重我们就能够让你挑选到你合适的衣服合适的鞋然后实体链呢就是有些人他愿意转他愿意来这儿来试一下他不相信他觉得怕在网上买的东西请不吝点赞 订阅 转发 打赏支持明镜与点点栏目但是实体店要卖的东西肯定要贵实体店,我觉得实体店因为它有成本,装修的费用,租金费用,水电费用,人工费用,都在当中所以说,前期我们线上线下发行的这个东西,我们可以线上线下价钱一样这样的话它就会在线上卖也有可能有近附近的可以去实体店但是后期以后就是实体店的衣服要高于线上但是也不能高得很多或者就是后期我们搞一些实体店线上销售的跟实体店没有同样的款式实体店只有体验效果比较好对实体店就是高于线上的它就是有一个试穿能够找一件我自己合适的所以说它的价格就高于线上我们实体店要经营一些线上买不到的实体店基本上就是一些高端产品吧对,高端产品因为高端产品在网上的话,人们不能切身去感受的现在网上是买不到我们实体店的因为我们为了打知名度所以说我们是线上线下同时销售机款然后他们都知道我们现在线上线下都有但是一旦你了解我们知道我们的话你就想买到更好的所以说你只能在我们的实体店定制然后买到更好的你穿着合适的就只有在我们线下实体店就是相当于一个体验对,因为华山也是一间店也有的顾客可能他会在我们的实体店里面穿戴试一下对,还要问他,然后呢他觉得昂贵,然后他去网上买这个尺码了这样也不是没有,也肯定会有存在这个方面我也要考虑到咱们就要让咱们这个电商和那个实体店想结合起来我们公司对他的发展会更好战略,行吧是还有就是咱们这个还有就是然后咱就说一下咱们这个目前咱们这个到了这个夏天了是吧剩下的一些这个销售销售比较这个好的产品都比较棒正在这个公民业有公民链的可以在一块就是更好的就是与那个厂家嘛合作与厂家更好的沟通交流然后保证咱们的货存嘛能够足够还有呢就是夏天嘛当然都是裙子女生的裙子还有拖鞋凉鞋这个销售量都比较好然后我们可以开展一些相同品牌的然后属于自己的图案属于自己的品牌吧找一些更好的美工设计来加工一下我们的品牌然后通过然后通过代言啊通过直播销售提高他的销售业绩销售量这种服装不能单考虑就是世纪的产品主要考虑后缘比方说马上就要秋天了我们的秋装也要提前上然后秋装是刚上的秋装价格要高一点因为马上就要换季所以换季的产品是要贵一点的这样的话也可以给夏季的产品搞个活动因为马上夏季要过去的话它的服装就要有大折处对不古巴好的,各部门下去以后,把这方面的一些会上讲座的一些问题都去解决一下,行吧?嗯,当然有问题
+ ###agent根据会议片段的输出开始：###
+根据提供的会议内容，开展实体店对于品牌的发展是有必要的。实体店能作为高端品牌形象的重要体现，提供更好的顾客体验和服务，如试穿等。初期可采用线上线下价格一致策略，吸引附近顾客前往实体店；长远看，实体店的商品价格可略高于线上，尤其是那些线上买不到的高端产品。通过这种方式，既能增强顾客体验感，又能提升品牌形象。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+[Audio Detection] 在 2147.54 秒检测到关键词 '好交交'。
+detection_time: 2147.54, current_time: 2146.00
+问题音频片段长度: 119344, dtype: float32, min: -0.22894287109375, max: 0.22601318359375
+问题音频时间长度: 7.459
+
+
+[Agent] 接收到问题: 关于羽绒服下消策划你有哪些具体的推广方案建议
+, 1735623087.105897
+
+
+[Agent] 最终接收到问题: 关于羽绒服下消策划你有哪些具体的推广方案建议
+, 1735623087.1060343
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+First token received: 1
+判断是简短问题，planner结束输出
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 165, Total time: 5.1874 seconds, One token time: 0.0314 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+针对羽绒服下萧策划，我有以下几点推广方案建议：
+
+1. 社交媒体营销：利用微博、微信、抖音等社交媒体平台进行推广，发布与羽绒服搭配的时尚穿搭图片和视频。
+
+2. 合作推广：与时尚博主、明星等合作，邀请他们穿着羽绒服进行拍摄或直播，增加产品的曝光度。
+
+3. 线下活动：举办羽绒服搭配大赛，鼓励消费者上传自己穿着羽绒服的照片或视频，并设置奖项，增加消费者的参与度。
+
+4. 会员优惠：为会员提供专属的羽绒服下萧折扣或优惠券，提高会员的购买转化率。
+
+5. KOL带货：找一些影响力大的KOL进行产品推荐，他们的口碑可以大大提升产品的销量。
+
+6. 数据分析：对消费者的行为数据进行分析，了解消费者的喜好和需求，以此来优化产品设计和服务。
+
+以上就是我的推广方案建议，希望能对你有所帮助。
+talker 输出结束
+
+会议数据处理完成。

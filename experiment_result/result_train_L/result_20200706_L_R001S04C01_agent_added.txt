@@ -1,0 +1,208 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200706_L_R001S04C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Starting processing from 0s, total chunks: 74
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.16it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.76s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.06s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.12s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.02s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.03s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.05s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.21s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:10,  5.41s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.09s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.84s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.85s/it]
+请不吝点赞 订阅 转发 打赏支持明镜与点点栏目好的,今天把各部门叫过来,我们开这个项目启动会,我们去讨论一个游乐场这个项目,各部门有什么好意见建议,我们先说一下这个游乐场这个选址方面的一些问题,这个项目这边先说一下。我覺得咱們現在可以選擇七個都不見这边是埃瑞士,这样的话,水上测试,供水能力就比较强了。不用想,相对来说,出现冷到的地方少一些。然后,那边空地也冷多了。咱们这样的话,一匹也比较便宜,人体比较大。我们的位置,也选在西北部的西北部。像我们后期如果需要高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高高咱们可以是非常清楚的虚化,一部分是基础的,就比如说咱一会儿再说,刚才说的学到选址方面的问题,他刚才说建在这个气力核这一块,你们有不同意见吗?运营这块有不同意见吗?气力这块没有不同意见你觉得为啥同意他这个想法?那儿环境不错嘛,也有水,水运便,毕竟在南区北调,这也可以是一个省财的方法。然后也是那儿环境植物也比较多,而且游玩的人也比较多,比较好宣传,也不是很偏僻嘛。因为花费的经费和收入是很分的行 叫他一个什么意思啊我觉得七里河挺好的一个是它有那么大的地方能让我们去建游乐场它里面有提供员,也有足够的人流量来支撑我们去维持这个游乐园的正常运营,再一个就是环境,环境好买个三年行啊,这边那边交通比较便利,如果采购什么东西,然后比如说车运过去的时候也会比较方便然后位置也可以,我觉得位置也行啊对还有呢有没有其他想法?没有你觉得选择这个地方的地区也不算很远不算很远,走到边里有没有见到乡下的县民?而且那个地方的地皮相对可以那边虽然说是野菜市区,但是中间也有一个村子在这边下来财政财政这方面觉得把游乐场对把游乐场建在水的旁边就很大一部分节省了那些运水啊还有管道啊那些工作对就挨着水嘛然后再一方面就是如果有很多人在那边游泳的话小孩子的体面都想来我们这边游乐场玩就能提供一些客流量我觉得我觉得在水边建立游乐场挺合适的那这个从在这个成本上来说那个建议在这个体育和游戏对因为有很多水上项目嘛漂游啊什么划船啊就很需要水减少了一些碍事当地这个地皮这一块你有所了解吗因为七里河那边不是很偏但是它也不是市中心所以相对来说的话一定是在地皮上有很大的价格上的差异挺合适我们做游乐场的地方也挺大挺庞大很適合建一些大型的可以玩的玩的起来的那些大型的设施那咱们这个主要是现在我设有的一个观点是保安他们的素质是比较高的因为咱们要建一个一万多米的绝大的游乐园所以说你要是单纯从村里找到一些保安的话他们技能可能是有缺乏的谢谢大家咱们可以提供后面的团队,比如说在这儿,对,是提到这个关系,后面的团队,其实我们会有一些大部分人员是可以给他们的。行,那咱们一会儿再试试,后续呢。你就说这个建在这个汽笠河附近,你对这个方案是一种什么样的看法?是按时按的对吧,因为可能想要招高质量的人才的话,他其实也不算那你有何时的地方我觉得像现在形态他以前就是在气球场面一定有那一组的场子所以说这部分竞争其实很大的所以说我认为的话应该是找稍微偏远的地方没有影像去游泳园的话他不是说人家就是周
+[Text Detection] 在 505.05 秒检测到关键词 '娇娇',current_time: 480.00, 问题文本: 周一到周五就会去但只剩在一个节假日然后去的话这个位置的话不会是一个很大的问题只要你把孩子做好了他是带来这个问题也是非常大的问题那你有其他好的地方吗这个到项目这个启动会你好娇娇关于七里河游乐场选址各部门有哪些
+问题音频片段长度: 188416, dtype: float32, min: -0.075897216796875, max: 0.076202392578125
+问题音频时间长度: 11.776
+
+
+[Agent] 接收到问题: 关于七里河游乐场选址各部门有哪些具体的意见和考虑
+, 1735104917.38818
+
+
+[Agent] 最终接收到问题: 关于七里河游乐场选址各部门有哪些具体的意见和考虑
+, 1735104917.3885298
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9049 seconds, One token time: 0.3016 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+很遗憾，由于您没有提供更多的上下文信息，我无法准确回答您的问题。如果您能提供更多信息，我会尽力帮助您。
+talker 输出结束
+一到周五就会去但只剩在一个节假日然后去的话这个位置的话不会是一个很大的问题只要你把孩子做好了他是带来这个问题也是非常大的问题那你有其他好的地方吗这个到项目这个启动会你好娇娇关于七里河游乐场选址各部门有哪些一,它不像别的项目需要工作的证件,因为在那儿不污染,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对公司会决定让咱们主发一下游乐场的项目那请大家去订阅那咱就暂定订阅行吧那咱们刚才说到选址了为了让咱游乐场在大自然领口整个河外就求你了,因为目前在邢台的交通也是十分方便。那咱们打开在志工路,各位有什么想法?邢政这边有什么想法?首先行政这边主要先是也是负责宣传然后各类公关然后去外面跟一些比如说游乐场内以后肯定要休息去吃饭的地方还有一些针对宣传方面的情况针对宣传方面可以先做一些广告海报在街上发一些传单让大家了解因为七里河那边人流量比较大因为有公园还有一个小型的游乐场可以先去宣传一下然后把视频然后咱们再可以慢慢的慢慢策划,然后各种活动,然后吸引路人群众的眼光。我觉得主要还是咱们的设施是很经营的吧,就是吸引人的。就是比如说,刑台,刑台的那个游乐场好像没有开设吧?没有,那个没有。没有吧?对,没有。还特别小。我觉得如果要做出来在青台是一个比较大的游乐场的话我们就需要做一个主题乐园就比较不像那种之前青台已经有的那些游乐场一样要做一些带有一点对 吸引小朋友的吸引这些青年或者小朋友的中文字幕志愿者 杨茜茜我认为这个想法是,我们的村居区,比较大,有普通区,就是基础的设计,碰碰车呀,其他游乐场都有的这些,还有想要到有儿童,不是那么刺激,那么害怕的,还有小一点的,在今天網紅會遊樂地點可以在游乐场里面建一些什么彩虹滑道啊或者蹦床啊那些市中市中馆那些都可以搬到那个里面取分块吗对对对可以可以还有就是咱们来一个趣味的话就是建水上乐园建水上乐园如果想要打平气的话打不出去因为天天在世界上水上乐园谁都不知道为什么要来水上乐园呢所以咱们要换一个特色它也没有像人家那个别的水上乐园那么大的优势所以说保水上作为最大的工作是不是怎么回事对还是全面发展吧就是不要主打在水上乐园只是挨着比较便利可以发展更好一点而已而且现在还要完善安全度工作人员啊 素质啊和卫生啊咱先不说这个安全的问题对对对比如说目前咱就你肯定要有个主打的是吧干任何事情肯定要有个特色咱这边特色是什么有什么好的建议性我觉得应该主打应该是一些比较刺激的比如大摆车建一个大型的过山车因为现在形态游乐园里并没有那么大的过山车就是跟小孩玩一样并没有跟我们这种就是比如说二十多岁的那种青年他们玩那个可能会觉得不刺激不够过瘾所以他们又会去别的地方如果我们想抓住客流量就一定要在这个方面我觉得下点工作但是你要想的话像北京还有天津都有帮助你人家就是为什么非要来想开啊因为方便啊因为我们这边的人来这儿方便我们要做的项目就是要联想整合为什么所以说你要考的话单纯是单纯我觉得这件事的话也是不错你周围的人都爱去的话然后带动你身边的朋友同事啊他就会来玩咱们可以游乐场一个游乐项目刚才也说了就是弄成自己的也可以弄点清闲的比方说孩子去刚才也说了在区域嘛还有就是按照游乐场周边环境来给他弄上过游玩最好再多雇几个工作人员因为很多周游游圈都是大人来的或者有时候带着家长去什么的就是超大人的然后最后还要采取一票通知这样的话他们也可以带小孩采果子也可以玩那些小孩子的项目然后也可以通过果蔬吧这也是另一个特色比较健康对 如果我们现在先吃了可以对 而且也环保吧刚才项目这个是项目这个是水上的一些设施嗯,水上哪些可以具体说的多?造纳机造纳机,嗯现在造纳机是一个网红的一个,一个,一个,一个设置法,大家今天不清楚然后咱们会为什么,好像是,没有这样的设置法有,但是我有不太相信但是我们可以在前台,我们可以在前台建一个这样就是一想来玩的话就是咱们的游乐场这就是我们的侧椅对然后水上还可以建那些激流泳镜都可以激流泳镜划船有水就非常方便了而汽礼盒这条件是能支持这些项目建下去吗你可以用泡泡 抽水泡汽礼盒也能对但是像汽礼盒的话它是它那个水流化我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是因为它这个是中和的一个效果咱们可以,为什么要选择汽笠,因为汽笠河也还是南部水道咱们可以从南部水道调水,咱们在汽笠河的西南部调水这个事情其实挺方便的水其实不是问题,主要就是设施的问题对啊,就是管道加泵就抽过来了再一个考虑水质上来一个考虑到抽水排水这两方面做好的其实就没有什么东西排水的话你只要注意咱们只是娱乐社会没有任何物资对啊所以说但是你的水你也要及时消毒更换咱们那个水设计要排了肯定设计要出了这个其实都简单只要及时处理都好弄因为咱们也不是什么重工业地方其实也都好净化这些水所以说水一方面我觉得不用太担心咱
+[Text Detection] 在 1085.56 秒检测到关键词 '娇娇',current_time: 1080.00, 问题文本: 咱们开一个项目这个启动会你好娇娇基于之前我们讨论的内容关于邢台游乐场项目大家提到了很多新颖的设施和特色咱们这个项目的启动会比如造浪机过岸机过山车等我想请问一下针对
+问题音频片段长度: 664043, dtype: float32, min: -0.506622314453125, max: 0.41009521484375
+问题音频时间长度: 41.5026875
+
+
+[Agent] 接收到问题: 我们开一个项目这个启动会你好焦焦基于之前我们讨论的内容关于邢台游乐场项目大家提到了很多新颖的设施和特色找了个项目的启动会比如造浪机 过岸机 过山车等我想请问一下针对这些设施项目这个启动会我们挺好的没有考虑过相应的安全制度和工作人员的培训以确保游客的安全和游乐场的顺利运营呢
+, 1735104960.0097156
+
+
+[Agent] 最终接收到问题: 我们开一个项目这个启动会你好焦焦基于之前我们讨论的内容关于邢台游乐场项目大家提到了很多新颖的设施和特色找了个项目的启动会比如造浪机 过岸机 过山车等我想请问一下针对这些设施项目这个启动会我们挺好的没有考虑过相应的安全制度和工作人员的培训以确保游客的安全和游乐场的顺利运营呢
+, 1735104960.0098248
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4930 seconds, One token time: 0.1643 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：安全制度 工作人员培训 游乐场
+Token count: 33, Total time: 6.7409 seconds, One token time: 0.2043 seconds
+
+提取的关键词: ['安全制度', '工作人员培训', '游乐场']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+会议中提到了多种游乐设施，如造浪机、过山车等，但未讨论相应的安全制度和工作人员培训。为了保障游客安全及游乐场顺利运营，应制定详细的安全规定，并对工作人员进行专业培训。
+Token count: 52, Total time: 10.3580 seconds, One token time: 0.1992 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：安全制度 工作人员培训 游乐场
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 因为花费的经费和收入是很分的行 叫他一个什么意思啊我觉得七里河挺好的一个是它有那么大的地方能让我们去建游乐场它里面有提供员,也有足够的人流量来支撑我们去维持这个游乐园的正常运营,再一个就是环境,环境好买个三年行啊,这边那边交通比较便利,如果采购什么东西,然后比如说车运过去的时候也会比较方便然后位置也可以,我觉得位置也行啊对还有呢有没有其他想法?没有你觉得选择这个地方的地区也不算很远不算很远,走到边里有没有见到乡下的县民?而且那个地方的地皮相对可以那边虽然说是野菜市区,但是中间也有一个村子在这边下来财政财政这方面觉得把游乐场对把游乐场建在水的旁边就很大一部分节省了那些运水啊还有管道啊那些工作对就挨着水嘛然后再一方面就是如果有很多人在那边游泳的话小孩子的体面都想来我们这边游乐场玩就能提供一些客流量我觉得我觉得在水边建立游乐场挺合适的那这个从在这个成本上来说那个建议在这个体育和游戏对因为有很多水上项目嘛漂游啊什么划船啊就很需要水减少了一些碍事当地这个地皮这一块你有所了解吗因为七里河那边不是很偏但是它也不是市中心所以相对来说的话一定是在地皮上有很大的价格上的差异挺合适我们做游乐场的地方也挺大挺庞大很適合建一些大型的可以玩的玩的起来的那些大型的设施那咱们这个主要是现在我设有的一个观点是保安他们的素质是比较高的因为咱们要建一个一万多米的绝大的游乐园所以说你要是单纯从村里找到一些保安的话他们技能可能是有缺乏的谢谢大家咱们可以提供后面的团队,比如说在这
+---
+我觉得如果要做出来在青台是一个比较大的游乐场的话我们就需要做一个主题乐园就比较不像那种之前青台已经有的那些游乐场一样要做一些带有一点对 吸引小朋友的吸引这些青年或者小朋友的中文字幕志愿者 杨茜茜我认为这个想法是,我们的村居区,比较大,有普通区,就是基础的设计,碰碰车呀,其他游乐场都有的这些,还有想要到有儿童,不是那么刺激,那么害怕的,还有小一点的,在今天網紅會遊樂地點可以在游乐场里面建一些什么彩虹滑道啊或者蹦床啊那些市中市中馆那些都可以搬到那个里面取分块吗对对对可以可以还有就是咱们来一个趣味的话就是建水上乐园建水上乐园如果想要打平气的话打不出去因为天天在世界上水上乐园谁都不知道为什么要来水上乐园呢所以咱们要换一个特色它也没有像人家那个别的水上乐园那么大的优势所以说保水上作为最大的工作是不是怎么回事对还是全面发展吧就是不要主打在水上乐园只是挨着比较便利可以发展更好一点而已而且现在还要完善安全度工作人员啊 素质啊和卫生啊咱先不说这个安全的问题对对对比如说目前咱就你肯定要有个主打的是吧干任何事情肯定要有个特色咱这边特色是什么有什么好的建议性我觉得应该主打应该是一些比较刺激的比如大摆车建一个大型的过山车因为现在形态游乐园里并没有那么大的过山车就是跟小孩玩一样并没有跟我们这种就是比如说二十多岁的那种青年他们玩那个可能会觉得不刺激不够过瘾所以他们又会去别的地方如果我们想抓住客流量就一定要在这个方面我觉得下点工作但是你要想的话像北京还有天津都有帮助你人家就是为什么非要来想开啊因为方便啊因为我们这边的人来这儿方便我们要做的项目就是要联想整合为什么所以说你要考的话单纯是单纯我觉得这件事的话也是不错你周围的人都爱去的话然后带动你身边的朋友同事啊他就会来玩咱们可以游乐场一个游乐项目刚才也说了就是弄成自己的也可以弄点清闲的比方说孩子去刚才也说了在区域嘛还有就是按照游乐场周边环境来给他弄上过游玩最好再多雇几个工作人员因为很多周游游圈都是大人来的或者有时候带着家长去什么的就是超大人的然后最后还要采取一票通知这样的话他们也可以带小孩采果子也可以玩那些小孩子的项目然后也可以通过果蔬吧这也是另一个特色比较健康对 如果我们现在先吃了可以对 而且也环保吧刚才项目这个是项目这个是水上的一些设施嗯,水上哪些可以具体说的多?造纳机造纳机,嗯现在造纳机是一个网红的一个,一个,一个,一个设置法,大家今天不清楚然后咱们会为什么,好像是,没有这样的设置法有,但是我有不太相信但是我们可以在前台,我们可以在前台建一个这样就是一想来玩的话就是咱们的游乐场这就是我们的侧椅对然后水上还可以建那些激流泳镜都可以激流泳镜划船有水就非常方便了而汽礼盒这条件是能支持这些项目建下去吗你可以用泡泡 抽水泡汽礼盒也能对但是像汽礼盒的话它是它那个水流化我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是我今天想要做的就是因为它这个是中和的一个效果咱们可以,为什么要选择汽笠,因为汽笠河也还是南部水道咱们可以从南部水道调水,咱们在汽笠河的西南部调水这个事情其实挺方便的水其实不是问题,主要就是设施的问题对啊,就是管道加泵就抽过来了再一个考虑水质上来一个考虑到抽水排水这两方面做好的其实就没有什么东西排水的话你只要注意咱们只是娱乐社会没有任何物资对啊所以说但是你的水你也要及时消毒更换咱们那个水设计要排了肯定设计要出了这个其实都简单只要及时处理都好弄因为咱们也不是什么重工业地方其实也都好净化这些水所以说水一方面我觉得不用太担心咱我们开一个项目这个启动会你好焦焦基于之前我们讨论的内容关于邢台游乐场项目大家提到了很多新颖的设施和特色找了个项目的启动会比如造浪机 过岸机 过山车等我想请问一下针对这些设施项目这个启动会我们挺好的没有考虑过相应的【安】全制度和工作人员的培训以确保游客的安全和游乐场的顺利运营呢
+会议中提到了多种游乐设施，如造浪机、过山车等，但未讨论相应的安全制度和工作人员培训。为了保障游客安全及游乐场顺利运营，应制定详细的安全规定，并对工作人员进行专业培训。
+reasoner 输出结束
+们开一个项目这个启动会你好娇娇基于之前我们讨论的内容关于邢台游乐场项目大家提到了很多新颖的设施和特色咱们这个项目的启动会比如造浪机过岸机过山车等我想请问一下针对水上滑梯可以弄一个不是特别深的水的区域然后做一个网红吊桥可以然后旁边的话因为吊桥只需要中间旁边的话也可以弄一些成人或者小孩的水上的排球或者什么这样的项目这些设施全了,这些活动就都好策划了。活动是之后的,先选择好,先考虑要干什么东西,要什么项目。这个是咱现在谈的,刚才那个项目,这个那个水上,水上这个,那水上除了这个大阪,你看看这个什么?大阪机,大阪机,这个有机能,这个有太阳球,太阳球,太阳球,还有网红标桥,网红标桥,网红标桥,还有这种水上滑机,这种东西,水上滑机是比较常见的,比较常见的,比较有的。那这是一个,这是一部分,这是一部分。还有就是搞一个真人4S咱们的真人4S也要突破传统的那种拿着枪拿着水来冰打冰的咱们要搞成那种当代 政府的吃鸡的模式就是真人模仿对象吃鸡的模式吗就是 对 就是人只是穿着这个特制的衣服进去然后里面是一件枪你就可以不用多的場地搞那種像電玩也一個人多少錢要他們帶上AR來嘛就是讓他在那個場地裡面真正的去跑但是你要36場地的話像每次你要去撿槍但是你要先控制那些槍還有投放那些槍對 讓他很大力如果AR也可以吸引大部分人家的其實AR是不錯的槍如果你用VR的话,你需要在一个大的屋子里隔成小间,在小间里头用一个VR给吊起来,然后让他自己可以来回运动,然后身上有那个感光灯的东西,用VR也可以让他运动。不用是真实的,因为这个太浪费工作人员了,他还要再剪再长,下一波人可能等不了,这样的话就一天开放两次。一天只能是一场?最多兩場對,下午一場,下午一場玩不上它也都不玩了那你會不會從中建成就通過AR建設就行了然後放在一個mood裡面然後一場多長時間目前的AR是關於這個你剛說VR是吧 對這個目前這個這方面技術成熟了現在很多電玩都有這個AR嗎這個真實效果怎麼樣效果只要是高级的仪器,没有仪器在仪器方面那个是那个是刚才说的VR有区别就是一个是比较真实的它这个可以互动很多人一块玩能在那边尽力互动是这种我希望VR能达到这种效果感谢观看对啊,开个语言模式就可以了对啊,开个语言模式如果是说像上次说的那样每几年一个小的,需要98两千多没那么多人啊就是几十个30个有效场地但是30个人的话突然太快了还没玩呢就结束了场地的话对吧,如果你场地如果你场地足够大的话如果大的话还是要考虑到这个恭喜的投放问题投放问题如果说可以的话是可以自动投放就是通过一些设备对它进行就是概率投放就在推的点然后设置什么传输带就是可以发放的特定的位置其实如果是真人的话可以,就不过需要让人们自律一点,让他们用完什么东西放到原位就可以了,这样的话也可以省掉诸所缘的费用。需要清理一下场地就可以了。单要的话就是需要那个颜色带,这个是…颜色带这个倒好,就是每一场玩完以后工作人员补充一下就可以了。墙的话…让他们自己也放到原位。墙的话就比较活泼。好各有各的好處各有各的缺點那個玩意兒是真實的CS的話如果想玩吃雞博士的那種投放就需要利用到超速帶需要站場地場地可能歸雾圓不小然後它的B端就是可能會場地的彩蛋特別的難清理衣服上的倒好說如果到場地上的話需要定期更換場地如果是AR的话,那可能是受点灰但是的话它比较少人的那个物而且玩的真实感还没有那么强这个两个方案很多人到时候都可以计划一下项目对这个刚才说的这个真人CS这个项目进行一块多方位的一个计划分布还有刚才谁说的那个AR的运营变化说
+[Text Detection] 在 1569.00 秒检测到关键词 '焦焦',current_time: 1560.00, 问题文本: 说到VR,你对这个项目有什么计划?你好,焦焦。关于水上项目,你认为VR和AR技术在其互动性、真实感方面哪个更合适?可以包括一些成本上的计划。
+问题音频片段长度: 214699, dtype: float32, min: -0.079315185546875, max: 0.08819580078125
+问题音频时间长度: 13.4186875
+
+
+[Agent] 接收到问题: 这项项目你认为AR和VR技术在其互动性、真实感方面哪个更合适?
+, 1735105002.2549207
+
+
+[Agent] 最终接收到问题: 这项项目你认为AR和VR技术在其互动性、真实感方面哪个更合适?
+, 1735105002.2553098
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4760 seconds, One token time: 0.1587 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 26, Total time: 1.5345 seconds, One token time: 0.0590 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+AI和VR技术在互动性、真实感方面都有其优势。AI可以提供更自然、个性化的交互体验，而VR则能够创造出更加沉浸、真实的虚拟环境。两个技术各有千秋，具体应用取决于具体场景和需求。
+talker 输出结束
+到VR,你对这个项目有什么计划?你好,焦焦。关于水上项目,你认为VR和AR技术在其互动性、真实感方面哪个更合适?可以包括一些成本上的计划。要比我们可能做到效果要高而且沿海城市玩的肯定比南海玩的爽对面积小而且他没玩就觉得结束了可以改成那种水上冲浪板那种东西让工作人员来就是直线的冲浪板对对对而且那个只会被就是冲下去冲倒而已他就需要不过情部找一些工作人员进行对进行冲浪板的这个培训什么的还有咱们这个成本财务这个成本财务这边刚刚不是在说项目吗然后我刚刚想了一下就是为了节省咱们的花销嘛我们可以把那个休闲区也可以改造一下不要把它上入指定在那些游乐设施上面我们也可以休闲去弄桌游啊或者一些吃的对促进他们的消费嘛然后休息的时候坐着也可以让他们更放松一下心情不会就说休息的时候就想走了就是为了让他们多留一会儿玩一会儿然后也可以弄一些什么镜子迷宫啊这些拍照特别好看的但是也都是需要门票的那种然后可以在休闲区那边给吸引一下客流量我觉得这个需要改进因为它这个你说里边再需要门票可能有客不是不是一般游乐场的休闲区吃东西什么的都是需要另外掏钱的呀所以这都是休闲区那一块的管辖范围现在可以为我们提供精英服务对 我们就是租赁嘛人家来我们这儿玩然后租我们的牌呀或者什么那游乐场是属于什么赚钱方式呢因为我们要打造有特色的游乐场嘛就是这样我觉得可以更加让很多人在那儿会玩很长时间就是打破平常特别专一传统的游乐场创造点新颖的东西这是属于单向收费的这个属于像一个除了游乐场主要项目以外的一种小特色不是说主要特别特色它是一种参加在里面的一种小特色对 比如像是他说的那个镜子迷宫我觉得好多现在比如说女孩子出去玩拍照 打卡 发微博 发小红书这无意中就是在宣传对 已经在宣传对其实我说的意思是咱们刚才说的那些项目加上你的这一项是单项小项目收费的还是怎么收费的我刚刚说的这些可以都规划在休闲区休闲区然后有吃的东西喝的东西然后旁边可以有那些桌游什么的咱们难道不从营乐场门口采取卡通制吗对那些只是做那个票门票上我们不是都是用那个可以玩什么项目吗对对,我的意思就是说那个是在休闲区,和那个是不一样的。还有分开的。对,我们刚开始不就说要分区吗?对,咱们肯定要有些,咱不能有……它这个票就是你能进,它这个票就是你能进门的一个屏幕。但是你进到这个休闲区里面,进行就是吃啊喝啊或者玩的,你还需要存在一些关系。真的跟自助一样的呀我觉得确实不太好对有些项目是可以有通票可以玩了嗯像那些旋转木马或者有进那些游乐设施可以一卡通那种然后别的我们可以像弄一个手环里面进轮都会充钱嘛然后如果消费或者租赁什么像学长设施会有小孩子訓練游泳圈啊或者什么小船啊都可以通过那个手环来扣除费用嗯,谢谢啊咱们说了这么多策划这边还有什么想要说的吗策划这边目前没有很多没有什么啊嗯,那下边我觉得大家听得也都差不多我也是有这个意见那咱们运营这块运营这块 游乐园肯定得实施一些条例对就好像说宠物的那种类似的把野人摆在他后面遛狗才能让他行那时候这个条例那块下去以后所有的详细的计划 条例然后请问这边这边作为公关跟外面要是想有什么就是一些投资的话就是要去跟外面比如说游乐场里面一定会有吃饭的地方就是肯定要有吃饭的地方你就可以去跟别的饭店什么或者超市你跟他们进行合作然后他们提供就是这些最平常的食物啦水啦面包啦然后就是让大家可以选择选择还有就是游乐场内的设施,比如说一些座椅,一些垃圾桶那些,我觉得也可以跟那些公司合作进行提供,两方。这个这些事情,你都做了一个可提前的计划。对。那这个财务这边,财务呢?在遊樂設施上,我們需要做好安全我们要把财务都很专注地放在游乐设施的安全性上面然后再可以请一些专业培训那些人来培训一下我们招来的那些管理人员一定要做好这些对作为进行的计划开个项目这个启动会你
+[Text Detection] 在 2071.10 秒检测到关键词 '焦焦',current_time: 2070.00, 问题文本: 你好焦焦基于之前我们讨论的内容关于游乐场的运营和设施规划你提到了可以引入桌游和排类游戏来促进消费同时提供休闲区的餐饮服务那么这个项目这个启动会对于这些非主要游乐设施
+问题音频片段长度: 802614, dtype: float32, min: -0.2957763671875, max: 0.371124267578125
+问题音频时间长度: 50.163375
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于游乐场的运营和设施规划你提到了可以引入桌游和牌类游戏来促进消费同时提供休闲区的餐饮服务那么这个项目这个启动会对于这些非主要游乐设施的小特色项目我们应该如何制定合理的收费标准这个项目这个启动会是采取单项收费还是包含在门票以游客以吸引游病提高他们的游玩体验呢
+, 1735105034.1113517
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于游乐场的运营和设施规划你提到了可以引入桌游和牌类游戏来促进消费同时提供休闲区的餐饮服务那么这个项目这个启动会对于这些非主要游乐设施的小特色项目我们应该如何制定合理的收费标准这个项目这个启动会是采取单项收费还是包含在门票以游客以吸引游病提高他们的游玩体验呢
+, 1735105034.1114717
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4917 seconds, One token time: 0.1639 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：游乐场 桌游 牌类游戏 门票 收费标准
+Token count: 38, Total time: 7.2951 seconds, One token time: 0.1920 seconds
+
+提取的关键词: ['游乐场', '桌游', '牌类游戏', '门票', '收费标准']
+
+找到的上下文片段数量: 1
+会议中提到选择七里河作为游乐场建设地点的原因包括：该地面积大适合建游乐场、人流量充足、环境优美、交通便利、接近水源可降低成本。此外，靠近郊区但非偏远地区，地价适中，适合建设大型游乐设施。同时，当地的安保人员素质较高，能满足大型游乐场的安全需求。
+Token count: 76, Total time: 14.7679 seconds, One token time: 0.1943 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：游乐场 桌游 牌类游戏 门票 收费标准
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 因为花费的经费和收入是很分的行 叫他一个什么意思啊我觉得七里河挺好的一个是它有那么大的地方能让我们去建游乐场它里面有提供员,也有足够的人流量来支撑我们去维持这个游乐园的正常运营,再一个就是环境,环境好买个三年行啊,这边那边交通比较便利,如果采购什么东西,然后比如说车运过去的时候也会比较方便然后位置也可以,我觉得位置也行啊对还有呢有没有其他想法?没有你觉得选择这个地方的地区也不算很远不算很远,走到边里有没有见到乡下的县民?而且那个地方的地皮相对可以那边虽然说是野菜市区,但是中间也有一个村子在这边下来财政财政这方面觉得把游乐场对把游乐场建在水的旁边就很大一部分节省了那些运水啊还有管道啊那些工作对就挨着水嘛然后再一方面就是如果有很多人在那边游泳的话小孩子的体面都想来我们这边游乐场玩就能提供一些客流量我觉得我觉得在水边建立游乐场挺合适的那这个从在这个成本上来说那个建议在这个体育和游戏对因为有很多水上项目嘛漂游啊什么划船啊就很需要水减少了一些碍事当地这个地皮这一块你有所了解吗因为七里河那边不是很偏但是它也不是市中心所以相对来说的话一定是在地皮上有很大的价格上的差异挺合适我们做游乐场的地方也挺大挺庞大很適合建一些大型的可以玩的玩的起来的那些大型的设施那咱们这个主要是现在我设有的一个观点是保安他们的素质是比较高的因为咱们要建一个一万多米的绝大的游乐园所以说你要是单纯从村里找到一些保安的话他们技能可能是有缺乏的谢谢大家咱们可以提供后面的团队,比如说在这
+会议中提到选择七里河作为游乐场建设地点的原因包括：该地面积大适合建游乐场、人流量充足、环境优美、交通便利、接近水源可降低成本。此外，靠近郊区但非偏远地区，地价适中，适合建设大型游乐设施。同时，当地的安保人员素质较高，能满足大型游乐场的安全需求。
+reasoner 输出结束
+好焦焦基于之前我们讨论的内容关于游乐场的运营和设施规划你提到了可以引入桌游和排类游戏来促进消费同时提供休闲区的餐饮服务那么这个项目这个启动会对于这些非主要游乐设施先開到夏季我們再更多的更多的計畫稍微大家感覺這次是會不會快感覺會不會快一點吧這一次吧向委交会你要交交后勤部门招聘人数和工资预算具体计划核实制定完成
+会议数据处理完成。

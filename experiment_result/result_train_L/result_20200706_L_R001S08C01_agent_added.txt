@@ -1,0 +1,210 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200706_L_R001S08C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 65
+Loading classifier_llm...
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.09it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.90s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.67s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.75s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.20s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.27s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.17s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.26s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.53s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.16s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.89s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.92s/it]
+002我是主持人002我是主持人006我是咨询人A003我是咨询人B003咨询人C002我是咨询人D005我是咨询人E行,好的,今天的各位教官们,还有法律部的朋友们请不吝点赞 订阅 转发 打赏支持明镜与点点栏目形法的理念和方法形法有正当性形法的正当性有每点的理念我又再次问给两个词词一是目的上的正当性二是社会上的正当性形法上目的上的正当性主要是保护法义从根源上来说为什么会有形法很简单地认为这么一种法律对社会是至关重要的无论是在立法还是司法上,我们需要对刑法的任务进一步明确化。刑法发展的早期,恐怕是跟道德比较丰富一点。在这儿我查一下,他们做的这些刑法都可能看得到,这边什么是刑法?A这边。刑法就感觉是一种比较重的刑法。重的,对。身边比较…严谨。严谨,对。我觉得刑法是法律之本,所有的法律都要根据刑法去制定,像婚姻法之类的,都要根据刑法去制定。刑法在那里,那C这个,公布一点点,在你们的概念上是什么意思?我觉得很严肃啊感觉一出张情话就在人就会想到死刑这一方面死刑对 真的就觉得他特别严肃吧这个打击特别严谨那第二个我觉得刑法就是有人受伤了或者死了是刑法对刑法肯定会你觉得会有人受伤对有人死了对这个心法,我感覺是向古代的法家開始然後對於心法,把它設為一些對於違法性的一些法案比如就是像上面的意思,有人受傷了,有人死了就是相當於心法,大家覺得就是心法措施我這個感覺,我推斥,就是這麼樣我先來一點你說大家過的這個觀念怎麼樣都只能说是一半一半吧片面都很片面刑法它是保护人的合法权益它主要目的是保护人身民法是调整平等人与人之间的自然人法人非法人与人之间的合法权益就是大白话说人与人平等刚才他们说了地理有人说死人了死人了受伤了这也是情况这有见性民法民国调整的就是我欠了你多少钱咱俩做个生意赔了咱们让钱怎么办就是两个人之间的纠纷矛盾这个属于文化,生活中所谓的小事就是文化但是想法还是文质侵害你个人的原则不是原则,原则是自己的原则想法是对你的人生造成伤害,对你的财务造成的那个当然可以说这样财务上面不是指到想法吗?对,财务方面不是指到想法就是什么样的财务算一个想法财务力也算是一样就像刚才说的两个人一起做生意这也是一种财产这也是刑法这也是刑法我举个例子刑法上的财产像不用公款罪还有就是盗取财物诈骗财物什么叫诈骗像他人有动情的给予他大家觉得这意思吗可以有点不离谜就像那个感觉就是能在生活中的那种一些消费就刚才你说的那个怎么算是能避免的假如说就是为了继承了名声我想我这个这个就属于人身上的侵犯啊但是你要是这就直接就是侵犯了财产就是就是你一下下你刚才说的这个案子就是我想就是我是败家的我想得到我爸爸的遗产但是我爸知道我会把遗产给他所以我要趁他写遗书之前那我可能是反共产党这是出书在心上那就是如果说就是为了得到一项法案兄弟和两个也算共产党但是这并不知道就是说假设警察因为他自己死了那就是不是一项案就是关那个调查机构他被调查这个事情财产是什么?财产是什么?刚才他说财产那你看有些刚才你说的财产是财产是下毒了财产是下毒了对他说的是别的手段那什么手段手段有界限只要可以我不攻击他人生但是我也要进行财产那
+[Text Detection] 在 505.80 秒检测到关键词 '娇娇',current_time: 480.00, 问题文本: 那就是履行法对他这个例子的下方就是你向往威胁自己的身体的悲但是他居然有自己的抱怨这个还是未办得多好行法呀他邪惑邪惑邪惑 威胁他人迷迷自己一个人的命运再次分为两个层次你好 娇娇如何理解刑法与民法在调整会
+问题音频片段长度: 141312, dtype: float32, min: -0.07318115234375, max: 0.06103515625
+问题音频时间长度: 8.832
+
+
+[Agent] 接收到问题: 教教如何理解刑法与民法在条社会关系中的区别和联系
+, 1735096902.3809478
+
+
+[Agent] 最终接收到问题: 教教如何理解刑法与民法在条社会关系中的区别和联系
+, 1735096902.381062
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+0
+Token count: 3, Total time: 0.9109 seconds, One token time: 0.3036 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：刑法 民法 区别 联系
+Token count: 34, Total time: 6.9425 seconds, One token time: 0.2042 seconds
+
+提取的关键词: ['刑法', '民法', '区别', '联系']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+会议讨论了刑法与民法的区别。刑法旨在保护人身权益，其正当性基于对社会的保护，包括对生命、健康等的保护；而民法则主要调整平等主体间的财产权利，如债权债务关系。刑法涉及更严重的违法行为，如故意伤害、杀人等，而民法则处理日常生活中因财产权益引发的纠纷。两者的区别在于保护的对象和范围不同：刑法侧重人身安全，民法则侧重经济利益。
+Token count: 100, Total time: 19.6057 seconds, One token time: 0.1961 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：刑法 民法 区别 联系
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 002我是主持人002我是主持人006我是咨询人A003我是咨询人B003咨询人C002我是咨询人D005我是咨询人E行,好的,今天的各位教官们,还有法律部的朋友们请不吝点赞 订阅 转发 打赏支持明镜与点点栏目形法的理念和方法形法有正当性形法的正当性有每点的理念我又再次问给两个词词一是目的上的正当性二是社会上的正当性形法上目的上的正当性主要是保护法义从根源上来说为什么会有形法很简单地认为这么一种法律对社会是至关重要的无论是在立法还是司法上,我们需要对【刑】法的任务进一步明确化。刑法发展的早期,恐怕是跟道德比较丰富一点。在这儿我查一下,他们做的这些刑法都可能看得到,这边什么是刑法?A这边。刑法就感觉是一种比较重的刑法。重的,对。身边比较…严谨。严谨,对。我觉得刑法是法律之本,所有的法律都要根据刑法去制定,像婚姻法之类的,都要根据刑法去制定。刑法在那里,那C这个,公布一点点,在你们的概念上是什么意思?我觉得很严肃啊感觉一出张情话就在人就会想到死刑这一方面死刑对 真的就觉得他特别严肃吧这个打击特别严谨那第二个我觉得刑法就是有人受伤了或者死了是刑法对刑法肯定会你觉得会有人受伤对有人死了对这个心法,我感覺是向古代的法家開始然後對於心法,把它設為一些對於違法性的一些法案比如就是像上面的意思,有人受傷了,有人死了就是相當於心法,大家覺得就是心法措施我這個感覺,我推斥,就是這麼樣我先來一點你說大家過的這個觀念怎麼樣都只能说是一半一半吧片面都很片面刑法它是保护人的合法权益它主要目的是保护人身民法是调整平等人与人之间的自然人法人非法人与人之间的合法权益就是大白话说人与人平等刚才他们说了地理有人说死人了死人了受伤了这也是情况这有见性民法民国调整的就是我欠了你多少钱咱俩做个生意赔了咱们让钱怎么办就是两个人之间的纠纷矛盾这个属于文化,生活中所谓的小事就是文化但是想法还是文质侵害你个人的原则不是原则,原则是自己的原则想法是对你的人生造成伤害,对你的财务造成的那个当然可以说这样财务上面不是指到想法吗?对,财务方面不是指到想法就是什么样的财务算一个想法财务力也算是一样就像刚才说的两个人一起做生意这也是一种财产这也是刑法这也是刑法我举个例子刑法上的财产像不用公款罪还有就是盗取财物诈骗财物什么叫诈骗像他人有动情的给予他大家觉得这意思吗可以有点不离谜就像那个感觉就是能在生活中的那种一些消费就刚才你说的那个怎么算是能避免的假如说就是为了继承了名声我想我这个这个就属于人身上的侵犯啊但是你要是这就直接就是侵犯了财产就是就是你一下下你刚才说的这个案子就是我想就是我是败家的我想得到我爸爸的遗产但是我爸知道我会把遗产给他所以我要趁他写遗书之前那我可能是反共产党这是出书在心上那就是如果说就是为了得到一项法案兄弟和两个也算共产党但是这并不知道就是说假设警察因为他自己死了那就是不是一项案就是关那个调查机构他被调查这个事情财产是什么?财产是什么?刚才他说财产那你看有些刚才你说的财产是财产是下毒了财产是下毒了对他说的是别的手段那什么手段手段有界限只要可以我不攻击他人生但是我也要进行财产那教教如何理解刑法与民法在条社会关系中的区别
+会议讨论了刑法与民法的区别。刑法旨在保护人身权益，其正当性基于对社会的保护，包括对生命、健康等的保护；而民法则主要调整平等主体间的财产权利，如债权债务关系。刑法涉及更严重的违法行为，如故意伤害、杀人等，而民法则处理日常生活中因财产权益引发的纠纷。两者的区别在于保护的对象和范围不同：刑法侧重人身安全，民法则侧重经济利益。
+reasoner 输出结束
+就是履行法对他这个例子的下方就是你向往威胁自己的身体的悲但是他居然有自己的抱怨这个还是未办得多好行法呀他邪惑邪惑邪惑 威胁他人迷迷自己一个人的命运再次分为两个层次你好 娇娇如何理解刑法与民法在调整会就是有一個13歲的男孩殺害了自己離家的一名小女孩那女孩還是只有幾歲,8歲好像還是奸長就是他為了猥褻小女孩最後還將小女孩殺害了挺正常的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目但是大家聽了,他殺人了對吧?那你不應該判死刑嗎?或是關監獄?你們覺得這種會走嗎?你們覺得?我覺得,因為這個小男孩他未成年,所以不會受法律很嚴重的制裁。那CD呢?我覺得是,因為畢竟還未成年,他14周年都沒有到。那你覺得會給他一個什麼樣的判決?我觉得最多也就是在警局里面关几天,然后教育一段时间,之后就给放出来了。你觉得他父母会涉及到什么?父母会什么?父母会有罪过吗?他的监护人会判死吗?不会吧。监护人。那这边怎么还有新的,律师里面。就是这个当事人犯罪嫌疑人他年龄只有13岁法律规定承担刑事责任的只有14岁以上然后14到16岁只承担8岁的刑罚就是杀人 抢劫抢那个 抢债 侵债 诈骗偷盗还有两种是食虎,只有这半个人是受到责任的,然后16到18个岁,他所有责任都可以承受。那刚才你说那个小女孩,她会怎么办?她不能等到她18个岁以后才能再承受?这个法日语诗素叫从旧迁从新他现在13多岁,他让他拿着,那咱就放在他家里只能说是把他当上了照顾班所,教育,让他们有认真的法律责任就是关于这段时间教育他所以说这是情况上的工作吗?不能,现在会有案子,那假如有他的父母应该是在这儿请不吝点赞 订阅 转发 打赏支持明镜与点点栏目被害人家属进行的但另外一个是如果就是自己要就是上学的话他父母只要看就是受害者只要看就是小孩父母的罪行他父母是没有没有法律责任的对没有法律责任就能说是他从经济上来说,他的监护人会为自己的孩子做出经济上的责任,但是不会受到法律上的责任。罪责形法上有句话叫罪责行相识。就是他犯了这个罪,他应该要有承担这个罪行的责任、能力,还有相应的形法。比如说,有个例子啊假设中国没有死刑比如没有杀人犯法就是杀人犯法刑法上是这么写的但是大家都认为杀人犯法但是刑法上是这么写的我把这个A删开了大家都觉得我应该按残死刑但是法律上没有写所以不判刑这就叫刑法上是罪有这个法律没有这个法律 没有这个刑刑就代表法律对还有责任就是像刚才这个阿J一样这个小男孩他没有到达承担这个刑事责任的年龄所以他不受任何的刑罚所以他不对只能说是在上官所关系跟一个人收入教育然后家属可以受害家属那个陪上了受害家人一起现在大家都建议修改提前行事责任出单的年龄现在是14周年成本,大家都希望提高到8岁因为在人民法上,8岁以下是允议之行8周岁是限制性的行,18周岁是完全的行他们希望把这个刑法这个责任这个创业到8岁以下因为这个社会的变现人这个大幅发育的相当于比旧州要健全然后发育得快总是得这个重新造业的时间得要早所以他一直在谈事啊现在具体咱们国家在这方面有没有我还不太清楚,我们说下一步情况那4月1号有什么想要问的,我必须要问的有一个别的问题,就是关于正当防卫如果说有一个人就比如说想要对我产生伤害但是我在正当防卫的同时,他不小心死亡了但是我却没有,我就没有事儿,然后那这个怎么判定因為我看我以前很多法律这种案件,就明明是正当防卫,但因为对方死了,那最后还是我去做了。19年,您来到这儿,在19年之前确认是你有可能是有正当防卫不当的,但是19年的时候,最高级警察人,他对正当防卫做了一个新的司法解释,他重新确认了一下,什么叫做正当防卫不当。我拿刀捅你但是我可以捅死你你把我的刀夺过来你把我捅死什么叫捅死就是我拿着弓就要捆你但是你拿着刀反过来再捅掉我我的意思我的目的是教训你但是你把我捅死就是拿来你的武器不都生起于然后又再次分
+[Audio Detection] 在 1023.13 秒检测到关键词 '好交交'。
+detection_time: 1023.13, current_time: 1020.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.093475341796875, max: 0.1016845703125
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1735096958.513115
+
+
+[Agent] 最终接收到问题: 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1735096958.5134528
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4823 seconds, One token time: 0.1608 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+我目前无法执行点赞、订阅、转发或打赏等操作，但非常感谢您对明镜与点点栏目的支持！如果您有任何问题或需要更多信息，请随时提问。
+Token count: 41, Total time: 7.8770 seconds, One token time: 0.1921 seconds
+
+reasoner输出：
+我目前无法执行点赞、订阅、转发或打赏等操作，但非常感谢您对明镜与点点栏目的支持！如果您有任何问题或需要更多信息，请随时提问。我目前无法执行点赞、订阅、转发或打赏等操作，但非常感谢您对明镜与点点栏目的支持！如果您有任何问题或需要更多信息，请随时提问。
+reasoner 输出结束
+谁这个?我这边没有问题了。没有问题了。那D这个?就是我有一个在网上看到的案例。就是有一个小偷,他偷了车里面的钱,之后他骑电车在前面跑了。然后那个司机正好回来之后看见这一幕了他开着车就去追那个前面的小偷然后因为太过于生气了然后就导致了他闯红灯一系列在路上很违法行为之后把那个电动车给撞倒了在路边撞倒之后当事人小偷当场死亡了对 这种情况司机是什么刑罚呀他可能是犯罪他可能是犯罪的谢谢大家但是那个招租违章还是不受宠分的就是宠不封,还是不受宠分因为这段紧急情况,如果他当时不去追选货的话那么很有可能招租他的财产会失去他这个准备在属于一个紧急线上了保安房,把他送到医院,进行闯祸灯这还真是合法的就像是中国车民居闯祸灯一样如果说这个时候,突然有一辆车把这个罗明珠车撞了这个怎么办?因为是他自己闯祸灯在撞的因为另外一辆车也不知道被别人撞的,因为不我觉得是不是应该没闯红楼的车要避让但是这两种情况我感觉第一种如果是救护车的情况的话它如果没有避让这就是没闯红楼的车的责任交车马上肯定是要避让一些车辆这个是装有运营负面的如果是普通的轿车去装运负去闯红楼的话这个的话这是轿车的责任也是招联服的那个责任就是就算是救護車他撞到車也是救護車的救護車雖然可以衝但是他也要看情況不能說前面有車衝過車子剛好上車這是違法的不能說孕婦的生命是生命另一個人的生命就不是生命對醫生的性刚才那个话就说了因为交通事故然后导致了小偷就当场死亡了他最后判定应该是十几年的这个情况这个情况这个是就是最后还会是那个司机他的过失对吗他是过世杀人,属于过世杀人,交通道士交通道士,过世杀人像过世杀人的话,就会对自己有什么影响可能有恩爱,他也会做啊对,因为他当时是从,就是说为了把自己的对方给处罚了但是也是从中而来的就刚才律师说到有恩爱的这个有恩爱的就是只要你,只要你没法做,你会有恩爱的这是多种之一的就是在网上查面的还有就是我给大家普及一下是什么卧室杀人卧室是人死亡最高是半七年不会半七年卧室是人死亡最高七年最高是七年不会人家也怕死那会有经济这就要看情况了一般不会有很多过程就看,也要看造成的损失吧这个要实习化,这个要确保然后就是,那个法庭上写的这个不为杀人的事当事人已经想到,或者应当想到自己的行为会发生危害结果并且认为可以避免或者放任人进入就比如说他去抓那小偷,他开那么快去抓那人,他可能知道会出事儿,但是他不想后果,他就动手出来,所以他还是有责任的。虽然是为了上个阶层的情况,他只能说是那个交通上可以免除一些责任,是为了追回自己的脏法。小猫没死但是就是属于骨骼了吧嗯 残疾了小猫残疾就是小猫啊 没死要跟进去的吧这个要怎么排队是双猫都要看责任吗嗯 这种情况是小猫自己承担的小猫自己承担就是生物必须要承担任何的排队对行然后咱闭嘴边比如在球场打完球,两个人起争,然后就是这个这个假和这个就是互相叫了一拨人对都但是这个假方没有没有叫假方他是直接叫了警察这个怎么算啊因为他以后要这个举重的迹象但是他没有举重斗龙这个有三种手术运法这个比较平常的这三个前段时间的扫描现在是三人成团就是你叫我来三个人就是你一个人在街外表演整个人都可以发现虽然你就实施这个但你有一个共鸡一百人的行为这是为了赶价的所以这个这个刚才他说的就有具体的涉及到这个这个这个会看行政发展新浪子你
+[Text Detection] 在 1561.32 秒检测到关键词 '焦焦',current_time: 1560.00, 问题文本: 你好 焦焦如何界定政黨防衛與防衛過黨的具體區別這個比法法這個什麼現在咱們國家就用法我們說是主辦刑法主辦刑法以後再要看這個人的背景如果說他是同路的話那要有一個清清的責任就是主辦 審判對
+问题音频片段长度: 116907, dtype: float32, min: -0.048736572265625, max: 0.0428466796875
+问题音频时间长度: 7.3066875
+
+
+[Agent] 接收到问题: 你好 焦焦如何界定政黨防衛與防衛過黨的具體區別
+, 1735096993.7972155
+
+
+[Agent] 最终接收到问题: 你好 焦焦如何界定政黨防衛與防衛過黨的具體區別
+, 1735096993.797501
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4833 seconds, One token time: 0.1611 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+判断防卫过当需要综合考虑防卫行为与犯罪行为的性质、程度、动机、手段及结果等多个因素。如果防卫行为明显超过必要限度，造成不应有的重大损害，则可能构成防卫过当。反之，如果防卫行为是在不超出必要限度的情况下进行的，则属于正当防卫。
+talker 输出结束
+好 焦焦如何界定政黨防衛與防衛過黨的具體區別這個比法法這個什麼現在咱們國家就用法我們說是主辦刑法主辦刑法以後再要看這個人的背景如果說他是同路的話那要有一個清清的責任就是主辦 審判對两边都是在约,然后有一边没有来人然后他就一个人打一关了他一关打一关那一关来得够那三十多说七七十八啊对他就需要同志他这一个人也是要被抓起来的对,他也是有同志虽然说他没办法给打电话不然就是对啊,那些人没办法他就不可能好刚才说的那些事是他被打,雖然他被打,但是他也是參與這個打架的對,他是參與打架的都是朋友不是受傷的,都是朋友但是法律,那個被打,打人的一方會被打的如果他受傷的話就是另一個案子,就跟記者會員別的如果說沒有受傷的話,但前置的案子都會被打被打的人受了轻伤和重伤,那叫负身责任。只要到来400电线,只要到来轻伤以上,那他就有负身责任。多大分歧,我们要重新来看。那咱们这个C这边还有什么想要问的吗?想要讓他克服一下這個在生活中,我們以為是對的,但是其實是錯的。那些簡單的常識的那些法律法律。女孩,經常問男孩這個問題,我跟妳媽掉水,妳是先揍我還是揍妳媽?跟妳們,我現在問一下這個女孩,妳們是怎麼想的?我覺得我不會問這種問題。這個是關於法律的問題嗎?對。跟孩子有關係的。有關係的。我认为看男生的意愿,我觉得不应该受法律限制。其实受法律限制,你女朋友跟你还要去女房,法律规定你要救你妈。因为善养成功,这不是女家成功。不是,你说是女朋友,如果是妻子的话是不是不一样?对,妻子是不一样的,但是如果是女朋友的话,是比较好。对,因为你们之间没有任何关系那新的,这个新的的话这个新的的话,这个需要这样子这个需要这样子这都是新的那刚才咱继续冒险的,这是犯罪的对,这是犯罪的,你不要对你的母亲进行那个,没用这个,犯了冤枉放在这儿吧放在这儿吧这个好利用派他对他母亲是有一个义务的,他对他女朋友没有,但是他不是对他的母亲,所以这算是过日杀人,对他进行判刑命令。這次會是先到這我們有機會再請他認識再請他出馬我們一起來吧
+[Audio Detection] 在 1909.17 秒检测到关键词 '好交交'。
+detection_time: 1909.17, current_time: 1890.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.16558837890625, max: 0.150726318359375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 基于之前我们讨论的内容关于打架事件中涉及的法律责任问题您能否进一步解释一下演后后又再次分为两个层次如果一个人
+, 1735097011.8114073
+是hard question，input_question 中包含 '基于之前',问题过于短,使用默认复杂问题持续时间重新STT。
+是hard question，使用默认复杂问题持续时间,音频长度为40.0秒。
+
+
+[Agent] 最终接收到问题: 基于之前我们讨论的内容关于打架事件中涉及的法律责任问题您能否进一步解释一下演后后又再次分为两个层次如果一个人有叫人打架的迹象但没有实际叫来人他在法律上需要承担什么责任同时如果被打的一方受伤打人者需要承担哪些法律责任请不吝点赞 订阅 转发 打赏支持明镜与点点栏目
+, 1735097014.0598884
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4847 seconds, One token time: 0.1616 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：法律责任 打架事件 指 signs
+Token count: 31, Total time: 5.9437 seconds, One token time: 0.1917 seconds
+
+提取的关键词: ['法律责任', '打架事件', '指', 'signs']
+
+找到的上下文片段数量: 3
+在刑法中，唆使他人犯罪但未实际参与的行为，唆使者仍需承担刑事责任，属于共犯责任。但具体到未成年人，如13岁 boy唆使他人犯罪，因其未达到法定刑事责任年龄（14岁及以上），故不承担刑事责任。然而，家长可能因未尽监护责任而需承担一定的民事赔偿责任，以保护受害方权益。这种情况下，法律会综合考虑未成年人的年龄及监护人的责任，采取教育与保护措施。
+Token count: 104, Total time: 20.7012 seconds, One token time: 0.1991 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：法律责任 打架事件 指 signs
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 刑法在那里,那C这个,公布一点点,在你们的概念上是什么意思?我觉得很严肃啊感觉一出张情话就在人就会想到死刑这一方面死刑对 真的就觉得他特别严肃吧这个打击特别严谨那第二个我觉得刑法就是有人受伤了或者死了是刑法对刑法肯定会你觉得会有人受伤对有人死了对这个心法,我感覺是向古代的法家開始然後對於心法,把它設為一些對於違法性的一些法案比如就是像上面的意思,有人受傷了,有人死了就是相當於心法,大家覺得就是心法措施我這個感覺,我推斥,就是這麼樣我先來一點你說大家過的這個觀念怎麼樣都只能说是一半一半吧片面都很片面刑法它是保护人的合法权益它主要目的是保护人身民法是调整平等人与人之间的自然人法人非法人与人之间的合法权益就是大白话说人与人平等刚才他们说了地理有人说死人了死人了受伤了这也是情况这有见性民法民国调整的就是我欠了你多少钱咱俩做个生意赔了咱们让钱怎么办就是两个人之间的纠纷矛盾这个属于文化,生活中所谓的小事就是文化但是想法还是文质侵害你个人的原则不是原则,原则是自己的原则想法是对你的人生造成伤害,对你的财务造成的那个当然可以说这样财务上面不是【指】到想法吗?对,财务方面不是指到想法就是什么样的财务算一个想法财务力也算是一样就像刚才说的两个人一起做生意这也是一种财产这也是刑法这也是刑法我举个例子刑法上的财产像不用公款罪还有就是盗取财物诈骗财物什么叫诈骗像他人有动情的给予他大家觉得这意思吗可以有点不离谜就像那个感觉就是能在生活中的那种一些消费就刚才你说的那个怎么算是能避免的假如说就是为了继承了名声我想我这个这个就属于人身上的侵犯啊但是你要是这就直接就是侵犯了财产就是就是你一下下你刚才说的这个案子就是我想就是我是败家的我想得到我爸爸的遗产但是我爸知道我会把遗产给他所以我要趁他写遗书之前那我可能是反共产党这是出书在心上那就是如果说就是为了得到一项法案兄弟和两个也算共产党但是这并不知道就是说假设警察因为他自己死了那就是不是一项案就是关那个调查机构他被调查这个事情财产是什么?财产是什么?刚才他说财产那你看有些刚才你说的财产是财产是下毒了财产是下毒了对他说的是别的手段那什么手段手段有界限只要可以我不攻击他人生但是我也要进行财产那教教如何理解刑法与民法在条社会关系中的区别和联系就是履行法对他这个例子的下方就是你向往威胁自己的身体的悲但是他居然有自己的抱怨这个还是未办得多好行法呀他邪惑邪惑邪惑 威胁他人迷迷自己一个人的命运再次分为两个层次你好 娇娇如何理解刑法与民法在调整会就是有一個13歲的男孩殺害了自己離家的一名小女孩那女孩還是只有幾歲,8歲好像還是奸長就是他為了猥褻小女孩最後還將小女孩殺害了挺正常的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目但是大家聽了,他殺人了對吧?那你不應該判死刑嗎?或是關監獄?你們覺得這種會走嗎?你們覺得?我覺得,因為這個小男孩他未成年,所以不會受法律很嚴重的制
+---
+就是这个当事人犯罪嫌疑人他年龄只有13岁法律规定承担刑事责任的只有14岁以上然后14到16岁只承担8岁的刑罚就是杀人 抢劫抢那个 抢债 侵债 诈骗偷盗还有两种是食虎,只有这半个人是受到责任的,然后16到18个岁,他所有责任就是这个当事人犯罪嫌疑人他年龄只有13岁法律规定承担刑事责任的只有14岁以上然后14到16岁只承担8岁的刑罚就是杀人 抢劫抢那个 抢债 侵债 诈骗偷盗还有两种是食虎,只有这半个人是受到责任的,然后16到18个岁,他所有责任都可以承受。那刚才你说那个小女孩,她会怎么办?她不能等到她18个岁以后才能再承受?这个法日语诗素叫从旧迁从新他现在13多岁,他让他拿着,那咱就放在他家里只能说是把他当上了照顾班所,教育,让他们有认真的【法】律责任就是关于这段时间教育他所以说这是情况上的工作吗?不能,现在会有案子,那假如有他的父母应该是在这儿请不吝点赞 订阅 转发 打赏支持明镜与点点栏目被害人家属进行的但另外一个是如果就是自己要就是上学的话他父母只要看就是受害者只要看就是小孩父母的罪行他父母是没有没有法律责任的对没有法律责任就能说是他从经济上来说,他的监护人会为自己的孩子做出经济上的责任,但是不会受到法律上的责任。罪责形法上有句话叫罪责行相识。就是他犯了这个罪,他应该要有承担这个罪行的责任、能力,还有相应的形法。比如说,有个例子啊假设中国没有死刑比如没有杀人犯法就是杀人犯法刑法上是这么写的但是大家都认为杀人犯法但是刑法上是这么写的我把这个A删开了大家都觉得我应该按残死刑但是法律上没有写所以不判刑这就叫刑法上是罪有这个法律没有这个法律 没有这个刑刑就代表法律对还有责任就是像刚才这个阿J一样这个小男孩他没有到达承担这个刑事责任的年龄所以他不受任何的刑罚所以他不对只能说是在上官所关系跟一个人收入教育然后家属可以受害家属那个陪上了受害家人一起现在大家都建议修改提前行事责任出单的年龄现在是14周年成本,大家都希望提高到8岁因为在人民法上,8岁以下是允议之行8周岁是限制性的行,18周岁是完全的行他们希望把这个刑法这个责任这个创业到8岁以下因为这个社会的变现人这个大幅发育的相当于比旧州要健全然后发育得快总是得这个重新造业的时间得要早所以他一直在谈事啊现在具体咱们国家在这方面有没有我还不太清楚,我们说下一步情况那4月1号有什么想要问的,我必须要问的有一个别的问题
+---
+不是,你说是女朋友,如果是妻子的话是不是不一样?对,妻子是不一样的,但是如果是女朋友的话,不是,你说是女朋友,如果是妻子的话是不是不一样?对,妻子是不一样的,但是如果是女朋友的话,是比较好。对,因为你们之间没有任何关系那新的,这个新的的话这个新的的话,这个需要这样子这个需要这样子这都是新的那刚才咱继续冒险的,这是犯罪的对,这是犯罪的,你不要对你的母亲进行那个,没用这个,犯了冤枉放在这儿吧放在这儿吧这个好利用派他对他母亲是有一个义务的,他对他女朋友没有,但是他不是对他的母亲,所以这算是过日杀人,对他进行判刑命令。這次會是先到這我們有機會再請他認識再請他出馬我們一起來吧基于之前我们讨论的内容关于打架事件中涉及的【法】律责任问题您能否进一步解释一下演后后又再次分为两个层次如果一个人有叫人打架的迹象但没有实际叫来人他在法律上需要承担什么责任
+在刑法中，唆使他人犯罪但未实际参与的行为，唆使者仍需承担刑事责任，属于共犯责任。但具体到未成年人，如13岁 boy唆使他人犯罪，因其未达到法定刑事责任年龄（14岁及以上），故不承担刑事责任。然而，家长可能因未尽监护责任而需承担一定的民事赔偿责任，以保护受害方权益。这种情况下，法律会综合考虑未成年人的年龄及监护人的责任，采取教育与保护措施。
+reasoner 输出结束
+
+会议数据处理完成。

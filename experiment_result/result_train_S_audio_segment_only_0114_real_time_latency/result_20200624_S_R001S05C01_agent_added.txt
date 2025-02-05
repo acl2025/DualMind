@@ -1,0 +1,451 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200624_S_R001S05C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Starting processing from 0s, total chunks: 67
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.18s/it]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.15it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.42s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.24s/it]
+Loading checkpoint shards:  60%|██████    | 3/5 [00:12<00:10,  5.12s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  5.11s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.74s/it]
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:16<00:04,  4.93s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.75s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.70s/it]
+平常起有事还是有事今天把大家叫过来开个月报总结会这个这个这个月这个月他们这个各部门的一些情况现在我想做一个这个回报我们从月圆这个开始嗯,我们觉得上个月我们的经营不是很好所以呢,我們要針對上个月不好的状态我们进行调整这个月我们要搞几个活动然后争取把我们的利润还有我们经营状态扭转过来那我们的业绩会变得更好经营不好有这个今天市场比竞争现在比较激烈对 市场竞争很激烈有一些的方法然后让他们来选择我们的名领还有就是以前的这个疫情还有就是这个上半年这个疫情影响大趋势不太好对咱这个影响也非常地大因为人们现在还对这个对这个疫情有很敏感吧疫情是一方面会影响到这个女人爱美的知心所以我们还是方法没有运用得当所以说我们在考虑一些另外的方法的话来招联一下我们的顾客小道拿个刷眼皮拿到整体护肤我们都做一下调整看看是否有够有好的效果顾问这一块接待了有五六十人吧其中有一半都是之前的老顧客然後來光顧很少有一些新的面孔然後過來我覺得我們要相信一下我們的產品然後還要積極地創新之後積極給這些老顧客就給他們說讓他們覺得滿意然後也要帶動新的就是新的人会来来我们这里那我们要做一下我们可以推出一些专门的护肤的种类套餐比方说我们起个名字比方说我们这儿是超时空超时空护肤对吧年缓衰老美容面环境比较重要,最大的就是享受。目前美容项目有多少?有些顧客會一個療程下來以後會說所以之前做的时候会给它拍照片,然后做完以后,整个疗程用完以后再给它做。效果是在设备问题还是在手法上的问题?效果肯定是它做的比较少的原因吧。比较少的原因。还是这个东西要经常做才会出效果,所以你做之前一定要拍照。那能不能通过讲这个手法上或者是美容设备上来增加这个效果吗?对,就是在这个设备上,我觉得应该可以出去留一些培训什么的,报一种研修班,然后出去美容师吧,还有美容顾问,我们都应该报一些这种班。就有些生物的培训。对,可以出去过段时间出去研修一下,因为肯定时代也在改变现在我们这个美容这个步骤咱们也要做相应的打变现在针对女性的就是20岁到40岁20多岁也不少我觉得我们针对的人群应该是大概在30岁以上然后50岁以下因为女人的马在这个阶段可能会走下坡衰老所以说我们需要延缓它的衰老我们用我们的化妆品就能够延缓它的衰老这个年龄段它皮肤状态比较重视对我们针对这样的东西他们有一定的经济基础他们在美洲上使得花钱然后呢我们呢就针对他们出一些套餐比方说我们出美白嗯养疗这样的话对他的肌肤呢有延缓的作用延缓衰老的作用目前目前咱们这个这个有这个面部这个护理这些项目目前咱们有这个目前的这个营养光敷这个项目,美白和美白俏颜这个项目,这两个比较好。现在当然营养光敷这个比较赚钱吧。对,而且这个光敷的话它就会硬日般的细腻。主要还是看皮肤的基底吧因为营养到了之后它皮肤自然而然就不会那么快衰老啊或者有黑斑呀或者变黑呀水流在受热性复利会有养的比较多吧因为最主要的就是补水水就让它变冷了每一个疗程需要做几次呢每个疗程一周一次的话就12次四个疗程分家呢分家也可以因為它這個就需要持續的比重有的客户他就害怕一直在我们那里做他的皮肤就挺好他要是不做了他的皮肤就会突然之间就会变得特别衰老了你说我们怎么用什么方法来打消他这种顾虑还是靠说吧因为这是靠消磨我
+[Text Detection] 在 505.85 秒检测到关键词 '娇娇',current_time: 496.00, 问题文本: 我们的产品一直在改变我觉得是我们的产品就是说你不用我们的产品了你好娇娇如何通过创新美容项目和提升服务质量来吸引新客户然后你就会觉得不舒服你就会觉得好像你要老得快了但是我们希望的就是能够贯注他的思想就是说你知道我来舞
+们的产品一直在改变我觉得是我们的产品就是说你不用我们的产品了你好娇娇如何通过创新美容项目和提升服务质量来吸引新客户然后你就会觉得不舒服你就会觉得好像你要老得快了但是我们希望的就是能够贯注他的思想就是说你知道我来舞然后再加一些化妆品配合一下之前来这儿打受眼针的人多吗受眼针目前还受眼针一般吧不算多的也不算少因为在我们这边这个房间还不太没有太实行没有太新体来有的开放了一定的对,他可能问的人多,但是真正的答案是不一样的。目前,咱们想到这边有两种问题,一个是金可泽,一个是国际的。我觉得咱们这个受费针这方面,应该加大一些失败力。我觉得这方面效果还好因为那个是专业家大型的一些就有各种机构的验证 经货证据嗯那首先就是我们说点真的品牌然后要硬然后要是大品牌然后顾客来的时候如果他有这个念头他询问你的话你就应该就是给他介绍然后这些介绍不光是我们介绍然后手机上也好电脑上也好网上的他们都能搜到就是一些比较国际的一些品牌然后让他们心里边放心他们要确实有需要的话,我们肯定会做的。然后顾客确实需要收盐,哪怕需要收腿、收臀,我们都能够满足他。首先我们会签订一个协议,然后你既然要做我们用的东西,都是绝对的进口、安全放心的。就是能够尽量的做到百分之一,无问题。做之前应该检查一下他们的皮肤状态,看他们到底适不适合做这个,不然出来问题我们也不能担保。看他这个皮肤这个是哪种类型的。对,是鸡蛋,鸡蛋是干皮。下个月我们可以去抓紧,就是要收敛,抓紧,促销点,就是要抓紧。我们可以把这个在我们这里做美容成功的,比方说他来之前照的照片,然后明显的黑,然后在我们这做了几个月的美容以后明显变白了,变嫩了,变年轻了,我们可以做一个对比,取得人家同意之后,我们就专门办一个照片墙,然后在进门的时候,就顾客等待区域那时候,这个就是我们的火广告,对吧,而且还是,我们承诺就是我把你的照片贴出来,你就是我们的会员了,然后我们每年可以免费的给你做一次皮肤的护理,他们肯定也高兴,对吧,这就成为我们的火广告了,而且是廉价的护理费用。对,吸引更多的顾客来,我们这里做取代也好,护肤也好。或者老顾客带一个新顾客来之后,我们会给老顾客有一些什么好处理啊,或者给他办一个免费的水疗SPA或者护理,这样积极带动他,可以带新顾客来。这个也可以,对,这样的话,互相嘛,他带人过来,他们互相都有一个优惠。只要选择我们这里,绝对有他的,所想做的项目。我们在这边收集下这些美容师的语气还有一些环境问题环境因素也很重要环境环境嘛我们的环境还是很好我们是一个温度是一个湿度然后在我们这里都会感觉到很舒适呼吸的空气我们都有监测然后的含氧量湿度都是按照我们人体最高的需要来调和的非常舒适但是没有顾客说我们这个环境什么不好的就是能让顾客舒心然后因为在这做这些就是面部的一些或者是对身体因为要呈现在外面然后应该是很重要的就应该有一个舒适的环境然后带动让顾客能够就是心情也舒畅然后在我们这做对 这方面咱们要注意还有就是目前咱们这个因为人的理论消费就已经增加了所以我们决定退入美容针希望我们可以进入市场现在也越来越多女性都会做这个项目还有咱们要针对一些高端人群在美容针这个机制上增加一个同眼针这个要比一个玫瑰灯要比一个树莲灯贵很多刚才那个树莲灯的基本上普通的有1800元进口的有2800元在这个工业灯这方面就是比较贵了4800元4000多块钱针对这个有什么想要说的吗那个真正打了童颜真呢他是否对啊他能够打得起这个真的人他肯定是不差钱的对吧,他不缺这个钱但是我们想说的这个他其实让人嘛就跟秦始皇寻常生不老药一样到头来还是镜中月,雪中花但是我们这个有作用吧肯定会有一定的作用但是并不会让他想象我打了这个仗我
+[Text Detection] 在 1010.17 秒检测到关键词 '基於之前',current_time: 992.00, 问题文本: 我就用保護同研了那不可能可能就是因為是你一起打的對吧我們可以跟他打個比喻我們這有大明星啊香港的那個趙淑芝的還有那個女生們美的你好嬌嬌基於之前我們討論的內容關於瘦臉真的宣傳和推廣我们应该如何制定具体的营销策略
+就用保護同研了那不可能可能就是因為是你一起打的對吧我們可以跟他打個比喻我們這有大明星啊香港的那個趙淑芝的還有那個女生們美的你好嬌嬌基於之前我們討論的內容關於瘦臉真的宣傳和推廣我们应该如何制定具体的营销策略那怎么去寻找一些这种高楼客人呢?那就看我们的这个楼院的这个店员他们能够发觉一看来的人这个就是有钱的一看就是要做这个的就是要去高楼寻找就是四十多岁的那可以就是在做每个人的方式来推销一些这种刚才说的,目前我们公司这个会员的费用是不大了费用现在有100个100个目前我们100个这些人可能在咱们这个消费有几个人觉得咱们可以向他推广像他推广的感觉像美颜真吧,就是岁数大一点的,超过四十多岁的,然后给他们,因为他们的精子基础上也行厚,可以就是告诉他们说,你们现在心急的这个美颜真。其实在四十多岁都可以介绍一下。如果你想试一试的话,这个针不需要一直打,但是一年打一次。就可以了如果他想要尝试的话就可以试一试对吧他的经济然后实力都允许他这样对然后他打了结果他确实挺好的然后他连打了五年因为五年他的容貌没有变化甚至他变得更加年轻了那么他就是成功了对吧我觉得就是提前的说好,说清咱们这个针不是打一针就可以的,就是会定期要打。然后如果可以尝试的话,就让他们可以尝试一下。虽然可能不能变得就是变年轻或者什么的,但是如果五年之内它不会衰了,一直保持它这个。我觉得这个是很过万吧他不会继续摔了,就是保持他那个,比如他45度打的,打到50了,他还是像45度那样。那就是成功,其实那就是成功,但是有的朋友他会问他,不是我们这个有没有副作用呢?他会担心这个副作用。副作用的话,我们就得打之前,就得先检查一下身体,看一下它是否合打。然后多少副作用多少的话,肯定不能有太大的副作用。就是所謂顧客他心裡邊的疑慮就是說我是打這個針我就能夠這五天之內不怎麼變化但是我不打這個針以後是否就突然間就衰老了衰老得特別快他們就是他們所擔心的這個問題我們是否因為現在這個的話我們就給他講一些成功的案例然後把我們這些品牌宣傳我們這些品牌这些品牌都比较大的国际品牌进口的产品可以用我们研发衰老的龙眼针然后需要配合一下我们的化妆品然后配合使用这样会有更好的效果就推荐除皱的那种防止衰老的化妆品下季的话要通过我们专门的网站说这样的东西给他们才能有更好的后裔对,因为目前的打局影响所以针对高端这些,我们也要开展针对一些男士,目前他们做的生意就是不要那么针对一些女士男士確實男士我覺得也要開放一下這個這個那個收場男士我们这儿暂时还没有暂时还没有对男士的话可以开阔微整的这一块我们这儿有的男士比如说他可能对美容这些就打一些光线刷什么对 但是微整可以开阔一下这种市场有的男人他可能也会对自己下巴不满呀 鼻子不满呀这种男生比較多的皮膚皮肤上面咱们也可以针对于现在的男士,因为现在男士的皮肤都不太好,这一定是男性生理原因。对,他男的,有的他天真爱玩,晒的就黑,他来我们这儿要立马变白,那个也不现实,对吧?明天我就给你一个点牌了像这种就可以推荐他们使用美白针这种的就是作效快一点的还有一个目前目前的那个会员卡当中有几种只有一种吗图纸卡会员卡我可以用金卡,銀卡,鑽石卡,在我們這消費更高的就是鑽石卡,那就是鑽石會員,享受我們最高的福星禮服。因為這個在NOKA 上可能根據他們個人的一些情況我睡这边现在人就一杯美容水对就是手术廉政对不许他们消费情况对啊这是我们也是我们美容院独打的也是我们的压箱底的宝贝我们告诉他们我们这个是有数量的不是要多少有多少也不是说你有钱的人能买得到好当然我们针对这些VIP客户的话,服务会更好。一来我们就得一看你哪卡,钻石卡,金卡,VIP会员。首先我们就会单独的一个房间,然后专门人服务。这个就不需要再给他解释太多了,因为他一直是我们的会员。如果来一个新人的话,没有可能,因为他介绍了。就也能增加了一件消
+[Text Detection] 在 1540.53 秒检测到关键词 '焦焦',current_time: 1519.00, 问题文本: 消费这个金庄对是吧比如说刚才的银卡我想说没有没有想说金卡的一种待遇对金卡跟银卡它们待遇不一样对金卡我觉得因为女士吧任何人她都有一种这个判断的心理你好焦焦如何针对高端客户推广美颜针并开拓男士美容市场它可以从银卡收到金卡
+费这个金庄对是吧比如说刚才的银卡我想说没有没有想说金卡的一种待遇对金卡跟银卡它们待遇不一样对金卡我觉得因为女士吧任何人她都有一种这个判断的心理你好焦焦如何针对高端客户推广美颜针并开拓男士美容市场它可以从银卡收到金卡在一个月有20万,直接进售为我们的健康,直接进售为我们的健康。男士可以做一个小护肤。目前這個月在賣化妝品上面这个月销售的情况这家的化妆品刚在这儿买的化妆品还挺不错的因为有一些产品都是免费送按摩的他拿着产品在这儿不按摩还有来我们这儿做护理做这些然后给他们推荐配合我们的护肤品用的会更好效果非常好这方面还是不错的对还有咱们刚才也说过这个男士男士先先这个市场吧不用大批人去占可以简单推推荐几个小项目慢慢做先一点一点干了,瞧鼻了,苦咒,眼角纹,关扎伤我们男士也进行了一点,现在男士爱美的人也越来越多了也挺入众的,苦苦的下半年,上半年,我会在美容的台上,下半年会爆发,因为以前环境,我家最难,最常见的短痛也松了。所以相当于我们要多搞一些活动然后我们争取让他们老客户带新客户里面都能够来这享受更好然后基础也变得更加亮丽他们就会选择我们了我们可以推销几款活动比如说套餐活动然后可以有包月的也可以有全年的比方说我或者某种活动我们推销几次比方说你单次的话我们这个营养夫妇是260,然后呢你要是如果一下要14就可以每次200,就一下2000这样子国力多销也是我们的一个收入大项还有什么想要说的?现在认可工匠酸的人比较多,所以童年针的话,就会跟他说,工匠酸更加的自然,持续的时间更长,给他解释一些这种,也讓他不會對童年針有太大的恐懼感目前咱们这边套餐建议更改一下名字因为咱们这个名字有落实应该更改一下套餐这一个新的名字这方面可能都有什么好的想法除了更改名字我觉得也可以就是套餐内容互相调换一下有的顾客来之后他就觉得我这次做了一个这个护理然后我其实这个想搭配搭配另外一种来做但是我们这个护理就是比如说和这个美容啊这一方面包括但是他不想要这个多一些选择我们这里问的是我们起个名字我觉得也来个逆时空复苏这就是我们主打对吧让人一想就是年轻人逆时空逆时空就是今年20年明年18年越活越年轻了因为咱这个套餐有很多每个都要感觉一下这个这个各项这个套餐更加的高大上一点给一个老因为老顾客也有这种这个疲劳感每次都选一个套餐没有没有没有这个业务质量没有提升都一样我会对咱们这个包括老公的咱们因为更年以后咱们这个经济能力上会让人耳门心脏对这个套餐咱们会先暂时的先说一下先治病一下下去以后咱们讨论一下到底起程的能力比较好套餐的額上都要更改一下可以启程的我们都不知道嗯神秘的套餐嗯行下去都可以想一下预期再想一下还有那咱本次这个会就先开到这行吗都扣了一下
+[Audio Detection] 在 2038.43 秒检测到关键词 '好交交'。
+detection_time: 2038.43, current_time: 2015.00
+会议内容转录完毕。处理会议问题
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200624_S_R001S05C01_agent_added/out_004-M_0.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 764379, dtype: float32, min: -0.3787994384765625, max: 0.33217620849609375
+问题音频时间长度: 47.7736875
+
+
+[Agent] 接收到问题: 你好,焦焦基于之前我们讨论的内容关于美容院套餐名称更新的问题大家有什么具体的想法吗我们应该如何调整套餐内容以满足顾客的个性化需求同时提升我们的服务质量和顾客满意度
+, 1736827204.8988125
+问题音频STT前的时刻: 1736827204.8991444
+问题音频STT后的时刻: 1736827205.3988314
+问题音频STT时间: 0.49968695640563965
+
+
+[Agent] 最终接收到问题: 你好,教教如何通过创新美容项目和提升服务质量来吸引新客户。
+, 1736827205.3990042
+问题音频送入Planner的时刻: 1736827205.399508
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+planner new_token time: 1736827206.0258884
+planner new_token time: 1736827206.4173405
+planner new_token time: 1736827206.4178872
+First token received: 1, time: 1736827206.41861
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1736827206.621741
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+talker first token time: 1736827207.1736438
+talker first token time: 1736827207.2247255
+talker first token time: 1736827207.250481
+talker first token time: 1736827207.3015363
+talker first token time: 1736827207.3272398
+talker first token time: 1736827207.3531635
+talker first token time: 1736827207.3788986
+talker first token time: 1736827207.4046872
+talker first token time: 1736827207.4304101
+talker first token time: 1736827207.45629
+talker first token time: 1736827207.48206
+talker first token time: 1736827207.507753
+talker first token time: 1736827207.533469
+talker first token time: 1736827207.5592864
+talker first token time: 1736827207.5850422
+talker first token time: 1736827207.6363204
+talker first token time: 1736827207.6621509
+talker first token time: 1736827207.6880088
+talker first token time: 1736827207.7138689
+talker first token time: 1736827207.7399745
+talker first token time: 1736827207.7917066
+talker first token time: 1736827207.8177173
+talker first token time: 1736827207.8435755
+talker first token time: 1736827207.8950024
+talker first token time: 1736827207.9209635
+talker first token time: 1736827207.9468372
+talker first token time: 1736827207.972798
+talker first token time: 1736827207.9988322
+talker first token time: 1736827208.0250719
+talker first token time: 1736827208.0510027
+talker first token time: 1736827208.077037
+talker first token time: 1736827208.1033561
+talker first token time: 1736827208.129622
+talker first token time: 1736827208.1559384
+talker first token time: 1736827208.182148
+talker first token time: 1736827208.234504
+talker first token time: 1736827208.286762
+talker first token time: 1736827208.3131373
+talker first token time: 1736827208.3393862
+talker first token time: 1736827208.3658466
+talker first token time: 1736827208.418379
+talker first token time: 1736827208.4446802
+talker first token time: 1736827208.4711292
+talker first token time: 1736827208.5236633
+talker first token time: 1736827208.550042
+talker first token time: 1736827208.5765102
+talker first token time: 1736827208.6031787
+talker first token time: 1736827208.629664
+talker first token time: 1736827208.6822543
+talker first token time: 1736827208.7087443
+talker first token time: 1736827208.7352135
+talker first token time: 1736827208.7617776
+talker first token time: 1736827208.7883825
+talker first token time: 1736827208.8415365
+talker first token time: 1736827208.8681116
+talker first token time: 1736827208.8945973
+talker first token time: 1736827208.9212418
+talker first token time: 1736827208.947826
+talker first token time: 1736827208.9744835
+talker first token time: 1736827209.0546336
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+"你好，娇娇。创新美容项目和提升服务质量是吸引新客户的重要策略。你可以尝试推出一些新颖、独特的美容服务，例如基于最新科技的皮肤测试或个性化的美容方案。同时，确保提供高质量的服务，包括专业的技术、舒适的环境和良好的客户服务。这将有助于建立口碑，吸引并保留新的客户群体。"
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200624_S_R001S05C01_agent_added/out_004-M_1.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 764379, dtype: float32, min: -0.3787994384765625, max: 0.33217620849609375
+问题音频时间长度: 47.7736875
+
+
+[Agent] 接收到问题: 你好,焦焦基于之前我们讨论的内容关于美容院套餐名称更新的问题大家有什么具体的想法吗我们应该如何调整套餐内容以满足顾客的个性化需求同时提升我们的服务质量和顾客满意度
+, 1736827210.6051517
+问题音频STT前的时刻: 1736827210.6053252
+问题音频STT后的时刻: 1736827212.3216014
+问题音频STT时间: 1.7162761688232422
+
+
+[Agent] 最终接收到问题: 你好,焦焦。基于之前我们讨论的内容,关于瘦脸针的宣传和推广,我们应该如何制定具体的营销策略,以吸引更多顾客选择我们的瘦脸针服务。同时,针对高端客户群体,我们如何通过提供差异化服务来提升童颜针的市场竞争力。
+, 1736827212.3219035
+问题音频送入Planner的时刻: 1736827212.322724
+planner new_token time: 1736827212.9736257
+planner new_token time: 1736827213.3627503
+First token received: 0, time: 1736827213.3628755
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1736827213.752383
+planner new_token time: 1736827214.1411707
+planner new_token time: 1736827214.529732
+planner new_token time: 1736827214.9187014
+planner new_token time: 1736827215.3074994
+planner new_token time: 1736827215.6965399
+planner new_token time: 1736827216.084889
+planner new_token time: 1736827216.4736176
+planner new_token time: 1736827216.8622882
+planner new_token time: 1736827217.2522829
+planner new_token time: 1736827217.6423867
+planner new_token time: 1736827218.0324895
+planner new_token time: 1736827218.422885
+planner new_token time: 1736827218.8122435
+planner new_token time: 1736827219.2021759
+planner new_token time: 1736827219.5937052
+planner new_token time: 1736827219.9839792
+planner new_token time: 1736827220.3739784
+planner new_token time: 1736827220.7641082
+planner new_token time: 1736827221.1557035
+planner new_token time: 1736827221.5472176
+planner new_token time: 1736827221.939418
+planner new_token time: 1736827222.3305588
+planner new_token time: 1736827222.7210603
+planner new_token time: 1736827223.111273
+planner new_token time: 1736827223.501193
+planner new_token time: 1736827223.891751
+planner new_token time: 1736827224.2820108
+planner new_token time: 1736827224.6730375
+planner new_token time: 1736827225.0641787
+planner new_token time: 1736827225.4545758
+planner new_token time: 1736827225.845908
+planner new_token time: 1736827226.237495
+planner new_token time: 1736827226.6282032
+planner new_token time: 1736827227.0194628
+planner new_token time: 1736827227.4103885
+planner new_token time: 1736827227.80059
+planner new_token time: 1736827228.191703
+planner new_token time: 1736827228.5827703
+planner new_token time: 1736827228.974136
+planner new_token time: 1736827229.3656356
+planner new_token time: 1736827229.7574885
+planner new_token time: 1736827230.1497788
+planner new_token time: 1736827230.5411806
+planner new_token time: 1736827230.542
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：瘦脸针 宣传 推广 高端客户 童颜针 差异化服务
+
+
+提取的关键词: ['瘦脸针', '宣传', '推广', '高端客户', '童颜针', '差异化服务']
+
+找到的上下文片段数量: 2
+/home/leon/agent/agent/agent_tools.py:261: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = planner_llm(prompt)
+
+Token count: 128, Total time: 50.6458 seconds, One token time: 0.3957 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：瘦', '脸', '针', ' ', '宣', '传', ' ', '推', '广', ' ', '高', '端', '客户', ' ', '童', '颜', '针', ' ', '差', '异', '化', '服务', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###我们在这边收集下这些美容师的语气还有一些环境问题环境因素也很重要环境环境嘛我们的环境还是很好我们是一个温度是一个湿度然后在我们这里都会感觉到很舒适呼吸的空气我们都有监测然后的含氧量湿度都是按照我们人体最高的需要来调和的非常舒适但是没有顾客说我们这个环境什么不好的就是能让顾客舒心然后因为在这做这些就是面部的一些或者是对身体因为要呈现在外面然后应该是很重要的就应该有一个舒适的环境然后带动让顾客能够就是心情也舒畅然后在我们这做对 这方面咱们要注意还有就是目前咱们这个因为人的理论消费就已经增加了所以我们决定退入美容针希望我们可以进入市场现在也越来越多女性都会做这个项目还有咱们要针对一些高端人群在美容针这个机制上增加一个同眼针这个要比一个玫瑰灯要比一个树莲灯贵很多刚才那个树莲灯的基本上普通的有1800元进口的有2800元在这个工业灯这方面就是比较贵了4800元4000多块钱针对这个有什么想要说的吗那个真正打了童颜真呢他是否对啊他能够打得起这个真的人他肯定是不差钱的对吧,他不缺这个钱但是我们想说的这个他其实让人嘛就跟秦始皇寻常生不老药一样到头来还是镜中月,雪中花但是我们这个有作用吧肯定会有一定的作用但是并不会让他想象我打了这个仗我就用保護同研了那不可能可能就是因為是你一起打的對吧我們可以跟他打個比喻我們這有大明星啊香港的那個趙淑芝的還有那個女生們美的你好嬌嬌基於之前我們討論的內容關於瘦臉真的宣傳和推廣我们应该如何制定具体的营销策略那怎么去寻找一些这种高楼客人呢?那就看我们的这个楼院的这个店员他们能够发觉一看来的人这个就是有钱的一看就是要做这个的就是要去高楼寻找就是四十多岁的那可以就是在做每个人的方式来推销一些这种刚才说的,目前我们公司这个会员的费用是不大了费用现在有100个100个目前我们100个这些人可能在咱们这个消费有几个人觉得咱们可以向他【推】广像他推广的感觉像美颜真吧,就是岁数大一点的,超过四十多岁的,然后给他们,因为他们的精子基础上也行厚,可以就是告诉他们说,你们现在心急的这个美颜真。其实在四十多岁都可以介绍一下。如果你想试一试的话,这个针不需要一直打,但是一年打一次。就可以了如果他想要尝试的话就可以试一试对吧他的经济然后实力都允许他这样对然后他打了结果他确实挺好的然后他连打了五年因为五年他的容貌没有变化甚至他变得更加年轻了那么他就是成功了对吧我觉得就是提前的说好,说清咱们这个针不是打一针就可以的,就是会定期要打。然后如果可以尝试的话,就让他们可以尝试一下。虽然可能不能变得就是变年轻或者什么的,但是如果五年之内它不会衰了,一直保持它这\n---\n所以相当于我们要多搞一些活动然后我们争取让他们老客户带新客户里面都能够来这享受更好然后基础也变得更加亮丽他们就会选择我们了我们可以推销几款活动比如说套餐活动然后可以有包月的也可以有全年的比方说我或者某种活动我们推销几次比方说你单次的话我们这个营养夫妇是260,然后呢你要是如果一下要14就可以每次200,就一下2000这样子国力多销也是我们的一个收入大项还有什么想要说的?现在认可工匠酸的人比较多,所以童年针的话,就会跟他说,工匠酸更加的自然,持续的时间更长,给他解释一些这种,也讓他不會對童年針有太大的恐懼感目前咱们这边套餐建议更改一下名字因为咱们这个名字有落实应该更改一下套餐这一个新的名字这方面可能都有什么好的想法除了更改名字我觉得也可以就是套餐内容互相调换一下有的顾客来之后他就觉得我这次做了一个这个护理然后我其实这个想搭配搭配另外一种来做但是我们这个护理就是比如说和这个美容啊这一方面包括但是他不想要这个多一些选择我们这里问的是我们起个名字我觉得也来个逆时空复苏这就是我们主打对吧让人一想就是年轻人逆时空逆时空就是今年20年明年18年越活越年轻了因为咱这个套餐有很多每个都要感觉一下这个这个各项这个套餐更加的高大上一点给一个老因为老顾客也有这种这个疲劳感每次都选一个套餐没有没有没有这个业务质量没有提升都一样我会对咱们这个包括老公的咱们因为更年以后咱们这个经济能力上会让人耳门心脏对这个套餐咱们会先暂时的先说一下先治病一下下去以后咱们讨论一下到底起程的能力比较好套餐的額上都要更改一下可以启程的###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n会议上提到，对于现有的美容针服务，特别是“童颜针”，需向经济条件较好的客户进行宣传和推广。具体策略是通过店内员工识别潜在高端客户，并直接向其推荐适合的服务项目，如“童颜针”。此外，还计划推出一系列优惠活动，比如套餐包月或全年服务，以此吸引顾客尝试并成为长期使用者。针对客户可能对“童颜针”存在疑虑，建议强调“童颜针”的效果及与“工匠酸”的对比，帮助减轻客户的恐惧感。同时，考虑调整现有套餐的名字和内容，使其更具吸引力。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###我们在这边收集下这些美容师的语气还有一些环境问题环境因素也很重要环境环境嘛我们的环境还是很好我们是一个温度是一个湿度然后在我们这里都会感觉到很舒适呼吸的空气我们都有监测然后的含氧量湿度都是按照我们人体最高的需要来调和的非常舒适但是没有顾客说我们这个环境什么不好的就是能让顾客舒心然后因为在这做这些就是面部的一些或者是对身体因为要呈现在外面然后应该是很重要的就应该有一个舒适的环境然后带动让顾客能够就是心情也舒畅然后在我们这做对 这方面咱们要注意还有就是目前咱们这个因为人的理论消费就已经增加了所以我们决定退入美容针希望我们可以进入市场现在也越来越多女性都会做这个项目还有咱们要针对一些高端人群在美容针这个机制上增加一个同眼针这个要比一个玫瑰灯要比一个树莲灯贵很多刚才那个树莲灯的基本上普通的有1800元进口的有2800元在这个工业灯这方面就是比较贵了4800元4000多块钱针对这个有什么想要说的吗那个真正打了童颜真呢他是否对啊他能够打得起这个真的人他肯定是不差钱的对吧,他不缺这个钱但是我们想说的这个他其实让人嘛就跟秦始皇寻常生不老药一样到头来还是镜中月,雪中花但是我们这个有作用吧肯定会有一定的作用但是并不会让他想象我打了这个仗我就用保護同研了那不可能可能就是因為是你一起打的對吧我們可以跟他打個比喻我們這有大明星啊香港的那個趙淑芝的還有那個女生們美的你好嬌嬌基於之前我們討論的內容關於瘦臉真的宣傳和推廣我们应该如何制定具体的营销策略那怎么去寻找一些这种高楼客人呢?那就看我们的这个楼院的这个店员他们能够发觉一看来的人这个就是有钱的一看就是要做这个的就是要去高楼寻找就是四十多岁的那可以就是在做每个人的方式来推销一些这种刚才说的,目前我们公司这个会员的费用是不大了费用现在有100个100个目前我们100个这些人可能在咱们这个消费有几个人觉得咱们可以向他【推】广像他推广的感觉像美颜真吧,就是岁数大一点的,超过四十多岁的,然后给他们,因为他们的精子基础上也行厚,可以就是告诉他们说,你们现在心急的这个美颜真。其实在四十多岁都可以介绍一下。如果你想试一试的话,这个针不需要一直打,但是一年打一次。就可以了如果他想要尝试的话就可以试一试对吧他的经济然后实力都允许他这样对然后他打了结果他确实挺好的然后他连打了五年因为五年他的容貌没有变化甚至他变得更加年轻了那么他就是成功了对吧我觉得就是提前的说好,说清咱们这个针不是打一针就可以的,就是会定期要打。然后如果可以尝试的话,就让他们可以尝试一下。虽然可能不能变得就是变年轻或者什么的,但是如果五年之内它不会衰了,一直保持它这
+---
+所以相当于我们要多搞一些活动然后我们争取让他们老客户带新客户里面都能够来这享受更好然后基础也变得更加亮丽他们就会选择我们了我们可以推销几款活动比如说套餐活动然后可以有包月的也可以有全年的比方说我或者某种活动我们推销几次比方说你单次的话我们这个营养夫妇是260,然后呢你要是如果一下要14就可以每次200,就一下2000这样子国力多销也是我们的一个收入大项还有什么想要说的?现在认可工匠酸的人比较多,所以童年针的话,就会跟他说,工匠酸更加的自然,持续的时间更长,给他解释一些这种,也讓他不會對童年針有太大的恐懼感目前咱们这边套餐建议更改一下名字因为咱们这个名字有落实应该更改一下套餐这一个新的名字这方面可能都有什么好的想法除了更改名字我觉得也可以就是套餐内容互相调换一下有的顾客来之后他就觉得我这次做了一个这个护理然后我其实这个想搭配搭配另外一种来做但是我们这个护理就是比如说和这个美容啊这一方面包括但是他不想要这个多一些选择我们这里问的是我们起个名字我觉得也来个逆时空复苏这就是我们主打对吧让人一想就是年轻人逆时空逆时空就是今年20年明年18年越活越年轻了因为咱这个套餐有很多每个都要感觉一下这个这个各项这个套餐更加的高大上一点给一个老因为老顾客也有这种这个疲劳感每次都选一个套餐没有没有没有这个业务质量没有提升都一样我会对咱们这个包括老公的咱们因为更年以后咱们这个经济能力上会让人耳门心脏对这个套餐咱们会先暂时的先说一下先治病一下下去以后咱们讨论一下到底起程的能力比较好套餐的額上都要更改一下可以启程的###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+会议上提到，对于现有的美容针服务，特别是“童颜针”，需向经济条件较好的客户进行宣传和推广。具体策略是通过店内员工识别潜在高端客户，并直接向其推荐适合的服务项目，如“童颜针”。此外，还计划推出一系列优惠活动，比如套餐包月或全年服务，以此吸引顾客尝试并成为长期使用者。针对客户可能对“童颜针”存在疑虑，建议强调“童颜针”的效果及与“工匠酸”的对比，帮助减轻客户的恐惧感。同时，考虑调整现有套餐的名字和内容，使其更具吸引力。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200624_S_R001S05C01_agent_added/out_004-M_2.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 764379, dtype: float32, min: -0.3787994384765625, max: 0.33217620849609375
+问题音频时间长度: 47.7736875
+
+
+[Agent] 接收到问题: 你好,焦焦基于之前我们讨论的内容关于美容院套餐名称更新的问题大家有什么具体的想法吗我们应该如何调整套餐内容以满足顾客的个性化需求同时提升我们的服务质量和顾客满意度
+, 1736827282.7833471
+问题音频STT前的时刻: 1736827282.783464
+问题音频STT后的时刻: 1736827283.3383834
+问题音频STT时间: 0.5549194812774658
+
+
+[Agent] 最终接收到问题: 你好教教如何针对高端客户推广美颜针并开拓男士美容市场
+, 1736827283.3386319
+问题音频送入Planner的时刻: 1736827283.3390017
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+planner new_token time: 1736827283.9426558
+planner new_token time: 1736827284.3337915
+planner new_token time: 1736827284.3342004
+First token received: 1, time: 1736827284.3346539
+判断是简短问题，planner结束输出, time: {time.time()}
+planner_output_list: ['1']
+
+选择的智能体：talker
+将问题音频输入给 talker
+talker first token time: 1736827284.3447163
+talker first token time: 1736827284.590307
+talker first token time: 1736827284.616385
+talker first token time: 1736827284.6420624
+talker first token time: 1736827284.6686037
+talker first token time: 1736827284.694325
+talker first token time: 1736827284.7200327
+talker first token time: 1736827284.7458642
+talker first token time: 1736827284.7969172
+talker first token time: 1736827284.8225102
+talker first token time: 1736827284.848311
+talker first token time: 1736827284.8741589
+talker first token time: 1736827284.9001477
+talker first token time: 1736827284.9260159
+talker first token time: 1736827284.9518757
+talker first token time: 1736827285.0032158
+talker first token time: 1736827285.029106
+talker first token time: 1736827285.054865
+talker first token time: 1736827285.0806384
+talker first token time: 1736827285.1320617
+talker first token time: 1736827285.158114
+talker first token time: 1736827285.1839294
+talker first token time: 1736827285.235251
+talker first token time: 1736827285.2613513
+talker first token time: 1736827285.2876506
+talker first token time: 1736827285.3392344
+talker first token time: 1736827285.39088
+talker first token time: 1736827285.4168267
+talker first token time: 1736827285.4428456
+talker first token time: 1736827285.4689155
+talker first token time: 1736827285.4949422
+talker first token time: 1736827285.5210042
+talker first token time: 1736827285.572905
+talker first token time: 1736827285.5992267
+talker first token time: 1736827285.6252763
+talker first token time: 1736827285.651475
+talker first token time: 1736827285.6776822
+talker first token time: 1736827285.7037876
+talker first token time: 1736827285.7297997
+talker first token time: 1736827285.7558696
+talker first token time: 1736827285.7819605
+talker first token time: 1736827285.8079603
+talker first token time: 1736827285.8340256
+talker first token time: 1736827285.8864315
+talker first token time: 1736827285.9392471
+talker first token time: 1736827285.9658422
+talker first token time: 1736827285.9923518
+talker first token time: 1736827286.0188
+talker first token time: 1736827286.0713968
+talker first token time: 1736827286.0979133
+talker first token time: 1736827286.1244395
+talker first token time: 1736827286.1509678
+talker first token time: 1736827286.1775389
+talker first token time: 1736827286.2041318
+talker first token time: 1736827286.2307773
+talker first token time: 1736827286.2579827
+talker first token time: 1736827286.311758
+talker first token time: 1736827286.3383882
+talker first token time: 1736827286.3913524
+talker first token time: 1736827286.4205778
+talker first token time: 1736827286.4742413
+talker first token time: 1736827286.5010986
+talker first token time: 1736827286.5280333
+talker first token time: 1736827286.5547585
+talker first token time: 1736827286.6079478
+talker first token time: 1736827286.6346033
+talker first token time: 1736827286.6614892
+talker first token time: 1736827286.6883402
+talker first token time: 1736827286.7152317
+talker first token time: 1736827286.7420263
+talker first token time: 1736827286.7951987
+talker first token time: 1736827286.8219252
+talker first token time: 1736827286.848756
+talker first token time: 1736827286.8755848
+talker first token time: 1736827286.9023662
+talker first token time: 1736827286.9292424
+talker first token time: 1736827286.9827716
+talker first token time: 1736827287.0096574
+talker first token time: 1736827287.0364687
+talker first token time: 1736827287.063366
+talker first token time: 1736827287.0903292
+talker first token time: 1736827287.1173744
+talker first token time: 1736827287.1443226
+talker first token time: 1736827287.1991603
+
+talker输出：
+
+Token count: 61, Total time: 2.6117 seconds, One token time: 0.0428 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+针对高端客户推广美颜针，首先需要强调其独特性和优势，如使用优质原料、采用先进科技、效果显著等。其次，可以利用社交媒体进行精准营销，通过发布美丽案例和专业护理知识吸引潜在客户。此外，合作伙伴的选择也非常重要，可以选择与高端美容品牌或医疗机构合作，共享资源，扩大影响力。开拓男士美容市场，除了强调产品的适用性外，还可以通过举办男士美容讲座、推出男士专用产品等方式吸引更多消费者。
+talker 输出结束
+
+处理文件: /home/leon/agent/AISHELL_dataset/insert_train_S/20200624_S_R001S05C01_agent_added/out_004-M_3.wav
+没有更多的唤醒音频长度，使用默认持续时间。
+问题音频片段长度: 764379, dtype: float32, min: -0.3787994384765625, max: 0.33217620849609375
+问题音频时间长度: 47.7736875
+
+
+[Agent] 接收到问题: 你好,焦焦基于之前我们讨论的内容关于美容院套餐名称更新的问题大家有什么具体的想法吗我们应该如何调整套餐内容以满足顾客的个性化需求同时提升我们的服务质量和顾客满意度
+, 1736827288.6876655
+问题音频STT前的时刻: 1736827288.6877754
+问题音频STT后的时刻: 1736827289.9827085
+问题音频STT时间: 1.2949330806732178
+
+
+[Agent] 最终接收到问题: 你好,焦焦。基于之前我们讨论的内容,关于美容院套餐名称更新的问题,大家有什么具体的想法吗?我们应该如何调整套餐内容,以满足顾客的个性化需求,同时提升我们的服务质量和顾客满意度?
+, 1736827289.9828722
+问题音频送入Planner的时刻: 1736827289.98318
+planner new_token time: 1736827290.6356158
+planner new_token time: 1736827291.0278585
+First token received: 0, time: 1736827291.0279944
+===planner 进一步输出开始===, time: {time.time()}
+planner new_token time: 1736827291.4198692
+planner new_token time: 1736827291.811087
+planner new_token time: 1736827292.2021334
+planner new_token time: 1736827292.5941794
+planner new_token time: 1736827292.9858034
+planner new_token time: 1736827293.3782966
+planner new_token time: 1736827293.770219
+planner new_token time: 1736827294.1624773
+planner new_token time: 1736827294.5553064
+planner new_token time: 1736827294.947406
+planner new_token time: 1736827295.3410146
+planner new_token time: 1736827295.733917
+planner new_token time: 1736827296.1255093
+planner new_token time: 1736827296.5166538
+planner new_token time: 1736827296.9080083
+planner new_token time: 1736827297.300289
+planner new_token time: 1736827297.6923509
+planner new_token time: 1736827298.0839105
+planner new_token time: 1736827298.4751613
+planner new_token time: 1736827298.8673077
+planner new_token time: 1736827299.259455
+planner new_token time: 1736827299.651742
+planner new_token time: 1736827300.0446625
+planner new_token time: 1736827300.4365995
+planner new_token time: 1736827300.8287861
+planner new_token time: 1736827301.221355
+planner new_token time: 1736827301.6134446
+planner new_token time: 1736827302.0052142
+planner new_token time: 1736827302.3978376
+planner new_token time: 1736827302.7902195
+planner new_token time: 1736827303.1818335
+planner new_token time: 1736827303.5745802
+planner new_token time: 1736827303.9663634
+planner new_token time: 1736827304.3588579
+planner new_token time: 1736827304.7512124
+planner new_token time: 1736827305.145123
+planner new_token time: 1736827305.5388963
+planner new_token time: 1736827305.5395446
+Remaining output after first token:
+1. 行动：信息检索RAG
+2. 行动输入：关键词：美容院套餐 名称更新 个性化需求 服务质量 满意度
+
+
+提取的关键词: ['美容院套餐', '名称更新', '个性化需求', '服务质量', '满意度']
+
+找到的上下文片段数量: 2
+
+Token count: 114, Total time: 45.3126 seconds, One token time: 0.3975 seconds
+planner_output_list: ['0\n', '1. ', '行', '动', '：信息', '检索', 'RAG\n', '2. ', '行', '动', '输入', '：关键词', '：美容', '院', '套餐', ' 名', '称', '更新', ' ', '个性化', '需求', ' ', '服务质量', ' ', '满', '意', '度', '\n使用工具：信息检索RAG', '\nagent工具结果：###RAG used context:###对,可以出去过段时间出去研修一下,因为肯定时代也在改变现在我们这个美容这个步骤咱们也要做相应的打变现在针对女性的就是20岁到40岁20多岁也不少我觉得我们针对的人群应该是大概在30岁以上然后50岁以下因为女人的马在这个阶段可能会走下坡衰老所以说我们需要延缓它的衰老我们用我们的化妆品就能够延缓它的衰老这个年龄段它皮肤状态比较重视对我们针对这样的东西他们有一定的经济基础他们在美洲上使得花钱然后呢我们呢就针对他们出一些套餐比方说我们出美白嗯养疗这样的话对他的肌肤呢有延缓的作用延缓衰老的作用目前目前咱们这个这个有这个面部这个护理这些项目目前咱们有这个目前的这个营养光敷这个项目,美白和美白俏颜这个项目,这两个比较好。现在当然营养光敷这个比较赚钱吧。对,而且这个光敷的话它就会硬日般的细腻。主要还是看皮肤的基底吧因为营养到了之后它皮肤自然而然就不会那么快衰老啊或者有黑斑呀或者变黑呀水流在受热性复利会有养的比较多吧因为最主要的就是补水水就让它变冷了每一个疗程需要做几次呢每个疗程一周一次的话就12次四个疗程分家呢分家也可以因為它這個就需要持續的比重有的客户他就害怕一直在我们那里做他的皮肤就挺好他要是不做了他的皮肤就会突然之间就会变得特别衰老了你说我们怎么用什么方法来打消他这种顾虑还是靠说吧因为这是靠消磨我们的产品一直在改变我觉得是我们的产品就是说你不用我们的产品了你好娇娇如何通过创新美容项目和提升【服】务质量来吸引新客户然后你就会觉得不舒服你就会觉得好像你要老得快了但是我们希望的就是能够贯注他的思想就是说你知道我来舞然后再加一些化妆品配合一下之前来这儿打受眼针的人多吗受眼针目前还受眼针一般吧不算多的也不算少因为在我们这边这个房间还不太没有太实行没有太新体来有的开放了一定的对,他可能问的人多,但是真正的答案是不一样的。目前,咱们想到这边有两种问题,一个是金可泽,一个是国际的。我觉得咱们这个受费针这方面,应该加大一些失败力。我觉得这方面效果还好因为那个是专业家大型的一些就有各种机构的验证 经货证据嗯那首先就是我们说点真的品牌然后要硬然后要是大品牌然后顾客来的时候如果他有这个念头他询问你的话你就应该就是给他介绍然后这些介绍不光是我们介绍然后手机上也好电脑上也好网上的他们都能搜到就是一些比较国际的一些品牌然后让他们心里边放心他们要确实有需要的话,我们肯定会做的。\n---\n所以相当于我们要多搞一些活动然后我们争取让他们老客户带新客户里面都能够来这享受更好然后基础也变得更加亮丽他们就会选择我们了我们可以推销几款活动比如说套餐活动然后可以有包月的也可以有全年的比方说我或者某种活动我们推销几次比方说你单次的话我们这个营养夫妇是260,然后呢你要是如果一下要14就可以每次200,就一下2000这样子国力多销也是我们的一个收入大项还有什么想要说的?现在认可工匠酸的人比较多,所以童年针的话,就会跟他说,工匠酸更加的自然,持续的时间更长,给他解释一些这种,也讓他不會對童年針有太大的恐懼感目前咱们这边套餐建议更改一下名字因为咱们这个名字有落实应该更改一下套餐这一个新的名字这方面可能都有什么好的想法除了更改名字我觉得也可以就是套餐内容互相调换一下有的顾客来之后他就觉得我这次做了一个这个护理然后我其实这个想搭配搭配另外一种来做但是我们这个护理就是比如说和这个美容啊这一方面包括但是他不想要这个多一些选择我们这里问的是我们起个名字我觉得也来个逆时空复苏这就是我们主打对吧让人一想就是年轻人逆时空逆时空就是今年20年明年18年越活越年轻了因为咱这个套餐有很多每个都要感觉一下这个这个各项这个套餐更加的高大上一点给一个老因为老顾客也有这种这个疲劳感每次都选一个套餐没有没有没有这个业务质量没有提升都一样我会对咱们这个包括老公的咱们因为更年以后咱们这个经济能力上会让人耳门心脏对这个套餐咱们会先暂时的先说一下先治病一下下去以后咱们讨论一下到底起程的能力比较好套餐的額上都要更改一下可以启程的我们都不知道嗯神秘的套餐嗯行下去都可以想一下预期再想一下还有那咱本次这个会就先开到这行吗都扣了一下你好,教教如何通过创新美容项目和提升服务质量来吸引新客户。你好,焦焦。基于之前我们讨论的内容,关于瘦脸针的宣传和推广,我们应该如何制定具体的营销策略,以吸引更多顾客选择我们的瘦脸针服务。同时,针对高端客户群体,我们如何通过提供差异化服务来提升童颜针的市场竞争力。你好教教如何针对高端客户推广美颜针并开拓男士美容市场你好,焦焦。基于之前我们讨论的内容,关于【美】容院套餐名称更新的问题,大家有什么具体的想法吗?我们应该如何调整套餐内容,以满足顾客的个性化需求,同时提升我们的服务质量和顾客满意###End RAG used context:###\n ###agent根据会议片段的输出开始：###\n本次会议重点讨论了如何通过创新美容项目和提升服务质量来吸引新客户，并提出了几点关键策略：一是增加美容项目的多样性，如推出“逆时空复苏”等高大上套餐；二是强调使用高质量的品牌产品，比如国际知名品牌的童颜针、瘦脸针等；三是针对不同顾客的需求进行个性化推荐，尤其是对高端客户群体提供定制化服务；四是鼓励现有客户推荐新客户。此外，会议也提出需考虑调整服务定价策略，比如推出包月或全年套餐以吸引客户。\n ###agent根据会议片段的输出结束###']
+
+选择的智能体：planner
+agent工具结果：###RAG used context:###对,可以出去过段时间出去研修一下,因为肯定时代也在改变现在我们这个美容这个步骤咱们也要做相应的打变现在针对女性的就是20岁到40岁20多岁也不少我觉得我们针对的人群应该是大概在30岁以上然后50岁以下因为女人的马在这个阶段可能会走下坡衰老所以说我们需要延缓它的衰老我们用我们的化妆品就能够延缓它的衰老这个年龄段它皮肤状态比较重视对我们针对这样的东西他们有一定的经济基础他们在美洲上使得花钱然后呢我们呢就针对他们出一些套餐比方说我们出美白嗯养疗这样的话对他的肌肤呢有延缓的作用延缓衰老的作用目前目前咱们这个这个有这个面部这个护理这些项目目前咱们有这个目前的这个营养光敷这个项目,美白和美白俏颜这个项目,这两个比较好。现在当然营养光敷这个比较赚钱吧。对,而且这个光敷的话它就会硬日般的细腻。主要还是看皮肤的基底吧因为营养到了之后它皮肤自然而然就不会那么快衰老啊或者有黑斑呀或者变黑呀水流在受热性复利会有养的比较多吧因为最主要的就是补水水就让它变冷了每一个疗程需要做几次呢每个疗程一周一次的话就12次四个疗程分家呢分家也可以因為它這個就需要持續的比重有的客户他就害怕一直在我们那里做他的皮肤就挺好他要是不做了他的皮肤就会突然之间就会变得特别衰老了你说我们怎么用什么方法来打消他这种顾虑还是靠说吧因为这是靠消磨我们的产品一直在改变我觉得是我们的产品就是说你不用我们的产品了你好娇娇如何通过创新美容项目和提升【服】务质量来吸引新客户然后你就会觉得不舒服你就会觉得好像你要老得快了但是我们希望的就是能够贯注他的思想就是说你知道我来舞然后再加一些化妆品配合一下之前来这儿打受眼针的人多吗受眼针目前还受眼针一般吧不算多的也不算少因为在我们这边这个房间还不太没有太实行没有太新体来有的开放了一定的对,他可能问的人多,但是真正的答案是不一样的。目前,咱们想到这边有两种问题,一个是金可泽,一个是国际的。我觉得咱们这个受费针这方面,应该加大一些失败力。我觉得这方面效果还好因为那个是专业家大型的一些就有各种机构的验证 经货证据嗯那首先就是我们说点真的品牌然后要硬然后要是大品牌然后顾客来的时候如果他有这个念头他询问你的话你就应该就是给他介绍然后这些介绍不光是我们介绍然后手机上也好电脑上也好网上的他们都能搜到就是一些比较国际的一些品牌然后让他们心里边放心他们要确实有需要的话,我们肯定会做的。
+---
+所以相当于我们要多搞一些活动然后我们争取让他们老客户带新客户里面都能够来这享受更好然后基础也变得更加亮丽他们就会选择我们了我们可以推销几款活动比如说套餐活动然后可以有包月的也可以有全年的比方说我或者某种活动我们推销几次比方说你单次的话我们这个营养夫妇是260,然后呢你要是如果一下要14就可以每次200,就一下2000这样子国力多销也是我们的一个收入大项还有什么想要说的?现在认可工匠酸的人比较多,所以童年针的话,就会跟他说,工匠酸更加的自然,持续的时间更长,给他解释一些这种,也讓他不會對童年針有太大的恐懼感目前咱们这边套餐建议更改一下名字因为咱们这个名字有落实应该更改一下套餐这一个新的名字这方面可能都有什么好的想法除了更改名字我觉得也可以就是套餐内容互相调换一下有的顾客来之后他就觉得我这次做了一个这个护理然后我其实这个想搭配搭配另外一种来做但是我们这个护理就是比如说和这个美容啊这一方面包括但是他不想要这个多一些选择我们这里问的是我们起个名字我觉得也来个逆时空复苏这就是我们主打对吧让人一想就是年轻人逆时空逆时空就是今年20年明年18年越活越年轻了因为咱这个套餐有很多每个都要感觉一下这个这个各项这个套餐更加的高大上一点给一个老因为老顾客也有这种这个疲劳感每次都选一个套餐没有没有没有这个业务质量没有提升都一样我会对咱们这个包括老公的咱们因为更年以后咱们这个经济能力上会让人耳门心脏对这个套餐咱们会先暂时的先说一下先治病一下下去以后咱们讨论一下到底起程的能力比较好套餐的額上都要更改一下可以启程的我们都不知道嗯神秘的套餐嗯行下去都可以想一下预期再想一下还有那咱本次这个会就先开到这行吗都扣了一下你好,教教如何通过创新美容项目和提升服务质量来吸引新客户。你好,焦焦。基于之前我们讨论的内容,关于瘦脸针的宣传和推广,我们应该如何制定具体的营销策略,以吸引更多顾客选择我们的瘦脸针服务。同时,针对高端客户群体,我们如何通过提供差异化服务来提升童颜针的市场竞争力。你好教教如何针对高端客户推广美颜针并开拓男士美容市场你好,焦焦。基于之前我们讨论的内容,关于【美】容院套餐名称更新的问题,大家有什么具体的想法吗?我们应该如何调整套餐内容,以满足顾客的个性化需求,同时提升我们的服务质量和顾客满意###End RAG used context:###
+ ###agent根据会议片段的输出开始：###
+本次会议重点讨论了如何通过创新美容项目和提升服务质量来吸引新客户，并提出了几点关键策略：一是增加美容项目的多样性，如推出“逆时空复苏”等高大上套餐；二是强调使用高质量的品牌产品，比如国际知名品牌的童颜针、瘦脸针等；三是针对不同顾客的需求进行个性化推荐，尤其是对高端客户群体提供定制化服务；四是鼓励现有客户推荐新客户。此外，会议也提出需考虑调整服务定价策略，比如推出包月或全年套餐以吸引客户。
+ ###agent根据会议片段的输出结束###
+===planner 输出结束===
+
+会议数据处理完成。

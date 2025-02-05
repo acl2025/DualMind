@@ -1,0 +1,264 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_S/20200630_S_R001S02C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Loading reasoner_llm...
+Starting processing from 0s, total chunks: 76
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Initializing KWS models...
+/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.33it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.70s/it]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.86s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.88s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.30s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.38s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.28s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.37s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:13<00:11,  5.53s/it]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:17<00:05,  5.17s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.89s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:19<00:00,  3.89s/it]
+我002 儿子 您领665 后勤007 行政018 销售好的,今天把各部门叫过来,咱们开一个这个约莫总结会,总结一下咱们这个月的一个情况。咱们从这个后勤开始说一下吧。我们下个月就是主要是保卫工作还有就是跟各个部门协调我们治安那个就是说是水电还有那个水的什么就是商场因为它现在是夏天嘛这个电工就是设备啊什么都检修空调的检修都做那个商业主要是做这些工作看了就學我就是员工就是我们这个后勤的卫生什么全国消毒商场近期他们这个疫情比较严重就是全国消毒工作然后还有就是商场里边这个保安就是他现在保安这个任务比以前多了就是说你像每个人进去都得量体温啊登记然后呢每天叫他自己消毒,家具一层家具垫都消毒然后就是上班就是,还有我们就是我们这个设备的运行全部做了一个检修因为他这个我们这商场里边夏天主要是用电,就是这个空调全部检修还有就是卫生还有注意消毒对新增的也都是消毒还有就是我们这卫生还有就是员工餐都这个厨房也都是大扫除厨房也是消毒一定要做好现在这个疫情比较严重上表盘检查的比较多现在就是比以前就是说每天的工作任务比如说就是说这个消毒特别重还有商场外部我们这些商场外部也都得消除全部都消除嗯别的就是还有就是我们办公室就是后勤这些有的这个办公室的这个桌子啊什么有坏了都维修办公桌有坏了也都是维修我们也得协助这些咱们行政啊什么的都是做了一些这个工作嗯是现在是这样那我们先到这边这边呢就是因为咱们这个商场咱们的家居商场呢咱们开业也没多久然后就是我们有一个就是目前入住的商家多吗入住的多但是还不满呢入住的有百分之八十还有百分之二十没满呢这就是目前咱们的一个问题接下来解决的问题就是我们行政这边要做一个招商计划再一个就是我们平时的工作都是每天定时的有几拨人就需要去咱们这个卖场里面进行巡视然后检查这个安全呀,安全规范然后这个人们商户的那个销售规范都需要去巡视的然后看有什么问题所以要及时矫正吧还有一点就是收银的违反因为咱们商户多然后因为我们这个家居商场嘛一方面是谁出位一方面还是想从它这个还是有从它这个商户销售领导提一点成的但是没多少所以我们要把这个收收银规范也要做好,我们行政这边要去监督和规范的一个内容。收银这边有什么计划?收银这边的话,现在是每层有四个收银点,但是有20%的商务还没满呢。咱们现在收银这个榜位呢因为我们也是家居嘛,不会像普通的商场,人流那么大,每天销售量那么大,没有那么大。但是他如果要销售的话,他肯定金额就比较大。对,金额大。收银人员这个品质啊,这个能力啊,也是要考虑的。要考核考虑的。就是收银这一块。反正这两个月都请他了两个月都是咱们因为咱们商户入住到咱们这儿咱们也给他们有优惠免他们两个月的房租因为咱们主要的收益还是来自于咱们商户的商租遇到问题了大家一块解决这样才大家都度过难关了请不吝点赞 订阅 转发 打赏支持明镜与点点栏目然后才能更好地发展它就这样的我们行政这一块然后再一个就是这个商场咱们这个家庭商场早晨这个入场的时候这个规范也得再规范一下因为咱们开业没多久嘛我们一般都是早晨八点半然后进场是这样的然後我們雖然說這些人这些商铺老板会归我们管,但是规范也要做到到场以后,到点以后,商铺里面都需要有服务员,销售员在的不能到点入场,没有人,这个也是规范的这个也需要我们行政这边跟商户的老板做一下沟通他们自己也制定好他们的规范如果说有出去跑业务的那就出去跑业务但是也得有人在那盯着电话对 要不能别人拖后来那么商场一看都没人 没有人让你进来对 没人进来 这样影响不得嗯 没人看见这个情况对 这是我们想这一块的问题听到 嗯我们的销售,因为受疫情影响,然后这两个月销售不是特别理想的,但是相对来说比上个月好点。然后因为关键这个月不是有过618吗对线上线下都搞活动对然后好多然后也是虽然说活动力度比较大但是也是因为疫情咱们要也不是限制点客流吗嗯而
+[Text Detection] 在 529.43 秒检测到关键词 '娇娇',current_time: 510.00, 问题文本: 而且咱们主要是做现在就结婚了吧是不办婚礼了但是该买的家居还是要买的所以说这两个月因为结婚来买家居的人也不少你好 娇娇针对商场消毒和安全规范你有什么建议来提升防疫措施和客户体验嗯
+问题音频片段长度: 203435, dtype: float32, min: -0.1456298828125, max: 0.150146484375
+问题音频时间长度: 12.7146875
+
+
+[Agent] 接收到问题: 针对商场消毒和安全规范你有什么建议来提升防疫措施和客户体验因为五一跟这个六月份
+, 1735117864.5644927
+
+
+[Agent] 最终接收到问题: 针对商场消毒和安全规范你有什么建议来提升防疫措施和客户体验因为五一跟这个六月份
+, 1735117864.5645993
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9228 seconds, One token time: 0.3076 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+为了提升商场的防疫措施和客户体验，我建议采取以下措施：
+
+1. 提高清洁标准：增加对商场公共区域的消毒频率，确保商场内空气流通。
+
+2. 强化员工防护：为商场员工提供必要的个人防护装备，并定期进行健康检查。
+
+3. 设立体温检测点：在商场入口处设立体温检测点，对进入商场的顾客进行体温测量。
+
+4. 限制人员流量：通过控制人流量，避免过度拥挤，保证顾客的安全距离。
+
+5. 提升线上服务：除了实体店铺外，可以增设线上购物渠道，提供无接触式购物服务，提高客户满意度。
+
+6. 宣传教育：通过多种途径向顾客普及防疫知识，增强顾客的自我保护意识。
+
+7. 延长营业时间：考虑到五一、六月等重要节日，可以考虑延长商场的营业时间，以满足顾客的需求。
+
+8. 营造安全环境：商场应保持良好的卫生环境，设置明显的指示牌，引导顾客遵守商场规定。
+talker 输出结束
+且咱们主要是做现在就结婚了吧是不办婚礼了但是该买的家居还是要买的所以说这两个月因为结婚来买家居的人也不少你好 娇娇针对商场消毒和安全规范你有什么建议来提升防疫措施和客户体验嗯然后就是对那个牌子要求比较高希望是那种名牌的然后另外就是甲醛问题就是吸污染对还有环保就是虽然说价格贵点吧但是就是还是愿意安全健康在一方面的就是说我觉得咱们装潢影子那时候也可以从这一方面来考虑对吧这样的话他们就意想买家具可能就是安全健康的就能很棒了对对对嗯然后另外一方面就是说家里有老人小孩的他们就是对那个安全不是比较注重吗像咱们已经那些那个儿童桌椅这方面的床然后觉得就是说也还可以不过就是感觉有一种就是育婴的家属现在好多就是我们现在应该已经这个育婴对这方面也可以像老人那些安装问题啊什么的我感觉咱这方面咱上场环境没有特别明显就针对老人这一方面的所以我感觉就是这个也是一个发展点是吧咱们那时候也可以针对这个然后到时候咱不是以后要发展养老这一方面吗然后咱可以去跟周围的养老院啊医院之类这些合作呀嗯让他们可以找到那些商家,厂家,是吧到时候可以把那些资源共享嘛,对吧都共营那种这样对家里人来说,老人的问题,小孩的问题都可以得到解决,是吧我感觉这样对待那个销售啊,还有治理度啊,都是非常好的别的我觉得也没有什么问题了我针对这个百分之二十还没入住我们都有什么想法我们要解决这方面因为他们入住少入住一天就少挣一天钱因为这空着也是浪费我们可以有个优惠政策现在就是疫情吧比如说减免房租或者抽取点的时候管理费我们行政队对比上次想的是一方面就是做广告吧一方面就是线上媒体广告就是做这个出租车上那个流动的广告也可以打一下那前面那个前面那个客户那边就打电话这边找上一边异乡客户异乡客户但是都是还得跟进一下因为很多都在犹豫主要是疫情对,很多都是在犹豫需要我们这一块的话配合咱们这个业务人员一块去跟进然后去邀请他们过来具体详谈也可以参观一下我们这些安保设施看商场的都做的这一趟的宣传咱们也咱们的东西也都好办对咱们的地理位置比较多因为我们都搞活动的话大型活动商场统一的都也都搞这些都不用商家出费用的对我们给客户介绍的话一方面我们要给他们看的是我们商场的环境另一方面也是看我们这个我们这边的那个入住以后的品牌是什么他们也得了解因为他们做买卖的嘛都是需要看有没有太大的竞争力呀或者说有没有这个群聚效应呢这个跟我们这个品牌相近度是多少呀他们也会考虑的所以我们也会把这个东西做好然后给他们介绍清楚然后也会给他们介绍我们商场这个整个的规划嗯然后这个就比如说咱们做活动的时候我们需要什么做什么宣传标语啊我们线上的宣传呀我们都会我们都会做的我们都会我们在招商的时候跟客户都需要把这些我们需要注意而且我们这些商场不是全国连锁了吗大家也可以看看全国都知道我们这个商场啊哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦对,露出的也都是大品牌然后我们做这个广告的话,就是一边线上媒体广告然后再一个就是商场外部的外墙广告这两个广告另一个就是咱们的公交车站牌上咱们也可以跟公交公司沟通一下也可以利用一下可以做一下广告,咱们招商广告大型的招商广告或者是房地产什么的很多也都做到这个公交车站这一块的广告对我们客服的话也可以就是说多加点会员然后会员都多了然后做个宣传什么的有小礼品相送比如说来我们店里的是吧嗯或者就是说转发朋友圈就是说可以得到小礼品然后让大家都积极帮忙这也是咱们线上的媒体广告对然后再一个就是我们上的桌子宣传的招商活动是,在港次的佳之城,我们把招商的广告发到店铺里。因为有可能他们的代理商也要扩大规模,现在他们在考虑这个问题,所以我们把广告发到手里,告诉他们,咱们这个商场也要招商了。这是我们的一个情况。我
+[Text Detection] 在 1016.35 秒检测到关键词 '焦焦',current_time: 990.00, 问题文本: 我们商场一楼,二楼,三楼,四楼,五楼我们主要是餐饮,还有小超市,小型的一个小超市。我们生活用品都可以逛位了,也可以稍微休闲一下。然后我们在推广咱们这个商场的一个体会就是,去找咱们周边,咱们本市。你好,焦焦,基于之前我们讨论的问题,
+问题音频片段长度: 812864, dtype: float32, min: -0.198577880859375, max: 0.184112548828125
+问题音频时间长度: 50.804
+
+
+[Agent] 接收到问题: 你好,焦焦,基于之前我们讨论的内容关于商场还有统客栅,为入住的问题,各部门提出了多种解决方案,包括优惠政策,线上线下广告宣传,增加会员,举办大型活动等。我想请问一下针对家里有老人小孩的客户群体我们商场在印进家具品牌和产品时有哪些具体的考虑和计划呢如何更好地满足他们对安全环保健康的需求
+, 1735117902.7622113
+
+
+[Agent] 最终接收到问题: 你好,焦焦,基于之前我们讨论的内容关于商场还有统客栅,为入住的问题,各部门提出了多种解决方案,包括优惠政策,线上线下广告宣传,增加会员,举办大型活动等。我想请问一下针对家里有老人小孩的客户群体我们商场在印进家具品牌和产品时有哪些具体的考虑和计划呢如何更好地满足他们对安全环保健康的需求
+, 1735117902.7623246
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4951 seconds, One token time: 0.1650 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+/home/leon/agent/agent/classifier_reasoner_talker.py:208: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  full_output = reasoner_llm_chain.run(input=input_question, intermediate_steps=[])
+1. 行动：信息检索RAG
+2. 行动输入：关键词：家居品牌 安全环保
+Token count: 28, Total time: 5.7814 seconds, One token time: 0.2065 seconds
+
+提取的关键词: ['家居品牌', '安全环保']
+
+找到的上下文片段数量: 1
+/home/leon/agent/agent/agent_tools.py:260: LangChainDeprecationWarning: The method `BaseLLM.__call__` was deprecated in langchain-core 0.1.7 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  answer = reasoner_llm(prompt)
+为了更好地满足家庭中有老人和小孩客户的安全、环保需求，建议在引进家具品牌和产品时优先选择知名且以环保健康著称的品牌。同时，可与当地养老院、医院合作，针对老人和儿童的需求提供专属家具解决方案。通过商场内部宣传、线上线下广告等方式提高这些品牌的知名度，并定期举办相关主题活动，如健康家居知识讲座等，增强客户体验。
+Token count: 85, Total time: 16.7848 seconds, One token time: 0.1975 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：家居品牌 安全环保
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 然后因为关键这个月不是有过618吗对线上线下都搞活动对然后好多然后也是虽然说活动力度比较大但是也是因为疫情咱们要也不是限制点客流吗嗯而针对商场消毒和安全规范你有什么建议来提升防疫措施和客户体验因为五一跟这个六月份且咱们主要是做现在就结婚了吧是不办婚礼了但是该买的家居还是要买的所以说这两个月因为结婚来买家居的人也不少你好 娇娇针对商场消毒和安全规范你有什么建议来提升防疫措施和客户体验嗯然后就是对那个牌子要求比较高希望是那种名牌的然后另外就是甲醛问题就是吸污染对还有环保就是虽然说价格贵点吧但是就是还是愿意安全健康在一方面的就是说我觉得咱们装潢影子那时候也可以从这一方面来考虑对吧这样的话他们就意想买家具可能就是安全健康的就能很棒了对对对嗯然后另外一方面就是说家里有老人小孩的他们就是对那个安全不是比较注重吗像咱们已经那些那个儿童桌椅这方面的床然后觉得就是说也还可以不过就是感觉有一种就是育婴的家属现在好多就是我们现在应该已经这个育婴对这方面也可以像老人那些安装问题啊什么的我感觉咱这方面咱上场环境没有特别明显就针对老人这一方面的所以我感觉就是这个也是一个发展点是吧咱们那时候也可以针对这个然后到时候咱不是以后要发展养老这一方面吗然后咱可以去跟周围的养老院啊医院之类这些合作呀嗯让他们可以找到那些商家,厂家,是吧到时候可以把那些资源共享嘛,对吧都共营那种这样对家里人来说,老人的问题,小孩的问题都可以得到解决,是吧我感觉这样对待那个销售啊,还有治理度啊,都是非常好的别的我觉得也没有什么问题了我针对这个百分之二十还没入住我们都有什么想法我们要解决这方面因为他们入住少入住一天就少挣一天钱因为这空着也是浪费我们可以有个优惠政策现在就是疫情吧比如说减免房租或者抽取点的时候管理费我们行政队对比上次想的是一方面就是做广告吧一方面就是线上媒体广告就是做这个出租车上那个流动的广告也可以打一下那前面那个前面那个客户那边就打电话这边找上一边异乡客户异乡客户但是都是还得跟进一下因为很多都在犹豫主要是疫情对,很多都是在犹豫需要我们这一块的话配合咱们这个业务人员一块去跟进然后去邀请他们过来具体详谈也可以参观一下我们这些安保设施看商场的都做的这一趟的宣传咱们也咱们的东西也都好办对咱们的地理位置比较多因为我们都搞活动的话大型活动商场统一的都也都搞这些都不用商家出费用的对我们给客户介绍的话一方面我们要给他们看的是我们商场的环境另一方面也是看我们这个我们这边的那个入住以后的品牌是什么他们也得了解因为他们做买卖的嘛都是需要看有没有太大的竞争力呀或者说有没有这个群聚效应呢这个跟我们这个品牌相近度是多少呀他们也会考虑的所以我们也会把这个东西做好然后给他们介绍清楚然后也会给他们介绍我们商场这个整个的规划嗯然后这个就比如说咱们做活动的时候我们需要什么做什么宣传标语啊我们线上的宣传呀我们都会我们都会做的我们都会我们在招商的时候跟客户都需要把这些我们需要注意而且我们这些商场不是全国连锁了吗大家也可以看看全国都知道我们这个商场啊哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦对,露出的也都是大品牌然后我们做这个广告的话,就是一边线上媒体广告然后再一个就是商场外部的外墙广告这两个广告另一个就是咱们的公交车站牌上咱们也可以跟公交公司沟通一下也可以利用一下可以做一下广告,咱们招商广告大型的招商广告或者是房地产什么的很多也都做到这个公交车站这一块的广告对我们客服的话也可以就是说多加点会员然后会员都多了然后做个宣传什么的有小礼品相送比如说来我们店里的是吧嗯或者就是说转发朋友圈就是说可以得到小礼品然后让大家都积极帮忙这也是咱们线上的媒体广告对然后再一个就是我们上的桌子宣传的招商活动是,在港次的佳之城,我们把招商的广告发到店铺里。因为有可能他们的代理商也要扩大规模,现在他们在考虑这个问题,所以我们把广告发到手里,告诉他们,咱们这个商场也要招商了。这是我们的一个情况。我你好,焦焦,基于之前我们讨论的内容关于商场还有统客栅,为入住的问题,各部门提出了多种解决方案,包括优惠政策,线上线下广告宣传,增加会员,举办大型活动等。我想请问一下针对家里有老人小孩的客户群体我们商场在印进家具品牌和产品时有哪些具体的考虑和计划呢如何更好地满足他们对【安】全环保健康的
+为了更好地满足家庭中有老人和小孩客户的安全、环保需求，建议在引进家具品牌和产品时优先选择知名且以环保健康著称的品牌。同时，可与当地养老院、医院合作，针对老人和儿童的需求提供专属家具解决方案。通过商场内部宣传、线上线下广告等方式提高这些品牌的知名度，并定期举办相关主题活动，如健康家居知识讲座等，增强客户体验。
+reasoner 输出结束
+们商场一楼,二楼,三楼,四楼,五楼我们主要是餐饮,还有小超市,小型的一个小超市。我们生活用品都可以逛位了,也可以稍微休闲一下。然后我们在推广咱们这个商场的一个体会就是,去找咱们周边,咱们本市。你好,焦焦,基于之前我们讨论的问题,也可以找他们的孩子,也可以去他们厂子里面谈这一块招商的问题这就是我们行政这一块出的这几个方案吧,关于招商的方案咱们这一块呢,这两个月肯定招商的话肯定要出政策的一方面就是我们租金这一块,但是不能像咱们刚疫情那会儿是,对,已经有复苏了嘛,是吧嗯,然后就免的话也就是免个百分之,就是头两月吧,免个百分之二十嗯,是这样的是咱们政策然后呢在之前的政策上因为我们之前的政策就是投三年入住都收取百分之投一年就是百分之60% 第二年80% 第三年100%然后在这个技术上我们再降一点管理费哦 这也行可以嗯目前咱们这个嗯嗯 老早之前录咱们这个咱们这最早录的商家是就是我们本地的这个蓝鸟家居啊欧派还有就是什么都都是大型的大型的因為他是我们家欧派什么的,因为我们这个不是全国都有门店吗?就是这个我们这个加币商场,它就是一直就是每个门店都有就是一些大品牌基本上每个门店都有刚才说到他们这些,他们目前他对这方面有什么建议吗?有什么意见?老婆为了建立他们其实需要咱们上场为他们提供的接触对这个活动吧对主要是多增加一下活动因为现在就是政策都比较激烈而且房地产现在商业不都下降了嗯因为我们跟卖房子也都有联系如果他们卖多了我们就是有的小区我们就是跟人家小区搞活动就是你看有没有我们就是某个小区他不是帮交钥匙我们都去那边去搞个大型活动但是现在就是说好像因为他都推了有的是比如说今年年底交钥匙但是他交不了对咱这有影响对啊有的都错半年了以后才能交钥匙好近期咱们这个目前咱们这个员工这边一后期这个环境保安人员一定要注意消息我们都打扫都要求无死角我们现在上场上次更新了监控设备工作人员都在监控下要求他打扫卫生就是无死角保安也得要求态度要好因为之前发生过有些事情就是有的保安就是说话比较硬,因为好多都是军人服侍,说话比较硬。对,跟我们员工啊,跟我们这个客户,就是这个来我们这边这个消费的人都有点,有时候有点摩擦。这次我们就无私角的监控,而且什么都要求他们微笑服务人员。跟客户一般都是停车跟商家的话就是比如说有的我们要求不是我们商场不是九点开门吗八点半之前就是员工一般都先进来是吧然后有的不带工牌有的就是说穿的我们都要求工装啊什么的形象不太好不带工牌可能就有点稍微有点冲突但是我觉得这次呢我们后勤的就是说加强这方面的管理吧就是希望他们就是说有事情我们可以去办公室啊,然然姐姐,不能说在外头开日常了不许往后进行,避免影响还有就是用客户这方面来上场买东西的比如说遇到一些停车问题,我们就要记得了周六日反正就是客流量比较大有时候车位是比较紧张现在就是说我们地下清香厂现在都已经有的人可能就先地下比较麻烦,他不想下来但是我们跟顾客也沟通吧因为下雨有安全,有雨的话也挺好,挺安全现在我们也想引进一些直上的电梯式的汽车开到那儿,自己都能下地了,不用自己再开下去了那这个转身弄不了因为咱们的商场它已经定下来了这个设计就那个了这个可以我还可以稍微就是说看看有没有什么解决方案目前来像咱们有些目前咱们这边有个部门在咱们商场停车的一些有些就是不是来买车咱们在这上车是是将近这边有什么办法这个就是说不可避免了因为人家借了咱也不知道是不是来逛商场好现在可以加收费,比如说你停三个小时,两个小时以上因为还有的人可能去附近住户,他没有停车费,晚上可能会停一晚上那咱们应该采取一个收费的措施了,目的不是为了收费是为了就是就是或者说咱们也可以就是说提供这些有些不可怕过来了要停车费还要停那个什么的可以就是说你那是购物了拿小票可以免停车费免几个小时的停车费免一个小时或两个小时可以这样的就是收费不是物理主要是为了方便给大家停车特别是周六日的话然后停车费经常会出现不走现在就是说外边就不让你乘车嘛交警会贴条罚款所以都往里边挤目前刚才也说了咱们要入一些这个新的商户刚才咱们讨论了我们刚才说了想入入引进一些哪些商户本地的一些商户还有一些在里面他们可能还想再扩大或者我们本省的一些本省的这个厂家我们可以去谈谈嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯商
+[Text Detection] 在 1564.18 秒检测到关键词 '娇娇',current_time: 1560.00, 问题文本: 商场要进行沟通你好 娇娇针对老客户服务需求你认为商场应增加哪些服务以提升客户满意度我们跟品牌的品牌都做好了要通通这个一是这个入住商二就是客户咱们要提供这个服务
+问题音频片段长度: 203435, dtype: float32, min: -0.2333984375, max: 0.18341064453125
+问题音频时间长度: 12.7146875
+
+
+[Agent] 接收到问题: 你好,焦焦,针对老客户服务需求你认为商场应增加哪些服务
+, 1735117957.583165
+
+
+[Agent] 最终接收到问题: 你好,焦焦,针对老客户服务需求你认为商场应增加哪些服务
+, 1735117957.583471
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4822 seconds, One token time: 0.1607 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 178, Total time: 6.4752 seconds, One token time: 0.0364 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+商场可以增加一些为老年人提供便利的服务，比如免费的轮椅使用、无障碍通道、专门的Eldercare 咨询服务台以及针对老年顾客的促销活动等。同时，商场也可以对员工进行老龄化社会的培训，以更好地服务于老年顾客。
+talker 输出结束
+场要进行沟通你好 娇娇针对老客户服务需求你认为商场应增加哪些服务以提升客户满意度我们跟品牌的品牌都做好了要通通这个一是这个入住商二就是客户咱们要提供这个服务就是那个买东西的话也能收回一两个对我们还可以我们现在不是这个我们后期有这个商务册也可以接送一下就是比如说这个大客户或者说是我们我们不是这个家里有的离的这个市中心比较远可以设一个这个送接送口什么的我们这个反正就是后期就是就是希望就是说促进我们商场的服务就好嗯出去销售吧另外就是家居城咱必须把防火这一方面做到位而且夏天也经常用电而且木材这方面也是容易起火我们现在就是说因为现在我们这个消防部门也是它每天都会巡礼然后看一下消防器材是不是有损害损坏了我们就及时更新然后我们上来我们人员那个消防部门也就是定期会过来培训一下就是啊你说我们三个月啊一个季度啊就会有一个培训对啊对对对就就就我们这个消防人员或者是我们消防人员在在给我们全场的职务也都开始因为这个消防人员人人有责嘛是吧是像遇到紧急情况必须都得知道对我们都都经常做这个演练对从哪儿建,从哪儿调生炮,员工最起码也得知道比如说有顾客了,你得想法带着人家出去不能说紧张会出现这种意外,不是烧死而是裁死的意外这个意识咱们得全面到位,然后咱们商场内部结构也给大家了解清楚对,我们这个消防设施反正也要直接更新嘛,有坏的就赶紧更换还有一个经济,我们刚才也说了,如果要做宣传,如果咱们想找一些客户,一些商家,一些平台,他们电源方面都不注意,所以这个都不如你常常要做做很多方面的沟通做很多方面的心态还有就是这样的消防事务我们现在要定期检查我们刚才也说了下天到了我们的线路我们用电线去增后期这边要找师傅等我师傅定期检修吗定期的去检修八月神我们也是都定期检修一下嗯有没有还有什么想要说的嗯有没有还有什么想要说的嗯嗯我们反正就是后勤里边有些设备啊还有就是我觉得在召加两辆什么商务车跟行政里边都及时沟通吧看设备有的就真的是我们也开了两三年,有些消防设施都得还通风口什么都得改来检修了,都该清洗说到这个我也想起来了,咱这不是有个账人吗?咱这收银都是他们,他们那也有自己的一个账咱们每天必须把那个账对好了要不然他们可能就是不意识到对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对,对有的人就Leaving了,感觉还在不到位承诺的什么东西,还有收货承诺的收货,有的上家现在就是承诺他不是现在很多软包的床,沙发,都免费的清洗有的时候他现在都做不到位,还要充满什么就是以前的他们都就是上家那些收货都做得不太好可能也就是以前是这样吧可能有该两个这两个月上门了这两个这次都要公布完成收货一定要都做好刚才也说了,以前我们这个后期这个要进行P-Shop预计需要多少钱预计就是200万吧因为我们这个车就是我们的形象嘛一般都是买这个还有一些维修啊,设施啊,有的都该换了,因为商场嘛,防火的还有就是空调啊,现在都是用的比较多的。電梯也要維修這些費用都不能省因為電梯事故最近也是成嚴重的傷害这方面就做培训了这方面我们第一就是说我们这个电梯比如说我们从哪个公司是吧他们公司也会定期来人我们这边也有员工就应该这些也培训一下目前我这边没上还有商场规范,如果商户之间的关系要落实好,规范好,这就是我们的工作吧。如果发现什么问题,再解释解决吧嗯这个这个招商目前是提了几个想法,把这个装装计划再做得详细一点,然后就,就是如果,咱们原先的计划可以用你们再用,我有需要改善的,再改善吧。看看咱們這個,哪裏有沒有,比如說咱們這個,咱們本地的廠家沒有,沒有拜訪到的,就是,就是拜訪到的,商
+[Text Detection] 在 2121.52 秒检测到关键词 '娇娇',current_time: 2100.00, 问题文本: 商场吧是这样的销售那什么主要就是说搞活动那时候就已经跟商家协商好然后另外就是说有些商家他们不愿意参加商场活动嘛因为他们还得多掏一些钱嘛你好 娇娇基于之前我们讨论的内容关于商场的消防社被定期检查和员工
+问题音频片段长度: 644928, dtype: float32, min: -0.193634033203125, max: 0.18817138671875
+问题音频时间长度: 40.308
+
+
+[Agent] 接收到问题: 在这期间,我们讨论的内容,关于商场的消防社被定期检查和员工培训,你能否详细说明一下目前消防部门的巡检频率,以及培训周期,同时针对商场内部结构和规范的宣传,我们应该如何加强员工和商家的意识?确保他们都能清楚了解并遵守这些规范
+, 1735117990.014126
+
+
+[Agent] 最终接收到问题: 在这期间,我们讨论的内容,关于商场的消防社被定期检查和员工培训,你能否详细说明一下目前消防部门的巡检频率,以及培训周期,同时针对商场内部结构和规范的宣传,我们应该如何加强员工和商家的意识?确保他们都能清楚了解并遵守这些规范
+, 1735117990.0142393
+
+运行 classifier...
+0
+Token count: 3, Total time: 0.4846 seconds, One token time: 0.1615 seconds
+
+classifier的输出：0
+
+选择的智能体：reasoner
+1. 行动：信息检索RAG
+2. 行动输入：关键词：消防社 检查频率 培训周期 宣传措施
+Token count: 38, Total time: 7.2985 seconds, One token time: 0.1921 seconds
+
+提取的关键词: ['消防社', '检查频率', '培训周期', '宣传措施']
+
+找到的上下文片段数量: 1
+根据会议内容，目前商场的消防部门会定期进行检查，但具体频率未明确。员工培训周期也未具体提及。为了加强员工和商家的意识，建议制定详细的消防检查和培训计划，确保每月至少一次消防设备检查，并每季度至少进行一次全员消防培训。此外，可以通过张贴消防知识海报、发放宣传手册等方式，增强商家和员工的消防安全意识，确保他们了解并遵守相关规定。
+Token count: 92, Total time: 17.8253 seconds, One token time: 0.1938 seconds
+
+reasoner输出：
+1. 行动：信息检索RAG
+2. 行动输入：关键词：消防社 检查频率 培训周期 宣传措施
+使用工具：信息检索RAG
+agent工具结果：RAG used context: 電梯也要維修這些費用都不能省因為電梯事故最近也是成嚴重的傷害这方面就做培训了这方面我们第一就是说我们这个电梯比如说我们从哪个公司是吧他们公司也会定期来人我们这边也有员工就应该这些也培训一下目前我这边没上还有商场规范,如果商户之间的关系要落实好,规范好,这就是我们的工作吧。如果发现什么问题,再解释解决吧嗯这个这个招商目前是提了几个想法,把这个装装计划再做得详细一点,然后就,就是如果,咱们原先的计划可以用你们再用,我有需要改善的,再改善吧。看看咱們這個,哪裏有沒有,比如說咱們這個,咱們本地的廠家沒有,沒有拜訪到的,就是,就是拜訪到的,商在这期间,我们讨论的内容,关于商场的消防社被定期检查和员工培训,你能否详细说明一下目前消防部门的巡检频率,以及培【训】周期,同时针对商场内部结构和规范的宣传,我们应该如何加强员工和商家的意识?确保他们都能清楚了解并遵守这些规范
+根据会议内容，目前商场的消防部门会定期进行检查，但具体频率未明确。员工培训周期也未具体提及。为了加强员工和商家的意识，建议制定详细的消防检查和培训计划，确保每月至少一次消防设备检查，并每季度至少进行一次全员消防培训。此外，可以通过张贴消防知识海报、发放宣传手册等方式，增强商家和员工的消防安全意识，确保他们了解并遵守相关规定。
+reasoner 输出结束
+场吧是这样的销售那什么主要就是说搞活动那时候就已经跟商家协商好然后另外就是说有些商家他们不愿意参加商场活动嘛因为他们还得多掏一些钱嘛你好 娇娇基于之前我们讨论的内容关于商场的消防社被定期检查和员工也是为了避免它就写上,此次不参加此次活动对它就是咱们刚才也说到的这个活动尽量让所有商家都有参与对,它们对咱来说因为我们还有抽奖啊什么的一等奖,二等奖有的我们还到时候,我们这有一点跟商家沟通我看有的时候就是她是抽獎嗎?哦 有然后顾客不知道是没通知到还是顾客不来或者怎么着我觉得应该要顾客来参加这个活动因为我们就是为顾客办是吧那咱这场会就先开到这你
+[Text Detection] 在 2253.91 秒检测到关键词 '焦焦',current_time: 2250.00, 问题文本: 你好焦焦如何确保所有商家参与活动并避免顾客投诉
+问题音频片段长度: 124005, dtype: float32, min: -0.19708251953125, max: 0.2081298828125
+问题音频时间长度: 7.7503125
+
+
+[Agent] 接收到问题: 如何确保所有商家参与活动并避免顾客投诉
+, 1735118019.7950327
+
+
+[Agent] 最终接收到问题: 如何确保所有商家参与活动并避免顾客投诉
+, 1735118019.7951667
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.4654 seconds, One token time: 0.1551 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 49, Total time: 1.8293 seconds, One token time: 0.0373 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+要确保所有商家参与活动并避免顾客投诉，可以采取以下措施：
+
+1. 明确活动规则：在活动开始前，需要明确向商家宣导活动规则和要求，包括参与条件、时间限制、商品范围等。
+
+2. 提供充分支持：为商家提供必要的技术支持和资源支持，如活动宣传、在线平台操作指南等，以帮助他们顺利参与活动。
+
+3. 定期沟通：与商家保持定期沟通，了解他们的活动进展情况，及时解答他们在活动中遇到的问题。
+
+4. 建立反馈机制：建立有效的反馈机制，鼓励商家和顾客对活动进行评价和建议，以便及时发现并解决问题。
+
+5. 强化监管：加强对商家的监管力度，对于不遵守活动规则的商家，要及时采取相应的惩罚措施，维护活动的公平性和公正性。
+talker 输出结束
+好焦焦如何确保所有商家参与活动并避免顾客投诉
+会议数据处理完成。

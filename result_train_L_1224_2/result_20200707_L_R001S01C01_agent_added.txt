@@ -1,0 +1,147 @@
+/home/leon/.cursor-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/_vendored/force_pydevd.py:18: UserWarning: incompatible copy of pydevd already imported:
+ /home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/pydevd_plugins/extensions/pydevd_plugin_omegaconf.py
+  warnings.warn(msg + ':\n {}'.format('\n  '.join(_unvendored)))
+Processing audio file: /home/leon/agent/AISHELL_dataset/insert_train_L/20200707_L_R001S01C01_agent_added/base_add.wav
+Starting from 0 seconds
+Initializing talker model in talker_process_func...
+Loading classifier_llm...
+Starting processing from 0s, total chunks: 295
+Loading reasoner_llm...
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:411: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, qweight, scales, qzeros, g_idx, bits, maxq):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:419: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/auto_gptq/nn_modules/triton_utils/kernels.py:461: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+CUDA extension not installed.
+CUDA extension not installed.
+/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/transformers/modeling_utils.py:5006: FutureWarning: `_is_quantized_training_enabled` is going to be deprecated in transformers 4.39.0. Please use `model.hf_quantizer.is_trainable` instead
+  warnings.warn(
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Initializing KWS models...
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/leon/agent/wewks/wekws/wekws/utils/checkpoint.py:30: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(path, map_location='cpu')
+Loading Whisper model...
+The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.07it/s]/home/leon/miniconda3/envs/qwen/lib/python3.9/site-packages/whisper/__init__.py:150: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(fp, map_location=device)
+
+Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.83s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.02s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.46s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.75s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.94s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.37s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.68s/it]
+/home/leon/agent/agent/classifier_reasoner_talker.py:57: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  classifier_llm_chain = LLMChain(llm=classifier_llm, prompt=classifier_prompt)
+
+Loading checkpoint shards:  60%|██████    | 3/5 [00:14<00:11,  5.91s/it]/home/leon/agent/agent/classifier_reasoner_talker.py:198: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use :meth:`~RunnableSequence, e.g., `prompt | llm`` instead.
+  reasoner_llm_chain = LLMChain(llm=reasoner_llm, prompt=reasoner_prompt)
+
+Loading checkpoint shards:  80%|████████  | 4/5 [00:18<00:05,  5.39s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:20<00:00,  4.04s/it]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:20<00:00,  4.08s/it]
+for you我可以在这里放一张照片吗?我可以在这里放一张照片吗?我可以在这里放一张照片吗?2002,我是总经理。2002,我是大厂经理。2006,我是……2003,我是市场经销部。2003,我是电影部。2024,我是行政部。2025,我是财务部。2024,我是总结会。2024,我是财务部。2024,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。2025,我是财务部。上月,我们的业绩对于以前的业绩现在都不看了。2025,我们的业绩对于以前的业绩现在都不看了。现在人数不小多,所以我们的客人相对来说也有几个很重要的客人。我们的业绩对于现在的业绩是非常重要的。我们的业绩对于现在的业绩是非常重要的。我们的业绩对于现在的业绩是非常重要的。 我们的业绩对于现在的业绩是非常重要的。我们的业绩对于现在的业绩是非常重要的。 我们的业绩对于现在的业绩是非常重要的。请不吝点赞 订阅 转发 打赏支持明镜与点点栏目感谢观看请不吝点赞 订阅 转发 打赏支持明镜与点点栏目感谢观看感谢观看上个月的数字比较少 上个月数字比较少上个月的数字比较少 上个月的数字比较少上个月的数字比较少 上个月的数字比较少 上个月的数字比较少中国反抗政策在哪里?目前还有两部主机对手机的型号和雨伞什么样子的?在哪里?在大唐美亚在大唐美亚我们一起客人喝酒闹事 打坏我们一张我们说价值比较高我这边已经成了相关的工作人员 还要挖出这些 挖出这些事情也让客人然后后期的话会把没有非常完的金额再给补充到刚才你说的那个近期才是人比较少对不对 市场就在咱们那是这个目标市场 主要是这个一个是面对外来人员参加各种各样的会议 进行一些商务啊 公务之类的活动再一个就是 外事来旅游的人来咱们这个铁站住宿然后咱们现在算是淡季 因为是上半年了 然后淡季咱们这个价格的话就是相对之前价格往下调了一样 因为这个现在这个说一下上个月咱们这个市场这个情况市场一般是来着 上个月咱们这个来着招待今天每天每晚有时间好吗来这儿 市场这边有什么大的活动呢活动的话就是这个对外人就是外边要出达东这个酒店进行一场会议 商务会议 然后会议对 历史几天啊 呃 违迟这话是三天左右 跟大大这边有个沟通吗 嗯 跟大大这边有个沟通 呃 他们需要就是需要大航班 要安排场地 然后 仪器一些设备 然后关于这些人员要不要住宿之类的 也要跟这个大航班和候勤去协调也要多招了三年管在新桥会场的一个安保服务 还有物品丢失的情况因为怕客人需要住宿 如果是如果是季节时代是单级的话 后面还会去解决在场地 你们需要进行设备 以及安排一些花费 请不启发 点赞 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目 请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目是 各位是否需要裁员 能够淡进吗对 因为属于淡季的情况的话 我们可以不用雇佣太多的打扫对打扫房间的打公共门现在需要人员比较多了因为现在好多服务员都在闲着 还有安保服务员的话也不用因为属于淡季 而且有一些人组织一下会议和婚礼的会议最近有一个商务会议和一个婚礼要举行 人员现在有点少我觉得需要再加几个经验的 可以找一些免费的然后就是因为上半年经济情况就是不太好 你好 教教针对淡季人员安排问题 各部门有何具体调整建议刚才刚才说后勤这边人员多了 还是什么情况 我们这边后勤服务员比较多服务员比较多 服务员这一块需要参与 游戏多已经在家里 还没上班现在的很多正式上班没有上岗 上岗都是一些各部门需要大堂这边 月圆这边需要这个也是时常会有麻的时候 如果麻起来的话 它会经常热通过目前大部分人员都用紧 但是不是很松敏还行 目前还可以市场这边 我们本来就有三道我们本来有四个人 在台的话就有点少 我们要进行这个市场调研我们这个对客户的蛮多调查 如果再踩的话 可能就人手不太够了市场可以问一下 下一阶段的话 打的怎么进行下一个主要是一个海报 或者我们在这个可以多组织几次活动 或者你看第一个车票 后来会有广告我感觉可以去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去 去所以你是到时候精神防护背什么的相当好尽量往下压好然后就是刚才才我也问你了那边就是涉及到一些前方然后刚才才我问你了下个月的计划这场计划增加了我们这个业务量在一些车站 汽车 机车站 火车站和高铁站上半年和一些旅游公司合作今年这个上半年旅游行业会有很大增加下半年的话咱们这还是打算继续跟人家合作 但是还没考好一会儿进开谈吧 然后你一个合作交给然后让人家看过一点 然后我们去跟他们谈 现在还没谈呢现在还在你合作 我觉得他合作的时候可以让财务部出两个人让你带着去然后他们对于市场价格方面比较了解 给予劳力进行价格上的进展那个 땡产买卖到質素多号费的财力刚才下个月是有个合作是吧对什么活动啊 商业活动 商务也会议对这一块运营怎么办呢 准备 准备首先先是多找两个有经验 然后有过做过特别好规划的人 然后先做一下大概的计划 然后再跟财务部这边 然后就是对一下 看一下这个预算 然后首先 然后还有就是跟后期然后大门前面这边都协调一下 看怎么让这个场地更加更加更加适合然后然后就是让这个会议进行的更加安全 然后后期你们需要做到几个保安 然后维持一下那个秩序还有吗我觉得这个真的会议 我觉得我不可以管理 比如说室内的温度啊 还有环境吧 这个得跟大房让他们大堂那边管理一下他们需要多大的电池啊?大概是咱们这个最大的会议室能他们要多少人? 要一个更大的电池啊?他们来的话就是来300人左右对 住的话是跟他们商量 他们可能会有一部分住在他们那儿 但是尽量让他们都住在他们那儿 咱们一个是要保证他们的安全还有一个就是 咱们有个收入 开三天会议那个后勤过的话就是 像他们要赛死 主战领部需要到公司 会特别多 帮你及时去 带个人家可以再找几个临时的服务员可以给他们指示 给他们小小的小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的 做小小的他目前還是不太穩定還是大一級對 大一級不太穩定所以他不用他價格方面比較便宜這邊才有一個建議 運營部的話 去找正部工作人員別老化 邀請他們參加這次商業會議這次商業會議是在北京的 新城市 北京的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店 酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒店的酒到時候有沒有什麼需要對接的工作到時候有沒有什麼需要對接的工作行動部分行動部分所以一定要重視起來這次比較大的會議然後場地安排這個商務會議一定要注意周圍的房間一定要安靜安排一些人在外面看守一點大唐經理這邊來說你好請問您的工作是如何調整人員配置 以確保會議期間的服務品質和安全同時對於市場部門提出的下半年與旅遊公司繼續合作的計劃我們是否已經進行了初步的市場調研和客戶滿意度調查對於安全方面有何考慮因為安全也屬於走向的一種步態直至透過速度��現場可能開始覺得炎起首 McNamara E6 Gold Hadi 4 戦 trailer有些人 Eyesight的達人的 日驗對 讚味連呢都 confession Das或者是開鎖的地方 行車沒有停到這個 對這個咱們這個 安排好 然後 找人專門給他們停車吧就對了 對 然後如果是晚上的話 這個燈光 然後咱們也來 注意一下 這個跟運動的話 你去辦一下吧 就等於 嗯 過了這家會咱們酒店本身就有一些燈光 要再檢查一下以防到時候人家會期間聽了什麼所以說他這個一些線路啊 都要檢查一下現在疫情雖然能去停滿 但是也會有這方面的影響對 消毒功能通風 還有對能來到一個體幹這個監測的地方今天就是像往常一樣 能夠有兩天接待如果以前是推移期間的話 我們可以多指派人 指領導他們的位置 還有就是會配合過程部在停車場的口碑彎 才能夠安排這裏面他們需要來多少人他們是分兩部分的領導是有專門的司機來的他們是坐大巴來的嗎 對 所以我們要一個是大巴的司機 還有就是這個商務車 商務車的話也要挺好的 大巴的話也要挺好的如果不情願的話可以找一塊地板 或專門指定 挺大巴的 給他們安排一塊商地用餐的話 消毒一定要做好 對吧不可以都在一塊吃飯的 因為太積極 然後300多個人比較不方便回房間裡吃 給他們打包好了他們有什麼想法對 他們是訂一個什麼套餐的如果在咱們這住的人的話是管一天三個半的如果不在咱們這住的話是值晚午飯可以看一下到時候開會來的領導 如果領導他們需要點菜的話可以練給他們安排一下他們現在還沒有後期的話會問如果他們有需求的話跟大棠這邊商量一下兩個吧 包薑之類的 供這個雲王燈做量身的準備還談了一個婚禮嘛 婚禮這邊大棠 前面這有什麼這個 這個是剛才說那個是什麼時候婚禮的話就是商務 商務的話大概在這個7月下旬吧對 具體的話是大概23號到26號對 如果碰上什麼特殊的天氣情況的話 有可能會推遲推遲它們 這方面你是怎麼把它殺了 如果沒有特別餓因為咱們現在是訓練期嘛如果是他們要交這個整個金額的20%作為定金然後如果真的遇到什麼惡劣的天氣 像下暴雨之類的 不能交不能正常的通行 咱們也可以往後推 取個一到兩天去舉辦這個會議一到兩天這一塊 咱們可能會追到這 這是培養的問題如果推取的話 可以讓大庭大庭再會議前兩天對 可能會前面 前面不是說有一個注意 接待的 因為營銷可能 走廊的話 收費的好 到時候 可能如果天氣不好 但是不會是特別差的天氣咯 咱們會請你做計劃這樣保證會議 無期不期這個費用這一塊就是 不用查的這就是我們的一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個 一個這樣 多少途的婚禮是在那個婚禮的話 大概是在這個他們訂的是這個8月16號他們說是室內還是室外的嗎?是在酒店大房裡面還是在後面的車?在花園裡吧是不是也要溝通好做遼闊準備? 如果下雨的話就在室內吧大廚 到了這個天氣的話 到這個季節 到天氣的部分 我建議還是在室內吧看客戶的情況而且他們需要定期出來其實 pocket 都已經我們國中的表現 complete我們跟軍事合作 他們出策劃以後 也給派人來入履我們的大堂派人來去協助 協助國際上的我們也來得比較多 我們要進行集訓的消息這個費用的話 整個工業公司 把這個費用 都給報了起我們也要進行集訓的消息 把這個費用 都給報了起我們可以再通過一些酒店 帶點打磨器 可以給他們訂一個蛋糕
+[Audio Detection] 在 1606.58 秒检测到关键词 '好交交'。
+detection_time: 1606.58, current_time: 1603.00
+问题音频片段长度: 112640, dtype: float32, min: -0.099884033203125, max: 0.104034423828125
+问题音频时间长度: 7.04
+
+
+[Agent] 接收到问题: 後勤不在安全和疫情防護方面 有哪些具體措施
+, 1735027404.3645833
+
+
+[Agent] 最终接收到问题: 後勤不在安全和疫情防護方面 有哪些具體措施
+, 1735027404.3647544
+
+运行 classifier...
+/home/leon/agent/agent/classifier_reasoner_talker.py:65: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  classifier_output = classifier_llm_chain.run(input=input_question)
+1
+Token count: 3, Total time: 0.9201 seconds, One token time: 0.3067 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+We detected that you are passing `past_key_values` as a tuple of tuples. This is deprecated and will be removed in v4.47. Please convert your cache or use an appropriate `Cache` class (https://huggingface.co/docs/transformers/kv_cache#legacy-cache-format)
+
+talker输出：
+system
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+在安全和疫情防护方面，后勤部门应定期对工作场所进行消毒清洁，确保环境的卫生整洁；鼓励员工佩戴口罩，加强个人防护；定期对员工进行体温检测，发现异常及时隔离并就医；加强对供应商和外包公司的管理，确保其遵守相关的安全和防疫措施。同时，后勤部门还应该建立健全的安全和疫情防控制度，制定相应的应急预案，提高应对突发事件的能力。
+talker 输出结束
+剛才你們說這個還是提前來佈置 各份的公司是提前一周來佈置然後佈置完之後 咱們這兒這個大堂 需要提前一周來今天一周就完你看他這個怎麼去佈置的現在是向分地公司選擇策劃方案 然後分地公司最終 分地公司的策劃部最終的方案然後我們會提前兩天去進行這個佈局然後全部找一些工作人員來協助剛才說的這個 它這個方案 他們一定要看好這個我們主要是負責用場地和飯菜去制定這個環境 這個氛圍啊 或者是這個他們的他們這邊來過來的話是大概來40多 40多 對我們一桌大概有10人左右但是現在疫情影響就是他們一定40多在這不可能還上市的 咱就一桌有8個人他要疫情期間 人家隔離 降低排量 排60 調排7個 然後6767別人栽培 他是叫性 iterations剛才大盤經理 剛才說送的單方這個也不用太修補還有就是我們到時候剛才說的這個我會下去還有開場的時候就剛才面紅那塊 一定要把蛋黃這個 剛才說這個蛋糕這個蛋糕 還有這個蛋黃 還有這些東西然後就這樣 進行一個這個一或是下去 二就是要進行一個這個宣傳 跟市場互相結合 我們兩個互相結合嗯 這樣還好可以播出一段時間給那個市場互相聯絡 你們是不是在本次宣傳會議結婚禮然後去進行一個調查 算是一個調查吧感應程度 以及改變措施 各部門進行配合這也是欧洲周不同大 returns到時候怎麼把那個對停放問題 我覺得應該重視一下建議所有車都開進來都可以入場 都可以入場 夠了 這些方面不會自戀 會用機器嗎不會自戀我們彩排的時候會把這些都安排好兩位優先到此結束 上位這不是遲到了一個月了
+[Audio Detection] 在 2042.47 秒检测到关键词 '好交交'。
+detection_time: 2042.47, current_time: 2037.00
+不是hard question，使用默认简单问题持续时间。
+问题音频片段长度: 240000, dtype: float32, min: -0.19903564453125, max: 0.186859130859375
+问题音频时间长度: 15.0
+
+
+[Agent] 接收到问题: 接著之前我們討論的內容 婚庆公司提前一周來佈置場地的具體方案是什麼大唐經理這邊來說 當同大唐部和後勤不在協助佈置和提供贈品方面具體承擔哪些職責
+, 1735027431.5810986
+
+
+[Agent] 最终接收到问题: 接著之前我們討論的內容 婚庆公司提前一周來佈置場地的具體方案是什麼大唐經理這邊來說 當同大唐部和後勤不在協助佈置和提供贈品方面具體承擔哪些職責
+, 1735027431.5812168
+
+运行 classifier...
+1
+Token count: 3, Total time: 0.5056 seconds, One token time: 0.1685 seconds
+
+classifier的输出：1
+
+选择的智能体：talker
+将问题音频输入给 talker
+
+talker输出：
+
+Token count: 73, Total time: 2.8867 seconds, One token time: 0.0395 secondssystem
+You are a helpful assistant.
+user
+只用100字以内回答语音中的问题。Audio 1: 
+
+assistant
+婚庆公司提前一周来布置场地的具体方案需要根据之前讨论的内容进行制定，包括但不限于以下职责：
+
+1. 确定场地布置方案：与客户沟通确认场地的需求和喜好，设计并确定场地的布置方案。
+
+2. 负责采购物料：根据布置方案，负责采购所需的物料，如花篮、气球、彩带等。
+
+3. 安排人员：安排足够的人力资源，包括布置工人和工作人员。
+
+4. 提供技术支持：提供音响、灯光等技术支持。
+
+5. 布置现场：按照预定的时间和方案，进行场地的布置。
+
+6. 提供赠品：同大堂部和后勤部门协调，确保赠品的准备和分发。
+
+7. 后期维护：婚礼结束后，负责场地的清理和恢复工作。
+
+以上就是婚庆公司在场地布置方面的主要职责，具体的责任分配需要根据公司的组织架构和人员配置进行决定。
+talker 输出结束
+如何確保婚禮當天車輛停放有序 避免出現擁擠情況
+会议数据处理完成。
