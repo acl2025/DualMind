@@ -48,8 +48,8 @@ def process_experiment_file(exp_file_path, ground_truth_data):
 
     # 获取文件名
     file_name = os.path.basename(exp_file_path).replace('.jsonl', '')
-    output_jsonl_path = f"/home/leon/agent/baseline/result_compassJudger_Qwen2.5-7B-Instruct_train_S_0113_add_text_snippet/result_compassJudger_{file_name}.jsonl"
-    output_txt_path   = f"/home/leon/agent/baseline/result_compassJudger_Qwen2.5-7B-Instruct_train_S_0113_add_text_snippet/result_compassJudger_{file_name}.txt"
+    output_jsonl_path = f"/home/leon/agent/baseline/result_compassJudger_chatGLM3_6B_train_S_0207_add_text_snippet/result_compassJudger_{file_name}.jsonl"
+    output_txt_path   = f"/home/leon/agent/baseline/result_compassJudger_chatGLM3_6B_train_S_0207_add_text_snippet/result_compassJudger_{file_name}.txt"
 
     # 读取已处理问题，避免重复
     if os.path.exists(output_jsonl_path):
@@ -392,7 +392,8 @@ def main():
     # Ground Truth 和实验结果目录
     ground_truth_dir = "/home/leon/agent/AISHELL_dataset/train_S/ground_truth_train_S"
     #exp_results_dir = "/home/leon/agent/baseline/result_Qwen2Audio-7B-Instruct_baseline"
-    exp_results_dir = "/home/leon/agent/baseline/result_Qwen2.5-7B-Instruct_baseline"
+    #exp_results_dir = "/home/leon/agent/baseline/result_Qwen2.5-7B-Instruct_baseline"
+    exp_results_dir = "/home/leon/agent/baseline/result_chatGLM3_6B_baseline_0206"
     
     for root, dirs, files in os.walk(exp_results_dir):
         for file in files:

@@ -1,7 +1,7 @@
 from openai import OpenAI
  
 client = OpenAI(
-    api_key="sk-4Stc5dY49tGPqqcvMktNLDjeRpAlougEyKwX42Dlns6x4XiX", # 在这里将 MOONSHOT_API_KEY 替换为你从 Kimi 开放平台申请的 API Key
+    api_key="key", # 在这里将 MOONSHOT_API_KEY 替换为你从 Kimi 开放平台申请的 API Key
     base_url="https://api.moonshot.cn/v1",
 )
  

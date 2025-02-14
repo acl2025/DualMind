@@ -158,13 +158,15 @@ first_generation_kwargs = dict(
     top_p=0.9,
     temperature=0.7
 )
-
+inference_start = time.time()
 with torch.no_grad():
     first_gen_text, first_token_times = stream_generate_and_print(
         model=model,
         tokenizer=tokenizer,
         generation_kwargs=first_generation_kwargs
     )
+inference_end = time.time()
+print(f"First inference total time: {inference_end - inference_start:.4f} seconds")
 
 print("\n[第一阶段] 每个 token 耗时:")
 for i, t in enumerate(first_token_times):

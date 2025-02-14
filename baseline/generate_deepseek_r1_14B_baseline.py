@@ -8,7 +8,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 # INPUT & OUTPUT 目录常量
 INPUT_JSONL_DIR = '/home/leon/agent/experiment_result/result_train_S_jsonl_audio_segment_only_0103'
 # 将输出目录改名
-OUTPUT_DIR = '/home/leon/agent/baseline/result_deepseek_r1_14B_baseline_0205'
+OUTPUT_DIR = '/home/leon/agent/baseline/result_deepseek_r1_14B_baseline_0209'
 PROCESSED_RECORD = os.path.join(OUTPUT_DIR, '.processed_files')
 
 # 创建输出目录
@@ -134,7 +134,7 @@ def process_jsonl_file(jsonl_path):
                     )
 
                 print(prompt)
-                # 调用 Qwen2.5-14B-Instruct-GPTQ-Int4
+                # 调用 DEEPSEEK
                 answer_raw = ask_deepseek_r1_14B(prompt)
                 
                 print(answer_raw)

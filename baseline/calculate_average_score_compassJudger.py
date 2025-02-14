@@ -79,5 +79,8 @@ def analyze_jsonl_files(directory_path):
 #directory_path = "/home/leon/agent/baseline/result_compassJudger_llama-2-13b-chat-hf_train_S_0109_add_text_snippet"
 #directory_path = "/home/leon/agent/baseline/result_compassJudger_qwen2audio_train_S_0108_add_text_snippet"
 #directory_path = "/home/leon/agent/baseline/result_compassJudger_Qwen2.5-7B-Instruct_train_S_0113_add_text_snippet"
-directory_path = "/home/leon/agent/baseline/result_compassJudger_Qwen2.5-14B-Instruct_train_S_0109_add_text_snippet"
+#directory_path = "/home/leon/agent/baseline/result_compassJudger_Qwen2.5-14B-Instruct_train_S_0109_add_text_snippet"
+#directory_path = "/home/leon/agent/baseline/result_compassJudger_chatGLM3_6B_train_S_0207_add_text_snippet"
+#directory_path = "/home/leon/agent/baseline/result_compassJudger_deepseek_r1_7B_train_S_0208_add_text_snippet"
+directory_path = "/home/leon/agent/baseline/result_compassJudger_deepseek_r1_14B_train_S_0208_add_text_snippet"
 analyze_jsonl_files(directory_path)

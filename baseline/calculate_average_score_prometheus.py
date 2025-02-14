@@ -47,6 +47,9 @@ def analyze_jsonl_files(directory_path):
 #directory_path = "/home/leon/agent/baseline/result_prometheus_eval_Llama-2-7b-chat-hf_baseline_0115"
 #directory_path = "/home/leon/agent/baseline/result_prometheus_eval_train_S_Llama-2-13b-chat-hf_baseline_0115"
 #directory_path = "/home/leon/agent/baseline/result_prometheus_eval_train_S_Qwen2.5-7B-Instruct_baseline_0115"
-directory_path = "/home/leon/agent/baseline/result_prometheus_eval_train_S_Qwen2.5-14B-Instruct_baseline_0115"
+#directory_path = "/home/leon/agent/baseline/result_prometheus_eval_train_S_Qwen2.5-14B-Instruct_baseline_0115"
 #directory_path = "/home/leon/agent/baseline/result_prometheus_eval_train_S_Qwen2Audio-7B-Instruct_baseline_0115"
+#directory_path = "/home/leon/agent/baseline/result_prometheus_eval_train_S_chatGLM3_6B_baseline_0207"
+#directory_path = "/home/leon/agent/baseline/result_prometheus_eval_train_S_deepseek_r1_7B_baseline_0211"
+directory_path = "/home/leon/agent/baseline/result_prometheus_eval_train_S_deepseek_r1_14B_baseline_0211"
 analyze_jsonl_files(directory_path)

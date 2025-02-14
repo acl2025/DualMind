@@ -59,8 +59,11 @@ def process_experiment_file(exp_file_path, ground_truth_data):
     # output_jsonl_path = f"/home/leon/agent/baseline/result_prometheus_eval_train_S_Qwen2.5-14B-Instruct_baseline_0115/result_prometheus_eval_train_S_Qwen2.5-14B-Instruct_baseline_{file_name}.jsonl"
     # output_txt_path   = f"/home/leon/agent/baseline/result_prometheus_eval_train_S_Qwen2.5-14B-Instruct_baseline_0115/result_prometheus_eval_train_S_Qwen2.5-14B-Instruct_baseline_{file_name}.txt"
     
-    output_jsonl_path = f"/home/leon/agent/baseline/result_prometheus_eval_train_S_Qwen2Audio-7B-Instruct_baseline_0115/result_prometheus_eval_train_S_Qwen2Audio-7B-Instruct_baseline_{file_name}.jsonl"
-    output_txt_path   = f"/home/leon/agent/baseline/result_prometheus_eval_train_S_Qwen2Audio-7B-Instruct_baseline_0115/result_prometheus_eval_train_S_Qwen2Audio-7B-Instruct_baseline_{file_name}.txt"
+    # output_jsonl_path = f"/home/leon/agent/baseline/result_prometheus_eval_train_S_Qwen2Audio-7B-Instruct_baseline_0115/result_prometheus_eval_train_S_Qwen2Audio-7B-Instruct_baseline_{file_name}.jsonl"
+    # output_txt_path   = f"/home/leon/agent/baseline/result_prometheus_eval_train_S_Qwen2Audio-7B-Instruct_baseline_0115/result_prometheus_eval_train_S_Qwen2Audio-7B-Instruct_baseline_{file_name}.txt"
+    
+    output_jsonl_path = f"/home/leon/agent/baseline/result_prometheus_eval_train_S_chatGLM3_6B_baseline_0207/result_prometheus_eval_train_S_chatGLM3_6B_baseline_{file_name}.jsonl"
+    output_txt_path   = f"/home/leon/agent/baseline/result_prometheus_eval_train_S_chatGLM3_6B_baseline_0207/result_prometheus_eval_train_S_chatGLM3_6B_baseline_{file_name}.txt"
     
     # 读取已处理问题，避免重复
     if os.path.exists(output_jsonl_path):
@@ -318,7 +321,8 @@ def main():
     #exp_results_dir = "/home/leon/agent/baseline/result_Llama-2-13b-chat-hf_baseline"
     #exp_results_dir = "/home/leon/agent/baseline/result_Qwen2.5-7B-Instruct_baseline"
     #exp_results_dir = "/home/leon/agent/baseline/result_Qwen2.5-14B-Instruct_baseline"
-    exp_results_dir = "/home/leon/agent/baseline/result_Qwen2Audio-7B-Instruct_baseline"
+    #exp_results_dir = "/home/leon/agent/baseline/result_Qwen2Audio-7B-Instruct_baseline"\
+    exp_results_dir = "/home/leon/agent/baseline/result_chatGLM3_6B_baseline_0206"
     
     for root, dirs, files in os.walk(exp_results_dir):
         for file in files:

@@ -6,7 +6,7 @@ import time
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-4Stc5dY49tGPqqcvMktNLDjeRpAlougEyKwX42Dlns6x4XiX",  # 请在此处替换为你从Kimi开放平台申请的API Key
+    api_key="key",  # 请在此处替换为你从Kimi开放平台申请的API Key
     base_url="https://api.moonshot.cn/v1",
 )
 
