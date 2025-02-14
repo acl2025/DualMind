@@ -1,5 +1,6 @@
 # DualMind: A Fast-Slow Thinking Agent Framework for Meeting Assistance
-![DualMind Architecture](./figures/会议系统agent1230.drawio.jpg)
+![meeting_diagrammatic_drawing](./figures/meeting_diagrammatic_drawing.jpg)
+![DualMind Architecture](./figures/会议系统agent1230.jpg)
 DualMind is a novel dual-process meeting assistance system designed to balance rapid reaction and careful reasoning in real-time meeting scenarios. The system features a fast-thinking Talker agent for routine queries and a slow-thinking Planner agent for complex tasks, along with comprehensive datasets and evaluation frameworks.
 
 ## Key Features
@@ -80,6 +81,8 @@ The AISHELL-Agent dataset includes:
 - Voice-cloned agent responses
 - Diverse query complexities
 
+![how_we_make_the_dataset](./figures/how_we_make_the_dataset.jpg)
+
 ## Evaluation
 
 The AMBER framework provides:
@@ -87,6 +90,11 @@ The AMBER framework provides:
 - Prometheus evaluation (1-5 scale)
 - Latency measurements
 - Human evaluation metrics
+
+![benchmark_blackbox](./figures/benchmark_blackbox.jpg)
+![benchmark_pipeline](./figures/benchmark_pipeline.jpg)
+
+
 
 ## Contributing
 
