@@ -6,3 +6,7 @@ huggingface_token.txt
 STT_old/whisper_STT.py
 AISHELL_dataset/generate_gpt_4o_ground_truth_0103.py
 AISHELL_dataset/generate_gpt_4o_ground_truth_old.py
+huggingface_token.txt
+STT_old/whisper_STT.py
+AISHELL_dataset/generate_gpt_4o_ground_truth_0103.py
+AISHELL_dataset/generate_gpt_4o_ground_truth_old.py
