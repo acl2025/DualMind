@@ -1,5 +1,5 @@
 # DualMind: A Fast-Slow Thinking Agent Framework for Meeting Assistance
-
+![DualMind Architecture](./会议系统agent1230.drawio.pdf)
 DualMind is a novel dual-process meeting assistance system designed to balance rapid reaction and careful reasoning in real-time meeting scenarios. The system features a fast-thinking Talker agent for routine queries and a slow-thinking Planner agent for complex tasks, along with comprehensive datasets and evaluation frameworks.
 
 ## Key Features
